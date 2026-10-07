@@ -17,5 +17,12 @@
     "files": 5282,
     "source_sealed": true
   },
-  "boundary": "Current source, runtime, baseline database, reports, historical videos and latest native evidence. Bulk historical scenarios, old portable/archival packages and duplicate vendor distribution remain in the original repository with a complete index. No local model settings or development tools included."
+  "boundary": "Current source, runtime, baseline database, reports, historical videos and latest native evidence. Bulk historical scenarios, old portable/archival packages and duplicate vendor distribution remain in the original repository with a complete index. No local model settings or development tools included.",
+  "failure_metadata_archive": {
+    "path": "最新闭环证据/开发失败记录摘要.zip",
+    "records": 39,
+    "bytes": 948037,
+    "sha256": "439acb6ee189efa4970aab1b2e23bc97829608f6c597366c0459b0e617e19dae",
+    "boundary": "Metadata only; full native scenarios retained locally, not in this archive."
+  }
 }

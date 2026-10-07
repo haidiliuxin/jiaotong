@@ -32,8 +32,9 @@
   "physical_machine_note": "Same computer, independent delivery directory and isolated interpreter; not a different-machine new native execution.",
   "additional_model_requests": 0,
   "additional_native_scenes": 0,
-  "lfs_entities": 361,
-  "lfs_unique_objects": 360,
-  "lfs_unique_bytes": 1390471831,
-  "all_lfs_entities_checked_out": true
+  "lfs_entities": 362,
+  "lfs_unique_objects": 361,
+  "lfs_unique_bytes": 1391419868,
+  "all_lfs_entities_checked_out": true,
+  "failure_metadata_only": true
 }
