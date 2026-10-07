@@ -1,0 +1,152 @@
+{
+  "recorded_at": "2026-09-27T08:39:44.271878+00:00",
+  "code_commit": "73be53a96b8f363acf4415225edeb52aa17d5400",
+  "working_code_sha256": {
+    "scripts/validate_observed_planning.py": "76c4ad3fdc837f4e386dd96f71d41a6a5f824c28a96635ea18ab84e9d2259639",
+    "tests/test_natural_plan.py": "7fa05f02f3156a5b6e67dbd6586cd041c0b8bde4ea1e4a2608285bbbade9d71e",
+    "tests/test_planner_view.cjs": "5489ab58b2cbd2ac67f34a774643ce95e5ec4a8d00687af3ced10b42c00ca13c",
+    "tests/test_planning_contract.py": "6006d8575f539cce1dc52d63bc3b38d211a90af4a7e983047a560435964cdd02",
+    "tests/test_planning_scope.py": "f60d09089dd9e7174dc9b4c1241bd884e7e6ac845bc21c1f046c7a33564451b3",
+    "traffic_agent/dispatch_web.py": "7181b427540748a7410de9e9e7800dd145397fa7a05ae0251383f1164de5bec3",
+    "traffic_agent/llm_client.py": "1d438de2b36c9307c275f8c825a4e72a0ba97f5d191a3d5c5892df0562a7b7f4",
+    "traffic_agent/natural_plan.py": "574f39a70b4ff63e8f5d5e540430ed72d403a111256508b0d164ba6a50fa670a",
+    "traffic_agent/planning_attempt.py": "43846996952d54b5290ed0a936feff3ef35a8eddea8e4ca464868094abf54f00",
+    "traffic_agent/planning_contract.py": "300cf81372fdc934c8384f225ba7eaadfc84972e363b5f8b51980b72119e6393",
+    "traffic_agent/planning_scope.py": "b0a8320310bc9cd68d7ba9c65f2298cd5b62f72ace2412642a35963094e7bf24",
+    "traffic_agent/static/planner_view.js": "95ceb759f4caeba796e464f6f640f1d8b686ad1ae7ee947b6e5f5acb8bc216fd"
+  },
+  "capabilities": {
+    "planning_version": "natural-strategy-plan-v5",
+    "composition_protocol": "traffic-plan-decision-v2",
+    "scope_protocol": "planning-scope-v1",
+    "instructions_sha256": "8ee7a040dbba7ed8ba544fc1bb0a27affaeba85f8b2e400bdd5b5ae55334fcc4",
+    "initial_schema_sha256": "cccda30e8800ebf5918b5ff85e9037b4f028a76c32ebd870f2ae012025607510",
+    "engine": "TranStar batch",
+    "automatic_model_retry": false,
+    "max_model_requests": 6
+  },
+  "python": {
+    "command": ".venv/Scripts/python.exe -X utf8 -m unittest discover -s tests",
+    "count": 338,
+    "exit_code": 0,
+    "kind": "local_synthetic_and_unit_checks"
+  },
+  "javascript": [
+    {
+      "command": "node tests/test_planner_view.cjs",
+      "exit_code": 0
+    },
+    {
+      "command": "node tests/test_dispatch_ui.cjs",
+      "exit_code": 0
+    },
+    {
+      "command": "node tests/test_map_view.cjs",
+      "exit_code": 0
+    }
+  ],
+  "service_gate": {
+    "at": "2026-09-27T08:34:21.179931+00:00",
+    "old_server": {
+      "planning_version": "natural-strategy-plan-v5",
+      "composition_protocol": "traffic-plan-decision-v1",
+      "initial_schema_sha256": "916f6ae326800b005a6de25c8f0d7ed945ae8198dd1ff2724316e64a2679d26f",
+      "engine": "TranStar batch",
+      "automatic_model_retry": false,
+      "max_model_requests": 6
+    },
+    "expected": {
+      "planning_version": "natural-strategy-plan-v5",
+      "composition_protocol": "traffic-plan-decision-v2",
+      "scope_protocol": "planning-scope-v1",
+      "instructions_sha256": "8ee7a040dbba7ed8ba544fc1bb0a27affaeba85f8b2e400bdd5b5ae55334fcc4",
+      "initial_schema_sha256": "cccda30e8800ebf5918b5ff85e9037b4f028a76c32ebd870f2ae012025607510",
+      "engine": "TranStar batch",
+      "automatic_model_retry": false,
+      "max_model_requests": 6
+    },
+    "paid_requests_in_check": 0,
+    "stale_service_rejected": true,
+    "error": "Local service planning contract differs from this validator; no paid request or native launch",
+    "active_dispatches": [],
+    "native_lock": "acquired_and_released",
+    "fresh_server": {
+      "planning_version": "natural-strategy-plan-v5",
+      "composition_protocol": "traffic-plan-decision-v2",
+      "scope_protocol": "planning-scope-v1",
+      "instructions_sha256": "8ee7a040dbba7ed8ba544fc1bb0a27affaeba85f8b2e400bdd5b5ae55334fcc4",
+      "initial_schema_sha256": "cccda30e8800ebf5918b5ff85e9037b4f028a76c32ebd870f2ae012025607510",
+      "engine": "TranStar batch",
+      "automatic_model_retry": false,
+      "max_model_requests": 6
+    },
+    "fresh_server_matches": true
+  },
+  "browser": {
+    "console_warnings_errors": [],
+    "viewport_width": 1094,
+    "document_scroll_width": 1081,
+    "horizontal_overflow": false,
+    "verified": [
+      "explicit_capability_gap",
+      "bounded_response_counts",
+      "whole_dataset_scope",
+      "per_candidate_link_limit",
+      "quoted_location_gap"
+    ],
+    "historical_job_in_main_map": "20260927_115748_257465",
+    "actual_attempt_visible": "preview_3051c6d650d742d5a002022635d710de",
+    "component_pages_are_synthetic": true
+  },
+  "live": {
+    "code_commit": "96c2ed29491ec41674133868e315042ec045f1a7",
+    "composition_protocol": "traffic-plan-decision-v1",
+    "accepted": false,
+    "new_model_requests": 1,
+    "reported_tokens": 3296,
+    "input_tokens": 3063,
+    "output_tokens": 233,
+    "finish_reason": "tool_calls",
+    "new_native_scenes": 0,
+    "automatic_retry": false,
+    "evidence": "docs/validation/20260927_decision_contract_live_failure.zip"
+  },
+  "latest_code_live": {
+    "composition_protocol": "traffic-plan-decision-v2",
+    "new_model_requests": 0,
+    "new_native_scenes": 0,
+    "accepted": false,
+    "status": "not_tested"
+  },
+  "portable": {
+    "candidate": "20260927_智能规划_RC2",
+    "source_commit": "b528c986cad89604ab6166886f8f32d6bea87c9c",
+    "contains_this_stage": false
+  },
+  "goal_complete": false,
+  "runtime_code_check": {
+    "startup_record": "F:\\ITS比赛\\智能体实验\\startup\\f08b01f84e224a9d8eeabcbcb7c42b39.json",
+    "matched_changed_python_files": {
+      "traffic_agent/dispatch_web.py": true,
+      "traffic_agent/llm_client.py": true,
+      "traffic_agent/natural_plan.py": true,
+      "traffic_agent/planning_attempt.py": true,
+      "traffic_agent/planning_contract.py": true,
+      "traffic_agent/planning_scope.py": true
+    },
+    "checked_at": "2026-09-27T08:42:48.956456+00:00"
+  },
+  "final_native_lock": "acquired_and_released",
+  "preserved_idle_ports": [
+    8769,
+    8770,
+    8771,
+    8772
+  ],
+  "screenshots": {
+    "20260927_decision_contract_panel_fixture.png": "3d05ce5348c397e2e096bb07364a8e21615a09c2a1139719c803dfd868d00650",
+    "20260927_decision_contract_diagnostics_fixture.png": "b2491893bf760443992624a71b3157178c4c41fa94baa0a538ddb7c248ab335d",
+    "20260927_decision_scope_panel_fixture.png": "9352c9b00039115b3cd0740ab4395aabb9114d06feb8fdfc6824b92602f38723",
+    "20260927_decision_contract_live_failure.png": "f78a164bf389efe8c8b9c900a594bdbb499226b8ea1b1f5d25ccaee1acc73e25"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "kind": "parking_candidate_domain_initial_probe_review_v1",
+  "request": "长江村路停车拥堵。请至少比较两个不同停车备选方案，并检验单向组织及其组合的独立效果。最多7次仿真，不复跑基准；保护邻区。",
+  "first_preview": {
+    "record": "智能体实验/parking_domain_probe_20260930_01/planning_attempts/preview_9ea7022dd6724049a520854ae342e719.json",
+    "sha256": "2aa57cf63f3ff78cfde785c78184fa9776f6922d1601c4721e15dc0c097cc8fb",
+    "status": "validation_failed",
+    "reason": "model_proposed_two_identical_auto_parking_studies_plus_one_oneway_study; old_compiler_rejected_duplicate_before_native",
+    "response_id": "chatcmpl-6abc1ff424a2912d4db5514b",
+    "requests": 1,
+    "known_tokens": 7123,
+    "input_tokens": 6162,
+    "output_tokens": 961,
+    "native_scenarios": 0
+  },
+  "second_preview": {
+    "record": "智能体实验/parking_domain_probe_20260930_02/planning_attempts/preview_e75e5a21e44c4768a616148439b05612.json",
+    "sha256": "5c8755b4ec808efed4e865cdf6f5ca3255d37b7cf349905fb8cb7ef3c8b2f5b3",
+    "status": "ready",
+    "research_depth": "research-depth-v3",
+    "candidate_domain": "parking",
+    "proposed_studies": ["parking", "oneway"],
+    "compiled_parking_comparison_policies": 2,
+    "minimum_native_scenarios": {"parking": 3, "oneway": 4, "total": 7},
+    "duplicate_compilation_triggered": false,
+    "compiler_label_at_probe": "plan-compilation-v2",
+    "response_id": "chatcmpl-6abc20613df0c3e207998d15",
+    "requests": 1,
+    "known_tokens": 7166,
+    "input_tokens": 6162,
+    "output_tokens": 1004,
+    "native_scenarios": 0
+  },
+  "offline": {
+    "python_tests": 630,
+    "node_suites": 4,
+    "rc5_original_programme_read_only": "passed",
+    "rc8_original_programme_read_only": "refused_recorded_incomplete",
+    "rc8_dispatch_sha256_unchanged": "e3d3fd7aab89c1ddda2277face5132151f01609af50bed245da78136f76df8ae",
+    "duplicate_parking_compilation": "synthetic_only",
+    "final_compiler_protocol": "plan-compilation-v3"
+  },
+  "locally_recorded_cumulative_conservative": {
+    "requests": 109,
+    "known_tokens": 989584,
+    "request_limit": 684,
+    "known_token_limit": 4132560,
+    "remaining_requests": 575,
+    "remaining_known_tokens": 3142976
+  },
+  "boundary": "Only initial model planning was live. No new native simulation or final model feedback was run; portable and physical-other-machine acceptance remain pending."
+}

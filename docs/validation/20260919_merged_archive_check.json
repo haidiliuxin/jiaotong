@@ -1,0 +1,22 @@
+[
+  {
+    "job": "20260919_205401_c8de76",
+    "passed": true,
+    "active_search_audit": null,
+    "writes_to_original": false
+  },
+  {
+    "job": "20260911_021806_858461",
+    "passed": true,
+    "active_search_audit": {
+      "protocol_frozen_before_first_run": true,
+      "raw_observations_verified": true,
+      "decisions_replayed": 10,
+      "chronological_decisions": true,
+      "budget_and_stopping_verified": true,
+      "complete_demand_recommendation_verified": true,
+      "report_exports_present": true
+    },
+    "writes_to_original": false
+  }
+]

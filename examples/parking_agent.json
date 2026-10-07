@@ -1,0 +1,12 @@
+{
+  "request": "分析停车干扰；最多治理3条；需求系数：0.9,1.0,1.1；预算：10",
+  "scenario": "parking",
+  "max_links": 3,
+  "max_runs": 10,
+  "max_feedback": 2,
+  "demand_factors": [0.9, 1.0, 1.1],
+  "repeat_baseline": true,
+  "max_neighbor_time_increase_pct": 0.5,
+  "max_network_time_increase_pct": 0.1,
+  "max_new_oversaturated_km": 0.1
+}

@@ -1,0 +1,170 @@
+{
+  "kind": "offline_initial_budget_controller_check",
+  "status": "ready",
+  "offline_fixture": {
+    "paid_calls": 0,
+    "native_scenes": 0,
+    "reply_source": "scripted structural fixture; not a real model response"
+  },
+  "original_budget": {
+    "version": "initial-plan-budget-v1",
+    "groups": [
+      {
+        "ordinal": 1,
+        "title": "停车治理与反馈",
+        "study": "standard",
+        "target_ref": "auto",
+        "conditions": {
+          "scenario": "parking",
+          "road_name": "七东线",
+          "search_mode": "standard",
+          "recommendation_version": "tolerance-v2",
+          "demand_factors": [
+            1.0
+          ],
+          "repeat_baseline": false,
+          "max_links": 2,
+          "max_feedback": 2,
+          "comparison_regions": 1,
+          "completion_required": true
+        },
+        "native_runs": 2,
+        "model_requests": 2,
+        "assignment_module": "M6AssignVehicle.exe",
+        "may_omit": false
+      },
+      {
+        "ordinal": 2,
+        "title": "路网体检",
+        "study": "diagnosis",
+        "target_ref": "auto",
+        "conditions": {
+          "scenario": "diagnosis",
+          "road_name": "长江村路",
+          "search_mode": "standard",
+          "recommendation_version": "tolerance-v2",
+          "demand_factors": [
+            1.0
+          ],
+          "repeat_baseline": false,
+          "max_links": 2,
+          "max_feedback": 2,
+          "completion_required": true
+        },
+        "native_runs": 1,
+        "model_requests": 1,
+        "assignment_module": "M6AssignVehicle.exe",
+        "may_omit": true
+      },
+      {
+        "ordinal": 3,
+        "title": "停车＋单向组织",
+        "study": "standard",
+        "target_ref": "auto",
+        "conditions": {
+          "scenario": "oneway",
+          "road_name": "长江村路",
+          "search_mode": "standard",
+          "recommendation_version": "tolerance-v2",
+          "demand_factors": [
+            1.0
+          ],
+          "repeat_baseline": false,
+          "max_links": 2,
+          "max_feedback": 2,
+          "completion_required": true
+        },
+        "native_runs": 4,
+        "model_requests": 2,
+        "assignment_module": "M6AssignVehicle1.exe",
+        "may_omit": false
+      }
+    ],
+    "native": {
+      "required": 7,
+      "limit": 6
+    },
+    "model": {
+      "required": 6,
+      "used": 1,
+      "limit": 6
+    },
+    "fits": false,
+    "correction_feasible": true,
+    "rule": "所有治理设计与必需体检保持原条件；仅可调整顺序或撤回未要求且已有同范围治理基准的额外体检。不同引擎仍各跑新基准，不借用体检结果。"
+  },
+  "revised_budget": {
+    "version": "initial-plan-budget-v1",
+    "groups": [
+      {
+        "ordinal": 1,
+        "title": "停车治理与反馈",
+        "study": "standard",
+        "target_ref": "auto",
+        "conditions": {
+          "scenario": "parking",
+          "road_name": "七东线",
+          "search_mode": "standard",
+          "recommendation_version": "tolerance-v2",
+          "demand_factors": [
+            1.0
+          ],
+          "repeat_baseline": false,
+          "max_links": 2,
+          "max_feedback": 2,
+          "comparison_regions": 1,
+          "completion_required": true
+        },
+        "native_runs": 2,
+        "model_requests": 2,
+        "assignment_module": "M6AssignVehicle.exe",
+        "may_omit": false
+      },
+      {
+        "ordinal": 2,
+        "title": "停车＋单向组织",
+        "study": "standard",
+        "target_ref": "auto",
+        "conditions": {
+          "scenario": "oneway",
+          "road_name": "长江村路",
+          "search_mode": "standard",
+          "recommendation_version": "tolerance-v2",
+          "demand_factors": [
+            1.0
+          ],
+          "repeat_baseline": false,
+          "max_links": 2,
+          "max_feedback": 2,
+          "completion_required": true
+        },
+        "native_runs": 4,
+        "model_requests": 2,
+        "assignment_module": "M6AssignVehicle1.exe",
+        "may_omit": false
+      }
+    ],
+    "native": {
+      "required": 6,
+      "limit": 6
+    },
+    "model": {
+      "required": 6,
+      "used": 2,
+      "limit": 6
+    },
+    "fits": true,
+    "correction_feasible": false,
+    "rule": "所有治理设计与必需体检保持原条件；仅可调整顺序或撤回未要求且已有同范围治理基准的额外体检。不同引擎仍各跑新基准，不借用体检结果。"
+  },
+  "scripted_requests": 2,
+  "model_budget": {
+    "limit": 6,
+    "used": 2,
+    "remaining": 4,
+    "minimum_required": 6,
+    "known_tokens": 0,
+    "unknown_usage": 0
+  },
+  "initial_review_protocol": "initial-plan-review-v2"
+}

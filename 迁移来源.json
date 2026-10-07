@@ -1,0 +1,21 @@
+{
+  "version": "current-delivery-snapshot-v1",
+  "source_repository": "https://github.com/Tabris-Ayanami/its-transtar-agent",
+  "source_branch": "fix/local-clone-validation-20261002",
+  "source_commit": "bc1f456ca1bcfdf4cb8bf584480cb876eb5a327d",
+  "target_repository": "https://github.com/haidiliuxin/jiaotong",
+  "date": "2026-10-07",
+  "selected_tracked_files": 4758,
+  "source_tracked_files": 179756,
+  "included_bytes": 1881895741,
+  "lfs_entities_checked": true,
+  "latest_task": "20261007_010958_039964",
+  "native_archive": {
+    "path": "最新闭环证据/20261007_010958_039964_原始实验.zip",
+    "bytes": 511941863,
+    "sha256": "7a32d7dc6481bf75a4a67467cb6fb8096c0070054bcd5e42627fbfa6017b14e4",
+    "files": 5282,
+    "source_sealed": true
+  },
+  "boundary": "Current source, runtime, baseline database, reports, historical videos and latest native evidence. Bulk historical scenarios, old portable/archival packages and duplicate vendor distribution remain in the original repository with a complete index. No local model settings or development tools included."
+}

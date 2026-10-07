@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "checked_at": "2026-09-07T21:29:23.147Z",
+  "errors": [],
+  "post_requests": [
+    "/api/plan"
+  ],
+  "checks": [
+    "saved budget 4 and demand 1",
+    "new draft budget 6 stays separate",
+    "history switch loads saved budget 10 and demand 0.9/1/1.1",
+    "refresh preserves draft",
+    "switch back loads original saved task",
+    "no simulation was submitted"
+  ]
+}

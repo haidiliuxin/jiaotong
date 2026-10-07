@@ -1,0 +1,76 @@
+{
+  "status": "completed",
+  "kind": "completed_real_task_review",
+  "new_model_calls": 0,
+  "started": "2026-09-21T22:19:15.224Z",
+  "plan_sha256": "927ca2c266bd117ca18bea170bff1ba2233e105b13268c85c85f14e92a38e83e",
+  "script_sha256": "6e294962eec141be2d89356b5ee1a76af5b3d6a841c8342133a91851fd47d065",
+  "job_id": "20260922_052448_fa12d2",
+  "archive_sha256": "8a08eecd212abf16adc57f1357de23aebecd25f6d9bfa8c52da8bd5cc9af8b4d",
+  "state_sha256": "8b0c45d7557311b41630e9f3d51b6fcf576bc7d0acba312b41612ffc2be8b141",
+  "source_runtime_code": "5c9332494c08da354dc05a1868a9495ceb54d2a7",
+  "scenes": [
+    {
+      "title": "已完成真实任务回看；4场景、28次原始顶层调用，本次新增模型调用0。",
+      "start_seconds": 3.385,
+      "end_seconds": 17.839,
+      "job_title": "20260922_052448_fa12d2",
+      "status": "已完成"
+    },
+    {
+      "title": "同需求、同范围的基准与治理双图对照；颜色读取真实输出。",
+      "start_seconds": 17.939,
+      "end_seconds": 35.38,
+      "job_title": "20260922_052448_fa12d2",
+      "status": "已完成"
+    },
+    {
+      "title": "算法读取首轮结果并增加治理强度；建议parking_2，仅验证需求1.0。",
+      "start_seconds": 35.449,
+      "end_seconds": 55.877,
+      "job_title": "20260922_052448_fa12d2",
+      "status": "已完成"
+    },
+    {
+      "title": "收益和代价同时披露：全网过饱和里程净增约0.584km。",
+      "start_seconds": 55.918,
+      "end_seconds": 74.34,
+      "job_title": "20260922_052448_fa12d2",
+      "status": "已完成"
+    },
+    {
+      "title": "实验档案展示实际任务与全网指标；基准复跑检查保留。",
+      "start_seconds": 74.406,
+      "end_seconds": 92.638,
+      "job_title": "20260922_052448_fa12d2",
+      "status": "已完成"
+    },
+    {
+      "title": "时间线来自这个任务已保存的事件；完整日志和核验记录可追溯。",
+      "start_seconds": 92.7,
+      "end_seconds": 111.133,
+      "job_title": "20260922_052448_fa12d2",
+      "status": "已完成"
+    },
+    {
+      "title": "赛事调整案例，不代表现实南京交通；三需求扩展验收单独记录。",
+      "start_seconds": 111.173,
+      "end_seconds": 123.607,
+      "job_title": "20260922_052448_fa12d2",
+      "status": "已完成"
+    }
+  ],
+  "errors": [],
+  "blocked_requests": [],
+  "limits": "已完成真实任务的界面回看，不是本次新建仿真的连续录像。只有需求系数1.0。",
+  "playwright_version": "1.62.1",
+  "video": {
+    "file": "已完成真实任务回看.webm",
+    "bytes": 10623148,
+    "sha256": "de0ce850c1a96f0d8766ef71a78b94873f2833c744063a9223130fc626ec1450"
+  },
+  "finished": "2026-09-21T22:21:36.365Z",
+  "capture_status": "recorded_pending_visual_review",
+  "visual_review": "visual_review.json",
+  "visual_review_sha256": "76b66ef395a517713f696692e6e1d5e4d61cb382c9626036a5ac925e2a34f4ee"
+}

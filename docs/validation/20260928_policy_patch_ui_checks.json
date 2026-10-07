@@ -1,0 +1,50 @@
+{
+  "passed": true,
+  "actual_paid_requests": 0,
+  "new_native_scenes": 0,
+  "overall_system_complete": false,
+  "source": {
+    "port": 8823,
+    "empty": true,
+    "capabilities_match": true,
+    "script_matches": true
+  },
+  "offline_preview": {
+    "port": 8824,
+    "write_status": 405,
+    "fixture_sha256": "4231c20e96fe0c5fd66a589be98582c49c9d0c74bf103ad4df5baf3a20de6514"
+  },
+  "services": {
+    "source": {
+      "workspace": "F:\\ITS比赛\\智能体实验\\policy_patch_workspace_20260928",
+      "port": 8823,
+      "pid": 39896
+    },
+    "offline": {
+      "pid": 47748,
+      "port": 8824
+    }
+  },
+  "browser": {
+    "tool": "cua_repl",
+    "source_tab": 47,
+    "offline_tab": 46,
+    "blank_request": true,
+    "geometry_only": 32060,
+    "checked": [
+      "字段选择仅H2组合措施",
+      "已试措施组合的原文未换写",
+      "其余两个原问题与量词保持",
+      "原问题可展开",
+      "离线合成边界固定显示",
+      "新大厅空白无执行记录"
+    ],
+    "console_errors": [],
+    "screenshot": "docs\\validation\\20260928_policy_patch_ui.png",
+    "screenshot_sha256": "496367dbc08f1ee2a08e67103de066bcb13ae1ec5c75acc1e036b2720d75dce1"
+  },
+  "original_records_unchanged": 77,
+  "original_locks_bytes_unchanged": 7,
+  "rc17_still_failed": true,
+  "boundary": "仅离线接口和界面检查；没有新增模型请求、交通场景或物理异机证据。"
+}

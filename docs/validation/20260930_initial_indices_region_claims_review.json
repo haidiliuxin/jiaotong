@@ -1,0 +1,79 @@
+{
+  "kind": "initial_indices_region_claims_stage_review_v1",
+  "date_local": "2026-09-30",
+  "initial_v8_failure": {
+    "record": "智能体实验/mixed_choice_v4_full_20260930_01/planning_attempts/preview_732249f69f55412c91cb2cb25c85ca51.json",
+    "sha256": "f68e414d2449386273cea9ff49e3c0ff6f0c6d53067b40102c3c70372bb027a8",
+    "status": "validation_failed",
+    "response_id": "chatcmpl-6abc403b286f83953b3b36dc",
+    "reported_tokens": 7408,
+    "native_scenarios": 0,
+    "issues": ["three criteria refer to absent source study 3", "combination_core_advantage uses control_and_combined instead of combined"],
+    "read_only_in_memory_shadow_issue_count": 0,
+    "original_record_modified": false
+  },
+  "v9_full_attempt": {
+    "dispatch": "智能体实验/mixed_plan_v9_full_20260930_01/dispatches/20260930_065457_65a860.json",
+    "sha256": "0aa83df956fc5bf215e24f7ade9f45e466c336ae8c0c01e050e118b2bc2a3597",
+    "job": "智能体实验/mixed_plan_v9_full_20260930_01/jobs/20260930_065457_65a860/",
+    "original_request_same_as_v8_attempt": true,
+    "status": "incomplete",
+    "initial_plan_status": "ready; two studies; seven native scenarios allocated",
+    "response_ids": [
+      "chatcmpl-6abc41bdc925b62c9f6dc4f8",
+      "chatcmpl-6abc42544bd461077d93ca41",
+      "chatcmpl-6abc42e969346c901d80ac40"
+    ],
+    "reported_tokens": [7628, 12678, 15663],
+    "completed_scenarios": ["baseline", "parking_1"],
+    "completed_top_level_modules": 14,
+    "partial_raw_audit": {
+      "execution_manifest_matches_state": true,
+      "each_run_seven_modules_completed": true,
+      "fresh_output_size_and_mtime_match": true,
+      "input_fingerprints_match": true,
+      "metrics_recomputed_from_raw_outputs_match": true,
+      "paired_comparison_recomputed_from_raw_outputs_matches": true
+    },
+    "tested_area_1_parking_level": 1,
+    "tested_core_running_time_change_pct": -23.308694361678317,
+    "tested_neighbor_running_time_change_pct": -0.18205257806130914,
+    "tested_gross_new_neighbor_oversaturated_km": 0,
+    "tested_action_eligible": true,
+    "second_proposed_action": "parking_f4c81e6f67ba: area_2 parking level 1",
+    "second_proposal_choice_basis": "passed before measured conclusion review",
+    "second_proposal_validation_code": "measured_conclusion",
+    "specific_issue": "executed_parking_level: untreated area_2 still parking level 3 was attributed to treated area_1 parking level 1",
+    "second_proposal_status": "rejected",
+    "second_candidate_executed": false,
+    "oneway_study_executed": false,
+    "original_record_modified": false
+  },
+  "implementation": {
+    "planning_protocol": "natural-strategy-plan-v9",
+    "hypothesis_wire_schema": "test-specific policy options and final-array study indices",
+    "conclusion_protocol": "measured-conclusion-v11",
+    "region_attribution_source": "actual parking edit directions intersect frozen spatial region directions",
+    "v10_historical_rule_preserved": true,
+    "read_only_v11_shadow_full_decision": "accepted; conclusion issues zero; no second candidate executed",
+    "new_v11_provider_native_full_run": false
+  },
+  "checks": {
+    "python_full_suite_count": 639,
+    "node_groups": 4,
+    "old_rc5_v6_programme_read_only": "passed",
+    "git_diff_check": "passed"
+  },
+  "budget": {
+    "prior_deduplicated_requests": 130,
+    "prior_known_tokens": 1222089,
+    "new_requests": 4,
+    "new_known_tokens": 43377,
+    "cumulative_deduplicated_requests": 134,
+    "cumulative_known_tokens": 1265466,
+    "authorized_request_limit": 684,
+    "authorized_known_token_limit": 4132560,
+    "scope": "Locally retained provider response IDs, deduplicated; not a full account bill"
+  },
+  "physical_other_computer_acceptance": "not_performed"
+}

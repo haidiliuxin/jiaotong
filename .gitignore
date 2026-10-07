@@ -1,0 +1,34 @@
+# Python and operating-system generated files
+__pycache__/
+*.py[cod]
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Recreated from the versioned TranStar runtime on first agent execution.
+智能体实验/runtime/
+智能体实验/runtime.lock
+智能体实验/probes/*/runtime/
+智能体实验/jobs/*/runtime/
+智能体实验/clean_environment/runtime/
+智能体实验/clean_environment/runtime.lock
+智能体实验/study_archive_checks/
+.venv/
+
+工作材料/提交排版核验/
+工作材料/便携构建/
+工作材料/便携解压验收/
+tmp/pdfs/
+
+# Playwright's duplicate temporary recording; the named, hashed video is published.
+成果/演示/20260922_v4_completed_review/page@*.webm
+
+# Delivery archives are versioned; extracted native runs and local settings are not.
+智能体实验/jobs/
+智能体实验/programmes/
+智能体实验/dispatches/
+智能体实验/planning_attempts/
+*.local.json
+.env
+.env.*
+智能体实验/startup/

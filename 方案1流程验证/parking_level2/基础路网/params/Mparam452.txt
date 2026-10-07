@@ -1,0 +1,5 @@
+Mparam452.txt—用于交通分配的机动车货运OD矩阵分析
+
+OD矩阵内容	输入矩阵名称	时段系数	载货吨数	PCU系数	输出矩阵名称
+大中货车OD矩阵	DistribTruck.tsd	0.05	10	2	ODTruck.tsd
+小型货车OD矩阵	DistribTruCar.tsd	0.1	2	1	ODTruCar.tsd

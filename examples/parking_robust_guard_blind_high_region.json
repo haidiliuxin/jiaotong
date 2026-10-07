@@ -1,0 +1,1 @@
+{"demand_factors":[0.9,1.0,1.1],"links":[[1179,1180],[1180,1181],[1181,1180]],"max_feedback":2,"max_links":3,"max_new_network_oversaturated_km":0.1,"max_runs":11,"recommendation_version":"tolerance-v2","repeat_baseline":true,"request":"历史登记治理范围未覆盖的高密度新区域：三需求主动稳健停车与全网毛新增过饱和安全门槛","scenario":"parking","search_mode":"robust"}

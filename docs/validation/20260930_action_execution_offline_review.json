@@ -1,0 +1,437 @@
+{
+  "created": "2026-09-30T03:57:30.627206+00:00",
+  "protocol": "action-execution-v1",
+  "source_commit_before_changes": "2df76b7d",
+  "cases": [
+    {
+      "ordinal": 1,
+      "kind": "parking",
+      "source_time": "2026-09-30T03:07:09.759714+00:00",
+      "selected_action": "parking_a6b29e4dfd15",
+      "definition": {
+        "kind": "parking_candidate",
+        "demand_factors": [
+          1.0
+        ],
+        "parking_levels": [
+          1
+        ],
+        "native_scenes": 1,
+        "next_model_decision": "after_candidate_results"
+      },
+      "native_budget": {
+        "current_study": {
+          "unit": "native_scene",
+          "limit": 3,
+          "used": 1,
+          "completed": 1,
+          "remaining": 2
+        },
+        "programme_allocated": {
+          "unit": "native_scene",
+          "limit": 7,
+          "used": 1,
+          "completed": 1,
+          "remaining": 6
+        }
+      },
+      "generated_description": "在所选方向执行停车1级，需求系数1，共1个治理场景；结果返回后再由模型选择下一步。",
+      "old_input_bytes": 32081,
+      "new_input_bytes": 33940,
+      "shared_fields_saved_bytes": 1310,
+      "old_reply_converted": false
+    },
+    {
+      "ordinal": 2,
+      "kind": "parking",
+      "source_time": "2026-09-30T03:09:33.364417+00:00",
+      "selected_action": "parking_58ff01cdf4e9",
+      "definition": {
+        "kind": "parking_candidate",
+        "demand_factors": [
+          1.0
+        ],
+        "parking_levels": [
+          2
+        ],
+        "native_scenes": 1,
+        "next_model_decision": "after_candidate_results"
+      },
+      "native_budget": {
+        "current_study": {
+          "unit": "native_scene",
+          "limit": 3,
+          "used": 2,
+          "completed": 2,
+          "remaining": 1
+        },
+        "programme_allocated": {
+          "unit": "native_scene",
+          "limit": 7,
+          "used": 2,
+          "completed": 2,
+          "remaining": 5
+        }
+      },
+      "generated_description": "在所选方向执行停车2级，需求系数1，共1个治理场景；结果返回后再由模型选择下一步。",
+      "old_input_bytes": 39603,
+      "new_input_bytes": 41389,
+      "shared_fields_saved_bytes": 1221,
+      "old_reply_converted": false
+    },
+    {
+      "ordinal": 3,
+      "kind": "parking",
+      "source_time": "2026-09-30T03:11:52.371165+00:00",
+      "selected_action": "study_2",
+      "definition": {
+        "kind": "start_study",
+        "scenario": "oneway",
+        "independent_baseline": true,
+        "demand_factors": [
+          1.0
+        ],
+        "native_scene_limit": 4,
+        "sequence": [
+          {
+            "name": "baseline",
+            "policy": "无治理基准",
+            "demand_factor": 1.0,
+            "parking_level": null
+          },
+          {
+            "name": "S1_parking",
+            "policy": "停车",
+            "demand_factor": 1.0,
+            "parking_level": 2
+          },
+          {
+            "name": "S2_oneway",
+            "policy": "单向",
+            "demand_factor": 1.0,
+            "parking_level": null
+          },
+          {
+            "name": "S3_combined",
+            "policy": "停车＋单向",
+            "demand_factor": 1.0,
+            "parking_level": 2
+          }
+        ],
+        "target_selection": "model_after_fresh_baseline"
+      },
+      "native_budget": {
+        "current_study": {
+          "unit": "native_scene",
+          "limit": 3,
+          "used": 3,
+          "completed": 3,
+          "remaining": 0
+        },
+        "programme_allocated": {
+          "unit": "native_scene",
+          "limit": 7,
+          "used": 3,
+          "completed": 3,
+          "remaining": 4
+        }
+      },
+      "generated_description": "下一组先建立独立新基准，再由模型选择合法方向。每个需求依次计算停车2级、单向、停车2级＋单向；本动作安排共4个原生场景（含所需基准／复跑），全部返回后由模型复核。尚无这些新场景的效果。",
+      "old_input_bytes": 39156,
+      "new_input_bytes": 40255,
+      "shared_fields_saved_bytes": 0,
+      "old_reply_converted": false
+    },
+    {
+      "ordinal": 4,
+      "kind": "oneway_target",
+      "source_time": "2026-09-30T03:14:09.632098+00:00",
+      "selected_action": "oneway_3237_3236",
+      "definition": {
+        "kind": "factorial_target",
+        "scenario": "oneway",
+        "closed_direction": [
+          3237,
+          3236
+        ],
+        "retained_direction": [
+          3236,
+          3237
+        ],
+        "sequence": [
+          {
+            "name": "S1_parking",
+            "policy": "停车",
+            "demand_factor": 1.0,
+            "parking_level": 2
+          },
+          {
+            "name": "S2_oneway",
+            "policy": "单向",
+            "demand_factor": 1.0,
+            "parking_level": null
+          },
+          {
+            "name": "S3_combined",
+            "policy": "停车＋单向",
+            "demand_factor": 1.0,
+            "parking_level": 2
+          }
+        ],
+        "next_model_decision": "after_complete_matched_grid"
+      },
+      "native_budget": {
+        "current_study": {
+          "unit": "native_scene",
+          "limit": 4,
+          "used": 1,
+          "completed": 1,
+          "remaining": 3
+        },
+        "programme_allocated": {
+          "unit": "native_scene",
+          "limit": 7,
+          "used": 4,
+          "completed": 4,
+          "remaining": 3
+        }
+      },
+      "generated_description": "禁行3237→3236，保留3236→3237；每个需求依次计算停车2级、单向、停车2级＋单向；本动作安排共3个原生场景（含所需基准／复跑），全部返回后由模型复核。尚无这些新场景的效果。",
+      "old_input_bytes": 26190,
+      "new_input_bytes": 27209,
+      "shared_fields_saved_bytes": 0,
+      "old_reply_converted": false
+    }
+  ],
+  "old_protocol_replay": [
+    {
+      "ordinal": 1,
+      "original_status": "accepted",
+      "replay_accepted": true,
+      "code": null
+    },
+    {
+      "ordinal": 2,
+      "original_status": "accepted",
+      "replay_accepted": true,
+      "code": null
+    },
+    {
+      "ordinal": 3,
+      "original_status": "accepted",
+      "replay_accepted": true,
+      "code": null
+    },
+    {
+      "ordinal": 4,
+      "original_status": "rejected",
+      "replay_accepted": false,
+      "code": "direction_reversed"
+    }
+  ],
+  "source": {
+    "dispatch": "智能体实验\\mixed_named_questions_full_20260930_01\\dispatches\\20260930_110453_b91dea.json",
+    "sha256": "dfba3b25a46a7e22846098cc7077c2d0e858b1ae91fdee95ae5bfe5437ad96de",
+    "manifest": "工作材料\\源码联调证据\\20260930_named_questions_full_01\\original_files_manifest.json",
+    "manifest_sha256": "e4335e3e596212593ec0fe4894481870b1f05f41e524a581367ba5e65eeea23a",
+    "original_files_unchanged": 3718
+  },
+  "checked_runtime_locks": [
+    {
+      "path": "智能体实验\\runtime.lock",
+      "free": true,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+      "bytes_unchanged": true
+    },
+    {
+      "path": "智能体实验\\mixed_limit7_full_20260930_01\\runtime.lock",
+      "free": true,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+      "bytes_unchanged": true
+    },
+    {
+      "path": "工作材料\\便携异目录检查\\20260930_v2_RC13\\智能体实验\\oneway_scope_live_20260930_01\\runtime.lock",
+      "free": true,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+      "bytes_unchanged": true
+    },
+    {
+      "path": "工作材料\\便携异目录检查\\20260930_v2_RC14\\智能体实验\\mixed_complete_live_20260930_01\\runtime.lock",
+      "free": true,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+      "bytes_unchanged": true
+    },
+    {
+      "path": "智能体实验\\mixed_named_questions_full_20260930_01\\runtime.lock",
+      "free": true,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+      "bytes_unchanged": true
+    }
+  ],
+  "new_model_calls": 0,
+  "new_native_scenes": 0,
+  "unit": "UTF-8 JSON bytes, not provider billing tokens",
+  "usage": {
+    "previous_ledger": "docs\\validation\\20260930_named_questions_live_review.json",
+    "previous_ledger_sha256": "a4607683325939a5b90af87d51609fb831e7bf1c278eab38db86ae9c75cb9fa3",
+    "project_retained_cumulative_requests": 161,
+    "project_retained_cumulative_known_tokens": 1551215,
+    "authorized_max_requests": 684,
+    "authorized_max_known_tokens": 4132560,
+    "not_full_account_bill": true
+  },
+  "offline_checks": {
+    "python_tests": 702,
+    "new_tests": 9,
+    "node_groups": 4,
+    "python_log": "tmp\\20260930_action_execution_python_tests_final.log",
+    "python_log_sha256": "d0e5ba28d2a0c95c55127352acf873954c0e065320ddc5e8158fbfbc5d90d9d9",
+    "controller_grid_matches_executor": true,
+    "synthetic_transports": [
+      "chat_completions",
+      "responses"
+    ],
+    "browser_visual_check": "not_verified: file scheme refused by browser security policy; no workaround",
+    "html_fixture": "tmp/20260930_action_execution_preview.html",
+    "html_fixture_sha256": "9d5a6d072853f12a2e8e864873018ba7b3721520151df024f326d497bf2e659e"
+  },
+  "frozen_reply_preflight": {
+    "source": "tmp\\20260930_v14_frozen_reply_preflight.json",
+    "sha256": "ca83479e0231968a6a925274a16f62397e64f34fe2a08e3890b8eb931c6d776f",
+    "result": {
+      "cases": [
+        {
+          "case": "rc14_first_choice",
+          "original_protocol": "measured-conclusion-v13",
+          "original_permissions_verified": true,
+          "correction_chain_verified_before_standalone_shadow": false,
+          "current_protocol": "measured-conclusion-v14",
+          "accepted": true,
+          "expected": true,
+          "validation_code": null,
+          "issues": []
+        },
+        {
+          "case": "rc14_region_state",
+          "original_protocol": "measured-conclusion-v13",
+          "original_permissions_verified": true,
+          "correction_chain_verified_before_standalone_shadow": false,
+          "current_protocol": "measured-conclusion-v14",
+          "accepted": true,
+          "expected": true,
+          "validation_code": null,
+          "issues": []
+        },
+        {
+          "case": "rc13_direction_choice",
+          "original_protocol": "measured-conclusion-v12",
+          "original_permissions_verified": true,
+          "correction_chain_verified_before_standalone_shadow": false,
+          "current_protocol": "measured-conclusion-v14",
+          "accepted": true,
+          "expected": true,
+          "validation_code": null,
+          "issues": []
+        },
+        {
+          "case": "rc13_zero_claim",
+          "original_protocol": "measured-conclusion-v12",
+          "original_permissions_verified": true,
+          "correction_chain_verified_before_standalone_shadow": false,
+          "current_protocol": "measured-conclusion-v14",
+          "accepted": false,
+          "expected": false,
+          "validation_code": "measured_conclusion",
+          "issues": [
+            {
+              "code": "measured_metric_assertion",
+              "field": "hypothesis_updates:H3",
+              "refs": [
+                "20260930_085809_7c79a1:S1_parking"
+              ],
+              "quote": "邻区耗时增幅与毛新增过饱和均为0",
+              "metric": "neighbor_time_change_pct",
+              "claimed_value": 0.0,
+              "claimed_unit": "%",
+              "observed_value": 1.4973412265639752e-05,
+              "unit": "%",
+              "message": "S1_parking 的邻区耗时变化实测为 +1.4973412e-05%，与说明不符；并列指标须分别核对，极小非零值不能直接写成零。"
+            }
+          ]
+        },
+        {
+          "case": "mixed_second_choice",
+          "original_protocol": "measured-conclusion-v11",
+          "original_permissions_verified": true,
+          "correction_chain_verified_before_standalone_shadow": false,
+          "current_protocol": "measured-conclusion-v14",
+          "accepted": true,
+          "expected": true,
+          "validation_code": null,
+          "issues": []
+        },
+        {
+          "case": "mixed_corrected_handoff",
+          "original_protocol": "measured-conclusion-v11",
+          "original_permissions_verified": true,
+          "correction_chain_verified_before_standalone_shadow": true,
+          "current_protocol": "measured-conclusion-v14",
+          "accepted": true,
+          "expected": true,
+          "validation_code": null,
+          "issues": []
+        },
+        {
+          "case": "mixed_first_handoff_negation",
+          "original_protocol": "measured-conclusion-v11",
+          "original_permissions_verified": true,
+          "correction_chain_verified_before_standalone_shadow": false,
+          "current_protocol": "measured-conclusion-v14",
+          "accepted": true,
+          "expected": true,
+          "validation_code": null,
+          "issues": []
+        },
+        {
+          "case": "two_demand_final_review",
+          "original_protocol": "measured-conclusion-v9",
+          "original_permissions_verified": true,
+          "correction_chain_verified_before_standalone_shadow": false,
+          "current_protocol": "measured-conclusion-v14",
+          "accepted": true,
+          "expected": true,
+          "validation_code": null,
+          "issues": []
+        }
+      ],
+      "source_files": [
+        {
+          "path": "工作材料\\便携异目录检查\\20260930_v2_RC14\\智能体实验\\mixed_complete_live_20260930_01\\dispatches\\20260930_093644_f3962e.json",
+          "sha256": "5eec554ad79a3759c1cf5f66b6e3bd545bf3fc52677fecc1c060567ea52ea4ed"
+        },
+        {
+          "path": "工作材料\\便携异目录检查\\20260930_v2_RC13\\智能体实验\\oneway_scope_live_20260930_01\\dispatches\\20260930_085809_7c79a1.json",
+          "sha256": "6138aeab14085ce1349c9bedf029e62ae2dbf48a6846f5093422fd66a78a32d7"
+        },
+        {
+          "path": "智能体实验\\mixed_limit7_full_20260930_01\\dispatches\\20260930_080603_c82f1e.json",
+          "sha256": "63a321bc5b439e5db6d45aa8a92058b8e23194b801e78689abb3712b4da5f041"
+        },
+        {
+          "path": "智能体实验\\v9_final_model_probe_20260930_01\\probe.json",
+          "sha256": "9f9c1355fbf26b242c5947e441a760604366c6d9d08aeb6c7d1f352c1d94bcb9"
+        }
+      ],
+      "originals_unchanged": true,
+      "new_model_calls": 0,
+      "new_native_scenes": 0
+    }
+  },
+  "pending": [
+    "complete_new_mixed_native_acceptance",
+    "independent_semantic_review",
+    "browser_visual_verification",
+    "final_portable",
+    "physical_other_machine"
+  ]
+}

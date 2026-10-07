@@ -1,0 +1,31 @@
+{
+  "version": "professional-acceptance-v1",
+  "frozen_date": "2026-10-07",
+  "boundary": "实现前冻结的扩展验收集；不参与排名权重调优。不等于真实城市预测精度或统计泛化准确率。",
+  "retrieval_cases": [
+    {"id":"q01","request":"环洲路暂不研究单向组织，先分析停车影响类别","topics":["parking"]},
+    {"id":"q02","request":"七东线不涉及施工占道，研究停车","topics":["parking"]},
+    {"id":"q03","request":"长江村路排除停车和禁转，采用单向","topics":["oneway"]},
+    {"id":"q04","request":"公交优先暂不安排，信号配时先研究","topics":["signal"]},
+    {"id":"q05","request":"不需要错峰和施工，但要停车治理","topics":["parking"]},
+    {"id":"q06","request":"停车治理需要，单向无需实施","topics":["parking"]},
+    {"id":"q07","request":"并非不采用单向组织，只是不做施工","topics":["oneway"]},
+    {"id":"q08","request":"不考虑施工，转而研究公交优先","topics":["transit"]},
+    {"id":"q09","request":"不要施工占道，需研究信号配时","topics":["signal"]},
+    {"id":"q10","request":"单向和禁转都不实施，只安排停车治理","topics":["parking"]},
+    {"id":"q11","request":"单向不采用，禁转也不采用，停车可以研究","topics":["parking"]},
+    {"id":"q12","request":"不安排停车，而是单向组织","topics":["oneway"]},
+    {"id":"q13","request":"停车类别1与2的强弱关系","scenario":"parking","expected_hit":"parking.categories"},
+    {"id":"q14","request":"全路网速度是不是直接取平均车速","scenario":"parking","expected_hit":"metrics.boundary"},
+    {"id":"q15","request":"改变小汽车小时OD系数是否等于全部车型需求变化","scenario":"parking","expected_hit":"demand.sensitivity"},
+    {"id":"q16","request":"单向管理需要保留反向和公交线路边","scenario":"oneway","expected_hit":"oneway.vehicle1"},
+    {"id":"q17","request":"单向与停车组合怎样在每个需求做完整对照","scenario":"oneway","expected_hit":"oneway.full_grid"},
+    {"id":"q18","request":"施工损失和治理收益应分别比较哪个基准","scenario":"construction","expected_hit":"construction.gate"},
+    {"id":"q19","request":"公交优先的车辆速度能否代表乘客收益","scenario":"transit","expected_hit":"transit.gate"},
+    {"id":"q20","request":"信号相位冲突与宏观排队估计的证据边界","scenario":"signal","expected_hit":"signal.gate"},
+    {"id":"q21","request":"分时错峰是否要保证整个窗口总需求守恒","scenario":"staggered","expected_hit":"staggered.gate"},
+    {"id":"q22","request":"停车离散类别能否按比例推算容量改善","scenario":"parking","expected_hit":"parking.categories"},
+    {"id":"q23","request":"流量qL除以qL/v汇总速度而非算术平均","scenario":"parking","expected_hit":"metrics.boundary"},
+    {"id":"q24","request":"单向封路后核心流量减少能否单独推荐","scenario":"oneway","expected_hit":"oneway.full_grid"}
+  ]
+}

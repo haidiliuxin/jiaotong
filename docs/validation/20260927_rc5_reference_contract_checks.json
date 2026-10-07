@@ -1,0 +1,55 @@
+{
+  "kind": "offline_hypothesis_reference_inspection",
+  "schema": "measured-findings-v1",
+  "original_job": "20260927_224930_69ff12",
+  "original_status": "incomplete",
+  "original_sha256": "c2b4b1c95cff7b212cd1fe8c93aeed223d76df4e05cc41e28126d0777bffb8ad",
+  "checks": [
+    {
+      "field": "hypothesis_updates",
+      "allowed_measured_ids": [
+        "factorial",
+        "response",
+        "benefit",
+        "combination"
+      ],
+      "gap_ids_retained_in_context": [
+        "robustness"
+      ],
+      "forbidden_original_references": [],
+      "original_reply_check": "structurally_valid"
+    },
+    {
+      "field": "programme_updates",
+      "allowed_measured_ids": [
+        "study_1.benefit",
+        "study_1.tradeoff",
+        "study_2.factorial",
+        "study_2.response",
+        "study_2.benefit",
+        "study_2.combination"
+      ],
+      "gap_ids_retained_in_context": [
+        "study_1.strength",
+        "study_1.regions",
+        "study_1.robustness",
+        "study_2.robustness"
+      ],
+      "forbidden_original_references": [
+        {
+          "hypothesis_id": "H1",
+          "finding_ids": [
+            "study_1.strength",
+            "study_1.regions"
+          ]
+        }
+      ],
+      "original_reply_check": "unmeasured_finding"
+    }
+  ],
+  "original_bytes_unchanged": true,
+  "corrected_reply_generated": false,
+  "paid_calls": 0,
+  "new_native_scenes": 0,
+  "meaning": "只核查新工具的已测引用列表；未测缺口仍保留，原提议仍被拒。不是模型修正或完整真实验收。"
+}

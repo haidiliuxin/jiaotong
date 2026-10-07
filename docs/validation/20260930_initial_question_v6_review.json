@@ -1,0 +1,330 @@
+{
+  "created": "2026-09-30T02:33:32.527844+00:00",
+  "kind": "typed_initial_questions_v6_stage_review",
+  "source_commit_before_fix": "0cbffe9d0a511891ad5b1856dc279fd7a008d5b5",
+  "original_request": "长江村路停车拥堵。请至少比较两个不同停车备选方案，并检验单向组织及其组合的独立效果。最多7次仿真，不复跑基准；保护邻区。",
+  "original_status": "validation_failed",
+  "source_attempt": "智能体实验\\mixed_v14_complete_20260930_01\\planning_attempts\\preview_a40340d283974785a3c3772c1e47a41e.json",
+  "initial_plan": [
+    {
+      "hypothesis": "至少存在一个停车候选能降低长江村路核心范围总耗时。当前停车干扰是拥堵直接成因之一。需要新基准后依据实测选出候选。",
+      "evidence_needed": "对比同一需求新基准，实测至少两个停车候选，观察是否存在任一候选使冻结核心范围总耗时低于同需求无治理基准。",
+      "criterion": {
+        "policies": "parking",
+        "quantifier": "any",
+        "studies": [
+          1
+        ],
+        "test": "core_time_decrease"
+      }
+    },
+    {
+      "hypothesis": "单向组织或单向＋停车组合能带来独立于停车方案的额外核心耗时降低。",
+      "evidence_needed": "在同需求新基准下分别实测单向单项与单向＋停车组合，观察是否存在任一交通组织/组合方案使核心总耗时低于仅停车对照。",
+      "criterion": {
+        "policies": "control_and_combined",
+        "quantifier": "any",
+        "studies": [
+          2
+        ],
+        "test": "core_time_decrease"
+      }
+    },
+    {
+      "hypothesis": "所有停车候选及单向/组合方案均不造成超出原定门槛的邻区代价。",
+      "evidence_needed": "各组在各自新基准下核查邻区耗时增幅及毛新增过饱和不超过原定门槛；检查的是核心之外的邻区子区。",
+      "criterion": {
+        "policies": "all",
+        "quantifier": "all",
+        "studies": [
+          1,
+          2
+        ],
+        "test": "neighbor_limits"
+      }
+    },
+    {
+      "hypothesis": "停车方案与单向组合方案均通过全部原定约束与原生态响应检查。",
+      "evidence_needed": "各组全部原定约束与原生控制响应检查均通过，方具备推荐资格。",
+      "criterion": {
+        "policies": "all",
+        "quantifier": "all",
+        "studies": [
+          1,
+          2
+        ],
+        "test": "admissible"
+      }
+    }
+  ],
+  "original_protocol": "bounded-question-wording-v5",
+  "original_rejection": [
+    {
+      "hypothesis_id": "H1",
+      "message": "假设与事前判据冲突：批次指标不能直接检验排队、成因、风险或效益上限；保留unavailable或另列明确的可测问题，不能替换原命题。",
+      "allowed_policies": []
+    }
+  ],
+  "new_protocol": "bounded-question-wording-v6",
+  "new_readonly_rejection": [
+    {
+      "hypothesis_id": "H1",
+      "message": "假设与事前判据冲突：批次指标不能直接检验排队、成因、风险或效益上限；保留unavailable或另列明确的可测问题，不能替换原命题。",
+      "allowed_policies": []
+    },
+    {
+      "hypothesis_id": "H2",
+      "message": "假设与事前判据冲突：所写核心耗时比较的参照对象与冻结判据不同：无治理基准、仅停车和两个单项不能互换。",
+      "allowed_policies": []
+    }
+  ],
+  "question_protocol": "typed-initial-questions-v1",
+  "old_check_reproduced_exactly": true,
+  "original_questions_and_request_unchanged": true,
+  "original_task_resumed": false,
+  "new_native_scenes": 0,
+  "source_files": {
+    "root": "智能体实验\\mixed_v14_complete_20260930_01",
+    "count": 3,
+    "files": {
+      "launch_scope.json": {
+        "bytes": 975,
+        "sha256": "0aa7fca61d2635f6395a664cbe63ab342e9845cf2b9142c5fa71dba4c0c49883"
+      },
+      "planning_attempts/preview_a40340d283974785a3c3772c1e47a41e.json": {
+        "bytes": 11339,
+        "sha256": "5396446b8b46392cb01e9f7dea71b62541b768871f38bbf0fcd9a6350fe8821a"
+      },
+      "runtime.stdout.log": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    }
+  },
+  "usage": {
+    "responses": [
+      {
+        "response_id": "chatcmpl-6abc7055e92062510cc5db59",
+        "input_tokens": 6816,
+        "output_tokens": 930,
+        "tokens": 7746
+      }
+    ],
+    "baseline_12x": {
+      "path": "docs\\validation\\20260928_api_budget_12x.json",
+      "sha256": "a84b35cc04a8f54b29819bbc35678f9ff8c92301da583759c02dd55bc660ed4d"
+    },
+    "previous_ledger": {
+      "path": "docs\\validation\\20260930_rc14_parking_source_review.json",
+      "sha256": "e2c64304cdc76141c0aad82d21082eccbfa761fc28ff363970d581422f95f2f1"
+    },
+    "prior_requests": 153,
+    "prior_known_tokens": 1467746,
+    "new_unique_requests": 1,
+    "new_known_tokens": 7746,
+    "project_retained_cumulative_requests": 154,
+    "project_retained_cumulative_known_tokens": 1475492,
+    "authorized_max_requests": 684,
+    "authorized_max_known_tokens": 4132560,
+    "new_response_ids_absent_from_prior_validation_indexes": true,
+    "prior_indexes_checked": 193,
+    "not_full_account_bill": true
+  },
+  "offline_checks": {
+    "python_tests": 677,
+    "log": "tmp\\20260930_initial_question_v6_tests.log",
+    "log_sha256": "a591518f566276bf70ff26a42907970c2d2906a55de90dca599f964b0bca14f2",
+    "final_input_dedup_targeted_tests": 8,
+    "node_groups": [
+      {
+        "test": "test_map_view.cjs",
+        "passed": true,
+        "stdout": "Map default selection, paired status colors and signed changes passed\nNear-saturation labels preserve the measured side of the V/C=1 boundary\nMap caption matches selected metric and preserves diagnosis/repeat limitations\nExecuted motor closures are candidate-only overlays; missing or failed response remains explicit\nLargest measured improvement and worsening are directly locatable"
+      },
+      {
+        "test": "test_dispatch_ui.cjs",
+        "passed": true,
+        "stdout": "Failed new planning stays visible across polling and delayed map loading; explicit history selection restores old result without a model request\nInitial correction cost includes failed and unknown-usage requests\nSelection observation links switch to the cited job/run and focus its directions without a model call"
+      },
+      {
+        "test": "test_planner_view.cjs",
+        "passed": true,
+        "stdout": "Planner rendering, negative evidence and escaping passed\nCompletion requirements and measured strength comparison passed\nRegional observations, rejection evidence and map targets passed\nCross-area comparison and actual selected map run passed\nEvidence-derived findings and separately attributed model hypothesis review passed\nInitial attempt history preserves failures, unknown cost and escaped text\nWhole programme review, factorial feedback and incomplete status passed\nPersistent whole-programme status never confuses a finished group with final completion\nRejected draft remains inspectable without an execution action or success label\nOne-way target choices display real baseline attributes without claiming untested benefit\nExplicit blockers and bounded interface diagnostics remain separate from successful execution\nExecution scope and quoted clarification grounds are visible and escaped\nBounded initial correction keeps original failure visible and never implies native success\nMeasured costs remain visible despite constraint eligibility and conflicting model conclusions\nGroup completion and final-turn labels agree with derived conclusion conflicts without hiding the original reply\nStudy routing explains budget-feasible choices while retaining deferred required groups\nAccepted pending actions, failed execution, returned observations and safe rejection excerpts remain distinct\nMissing rejected content is not displayed as a proven factual contradiction\nInitial budget repair exposes costs, different engines, original rejection and bounded correction\nBounded final correction keeps both attempts, usage and incomplete states visible\nNative execution and pending model decisions have distinct group status labels\nLocal handoff recovery shows the actual repair stage, frozen next group, reserved budget and original conflict\nExtra component drafts show the user quote, separate baselines and bounded revision permission\nRoad-specific observation-only permissions are visible without banning other studies\nMeasured action labels and tiny positive costs remain visible next to conflicting model text\nIndependent study comparisons preserve actual levels, rejection and tiny measured costs\nScoped handoff keeps historical execution separate from a disputed review\nOperational questions, preserved original wording and explicit semantic limits render separately; legacy headings stay unchanged\nIndependent-judgment notes remain attributable and escaped without implying a second condition passed; legacy wording stays unchanged\nCriterion conflicts, exact rejected policy parameters and both pre-execution requests remain visible and escaped\nActual field selections and compiled proposal origin are distinct; rejected patches do not imply application\nQuantifier corrections retain original-meaning and compiled-origin labels; nested fields remain escaped and failures visible\nRead-only audit flags the specific hypothesis and final turn while preserving the original stop reason"
+      },
+      {
+        "test": "test_choice_view.cjs",
+        "passed": true,
+        "stdout": "Selection view: original units/values, map references, negative feedback, alternatives, escaping and legacy boundaries passed"
+      }
+    ],
+    "frozen_reply_preflight": {
+      "cases": [
+        {
+          "case": "rc14_first_choice",
+          "original_protocol": "measured-conclusion-v13",
+          "original_permissions_verified": true,
+          "correction_chain_verified_before_standalone_shadow": false,
+          "current_protocol": "measured-conclusion-v14",
+          "accepted": true,
+          "expected": true,
+          "validation_code": null,
+          "issues": []
+        },
+        {
+          "case": "rc14_region_state",
+          "original_protocol": "measured-conclusion-v13",
+          "original_permissions_verified": true,
+          "correction_chain_verified_before_standalone_shadow": false,
+          "current_protocol": "measured-conclusion-v14",
+          "accepted": true,
+          "expected": true,
+          "validation_code": null,
+          "issues": []
+        },
+        {
+          "case": "rc13_direction_choice",
+          "original_protocol": "measured-conclusion-v12",
+          "original_permissions_verified": true,
+          "correction_chain_verified_before_standalone_shadow": false,
+          "current_protocol": "measured-conclusion-v14",
+          "accepted": true,
+          "expected": true,
+          "validation_code": null,
+          "issues": []
+        },
+        {
+          "case": "rc13_zero_claim",
+          "original_protocol": "measured-conclusion-v12",
+          "original_permissions_verified": true,
+          "correction_chain_verified_before_standalone_shadow": false,
+          "current_protocol": "measured-conclusion-v14",
+          "accepted": false,
+          "expected": false,
+          "validation_code": "measured_conclusion",
+          "issues": [
+            {
+              "code": "measured_metric_assertion",
+              "field": "hypothesis_updates:H3",
+              "refs": [
+                "20260930_085809_7c79a1:S1_parking"
+              ],
+              "quote": "邻区耗时增幅与毛新增过饱和均为0",
+              "metric": "neighbor_time_change_pct",
+              "claimed_value": 0.0,
+              "claimed_unit": "%",
+              "observed_value": 1.4973412265639752e-05,
+              "unit": "%",
+              "message": "S1_parking 的邻区耗时变化实测为 +1.4973412e-05%，与说明不符；并列指标须分别核对，极小非零值不能直接写成零。"
+            }
+          ]
+        },
+        {
+          "case": "mixed_second_choice",
+          "original_protocol": "measured-conclusion-v11",
+          "original_permissions_verified": true,
+          "correction_chain_verified_before_standalone_shadow": false,
+          "current_protocol": "measured-conclusion-v14",
+          "accepted": true,
+          "expected": true,
+          "validation_code": null,
+          "issues": []
+        },
+        {
+          "case": "mixed_corrected_handoff",
+          "original_protocol": "measured-conclusion-v11",
+          "original_permissions_verified": true,
+          "correction_chain_verified_before_standalone_shadow": true,
+          "current_protocol": "measured-conclusion-v14",
+          "accepted": true,
+          "expected": true,
+          "validation_code": null,
+          "issues": []
+        },
+        {
+          "case": "mixed_first_handoff_negation",
+          "original_protocol": "measured-conclusion-v11",
+          "original_permissions_verified": true,
+          "correction_chain_verified_before_standalone_shadow": false,
+          "current_protocol": "measured-conclusion-v14",
+          "accepted": true,
+          "expected": true,
+          "validation_code": null,
+          "issues": []
+        },
+        {
+          "case": "two_demand_final_review",
+          "original_protocol": "measured-conclusion-v9",
+          "original_permissions_verified": true,
+          "correction_chain_verified_before_standalone_shadow": false,
+          "current_protocol": "measured-conclusion-v14",
+          "accepted": true,
+          "expected": true,
+          "validation_code": null,
+          "issues": []
+        }
+      ],
+      "source_files": [
+        {
+          "path": "工作材料\\便携异目录检查\\20260930_v2_RC14\\智能体实验\\mixed_complete_live_20260930_01\\dispatches\\20260930_093644_f3962e.json",
+          "sha256": "5eec554ad79a3759c1cf5f66b6e3bd545bf3fc52677fecc1c060567ea52ea4ed"
+        },
+        {
+          "path": "工作材料\\便携异目录检查\\20260930_v2_RC13\\智能体实验\\oneway_scope_live_20260930_01\\dispatches\\20260930_085809_7c79a1.json",
+          "sha256": "6138aeab14085ce1349c9bedf029e62ae2dbf48a6846f5093422fd66a78a32d7"
+        },
+        {
+          "path": "智能体实验\\mixed_limit7_full_20260930_01\\dispatches\\20260930_080603_c82f1e.json",
+          "sha256": "63a321bc5b439e5db6d45aa8a92058b8e23194b801e78689abb3712b4da5f041"
+        },
+        {
+          "path": "智能体实验\\v9_final_model_probe_20260930_01\\probe.json",
+          "sha256": "9f9c1355fbf26b242c5947e441a760604366c6d9d08aeb6c7d1f352c1d94bcb9"
+        }
+      ],
+      "originals_unchanged": true,
+      "new_model_calls": 0,
+      "new_native_scenes": 0
+    },
+    "prompt_size": {
+      "before_utf8_json_bytes": 27436,
+      "after_utf8_json_bytes": 27588,
+      "difference_utf8_json_bytes": 152,
+      "scope": "instructions/messages/tools JSON, not billed tokens",
+      "actual_old_provider_request_bytes": 27858
+    }
+  },
+  "end_state": {
+    "checked_runtime_locks": [
+      {
+        "path": "智能体实验\\runtime.lock",
+        "free": true,
+        "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+        "bytes_unchanged": true
+      },
+      {
+        "path": "智能体实验\\mixed_limit7_full_20260930_01\\runtime.lock",
+        "free": true,
+        "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+        "bytes_unchanged": true
+      },
+      {
+        "path": "工作材料\\便携异目录检查\\20260930_v2_RC13\\智能体实验\\oneway_scope_live_20260930_01\\runtime.lock",
+        "free": true,
+        "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+        "bytes_unchanged": true
+      },
+      {
+        "path": "工作材料\\便携异目录检查\\20260930_v2_RC14\\智能体实验\\mixed_complete_live_20260930_01\\runtime.lock",
+        "free": true,
+        "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+        "bytes_unchanged": true
+      }
+    ]
+  },
+  "pending": [
+    "new_v6_initial_plan_real_validation",
+    "v14_complete_mixed_model_native_task",
+    "final_portable_including_v14_and_v6",
+    "physical_other_machine_acceptance"
+  ]
+}

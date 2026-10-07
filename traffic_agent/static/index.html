@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#ffffff"><title>路策 · 交通规划工作台</title><link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="/dispatch.css"><script src="/map_view.js" defer></script><script src="/map.js" defer></script><script src="/app.js" defer></script><script src="/choice_view.js" defer></script>
+<script src="/planner_view.js" defer></script><script src="/dispatch.js" defer></script></head>
+<body>
+<header class="masthead">
+<div class="brand"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M5 31 17 7h8L13 31zM22 31l6-12h7l-6 12z"/></svg><div><strong>路策<span>交通规划工作台</span></strong></div></div>
+<div class="header-context"><span class="indicator"></span> <span id="dataset-context">案例路网</span> <i></i> <span id="engine-context">TRANSTAR ENGINE</span></div>
+<div class="header-actions"><button id="llm-settings-open" class="quiet">API 设置</button><button id="archive-open" class="quiet">实验档案</button><button id="presentation" class="quiet" aria-pressed="false">专注地图</button><time id="clock"></time></div>
+</header>
+<main class="command-center">
+<section class="map-stage" aria-label="交通方案地图">
+<div class="map-coordinate"><span id="dataset-coordinate">CASE NETWORK</span> <span id="map-mode-note">案例几何 · 等待本次仿真</span></div>
+<div id="map-content" hidden><div class="map-panes" data-mode="after">
+<figure class="baseline-map"><figcaption>基准 <span id="map-before-name"></span></figcaption><canvas id="map-before" tabindex="0" aria-label="基准路网地图，方向键平移，加减键缩放"></canvas></figure>
+<figure class="policy-map"><figcaption><span id="map-after-label">方案</span> <span id="map-after-name"></span></figcaption><canvas id="map-after" tabindex="0" aria-label="方案路网地图，方向键平移，加减键缩放"></canvas></figure>
+</div></div>
+<div class="map-center-title"><h1 id="dataset-title">案例路网</h1><span id="map-condition" class="map-chip">等待实验数据</span></div>
+<div class="map-toolbar glass"><div class="segmented" role="group" aria-label="地图显示模式"><button data-view="after" aria-pressed="true">方案</button><button data-view="before" aria-pressed="false">基准</button><button data-view="split" aria-pressed="false">对照</button></div><label class="sr-only" for="map-metric">道路着色</label><select id="map-metric"><option value="vc" selected>路段状态</option><option value="speed">运行速度</option><option value="impact">耗时变化</option><option value="change">速度变化</option><option value="neutral">道路底图</option></select></div>
+<div class="map-navigation glass"><button id="map-all" title="显示全网">全网</button><button id="map-fit" title="定位核心及相邻影响区">研究区</button><button id="map-plus" aria-label="放大地图">＋</button><button id="map-minus" aria-label="缩小地图">−</button></div>
+<div id="map-selection" class="map-selection" hidden></div><div class="map-bottom"><div id="map-comparison" class="map-comparison" hidden></div><div class="map-legend"><div id="map-colors"></div><span id="map-core-key"><i class="core-key"></i>固定核心区路段</span></div><p id="map-message" role="status">正在连接本地实验档案…</p><div id="map-kpis" class="kpi-strip"><div><span>核心区速度变化</span><strong>—</strong></div><div><span>全网耗时变化</span><strong>—</strong></div><div><span>邻区耗时变化</span><strong>—</strong></div></div></div>
+</section>
+<aside class="left-panel glass" aria-label="操作配置">
+<div class="panel-title"><h2 id="left-panel-title">新建交通规划</h2><span class="panel-tag">自然语言</span></div>
+<div class="panel-scroll"><form id="task-form">
+<label for="matcher">工作模式</label><select id="matcher"><option value="model" selected>大模型自主规划</option><option value="rules">规则模式 · 手动配置</option></select><div id="model-intro"><h3>从一个交通问题开始</h3><p>说清位置、现象和你关心的影响。系统会规划实验，再用实际仿真检验策略。</p></div><div id="rule-templates" hidden>
+<div class="eyebrow">治理场景</div><div class="template-grid"><button type="button" class="template active" id="parking-template"><b>停车治理</b><small>干扰改善 · 反馈搜索</small></button><button type="button" class="template" id="oneway-template" aria-label="载入单向组合任务"><b>单向组织</b><small>路权调整 · 组合实验</small></button><button type="button" class="template" id="turn-template" aria-label="载入禁转组合任务"><b>禁转组合</b><small>转向约束 · 停车联动</small></button></div>
+</div><label for="request">交通问题与目标</label><textarea id="request" rows="3" placeholder="例如：先找停车拥堵，比较两个不同区域的治理效果。不要把拥堵转移到周边，最多3次仿真，不复跑。">分析停车干扰拥堵，比较治理强度并检查周边影响</textarea>
+<fieldset id="rule-settings" hidden disabled><label for="road">研究道路 <small>留空自动选点</small></label><input id="road" placeholder="输入案例中的道路名称">
+<div class="pair"><div><label for="links">最多治理路段</label><input id="links" type="number" min="1" max="10" value="3"></div><div><label for="budget">仿真预算 / 次</label><input id="budget" type="number" min="2" max="30" value="11"></div></div>
+<label class="check"><input id="robust-search" type="checkbox" checked><span>主动稳健搜索<small>停车专用 · 按实测反馈调整并补齐需求验证</small></span></label>
+<label class="check"><input id="sensitivity" type="checkbox" checked><span>需求波动检验<small>小汽车需求 ±10%</small></span></label><label class="check"><input id="repeat" type="checkbox" checked><span>基准复现检查<small>相同输入再次计算</small></span></label>
+<details class="constraints"><summary>影响范围与约束</summary><label for="neighbor">邻区耗时容忍增幅 %</label><input id="neighbor" type="number" min="0" max="100" step="0.1" value="0.5"><label for="overload">邻区新增过饱和上限 km</label><input id="overload" type="number" min="0" max="100" step="0.05" value="0.1"><label for="network-overload">全网毛新增过饱和上限 km <small>选填</small></label><input id="network-overload" type="number" min="0" max="1000" step="0.01" placeholder="留空沿用原约束"><p class="hint">阈值应在实验前固定。禁转需指定三个节点，单向需指定关闭方向。</p></details>
+</fieldset><div class="run-actions"><button type="submit" class="secondary" id="preview">匹配情景</button><button type="button" class="primary" id="run">匹配并开始 ↗</button></div><p class="hint" id="mode-note">模型根据新仿真结果决定后续试验；新任务含初始规划最多7次模型请求。刷新不消耗额度。</p>
+</form>
+<details id="planning-help" open><summary>可以交给它的问题</summary><div class="capability-list"><p><b>定位问题</b><span>路网体检 · 多道路分别诊断</span></p><p><b>比较措施</b><span>区域选择 · 停车强度 · 单向 / 禁转</span></p><p><b>验证可靠性</b><span>需求压力 · 稳健搜索 · 邻区保护</span></p></div><p class="hint">高峰或活动按小汽车需求假设检验。信号配时、施工容量和公交优先尚未接入执行。</p></details>
+<details id="preview-card"><summary>新任务预览</summary><article id="plan-panel" class="plan-panel"><p class="hint">先预览任务卡，核对研究对象与计算预算。</p></article></details>
+<div id="history-block"><div class="history-head"><h3>实验记录</h3><button id="refresh" class="quiet">刷新</button></div><div id="history" class="history">正在读取…</div></div></div>
+</aside>
+<aside class="right-panel glass" aria-label="运行情况与消息">
+<div class="panel-title"><h2>规划与执行</h2><button id="plan-expand" class="quiet" title="展开完整规划">展开规划 ↗</button></div>
+<p id="attempt-status" class="attempt-notice" role="status" hidden></p><div id="programme-status" hidden aria-live="polite"></div><p id="view-mode-note" class="hint" aria-live="polite">当前输入：大模型规划；尚未选择实验。</p>
+<div class="job-meta"><small class="hint">地图当前查看的实验</small><span id="status" class="status">读取中</span><h3 id="job-title">等待选择实验</h3><p id="job-progress">已完成场景 / 预算</p><div class="progress-track"><i id="progress-bar"></i></div></div>
+<div id="error" role="alert" hidden></div>
+<nav class="panel-tabs" role="tablist" aria-label="情况面板"><button id="tab-planning" role="tab" aria-selected="true" aria-controls="pane-planning" data-pane="planning">规划</button><button id="tab-situation" role="tab" aria-selected="false" aria-controls="pane-situation" data-pane="situation" tabindex="-1">路网</button><button id="tab-analysis" role="tab" aria-selected="false" aria-controls="pane-analysis" data-pane="analysis" tabindex="-1">评估</button><button id="tab-messages" role="tab" aria-selected="false" aria-controls="pane-messages" data-pane="messages" tabindex="-1">日志 <span id="event-count">0</span></button></nav>
+<div class="panel-scroll insight-scroll">
+<section id="pane-planning" role="tabpanel" aria-labelledby="tab-planning"><section id="dispatch-panel" aria-live="polite"><p id="dispatch-summary">输入交通问题后，这里会显示规划依据与执行安排。</p><div id="planner-result"><div class="planning-empty"><span class="empty-route" aria-hidden="true">○<i></i>○<i></i>●</span><h3>每一步，都有依据</h3><p>理解问题与待验证假设<br>比较策略，安排实验与预算<br>读取实际结果，调整并保留证据</p><small>当前地图可浏览已完成实验；新规划使用自己的新基准。</small></div></div><details class="dispatch-history"><summary>初始规划记录（含失败）</summary><p class="hint">每次初始规划单独记账；即使未进入仿真也保留。查看记录不调用模型。</p><div id="planning-attempts"></div></details><details class="dispatch-history"><summary>最近调度记录</summary><div id="dispatch-records"></div></details></section></section>
+<section id="pane-situation" role="tabpanel" aria-labelledby="tab-situation" hidden>
+<label for="map-run">当前对照方案</label><select id="map-run" disabled></select>
+<div class="section-heading"><h3 id="hotspot-title">路网重点</h3><span id="hotspot-unit">原生观测</span></div><p id="hotspot-hint" class="hint">点击定位重点方向，查看实测状态与变化</p><div id="hotspots"><p class="empty">等待已完成路网输出</p></div>
+<p class="hint">耗时变化包含车流转移，不等同于拥堵成因。</p><div class="section-heading"><h3>路段探查</h3><span>LINK DETAIL</span></div><div class="map-search"><input id="map-search" aria-label="查找道路或节点" placeholder="道路名 / 节点编号"><button id="map-find" aria-label="查找">⌕</button></div><label class="sr-only" for="map-link">选择路段查看指标</label><select id="map-link" aria-label="选择路段查看指标"></select><div id="map-detail" aria-live="polite"><p class="empty">点击地图道路，读取前后指标</p></div><p id="map-source" class="hint"></p>
+</section>
+<section id="pane-analysis" role="tabpanel" aria-labelledby="tab-analysis" hidden><div class="section-heading"><h3>跨需求稳健筛选</h3><span>MINIMAX</span></div><div id="robust-analysis"><p class="empty">等待已完成方案</p></div><div class="section-heading"><h3>方案结论与执行依据</h3></div><p id="recommendation"></p><div id="decisions"></div><section id="conditional-panel" hidden><h3>不同需求下的取舍</h3><div id="conditional"></div></section><a id="report-link" class="report-link" hidden target="_blank" rel="noopener">查看完整实验报告 ↗</a></section>
+<section id="pane-messages" role="tabpanel" aria-labelledby="tab-messages" hidden><div class="section-heading"><h3>真实计算时间线</h3><span>EXECUTION LOG</span></div><p class="hint">来自所选实验的已保存事件。</p><div id="events" class="events"></div></section>
+</div>
+</aside>
+</main>
+<footer><span><i class="indicator"></i><span id="connection">正在连接本地服务</span></span><span id="network-count">案例路网载入中</span><span id="dataset-footer">仿真案例数据 · 非实时交通</span></footer>
+<dialog id="detail-dialog"><div class="dialog-heading"><div><div class="eyebrow">EXPERIMENT ARCHIVE</div><h2>实验档案与完整指标</h2></div><button id="archive-close" aria-label="关闭实验档案">×</button></div><div class="dialog-content"><article id="record-task-panel" class="plan-panel" hidden></article><section id="result-panel" hidden><div class="result-head"><h3>方案比较</h3><select id="scope" aria-label="评价范围"><option value="core">核心治理区</option><option value="neighbor">相邻影响区</option><option value="network">全网</option></select></div><div class="table-scroll"><table><thead><tr><th>场景 / 需求系数</th><th>速度 km/h</th><th>耗时 pcu·h</th><th>过饱和 km</th></tr></thead><tbody id="metrics"></tbody></table></div><p class="hint">行驶时间消耗按 Σ(qL/v) 计算，不含独立核算的全部节点延误。</p></section><section id="turn-response-panel" hidden><h3>已完成方案的禁转响应</h3><div class="table-scroll"><table><thead><tr><th>场景 / 转向</th><th>小汽车</th><th>出租车</th><th>摩托车</th><th>货车</th><th>评估</th></tr></thead><tbody id="turn-responses"></tbody></table></div><p class="hint">各车型分别报告原生转移量，原本为零不作正响应证据。</p></section></div></dialog>
+</body></html>

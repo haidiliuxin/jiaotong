@@ -1,0 +1,352 @@
+{
+  "id": "preview_500a42e5ea634265aad403dbb99c9823",
+  "started": "2026-09-27T23:01:26.541109+00:00",
+  "request": "分别研究七东线的停车治理，以及长江村路的单向组织与停车组合。两条道路分成独立研究组，每组运行自己的新基准。依据新基准选择治理方向，再读取治理结果复核；单向组必须比较停车、单向及组合。各组收益不可相加；保留无收益、不合格和周边代价。只比较同一需求，不比较停车强度；需求系数：1；最多治理2条；总预算6次仿真，不复跑。",
+  "status": "validation_failed",
+  "requested": true,
+  "usage": {
+    "request_model": "deepseek-v4-flash",
+    "response_model": "deepseek-v4-flash-0731",
+    "response_id": "chatcmpl-6ab9a047db6796f9c3bc9969",
+    "tokens": 8628,
+    "tokens_source": "reported_total",
+    "input_tokens": 7854,
+    "output_tokens": 774,
+    "reasoning_tokens": null,
+    "cached_input_tokens": 5888,
+    "latency_s": 3.14,
+    "finish_reason": "tool_calls",
+    "tool_call_count": 1,
+    "wire_api": "chat_completions",
+    "request_tool_choice": "required",
+    "request_tool_count": 1,
+    "request_max_output_tokens": 1600,
+    "request_size_bytes": 31421,
+    "request_schema_sha256": "026274b3bf42d9559b0e35fa79a16585efafb7bfe01775b16d1363981f45af0a",
+    "transport_version": "llm-transport-v2",
+    "tool_choice_profile": "tokenrhythm-deepseek-chat-v1",
+    "requested_tool_choice": "function:compose_traffic_plan"
+  },
+  "native_started": false,
+  "session_id": "planning_92677241ea2e429dac8df2279d090ab9",
+  "ordinal": 2,
+  "phase": "validation_correction",
+  "corrects": "preview_4d89cb70c5864dafafd667d27e98bc3d",
+  "validation_feedback": {
+    "status": "rejected",
+    "code": "invalid_hypothesis_criterion",
+    "explanation": "初始假设判据未通过：H2：组合增益判据只能指向组合措施",
+    "native_started": false,
+    "corrections_remaining": 0,
+    "request_unchanged": true,
+    "model_requests_used": 1,
+    "model_request_limit": 6,
+    "execution_scope": {
+      "version": "planning-scope-v2",
+      "search_scope": "named_roads",
+      "roads": [
+        "七东线",
+        "长江村路"
+      ],
+      "target_resolution": {
+        "diagnosis": {
+          "mode": "fresh_baseline",
+          "road_name_required": false,
+          "target_ref": "auto"
+        },
+        "parking": {
+          "mode": "model_after_fresh_baseline",
+          "road_name_required": false,
+          "target_ref": "auto"
+        },
+        "oneway": {
+          "mode": "model_after_fresh_baseline",
+          "road_name_required": false,
+          "target_ref": "auto"
+        },
+        "turn": {
+          "mode": "validated_topology_reference",
+          "available_refs": [
+            "T_4084_3245_3244"
+          ]
+        }
+      },
+      "candidate_limit": {
+        "max_changed_directed_links": 2,
+        "applies_to": "each_independent_candidate",
+        "not_a_road_name_requirement": true
+      },
+      "regional_design": {
+        "regions_per_parking_group": 1,
+        "levels_per_region": 1,
+        "independent_candidates": true,
+        "shared_fresh_baseline_per_demand": true
+      },
+      "parking_cost": {
+        "demand_factors": [
+          1.0
+        ],
+        "groups_for_named_roads": 2,
+        "minimum_runs_per_group": 2,
+        "minimum_total_runs": 4,
+        "total_run_budget": 6,
+        "conditions": "仅适用停车、上述需求和原文要求的区域/强度比较；完整计划由程序重新核算"
+      },
+      "candidate_availability": "unknown_until_new_baseline",
+      "scope_note": "未指定道路时在整个案例路网建立新基准，再由模型从合法候选中选点；没有候选则如实停止。",
+      "limit_note": "每个独立候选最多改变2条有向路段；比较不同区域是独立实验，不要求同时改变多个区域。"
+    },
+    "next_step": "仅修正冲突假设criterion的policies，从各项allowed_policies中选择。原假设文字、证据需求、test、quantifier、引用组编号、研究组、先后顺序及执行条件保持，不删除问题、不把原问题改写成较弱主张。没有交通结果，不预判收益。此次与其他初始修正共用唯一一次机会，计入6次总上限。",
+    "hypothesis_check": {
+      "version": "initial-hypothesis-correction-v1",
+      "design": {
+        "studies": [
+          {
+            "source_studies": [
+              1
+            ],
+            "task": {
+              "scenario": "parking",
+              "road_name": "七东线",
+              "demand_factors": [
+                1.0
+              ]
+            }
+          },
+          {
+            "source_studies": [
+              2
+            ],
+            "task": {
+              "scenario": "oneway",
+              "road_name": "长江村路",
+              "demand_factors": [
+                1.0
+              ]
+            }
+          }
+        ],
+        "aliases": []
+      },
+      "budget_check": {
+        "version": "initial-plan-budget-v2",
+        "groups": [
+          {
+            "ordinal": 1,
+            "title": "停车治理与反馈",
+            "study": "standard",
+            "target_ref": "auto",
+            "conditions": {
+              "scenario": "parking",
+              "road_name": "七东线",
+              "search_mode": "standard",
+              "recommendation_version": "tolerance-v2",
+              "demand_factors": [
+                1.0
+              ],
+              "repeat_baseline": false,
+              "max_links": 2,
+              "max_feedback": 2,
+              "comparison_regions": 1,
+              "completion_required": true
+            },
+            "native_runs": 2,
+            "model_requests": 2,
+            "assignment_module": "M6AssignVehicle.exe",
+            "may_omit": false
+          },
+          {
+            "ordinal": 2,
+            "title": "停车＋单向组织",
+            "study": "standard",
+            "target_ref": "auto",
+            "conditions": {
+              "scenario": "oneway",
+              "road_name": "长江村路",
+              "search_mode": "standard",
+              "recommendation_version": "tolerance-v2",
+              "demand_factors": [
+                1.0
+              ],
+              "repeat_baseline": false,
+              "max_links": 2,
+              "max_feedback": 2,
+              "completion_required": true
+            },
+            "native_runs": 4,
+            "model_requests": 2,
+            "assignment_module": "M6AssignVehicle1.exe",
+            "may_omit": false
+          }
+        ],
+        "native": {
+          "required": 6,
+          "limit": 6
+        },
+        "model": {
+          "required": 5,
+          "used": 1,
+          "limit": 6
+        },
+        "fits": true,
+        "correction_feasible": false,
+        "rule": "保护必需研究及原条件。仅可由模型撤回明确标记的额外体检，或原文只要求完整组合且未要求独立比较的额外停车提议；组合四项对照仍需独立新基准。不会自动删组、合并引擎或共享结果。"
+      },
+      "issues": [
+        {
+          "hypothesis_id": "H2",
+          "message": "组合增益判据只能指向组合措施",
+          "allowed_policies": [
+            "combined"
+          ]
+        }
+      ],
+      "correction_feasible": true
+    }
+  },
+  "decision_permissions": {
+    "version": "planning-prerequisites-v2",
+    "clarification_needs": [],
+    "clarification_quotes": {},
+    "intents": [
+      "execute",
+      "unsupported"
+    ],
+    "basis": "只为原文中尚未解析的具体定位或必需禁转目标开放追问；已解析道路和全网自动选点不缺道路名称。",
+    "plan_selection": "研究、策略组合、假设与取舍仍由模型提出；位置与等级在新基准完成后选择。"
+  },
+  "proposal": {
+    "status": "unvalidated",
+    "goal": "分路独立研究七东线停车与长江村路单向停车组合",
+    "reason": "两条道路按要求拆成独立研究组，各自运行新基准。七东线用停车组测齐停车候选新基准与治理效果；长江村路用单向组完整对照无治理/停车/单向/组合四项。需求系数固定1.0，两路各自1个停车区、1个等级，符合预算核算。组合增益判据修正为仅指向组合措施（combined）。备选禁转因不在用户本次明确需求内，仅说明存在但暂缓。",
+    "studies": [
+      {
+        "study": "standard",
+        "strategies": [
+          "parking"
+        ],
+        "road": "七东线",
+        "target": "auto",
+        "demand_profile": "base",
+        "rationale": "七东线独立停车研究：新基准诊断后由模型选择停车等级与方向，测齐停车候选"
+      },
+      {
+        "study": "standard",
+        "strategies": [
+          "parking",
+          "oneway"
+        ],
+        "road": "长江村路",
+        "target": "auto",
+        "demand_profile": "base",
+        "rationale": "长江村路单向与停车组合：新基准后选择单向方向，完整比较停车、单向、组合三项措施"
+      }
+    ],
+    "missing": [],
+    "intent": "execute",
+    "assessment": [
+      {
+        "hypothesis": "七东线存在至少一个停车治理候选，使核心总耗时较该路新基准降低",
+        "evidence_needed": "七东线停车治理后核心范围总耗时低于同需求基准的新观测",
+        "criterion": {
+          "policies": "parking",
+          "quantifier": "any",
+          "studies": [
+            1
+          ],
+          "test": "core_time_decrease"
+        }
+      },
+      {
+        "hypothesis": "长江村路存在至少一组已试组合措施，其核心总耗时分别严格低于该组停车单项与单向单项",
+        "evidence_needed": "长江村路组合需分别严格优于停车单项和单向单项的新观测",
+        "criterion": {
+          "policies": "combined",
+          "quantifier": "any",
+          "studies": [
+            2
+          ],
+          "test": "combination_core_advantage"
+        }
+      },
+      {
+        "hypothesis": "长江村路所有已试措施（停车、单向、组合）在全部需求下均通过原定约束检查",
+        "evidence_needed": "长江村路组合组全部原定约束与原生产控制响应检查均通过的新观测",
+        "criterion": {
+          "policies": "all",
+          "quantifier": "all",
+          "studies": [
+            2
+          ],
+          "test": "admissible"
+        }
+      }
+    ]
+  },
+  "budget_check": {
+    "version": "initial-plan-budget-v2",
+    "groups": [
+      {
+        "ordinal": 1,
+        "title": "停车治理与反馈",
+        "study": "standard",
+        "target_ref": "auto",
+        "conditions": {
+          "scenario": "parking",
+          "road_name": "七东线",
+          "search_mode": "standard",
+          "recommendation_version": "tolerance-v2",
+          "demand_factors": [
+            1.0
+          ],
+          "repeat_baseline": false,
+          "max_links": 2,
+          "max_feedback": 2,
+          "comparison_regions": 1,
+          "completion_required": true
+        },
+        "native_runs": 2,
+        "model_requests": 2,
+        "assignment_module": "M6AssignVehicle.exe",
+        "may_omit": false
+      },
+      {
+        "ordinal": 2,
+        "title": "停车＋单向组织",
+        "study": "standard",
+        "target_ref": "auto",
+        "conditions": {
+          "scenario": "oneway",
+          "road_name": "长江村路",
+          "search_mode": "standard",
+          "recommendation_version": "tolerance-v2",
+          "demand_factors": [
+            1.0
+          ],
+          "repeat_baseline": false,
+          "max_links": 2,
+          "max_feedback": 2,
+          "completion_required": true
+        },
+        "native_runs": 4,
+        "model_requests": 2,
+        "assignment_module": "M6AssignVehicle1.exe",
+        "may_omit": false
+      }
+    ],
+    "native": {
+      "required": 6,
+      "limit": 6
+    },
+    "model": {
+      "required": 6,
+      "used": 2,
+      "limit": 6
+    },
+    "fits": true,
+    "correction_feasible": false,
+    "rule": "保护必需研究及原条件。仅可由模型撤回明确标记的额外体检，或原文只要求完整组合且未要求独立比较的额外停车提议；组合四项对照仍需独立新基准。不会自动删组、合并引擎或共享结果。"
+  },
+  "finished": "2026-09-27T23:01:29.704128+00:00",
+  "error": "判据对象修正改变了原问题、判据类型、量词、研究组、顺序或执行条件；未启动仿真"
+}

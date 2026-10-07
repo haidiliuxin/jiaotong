@@ -1,0 +1,548 @@
+22-01-26 22:57:35  运行成功提醒：本次运行序列成功。
+22-01-26 22:57:40  运行成功提醒：本次运行序列成功。
+22-01-26 22:58:04  运行成功提醒：本次运行序列成功。
+22-01-26 23:09:49  运行成功提醒：本次运行序列成功。
+22-01-26 23:09:57  运行成功提醒：本次运行序列成功。
+22-01-26 23:10:00  运行成功提醒：本次运行序列成功。
+22-01-26 23:12:16  M4VehicleODMatrixP.exe error:出错信息：
+
+22-01-26 23:12:16  M4VehicleODMatrixP.exe error:在打开以下数据文件或执行以下程序时出错
+
+22-01-26 23:12:16  M4VehicleODMatrixP.exe error:C:/Users/22018/Documents/Tencent Files/565979697/FileRecv/Nature-南京案例/基础方案/result/DistribBus.tsd
+
+22-01-26 23:12:16  M4VehicleODMatrixP.exe error:引起出错的原因可能是：
+
+22-01-26 23:12:16  M4VehicleODMatrixP.exe error:1. 数据文件或程序不存在或有错误
+
+22-01-26 23:12:16  M4VehicleODMatrixP.exe error:2. 数据库路径或系统软件路径不存在或有错误
+
+22-01-26 23:12:16  M4VehicleODMatrixP.exe error:3. 参数表参数选择有结构性错误
+
+22-01-26 23:12:16  M4VehicleODMatrixP.exe error:请改正错误，否则会影响分析结果
+
+22-01-26 23:12:16  M4VehicleODMatrixP.exe error: 本次运行序列出错,M4VehicleODMatrixP.exe,已暂停运行。
+
+
+22-01-26 23:12:16  运行错误提醒：本次运行序列中M4VehicleODMatrixP.exe运行出错，错误信息详情请查看文件C:/Users/22018/Documents/Tencent Files/565979697/FileRecv/Nature-南京案例/基础方案/log.txt。
+22-01-26 23:16:02  运行成功提醒：本次运行序列成功。
+22-01-26 23:16:04  运行成功提醒：本次运行序列成功。
+22-01-26 23:16:05  M4VehicleODMatrixF.exe error:出错信息：
+
+22-01-26 23:16:05  M4VehicleODMatrixF.exe error:在打开以下数据文件或执行以下程序时出错
+
+22-01-26 23:16:05  M4VehicleODMatrixF.exe error:C:/Users/22018/Documents/Tencent Files/565979697/FileRecv/Nature-南京案例/基础方案/result/DistribTruck.tsd
+
+22-01-26 23:16:05  M4VehicleODMatrixF.exe error:引起出错的原因可能是：
+
+22-01-26 23:16:05  M4VehicleODMatrixF.exe error:1. 数据文件或程序不存在或有错误
+
+22-01-26 23:16:05  M4VehicleODMatrixF.exe error:2. 数据库路径或系统软件路径不存在或有错误
+
+22-01-26 23:16:05  M4VehicleODMatrixF.exe error:3. 参数表参数选择有结构性错误
+
+22-01-26 23:16:05  M4VehicleODMatrixF.exe error:请改正错误，否则会影响分析结果
+
+22-01-26 23:16:05  M4VehicleODMatrixF.exe error: 本次运行序列出错,M4VehicleODMatrixF.exe,已暂停运行。
+
+
+22-01-26 23:16:05  运行错误提醒：本次运行序列中M4VehicleODMatrixF.exe运行出错，错误信息详情请查看文件C:/Users/22018/Documents/Tencent Files/565979697/FileRecv/Nature-南京案例/基础方案/log.txt。
+22-01-26 23:16:29  运行成功提醒：本次运行序列成功。
+22-01-26 23:16:36  运行成功提醒：本次运行序列成功。
+22-01-26 23:16:37  运行成功提醒：本次运行序列成功。
+22-01-26 23:16:42  运行成功提醒：本次运行序列成功。
+22-01-26 23:16:56  运行成功提醒：本次运行序列成功。
+22-01-26 23:18:08  运行成功提醒：本次运行序列成功。
+22-01-27 12:48:19  运行成功提醒：本次运行序列成功。
+22-01-27 12:49:21  运行成功提醒：本次运行序列成功。
+22-01-27 12:49:39  运行错误提醒：终止本次运行序列。
+22-01-27 12:50:22  运行错误提醒：终止本次运行序列。
+22-01-27 12:51:04  运行错误提醒：终止本次运行序列。
+22-01-27 12:51:16  运行错误提醒：终止本次运行序列。
+22-01-27 12:52:09  运行成功提醒：本次运行序列成功。
+22-01-27 12:52:50  运行成功提醒：本次运行序列成功。
+22-01-27 12:54:10  运行成功提醒：本次运行序列成功。
+22-01-27 14:34:41  运行成功提醒：本次运行序列成功。
+22-01-27 14:35:00  运行成功提醒：本次运行序列成功。
+22-01-27 14:35:23  M7EvaluTransReport.exe error:出错信息：
+
+22-01-27 14:35:23  M7EvaluTransReport.exe error:在打开以下数据文件或执行以下程序时出错
+
+22-01-27 14:35:23  M7EvaluTransReport.exe error:C:/Users/22018/Documents/Tencent Files/565979697/FileRecv/Nature-南京案例/基础方案/result/VolNodeCar.tsd
+
+22-01-27 14:35:23  M7EvaluTransReport.exe error:引起出错的原因可能是：
+
+22-01-27 14:35:23  M7EvaluTransReport.exe error:1. 数据文件或程序不存在或有错误
+
+22-01-27 14:35:23  M7EvaluTransReport.exe error:2. 数据库路径或系统软件路径不存在或有错误
+
+22-01-27 14:35:23  M7EvaluTransReport.exe error:3. 参数表参数选择有结构性错误
+
+22-01-27 14:35:23  M7EvaluTransReport.exe error:请改正错误，否则会影响分析结果
+
+22-01-27 14:35:23  M7EvaluTransReport.exe error:出错信息：
+
+22-01-27 14:35:23  M7EvaluTransReport.exe error:在打开以下数据文件或执行以下程序时出错
+
+22-01-27 14:35:23  M7EvaluTransReport.exe error:M7EvaluResiTrip.exe
+
+22-01-27 14:35:23  M7EvaluTransReport.exe error:引起出错的原因可能是：
+
+22-01-27 14:35:23  M7EvaluTransReport.exe error:1. 数据文件或程序不存在或有错误
+
+22-01-27 14:35:23  M7EvaluTransReport.exe error:2. 数据库路径或系统软件路径不存在或有错误
+
+22-01-27 14:35:23  M7EvaluTransReport.exe error:3. 参数表参数选择有结构性错误
+
+22-01-27 14:35:23  M7EvaluTransReport.exe error:请改正错误，否则会影响分析结果
+
+22-01-27 14:35:23  M7EvaluTransReport.exe error: 本次运行序列出错,M7EvaluTransReport.exe,已暂停运行。
+
+
+22-01-27 14:35:23  运行错误提醒：本次运行序列中M7EvaluTransReport.exe运行出错，错误信息详情请查看文件C:/Users/22018/Documents/Tencent Files/565979697/FileRecv/Nature-南京案例/基础方案/log.txt。
+22-01-27 14:35:50  运行成功提醒：本次运行序列成功。
+22-01-27 14:35:51  运行成功提醒：本次运行序列成功。
+22-01-27 14:35:53  运行成功提醒：本次运行序列成功。
+22-01-27 14:35:54  运行成功提醒：本次运行序列成功。
+22-01-27 14:36:08  运行成功提醒：本次运行序列成功。
+22-01-27 14:36:17  M7EvaluTransReport.exe error:出错信息：
+
+22-01-27 14:36:17  M7EvaluTransReport.exe error:在打开以下数据文件或执行以下程序时出错
+
+22-01-27 14:36:17  M7EvaluTransReport.exe error:C:/Users/22018/Documents/Tencent Files/565979697/FileRecv/Nature-南京案例/基础方案/result/CapLinkBic.tsd
+
+22-01-27 14:36:17  M7EvaluTransReport.exe error:引起出错的原因可能是：
+
+22-01-27 14:36:17  M7EvaluTransReport.exe error:1. 数据文件或程序不存在或有错误
+
+22-01-27 14:36:17  M7EvaluTransReport.exe error:2. 数据库路径或系统软件路径不存在或有错误
+
+22-01-27 14:36:17  M7EvaluTransReport.exe error:3. 参数表参数选择有结构性错误
+
+22-01-27 14:36:17  M7EvaluTransReport.exe error:请改正错误，否则会影响分析结果
+
+22-01-27 14:36:17  M7EvaluTransReport.exe error:出错信息：
+
+22-01-27 14:36:17  M7EvaluTransReport.exe error:在打开以下数据文件或执行以下程序时出错
+
+22-01-27 14:36:17  M7EvaluTransReport.exe error:M6TrafficIndexSumary.exe
+
+22-01-27 14:36:17  M7EvaluTransReport.exe error:引起出错的原因可能是：
+
+22-01-27 14:36:17  M7EvaluTransReport.exe error:1. 数据文件或程序不存在或有错误
+
+22-01-27 14:36:17  M7EvaluTransReport.exe error:2. 数据库路径或系统软件路径不存在或有错误
+
+22-01-27 14:36:17  M7EvaluTransReport.exe error:3. 参数表参数选择有结构性错误
+
+22-01-27 14:36:17  M7EvaluTransReport.exe error:请改正错误，否则会影响分析结果
+
+22-01-27 14:36:17  M7EvaluTransReport.exe error: 本次运行序列出错,M7EvaluTransReport.exe,已暂停运行。
+
+
+22-01-27 14:36:17  运行错误提醒：本次运行序列中M7EvaluTransReport.exe运行出错，错误信息详情请查看文件C:/Users/22018/Documents/Tencent Files/565979697/FileRecv/Nature-南京案例/基础方案/log.txt。
+22-01-27 14:36:39  运行成功提醒：本次运行序列成功。
+22-01-27 14:36:43  运行成功提醒：本次运行序列成功。
+22-01-27 14:37:07  运行成功提醒：本次运行序列成功。
+22-01-27 14:37:12  运行成功提醒：本次运行序列成功。
+22-01-27 14:37:39  运行成功提醒：本次运行序列成功。
+22-01-27 14:37:52  运行成功提醒：本次运行序列成功。
+22-01-27 14:38:19  运行成功提醒：本次运行序列成功。
+22-01-27 16:08:25  运行成功提醒：本次运行序列成功。
+22-01-27 17:36:34  运行成功提醒：本次运行序列成功。
+22-01-27 17:36:54  运行成功提醒：本次运行序列成功。
+22-01-27 17:37:21  运行成功提醒：本次运行序列成功。
+22-01-27 17:37:25  运行成功提醒：本次运行序列成功。
+22-01-27 17:37:34  运行成功提醒：本次运行序列成功。
+22-01-28 08:26:27  运行成功提醒：本次运行序列成功。
+22-01-28 08:26:31  运行成功提醒：本次运行序列成功。
+22-01-28 08:26:42  运行成功提醒：本次运行序列成功。
+22-01-28 08:26:43  运行成功提醒：本次运行序列成功。
+22-01-28 08:26:45  运行成功提醒：本次运行序列成功。
+22-01-28 08:26:49  运行成功提醒：本次运行序列成功。
+22-01-28 08:27:04  运行成功提醒：本次运行序列成功。
+22-01-28 08:27:05  运行成功提醒：本次运行序列成功。
+22-01-28 08:27:07  运行成功提醒：本次运行序列成功。
+22-01-28 08:27:29  运行成功提醒：本次运行序列成功。
+22-01-28 08:28:32  运行成功提醒：本次运行序列成功。
+22-01-28 08:28:34  运行成功提醒：本次运行序列成功。
+22-01-28 08:28:57  运行成功提醒：本次运行序列成功。
+22-01-28 08:30:47  运行成功提醒：本次运行序列成功。
+22-01-28 08:30:52  运行成功提醒：本次运行序列成功。
+22-01-28 08:30:58  运行错误提醒：终止本次运行序列。
+22-01-28 08:31:00  运行成功提醒：本次运行序列成功。
+22-01-28 08:31:05  运行成功提醒：本次运行序列成功。
+22-01-28 08:31:42  运行成功提醒：本次运行序列成功。
+22-01-28 08:32:36  运行成功提醒：本次运行序列成功。
+22-01-28 08:36:50  运行成功提醒：本次运行序列成功。
+22-01-28 08:36:52  运行成功提醒：本次运行序列成功。
+22-01-28 08:37:23  运行成功提醒：本次运行序列成功。
+22-01-28 08:38:48  运行成功提醒：本次运行序列成功。
+22-01-28 08:39:54  运行成功提醒：本次运行序列成功。
+22-01-28 08:39:54  M4VehicleODMatrixF.exe error:出错信息：
+
+22-01-28 08:39:54  M4VehicleODMatrixF.exe error:在打开以下数据文件或执行以下程序时出错
+
+22-01-28 08:39:54  M4VehicleODMatrixF.exe error:C:/Users/22018/Documents/Tencent Files/565979697/FileRecv/Nature-南京案例/基础路网/result/DistribTruck.tsd
+
+22-01-28 08:39:54  M4VehicleODMatrixF.exe error:引起出错的原因可能是：
+
+22-01-28 08:39:54  M4VehicleODMatrixF.exe error:1. 数据文件或程序不存在或有错误
+
+22-01-28 08:39:54  M4VehicleODMatrixF.exe error:2. 数据库路径或系统软件路径不存在或有错误
+
+22-01-28 08:39:54  M4VehicleODMatrixF.exe error:3. 参数表参数选择有结构性错误
+
+22-01-28 08:39:54  M4VehicleODMatrixF.exe error:请改正错误，否则会影响分析结果
+
+22-01-28 08:39:54  M4VehicleODMatrixF.exe error: 本次运行序列出错,M4VehicleODMatrixF.exe,已暂停运行。
+
+
+22-01-28 08:39:55  运行错误提醒：本次运行序列中M4VehicleODMatrixF.exe运行出错，错误信息详情请查看文件C:/Users/22018/Documents/Tencent Files/565979697/FileRecv/Nature-南京案例/基础路网/log.txt。
+22-01-28 08:39:58  运行成功提醒：本次运行序列成功。
+22-01-28 08:39:59  运行成功提醒：本次运行序列成功。
+22-01-28 08:40:00  运行成功提醒：本次运行序列成功。
+22-01-28 08:40:08  运行成功提醒：本次运行序列成功。
+22-01-28 08:40:25  运行成功提醒：本次运行序列成功。
+22-01-28 08:41:09  M6AssignVehicle.exe error:出错信息：
+
+22-01-28 08:41:09  M6AssignVehicle.exe error:在打开以下数据文件或执行以下程序时出错
+
+22-01-28 08:41:09  M6AssignVehicle.exe error:C:/Users/22018/Documents/Tencent Files/565979697/FileRecv/Nature-南京案例/基础路网/result/ODBus.tsd
+
+22-01-28 08:41:09  M6AssignVehicle.exe error:引起出错的原因可能是：
+
+22-01-28 08:41:09  M6AssignVehicle.exe error:1. 数据文件或程序不存在或有错误
+
+22-01-28 08:41:09  M6AssignVehicle.exe error:2. 数据库路径或系统软件路径不存在或有错误
+
+22-01-28 08:41:09  M6AssignVehicle.exe error:3. 参数表参数选择有结构性错误
+
+22-01-28 08:41:09  M6AssignVehicle.exe error:请改正错误，否则会影响分析结果
+
+22-01-28 08:41:09  M6AssignVehicle.exe error: 本次运行序列出错,M6AssignVehicle.exe,已暂停运行。
+
+
+22-01-28 08:41:14  运行错误提醒：本次运行序列中M6AssignVehicle.exe运行出错，错误信息详情请查看文件C:/Users/22018/Documents/Tencent Files/565979697/FileRecv/Nature-南京案例/基础路网/log.txt。
+22-01-28 08:42:39  运行成功提醒：本次运行序列成功。
+22-01-28 08:43:13  运行成功提醒：本次运行序列成功。
+22-01-28 08:43:14  运行成功提醒：本次运行序列成功。
+22-01-28 08:43:15  运行成功提醒：本次运行序列成功。
+22-01-28 08:43:17  运行成功提醒：本次运行序列成功。
+22-01-28 08:43:30  运行成功提醒：本次运行序列成功。
+22-01-28 08:44:04  M7EvaluTransReport.exe error:出错信息：
+
+22-01-28 08:44:04  M7EvaluTransReport.exe error:在打开以下数据文件或执行以下程序时出错
+
+22-01-28 08:44:04  M7EvaluTransReport.exe error:C:/Users/22018/Documents/Tencent Files/565979697/FileRecv/Nature-南京案例/基础路网/result/CapLinkBic.tsd
+
+22-01-28 08:44:04  M7EvaluTransReport.exe error:引起出错的原因可能是：
+
+22-01-28 08:44:04  M7EvaluTransReport.exe error:1. 数据文件或程序不存在或有错误
+
+22-01-28 08:44:04  M7EvaluTransReport.exe error:2. 数据库路径或系统软件路径不存在或有错误
+
+22-01-28 08:44:04  M7EvaluTransReport.exe error:3. 参数表参数选择有结构性错误
+
+22-01-28 08:44:04  M7EvaluTransReport.exe error:请改正错误，否则会影响分析结果
+
+22-01-28 08:44:04  M7EvaluTransReport.exe error:出错信息：
+
+22-01-28 08:44:04  M7EvaluTransReport.exe error:在打开以下数据文件或执行以下程序时出错
+
+22-01-28 08:44:04  M7EvaluTransReport.exe error:M6TrafficIndexSumary.exe
+
+22-01-28 08:44:04  M7EvaluTransReport.exe error:引起出错的原因可能是：
+
+22-01-28 08:44:04  M7EvaluTransReport.exe error:1. 数据文件或程序不存在或有错误
+
+22-01-28 08:44:04  M7EvaluTransReport.exe error:2. 数据库路径或系统软件路径不存在或有错误
+
+22-01-28 08:44:04  M7EvaluTransReport.exe error:3. 参数表参数选择有结构性错误
+
+22-01-28 08:44:04  M7EvaluTransReport.exe error:请改正错误，否则会影响分析结果
+
+22-01-28 08:44:04  M7EvaluTransReport.exe error: 本次运行序列出错,M7EvaluTransReport.exe,已暂停运行。
+
+
+22-01-28 08:44:04  运行错误提醒：本次运行序列中M7EvaluTransReport.exe运行出错，错误信息详情请查看文件C:/Users/22018/Documents/Tencent Files/565979697/FileRecv/Nature-南京案例/基础路网/log.txt。
+22-01-28 08:44:39  运行成功提醒：本次运行序列成功。
+22-01-28 08:44:46  M7EvaluTransReport.exe error:出错信息：
+
+22-01-28 08:44:46  M7EvaluTransReport.exe error:在打开以下数据文件或执行以下程序时出错
+
+22-01-28 08:44:46  M7EvaluTransReport.exe error:C:/Users/22018/Documents/Tencent Files/565979697/FileRecv/Nature-南京案例/基础路网/result/EvaluEnvEner.tsd
+
+22-01-28 08:44:46  M7EvaluTransReport.exe error:引起出错的原因可能是：
+
+22-01-28 08:44:46  M7EvaluTransReport.exe error:1. 数据文件或程序不存在或有错误
+
+22-01-28 08:44:46  M7EvaluTransReport.exe error:2. 数据库路径或系统软件路径不存在或有错误
+
+22-01-28 08:44:46  M7EvaluTransReport.exe error:3. 参数表参数选择有结构性错误
+
+22-01-28 08:44:46  M7EvaluTransReport.exe error:请改正错误，否则会影响分析结果
+
+22-01-28 08:44:46  M7EvaluTransReport.exe error: 本次运行序列出错,M7EvaluTransReport.exe,已暂停运行。
+
+
+22-01-28 08:44:46  运行错误提醒：本次运行序列中M7EvaluTransReport.exe运行出错，错误信息详情请查看文件C:/Users/22018/Documents/Tencent Files/565979697/FileRecv/Nature-南京案例/基础路网/log.txt。
+22-01-28 08:45:04  运行成功提醒：本次运行序列成功。
+22-01-28 08:45:14  运行成功提醒：本次运行序列成功。
+22-01-28 08:45:24  运行错误提醒：终止本次运行序列。
+22-01-28 08:45:26  运行成功提醒：本次运行序列成功。
+22-01-28 08:45:27  运行成功提醒：本次运行序列成功。
+22-01-28 08:45:29  运行成功提醒：本次运行序列成功。
+22-01-28 08:45:32  运行成功提醒：本次运行序列成功。
+22-01-28 08:45:33  运行成功提醒：本次运行序列成功。
+22-01-28 08:45:39  运行成功提醒：本次运行序列成功。
+22-01-28 08:45:43  运行成功提醒：本次运行序列成功。
+22-01-28 09:03:31  运行成功提醒：本次运行序列成功。
+22-01-28 09:03:49  运行成功提醒：本次运行序列成功。
+22-01-28 09:04:11  运行成功提醒：本次运行序列成功。
+22-01-28 09:04:32  运行成功提醒：本次运行序列成功。
+22-01-28 09:04:40  运行成功提醒：本次运行序列成功。
+22-01-28 09:04:54  运行成功提醒：本次运行序列成功。
+22-01-28 09:05:04  运行成功提醒：本次运行序列成功。
+22-01-28 09:06:42  运行成功提醒：本次运行序列成功。
+22-01-28 09:08:09  运行成功提醒：本次运行序列成功。
+22-01-28 09:10:19  运行成功提醒：本次运行序列成功。
+22-01-28 09:11:42  运行成功提醒：本次运行序列成功。
+22-01-28 09:11:44  运行成功提醒：本次运行序列成功。
+22-10-19 15:43:14  M4Freightage.exe:出错信息：
+
+22-10-19 15:43:14  M4Freightage.exe:在打开以下数据文件或执行以下程序时出错
+
+22-10-19 15:43:14  M4Freightage.exe:E:/8-海信/中期检查演示/Nature-南京案例/基础路网/data/LanduseResidential.TXT
+
+22-10-19 15:43:14  M4Freightage.exe:引起出错的原因可能是：
+
+22-10-19 15:43:14  M4Freightage.exe:1. 数据文件或程序不存在或有错误
+
+22-10-19 15:43:14  M4Freightage.exe:2. 数据库路径或系统软件路径不存在或有错误
+
+22-10-19 15:43:14  M4Freightage.exe:3. 参数表参数选择有结构性错误
+
+22-10-19 15:43:14  M4Freightage.exe:请改正错误，否则会影响分析结果
+
+22-10-19 15:43:14  M4Freightage.exe: 本次运行序列出错,M4Freightage.exe,已暂停运行。
+
+
+22-10-19 15:43:14  运行错误提醒：本次运行序列中M4Freightage.exe运行出错，错误信息详情请查看文件E:/8-海信/中期检查演示/Nature-南京案例/基础路网/log.txt。
+22-10-19 15:50:28  运行成功提醒：本次运行序列成功。
+22-10-19 16:10:48  M4Freightage.exe:出错信息：
+
+22-10-19 16:10:48  M4Freightage.exe:在打开以下数据文件或执行以下程序时出错
+
+22-10-19 16:10:48  M4Freightage.exe:E:/8-海信/中期检查演示/Nature-南京案例/基础路网/data/LanduseResidential.TXT
+
+22-10-19 16:10:48  M4Freightage.exe:引起出错的原因可能是：
+
+22-10-19 16:10:48  M4Freightage.exe:1. 数据文件或程序不存在或有错误
+
+22-10-19 16:10:48  M4Freightage.exe:2. 数据库路径或系统软件路径不存在或有错误
+
+22-10-19 16:10:48  M4Freightage.exe:3. 参数表参数选择有结构性错误
+
+22-10-19 16:10:48  M4Freightage.exe:请改正错误，否则会影响分析结果
+
+22-10-19 16:10:48  M4Freightage.exe: 本次运行序列出错,M4Freightage.exe,已暂停运行。
+
+
+22-10-19 16:10:48  运行错误提醒：本次运行序列中M4Freightage.exe运行出错，错误信息详情请查看文件E:/8-海信/中期检查演示/Nature-南京案例/基础路网/log.txt。
+22-10-19 16:37:39  运行成功提醒：本次运行序列成功。
+22-10-19 16:38:11  M4Freightage.exe:出错信息：
+
+22-10-19 16:38:11  M4Freightage.exe:在打开以下数据文件或执行以下程序时出错
+
+22-10-19 16:38:11  M4Freightage.exe:E:/8-海信/中期检查演示/Nature-南京案例/基础路网/data/LanduseResidential.TXT
+
+22-10-19 16:38:11  M4Freightage.exe:引起出错的原因可能是：
+
+22-10-19 16:38:11  M4Freightage.exe:1. 数据文件或程序不存在或有错误
+
+22-10-19 16:38:11  M4Freightage.exe:2. 数据库路径或系统软件路径不存在或有错误
+
+22-10-19 16:38:11  M4Freightage.exe:3. 参数表参数选择有结构性错误
+
+22-10-19 16:38:11  M4Freightage.exe:请改正错误，否则会影响分析结果
+
+22-10-19 16:38:11  M4Freightage.exe: 本次运行序列出错,M4Freightage.exe,已暂停运行。
+
+
+22-10-19 16:38:11  运行错误提醒：本次运行序列中M4Freightage.exe运行出错，错误信息详情请查看文件E:/8-海信/中期检查演示/Nature-南京案例/基础路网/log.txt。
+25-06-21 22:19:33  M4Freightage.exe:出错信息：
+
+25-06-21 22:19:33  M4Freightage.exe:在打开以下数据文件或执行以下程序时出错
+
+25-06-21 22:19:33  M4Freightage.exe:D:/1-工作室日常/研究生智慧交通大赛/南京案例/基础路网/data/LanduseResidential.TXT
+
+25-06-21 22:19:33  M4Freightage.exe:引起出错的原因可能是：
+
+25-06-21 22:19:33  M4Freightage.exe:1. 数据文件或程序不存在或有错误
+
+25-06-21 22:19:33  M4Freightage.exe:2. 数据库路径或系统软件路径不存在或有错误
+
+25-06-21 22:19:33  M4Freightage.exe:3. 参数表参数选择有结构性错误
+
+25-06-21 22:19:33  M4Freightage.exe:请改正错误，否则会影响分析结果
+
+25-06-21 22:19:33  M4Freightage.exe: 本次运行序列出错,M4Freightage.exe,已暂停运行。
+
+
+25-06-21 22:20:06  M4Freightage.exe:出错信息：
+
+25-06-21 22:20:06  M4Freightage.exe:在打开以下数据文件或执行以下程序时出错
+
+25-06-21 22:20:06  M4Freightage.exe:D:/1-工作室日常/研究生智慧交通大赛/南京案例/基础路网/data/LanduseResidential.TXT
+
+25-06-21 22:20:06  M4Freightage.exe:引起出错的原因可能是：
+
+25-06-21 22:20:06  M4Freightage.exe:1. 数据文件或程序不存在或有错误
+
+25-06-21 22:20:06  M4Freightage.exe:2. 数据库路径或系统软件路径不存在或有错误
+
+25-06-21 22:20:06  M4Freightage.exe:3. 参数表参数选择有结构性错误
+
+25-06-21 22:20:06  M4Freightage.exe:请改正错误，否则会影响分析结果
+
+25-06-21 22:20:06  M4Freightage.exe: 本次运行序列出错,M4Freightage.exe,已暂停运行。
+
+
+25-06-21 22:22:58  M7EvaluBusNet.exe:出错信息: 
+
+25-06-21 22:22:58  M7EvaluBusNet.exe:“D:/1-工作室日常/研究生智慧交通大赛/南京案例/基础路网/data/BusStationTrain.txt”
+
+25-06-21 22:22:58  M7EvaluBusNet.exe:引起出错的原因可能是:
+
+25-06-21 22:22:58  M7EvaluBusNet.exe:1. 数据类型不正确（类型不匹配、出现乱码或负值）
+
+25-06-21 22:22:58  M7EvaluBusNet.exe:2. 数据残缺不完整（数据的数量不符合计算要求）
+
+25-06-21 22:22:58  M7EvaluBusNet.exe:3. 数据计算结果出现无效值（NaN or INF）
+
+25-06-21 22:22:58  M7EvaluBusNet.exe:请改正错误，否则会影响运行结果
+
+25-06-21 22:22:58  M7EvaluBusNet.exe: 本次运行序列出错,M7EvaluBusNet.exe,已暂停运行。
+
+
+25-06-21 22:24:40  M7EvaluBusNet.exe:出错信息: 
+
+25-06-21 22:24:40  M7EvaluBusNet.exe:“D:/1-工作室日常/研究生智慧交通大赛/南京案例/基础路网/data/BusStationTrain.txt”
+
+25-06-21 22:24:40  M7EvaluBusNet.exe:引起出错的原因可能是:
+
+25-06-21 22:24:40  M7EvaluBusNet.exe:1. 数据类型不正确（类型不匹配、出现乱码或负值）
+
+25-06-21 22:24:40  M7EvaluBusNet.exe:2. 数据残缺不完整（数据的数量不符合计算要求）
+
+25-06-21 22:24:40  M7EvaluBusNet.exe:3. 数据计算结果出现无效值（NaN or INF）
+
+25-06-21 22:24:40  M7EvaluBusNet.exe:请改正错误，否则会影响运行结果
+
+25-06-21 22:24:40  M7EvaluBusNet.exe: 本次运行序列出错,M7EvaluBusNet.exe,已暂停运行。
+
+
+25-06-21 22:27:22  M7EvaluEnvEner.exe:出错信息：
+
+25-06-21 22:27:22  M7EvaluEnvEner.exe:在打开以下数据文件或执行以下程序时出错
+
+25-06-21 22:27:22  M7EvaluEnvEner.exe:D:/1-工作室日常/研究生智慧交通大赛/南京案例/基础路网/params/Mparam732.txt
+
+25-06-21 22:27:22  M7EvaluEnvEner.exe:引起出错的原因可能是：
+
+25-06-21 22:27:22  M7EvaluEnvEner.exe:1. 数据文件或程序不存在或有错误
+
+25-06-21 22:27:22  M7EvaluEnvEner.exe:2. 数据库路径或系统软件路径不存在或有错误
+
+25-06-21 22:27:22  M7EvaluEnvEner.exe:3. 参数表参数选择有结构性错误
+
+25-06-21 22:27:22  M7EvaluEnvEner.exe:请改正错误，否则会影响分析结果
+
+25-06-21 22:27:22  M7EvaluEnvEner.exe: 本次运行序列出错,M7EvaluEnvEner.exe,已暂停运行。
+
+
+25-06-21 22:27:24  M7EvaluEnvEner.exe:出错信息：
+
+25-06-21 22:27:24  M7EvaluEnvEner.exe:在打开以下数据文件或执行以下程序时出错
+
+25-06-21 22:27:24  M7EvaluEnvEner.exe:D:/1-工作室日常/研究生智慧交通大赛/南京案例/基础路网/params/Mparam732.txt
+
+25-06-21 22:27:24  M7EvaluEnvEner.exe:引起出错的原因可能是：
+
+25-06-21 22:27:24  M7EvaluEnvEner.exe:1. 数据文件或程序不存在或有错误
+
+25-06-21 22:27:24  M7EvaluEnvEner.exe:2. 数据库路径或系统软件路径不存在或有错误
+
+25-06-21 22:27:24  M7EvaluEnvEner.exe:3. 参数表参数选择有结构性错误
+
+25-06-21 22:27:24  M7EvaluEnvEner.exe:请改正错误，否则会影响分析结果
+
+25-06-21 22:27:24  M7EvaluEnvEner.exe: 本次运行序列出错,M7EvaluEnvEner.exe,已暂停运行。
+
+
+25-06-21 22:28:22  M7EvaluEnvEner.exe:出错信息：
+
+25-06-21 22:28:22  M7EvaluEnvEner.exe:在打开以下数据文件或执行以下程序时出错
+
+25-06-21 22:28:22  M7EvaluEnvEner.exe:D:/1-工作室日常/研究生智慧交通大赛/南京案例/基础路网/params/Mparam720.txt
+
+25-06-21 22:28:22  M7EvaluEnvEner.exe:引起出错的原因可能是：
+
+25-06-21 22:28:22  M7EvaluEnvEner.exe:1. 数据文件或程序不存在或有错误
+
+25-06-21 22:28:22  M7EvaluEnvEner.exe:2. 数据库路径或系统软件路径不存在或有错误
+
+25-06-21 22:28:22  M7EvaluEnvEner.exe:3. 参数表参数选择有结构性错误
+
+25-06-21 22:28:22  M7EvaluEnvEner.exe:请改正错误，否则会影响分析结果
+
+25-06-21 22:28:22  M7EvaluEnvEner.exe: 本次运行序列出错,M7EvaluEnvEner.exe,已暂停运行。
+
+
+25-06-21 22:28:23  M7EvaluEnvEner.exe:出错信息：
+
+25-06-21 22:28:23  M7EvaluEnvEner.exe:在打开以下数据文件或执行以下程序时出错
+
+25-06-21 22:28:23  M7EvaluEnvEner.exe:D:/1-工作室日常/研究生智慧交通大赛/南京案例/基础路网/params/Mparam720.txt
+
+25-06-21 22:28:23  M7EvaluEnvEner.exe:引起出错的原因可能是：
+
+25-06-21 22:28:23  M7EvaluEnvEner.exe:1. 数据文件或程序不存在或有错误
+
+25-06-21 22:28:23  M7EvaluEnvEner.exe:2. 数据库路径或系统软件路径不存在或有错误
+
+25-06-21 22:28:23  M7EvaluEnvEner.exe:3. 参数表参数选择有结构性错误
+
+25-06-21 22:28:23  M7EvaluEnvEner.exe:请改正错误，否则会影响分析结果
+
+25-06-21 22:28:23  M7EvaluEnvEner.exe: 本次运行序列出错,M7EvaluEnvEner.exe,已暂停运行。
+
+
+25-06-21 22:29:20  M7EvaluTransReportAuto.exe: 本次运行序列出错,M7EvaluTransReportAuto.exe,已暂停运行。
+
+
+25-06-21 22:30:55  M7EvaluTransReportAuto.exe: 本次运行序列出错,M7EvaluTransReportAuto.exe,已暂停运行。
+
+
+25-06-21 22:32:09  M7EvaluTransReportAuto.exe: 本次运行序列出错,M7EvaluTransReportAuto.exe,已暂停运行。
+
+
+25-06-21 22:32:51  M7EvaluTransReportAuto.exe: 本次运行序列出错,M7EvaluTransReportAuto.exe,已暂停运行。
+
+
+25-07-09 09:59:26  M7EvaluTransitMetropolis.exe:出错信息：
+
+25-07-09 09:59:26  M7EvaluTransitMetropolis.exe:在打开以下数据文件或执行以下程序时出错
+
+25-07-09 09:59:26  M7EvaluTransitMetropolis.exe:D:/1-工作室日常/研究生智慧交通大赛/南京案例/基础路网/result/NumLinkBRT.tsd
+
+25-07-09 09:59:26  M7EvaluTransitMetropolis.exe:引起出错的原因可能是：
+
+25-07-09 09:59:26  M7EvaluTransitMetropolis.exe:1. 数据文件或程序不存在或有错误
+
+25-07-09 09:59:26  M7EvaluTransitMetropolis.exe:2. 数据库路径或系统软件路径不存在或有错误
+
+25-07-09 09:59:26  M7EvaluTransitMetropolis.exe:3. 参数表参数选择有结构性错误
+
+25-07-09 09:59:26  M7EvaluTransitMetropolis.exe:请改正错误，否则会影响分析结果
+

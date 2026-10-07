@@ -1,0 +1,39 @@
+{
+  "method": "CUA真实本地浏览器，读取实际DOM并目视截图；未提交新仿真",
+  "url": "http://127.0.0.1:8768/",
+  "selected_job": "20260908_100153_bb7198",
+  "selected_status": "completed",
+  "modal_response_rows": 6,
+  "positive_modes": [
+    "car",
+    "taxi",
+    "motor"
+  ],
+  "truck_label": "未达正流量门槛",
+  "template_turn": [
+    4797,
+    5990,
+    5991
+  ],
+  "displayed_core": [
+    5990,
+    5991
+  ],
+  "max_links": 1,
+  "max_runs": 13,
+  "demand_factors": [
+    0.9,
+    1,
+    1.1
+  ],
+  "plan_capability": "显式禁转与停车组合",
+  "browser_errors": [],
+  "checks": [
+    "刷新加载实际任务",
+    "点击载入禁转组合模板",
+    "实际生成任务卡",
+    "核对核心与转向及预算",
+    "读取完成任务六行响应",
+    "查看任务卡和响应表截图"
+  ]
+}

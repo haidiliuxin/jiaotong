@@ -1,0 +1,11 @@
+{
+  "request": "环洲路主动稳健搜索迁移验证，使用相同规则与约束，保留全部失败记录",
+  "scenario": "parking",
+  "search_mode": "robust",
+  "road_name": "环洲路",
+  "max_links": 3,
+  "max_runs": 7,
+  "max_feedback": 2,
+  "demand_factors": [1.0, 1.1],
+  "repeat_baseline": true
+}

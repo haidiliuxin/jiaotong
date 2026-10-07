@@ -1,0 +1,6 @@
+设计速度下的分方式交通区间最短时间矩阵分析Mparam341.TXT
+社会车辆网络最短时间矩阵分析     TmDsgnLinkCar.tsd    MatrixTmDsgnCar.tsd
+常规公交网络最短时间矩阵分析     TmDsgnLinkBus.tsd	    MatrixTmDsgnBus.tsd
+轨道交通网络最短时间矩阵分析	  TmDsgnLinkSub.tsd    MatrixTmDsgnSub.tsd
+步行交通网络最短时间矩阵分析	  TmDsgnLinkWalk.tsd  MatrixTmDsgnWalk.tsd
+非机动车网络最短时间矩阵分析	  TmDsgnLinkBic.tsd	    MatrixTmDsgnBic.tsd

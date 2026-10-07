@@ -1,0 +1,23 @@
+{
+  "kind": "one_bounded_initial_planning_failure",
+  "source_commit": "8818c315b7aced808fdb8a19c32ee250c139fec7",
+  "status": "failed",
+  "new_model_calls": 1,
+  "known_tokens": 6592,
+  "native_scenes": 0,
+  "top_level_modules": 0,
+  "error": "ValueError: Local HTTP 400: 额外收益不能把仅停车与其自身比较",
+  "attempt_id": "preview_316806ea3f7c434ebe1648d2d3938170",
+  "native_launched": false,
+  "old_original_records_unchanged": 74,
+  "old_locks_unchanged_and_free": 7,
+  "immutable_bundle_sha256": "9c5a94a4c731adba1b260155ec18c92a59f9606a2ca0b8ecf7a31c0edd2f5469",
+  "observation": "模型的可公开提议中，比较停车的额外收益与组合增益两项判据无效；初始编排停止，没有新交通结果。",
+  "evidence_limit": "RC16仅为无效criterion保留invalid标记，原非法参数组合未完整落盘；不得事后猜填具体枚举值。错误文本证明触发了仅停车与自身比较的拒绝条件。",
+  "acceptance": "未通过，未重试，未执行交通场景；不能作为完整智能闭环证据。",
+  "physical_other_machine": false,
+  "original_files": 8,
+  "original_bytes_unchanged": true,
+  "zip_sha256": "e60d72848fd8e9f4cfb80a3e0ba2190ec25bb1e6d8a728487f3d6df190b197ac",
+  "zip_bytes": 812105
+}

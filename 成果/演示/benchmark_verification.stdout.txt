@@ -1,0 +1,75 @@
+{
+  "passed": true,
+  "unique_simulations": 11,
+  "module_executions": 77,
+  "budget_per_strategy_per_factor": 2,
+  "conditions": [
+    {
+      "factor": 0.9,
+      "strategies": {
+        "fixed": {
+          "candidates": [
+            "f0p900_first",
+            "f0p900_fixed_second"
+          ],
+          "budget": 2,
+          "recommendation": "f0p900_baseline"
+        },
+        "adaptive": {
+          "candidates": [
+            "f0p900_first",
+            "f0p900_adaptive_second"
+          ],
+          "budget": 2,
+          "recommendation": "f0p900_adaptive_second"
+        }
+      },
+      "decision_before_second_simulation": true
+    },
+    {
+      "factor": 1.0,
+      "strategies": {
+        "fixed": {
+          "candidates": [
+            "f1p000_first",
+            "f1p000_fixed_second"
+          ],
+          "budget": 2,
+          "recommendation": "f1p000_fixed_second"
+        },
+        "adaptive": {
+          "candidates": [
+            "f1p000_first",
+            "f1p000_fixed_second"
+          ],
+          "budget": 2,
+          "recommendation": "f1p000_fixed_second"
+        }
+      },
+      "decision_before_second_simulation": true
+    },
+    {
+      "factor": 1.1,
+      "strategies": {
+        "fixed": {
+          "candidates": [
+            "f1p100_first",
+            "f1p100_fixed_second"
+          ],
+          "budget": 2,
+          "recommendation": "f1p100_baseline"
+        },
+        "adaptive": {
+          "candidates": [
+            "f1p100_first",
+            "f1p100_adaptive_second"
+          ],
+          "budget": 2,
+          "recommendation": "f1p100_adaptive_second"
+        }
+      },
+      "decision_before_second_simulation": true
+    }
+  ],
+  "limits": "共享候选各计一次逻辑评估；确定性案例比较，不证明普遍算法优越性"
+}

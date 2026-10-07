@@ -1,0 +1,219 @@
+{
+  "kind": "original_checker_pass_with_model_claim_gaps",
+  "source_commit": "7d622906e5455ec9dd5c37d9f6a4cb5e82f9a414",
+  "scope": "原版核验器通过原生与流程核验，但漏过停车等级和零代价文字冲突；整体仍待核对，不是完整通过或物理异机证明",
+  "job_ids": [
+    "20260928_011930_f0fe59",
+    "20260928_011930_a1431b"
+  ],
+  "whole": {
+    "passed": true,
+    "programme": "20260928_011930_f0fe59",
+    "protocol": "programme-evidence-v1",
+    "native": [
+      {
+        "job_id": "20260928_011930_f0fe59",
+        "raw_verified": true,
+        "archived": false,
+        "verification_kind": null
+      },
+      {
+        "job_id": "20260928_011930_a1431b",
+        "raw_verified": true,
+        "archived": false,
+        "verification_kind": null
+      }
+    ],
+    "planning": {
+      "passed": true,
+      "groups": 2,
+      "decisions": 4,
+      "no_cross_engine_pooling": true,
+      "observations_checked_at_decision_time": true,
+      "request_reservations_checked": true
+    },
+    "model_requests": 5
+  },
+  "native": {
+    "20260928_011930_f0fe59": {
+      "passed": true,
+      "completed_scenarios": 2,
+      "module_executions": 14,
+      "scope_sizes": {
+        "core": 3,
+        "neighbor": 43,
+        "network": 32060
+      },
+      "repeat_arrays_exact": null,
+      "verified_runs": [
+        {
+          "scenario": "baseline",
+          "modules": 7,
+          "result_rows": {
+            "speed_kmh": 32981,
+            "flow_pcu_h": 32981,
+            "vc": 32981,
+            "time_s": 32981
+          },
+          "input_difference_files": [],
+          "car_od_factor": 1.0,
+          "internal_od_factor": 1.0
+        },
+        {
+          "scenario": "parking_1",
+          "modules": 7,
+          "result_rows": {
+            "speed_kmh": 32981,
+            "flow_pcu_h": 32981,
+            "vc": 32981,
+            "time_s": 32981
+          },
+          "input_difference_files": [
+            "data/manageL.txt"
+          ],
+          "car_od_factor": 1.0,
+          "internal_od_factor": 1.0
+        }
+      ],
+      "limitations": "只核验保存的实验与输入输出证据，不证明现实标定有效或全部草案已实现",
+      "model_planning_audit": {
+        "passed": true,
+        "decisions": 2,
+        "model_selected_policies": 1,
+        "observations_from_current_job_only": true,
+        "actions_precede_execution": true
+      }
+    },
+    "20260928_011930_a1431b": {
+      "passed": true,
+      "completed_scenarios": 4,
+      "module_executions": 28,
+      "scope_sizes": {
+        "core": 2,
+        "neighbor": 22,
+        "network": 32060
+      },
+      "repeat_arrays_exact": null,
+      "verified_runs": [
+        {
+          "scenario": "baseline",
+          "modules": 7,
+          "result_rows": {
+            "speed_kmh": 32981,
+            "flow_pcu_h": 32981,
+            "vc": 32981,
+            "time_s": 32981
+          },
+          "input_difference_files": [
+            "params/AsignParameter_car.dat",
+            "params/AsignParameter_motor.dat",
+            "params/AsignParameter_taxi.dat",
+            "params/AsignParameter_truck.dat",
+            "params/Mparam635.txt"
+          ],
+          "car_od_factor": 1.0,
+          "internal_od_factor": 1.0
+        },
+        {
+          "scenario": "S1_parking",
+          "modules": 7,
+          "result_rows": {
+            "speed_kmh": 32981,
+            "flow_pcu_h": 32981,
+            "vc": 32981,
+            "time_s": 32981
+          },
+          "input_difference_files": [
+            "data/manageL.txt",
+            "params/AsignParameter_car.dat",
+            "params/AsignParameter_motor.dat",
+            "params/AsignParameter_taxi.dat",
+            "params/AsignParameter_truck.dat",
+            "params/Mparam635.txt"
+          ],
+          "car_od_factor": 1.0,
+          "internal_od_factor": 1.0
+        },
+        {
+          "scenario": "S2_oneway",
+          "modules": 7,
+          "result_rows": {
+            "speed_kmh": 32981,
+            "flow_pcu_h": 32981,
+            "vc": 32981,
+            "time_s": 32981
+          },
+          "input_difference_files": [
+            "data/ManageR1.txt",
+            "params/AsignParameter_car.dat",
+            "params/AsignParameter_motor.dat",
+            "params/AsignParameter_taxi.dat",
+            "params/AsignParameter_truck.dat",
+            "params/Mparam635.txt"
+          ],
+          "car_od_factor": 1.0,
+          "internal_od_factor": 1.0
+        },
+        {
+          "scenario": "S3_combined",
+          "modules": 7,
+          "result_rows": {
+            "speed_kmh": 32981,
+            "flow_pcu_h": 32981,
+            "vc": 32981,
+            "time_s": 32981
+          },
+          "input_difference_files": [
+            "data/ManageR1.txt",
+            "data/manageL.txt",
+            "params/AsignParameter_car.dat",
+            "params/AsignParameter_motor.dat",
+            "params/AsignParameter_taxi.dat",
+            "params/AsignParameter_truck.dat",
+            "params/Mparam635.txt"
+          ],
+          "car_od_factor": 1.0,
+          "internal_od_factor": 1.0
+        }
+      ],
+      "limitations": "只核验保存的实验与输入输出证据，不证明现实标定有效或全部草案已实现",
+      "model_planning_audit": {
+        "passed": true,
+        "decisions": 2,
+        "model_selected_policies": 0,
+        "observations_from_current_job_only": true,
+        "actions_precede_execution": true
+      }
+    }
+  },
+  "archived": {
+    "performed": false,
+    "reason": "存在模型事实冲突，不生成完整可移植通过证书"
+  },
+  "locks": [
+    {
+      "path": "F:\\ITS比赛\\智能体实验\\runtime.lock",
+      "available": true,
+      "bytes_unchanged": true
+    },
+    {
+      "path": "F:\\ITS比赛\\工作材料\\便携异目录检查\\20260928 智能规划 RC10\\智能体实验\\runtime.lock",
+      "available": true,
+      "bytes_unchanged": true
+    }
+  ],
+  "immutable_bundle": {
+    "passed": true,
+    "kind": "portable_transtar_runtime_v1",
+    "files": 16147,
+    "bytes": 1722311719,
+    "code_commit": "7d622906e5455ec9dd5c37d9f6a4cb5e82f9a414",
+    "python_version": "3.12.6 (tags/v3.12.6:a4a2d2b, Sep  6 2024, 20:11:23) [MSC v.1940 64 bit (AMD64)]",
+    "manifest_sha256": "7f6b36ae527a838cf37bac098837cef55de1f8c87996fabc90b88c0fb4ed851f",
+    "new_model_calls": 0,
+    "meaning": "不可变文件完整性检查；不是数字签名、模型授权检查或真实求解证明"
+  },
+  "original_evidence_bytes_unchanged": true,
+  "archival_new_model_calls": 0,
+  "archival_new_native_scenes": 0
+}

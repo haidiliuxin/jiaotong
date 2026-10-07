@@ -1,0 +1,28 @@
+{
+  "kind": "executed_programme_with_model_claim_gaps_v1",
+  "programme_status": "completed",
+  "validator_status": "verified",
+  "source_commit": "7d622906e5455ec9dd5c37d9f6a4cb5e82f9a414",
+  "job_ids": [
+    "20260928_011930_f0fe59",
+    "20260928_011930_a1431b"
+  ],
+  "model_calls": 5,
+  "known_tokens": 41007,
+  "unknown_usage": 0,
+  "native_scenes": 6,
+  "native_modules": 42,
+  "native_modules_meaning": "顶层模块（含适配入口）",
+  "oneway_nested_native_calls": 80,
+  "original_model_review_accepted": true,
+  "current_acceptance": "needs_review",
+  "claim_conflicts": [
+    "长江村路S1实际停车2级，模型写成停车1级",
+    "S1邻区耗时微增0.0000149734122656%，模型写代价0"
+  ],
+  "meaning": "原版核验器通过原生与流程核验，但漏过停车等级和零代价文字冲突；整体仍待核对，不是完整通过或物理异机证明。原始completed及verified状态保持，不替换原回复、不追加请求；runtime副本保留原目录。",
+  "original_files": 5696,
+  "original_bytes_unchanged": true,
+  "zip_bytes": 376939990,
+  "zip_sha256": "24b49907a9db2ef0ea9d8d14de12b62f224c539405439df356b0710cea7afa85"
+}

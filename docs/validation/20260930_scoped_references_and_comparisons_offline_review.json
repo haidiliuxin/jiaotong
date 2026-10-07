@@ -1,0 +1,592 @@
+{
+  "created": "2026-09-30T06:00:53.381986+00:00",
+  "kind": "scoped_references_and_separate_measured_comparison_offline_review",
+  "source_parent_commit": "854e9f20944ef6f03ea75530931e7b9038ad588d",
+  "source_files_sha256": {
+    "scripts/verify_experiment.py": "1896450ff48e2023f993b133fdc8f960877247c73790e4d99ce87966aa96eb64",
+    "tests/test_hypothesis_references.py": "9ad9f7a0cca1a2a8591a892aabf8f4259800a29b272ef03cac35e21dd8e2d093",
+    "tests/test_mixed_controller.py": "0ef70465d6108397625b139beab669cf39cd31b26ca161aa7496567b476f1591",
+    "tests/test_natural_plan.py": "8b3541b9a8e9e6966c04e781361de19fb5f1f4c2741b4521ca57711b074f62a9",
+    "tests/test_planner_view.cjs": "e4cdf8915e7f48adc9619dc4dc7d530c092c0944f873e895bcec371cf8a575a9",
+    "tests/test_planning_completion.py": "4ceb3ec703b1d9b778fbd0706ee99579f38e02f81c67a50f531a0292fe2ad37f",
+    "tests/test_planning_review.py": "b1ff81911f56eb44744b93b12b6a3f1e679334349ad0ddda2e81e4df1e6916be",
+    "tests/test_portable.py": "9846d4a78ffa67fa0dd9e1db2d03da16d675ce1af81522373eabc6fe61eb5d93",
+    "tests/test_spatial_planning.py": "b6501434cb0a20c69d5b14b204a4be3a16e0630b55a846eda2399302b98006c4",
+    "tests/test_study_comparison.py": "039f68f030dcd81a31a3b173f8e6fad6be986fc5ab547523afb5d7a9f6aea57c",
+    "traffic_agent/agent.py": "2074a6ff616a54781853788a7aef7aef7f8d1c7b015c770448d6e27d5ad6aaae",
+    "traffic_agent/feedback_planner.py": "12c4247260bd78b263f76974cc2dfdd59a6f9f732f4ef9f2bae0a458269c0257",
+    "traffic_agent/hypothesis_contract.py": "022922e23d25fcb91107bc5f26efefca848efa243ddc6b1451ad52974061c66c",
+    "traffic_agent/planning_audit.py": "d64eed8e884f73bc0036fb88b355af43a7b227e0533fe5fb996f8812ad396269",
+    "traffic_agent/planning_instructions.py": "bbfb4a133ab9491f8514aac9bbec092d0ccb11144581c18ebeaabed04ffc2728",
+    "traffic_agent/planning_review.py": "c79d30fe64dde6a23eeb290a8043f2c8f17f519328136c1ce2ecd953012cbbd6",
+    "traffic_agent/portable.py": "847619112f0b23c305a9f445ee5ade7afc43551961db54c0d817ab6547e2008b",
+    "traffic_agent/programme_review.py": "dbed9e3ce6f3acf5425561c751ec14e625b1a07075fb9085af528bb1674b3974",
+    "traffic_agent/report.py": "3ccbcd7c40d09cc32f71d03edb2fb4e17d4c974d3c50ecd38979d96859e72241",
+    "traffic_agent/research_evidence.py": "b25924ec18b8049d2ce94f88c6d8fc63aa986c1c4123b4519a13733cd82a481b",
+    "traffic_agent/static/dispatch.css": "86ac89ad878f3da1e2ae18681e71b73ba78b369bb3f79bb3a1ccee4c19ebb305",
+    "traffic_agent/static/planner_view.js": "5ef8cc245db221b4ddb4fe6c20dff10dc100ed91f03e224cb0e82ab5c9b237de",
+    "traffic_agent/study_comparison.py": "1576eb595eff77f50b8b24b21b0b271f7451f4fed2338d7b57e0e0da61430045"
+  },
+  "original_evidence_index": {
+    "path": "docs\\validation\\20260930_action_summary_v2_live_and_choice_v5_review.json",
+    "sha256": "3951a41c5e7497b01cf4c6f56d32560529ed0ba2a86879041b9e98dd3b7490e7"
+  },
+  "overall_complete": false,
+  "independent_semantic_status": "needs_review",
+  "implementation": {
+    "reference_protocol": "scoped-measured-findings-v2",
+    "comparison_protocol": "study-comparison-v2",
+    "changes": [
+      "own_frozen_predicate_only_for_typed_finding_references",
+      "unmeasured_remains_unknown",
+      "reference_version_frozen_before_baseline_and_audited",
+      "per_study_completed_scene_coverage",
+      "control_core_neighbor_eligibility_recorded_separately",
+      "actual_closed_and_retained_directions",
+      "shared_comparison_data_for_model_ui_and_report",
+      "original_model_explanations_preserved"
+    ],
+    "model_still_chooses_experiments": true,
+    "original_request_not_rewritten": true,
+    "untyped_legacy_hypotheses_retain_reference_rules": true,
+    "legacy_prompt_and_schema_replay": true,
+    "arbitrary_free_text_causality_or_coverage_not_certified": true
+  },
+  "offline": {
+    "python_tests": 722,
+    "new_tests": 10,
+    "python_log": {
+      "path": "tmp\\20260930_scoped_refs_python_tests_final.log",
+      "sha256": "70ed5ce0ba0030f56be102c410ab72be70de260a623c66040905d24803a4eed6"
+    },
+    "node_groups": 4,
+    "node_log": {
+      "path": "tmp\\20260930_scoped_refs_node_tests_release.json",
+      "sha256": "dc4445a93b254a48d4dd52d2677022e5312f176333e908cd747faf4bbe2d03e2"
+    },
+    "both_http_adapters_with_synthetic_models": true,
+    "real_readonly_replay": {
+      "path": "tmp\\20260930_scoped_refs_real_replay_release.json",
+      "sha256": "30b5d8c33f2592dd4013f2ff702196d3e289f4e5e7731698ffe85dc2bf62085b"
+    },
+    "real_data_render": {
+      "path": "tmp\\20260930_scoped_refs_real_view.json",
+      "sha256": "d81ea2c9381921318f243f8115ce1a0d93722b536d86aa0381fbeaa2442d8fc9"
+    },
+    "old_decisions": [
+      {
+        "ordinal": 1,
+        "status": "accepted",
+        "action": "parking_a6b29e4dfd15",
+        "old_reference_schema": "measured-findings-v1",
+        "request_schema_and_instruction_hashes_unchanged": true,
+        "original_validation_preserved": true,
+        "first_missing_reference_still_rejected": true
+      },
+      {
+        "ordinal": 2,
+        "status": "accepted",
+        "action": "parking_f4c81e6f67ba",
+        "old_reference_schema": "measured-findings-v1",
+        "request_schema_and_instruction_hashes_unchanged": true,
+        "original_validation_preserved": true,
+        "first_missing_reference_still_rejected": false
+      },
+      {
+        "ordinal": 3,
+        "status": "accepted",
+        "action": "study_2",
+        "old_reference_schema": "measured-findings-v1",
+        "request_schema_and_instruction_hashes_unchanged": true,
+        "original_validation_preserved": true,
+        "first_missing_reference_still_rejected": false
+      },
+      {
+        "ordinal": 4,
+        "status": "accepted",
+        "action": "oneway_3237_3236",
+        "old_reference_schema": "measured-findings-v1",
+        "request_schema_and_instruction_hashes_unchanged": true,
+        "original_validation_preserved": true,
+        "first_missing_reference_still_rejected": false
+      },
+      {
+        "ordinal": 5,
+        "status": "accepted",
+        "action": "stop",
+        "old_reference_schema": "measured-findings-v1",
+        "request_schema_and_instruction_hashes_unchanged": true,
+        "original_validation_preserved": true,
+        "first_missing_reference_still_rejected": false
+      }
+    ],
+    "old_initial_and_programme_audit": {
+      "passed": true,
+      "groups": 2,
+      "decisions": 5,
+      "no_cross_engine_pooling": true,
+      "observations_checked_at_decision_time": true,
+      "request_reservations_checked": true
+    },
+    "new_schema_rejects_original_reply": true,
+    "new_local_rejection": {
+      "code": "finding_scope",
+      "message": "判断依据必须属于本假设的冻结配对检验，不能附加其他问题的结果或重复引用"
+    },
+    "synthetic_references_only_check_is_not_model_acceptance": true,
+    "derived_actual_comparisons": [
+      {
+        "version": "study-comparison-v2",
+        "job_id": "20260930_125008_3aa357",
+        "scenario": "parking",
+        "road": "长江村路",
+        "factors": [
+          {
+            "demand_factor": 1.0,
+            "baseline_ref": "20260930_125008_3aa357:baseline",
+            "policies": [
+              {
+                "ref": "20260930_125008_3aa357:parking_1",
+                "run": "parking_1",
+                "label": "停车1级",
+                "policy_label": null,
+                "status": "admissible",
+                "constraint_passed": true,
+                "control_response": null,
+                "violations": [],
+                "core_time_change_pct": -23.308694361678317,
+                "neighbor_time_change_pct": -0.18205257806130914,
+                "network_time_change_pct": -0.009296427176952449,
+                "kind": "parking",
+                "control_kind": null,
+                "executed_changes": [
+                  {
+                    "from_node": 3240,
+                    "to_node": 3239,
+                    "old_parking": 3,
+                    "parking": 1
+                  },
+                  {
+                    "from_node": 3239,
+                    "to_node": 3240,
+                    "old_parking": 3,
+                    "parking": 1
+                  },
+                  {
+                    "from_node": 3239,
+                    "to_node": 3238,
+                    "old_parking": 3,
+                    "parking": 1
+                  }
+                ],
+                "control_directions": [],
+                "checks": {
+                  "control_applicable": false,
+                  "control_passed": null,
+                  "core_time_decreased": true,
+                  "neighbor_limits_passed": true,
+                  "recommendation_admissible": true
+                },
+                "neighbor_limits": {
+                  "neighbor_time_change_pct": -0.18205257806130914,
+                  "neighbor_new_oversaturated_km": 0,
+                  "time_limit_pct": 0.5,
+                  "new_oversaturated_limit_km": 0.1
+                }
+              },
+              {
+                "ref": "20260930_125008_3aa357:parking_2",
+                "run": "parking_2",
+                "label": "停车1级",
+                "policy_label": null,
+                "status": "admissible",
+                "constraint_passed": true,
+                "control_response": null,
+                "violations": [],
+                "core_time_change_pct": -8.846190921119224,
+                "neighbor_time_change_pct": 0.06365802041863322,
+                "network_time_change_pct": -0.003971832138216502,
+                "kind": "parking",
+                "control_kind": null,
+                "executed_changes": [
+                  {
+                    "from_node": 3237,
+                    "to_node": 3236,
+                    "old_parking": 3,
+                    "parking": 1
+                  },
+                  {
+                    "from_node": 3236,
+                    "to_node": 3235,
+                    "old_parking": 3,
+                    "parking": 1
+                  }
+                ],
+                "control_directions": [],
+                "checks": {
+                  "control_applicable": false,
+                  "control_passed": null,
+                  "core_time_decreased": true,
+                  "neighbor_limits_passed": true,
+                  "recommendation_admissible": true
+                },
+                "neighbor_limits": {
+                  "neighbor_time_change_pct": 0.06365802041863322,
+                  "neighbor_new_oversaturated_km": 0,
+                  "time_limit_pct": 0.5,
+                  "new_oversaturated_limit_km": 0.1
+                }
+              }
+            ],
+            "combination_contrasts": []
+          }
+        ],
+        "scope": "同组、同需求、新基准。措施行列出相对基准的变化；组合差值=组合耗时−单项耗时，负值表示组合更低，单位pcu·h。约束通过与耗时更低分别判断；单需求不能证明稳健性，不跨组混算或推断现实协同。",
+        "completed_scenes": [
+          {
+            "ref": "20260930_125008_3aa357:baseline",
+            "demand_factor": 1.0,
+            "kind": "baseline"
+          },
+          {
+            "ref": "20260930_125008_3aa357:parking_1",
+            "demand_factor": 1.0,
+            "kind": "parking"
+          },
+          {
+            "ref": "20260930_125008_3aa357:parking_2",
+            "demand_factor": 1.0,
+            "kind": "parking"
+          }
+        ],
+        "coverage_text": "新基准1场、仅停车2场；已测需求×1",
+        "study_id": "study_1",
+        "title": "停车治理与反馈",
+        "engine": "TranStar 基础分配"
+      },
+      {
+        "version": "study-comparison-v2",
+        "job_id": "20260930_125008_90c0e3",
+        "scenario": "oneway",
+        "road": "长江村路",
+        "factors": [
+          {
+            "demand_factor": 1.0,
+            "baseline_ref": "20260930_125008_90c0e3:baseline",
+            "policies": [
+              {
+                "ref": "20260930_125008_90c0e3:S1_parking",
+                "run": "S1_parking",
+                "label": "停车2级",
+                "policy_label": "S1_parking",
+                "status": "admissible",
+                "constraint_passed": true,
+                "control_response": null,
+                "violations": [],
+                "core_time_change_pct": -31.498713743899877,
+                "neighbor_time_change_pct": 1.4973412265639752e-05,
+                "network_time_change_pct": -0.005958321446231096,
+                "kind": "parking",
+                "control_kind": null,
+                "executed_changes": [
+                  {
+                    "from_node": 3237,
+                    "to_node": 3236,
+                    "old_parking": 3,
+                    "parking": 2
+                  },
+                  {
+                    "from_node": 3236,
+                    "to_node": 3237,
+                    "old_parking": 3,
+                    "parking": 2
+                  }
+                ],
+                "control_directions": [],
+                "checks": {
+                  "control_applicable": false,
+                  "control_passed": null,
+                  "core_time_decreased": true,
+                  "neighbor_limits_passed": true,
+                  "recommendation_admissible": true
+                },
+                "neighbor_limits": {
+                  "neighbor_time_change_pct": 1.4973412265639752e-05,
+                  "neighbor_new_oversaturated_km": 0,
+                  "time_limit_pct": 0.5,
+                  "new_oversaturated_limit_km": 0.1
+                }
+              },
+              {
+                "ref": "20260930_125008_90c0e3:S2_oneway",
+                "run": "S2_oneway",
+                "label": "单向禁行",
+                "policy_label": "S2_oneway",
+                "status": "rejected",
+                "constraint_passed": false,
+                "control_response": true,
+                "violations": [
+                  "neighbor路段行驶时间增幅超过0.5%",
+                  "邻区新增过饱和有向里程超过0.1km"
+                ],
+                "core_time_change_pct": -84.76873746133626,
+                "neighbor_time_change_pct": 171.89852158658633,
+                "network_time_change_pct": -0.039409309154680994,
+                "kind": "traffic_control",
+                "control_kind": "oneway",
+                "executed_changes": [
+                  {
+                    "kind": "oneway",
+                    "closed_direction": [
+                      3237,
+                      3236
+                    ]
+                  }
+                ],
+                "control_directions": [
+                  {
+                    "closed": [
+                      3237,
+                      3236
+                    ],
+                    "retained": [
+                      3236,
+                      3237
+                    ]
+                  }
+                ],
+                "checks": {
+                  "control_applicable": true,
+                  "control_passed": true,
+                  "core_time_decreased": true,
+                  "neighbor_limits_passed": false,
+                  "recommendation_admissible": false
+                },
+                "neighbor_limits": {
+                  "neighbor_time_change_pct": 171.89852158658633,
+                  "neighbor_new_oversaturated_km": 1.03054,
+                  "time_limit_pct": 0.5,
+                  "new_oversaturated_limit_km": 0.1
+                }
+              },
+              {
+                "ref": "20260930_125008_90c0e3:S3_combined",
+                "run": "S3_combined",
+                "label": "停车2级＋单向禁行",
+                "policy_label": "S3_combined",
+                "status": "rejected",
+                "constraint_passed": false,
+                "control_response": true,
+                "violations": [
+                  "neighbor路段行驶时间增幅超过0.5%",
+                  "邻区新增过饱和有向里程超过0.1km"
+                ],
+                "core_time_change_pct": -85.52540605366869,
+                "neighbor_time_change_pct": 171.89852158658633,
+                "network_time_change_pct": -0.03955243684344856,
+                "kind": "combined",
+                "control_kind": "oneway",
+                "executed_changes": [
+                  {
+                    "from_node": 3237,
+                    "to_node": 3236,
+                    "old_parking": 3,
+                    "parking": 2
+                  },
+                  {
+                    "from_node": 3236,
+                    "to_node": 3237,
+                    "old_parking": 3,
+                    "parking": 2
+                  },
+                  {
+                    "kind": "oneway",
+                    "closed_direction": [
+                      3237,
+                      3236
+                    ]
+                  }
+                ],
+                "control_directions": [
+                  {
+                    "closed": [
+                      3237,
+                      3236
+                    ],
+                    "retained": [
+                      3236,
+                      3237
+                    ]
+                  }
+                ],
+                "checks": {
+                  "control_applicable": true,
+                  "control_passed": true,
+                  "core_time_decreased": true,
+                  "neighbor_limits_passed": false,
+                  "recommendation_admissible": false
+                },
+                "neighbor_limits": {
+                  "neighbor_time_change_pct": 171.89852158658633,
+                  "neighbor_new_oversaturated_km": 1.03054,
+                  "time_limit_pct": 0.5,
+                  "new_oversaturated_limit_km": 0.1
+                }
+              }
+            ],
+            "combination_contrasts": [
+              {
+                "single_ref": "20260930_125008_90c0e3:S1_parking",
+                "combined_ref": "20260930_125008_90c0e3:S3_combined",
+                "single_label": "停车2级",
+                "combined_label": "停车2级＋单向禁行",
+                "single_status": "admissible",
+                "combined_status": "rejected",
+                "core_time_difference_pcu_h": -19.628769190942585,
+                "neighbor_time_difference_pcu_h": 170.53127719131362,
+                "network_time_difference_pcu_h": -64.52528745416203
+              },
+              {
+                "single_ref": "20260930_125008_90c0e3:S2_oneway",
+                "combined_ref": "20260930_125008_90c0e3:S3_combined",
+                "single_label": "单向禁行",
+                "combined_label": "停车2级＋单向禁行",
+                "single_status": "rejected",
+                "combined_status": "rejected",
+                "core_time_difference_pcu_h": -0.2749099106006767,
+                "neighbor_time_difference_pcu_h": 0.0,
+                "network_time_difference_pcu_h": -0.2749099106003996
+              }
+            ]
+          }
+        ],
+        "scope": "同组、同需求、新基准。措施行列出相对基准的变化；组合差值=组合耗时−单项耗时，负值表示组合更低，单位pcu·h。约束通过与耗时更低分别判断；单需求不能证明稳健性，不跨组混算或推断现实协同。",
+        "completed_scenes": [
+          {
+            "ref": "20260930_125008_90c0e3:baseline",
+            "demand_factor": 1.0,
+            "kind": "baseline"
+          },
+          {
+            "ref": "20260930_125008_90c0e3:S1_parking",
+            "demand_factor": 1.0,
+            "kind": "parking"
+          },
+          {
+            "ref": "20260930_125008_90c0e3:S2_oneway",
+            "demand_factor": 1.0,
+            "kind": "traffic_control"
+          },
+          {
+            "ref": "20260930_125008_90c0e3:S3_combined",
+            "demand_factor": 1.0,
+            "kind": "combined"
+          }
+        ],
+        "coverage_text": "新基准1场、仅停车1场、仅交通组织1场、停车＋交通组织1场；已测需求×1",
+        "study_id": "study_2",
+        "title": "停车＋单向组织",
+        "engine": "TranStar Vehicle1＋道路禁行适配"
+      }
+    ],
+    "new_protocol_derived_stop_basis": "按本次完成记录：停车治理与反馈（新基准1场、仅停车2场；已测需求×1）；停车＋单向组织（新基准1场、仅停车1场、仅交通组织1场、停车＋交通组织1场；已测需求×1）。各组约定实测已齐，模型决定停止新增试验；各组结果独立。",
+    "derived_views_never_written_into_originals": true,
+    "browser_visual_verified": false
+  },
+  "wire_size": {
+    "old_final_bytes": 49046,
+    "scoped_references_only_bytes": 48890,
+    "references_and_comparisons_bytes": 52710,
+    "unit": "UTF-8 JSON bytes; not billing tokens"
+  },
+  "billed_token_reduction_verified": false,
+  "original_files": [
+    {
+      "path": "工作材料\\源码联调证据\\20260930_action_summary_full_01\\original_files_manifest.json",
+      "sha256": "ef496f739d35622aa5651b808081159797ae8ed8c31103c0726b7644727db6aa",
+      "files": 7085,
+      "unchanged": true
+    },
+    {
+      "path": "工作材料\\源码联调证据\\20260930_action_execution_full_02\\original_files_manifest.json",
+      "sha256": "1046d72068c443a68f4e78dfb8c7da99a2060c91579329f698d53f27314fbf4b",
+      "files": 1588,
+      "unchanged": true
+    }
+  ],
+  "checked_runtime_locks": [
+    {
+      "path": "智能体实验\\runtime.lock",
+      "free": true,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+      "bytes_unchanged": true
+    },
+    {
+      "path": "智能体实验\\mixed_limit7_full_20260930_01\\runtime.lock",
+      "free": true,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+      "bytes_unchanged": true
+    },
+    {
+      "path": "工作材料\\便携异目录检查\\20260930_v2_RC13\\智能体实验\\oneway_scope_live_20260930_01\\runtime.lock",
+      "free": true,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+      "bytes_unchanged": true
+    },
+    {
+      "path": "工作材料\\便携异目录检查\\20260930_v2_RC14\\智能体实验\\mixed_complete_live_20260930_01\\runtime.lock",
+      "free": true,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+      "bytes_unchanged": true
+    },
+    {
+      "path": "智能体实验\\mixed_named_questions_full_20260930_01\\runtime.lock",
+      "free": true,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+      "bytes_unchanged": true
+    },
+    {
+      "path": "智能体实验\\mixed_action_execution_full_20260930_02\\runtime.lock",
+      "free": true,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+      "bytes_unchanged": true
+    },
+    {
+      "path": "智能体实验\\mixed_action_summary_full_20260930_01\\runtime.lock",
+      "free": true,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+      "bytes_unchanged": true
+    }
+  ],
+  "usage": {
+    "accounting": "project-retained deduplicated evidence, not a complete account bill",
+    "ledger_source": {
+      "path": "docs\\validation\\20260930_action_summary_v2_live_and_choice_v5_review.json",
+      "sha256": "3951a41c5e7497b01cf4c6f56d32560529ed0ba2a86879041b9e98dd3b7490e7"
+    },
+    "new_requests": 0,
+    "new_known_tokens": 0,
+    "project_retained_cumulative_requests": 172,
+    "project_retained_cumulative_known_tokens": 1681054,
+    "authorized_cumulative_request_limit": 684,
+    "authorized_cumulative_known_token_limit": 4132560
+  },
+  "native": {
+    "new_scenes": 0,
+    "new_calls": 0,
+    "readonly_source_scenes": 7,
+    "readonly_source_top_level_modules": 49,
+    "readonly_source_vehicle1_calls": 80,
+    "original_status": "completed",
+    "semantic_acceptance": false
+  },
+  "pending": [
+    "new_reference_comparison_and_choice_v5_real_provider_validation",
+    "free_text_group_coverage_and_causal_boundaries",
+    "next_experiment_selection_quality",
+    "further_stage_input_deduplication",
+    "browser_visual_verification",
+    "final_portable_including_current_source",
+    "physical_other_machine_acceptance"
+  ]
+}

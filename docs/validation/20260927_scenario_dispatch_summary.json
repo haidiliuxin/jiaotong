@@ -1,0 +1,741 @@
+{
+  "job": "智能体实验\\jobs\\20260927_092230_2a933f",
+  "status": "completed",
+  "run_count": 3,
+  "recommendation": "parking_2",
+  "task": {
+    "request": "路边车辆乱停造成通行干扰，请评估停车治理并检查邻区影响",
+    "scenario": "parking",
+    "search_mode": "standard",
+    "recommendation_version": "tolerance-v2",
+    "road_name": null,
+    "links": [],
+    "turn": null,
+    "max_links": 1,
+    "max_runs": 3,
+    "max_feedback": 1,
+    "demand_factors": [
+      1
+    ],
+    "repeat_baseline": false,
+    "neighbor_hops": 2,
+    "target_speed_kmh": 25.0,
+    "max_neighbor_time_increase_pct": 0.5,
+    "max_network_time_increase_pct": 0.1,
+    "max_new_oversaturated_km": 0.1,
+    "module_timeout_seconds": 900
+  },
+  "verification": {
+    "passed": true,
+    "completed_scenarios": 3,
+    "module_executions": 21,
+    "scope_sizes": {
+      "core": 1,
+      "neighbor": 27,
+      "network": 32060
+    },
+    "repeat_arrays_exact": null,
+    "limitations": "只核验保存的实验与输入输出证据，不证明现实标定有效或全部草案已实现"
+  },
+  "decisions": [
+    {
+      "observed_run": "parking_1",
+      "comparison": {
+        "core": {
+          "speed_change_pct": 90.00000000000001,
+          "running_time_change_pct": -47.364553183791614,
+          "oversaturated_km_change": 0.0
+        },
+        "neighbor": {
+          "speed_change_pct": -0.00048673065802251614,
+          "running_time_change_pct": 0.0009638241274423365,
+          "oversaturated_km_change": 0.0
+        },
+        "network": {
+          "speed_change_pct": 0.04683697567573475,
+          "running_time_change_pct": -0.04681708562629394,
+          "oversaturated_km_change": 0.0
+        }
+      },
+      "violations": [],
+      "reason": "核心速度未达任务阈值或流量/管理修正容量仍大于1，试验1级治理并核对边际收益和外溢",
+      "next_changes": [
+        {
+          "from_node": 3244,
+          "to_node": 3245,
+          "old_parking": 3,
+          "parking": 1
+        }
+      ],
+      "will_execute": true,
+      "execution_gate": "execute",
+      "execution_reason": "下一候选通过执行条件，将继续仿真"
+    },
+    {
+      "observed_run": "parking_2",
+      "comparison": {
+        "core": {
+          "speed_change_pct": 159.7777777777778,
+          "running_time_change_pct": -61.447240674739,
+          "oversaturated_km_change": 0.0
+        },
+        "neighbor": {
+          "speed_change_pct": 0.01950268608990058,
+          "running_time_change_pct": 0.018347875294111304,
+          "oversaturated_km_change": 0.05600000000000005
+        },
+        "network": {
+          "speed_change_pct": 0.06074751550195767,
+          "running_time_change_pct": -0.060434066797299124,
+          "oversaturated_km_change": 0.05600000000004002
+        }
+      },
+      "violations": [],
+      "reason": "当前治理已达到搜索停止条件或已验证较强等级，不继续无依据加大强度",
+      "next_changes": null,
+      "will_execute": false,
+      "execution_gate": "no_candidate",
+      "execution_reason": "反馈规则未提出下一候选"
+    }
+  ],
+  "runs": [
+    {
+      "name": "baseline",
+      "changes": [],
+      "demand_factor": 1.0,
+      "metrics": {
+        "core": {
+          "directed_links": 1,
+          "directed_length_km": 1.143,
+          "weighted_speed_kmh": 9.0,
+          "running_time_pcu_h": 224.65792,
+          "transport_pcu_km": 2021.92128,
+          "oversaturated_km": 1.143,
+          "timelink_flagged_links": 0,
+          "timelink_sum_pcu_h": 227.71920355555557
+        },
+        "neighbor": {
+          "directed_links": 27,
+          "directed_length_km": 11.03058,
+          "weighted_speed_kmh": 13.808542429410732,
+          "running_time_pcu_h": 605.3096760449821,
+          "transport_pcu_km": 8358.4443446,
+          "oversaturated_km": 6.90972,
+          "timelink_flagged_links": 0,
+          "timelink_sum_pcu_h": 2828.1157006944445
+        },
+        "network": {
+          "directed_links": 32060,
+          "directed_length_km": 12446.9460498,
+          "weighted_speed_kmh": 33.43319835501451,
+          "running_time_pcu_h": 227328.24893586405,
+          "transport_pcu_km": 7600310.438370859,
+          "oversaturated_km": 1608.6958436,
+          "timelink_flagged_links": 44,
+          "timelink_sum_pcu_h": null
+        }
+      },
+      "comparison": null,
+      "execution": {
+        "scenario": "F:\\ITS比赛\\智能体实验\\jobs\\20260927_092230_2a933f\\scenarios\\baseline\\基础路网",
+        "status": "completed",
+        "started": "2026-09-27T01:22:32.383398+00:00",
+        "modules": [
+          {
+            "module": "M3DataRoadNetwork.exe",
+            "started": "2026-09-27T01:22:32.475170+00:00",
+            "status": "completed",
+            "pid": 34976,
+            "returncode": 0,
+            "elapsed_seconds": 4.812,
+            "finished": "2026-09-27T01:22:37.285578+00:00"
+          },
+          {
+            "module": "M3DataBusNetwork.exe",
+            "started": "2026-09-27T01:22:37.295699+00:00",
+            "status": "completed",
+            "pid": 39728,
+            "returncode": 0,
+            "elapsed_seconds": 0.781,
+            "finished": "2026-09-27T01:22:38.089426+00:00"
+          },
+          {
+            "module": "M3DataTrafficManage.exe",
+            "started": "2026-09-27T01:22:38.100450+00:00",
+            "status": "completed",
+            "pid": 45164,
+            "returncode": 0,
+            "elapsed_seconds": 4.234,
+            "finished": "2026-09-27T01:22:42.337634+00:00"
+          },
+          {
+            "module": "M6AssignVehicle.exe",
+            "started": "2026-09-27T01:22:42.348700+00:00",
+            "status": "completed",
+            "pid": 41720,
+            "returncode": 0,
+            "elapsed_seconds": 123.812,
+            "finished": "2026-09-27T01:24:46.163385+00:00"
+          },
+          {
+            "module": "M6TrafficLoadLinkVeh.exe",
+            "started": "2026-09-27T01:24:46.174396+00:00",
+            "status": "completed",
+            "pid": 45128,
+            "returncode": 0,
+            "elapsed_seconds": 0.344,
+            "finished": "2026-09-27T01:24:46.525388+00:00"
+          },
+          {
+            "module": "M6TrafficLoadNodeVeh.exe",
+            "started": "2026-09-27T01:24:46.536544+00:00",
+            "status": "completed",
+            "pid": 41716,
+            "returncode": 0,
+            "elapsed_seconds": 1.094,
+            "finished": "2026-09-27T01:24:47.635659+00:00"
+          },
+          {
+            "module": "M6NodeQueueDelay.exe",
+            "started": "2026-09-27T01:24:47.638686+00:00",
+            "status": "completed",
+            "pid": 46152,
+            "returncode": 0,
+            "elapsed_seconds": 1.515,
+            "finished": "2026-09-27T01:24:49.156025+00:00"
+          }
+        ],
+        "fresh_outputs": {
+          "result/SpdLinkVeh.tsd": {
+            "bytes": 229783,
+            "mtime_ns": 1790472259406020300
+          },
+          "result/VolLinkVeh.tsd": {
+            "bytes": 238243,
+            "mtime_ns": 1790472281345842900
+          },
+          "result/VCLinkVeh.tsd": {
+            "bytes": 283149,
+            "mtime_ns": 1790472286521050800
+          },
+          "result/TimeLink.tsd": {
+            "bytes": 232042,
+            "mtime_ns": 1790472259406020300
+          },
+          "cache/CapLinkVehMan.dat": {
+            "bytes": 248743,
+            "mtime_ns": 1790472161402660100
+          },
+          "cache/Assign_car.od": {
+            "bytes": 1102240,
+            "mtime_ns": 1790472258436637100
+          }
+        },
+        "input_changes_during_run": [],
+        "assigned_car_od_sum": 12370.26418,
+        "source_car_od_sum": 185553.9479,
+        "assigned_to_source_ratio": 0.06666667198407801,
+        "result_rows": 32981,
+        "finished": "2026-09-27T01:24:49.716390+00:00"
+      }
+    },
+    {
+      "name": "parking_1",
+      "changes": [
+        {
+          "from_node": 3244,
+          "to_node": 3245,
+          "old_parking": 3,
+          "parking": 2
+        }
+      ],
+      "demand_factor": 1.0,
+      "metrics": {
+        "core": {
+          "directed_links": 1,
+          "directed_length_km": 1.143,
+          "weighted_speed_kmh": 17.1,
+          "running_time_pcu_h": 118.24969999999999,
+          "transport_pcu_km": 2022.06987,
+          "oversaturated_km": 1.143,
+          "timelink_flagged_links": 0,
+          "timelink_sum_pcu_h": 118.27840891666666
+        },
+        "neighbor": {
+          "directed_links": 27,
+          "directed_length_km": 11.03058,
+          "weighted_speed_kmh": 13.808475219001302,
+          "running_time_pcu_h": 605.3155101656855,
+          "transport_pcu_km": 8358.4842218,
+          "oversaturated_km": 6.90972,
+          "timelink_flagged_links": 0,
+          "timelink_sum_pcu_h": 2828.087364972222
+        },
+        "network": {
+          "directed_links": 32060,
+          "directed_length_km": 12446.9460498,
+          "weighted_speed_kmh": 33.44885745399567,
+          "running_time_pcu_h": 227221.820474907,
+          "transport_pcu_km": 7600310.283502559,
+          "oversaturated_km": 1608.6958436,
+          "timelink_flagged_links": 44,
+          "timelink_sum_pcu_h": null
+        }
+      },
+      "comparison": {
+        "before": {
+          "core": {
+            "directed_links": 1,
+            "directed_length_km": 1.143,
+            "weighted_speed_kmh": 9.0,
+            "running_time_pcu_h": 224.65792,
+            "transport_pcu_km": 2021.92128,
+            "oversaturated_km": 1.143,
+            "timelink_flagged_links": 0,
+            "timelink_sum_pcu_h": 227.71920355555557
+          },
+          "neighbor": {
+            "directed_links": 27,
+            "directed_length_km": 11.03058,
+            "weighted_speed_kmh": 13.808542429410732,
+            "running_time_pcu_h": 605.3096760449821,
+            "transport_pcu_km": 8358.4443446,
+            "oversaturated_km": 6.90972,
+            "timelink_flagged_links": 0,
+            "timelink_sum_pcu_h": 2828.1157006944445
+          },
+          "network": {
+            "directed_links": 32060,
+            "directed_length_km": 12446.9460498,
+            "weighted_speed_kmh": 33.43319835501451,
+            "running_time_pcu_h": 227328.24893586405,
+            "transport_pcu_km": 7600310.438370859,
+            "oversaturated_km": 1608.6958436,
+            "timelink_flagged_links": 44,
+            "timelink_sum_pcu_h": null
+          }
+        },
+        "after": {
+          "core": {
+            "directed_links": 1,
+            "directed_length_km": 1.143,
+            "weighted_speed_kmh": 17.1,
+            "running_time_pcu_h": 118.24969999999999,
+            "transport_pcu_km": 2022.06987,
+            "oversaturated_km": 1.143,
+            "timelink_flagged_links": 0,
+            "timelink_sum_pcu_h": 118.27840891666666
+          },
+          "neighbor": {
+            "directed_links": 27,
+            "directed_length_km": 11.03058,
+            "weighted_speed_kmh": 13.808475219001302,
+            "running_time_pcu_h": 605.3155101656855,
+            "transport_pcu_km": 8358.4842218,
+            "oversaturated_km": 6.90972,
+            "timelink_flagged_links": 0,
+            "timelink_sum_pcu_h": 2828.087364972222
+          },
+          "network": {
+            "directed_links": 32060,
+            "directed_length_km": 12446.9460498,
+            "weighted_speed_kmh": 33.44885745399567,
+            "running_time_pcu_h": 227221.820474907,
+            "transport_pcu_km": 7600310.283502559,
+            "oversaturated_km": 1608.6958436,
+            "timelink_flagged_links": 44,
+            "timelink_sum_pcu_h": null
+          }
+        },
+        "delta": {
+          "core": {
+            "speed_change_pct": 90.00000000000001,
+            "running_time_change_pct": -47.364553183791614,
+            "oversaturated_km_change": 0.0
+          },
+          "neighbor": {
+            "speed_change_pct": -0.00048673065802251614,
+            "running_time_change_pct": 0.0009638241274423365,
+            "oversaturated_km_change": 0.0
+          },
+          "network": {
+            "speed_change_pct": 0.04683697567573475,
+            "running_time_change_pct": -0.04681708562629394,
+            "oversaturated_km_change": 0.0
+          }
+        },
+        "eligible": true,
+        "violations": [],
+        "new_neighbor_oversaturated_km": 0,
+        "new_neighbor_oversaturated_links": []
+      },
+      "execution": {
+        "scenario": "F:\\ITS比赛\\智能体实验\\jobs\\20260927_092230_2a933f\\scenarios\\parking_1\\基础路网",
+        "status": "completed",
+        "started": "2026-09-27T01:24:50.447219+00:00",
+        "modules": [
+          {
+            "module": "M3DataRoadNetwork.exe",
+            "started": "2026-09-27T01:24:50.534135+00:00",
+            "status": "completed",
+            "pid": 33504,
+            "returncode": 0,
+            "elapsed_seconds": 4.86,
+            "finished": "2026-09-27T01:24:55.392887+00:00"
+          },
+          {
+            "module": "M3DataBusNetwork.exe",
+            "started": "2026-09-27T01:24:55.403667+00:00",
+            "status": "completed",
+            "pid": 44356,
+            "returncode": 0,
+            "elapsed_seconds": 0.813,
+            "finished": "2026-09-27T01:24:56.228954+00:00"
+          },
+          {
+            "module": "M3DataTrafficManage.exe",
+            "started": "2026-09-27T01:24:56.239649+00:00",
+            "status": "completed",
+            "pid": 39168,
+            "returncode": 0,
+            "elapsed_seconds": 4.203,
+            "finished": "2026-09-27T01:25:00.435882+00:00"
+          },
+          {
+            "module": "M6AssignVehicle.exe",
+            "started": "2026-09-27T01:25:00.446687+00:00",
+            "status": "completed",
+            "pid": 44484,
+            "returncode": 0,
+            "elapsed_seconds": 123.063,
+            "finished": "2026-09-27T01:27:03.512437+00:00"
+          },
+          {
+            "module": "M6TrafficLoadLinkVeh.exe",
+            "started": "2026-09-27T01:27:03.522261+00:00",
+            "status": "completed",
+            "pid": 42128,
+            "returncode": 0,
+            "elapsed_seconds": 0.359,
+            "finished": "2026-09-27T01:27:03.875615+00:00"
+          },
+          {
+            "module": "M6TrafficLoadNodeVeh.exe",
+            "started": "2026-09-27T01:27:03.885570+00:00",
+            "status": "completed",
+            "pid": 15184,
+            "returncode": 0,
+            "elapsed_seconds": 1.078,
+            "finished": "2026-09-27T01:27:04.961349+00:00"
+          },
+          {
+            "module": "M6NodeQueueDelay.exe",
+            "started": "2026-09-27T01:27:04.970939+00:00",
+            "status": "completed",
+            "pid": 45952,
+            "returncode": 0,
+            "elapsed_seconds": 1.468,
+            "finished": "2026-09-27T01:27:06.440109+00:00"
+          }
+        ],
+        "fresh_outputs": {
+          "result/SpdLinkVeh.tsd": {
+            "bytes": 229784,
+            "mtime_ns": 1790472396663040200
+          },
+          "result/VolLinkVeh.tsd": {
+            "bytes": 238243,
+            "mtime_ns": 1790472418820754900
+          },
+          "result/VCLinkVeh.tsd": {
+            "bytes": 283155,
+            "mtime_ns": 1790472423870577600
+          },
+          "result/TimeLink.tsd": {
+            "bytes": 232042,
+            "mtime_ns": 1790472396663040200
+          },
+          "cache/CapLinkVehMan.dat": {
+            "bytes": 248743,
+            "mtime_ns": 1790472299519488100
+          },
+          "cache/Assign_car.od": {
+            "bytes": 1102240,
+            "mtime_ns": 1790472395652614500
+          }
+        },
+        "input_changes_during_run": [],
+        "assigned_car_od_sum": 12370.26418,
+        "source_car_od_sum": 185553.9479,
+        "assigned_to_source_ratio": 0.06666667198407801,
+        "result_rows": 32981,
+        "finished": "2026-09-27T01:27:07.009610+00:00"
+      }
+    },
+    {
+      "name": "parking_2",
+      "changes": [
+        {
+          "from_node": 3244,
+          "to_node": 3245,
+          "old_parking": 3,
+          "parking": 1
+        }
+      ],
+      "demand_factor": 1.0,
+      "metrics": {
+        "core": {
+          "directed_links": 1,
+          "directed_length_km": 1.143,
+          "weighted_speed_kmh": 23.380000000000003,
+          "running_time_pcu_h": 86.61182720273739,
+          "transport_pcu_km": 2024.9845200000002,
+          "oversaturated_km": 1.143,
+          "timelink_flagged_links": 0,
+          "timelink_sum_pcu_h": 86.62827477777778
+        },
+        "neighbor": {
+          "directed_links": 27,
+          "directed_length_km": 11.03058,
+          "weighted_speed_kmh": 13.811235466094331,
+          "running_time_pcu_h": 605.420737509486,
+          "transport_pcu_km": 8361.6083618,
+          "oversaturated_km": 6.96572,
+          "timelink_flagged_links": 0,
+          "timelink_sum_pcu_h": 2828.1833821666664
+        },
+        "network": {
+          "directed_links": 32060,
+          "directed_length_km": 12446.9460498,
+          "weighted_speed_kmh": 33.45350819236803,
+          "running_time_pcu_h": 227190.86523005302,
+          "transport_pcu_km": 7600331.471204759,
+          "oversaturated_km": 1608.7518436,
+          "timelink_flagged_links": 44,
+          "timelink_sum_pcu_h": null
+        }
+      },
+      "comparison": {
+        "before": {
+          "core": {
+            "directed_links": 1,
+            "directed_length_km": 1.143,
+            "weighted_speed_kmh": 9.0,
+            "running_time_pcu_h": 224.65792,
+            "transport_pcu_km": 2021.92128,
+            "oversaturated_km": 1.143,
+            "timelink_flagged_links": 0,
+            "timelink_sum_pcu_h": 227.71920355555557
+          },
+          "neighbor": {
+            "directed_links": 27,
+            "directed_length_km": 11.03058,
+            "weighted_speed_kmh": 13.808542429410732,
+            "running_time_pcu_h": 605.3096760449821,
+            "transport_pcu_km": 8358.4443446,
+            "oversaturated_km": 6.90972,
+            "timelink_flagged_links": 0,
+            "timelink_sum_pcu_h": 2828.1157006944445
+          },
+          "network": {
+            "directed_links": 32060,
+            "directed_length_km": 12446.9460498,
+            "weighted_speed_kmh": 33.43319835501451,
+            "running_time_pcu_h": 227328.24893586405,
+            "transport_pcu_km": 7600310.438370859,
+            "oversaturated_km": 1608.6958436,
+            "timelink_flagged_links": 44,
+            "timelink_sum_pcu_h": null
+          }
+        },
+        "after": {
+          "core": {
+            "directed_links": 1,
+            "directed_length_km": 1.143,
+            "weighted_speed_kmh": 23.380000000000003,
+            "running_time_pcu_h": 86.61182720273739,
+            "transport_pcu_km": 2024.9845200000002,
+            "oversaturated_km": 1.143,
+            "timelink_flagged_links": 0,
+            "timelink_sum_pcu_h": 86.62827477777778
+          },
+          "neighbor": {
+            "directed_links": 27,
+            "directed_length_km": 11.03058,
+            "weighted_speed_kmh": 13.811235466094331,
+            "running_time_pcu_h": 605.420737509486,
+            "transport_pcu_km": 8361.6083618,
+            "oversaturated_km": 6.96572,
+            "timelink_flagged_links": 0,
+            "timelink_sum_pcu_h": 2828.1833821666664
+          },
+          "network": {
+            "directed_links": 32060,
+            "directed_length_km": 12446.9460498,
+            "weighted_speed_kmh": 33.45350819236803,
+            "running_time_pcu_h": 227190.86523005302,
+            "transport_pcu_km": 7600331.471204759,
+            "oversaturated_km": 1608.7518436,
+            "timelink_flagged_links": 44,
+            "timelink_sum_pcu_h": null
+          }
+        },
+        "delta": {
+          "core": {
+            "speed_change_pct": 159.7777777777778,
+            "running_time_change_pct": -61.447240674739,
+            "oversaturated_km_change": 0.0
+          },
+          "neighbor": {
+            "speed_change_pct": 0.01950268608990058,
+            "running_time_change_pct": 0.018347875294111304,
+            "oversaturated_km_change": 0.05600000000000005
+          },
+          "network": {
+            "speed_change_pct": 0.06074751550195767,
+            "running_time_change_pct": -0.060434066797299124,
+            "oversaturated_km_change": 0.05600000000004002
+          }
+        },
+        "eligible": true,
+        "violations": [],
+        "new_neighbor_oversaturated_km": 0.056,
+        "new_neighbor_oversaturated_links": [
+          {
+            "index": 10814,
+            "from_node": 4084,
+            "to_node": 3239,
+            "length_km": 0.056,
+            "road_class": 4,
+            "lanes": 1.0,
+            "name": "18208路",
+            "parking": 4,
+            "included": true,
+            "speed_kmh": 36.09,
+            "flow_pcu_h": 263.1,
+            "vc": 1.00092,
+            "time_s": 5.59,
+            "adjusted_capacity_pcu_h": 200.0,
+            "adjusted_load_ratio": 1.3155000000000001
+          }
+        ]
+      },
+      "execution": {
+        "scenario": "F:\\ITS比赛\\智能体实验\\jobs\\20260927_092230_2a933f\\scenarios\\parking_2\\基础路网",
+        "status": "completed",
+        "started": "2026-09-27T01:27:07.793379+00:00",
+        "modules": [
+          {
+            "module": "M3DataRoadNetwork.exe",
+            "started": "2026-09-27T01:27:07.899445+00:00",
+            "status": "completed",
+            "pid": 38368,
+            "returncode": 0,
+            "elapsed_seconds": 4.765,
+            "finished": "2026-09-27T01:27:12.657782+00:00"
+          },
+          {
+            "module": "M3DataBusNetwork.exe",
+            "started": "2026-09-27T01:27:12.669346+00:00",
+            "status": "completed",
+            "pid": 42212,
+            "returncode": 0,
+            "elapsed_seconds": 0.781,
+            "finished": "2026-09-27T01:27:13.462537+00:00"
+          },
+          {
+            "module": "M3DataTrafficManage.exe",
+            "started": "2026-09-27T01:27:13.471629+00:00",
+            "status": "completed",
+            "pid": 45756,
+            "returncode": 0,
+            "elapsed_seconds": 4.172,
+            "finished": "2026-09-27T01:27:17.645637+00:00"
+          },
+          {
+            "module": "M6AssignVehicle.exe",
+            "started": "2026-09-27T01:27:17.656847+00:00",
+            "status": "completed",
+            "pid": 45476,
+            "returncode": 0,
+            "elapsed_seconds": 123.235,
+            "finished": "2026-09-27T01:29:20.900334+00:00"
+          },
+          {
+            "module": "M6TrafficLoadLinkVeh.exe",
+            "started": "2026-09-27T01:29:20.911453+00:00",
+            "status": "completed",
+            "pid": 36492,
+            "returncode": 0,
+            "elapsed_seconds": 0.36,
+            "finished": "2026-09-27T01:29:21.268238+00:00"
+          },
+          {
+            "module": "M6TrafficLoadNodeVeh.exe",
+            "started": "2026-09-27T01:29:21.279004+00:00",
+            "status": "completed",
+            "pid": 39432,
+            "returncode": 0,
+            "elapsed_seconds": 1.094,
+            "finished": "2026-09-27T01:29:22.380882+00:00"
+          },
+          {
+            "module": "M6NodeQueueDelay.exe",
+            "started": "2026-09-27T01:29:22.392632+00:00",
+            "status": "completed",
+            "pid": 43136,
+            "returncode": 0,
+            "elapsed_seconds": 1.515,
+            "finished": "2026-09-27T01:29:23.911108+00:00"
+          }
+        ],
+        "fresh_outputs": {
+          "result/SpdLinkVeh.tsd": {
+            "bytes": 229784,
+            "mtime_ns": 1790472533969615000
+          },
+          "result/VolLinkVeh.tsd": {
+            "bytes": 238243,
+            "mtime_ns": 1790472555837659200
+          },
+          "result/VCLinkVeh.tsd": {
+            "bytes": 283145,
+            "mtime_ns": 1790472561264198200
+          },
+          "result/TimeLink.tsd": {
+            "bytes": 232042,
+            "mtime_ns": 1790472533969615000
+          },
+          "cache/CapLinkVehMan.dat": {
+            "bytes": 248743,
+            "mtime_ns": 1790472436714435200
+          },
+          "cache/Assign_car.od": {
+            "bytes": 1102240,
+            "mtime_ns": 1790472533000369000
+          }
+        },
+        "input_changes_during_run": [],
+        "assigned_car_od_sum": 12370.26418,
+        "source_car_od_sum": 185553.9479,
+        "assigned_to_source_ratio": 0.06666667198407801,
+        "result_rows": 32981,
+        "finished": "2026-09-27T01:29:24.500767+00:00"
+      }
+    }
+  ],
+  "evidence_hashes": {
+    "state.json": "be6596ca6048b269c16953f290cb7b22281bd301f98453a548ab402b4896f4fc",
+    "plan.json": "1fa638961fea0537adfa51f4554930f9bb569d592efd822210c15f590d093ff0",
+    "events.jsonl": "aa55ec9a070671af734b2db192105dbf7016c141ae7b3ec00cf43a87b8e89196",
+    "dispatch.json": "8e56be809df6863ff9526c3a8fe5eb5f53300205b637a8ef63793610d096ea2a",
+    "source_inputs.json": "54d7003098197568f7f78476ea88fabefaf49b21ae67df917a8028ab260b02e4",
+    "verification.json": "89f1261e80472e23f06e18b56e19c91b70d6378a15424089404266144c06f376",
+    "report.md": "3d7dac1ff151e931d5617c3df2fe69eb5b504a344c3e6809d4be1477a6cc4880",
+    "archive_manifest.json": "4cac7d7ede5b829b1007749fb25100071d23dea7482ad3fad651b4108824cd40"
+  },
+  "evidence_boundary": "原始场景、输出数组和封存清单在本机新任务目录完整保留；本提交只保存验收摘要，不声明完整原件已上传。",
+  "local_tests": 219,
+  "live_api_requests": 2,
+  "live_api_tokens": 1327
+}

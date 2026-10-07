@@ -1,0 +1,52 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>路策交通仿真智能体操作说明</title><style>
+*{box-sizing:border-box}body{margin:0;background:#eef1f4;color:#242a32;font:16px/1.8 "Microsoft YaHei",sans-serif}
+main{max-width:1120px;margin:32px auto;background:#fff;padding:42px 54px}h1,h2,h3{color:#000;line-height:1.4}
+h1{font-size:28px;border-bottom:1px solid #d9d9d9;padding-bottom:20px}h2{font-size:22px;margin-top:36px}
+p{margin:14px 0}table{width:100%;border-collapse:collapse;margin:20px 0;font-size:14px;line-height:1.65}
+th,td{padding:11px 13px;border:1px solid #d9d9d9;vertical-align:middle;text-align:left;overflow-wrap:anywhere}
+th{background:#18364b;color:white}tr:nth-child(even){background:#f3f6f8}a{color:#125fa3}code{font-family:Consolas,monospace;overflow-wrap:anywhere}
+pre{white-space:pre-wrap;background:#f4f5f6;padding:18px;border:1px solid #d9d9d9;font-size:13px}
+nav{font-size:14px;display:flex;flex-wrap:wrap;gap:18px;border-bottom:1px solid #d9d9d9;padding-bottom:14px}
+@media(max-width:800px){main{padding:22px;margin:0}table{font-size:12px}th,td{padding:6px}}
+@media print{body{background:#fff;font-size:10pt}main{padding:0;margin:0;max-width:none}nav{display:none}h1{font-size:20pt}h2{font-size:14pt;break-after:avoid}table{font-size:8pt}tr{break-inside:avoid}thead{display:table-header-group}pre{font-size:8pt}@page{size:A4;margin:18mm}}
+</style></head><body><main><nav><a href="README.html">README</a><a href="操作说明.html">操作说明</a><a href="研究报告.html">研究报告</a><a href="评审证据与提交说明.html">评审证据与提交说明</a></nav><h1>路策交通仿真智能体操作说明</h1>
+<p>本材料保留源项目版本定位；在haidiliuxin/jiaotong迁移仓库获取和启动时，请先遵循根目录README的新仓库命令，以下原仓库分支与路径用于追溯。</p>
+<p>2026年10月7日｜实测功能代码6f0b4a8a</p>
+<p>本说明用于安装、配置和运行当前自然语言交通仿真工作台，以及复核已完成任务。当前环境http://127.0.0.1:8780已启动；新机器须按步骤安装并运行自己的服务。阅读包不包含软件与完整数据库，不能仅解压阅读包启动仿真。</p>
+<h2>1 环境与获取</h2>
+<p>操作系统为Windows，Python 3.12，Git及Git LFS。离线完整回归另需Node.js。本机验证Python 3.12.10与Node 24.11.1；实际使用者记录自己的版本。停车研究可不安装编译器，单向、禁转及其组合需要可用MinGW GCC，目标为x86_64-w64-mingw32。TranStar仍需有效软件授权。</p>
+<p>代码在分支<code>fix/local-clone-validation-20261002</code>，当前报告实测功能提交<code>6f0b4a8a</code>，后续文档提交不改变该实验功能版本。仓库需具有访问权限。</p>
+<pre><code>git lfs install
+git clone --branch fix/local-clone-validation-20261002 https://github.com/Tabris-Ayanami/its-transtar-agent.git
+Set-Location -LiteralPath .\its-transtar-agent
+git lfs pull
+git rev-parse HEAD</code></pre>
+<p>网络或容量受限时，使用仓库<code>docs/20260930仓库clone异机测试说明.md</code>的暂缓下载方式，并至少取得<code>方案1流程验证/runtime/**</code>和<code>南京市案例数据库/南京案例/基础路网/**</code>。历史PDF、视频及ZIP需另拉取实体；包含<code>version https://git-lfs.github.com/spec/v1</code>的文本是指针，不能当成附件或软件使用。</p>
+<h2>2 检查与启动</h2>
+<p>在仓库根目录执行，检查成功后再启动。</p>
+<pre><code>py -3.12 -m traffic_agent.startup --mode check
+py -3.12 -m traffic_agent.startup --mode serve --port 8780</code></pre>
+<p>若端口占用，改用空闲端口并访问对应地址，不结束不明进程。Python启动器不可用时，以已安装Python 3.12可执行文件替代<code>py -3.12</code>。本机解释器路径为<code>F:/jiaotong/test-tools/Python312/python.exe</code>，该路径不要求在其他电脑存在。</p>
+<p>可选入口：<code>powershell -File start.ps1 -Port 8780 -Python C:\实际路径\python.exe</code>。单向、禁转研究还需在启动命令增加<code>--compiler-bin C:\实际路径\mingw\bin</code>；先用相同参数执行check。检查通过不等于授权或模型响应验收通过。</p>
+<h2>3 配置模型</h2>
+<p>右上角“API设置”中保存服务基址、接口类型、模型和对应平台密钥。本次实测组合为DeepSeek官方、<code>https://api.deepseek.com</code>、Chat Completions、<code>deepseek-v4-flash</code>；模型名与权限以平台实际可用配置为准。转发服务签发的密钥必须匹配该转发地址，不能与官方地址混用。</p>
+<p>保存设置不请求模型。“测试已保存配置”会产生一次服务请求，未保存修改需先保存。Windows用户加密配置只用于本机，迁移后重新配置。密钥不发送到聊天、报告或Git，不在页面回显。</p>
+<h2>4 发起研究</h2>
+<p>选择“大模型自主规划”，输入位置、研究目标、需求条件和预算，点击“自动编排并运行”一次。系统先检查设计，之后建立新基准；模型基于新基准选择候选，收到结果后决定下一步。仿真期间保留终端和服务，不重复提交相同请求。</p>
+<p>本版已经实测的9场请求如下。重新执行将调用模型并产生新仿真，不是免费回看，也不保证获得相同决策。</p>
+<pre><code>环洲路停车拥堵治理，检验同一措施在需求变化下是否仍有效，并比较至少两个不同停车备选方案。先建立新的无治理基准，根据首个候选的实际结果选择第二个候选。只做停车研究，不比较停车强度。需求系数：0.9、1.0、1.1；最多9次仿真，不复跑。未找到跨需求合格方案时如实说明。</code></pre>
+<p>9场由三个新基准和两个候选各三场组成，模型请求单独计数；增加研究组、等级比较或需求条件会增加预算。范围不明确或设计不足时应补充原问题，不通过放宽约束或删除必需场景来强行运行。任务默认模型请求上限7次，有界修正也占预算。</p>
+<h2>5 查看结果</h2>
+<p>检查总任务和当前研究组的状态、任务ID与已完成场景。单组完成或地图有结果不等于整个请求完成。失败后仍可显示旧实验地图，应以地图的数据来源标注为准，旧收益不属于新请求。</p>
+<p>在“规划”中查看模型选择、原始解释、失败与修正；在路网和地图中核对实际治理方向；在评估中比较同需求的新基准与治理，查看核心、邻区、全网及分区代价；日志用于检查原生调用。通过约束不是零代价，也不意味着达到25 km/h目标速度。跨需求建议必须确认同一措施全部计划需求已测且通过。</p>
+<p>已完成任务<code>20261007_010958_039964</code>有9场、两个候选。第二候选为3107↔3108停车3→2，代表推荐<code>model_2_demand_1p000</code>。读取历史记录和刷新页面不应重新发起研究；录屏回看与新运行分别标注。</p>
+<h2>6 验收命令</h2>
+<pre><code>py -3.12 scripts/run_offline_tests.py
+py -3.12 scripts/validate_professional_acceptance.py --output professional-acceptance.json
+py -3.12 scripts/verify_programme.py 20261007_010958_039964 --no-write</code></pre>
+<p>前两条执行本地测试，不调用模型或原生仿真。第三条要求本机保留对应完整实验目录及原始输入输出。阅读包的脱敏摘要不能替代原始档案，缺原始数据时不能声称重核通过。跨目录历史封存可用<code>--archive --no-write</code>；归档模式只能证明档案一致，不证明新电脑真实求解。</p>
+<h2>7 故障处理</h2>
+<table><thead><tr><th>现象</th><th>处理</th></tr></thead><tbody><tr><td>HTTP 401或403</td><td>核对密钥签发平台、基址、模型权限与客户端限制；保存正确配置后另建新任务，保留原失败</td></tr><tr><td>WinError 2或依赖缺失</td><td>执行启动check，核对软件实体、原生程序、编译器实际路径和目标</td></tr><tr><td>地点或禁转目标未通过校验</td><td>使用当前路网中的道路名；禁转需明确进口—路口—出口或由合法菜单选定</td></tr><tr><td>规划结构失败</td><td>满足完整上下文条件时系统仅允许一次修正；第二次失败保持未完成，不反复手动重复付费请求</td></tr><tr><td>候选不通过约束</td><td>查看完整代价和失败需求；允许Agent调整或保留基准，不将其视为程序故障</td></tr><tr><td>有旧地图但本次失败</td><td>核对实验ID和数据来源，分开查看当前请求与历史结果</td></tr></tbody></table>
+<h2>8 交接与边界</h2>
+<p>交接记录包含源码提交、系统/Python/Node版本、模型基址与名称（不含密钥）、任务ID、冻结计划、原始输入输出、调用日志、审计结果与失败记录。原生实验目录可能较大，单独封存并记录哈希；不只传一张收益截图。</p>
+<p>停车、单方向禁行、明确转向禁行和诊断已接入；信号配时、公交优先、施工容量及分时错峰没有完成政策执行。小时OD敏感性不等于真实时序仿真；本版不承诺任意模型回复正确或现场有效。</p></main></body></html>

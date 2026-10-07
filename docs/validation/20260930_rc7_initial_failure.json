@@ -1,0 +1,32 @@
+{
+  "kind": "independent_rc7_initial_model_failure_v1",
+  "archive": "工作材料/便携构建/20260930_智能规划_v2_RC7.zip",
+  "archive_sha256": "f37c0874d109846c1f8c6e286a8fe1af715140228b9011beb4ad7ab2b958894e",
+  "code_commit_in_manifest": "4b53b74d25246ffa1fd61216475b7618b3c7eaaf",
+  "manifest_sha256": "d180292f76eaa8d334bc7469c6750afd74579f80e172cbb74ff77610e4bed581",
+  "environment_record": "工作材料/便携异目录检查/20260930_v2_RC7_evidence/environment_verification.json",
+  "environment_status": "passed",
+  "preview_record": "工作材料/便携异目录检查/20260930_v2_RC7/智能体实验/demand_depth_live_20260930_01/planning_attempts/preview_81232594f84d495695bc55b8dd5acbfa.json",
+  "preview_record_sha256": "dca1fe80de6ec92932199e9149121885f44047755685a40b4357ffdfcb67bdcb",
+  "recorded_status": "needs_input",
+  "independent_status": "incomplete",
+  "failure": "The sole matched road was 长江村路, but the v3 location grammar treated the singular anaphor 该道路 as an unresolved location and permitted a direction clarification instead of automatic post-baseline selection.",
+  "response_id": "chatcmpl-6abc1470c8543fd0b4752661",
+  "model_requests": 1,
+  "known_tokens": 6670,
+  "native_scenarios": 0,
+  "new_offline_permission_result": {
+    "protocol": "planning-prerequisites-v4",
+    "clarification_needs": [],
+    "research_depth_protocol": "research-depth-v2",
+    "research_depth": "demand_robustness"
+  },
+  "locally_recorded_cumulative_conservative": {
+    "requests": 103,
+    "known_tokens": 921221,
+    "request_limit": 684,
+    "known_token_limit": 4132560,
+    "remaining_requests": 581,
+    "remaining_known_tokens": 3211339
+  }
+}

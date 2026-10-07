@@ -1,0 +1,35 @@
+{
+  "kind": "offline_implementation_checks",
+  "commands": [
+    {
+      "name": "python",
+      "returncode": 0,
+      "log": "20260927_measured_references_python_tests_verified.log"
+    },
+    {
+      "name": "map",
+      "returncode": 0,
+      "log": "20260927_measured_references_map_tests_verified.log"
+    },
+    {
+      "name": "planner",
+      "returncode": 0,
+      "log": "20260927_measured_references_planner_tests_verified.log"
+    },
+    {
+      "name": "dispatch",
+      "returncode": 0,
+      "log": "20260927_measured_references_dispatch_tests_verified.log"
+    }
+  ],
+  "source_sha256": {
+    "traffic_agent/feedback_planner.py": "e267520c862b8904d3d64e0ea81bee1024b5c913efcadc41158506e5c2638eea",
+    "traffic_agent/natural_plan.py": "5d6354636e250e6f39ad7ef7296e82f10ef4f5dbc4266bf9d1fc3ddbbaa7b962",
+    "traffic_agent/research_evidence.py": "32d0eae78eb1ebdf7ace4a82da5043ed97950e748abeeccdcb649583a7648bd2",
+    "scripts/inspect_hypothesis_reference_contract.py": "7a3f4922b8ac9a734da0699e0f3f656bb945faa6bf97871a06f50e2ba550f3e2",
+    "tests/test_hypothesis_references.py": "270713f20463c83ab82f998d1dcff658cea81734168f5c52181f8c9abee58c2e"
+  },
+  "paid_calls": 0,
+  "new_native_scenes": 0,
+  "meaning": "仅实现与合成边界检查；不代表新模型协议完成真实闭环。"
+}

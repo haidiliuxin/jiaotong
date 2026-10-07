@@ -1,0 +1,32 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>评审证据与提交说明</title><style>
+*{box-sizing:border-box}body{margin:0;background:#eef1f4;color:#242a32;font:16px/1.8 "Microsoft YaHei",sans-serif}
+main{max-width:1120px;margin:32px auto;background:#fff;padding:42px 54px}h1,h2,h3{color:#000;line-height:1.4}
+h1{font-size:28px;border-bottom:1px solid #d9d9d9;padding-bottom:20px}h2{font-size:22px;margin-top:36px}
+p{margin:14px 0}table{width:100%;border-collapse:collapse;margin:20px 0;font-size:14px;line-height:1.65}
+th,td{padding:11px 13px;border:1px solid #d9d9d9;vertical-align:middle;text-align:left;overflow-wrap:anywhere}
+th{background:#18364b;color:white}tr:nth-child(even){background:#f3f6f8}a{color:#125fa3}code{font-family:Consolas,monospace;overflow-wrap:anywhere}
+pre{white-space:pre-wrap;background:#f4f5f6;padding:18px;border:1px solid #d9d9d9;font-size:13px}
+nav{font-size:14px;display:flex;flex-wrap:wrap;gap:18px;border-bottom:1px solid #d9d9d9;padding-bottom:14px}
+@media(max-width:800px){main{padding:22px;margin:0}table{font-size:12px}th,td{padding:6px}}
+@media print{body{background:#fff;font-size:10pt}main{padding:0;margin:0;max-width:none}nav{display:none}h1{font-size:20pt}h2{font-size:14pt;break-after:avoid}table{font-size:8pt}tr{break-inside:avoid}thead{display:table-header-group}pre{font-size:8pt}@page{size:A4;margin:18mm}}
+</style></head><body><main><nav><a href="README.html">README</a><a href="操作说明.html">操作说明</a><a href="研究报告.html">研究报告</a><a href="评审证据与提交说明.html">评审证据与提交说明</a></nav><h1>评审证据与提交说明</h1>
+<p>2026年10月7日｜功能代码6f0b4a8a</p>
+<p>本版将最新模型与原生仿真证据对应到赛题评分条目，帮助评审查找原件。不存在官方预评分；测试数量、案例收益和审计通过不直接换算比赛分数。本阅读材料补充当前主线，不覆盖历史实验，也不冒充完整提交包。</p>
+<h2>1 评分证据对应</h2>
+<table><thead><tr><th>评分项</th><th>当前证据</th><th>仍需注意</th></tr></thead><tbody><tr><td>方案创新性 30分</td><td>停车干扰研究，大模型、方法检索及工具调用；最新失败A→改选B真实反馈</td><td>停车不是唯一成因；其他数据集完整治理迁移尚未证实，不宣称通用最优</td></tr><tr><td>仿真合理性与效果 20分</td><td>三个新基准、多项指标、同条件比较、三档需求敏感性及原生输出</td><td>参数门槛是实验假设，未现场标定；改善不等于消除拥堵</td></tr><tr><td>智能体功能完整性 20分</td><td>问题理解、配置、选择、调用、解析、解释和9场闭环；日志可追溯</td><td>实测是代表停车案例，不能外推到所有措施和自由语言</td></tr><tr><td>程序质量与可运行性 20分</td><td>本机启动、862项Python及5组Node通过；最新完整原生审计通过</td><td>固定输入复现与随机模型决策不同；最新交付版物理异机待验</td></tr><tr><td>成果展示 10分</td><td>更新报告、操作说明、真实数据图表及证据摘要</td><td>本版未录制新视频，尚需最新版实机演示与完整提交附件</td></tr></tbody></table>
+<p>题目要求研究报告、可执行程序或源代码、分析数据库、操作说明与实机视频。阅读版只提供文档、图表和摘要；源码、完整数据库和视频应分别交付。未接入信号、公交、施工和错峰不构成必须补齐的全功能清单，报告应明确选定范围。</p>
+<h2>2 最新主案例证据</h2>
+<p>任务：<code>20261007_010958_039964</code>，环洲路、停车、三个需求、两项候选、最多9场、不复跑。实际9场、63次原生模块、4次模型请求。规划审计确认2项模型选择、当前组观测及动作先于执行；总体审计passed。模型用量81,751个已知tokens，未知0次，不包含其他开发尝试。</p>
+<p>首候选三个需求均拒绝；第二候选3107↔3108停车3→2在全部已测需求通过。推荐代表为<code>model_2_demand_1p000</code>。核心收益0.7593%—4.8491%，邻区仍有微小耗时增加；核心过饱和里程未降，低需求全网过饱和净增0.182 km。请同时阅读收益及代价。</p>
+<table><thead><tr><th>证据</th><th>仓库或本机位置</th><th>用途</th></tr></thead><tbody><tr><td>脱敏验收摘要</td><td>同目录<code>证据/最新闭环摘要.json</code></td><td>场景、请求、候选和审计摘要</td></tr><tr><td>固定RAG题库结果</td><td>同目录<code>证据/RAG验收结果.json</code></td><td>24题、v2与v3对比和重算记录</td></tr><tr><td>原始指标摘要</td><td>同目录<code>证据/最新场景指标.csv</code>及JSON</td><td>基准、政策的真实指标；用于绘图和表格核对</td></tr><tr><td>原始实验</td><td><code>智能体实验/jobs/20261007_010958_039964/</code></td><td>输入、输出、修改、日志、计划和状态；不在阅读ZIP中</td></tr><tr><td>总体研究</td><td><code>智能体实验/programmes/20261007_010958_039964/</code>及对应dispatch记录</td><td>总计划、预算、研究组与结论一致性</td></tr><tr><td>本机外部验收记录</td><td><code>F:/jiaotong/test-tools/rag-closure-20261007-010953/</code></td><td>验收运行过程；仅在本机存在</td></tr><tr><td>开发失败说明</td><td><code>docs/20261007五项专业能力优化与验收.md</code></td><td>错区域、v16/v17误拒与预览判据错误，保留原状态</td></tr></tbody></table>
+<p>原始目录结构应以实际文件为准，协作方须取得完整数据后复核。源码克隆及脱敏JSON摘要本身不提供最新9场全部原生输出。报告的图表来自摘要指标，不提供新的原生证据。</p>
+<h2>3 独立复核顺序</h2>
+<p>先核对源码提交与原任务协议，再看同需求新基准和治理方向，最后检查推荐条件及不利结果。使用操作说明中的只读审计命令；审计通过表明保存记录与指定规则一致，不证明所有自由解释正确。</p>
+<p>RAG验收题库在实现前冻结，SHA256为<code>6127f8718c10461e2d24e18c71d4b012c5a2ef4436169bb71576e5030e3ad323</code>。新v3通过24/24、旧v2通过17/24。不可把这个固定题集称为模型总体准确率，更不能称为仿真现实预测精度。</p>
+<p>完整原生验收分开检查模块成功、数据新生成、参数白名单、计算一致性和政策资格。失败或incomplete任务按原状态报告，不能在文档中改成成功。</p>
+<h2>4 实机演示脚本</h2>
+<p>建议录制4—6分钟。开头显示提交号、运行环境和模型服务（隐藏密钥），用一句话说明研究场景与静态分析范围。然后展示自然语言任务、新基准、两个候选与实际方向；重点展示候选A的失败原因及模型随后选择候选B的记录。最后展示三需求对比、邻区与全网代价、最终推荐和只读审计入口。</p>
+<p>如展示已完成任务，应明确标注“已完成任务回看”；如另建新任务，则保存新的输入输出及任务ID。等待仿真可剪辑，但注明省略计算等待，不宣称无剪辑连续运行。本脚本是录制安排，视频尚未因此完成。</p>
+<h2>5 提交材料清单</h2>
+<table><thead><tr><th>材料</th><th>本版状态</th><th>正式提交处理</th></tr></thead><tbody><tr><td>研究报告</td><td>本版Markdown与HTML已整理</td><td>按赛事接受格式排版/导出并核对图表</td></tr><tr><td>操作说明</td><td>本版已整理</td><td>与实际交付路径及版本一起验收</td></tr><tr><td>评审导航及证据摘要</td><td>本版已整理</td><td>与完整原件绑定，不以摘要替代数据库</td></tr><tr><td>程序或源码</td><td>已推送功能分支</td><td>固定最终提交；附运行环境和必需LFS实体</td></tr><tr><td>分析数据库</td><td>赛事源库与本机原生实验存在</td><td>封存必要原输入、场景、输出及日志；校验文件哈希</td></tr><tr><td>实机演示视频</td><td>有历史视频，无本版新录像</td><td>拉取历史实体供参考，重新录制并标记任务与版本</td></tr><tr><td>异机新运行</td><td>本版尚未完成</td><td>建议交接人进行干净环境完整验收</td></tr></tbody></table>
+<p>仓库现有历史PDF和视频部分在当前克隆中仅为LFS指针，需下载实体才可阅读或提交。不要将本阅读ZIP命名为“全功能最终验收包”。原软件与数据库沿用各自授权条件，操作时需具备可用授权。</p></main></body></html>

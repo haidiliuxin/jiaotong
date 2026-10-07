@@ -1,0 +1,32 @@
+{
+  "kind": "failed_initial_planning_originals",
+  "created": "2026-09-27T10:46:13.661957+00:00",
+  "validator_source": "e3380a68",
+  "loaded_agent_source": "7784b8c0",
+  "status": "failed",
+  "model_requests": 2,
+  "reported_tokens": 9797,
+  "new_native_scenes": 0,
+  "files": [
+    {
+      "path": "validation_mixed_conclusion_v1_20260927/acceptance.json",
+      "bytes": 8536,
+      "sha256": "32a8d887cd446da41cdcbb8bf823b354b2c4a7709790020253d4262b7571620a"
+    },
+    {
+      "path": "planning_attempts/preview_6fdc4517fb3c4e2d9153206c864cd697.json",
+      "bytes": 5975,
+      "sha256": "92781a1c1d9a3bf8f466547afa2684bb8ec59778009e5caae4db6f814409687a"
+    },
+    {
+      "path": "planning_attempts/preview_1ee375cafe604d44adf42a96e3398d06.json",
+      "bytes": 3439,
+      "sha256": "a4ffce9fc42096eba77cb3393c8e70ed4242dfb90ee7b25a4b0d1d2695de473f"
+    }
+  ],
+  "note": "Original safe records only; no complete raw provider transcript was persisted. Not a successful planning or native validation.",
+  "archive": "20260927_mixed_programme_failed.zip",
+  "bytes": 8379,
+  "sha256": "701437122e04136bcc4429573b18b551bef84659421b4d5f377e1e9ab9eb4dc0",
+  "byte_equal": true
+}

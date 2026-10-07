@@ -1,0 +1,6 @@
+Mparam323.txt—交通负荷下的分方式交通网络时耗分析参数表
+社会车辆出行路段时间消耗	TmLoadLinkCar.tsd
+常规公交出行路段时间消耗	TmLoadLinkBus.tsd
+轨道交通出行路段时间消耗	TmLoadLinkSub.tsd
+步行交通出行路段时间消耗	TmLoadLinkWalk.tsd
+非机动车出行路段时间消耗	TmLoadLinkBic.tsd

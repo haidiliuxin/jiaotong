@@ -1,0 +1,48 @@
+{
+  "status": "passed",
+  "reviewed_at": "2026-09-21T22:31:01.590940+00:00",
+  "video_sha256": "de0ce850c1a96f0d8766ef71a78b94873f2833c744063a9223130fc626ec1450",
+  "duration_seconds": 124,
+  "width": 1440,
+  "height": 1000,
+  "fps": 25,
+  "audio": false,
+  "screenshot_review": [
+    "01.png",
+    "02.png",
+    "03.png",
+    "04.png",
+    "05.png",
+    "06.png",
+    "07.png"
+  ],
+  "checks": [
+    "七个实际页面截图逐一检查，任务编号、地图、反馈、代价和表格清晰",
+    "FFmpeg完整输入解码并抽样输出PNG成功；容器数据遍历成功",
+    "解码后的表格及结尾画面目视检查",
+    "浏览器实际播放、暂停与定位成功，媒体error为空，中文字幕可见",
+    "中文字幕字号调整为22px并重新检查",
+    "浏览器控制台无错误",
+    "录制前后同一档案通过独立复核"
+  ],
+  "playback_observations": [
+    {
+      "time": 27.912551,
+      "paused": false
+    },
+    {
+      "time": 49.196668,
+      "paused": true
+    },
+    {
+      "time": 64.0767,
+      "paused": true
+    }
+  ],
+  "console_errors": [],
+  "new_model_calls": 0,
+  "limitations": [
+    "无声回看，非本次新建仿真连续录像",
+    "字幕单独保存；播放页提供完整镜头说明"
+  ]
+}

@@ -1,0 +1,295 @@
+{
+  "kind": "medium_region_robust_guard_matched_review",
+  "new_model_calls": 0,
+  "old_study": "20260922_015104_1bd73b",
+  "new_job": "20260923_070135_0f0c08",
+  "selected_directions": [
+    [
+      74,
+      645
+    ],
+    [
+      645,
+      74
+    ],
+    [
+      645,
+      782
+    ]
+  ],
+  "source_inputs_exact": true,
+  "frozen_scope_exact": true,
+  "matched": {
+    "baseline": {
+      "historical_view": "baseline",
+      "physical_run": "baseline",
+      "raw_arrays_exact": {
+        "speed_kmh": true,
+        "flow_pcu_h": true,
+        "vc": true,
+        "time_s": true
+      },
+      "changed_inputs_exact": {
+        "data/manageL.txt": true,
+        "result/ODCar.tsd": true
+      }
+    },
+    "robust_base_1.1": {
+      "historical_view": "baseline_1.1",
+      "physical_run": "baseline_1.1",
+      "raw_arrays_exact": {
+        "speed_kmh": true,
+        "flow_pcu_h": true,
+        "vc": true,
+        "time_s": true
+      },
+      "changed_inputs_exact": {
+        "data/manageL.txt": true,
+        "result/ODCar.tsd": true
+      }
+    },
+    "robust_base_0.9": {
+      "historical_view": "baseline_0.9",
+      "physical_run": "baseline_0.9",
+      "raw_arrays_exact": {
+        "speed_kmh": true,
+        "flow_pcu_h": true,
+        "vc": true,
+        "time_s": true
+      },
+      "changed_inputs_exact": {
+        "data/manageL.txt": true,
+        "result/ODCar.tsd": true
+      }
+    },
+    "robust_p1_1.1": {
+      "historical_view": "medium_feedback_p1_1.1",
+      "physical_run": "case_004",
+      "raw_arrays_exact": {
+        "speed_kmh": true,
+        "flow_pcu_h": true,
+        "vc": true,
+        "time_s": true
+      },
+      "changed_inputs_exact": {
+        "data/manageL.txt": true,
+        "result/ODCar.tsd": true
+      }
+    },
+    "robust_p1_1": {
+      "historical_view": "medium_feedback_p1_1",
+      "physical_run": "case_005",
+      "raw_arrays_exact": {
+        "speed_kmh": true,
+        "flow_pcu_h": true,
+        "vc": true,
+        "time_s": true
+      },
+      "changed_inputs_exact": {
+        "data/manageL.txt": true,
+        "result/ODCar.tsd": true
+      }
+    },
+    "robust_p1_0.9": {
+      "historical_view": "medium_feedback_p1_0.9",
+      "physical_run": "case_006",
+      "raw_arrays_exact": {
+        "speed_kmh": true,
+        "flow_pcu_h": true,
+        "vc": true,
+        "time_s": true
+      },
+      "changed_inputs_exact": {
+        "data/manageL.txt": true,
+        "result/ODCar.tsd": true
+      }
+    },
+    "robust_p2_0.9": {
+      "historical_view": "medium_feedback_p2_0.9",
+      "physical_run": "case_012",
+      "raw_arrays_exact": {
+        "speed_kmh": true,
+        "flow_pcu_h": true,
+        "vc": true,
+        "time_s": true
+      },
+      "changed_inputs_exact": {
+        "data/manageL.txt": true,
+        "result/ODCar.tsd": true
+      }
+    },
+    "robust_p2_1.1": {
+      "historical_view": "medium_feedback_p2_1.1",
+      "physical_run": "case_008",
+      "raw_arrays_exact": {
+        "speed_kmh": true,
+        "flow_pcu_h": true,
+        "vc": true,
+        "time_s": true
+      },
+      "changed_inputs_exact": {
+        "data/manageL.txt": true,
+        "result/ODCar.tsd": true
+      }
+    },
+    "robust_p2_1": {
+      "historical_view": "medium_feedback_p2_1",
+      "physical_run": "case_010",
+      "raw_arrays_exact": {
+        "speed_kmh": true,
+        "flow_pcu_h": true,
+        "vc": true,
+        "time_s": true
+      },
+      "changed_inputs_exact": {
+        "data/manageL.txt": true,
+        "result/ODCar.tsd": true
+      }
+    },
+    "baseline_repeat": {
+      "historical_view": "baseline_repeat",
+      "physical_run": "baseline_repeat",
+      "raw_arrays_exact": {
+        "speed_kmh": true,
+        "flow_pcu_h": true,
+        "vc": true,
+        "time_s": true
+      },
+      "changed_inputs_exact": {
+        "data/manageL.txt": true,
+        "result/ODCar.tsd": true
+      }
+    }
+  },
+  "unmatched_new_scenes": [],
+  "recommendation": "robust_p2_1",
+  "recommended_changes": [
+    {
+      "from_node": 74,
+      "to_node": 645,
+      "old_parking": 3,
+      "parking": 2
+    }
+  ],
+  "search_stop": {
+    "version": "adaptive-paired-search-v1",
+    "stop_reason": "剩余预算不足以覆盖新候选全部需求及基准复跑，停止新增候选",
+    "early_rejections": [
+      {
+        "policy": "robust_p1_0.9",
+        "failed_factor": 0.9,
+        "unmeasured_factors": []
+      }
+    ],
+    "candidates_started": 2,
+    "actual_runs": 10,
+    "unused_budget": 1
+  },
+  "robust_across_tested_demand": true,
+  "rows": [
+    {
+      "name": "robust_p1_1.1",
+      "demand": 1.1,
+      "directions": [
+        "74→645",
+        "645→74",
+        "645→782"
+      ],
+      "parking_level": 2,
+      "eligible": true,
+      "violations": [],
+      "core_time_pct": -17.80280456618818,
+      "neighbor_time_pct": -0.04580098927439158,
+      "network_time_pct": -0.008957671705245307,
+      "gross_new_network_km": 0
+    },
+    {
+      "name": "robust_p1_1",
+      "demand": 1.0,
+      "directions": [
+        "74→645",
+        "645→74",
+        "645→782"
+      ],
+      "parking_level": 2,
+      "eligible": true,
+      "violations": [],
+      "core_time_pct": -16.30193068865036,
+      "neighbor_time_pct": -0.03946607713468664,
+      "network_time_pct": -0.007636742942251917,
+      "gross_new_network_km": 0
+    },
+    {
+      "name": "robust_p1_0.9",
+      "demand": 0.9,
+      "directions": [
+        "74→645",
+        "645→74",
+        "645→782"
+      ],
+      "parking_level": 2,
+      "eligible": false,
+      "violations": [
+        "neighbor路段行驶时间增幅超过0.5%",
+        "全网毛新增过饱和有向里程超过0.1km"
+      ],
+      "core_time_pct": -3.910235623573366,
+      "neighbor_time_pct": 3.168144392795069,
+      "network_time_pct": -0.032774320328576856,
+      "gross_new_network_km": 4.18232
+    },
+    {
+      "name": "robust_p2_0.9",
+      "demand": 0.9,
+      "directions": [
+        "74→645"
+      ],
+      "parking_level": 2,
+      "eligible": true,
+      "violations": [],
+      "core_time_pct": -6.230060839301088,
+      "neighbor_time_pct": -0.0023091594336999144,
+      "network_time_pct": -0.0027152968108179465,
+      "gross_new_network_km": 0
+    },
+    {
+      "name": "robust_p2_1.1",
+      "demand": 1.1,
+      "directions": [
+        "74→645"
+      ],
+      "parking_level": 2,
+      "eligible": true,
+      "violations": [],
+      "core_time_pct": -7.677805909368695,
+      "neighbor_time_pct": -0.0059147873290532615,
+      "network_time_pct": -0.0037181993874479957,
+      "gross_new_network_km": 0
+    },
+    {
+      "name": "robust_p2_1",
+      "demand": 1.0,
+      "directions": [
+        "74→645"
+      ],
+      "parking_level": 2,
+      "eligible": true,
+      "violations": [],
+      "core_time_pct": -7.461265183781429,
+      "neighbor_time_pct": -0.0028344687488579545,
+      "network_time_pct": -0.003480778778086613,
+      "gross_new_network_km": 0
+    }
+  ],
+  "new_scenarios": 10,
+  "new_native_calls": 70,
+  "old_study_audit": {
+    "passed": true,
+    "physical_scenes": 22,
+    "native_calls": 154
+  },
+  "new_archive_sha256": "b8af7f3583b016dbe14d4bd382a5d58b643b9fdf720f7d29096006303c9c3879",
+  "task_card_sha256": "14c7f72fed4f93e876763a621924b95bda90f2352ec23951d0f5132932362ce1",
+  "historical_selection_sha256": "a8d634a59db90c33190161b970ec20458c1835e5e212da935c203a50606ab829",
+  "limitation": "历史正例引导的同案例第二研究区复验；不是盲选、等预算新旧算法消融、异机、跨城市或官方评分证明"
+}

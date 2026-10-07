@@ -1,0 +1,93 @@
+{
+  "kind": "offline_scoped_claims_regression_and_readonly_ui",
+  "tests": {
+    "python": 491,
+    "node_suites": 3
+  },
+  "source_loaded_capabilities": {
+    "planning_version": "natural-strategy-plan-v5",
+    "composition_protocol": "traffic-plan-decision-v3",
+    "transport_version": "llm-transport-v2",
+    "initial_review_protocol": "initial-plan-review-v2",
+    "max_initial_corrections": 1,
+    "initial_budget_protocol": "initial-plan-budget-v2",
+    "study_unit_protocol": "complete-study-unit-v1",
+    "compiler_protocol": "plan-compilation-v2",
+    "diagnosis_intent_protocol": "diagnosis-intent-v1",
+    "scope_protocol": "planning-scope-v2",
+    "prerequisite_protocol": "planning-prerequisites-v2",
+    "dynamic_initial_tools": true,
+    "preflight_protocol": "planning-preflight-v1",
+    "routing_budget_protocol": "study-routing-budget-v2",
+    "study_handoff_protocol": "study-handoff-v1",
+    "feedback_review_protocol": "feedback-review-permissions-v1",
+    "parking_completion_protocol": "parking-completion-v2",
+    "hypothesis_review_scope_protocol": "hypothesis-review-scope-v1",
+    "study_comparison_protocol": "study-comparison-v1",
+    "finding_reference_schema": "measured-findings-v1",
+    "response_check_protocol": "planning-response-check-v1",
+    "final_review_correction_protocol": "final-review-correction-v1",
+    "max_final_review_corrections": 1,
+    "feedback_instructions_sha256": "38ee70c412384fbcc72be5a1c5798e903f067b4ec7bb894ae7da358429d2ee05",
+    "conclusion_protocol": "measured-conclusion-v3",
+    "observables": {
+      "available": [
+        "方向级流量、速度、V/C",
+        "固定核心/邻区/全网行驶时间消耗",
+        "同条件配对变化、邻区毛新增过饱和",
+        "各候选区实际响应及约束判断"
+      ],
+      "unavailable": [
+        "排队长度或排队车辆数",
+        "逐秒轨迹、动态排队回堵",
+        "真实城市因果或零风险证明"
+      ],
+      "conditional": [
+        "全网毛新增过饱和仅在任务开启该检查时提供",
+        "路权及转向响应仅相应适配器提供"
+      ]
+    },
+    "instructions_sha256": "51ab007dd0df7374c0e179baaf47a72fb4ec1b75a8d68ae3bb318e325086df5e",
+    "initial_schema_sha256": "272896aa1eaada5b8814df28e855968612357751737d23d2f7e623fc1f31c932",
+    "engine": "TranStar batch",
+    "automatic_transport_retry": false,
+    "max_model_requests": 6
+  },
+  "source_port": 8772,
+  "source_pid": 44468,
+  "readonly_port": 8807,
+  "readonly_pid": 47932,
+  "preserved_root_records": 50,
+  "original_rc12_status": "incomplete",
+  "readonly_group_requirements": {
+    "fulfilled": 3,
+    "total": 4
+  },
+  "readonly_requires_review": true,
+  "readonly_post_status": 405,
+  "preflight": {
+    "matched_roads": [
+      "七东线",
+      "长江村路"
+    ],
+    "model_requested": false,
+    "native_started": false
+  },
+  "new_model_calls": 0,
+  "new_native_scenes": 0,
+  "scope": "源码工作树的离线回归、零付费实际路网预检与RC12原件只读显示；不是新版真实闭环或异机验收。",
+  "application_and_log_sha256": {
+    "traffic_agent/conclusion_review.py": "4cb07d589415a005bb90242efa221d24f781f3db5957ef1e37a77b3c1fd25a0e",
+    "traffic_agent/measured_numbers.py": "5b210d448b206320436df179c9298aa92348f2a355eef3ecb81e176f88df81a0",
+    "traffic_agent/dispatch.py": "d90092eaa2e7575ba987a1602c82860ccef67b2628091614c7b0f49230a6aeea",
+    "traffic_agent/executed_facts.py": "b29ee45f89d73fe9a34b4b14769f8db918a01abb523e659f9bd97167ea2d4099",
+    "traffic_agent/feedback_planner.py": "75babb0a8699368db770313b50f1d4ba0caae3c3427845b23a50c76b33c290af",
+    "traffic_agent/portable.py": "908397492577bf6862e282df6c6f2dcb8adb6c69a8a22cf42d775750bf89ec0e",
+    "traffic_agent/programme_review.py": "8a26c94c3447555063338838a47bc89e64a310f9cb98d98dd6498307d60a386a",
+    "traffic_agent/static/planner_view.js": "98b8e4fa061fd3c088f56aec40b19144340e15bbac6450bfb07fb281749dea88",
+    "docs/validation/20260928_scoped_claims_python_tests_final.log": "a107f948e70c02af2d588a812a64da94fdf90b4614b712a3b0393e1e81462b75",
+    "docs/validation/20260928_scoped_claims_planner_tests.log": "7c7e45e0d7920a1b96d4d4c9374e4501295bf37a8ebbd6aa4e183778c2ad4049",
+    "docs/validation/20260928_scoped_claims_dispatch_tests.log": "40daba053979c286bf919b677f4e561003b612b1d57be8773a676a3bb86d36cc",
+    "docs/validation/20260928_scoped_claims_map_tests.log": "fcb0ff6e09e6af5bf830b548d420e5a9657934baf04d0b7b10ddd27c2ca636ca"
+  }
+}

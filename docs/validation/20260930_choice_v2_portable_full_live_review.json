@@ -1,0 +1,71 @@
+{
+  "kind": "independent_choice_v2_portable_full_live_review_v1",
+  "archive": "工作材料/便携构建/20260930_智能规划_v2_RC3.zip",
+  "archive_sha256": "9a7ba668a897a6d2ca0f7116725d9c7d84eaf46f6185195ab447a079f729abaa",
+  "extracted_root": "工作材料/便携异目录检查/20260930_v2_RC3",
+  "code_commit_in_manifest": "d299ae49bea2c6975d154b9a4b1d7e8695b6dc19",
+  "environment_record": "工作材料/便携异目录检查/20260930_v2_RC3_evidence/environment_verification.json",
+  "environment_status": "passed",
+  "immutable_files_verified_after_live_run": 16162,
+  "dispatch": "工作材料/便携异目录检查/20260930_v2_RC3/智能体实验/choice_v2_full_live_20260930_01/dispatches/20260930_021603_2b5b2f.json",
+  "dispatch_sha256": "e3fc81f163e99fe1dff3901651a2649c5dccc418fbc6dbfed46ee0cbb99fd07b",
+  "job_state": "工作材料/便携异目录检查/20260930_v2_RC3/智能体实验/choice_v2_full_live_20260930_01/jobs/20260930_021603_2b5b2f/state.json",
+  "job_state_sha256": "3ede502c1629a0babef43e18a10a8b2724fdd1da7525992647ca62e72c2184cf",
+  "read_only_programme_verifier": "passed",
+  "model_requests": 4,
+  "known_tokens": 48111,
+  "distinct_recorded_provider_response_ids": 4,
+  "native_scenarios": ["baseline", "parking_1", "parking_2"],
+  "top_level_native_modules_per_scenario": 7,
+  "choice_basis_protocol": "observed-choice-basis-v2",
+  "accepted_planning_decisions": 3,
+  "bounded_corrections": 0,
+  "new_relation_exercised": {
+    "second_choice_selected_action_region": "area_2",
+    "selected_action_basis": "area:20260930_021603_2b5b2f:baseline:area_2",
+    "untested_alternative_region": "area_1",
+    "untested_alternative_action": "parking_b39e464b9dda",
+    "alternative_basis": "trial:20260930_021603_2b5b2f:parking_1",
+    "trial_region_relation": "area_1",
+    "separate_area_1_baseline_citation_in_second_choice": false,
+    "alternative_ever_executed": false
+  },
+  "measured_candidates": [
+    {
+      "run": "parking_1",
+      "changed_directed_links": 3,
+      "parking_level": 1,
+      "core_time_change_pct": -28.520602863302624,
+      "neighbor_time_change_pct": 0.5109423118432543,
+      "neighbor_gross_new_oversaturated_km": 2.797,
+      "eligible": false
+    },
+    {
+      "run": "parking_2",
+      "changed_directed_links": 2,
+      "parking_level": 1,
+      "core_time_change_pct": -4.684479147762088,
+      "neighbor_time_change_pct": 0.006938242224618918,
+      "neighbor_gross_new_oversaturated_km": 0,
+      "eligible": true
+    }
+  ],
+  "frozen_neighbor_thresholds": {
+    "max_time_increase_pct": 0.5,
+    "max_gross_new_oversaturated_km": 0.1
+  },
+  "structured_recommendation": "parking_2",
+  "final_review_protocol": "measured-conclusion-v6",
+  "final_review_issues": [],
+  "manual_public_conclusion_checks": {
+    "cost_sign_and_threshold": "consistent_with_measured_pair",
+    "core_benefit_separate_from_eligibility": "consistent",
+    "two_distinct_executed_candidates": true,
+    "untested_alternative_not_reported_as_executed": true,
+    "remaining_model_requests": 2,
+    "remaining_budget_not_claimed_exhausted": true,
+    "single_demand_and_unmeasured_strength_boundary_stated": true,
+    "minor_wording": "A raw model risk field contains only停车1级; numerical and execution claims remain consistent."
+  },
+  "conclusion": "This one bounded natural-language to native to conclusion example exercises the v2 related-trial allowance and passes factual review on this computer. It does not establish physical other-computer acceptance, global optimum, combined intervention effect, or demand robustness."
+}

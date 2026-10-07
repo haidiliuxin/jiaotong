@@ -1,0 +1,633 @@
+{
+  "scenario": "F:\\ITS比赛\\方案1流程验证\\baseline_repeat\\基础路网",
+  "started": "2026-09-07T04:35:14.428609",
+  "modules": [
+    {
+      "module": "M3DataRoadNetwork.exe",
+      "started": "2026-09-07T04:35:14.485712",
+      "status": "exited",
+      "pid": 39544,
+      "returncode": 0,
+      "elapsed_seconds": 4.532,
+      "finished": "2026-09-07T04:35:19.026071"
+    },
+    {
+      "module": "M3DataBusNetwork.exe",
+      "started": "2026-09-07T04:35:19.035424",
+      "status": "exited",
+      "pid": 28112,
+      "returncode": 0,
+      "elapsed_seconds": 0.813,
+      "finished": "2026-09-07T04:35:19.848086"
+    },
+    {
+      "module": "M3DataTrafficManage.exe",
+      "started": "2026-09-07T04:35:19.858096",
+      "status": "exited",
+      "pid": 45656,
+      "returncode": 0,
+      "elapsed_seconds": 4.156,
+      "finished": "2026-09-07T04:35:24.013724"
+    },
+    {
+      "module": "M6AssignVehicle.exe",
+      "started": "2026-09-07T04:35:24.023128",
+      "status": "exited",
+      "pid": 16080,
+      "returncode": 0,
+      "elapsed_seconds": 120.687,
+      "finished": "2026-09-07T04:37:24.709478"
+    },
+    {
+      "module": "M6TrafficLoadLinkVeh.exe",
+      "started": "2026-09-07T04:37:24.710550",
+      "status": "exited",
+      "pid": 41184,
+      "returncode": 0,
+      "elapsed_seconds": 0.344,
+      "finished": "2026-09-07T04:37:25.051104"
+    },
+    {
+      "module": "M6TrafficLoadNodeVeh.exe",
+      "started": "2026-09-07T04:37:25.052706",
+      "status": "exited",
+      "pid": 38172,
+      "returncode": 0,
+      "elapsed_seconds": 1.062,
+      "finished": "2026-09-07T04:37:26.114420"
+    },
+    {
+      "module": "M6NodeQueueDelay.exe",
+      "started": "2026-09-07T04:37:26.123680",
+      "status": "exited",
+      "pid": 40320,
+      "returncode": 0,
+      "elapsed_seconds": 1.485,
+      "finished": "2026-09-07T04:37:27.599638"
+    }
+  ],
+  "finished": "2026-09-07T04:37:27.661977",
+  "changed_files": {
+    "cache\\aci.dat": [
+      1788726925630960500,
+      224536
+    ],
+    "cache\\Assign_bus.od": [
+      1788727017396674900,
+      1102240
+    ],
+    "cache\\Assign_car.od": [
+      1788727017708284200,
+      1102240
+    ],
+    "cache\\Assign_motor.od": [
+      1788727017991965100,
+      1102240
+    ],
+    "cache\\Assign_taxi.od": [
+      1788727017550194700,
+      1102240
+    ],
+    "cache\\Assign_truck.od": [
+      1788727017833672500,
+      1102240
+    ],
+    "cache\\bac.dat": [
+      1788726925630960500,
+      217673
+    ],
+    "cache\\BusLinkBus.exi": [
+      1788726919212655100,
+      5918
+    ],
+    "cache\\BusLinkBus.no": [
+      1788726919212655100,
+      375038
+    ],
+    "cache\\BusLinkTrain.exi": [
+      1788726919145619500,
+      145
+    ],
+    "cache\\BusLinkTrain.no": [
+      1788726919145619500,
+      1958
+    ],
+    "cache\\BusNodeBus.no": [
+      1788726919212655100,
+      389426
+    ],
+    "cache\\BusNodeTrain.no": [
+      1788726919145619500,
+      2162
+    ],
+    "cache\\busnumbr.txt": [
+      1788726919843566300,
+      99479
+    ],
+    "cache\\BusVolumes.dat": [
+      1788726926783409800,
+      109431
+    ],
+    "cache\\Cadd.dat": [
+      1788726923997857600,
+      98943
+    ],
+    "cache\\CapLinkBusMan.dat": [
+      1788726923143725900,
+      232509
+    ],
+    "cache\\CapLinkVehMan.dat": [
+      1788726923143725900,
+      248743
+    ],
+    "cache\\CapNodeVehMan.dat": [
+      1788726923470205000,
+      103910
+    ],
+    "cache\\cclw.dat": [
+      1788726925630960500,
+      117360
+    ],
+    "cache\\chargeveh.dat": [
+      1788726922571530600,
+      35
+    ],
+    "cache\\class.dat": [
+      1788726917345702800,
+      98943
+    ],
+    "cache\\closedveh.dat": [
+      1788726921375761900,
+      117
+    ],
+    "cache\\cond.dat": [
+      1788726917345702800,
+      98943
+    ],
+    "cache\\delay-assign-manage-bus.dat": [
+      1788727021969142500,
+      206961
+    ],
+    "cache\\delay-assign-manage.dat": [
+      1788727021969142500,
+      207230
+    ],
+    "cache\\ds.dat": [
+      1788726917345702800,
+      98943
+    ],
+    "cache\\ft.dat": [
+      1788726917345702800,
+      430019
+    ],
+    "cache\\f_t.dat": [
+      1788726914977970400,
+      3
+    ],
+    "cache\\inclass.dat": [
+      1788726926237399300,
+      98943
+    ],
+    "cache\\inconn_num.dat": [
+      1788726915852548600,
+      36045
+    ],
+    "cache\\indelay.dat": [
+      1788727047255220400,
+      209566
+    ],
+    "cache\\ingeom.dat": [
+      1788726915782687500,
+      430019
+    ],
+    "cache\\inqueue.dat": [
+      1788727047255220400,
+      231434
+    ],
+    "cache\\length.dat": [
+      1788726917345702800,
+      179130
+    ],
+    "cache\\limitedveh.dat": [
+      1788726921855185500,
+      117
+    ],
+    "cache\\link-r.dat": [
+      1788726915555052000,
+      98943
+    ],
+    "cache\\linkname.dat": [
+      1788726917345702800,
+      294985
+    ],
+    "cache\\LinkTimeCharge2.dat": [
+      1788726923997857600,
+      98943
+    ],
+    "cache\\link_end.dat": [
+      1788726916237634500,
+      198495
+    ],
+    "cache\\link_sta.dat": [
+      1788726916237634500,
+      198509
+    ],
+    "cache\\ljt-bus.dat": [
+      1788727018657869800,
+      231387
+    ],
+    "cache\\ljt.dat": [
+      1788727018657869800,
+      231940
+    ],
+    "cache\\Ljt_bus.dat": [
+      1788727019252279400,
+      366078
+    ],
+    "cache\\Ljt_car.dat": [
+      1788727019252279400,
+      363601
+    ],
+    "cache\\Ljt_Lcar.dat": [
+      1788727019252279400,
+      363601
+    ],
+    "cache\\Ljt_Lmotor.dat": [
+      1788727019253794200,
+      375015
+    ],
+    "cache\\Ljt_Ltrucar.dat": [
+      1788727019253794200,
+      370114
+    ],
+    "cache\\Ljt_Ltruck.dat": [
+      1788727019253794200,
+      370114
+    ],
+    "cache\\Ljt_motor.dat": [
+      1788727019252279400,
+      375015
+    ],
+    "cache\\Ljt_taxi.dat": [
+      1788727019252279400,
+      363601
+    ],
+    "cache\\Ljt_trucar.dat": [
+      1788727019253794200,
+      370114
+    ],
+    "cache\\Ljt_truck.dat": [
+      1788727019253794200,
+      370114
+    ],
+    "cache\\Lmanage2.dat": [
+      1788726917345702800,
+      98943
+    ],
+    "cache\\lparm_bic.dat": [
+      1788726914977970400,
+      0
+    ],
+    "cache\\lparm_veh.dat": [
+      1788726914976462900,
+      0
+    ],
+    "cache\\ManageCB.dat": [
+      1788726922533257900,
+      98943
+    ],
+    "cache\\ManageCB_L.dat": [
+      1788726922533257900,
+      98943
+    ],
+    "cache\\ManageCR.dat": [
+      1788726922533257900,
+      98943
+    ],
+    "cache\\ManageLB.dat": [
+      1788726920748562000,
+      98943
+    ],
+    "cache\\ManageLG.dat": [
+      1788726920748562000,
+      98943
+    ],
+    "cache\\ManageLP.dat": [
+      1788726920748562000,
+      98943
+    ],
+    "cache\\ManageNL.dat": [
+      1788726920176712400,
+      98943
+    ],
+    "cache\\ManageNM.dat": [
+      1788726920183870000,
+      20558
+    ],
+    "cache\\ManageNN.dat": [
+      1788726920024104900,
+      36045
+    ],
+    "cache\\ManageOD.dat": [
+      1788726922574713700,
+      17875
+    ],
+    "cache\\ManageR1.dat": [
+      1788726921375235600,
+      1022411
+    ],
+    "cache\\ManageR1_M.dat": [
+      1788726921375235600,
+      362791
+    ],
+    "cache\\ManageR2.dat": [
+      1788726921638349200,
+      362791
+    ],
+    "cache\\ManageR2_M.dat": [
+      1788726921855185500,
+      362791
+    ],
+    "cache\\ManageR2_N.dat": [
+      1788726921855185500,
+      63
+    ],
+    "cache\\nd-bus.dat": [
+      1788727021969142500,
+      206961
+    ],
+    "cache\\nd.dat": [
+      1788727021969142500,
+      207230
+    ],
+    "cache\\NdelayForAssign.dat": [
+      1788727046836393700,
+      209566
+    ],
+    "cache\\netstar.txt": [
+      1788726922575270600,
+      8
+    ],
+    "cache\\node-r.dat": [
+      1788726915208134900,
+      36045
+    ],
+    "cache\\nodetype.dat": [
+      1788726915242568100,
+      36045
+    ],
+    "cache\\n_r.dat": [
+      1788726914682915300,
+      36052
+    ],
+    "cache\\rnode.dat": [
+      1788726914682915300,
+      73004
+    ],
+    "cache\\Rwm_car.dat": [
+      1788727022944169100,
+      251778
+    ],
+    "cache\\Rwm_motor.dat": [
+      1788727023899832500,
+      252073
+    ],
+    "cache\\Rwm_taxi.dat": [
+      1788727022454225500,
+      251778
+    ],
+    "cache\\Rwm_truck.dat": [
+      1788727023420644800,
+      252029
+    ],
+    "cache\\Shortest_No.dat": [
+      1788727024476903900,
+      0
+    ],
+    "cache\\szn.dat": [
+      1788726914984166300,
+      2001
+    ],
+    "cache\\totalgeom.dat": [
+      1788727018341742800,
+      1866314
+    ],
+    "cache\\tv.dat": [
+      1788726914971941800,
+      198495
+    ],
+    "cache\\vlc.dat": [
+      1788726925630960500,
+      134526
+    ],
+    "cache\\vln.dat": [
+      1788726917345702800,
+      98943
+    ],
+    "cache\\Volumes.dat": [
+      1788726926783409800,
+      109431
+    ],
+    "cache\\volume_car.dat": [
+      1788727039294044300,
+      222551
+    ],
+    "cache\\volume_motor.dat": [
+      1788727040021961800,
+      217985
+    ],
+    "cache\\volume_taxi.dat": [
+      1788727038799153200,
+      225277
+    ],
+    "cache\\volume_truck.dat": [
+      1788727039522967900,
+      98943
+    ],
+    "cache\\width-b.dat": [
+      1788726917345702800,
+      109438
+    ],
+    "cache\\width-v.dat": [
+      1788726917345702800,
+      150480
+    ],
+    "cache\\x_coord.dat": [
+      1788726915390982400,
+      96120
+    ],
+    "cache\\y_coord.dat": [
+      1788726915390982400,
+      154863
+    ],
+    "data\\number.txt": [
+      1788726916237634500,
+      17
+    ],
+    "params\\AsignParameter_car.dat": [
+      1788726926840970700,
+      62
+    ],
+    "params\\AsignParameter_motor.dat": [
+      1788726926841512900,
+      70
+    ],
+    "params\\AsignParameter_taxi.dat": [
+      1788726926840426400,
+      66
+    ],
+    "params\\AsignParameter_truck.dat": [
+      1788726926841512900,
+      70
+    ],
+    "result\\CapLinkVeh.tsd": [
+      1788726925630960500,
+      268903
+    ],
+    "result\\CapNodeVeh.tsd": [
+      1788726926237399300,
+      103968
+    ],
+    "result\\DelayLink.tsd": [
+      1788727021969142500,
+      207333
+    ],
+    "result\\DelayNode.tsd": [
+      1788727047590490900,
+      79317
+    ],
+    "result\\NumLinkAllbus.tsd": [
+      1788726919843566300,
+      1154437
+    ],
+    "result\\NumLinkBus.tsd": [
+      1788726919422548000,
+      1154437
+    ],
+    "result\\NumLinkTrain.tsd": [
+      1788726919349915500,
+      791646
+    ],
+    "result\\QueueLink.tsd": [
+      1788727046836393700,
+      231536
+    ],
+    "result\\QueueNode.tsd": [
+      1788727047590490900,
+      88443
+    ],
+    "result\\SpdLinkBus.tsd": [
+      1788727018657869800,
+      229840
+    ],
+    "result\\SpdLinkVeh.tsd": [
+      1788727018657869800,
+      229783
+    ],
+    "result\\TimeLink.tsd": [
+      1788727018657869800,
+      232042
+    ],
+    "result\\TmLinkBus.tsd": [
+      1788727018657869800,
+      231489
+    ],
+    "result\\TVolNodecar.tsd": [
+      1788727040971630100,
+      4679429
+    ],
+    "result\\TVolNodemotor.tsd": [
+      1788727041852455000,
+      4673833
+    ],
+    "result\\TVolNodetaxi.tsd": [
+      1788727042748867400,
+      4677309
+    ],
+    "result\\TVolNodetruck.tsd": [
+      1788727043694145200,
+      4670827
+    ],
+    "result\\TVolNodeVeh.tsd": [
+      1788727044616982200,
+      4679858
+    ],
+    "result\\TVolNodeWak.tsd": [
+      1788727045127488200,
+      0
+    ],
+    "result\\VCLinkBic.tsd": [
+      1788726924345158200,
+      99045
+    ],
+    "result\\VCLinkVeh.tsd": [
+      1788727045046299900,
+      283149
+    ],
+    "result\\VCNodeBic.tsd": [
+      1788726924361143600,
+      36147
+    ],
+    "result\\VCNodeVeh.tsd": [
+      1788727045602341300,
+      105301
+    ],
+    "result\\VolLinkBus.tsd": [
+      1788727040059995100,
+      208477
+    ],
+    "result\\VolLinkCar.tsd": [
+      1788727044639467200,
+      233610
+    ],
+    "result\\VolLinkMot.tsd": [
+      1788727044695158800,
+      204137
+    ],
+    "result\\VolLinkTax.tsd": [
+      1788727044659873700,
+      223032
+    ],
+    "result\\VolLinkTrk.tsd": [
+      1788727044675287900,
+      197989
+    ],
+    "result\\VolLinkVeh.tsd": [
+      1788727040081189300,
+      238243
+    ],
+    "result\\VolNodeBic.tsd": [
+      1788727045602341300,
+      69395
+    ],
+    "result\\VolNodeBus.tsd": [
+      1788727046106066400,
+      42680
+    ],
+    "result\\VolNodeCar.tsd": [
+      1788727046106066400,
+      81447
+    ],
+    "result\\VolNodeMot.tsd": [
+      1788727046106066400,
+      61503
+    ],
+    "result\\VolNodeTax.tsd": [
+      1788727046106066400,
+      77017
+    ],
+    "result\\VolNodeTrk.tsd": [
+      1788727046106066400,
+      36147
+    ],
+    "result\\VolNodeVeh.tsd": [
+      1788727045602341300,
+      83494
+    ],
+    "result\\VolNodeWak.tsd": [
+      1788727045602341300,
+      103077
+    ]
+  },
+  "note": "Exit status alone does not establish valid model results; inspect output and freshness."
+}

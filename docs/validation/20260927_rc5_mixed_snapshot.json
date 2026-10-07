@@ -1,0 +1,26 @@
+{
+  "kind": "incomplete_portable_programme_snapshot_v1",
+  "programme_status": "incomplete",
+  "validator_status": "failed",
+  "source_commit": "070a31205723978cd8a1fcbd128d9027c222aef7",
+  "job_ids": [
+    "20260927_224930_69ff12",
+    "20260927_224930_45a743"
+  ],
+  "model_calls": 5,
+  "known_tokens": 39872,
+  "native_scenes": 6,
+  "native_modules": 42,
+  "study_handoff_accepted": true,
+  "oneway_target_accepted": true,
+  "all_scenes_executed": true,
+  "final_model_review_accepted": false,
+  "rejection_code": "unmeasured_finding",
+  "public_proposal_captured_in_full": true,
+  "meaning": "本次六场景实际执行原件；最后模型复核引用未测检验而被拒，整体仍未完成。不是新引用协议的真实通过证明。runtime副本留在原目录。",
+  "original_files": 5695,
+  "all_original_bytes_equal": true,
+  "zip_bytes": 376925931,
+  "zip_sha256": "1773cec3369e519094ee598e194c429cb975998b0779d07622cbb9572657e732",
+  "zip_path": "20260927_rc5_mixed_incomplete.zip"
+}

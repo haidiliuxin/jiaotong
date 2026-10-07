@@ -1,0 +1,64 @@
+{
+  "kind": "mixed_v8_choice_v4_stage_review_v1",
+  "date_local": "2026-09-30",
+  "original_attempt": {
+    "dispatch": "智能体实验/mixed_policy_v8_full_20260930_01/dispatches/20260930_063311_6f48c9.json",
+    "dispatch_sha256": "cf397bb30061d0d3c30c7ab82e368c19668250879dbbd32576e8a52909a8b252",
+    "job": "智能体实验/mixed_policy_v8_full_20260930_01/jobs/20260930_063311_6f48c9/",
+    "status": "incomplete",
+    "initial_plan": "accepted; H3 control_and_combined; independent parking and oneway studies; seven scenes allocated",
+    "response_ids": [
+      "chatcmpl-6abc3ca20e2db9ee20243a58",
+      "chatcmpl-6abc3d32d784505e6f04e6c6",
+      "chatcmpl-6abc3dc2f81aeceee95b5131"
+    ],
+    "reported_tokens": [7366, 12580, 15599],
+    "native_scenarios_completed": ["baseline", "parking_1"],
+    "top_level_modules_completed": 14,
+    "fresh_output_files_per_scenario": 6,
+    "input_changes_during_run": [],
+    "tested_action": "area_1 parking level 1",
+    "tested_core_running_time_change_pct": -23.308694361678317,
+    "tested_neighbor_running_time_change_pct": -0.18205257806130914,
+    "tested_gross_new_neighbor_oversaturated_km": 0,
+    "tested_action_eligible": true,
+    "second_proposed_action": "parking_858a1a3c64af: area_2 parking level 2",
+    "second_proposal_top_level_evidence_refs": [
+      "20260930_063311_6f48c9:baseline",
+      "20260930_063311_6f48c9:parking_1"
+    ],
+    "second_proposal_selection_observed_ids": ["area:20260930_063311_6f48c9:baseline:area_2"],
+    "second_proposal_validation_code": "choice_basis",
+    "second_proposal_status": "rejected",
+    "second_candidate_executed": false,
+    "oneway_study_executed": false,
+    "original_record_modified": false
+  },
+  "new_implementation": {
+    "choice_protocol": "observed-choice-basis-v4",
+    "latest_trial_citation_location": "top-level evidence_refs",
+    "selected_baseline_location": "selection_basis.observed_ids",
+    "alternative_observation_location": "selection_basis.alternative_observed_id",
+    "legacy_protocols_retained": ["observed-choice-basis-v1", "observed-choice-basis-v2", "observed-choice-basis-v3"],
+    "read_only_in_memory_shadow_result": "accepted; no second candidate executed",
+    "new_model_native_full_run": false
+  },
+  "checks": {
+    "python_full_suite_count": 638,
+    "node_groups": 4,
+    "old_rc5_v6_programme_read_only": "passed",
+    "git_diff_check": "passed"
+  },
+  "budget": {
+    "prior_deduplicated_requests": 127,
+    "prior_known_tokens": 1186544,
+    "new_requests": 3,
+    "new_known_tokens": 35545,
+    "cumulative_deduplicated_requests": 130,
+    "cumulative_known_tokens": 1222089,
+    "authorized_request_limit": 684,
+    "authorized_known_token_limit": 4132560,
+    "scope": "Locally retained provider response IDs, deduplicated; not a full account bill"
+  },
+  "physical_other_computer_acceptance": "not_performed"
+}

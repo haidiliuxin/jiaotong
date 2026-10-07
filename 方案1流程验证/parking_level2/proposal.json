@@ -1,0 +1,24 @@
+{
+  "scenario": "parking_level2",
+  "selected_link": {
+    "index": 8923,
+    "from_node": 3244,
+    "to_node": 3245,
+    "length_km": 1.143,
+    "road_class": 3,
+    "lanes": 1.0,
+    "name": "七东线",
+    "speed_kmh": 9.0,
+    "flow_pcu_h": 1768.96,
+    "vc": 2.6919,
+    "time_s": 463.43,
+    "parking": 3,
+    "included": true,
+    "priority_score": 224.65792
+  },
+  "new_parking": 2,
+  "changed_file": "F:\\ITS比赛\\方案1流程验证\\parking_level2\\基础路网\\data\\manageL.txt",
+  "changed_rows": 1,
+  "selection_rule": "Named urban class 2/3 links; parking 3/4; length 0.1-1.5km; flow>=500pcu/h; 1<VC<=4; speed<40; exclude ramps/numeric labels; rank flow*length/speed",
+  "purpose": "Single-variable file-to-model response test, not calibrated real-world policy evaluation"
+}

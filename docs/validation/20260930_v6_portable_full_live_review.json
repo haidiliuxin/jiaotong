@@ -1,0 +1,61 @@
+{
+  "kind": "independent_portable_full_live_review_v1",
+  "archive": "工作材料/便携构建/20260930_智能规划_v6_RC1.zip",
+  "archive_sha256": "28acf84d04ab436766206e511670d9ed9543e45c79fd9e64f66237113918ee79",
+  "extracted_root": "工作材料/便携异目录检查/20260930_v6_RC1",
+  "code_commit_in_manifest": "d015a7b9ce13fb09cedfd4dd5d703a8b7e91a5a3",
+  "environment_record": "工作材料/便携异目录检查/20260930_v6_RC1_evidence/environment_verification.json",
+  "environment_status": "passed",
+  "immutable_files_verified": 16162,
+  "package_integrity_after_live_run": "passed",
+  "dispatch": "工作材料/便携异目录检查/20260930_v6_RC1/智能体实验/v6_full_live_20260930_01/dispatches/20260930_010417_f9a78a.json",
+  "dispatch_sha256": "0defcb542a50541ab5b15c9159dbae500a90da91514ba65c3e4b822ca1314658",
+  "job_state": "工作材料/便携异目录检查/20260930_v6_RC1/智能体实验/v6_full_live_20260930_01/jobs/20260930_010417_f9a78a/state.json",
+  "job_state_sha256": "5990727ddec40ebe092075670c13129dbb8e5b2b541b8f92043511501bd23a10",
+  "read_only_programme_verifier": "passed",
+  "model_requests": 5,
+  "known_tokens": 62495,
+  "distinct_recorded_provider_response_ids": 5,
+  "native_scenarios": ["baseline", "parking_1", "parking_2"],
+  "top_level_native_modules_per_scenario": 7,
+  "second_choice_first_attempt": {
+    "status": "rejected_before_native_execution",
+    "reason": "备选取舍必须引用该备选实际可见的观测",
+    "bounded_correction": "accepted",
+    "extra_model_requests_within_total": 1
+  },
+  "measured_candidates": [
+    {
+      "run": "parking_1",
+      "changed_directed_links": 3,
+      "parking_level": 1,
+      "core_time_change_pct": -28.520602863302624,
+      "neighbor_time_change_pct": 0.5109423118432543,
+      "neighbor_gross_new_oversaturated_km": 2.797,
+      "eligible": false
+    },
+    {
+      "run": "parking_2",
+      "changed_directed_links": 2,
+      "parking_level": 1,
+      "core_time_change_pct": -4.684479147762088,
+      "neighbor_time_change_pct": 0.006938242224618918,
+      "neighbor_gross_new_oversaturated_km": 0,
+      "eligible": true
+    }
+  ],
+  "structured_recommendation": "parking_2",
+  "final_review_protocol": "measured-conclusion-v6",
+  "final_review_issues": [],
+  "manual_public_conclusion_checks": {
+    "cost_sign_and_threshold": "consistent_with_measured_pair",
+    "core_benefit_separate_from_eligibility": "consistent",
+    "two_distinct_executed_candidates": true,
+    "remaining_model_requests": 1,
+    "remaining_budget_not_claimed_exhausted": true,
+    "parking_strength_order_and_unmeasured_level": "consistent",
+    "single_demand_boundary_stated": true,
+    "internal_field_names_in_model_stop_reason": "minor_presentation_issue"
+  },
+  "conclusion": "This one bounded natural-language to native to v6 conclusion example passed independent factual review on this computer. It does not establish physical other-computer acceptance, global optimum, combined intervention effect, or demand robustness."
+}

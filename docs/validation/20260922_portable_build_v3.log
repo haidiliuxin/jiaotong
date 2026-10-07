@@ -1,0 +1,5 @@
+BUILD F:\ITS比赛\工作材料\便携构建\20260922主程序v3 | 024c8ab0cfee5cb841dc018d6f1072d895f5b61f
+Copied native programs and original case bytes
+Copied isolated Python and MinGW including licenses
+{"passed": true, "kind": "portable_transtar_runtime_v1", "files": 16093, "bytes": 1721737639, "code_commit": "024c8ab0cfee5cb841dc018d6f1072d895f5b61f", "python_version": "3.12.6 (tags/v3.12.6:a4a2d2b, Sep  6 2024, 20:11:23) [MSC v.1940 64 bit (AMD64)]", "manifest_sha256": "05f1c1971304472a5b64dd1eeac07e58de330c0536d0cbb4850fe4dd6091603b", "new_model_calls": 0, "meaning": "不可变文件完整性检查；不是数字签名、模型授权检查或真实求解证明"}
+{"archive": "F:\\ITS比赛\\工作材料\\便携构建\\20260922主程序v3.zip", "bytes": 878366987, "sha256": "44b6fdf3f239bc75b5caa6a054c06ac49306b59f3bdda32fb8bf64836cac779c"}

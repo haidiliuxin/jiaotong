@@ -1,0 +1,4 @@
+O-D矩阵合并参数表
+控制文件 Odcombin.txt
+现状OD表 OLD_OD.TXT
+结果OD表 OLD_OD1.TXT

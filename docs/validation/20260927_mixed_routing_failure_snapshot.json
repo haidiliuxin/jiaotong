@@ -1,0 +1,20 @@
+{
+  "kind": "failed_programme_snapshot_v1",
+  "status": "failed",
+  "agent_source_commit": "37519c4b994e8b4fab0f53237adc3c0b8fd43c62",
+  "job_ids": [
+    "20260927_192816_356d6a",
+    "20260927_192816_7ece20"
+  ],
+  "model_calls": 2,
+  "known_tokens": 11344,
+  "native_scenes": 1,
+  "native_modules": 7,
+  "governance_executed": false,
+  "meaning": "失败原件的字节封存，仅证明快照传输一致性，不是完整研究或治理收益验收。runtime副本不入包，原目录保留。",
+  "original_files": 602,
+  "all_original_bytes_equal": true,
+  "zip_bytes": 49464053,
+  "zip_sha256": "8b01a324d29cd5d5abeaad9989c27c0c69989fa4cd0a5ce552dd91b71f396e22",
+  "zip_path": "20260927_mixed_routing_failed.zip"
+}

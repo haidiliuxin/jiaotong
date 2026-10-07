@@ -1,0 +1,35 @@
+{
+  "preflight_passed": true,
+  "source_validation": {
+    "directed_links": 32981,
+    "zones": 332,
+    "assignment": "multipath_incremental_5_iterations",
+    "equilibrium_claim": false
+  },
+  "task_scenario": "parking",
+  "capability": {
+    "state": "executable",
+    "name": "停车干扰治理",
+    "requires": []
+  },
+  "python": "3.12.6",
+  "python_executable": "C:\\Users\\asus\\AppData\\Local\\Temp\\its_clean_model_2evrwiqu\\python\\Scripts\\python.exe",
+  "platform": "nt",
+  "runtime_source": "F:\\ITS比赛\\方案1流程验证\\runtime",
+  "programs": {
+    "M3DataRoadNetwork.exe": "pe_present",
+    "M3DataBusNetwork.exe": "pe_present",
+    "M3DataTrafficManage.exe": "pe_present",
+    "M6AssignVehicle.exe": "pe_present",
+    "M6TrafficLoadLinkVeh.exe": "pe_present",
+    "M6TrafficLoadNodeVeh.exe": "pe_present",
+    "M6NodeQueueDelay.exe": "pe_present"
+  },
+  "compiler": {
+    "required": false,
+    "path": null,
+    "target": null
+  },
+  "errors": [],
+  "limits": "只检查启动依赖和源数据，不调用模型、不证明试用授权当前有效，也不替代场景实际响应验收"
+}

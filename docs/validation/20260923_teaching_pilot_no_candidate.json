@@ -1,0 +1,76 @@
+{
+  "status": "baseline_only_no_candidate",
+  "job": "20260923_130932_39bcf6",
+  "source": "软件自带教学案例4",
+  "source_links": 22363,
+  "native_scenarios": 1,
+  "native_module_calls": 7,
+  "registration_before_native": true,
+  "source_inputs_exact": true,
+  "code_snapshot_exact": true,
+  "fresh_outputs_verified": true,
+  "candidate_filter_waterfall": [
+    {
+      "condition": "纳入评价的实体路段",
+      "remaining": 22018
+    },
+    {
+      "condition": "2或3类道路",
+      "remaining": 8831
+    },
+    {
+      "condition": "原停车影响3或4级",
+      "remaining": 21
+    },
+    {
+      "condition": "长度0.1至1.5km",
+      "remaining": 18
+    },
+    {
+      "condition": "流量至少500pcu/h",
+      "remaining": 10
+    },
+    {
+      "condition": "软件VC在1至4之间",
+      "remaining": 0
+    },
+    {
+      "condition": "速度低于40km/h",
+      "remaining": 0
+    },
+    {
+      "condition": "有道路名称且非匝道",
+      "remaining": 0
+    },
+    {
+      "condition": "排除纯数字路名",
+      "remaining": 0
+    }
+  ],
+  "new_baseline_candidates": 0,
+  "supplied_old_output_candidates": 1,
+  "supplied_old_top": {
+    "from_node": 11608,
+    "to_node": 11606,
+    "name": "新建道路1753",
+    "road_class": 3,
+    "parking": 3,
+    "length_km": 0.19963,
+    "flow_pcu_h": 927.95,
+    "vc": 1.02953,
+    "speed_kmh": 9.0
+  },
+  "same_road_in_new_baseline": {
+    "from_node": 11608,
+    "to_node": 11606,
+    "name": "新建道路1753",
+    "road_class": 3,
+    "parking": 3,
+    "length_km": 0.19963,
+    "flow_pcu_h": 771.34,
+    "vc": 0.855777,
+    "speed_kmh": 12.13
+  },
+  "conclusion": "新原生基准没有满足冻结停车诊断规则的路段，按协议不启动治理或需求敏感性仿真",
+  "limitation": "软件自带旧输出只解释事前案例选择；本次不构成跨数据集完整闭环或治理收益证据"
+}

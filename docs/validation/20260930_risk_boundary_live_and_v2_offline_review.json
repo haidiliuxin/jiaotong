@@ -1,0 +1,611 @@
+{
+  "created": "2026-09-30T07:36:22.310848+00:00",
+  "kind": "observed_risk_real_v1_and_offline_v2_review",
+  "root": "F:\\ITS比赛\\智能体实验\\risk_boundary_validation_20260930_01",
+  "parent_commit": "e810d36bb373bce72c33a9947809ec393474be76",
+  "live_source_commit": "370a0f778d26dfbd7746cdc80fb4ffa2b8985717",
+  "offline_source_parent_commit": "370a0f778d26dfbd7746cdc80fb4ffa2b8985717",
+  "source_files_sha256": {
+    "scripts/verify_experiment.py": "61be4138707761394a3b277a5f001fff013d39e1ed46d3256e15ed5e92d04704",
+    "tests/test_feedback_planner.py": "acf59e650982333a330dbc4cb154c71f9e96838ebf15810de250426cb82d3b0a",
+    "tests/test_final_review_correction.py": "afaf1393ad5ecf1aba7c21f1340946a2919fbab1f02375b9b1c29edecf58ef34",
+    "tests/test_hypothesis_references.py": "53c33f9ebcbc7dc7f6e10021ddff0d5b55ca4deb4c5eda06cafd08899f3eb86f",
+    "tests/test_initial_planner.py": "7b228bc827a86b201ad8a407d239cb5e0959d3189464f67c0ee6ed07aad7c006",
+    "tests/test_metric_assertions.py": "e9b01a62b4bd5d24408a53f0e3a5dd9937b97511f769f56757f049f3cca08c07",
+    "tests/test_mixed_controller.py": "3197aa96103b1bb8a2d5b7320b23137be3bc60d1824b4affde26ddba6f239fbb",
+    "tests/test_natural_plan.py": "dac7509b87deed54701f88bd0509e782650d9dd823fbe6b7e7d8e4dd9bb32dc7",
+    "tests/test_planner_view.cjs": "b147eb1287c1ec8ee41e82ede72434f52369a7648de01c7b37852f1e064ca629",
+    "tests/test_planning_completion.py": "9f6ec20fae9f0979c64e35caf2cd90c09b2d3ba4d2965d454b9d906952f619b8",
+    "tests/test_planning_instructions.py": "73b85f8d7664c023188dd78f054ba52cd434f02c2b78c5c114fe244f9e20b9b4",
+    "tests/test_planning_response.py": "1209554b47d3a70607e3adf4d9f13e0a8608c8235b0b1e6b9b55fe54dfe86bbc",
+    "tests/test_portable.py": "dd4a9de9a3b6b63078703387199cbd406000a69b62d91f4d3fc8148e42aba271",
+    "tests/test_risk_review.py": "f3ac213defec9978951791e2c690bb3aa8561ae4902aae044f80148037c79e9b",
+    "tests/test_study_handoff.py": "240960939ae48b0bcf00840aaa8a76674be1476d3b50ece23927284ffea5275a",
+    "tests/test_study_review_correction.py": "e7d2da92abf1bdc4780f3a6ef4bd5f67905a31bb446b59bf3c335a9576073705",
+    "traffic_agent/action_execution.py": "1fa2f881185f08ac27fe43a567db46652d425a503ddcd2ca6af2c46b0ac01e8c",
+    "traffic_agent/agent.py": "5ebab3ccddbd82382c38cff4a032351b7d961e6a0b01f02c1656a45a8e61c66b",
+    "traffic_agent/conclusion_review.py": "2b4e83477f24c5615a17fecf3eeef6c3854b617962d2cedd1e1acf60bfbac0c3",
+    "traffic_agent/feedback_planner.py": "0a6b683da530e6aae49daad0cb83f9b4d1596862827b3ae5af406e4030cf50dc",
+    "traffic_agent/natural_plan.py": "1a44a92d1b0ed76931074d2b680227d3f33b83fea615e0c6f4a79baa2b626082",
+    "traffic_agent/planning_audit.py": "9176615e2d6adaa5795278fc0b94d6208b78b187dfc456bda6f18dc62e637fc4",
+    "traffic_agent/planning_instructions.py": "b9fd3679632c8d092c38aa9e4519e9e265dfabe3ff956c6a01b0cfc24a233689",
+    "traffic_agent/planning_review.py": "337ca0c987afd3e3c25f0db96fdd54deeb68ec0b21daa5ec393435212a4c24b9",
+    "traffic_agent/portable.py": "902081890a63b27e9b8e39008b11fda07c269fe7ee6c3f79fdb5b378751436d6",
+    "traffic_agent/programme_review.py": "35a7658c122a55e9467ee31aa69f53458a6c104e3ef333068487ea73296ecf73",
+    "traffic_agent/report.py": "ac23772eddb07e10964eae5b7441b17c9edc2e13137aabe1ff5b8ff78020c42f",
+    "traffic_agent/risk_review.py": "3bb070045bdc70a7bbdc7b0dd3988149f15139d878e852901e7398f11526fca4",
+    "traffic_agent/static/planner_view.js": "ed20585f73369b329aba241c5cd757970181aeac3d98fd58a218e139acf67788"
+  },
+  "overall_complete": false,
+  "independent_semantic_status": "needs_review",
+  "implementation": {
+    "measured_costs_are_derived": true,
+    "model_hypotheses_are_unverified": true,
+    "new_risk_protocol": "observed-risk-boundary-v2",
+    "legacy_risk_protocol": "observed-risk-boundary-v1",
+    "verification_needs_are_model_selected_ids": true,
+    "evidence_availability_uses_actual_input_only": true,
+    "native_neighbor_details_shared_by_new_observation_and_report": true,
+    "detail_limit": 10,
+    "total_count_and_completeness_preserved": true,
+    "missing_data_is_not_empty_or_zero": true,
+    "protocols_frozen_before_native": true,
+    "rejected_old_public_fields_preserved": true,
+    "no_keyword_semantic_certification": true
+  },
+  "offline": {
+    "python_tests": 741,
+    "python_log": {
+      "path": "tmp\\20260930_risk_v2_python_final.log",
+      "sha256": "bcda2de294d9297b8f5e34fb2c203413b2e563e978380f0be17639da8fcfe975"
+    },
+    "node_groups": 4,
+    "node_results": {
+      "path": "tmp\\20260930_risk_v2_node_final.json",
+      "sha256": "6d88b84cf7bdbb0c3308dbc644b2eb16588d2ff4dd83236535500830df53f68f"
+    },
+    "v1_real_replay": {
+      "path": "tmp\\20260930_risk_v2_readonly_replay.json",
+      "sha256": "7a487ea371162a4c281124ed806fd7f6415c6b567add972c9ffcccddbc37c4f8"
+    },
+    "earlier_protocol_replay": {
+      "path": "tmp\\20260930_risk_v2_older_replay.json",
+      "sha256": "30b5d8c33f2592dd4013f2ff702196d3e289f4e5e7731698ffe85dc2bf62085b"
+    },
+    "live_three_decisions_and_probe_original_schema_and_instruction_hashes_unchanged": true,
+    "earlier_five_decisions_and_first_missing_reference_failure_preserved": true,
+    "synthetic_only": {
+      "path": "tmp\\20260930_risk_v2_synthetic_input_check.json",
+      "sha256": "a9c3ae8b4cbd84262c9a56d9fe8156d273a2bddcbf9656f4241a7bcbb04f3ae5"
+    },
+    "v2_api_requests": 0,
+    "v2_native_scenes": 0,
+    "browser_visual_checked": false
+  },
+  "real": {
+    "source_request_unchanged": "请研究环洲路路侧停车与拥堵，比较至少两个不同的停车治理方案。分别核对核心耗时是否下降、邻区代价是否在原定门槛内，再选择约束内的方案；依据本次新基准选治理位置和等级。需求系数1，最多3次仿真，不复跑。",
+    "record": {
+      "path": "F:\\ITS比赛\\智能体实验\\risk_boundary_validation_20260930_01\\live\\dispatches\\20260930_150731_272f6c.json",
+      "sha256": "1bfe3bd6ea5c77a8e8e1c7c786bc0fec4674e2e9a2599e215b90daf82f6cc7cb"
+    },
+    "native_status": "completed",
+    "automatic_verification": {
+      "passed": true,
+      "programme": "20260930_150731_272f6c",
+      "protocol": "programme-evidence-v1",
+      "native": [
+        {
+          "job_id": "20260930_150731_272f6c",
+          "raw_verified": true,
+          "archived": false,
+          "verification_kind": null
+        }
+      ],
+      "planning": {
+        "passed": true,
+        "groups": 1,
+        "decisions": 3,
+        "no_cross_engine_pooling": true,
+        "observations_checked_at_decision_time": true,
+        "request_reservations_checked": true
+      },
+      "model_requests": 4
+    },
+    "new_baselines": 1,
+    "new_native_scenes": 3,
+    "top_level_modules": 21,
+    "real_risk_protocol": "observed-risk-boundary-v1",
+    "runs": [
+      {
+        "name": "baseline",
+        "changes": [],
+        "native_status": "completed",
+        "core_time_pcu_h": 662.9429165320665,
+        "core_time_change_pct": null,
+        "neighbor_time_change_pct": null,
+        "neighbor_gross_new_oversaturated_km": null,
+        "neighbor_net_oversaturated_change_km": null,
+        "eligible": null,
+        "violations": [],
+        "regional_checks": []
+      },
+      {
+        "name": "parking_1",
+        "changes": [
+          {
+            "from_node": 3118,
+            "to_node": 3117,
+            "old_parking": 3,
+            "parking": 1
+          },
+          {
+            "from_node": 3116,
+            "to_node": 3115,
+            "old_parking": 3,
+            "parking": 1
+          },
+          {
+            "from_node": 3115,
+            "to_node": 3116,
+            "old_parking": 3,
+            "parking": 1
+          }
+        ],
+        "native_status": "completed",
+        "core_time_pcu_h": 473.86760009756006,
+        "core_time_change_pct": -28.520602863302624,
+        "neighbor_time_change_pct": 0.5109423118432543,
+        "neighbor_gross_new_oversaturated_km": 2.797,
+        "neighbor_net_oversaturated_change_km": 2.596,
+        "eligible": false,
+        "violations": [
+          "neighbor路段行驶时间增幅超过0.5%",
+          "邻区新增过饱和有向里程超过0.1km",
+          "候选区域area_2耗时增幅超过0.5%：其他区域改善不能抵消"
+        ],
+        "regional_checks": [
+          {
+            "region": "area_1",
+            "before": {
+              "directed_links": 3,
+              "weighted_speed_kmh": 9.0,
+              "running_time_pcu_h": 532.24008,
+              "oversaturated_km": 2.146
+            },
+            "after": {
+              "directed_links": 3,
+              "weighted_speed_kmh": 14.823330071929268,
+              "running_time_pcu_h": 340.9654345868712,
+              "oversaturated_km": 2.146
+            },
+            "time_change_pct": -35.93766283312012,
+            "passed": true
+          },
+          {
+            "region": "area_2",
+            "before": {
+              "directed_links": 2,
+              "weighted_speed_kmh": 12.593264642700987,
+              "running_time_pcu_h": 130.7028365320665,
+              "oversaturated_km": 1.158
+            },
+            "after": {
+              "directed_links": 2,
+              "weighted_speed_kmh": 12.80287987379071,
+              "running_time_pcu_h": 132.90216551068883,
+              "oversaturated_km": 1.158
+            },
+            "time_change_pct": 1.6826941457255717,
+            "passed": false
+          }
+        ]
+      },
+      {
+        "name": "parking_2",
+        "changes": [
+          {
+            "from_node": 3118,
+            "to_node": 3117,
+            "old_parking": 3,
+            "parking": 2
+          },
+          {
+            "from_node": 3116,
+            "to_node": 3115,
+            "old_parking": 3,
+            "parking": 2
+          },
+          {
+            "from_node": 3115,
+            "to_node": 3116,
+            "old_parking": 3,
+            "parking": 2
+          }
+        ],
+        "native_status": "completed",
+        "core_time_pcu_h": 580.1130246213371,
+        "core_time_change_pct": -12.494272107773996,
+        "neighbor_time_change_pct": 0.4941688091620211,
+        "neighbor_gross_new_oversaturated_km": 2.594,
+        "neighbor_net_oversaturated_change_km": 2.3930000000000007,
+        "eligible": false,
+        "violations": [
+          "邻区新增过饱和有向里程超过0.1km",
+          "候选区域area_2耗时增幅超过0.5%：其他区域改善不能抵消"
+        ],
+        "regional_checks": [
+          {
+            "region": "area_1",
+            "before": {
+              "directed_links": 3,
+              "weighted_speed_kmh": 9.0,
+              "running_time_pcu_h": 532.24008,
+              "oversaturated_km": 2.146
+            },
+            "after": {
+              "directed_links": 3,
+              "weighted_speed_kmh": 11.011119636958744,
+              "running_time_pcu_h": 447.5743959277504,
+              "oversaturated_km": 2.146
+            },
+            "time_change_pct": -15.907423595804671,
+            "passed": true
+          },
+          {
+            "region": "area_2",
+            "before": {
+              "directed_links": 2,
+              "weighted_speed_kmh": 12.593264642700987,
+              "running_time_pcu_h": 130.7028365320665,
+              "oversaturated_km": 1.158
+            },
+            "after": {
+              "directed_links": 2,
+              "weighted_speed_kmh": 12.768711557386812,
+              "running_time_pcu_h": 132.5386286935867,
+              "oversaturated_km": 1.158
+            },
+            "time_change_pct": 1.4045541858380473,
+            "passed": false
+          }
+        ]
+      }
+    ],
+    "recommendation": "baseline",
+    "model_requests": 4,
+    "known_tokens": 47969,
+    "retries": 0,
+    "actions": [
+      {
+        "ordinal": 1,
+        "action": "parking_d8e3fd477449",
+        "selection_basis": {
+          "alternative_action": "parking_2b3d14b62b50",
+          "alternative_observed_id": "area:20260930_150731_272f6c:baseline:area_2",
+          "alternative_tradeoff": "area_2的2条方向构成候选但速度相对较高(12.6km/h)，area_1三条方向共2.146km过饱和最重且速度9.0km/h，本轮先测重载区；area_2方案效力仍未实测。",
+          "disconfirming_result": "若area_1停车1级后核心固定范围总耗时未低于基准或邻区耗时增幅超过0.5%/毛新增过饱和超0.1km，则此方案在本需求不成立。",
+          "observed_ids": [
+            "area:20260930_150731_272f6c:baseline:area_1"
+          ],
+          "working_hypothesis": "area_1三条方向均停车3级且V/C高达3.07-3.66，将停车等级降至1级可释放断面通行能力，使核心总耗时较基准下降，同时邻区代价留在门槛内。"
+        }
+      },
+      {
+        "ordinal": 2,
+        "action": "parking_b39e464b9dda",
+        "selection_basis": {
+          "alternative_action": "parking_d71847bdf74e",
+          "alternative_observed_id": "area:20260930_150731_272f6c:baseline:area_2",
+          "alternative_tradeoff": "area_2在parking_1中耗时增幅1.68%已超门槛，且其过饱和路段较少(8497速度25.26)，治理优先级低于area_1的3条过饱和路段；本轮选择area_1的3条方向2级作为第二个不同候选，暂缓area_2。",
+          "disconfirming_result": "若3条方向2级方案同样出现邻区耗时增幅与毛新增过饱和超门槛，或核心耗时未严格低于基准，则说明本组停车治理难以在全部约束内同时成立；以邻区增幅与新增过饱和等内置指标观测。",
+          "observed_ids": [
+            "area:20260930_150731_272f6c:baseline:area_1"
+          ],
+          "working_hypothesis": "将area_1三条方向由停车1级降为2级可能减弱邻区过饱和外溢，同时保留核心部分收益，使邻区增幅与毛新增过饱和落入原定门槛；属于待验证机制。"
+        }
+      },
+      {
+        "ordinal": 3,
+        "action": "stop",
+        "selection_basis": null
+      }
+    ],
+    "final_hypothesis_updates": [
+      {
+        "explanation": "两个停车方案（1级与2级）在需求1.0下实测核心冻结范围总耗时均低于无治理基准（分别-28.5%、-12.5%），满足事先判据。",
+        "finding_ids": [
+          "hypothesis.H1"
+        ],
+        "hypothesis_id": "H1",
+        "judgment": "supported"
+      },
+      {
+        "explanation": "两个停车方案均未通过邻区门槛：parking_1邻区毛新增过饱和2.797km、邻区耗时+0.51%；parking_2邻区毛新增过饱和2.594km、邻区耗时+0.49%（虽耗时略低于0.5%但过饱和远超0.1km），均未满足原定门槛。",
+        "finding_ids": [
+          "hypothesis.H2"
+        ],
+        "hypothesis_id": "H2",
+        "judgment": "contradicted"
+      }
+    ],
+    "constraints": {
+      "neighbor_time_limit_pct": 0.5,
+      "neighbor_gross_new_oversaturated_limit_km": 0.1
+    },
+    "untested_alternatives_did_not_run": true,
+    "independent_semantic_status": "needs_review"
+  },
+  "retained_negative_probe": {
+    "record": {
+      "path": "F:\\ITS比赛\\智能体实验\\risk_boundary_validation_20260930_01\\negative_probe\\result.json",
+      "sha256": "fd476f9656a1db78b95b601d60f11fadd65a5c7b6a9fbf3ed72381f1f0829758"
+    },
+    "requests": 1,
+    "known_tokens": 14340,
+    "status": "accepted",
+    "actual_action": "parking_d71847bdf74e",
+    "new_native_scenes": 0,
+    "old_job_resumed": false,
+    "negative_observation_preserved": true,
+    "alternative_not_executed": true,
+    "independent_semantic_status": "needs_review"
+  },
+  "semantic_findings": [
+    {
+      "source": "live trace ordinal 2 unverified_risks[0].hypothesis",
+      "quote": "area_1停车1级改善的本质是过饱和车流被推至邻区，2级可能无法在核心维持足够收益。",
+      "finding": "虽分栏为未验证假设，本质是仍把待检验机制表述为因果事实；静态配对不能支持此确定性。"
+    },
+    {
+      "source": "negative probe unverified_risks[0].verification_needed",
+      "quote": "需区1三方向停车1级在不同需求或含邻区详细链路级过饱和分布的新观测，才能确认回堵位置；当前批次接口不提供逐秒排队或动态回堵证据。",
+      "finding": "提到动态证据缺失，却用静态需求或空间分布作确认动态回堵位置的方法，验证方法不足。"
+    },
+    {
+      "source": "negative probe selection_basis.working_hypothesis",
+      "quote": "下行密度较低",
+      "finding": "输入提供流量和速度，但无独立密度测量或解释中的估计方法；应说明是推断，不能标成直接实测。此项不判断数值方向错误。"
+    },
+    {
+      "source": "live final unverified_risks[0].verification_needed",
+      "quote": "现有批次接口仅报告汇总里程",
+      "finding": "该轮新增过饱和数据在模型输入中确实只有汇总，页面另有明细。不能记为模型否认已提供明细；这暴露了页面与模型证据覆盖差异。其文字未限定本轮输入，接口总体能力表述仍过宽。"
+    }
+  ],
+  "review_correction": {
+    "earlier_commentary": "误称最终模型输入已包含新增过饱和路段明细",
+    "corrected": true,
+    "evidence": "final.input.context无completed；final.input.observations无neighbor_new_links。record.progress[0].review.conclusion_review.costs分别含4和3条明细。",
+    "original_input_unchanged": true,
+    "new_v2_actual_data_preparation_checked_separately": true
+  },
+  "input_cost": {
+    "unit": "compact UTF-8 JSON bytes, not billing tokens",
+    "original_v1_final": 37476,
+    "synthetic_v2_final": 40188,
+    "claim_overall_billing_reduction": false,
+    "adverse_data_not_removed": true
+  },
+  "source_files": {
+    "manifest": "工作材料\\源码联调证据\\20260930_risk_boundary_01\\original_files_manifest.json",
+    "manifest_sha256": "d9bd4c0a84af2f683b1362e2e69499f794b1c2cd844dc26e4982caf26821f79c",
+    "files": 2178
+  },
+  "original_native_audit": {
+    "path": "tmp\\20260930_risk_boundary_native_readonly_audit.json",
+    "sha256": "7f0715019a0e6e831ad8e3fb859b8851ad4c1159fc9b492e0d7daf276da43e97"
+  },
+  "other_preserved_manifests": [
+    {
+      "path": "工作材料\\源码联调证据\\20260930_risk_boundary_01\\original_files_manifest.json",
+      "sha256": "d9bd4c0a84af2f683b1362e2e69499f794b1c2cd844dc26e4982caf26821f79c",
+      "files": 2178,
+      "unchanged": true
+    },
+    {
+      "path": "智能体实验\\rationale_input_model_probes_20260930_01\\original_files_manifest.json",
+      "sha256": "55e36d236904f4905c77967684be6ccd372e89b04146c48841d098af583f891c",
+      "files": 124,
+      "unchanged": true
+    }
+  ],
+  "usage": {
+    "previous_ledger": {
+      "path": "docs\\validation\\20260930_rationale_input_live_probe_review.json",
+      "sha256": "8c1a621e96cfc11c7a59f113f2ff0659fda78c46d8849b53dc5baeecf9e498a6"
+    },
+    "responses": [
+      {
+        "request_model": "deepseek-v4-flash",
+        "response_model": "deepseek-v4-flash-0731",
+        "response_id": "chatcmpl-6abcb4da815e781ceb2cad30",
+        "tokens": 14340,
+        "tokens_source": "reported_total",
+        "input_tokens": 13606,
+        "output_tokens": 734,
+        "reasoning_tokens": null,
+        "cached_input_tokens": null,
+        "latency_s": 6.688,
+        "finish_reason": "tool_calls",
+        "tool_call_count": 1,
+        "wire_api": "chat_completions",
+        "request_tool_choice": "required",
+        "request_tool_count": 1,
+        "request_max_output_tokens": 1600,
+        "request_size_bytes": 43617,
+        "request_schema_sha256": "6236aeae6837fe9b902d43562698a42f915b3fafe2856bcef451ad369fd9c80b",
+        "transport_version": "llm-transport-v2",
+        "tool_choice_profile": "tokenrhythm-deepseek-chat-v1",
+        "requested_tool_choice": "function:choose_next_experiment"
+      },
+      {
+        "request_model": "deepseek-v4-flash",
+        "response_model": "deepseek-v4-flash-0731",
+        "response_id": "chatcmpl-6abcb52e51d3dd8119fec5cb",
+        "tokens": 8590,
+        "tokens_source": "reported_total",
+        "input_tokens": 7972,
+        "output_tokens": 618,
+        "reasoning_tokens": null,
+        "cached_input_tokens": null,
+        "latency_s": 5.297,
+        "finish_reason": "tool_calls",
+        "tool_call_count": 1,
+        "wire_api": "chat_completions",
+        "request_tool_choice": "required",
+        "request_tool_count": 1,
+        "request_max_output_tokens": 1600,
+        "request_size_bytes": 31547,
+        "request_schema_sha256": "25d90f5644c8b7e5b235f4362786697a25e53c19b54b14f917d4b22036d023ed",
+        "transport_version": "llm-transport-v2",
+        "tool_choice_profile": "tokenrhythm-deepseek-chat-v1",
+        "requested_tool_choice": "function:compose_traffic_plan"
+      },
+      {
+        "request_model": "deepseek-v4-flash",
+        "response_model": "deepseek-v4-flash-0731",
+        "response_id": "chatcmpl-6abcb5bcce0ed24bf0d87cb9",
+        "tokens": 10894,
+        "tokens_source": "reported_total",
+        "input_tokens": 10412,
+        "output_tokens": 482,
+        "reasoning_tokens": null,
+        "cached_input_tokens": null,
+        "latency_s": 4.781,
+        "finish_reason": "tool_calls",
+        "tool_call_count": 1,
+        "wire_api": "chat_completions",
+        "request_tool_choice": "required",
+        "request_tool_count": 1,
+        "request_max_output_tokens": 1600,
+        "request_size_bytes": 34808,
+        "request_schema_sha256": "70d400d3ee9abd99ba5884d23f5eb287f271d26bda9c94f36435dd025c2f0b9b",
+        "transport_version": "llm-transport-v2",
+        "tool_choice_profile": "tokenrhythm-deepseek-chat-v1",
+        "requested_tool_choice": "function:choose_next_experiment"
+      },
+      {
+        "request_model": "deepseek-v4-flash",
+        "response_model": "deepseek-v4-flash-0731",
+        "response_id": "chatcmpl-6abcb649bc808eb891cec3e0",
+        "tokens": 14498,
+        "tokens_source": "reported_total",
+        "input_tokens": 13798,
+        "output_tokens": 700,
+        "reasoning_tokens": null,
+        "cached_input_tokens": null,
+        "latency_s": 5.766,
+        "finish_reason": "tool_calls",
+        "tool_call_count": 1,
+        "wire_api": "chat_completions",
+        "request_tool_choice": "required",
+        "request_tool_count": 1,
+        "request_max_output_tokens": 1600,
+        "request_size_bytes": 44233,
+        "request_schema_sha256": "db0f0d32457dce3263b09ea318fe114793f8a7075fad6384f795695a5f9ab4e1",
+        "transport_version": "llm-transport-v2",
+        "tool_choice_profile": "tokenrhythm-deepseek-chat-v1",
+        "requested_tool_choice": "function:choose_next_experiment"
+      },
+      {
+        "request_model": "deepseek-v4-flash",
+        "response_model": "deepseek-v4-flash-0731",
+        "response_id": "chatcmpl-6abcb6d8678f8227445e311b",
+        "tokens": 13987,
+        "tokens_source": "reported_total",
+        "input_tokens": 13336,
+        "output_tokens": 651,
+        "reasoning_tokens": null,
+        "cached_input_tokens": null,
+        "latency_s": 7.468,
+        "finish_reason": "tool_calls",
+        "tool_call_count": 1,
+        "wire_api": "chat_completions",
+        "request_tool_choice": "required",
+        "request_tool_count": 1,
+        "request_max_output_tokens": 1600,
+        "request_size_bytes": 42375,
+        "request_schema_sha256": "e6890025009b8fb56aaae6bb98bb918b5e934cadd194b4f5e317da5a5cfd6b2c",
+        "transport_version": "llm-transport-v2",
+        "tool_choice_profile": "tokenrhythm-deepseek-chat-v1",
+        "requested_tool_choice": "function:choose_next_experiment"
+      }
+    ],
+    "new_unique_requests": 5,
+    "new_known_tokens": 62309,
+    "probe_requests": 1,
+    "probe_tokens": 14340,
+    "live_requests": 4,
+    "live_tokens": 47969,
+    "project_retained_cumulative_requests": 179,
+    "project_retained_cumulative_known_tokens": 1769826,
+    "authorized_max_requests": 684,
+    "authorized_max_known_tokens": 4132560,
+    "new_ids_not_in_prior_indexes": true,
+    "not_full_account_bill": true
+  },
+  "budget_source": {
+    "path": "docs\\validation\\20260928_api_budget_12x.json",
+    "sha256": "a84b35cc04a8f54b29819bbc35678f9ff8c92301da583759c02dd55bc660ed4d"
+  },
+  "end_state": {
+    "checked_runtime_locks": [
+      {
+        "path": "智能体实验\\runtime.lock",
+        "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+        "free": true,
+        "bytes_unchanged": true
+      },
+      {
+        "path": "智能体实验\\mixed_limit7_full_20260930_01\\runtime.lock",
+        "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+        "free": true,
+        "bytes_unchanged": true
+      },
+      {
+        "path": "工作材料\\便携异目录检查\\20260930_v2_RC13\\智能体实验\\oneway_scope_live_20260930_01\\runtime.lock",
+        "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+        "free": true,
+        "bytes_unchanged": true
+      },
+      {
+        "path": "工作材料\\便携异目录检查\\20260930_v2_RC14\\智能体实验\\mixed_complete_live_20260930_01\\runtime.lock",
+        "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+        "free": true,
+        "bytes_unchanged": true
+      },
+      {
+        "path": "智能体实验\\mixed_named_questions_full_20260930_01\\runtime.lock",
+        "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+        "free": true,
+        "bytes_unchanged": true
+      },
+      {
+        "path": "智能体实验\\mixed_action_execution_full_20260930_02\\runtime.lock",
+        "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+        "free": true,
+        "bytes_unchanged": true
+      },
+      {
+        "path": "智能体实验\\mixed_action_summary_full_20260930_01\\runtime.lock",
+        "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+        "free": true,
+        "bytes_unchanged": true
+      },
+      {
+        "path": "F:\\ITS比赛\\智能体实验\\risk_boundary_validation_20260930_01\\live\\runtime.lock",
+        "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+        "free": true,
+        "bytes_unchanged": true
+      }
+    ]
+  },
+  "pending": [
+    "v2真实模型工具与原生联调",
+    "多候选选择和自由假设因果表述质量",
+    "页面视觉核验",
+    "最新源码最终便携包",
+    "物理异机验收"
+  ],
+  "goal_status": "active"
+}

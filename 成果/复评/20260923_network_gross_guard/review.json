@@ -1,0 +1,133 @@
+{
+  "kind": "retrospective_gross_network_gate",
+  "source_job": "20260923_025908_fbc62a",
+  "source_hashes": {
+    "state": "91057f3fdf07af99ba85348587de8d852425e2430f189f996031e7e0f169ac5c",
+    "archive_manifest": "7365c701074587e1cb764eda5bb5c63d38d9e1ee83d19dc8384d1c00bf0b3ad2"
+  },
+  "threshold_km": 0.1,
+  "new_model_calls": 0,
+  "original_recorded_recommendation": "S2_turn",
+  "original_conditional": {
+    "1.0": "S2_turn",
+    "0.9": "demand_0p900_S2_turn",
+    "1.1": "demand_1p100_S2_turn"
+  },
+  "guarded_conditional": {
+    "1.0": "baseline",
+    "0.9": "demand_0p900_baseline",
+    "1.1": "demand_1p100_baseline"
+  },
+  "guarded_unified": null,
+  "candidates": [
+    {
+      "name": "S1_parking",
+      "factor": 1.0,
+      "recorded_eligible": false,
+      "guarded_eligible": false,
+      "new_network_oversaturated_km": 0,
+      "net_network_oversaturated_km": 0.0,
+      "added_violations": [],
+      "other_recorded_violations": [
+        "全网路段行驶时间未改善，不能只用目标出口流量减少推荐"
+      ]
+    },
+    {
+      "name": "S2_turn",
+      "factor": 1.0,
+      "recorded_eligible": true,
+      "guarded_eligible": false,
+      "new_network_oversaturated_km": 8.8585743,
+      "net_network_oversaturated_km": -1.9485087000000476,
+      "added_violations": [
+        "全网毛新增过饱和有向里程超过0.1km"
+      ],
+      "other_recorded_violations": []
+    },
+    {
+      "name": "S3_combined",
+      "factor": 1.0,
+      "recorded_eligible": true,
+      "guarded_eligible": false,
+      "new_network_oversaturated_km": 8.8585743,
+      "net_network_oversaturated_km": -1.9485087000000476,
+      "added_violations": [
+        "全网毛新增过饱和有向里程超过0.1km"
+      ],
+      "other_recorded_violations": []
+    },
+    {
+      "name": "demand_0p900_S1_parking",
+      "factor": 0.9,
+      "recorded_eligible": true,
+      "guarded_eligible": false,
+      "new_network_oversaturated_km": 0.42686,
+      "net_network_oversaturated_km": 0.2848599999999806,
+      "added_violations": [
+        "全网毛新增过饱和有向里程超过0.1km"
+      ],
+      "other_recorded_violations": []
+    },
+    {
+      "name": "demand_0p900_S2_turn",
+      "factor": 0.9,
+      "recorded_eligible": true,
+      "guarded_eligible": false,
+      "new_network_oversaturated_km": 6.081112,
+      "net_network_oversaturated_km": -4.514263300000039,
+      "added_violations": [
+        "全网毛新增过饱和有向里程超过0.1km"
+      ],
+      "other_recorded_violations": []
+    },
+    {
+      "name": "demand_0p900_S3_combined",
+      "factor": 0.9,
+      "recorded_eligible": true,
+      "guarded_eligible": false,
+      "new_network_oversaturated_km": 6.081112,
+      "net_network_oversaturated_km": -4.514263300000039,
+      "added_violations": [
+        "全网毛新增过饱和有向里程超过0.1km"
+      ],
+      "other_recorded_violations": []
+    },
+    {
+      "name": "demand_1p100_S1_parking",
+      "factor": 1.1,
+      "recorded_eligible": false,
+      "guarded_eligible": false,
+      "new_network_oversaturated_km": 0,
+      "net_network_oversaturated_km": 0.0,
+      "added_violations": [],
+      "other_recorded_violations": [
+        "全网路段行驶时间未改善，不能只用目标出口流量减少推荐"
+      ]
+    },
+    {
+      "name": "demand_1p100_S2_turn",
+      "factor": 1.1,
+      "recorded_eligible": true,
+      "guarded_eligible": false,
+      "new_network_oversaturated_km": 12.5884729,
+      "net_network_oversaturated_km": 0.8604454999999689,
+      "added_violations": [
+        "全网毛新增过饱和有向里程超过0.1km"
+      ],
+      "other_recorded_violations": []
+    },
+    {
+      "name": "demand_1p100_S3_combined",
+      "factor": 1.1,
+      "recorded_eligible": true,
+      "guarded_eligible": false,
+      "new_network_oversaturated_km": 12.5884729,
+      "net_network_oversaturated_km": 0.8604454999999689,
+      "added_violations": [
+        "全网毛新增过饱和有向里程超过0.1km"
+      ],
+      "other_recorded_violations": []
+    }
+  ],
+  "limitations": "回顾性阈值试算；没有新原生求解，也不是事前注册的治理效果提升实验"
+}

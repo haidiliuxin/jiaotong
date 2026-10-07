@@ -1,0 +1,58 @@
+name: Offline regression
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+env:
+  GIT_LFS_SKIP_SMUDGE: '1'
+  PYTHONUTF8: '1'
+  PYTHONIOENCODING: utf-8
+
+jobs:
+  offline:
+    runs-on: windows-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout offline sources and fixtures
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 1
+          lfs: false
+          persist-credentials: false
+          sparse-checkout-cone-mode: false
+          # Keep the explicit historical JSON read by semantic-contract tests.
+          # Model programs, native runtime and historical archives are unnecessary.
+          sparse-checkout: |
+            /.gitattributes
+            /.github/
+            /traffic_agent/
+            /tests/
+            /scripts/
+            /config/
+            /examples/
+            /start.ps1
+            /docs/validation/20260928_quantifier_live_manual_review.json
+
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+
+      - name: Set up Node
+        uses: actions/setup-node@v7
+        with:
+          node-version: '24'
+          package-manager-cache: false
+
+      - name: Runtime versions
+        run: |
+          python --version
+          node --version
+
+      - name: Run every offline regression
+        run: python scripts/run_offline_tests.py

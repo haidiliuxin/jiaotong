@@ -1,0 +1,35 @@
+{
+  "passed": true,
+  "protocol": "bounded-question-wording-v1",
+  "paid_requests": 0,
+  "new_native_scenes": 0,
+  "model_boundary": "synthetic",
+  "execution_boundary": "synthetic",
+  "synthetic_requests": 5,
+  "synthetic_scenes": 6,
+  "questions": [
+    {
+      "model_question": "停车组至少一个已试措施在全部需求下降低冻结核心耗时",
+      "operational": "逐组独立检验：第1组（离线甲路），需求×1。每组停车措施中至少一个已试措施，是否在每个约定需求下冻结核心范围总耗时严格低于同需求无治理基准？"
+    },
+    {
+      "model_question": "停车组至少一个已试措施通过全部原定推荐约束",
+      "operational": "逐组独立检验：第1组（离线甲路），需求×1。每组停车措施中至少一个已试措施，是否在每个约定需求下通过该组全部原定推荐约束及所需控制响应检查？"
+    },
+    {
+      "model_question": "各组所有已试措施均满足邻区两项代价门槛",
+      "operational": "逐组独立检验：第1组（离线甲路），需求×1；第2组（离线乙路），需求×1。每组全部治理类型中所有已试措施，是否在每个约定需求下邻区耗时增幅和毛新增过饱和均不超过该组原定门槛？"
+    }
+  ],
+  "judgments": [
+    "supported",
+    "contradicted",
+    "contradicted"
+  ],
+  "legacy_findings_unchanged": true,
+  "legacy_interpretation_not_added": true,
+  "preserved_records": 74,
+  "preserved_locks": 7,
+  "fixture_sha256": "6cae3286dea112fc1729875be344cf723821de45cc81120336f59f5ff03b11f0",
+  "limitation": "只核对明确词句冲突并生成可核查问题；不是通用语义认证，也不是新版真实联调。"
+}

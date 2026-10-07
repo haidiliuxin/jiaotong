@@ -1,0 +1,22 @@
+{
+  "kind": "bounded_programme_raw_snapshot_v1",
+  "source_commit": "dee47137d76eb07721ad5a0aef186901ead06af5",
+  "job_ids": [
+    "20260928_041115_874b70",
+    "20260928_041115_fa9f86"
+  ],
+  "programme_status": "completed",
+  "validator_status": "verified",
+  "model_calls": 5,
+  "known_tokens": 44610,
+  "unknown_usage": 0,
+  "native_scenes": 6,
+  "top_level_modules": 42,
+  "nested_vehicle1_calls": 80,
+  "automatic_verification_passed": true,
+  "meaning": "原始回复、负结果、全部已完成原件和实际终态逐字节封存；自动核验、人工边界及整体交付状态分别记录，不代表物理异机验收。",
+  "original_files": 5698,
+  "original_bytes_unchanged": true,
+  "zip_bytes": 376975050,
+  "zip_sha256": "6d16e9b9045072e93d9a3bcf63bf0a2126037db94be0371ed9648fe39d2ae0ce"
+}

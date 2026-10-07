@@ -1,0 +1,107 @@
+{
+  "kind": "read_only_rc5_compatibility",
+  "original_status": "incomplete",
+  "original_model_budget": {
+    "limit": 6,
+    "used": 5,
+    "remaining": 1,
+    "known_tokens": 39872,
+    "unknown_usage": 0,
+    "halted": true
+  },
+  "original_files_sha256": {
+    "工作材料\\便携异目录检查\\20260927 智能规划 RC5\\智能体实验\\dispatches\\20260927_224930_69ff12.json": "c2b4b1c95cff7b212cd1fe8c93aeed223d76df4e05cc41e28126d0777bffb8ad",
+    "工作材料\\便携异目录检查\\20260927 智能规划 RC5\\智能体实验\\programmes\\20260927_224930_69ff12\\plan.json": "39356652bfa524f5d8936e81243d7f88b42cc3d088577f1049c044cc22551a14",
+    "工作材料\\便携异目录检查\\20260927 智能规划 RC5\\智能体实验\\programmes\\20260927_224930_69ff12\\result.json": "c2b4b1c95cff7b212cd1fe8c93aeed223d76df4e05cc41e28126d0777bffb8ad",
+    "工作材料\\便携异目录检查\\20260927 智能规划 RC5\\智能体实验\\jobs\\20260927_224930_69ff12\\state.json": "ffe8f0ab5a4688e06404523a51e1153687d59a01686cd3dcf5fdfc7812a06381",
+    "工作材料\\便携异目录检查\\20260927 智能规划 RC5\\智能体实验\\jobs\\20260927_224930_69ff12\\diagnosis.json": "07550e37336fa69fba904355ec58ddca5a8a0598fc46b9d9b56b47fb5bbd0a33",
+    "工作材料\\便携异目录检查\\20260927 智能规划 RC5\\智能体实验\\jobs\\20260927_224930_45a743\\state.json": "c396a06927783593613771280036be6f876f85fdcc4222f1673c48dfc01f7b32",
+    "工作材料\\便携异目录检查\\20260927 智能规划 RC5\\智能体实验\\jobs\\20260927_224930_45a743\\diagnosis.json": "663a004fb1561e8961062ca1d3978f3081471e4ca8eb4e4a00b83468987b85ee"
+  },
+  "original_bytes_unchanged": true,
+  "child_planning_audits": {
+    "20260927_224930_69ff12": {
+      "passed": true,
+      "decisions": 2,
+      "model_selected_policies": 1,
+      "observations_from_current_job_only": true,
+      "actions_precede_execution": true
+    },
+    "20260927_224930_45a743": {
+      "passed": true,
+      "decisions": 2,
+      "model_selected_policies": 0,
+      "observations_from_current_job_only": true,
+      "actions_precede_execution": true
+    }
+  },
+  "programme_consistency": {
+    "passed": true,
+    "groups": 2,
+    "decisions": 4,
+    "no_cross_engine_pooling": true,
+    "observations_checked_at_decision_time": true,
+    "request_reservations_checked": true
+  },
+  "original_reference_inspection": {
+    "kind": "offline_hypothesis_reference_inspection",
+    "schema": "measured-findings-v1",
+    "original_job": "20260927_224930_69ff12",
+    "original_status": "incomplete",
+    "original_sha256": "c2b4b1c95cff7b212cd1fe8c93aeed223d76df4e05cc41e28126d0777bffb8ad",
+    "checks": [
+      {
+        "field": "hypothesis_updates",
+        "allowed_measured_ids": [
+          "factorial",
+          "response",
+          "benefit",
+          "combination"
+        ],
+        "gap_ids_retained_in_context": [
+          "robustness"
+        ],
+        "forbidden_original_references": [],
+        "original_reply_check": "structurally_valid"
+      },
+      {
+        "field": "programme_updates",
+        "allowed_measured_ids": [
+          "study_1.benefit",
+          "study_1.tradeoff",
+          "study_2.factorial",
+          "study_2.response",
+          "study_2.benefit",
+          "study_2.combination"
+        ],
+        "gap_ids_retained_in_context": [
+          "study_1.strength",
+          "study_1.regions",
+          "study_1.robustness",
+          "study_2.robustness"
+        ],
+        "forbidden_original_references": [
+          {
+            "hypothesis_id": "H1",
+            "finding_ids": [
+              "study_1.strength",
+              "study_1.regions"
+            ]
+          }
+        ],
+        "original_reply_check": "unmeasured_finding"
+      }
+    ],
+    "original_bytes_unchanged": true,
+    "corrected_reply_generated": false,
+    "paid_calls": 0,
+    "new_native_scenes": 0,
+    "meaning": "只核查新工具的已测引用列表；未测缺口仍保留，原提议仍被拒。不是模型修正或完整真实验收。"
+  },
+  "final_review_prerequisites_would_fit": true,
+  "complete_certificate_rejected": "总任务尚未完整，不能出具完整验收结论",
+  "paid_calls": 0,
+  "new_native_scenes": 0,
+  "corrected_reply_generated": false,
+  "meaning": "新修正机制的前提覆盖该失败形态，但未重启旧任务、未生成修正答复，旧任务仍未完成。"
+}

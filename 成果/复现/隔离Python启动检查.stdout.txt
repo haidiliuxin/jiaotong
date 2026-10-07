@@ -1,0 +1,42 @@
+{
+  "preflight_passed": true,
+  "source_validation": {
+    "directed_links": 32981,
+    "zones": 332,
+    "assignment": "multipath_incremental_5_iterations",
+    "equilibrium_claim": false
+  },
+  "task_scenario": "circulation",
+  "capability": {
+    "state": "needs_validation",
+    "name": "局部禁转与停车组合",
+    "requires": [
+      "解决禁转输入、实际分配与转向输出的一致性问题",
+      "在实际响应通过的适配器上重新验证S2/S3及需求条件"
+    ]
+  },
+  "python": "3.12.6",
+  "python_executable": "C:\\Users\\asus\\AppData\\Local\\Temp\\its_clean_python_2trafs9v\\environment\\Scripts\\python.exe",
+  "platform": "nt",
+  "runtime_source": "F:\\ITS比赛\\方案1流程验证\\runtime",
+  "programs": {
+    "M3DataRoadNetwork.exe": "pe_present",
+    "M3DataBusNetwork.exe": "pe_present",
+    "M3DataTrafficManage.exe": "pe_present",
+    "M6AssignVehicle1.exe": "pe_present",
+    "M6TrafficLoadLinkVeh.exe": "pe_present",
+    "M6TrafficLoadNodeVeh.exe": "pe_present",
+    "M6NodeQueueDelay.exe": "pe_present",
+    "NodeAssignModel_car.exe": "pe_present",
+    "NodeAssignModel_taxi.exe": "pe_present",
+    "NodeAssignModel_motor.exe": "pe_present",
+    "NodeAssignModel_truck.exe": "pe_present"
+  },
+  "compiler": {
+    "required": true,
+    "path": "C:\\mingw64\\bin\\gcc.EXE",
+    "target": "x86_64-w64-mingw32"
+  },
+  "errors": [],
+  "limits": "只检查启动依赖和源数据，不调用模型、不证明试用授权当前有效，也不替代场景实际响应验收"
+}

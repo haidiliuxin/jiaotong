@@ -1,0 +1,8 @@
+交通网络任意点对最短路矩阵分析Mparam331.TXT
+【输入文件】交通网络交通阻抗文件名	LenLink.tsd
+【输入文件】分析点对信息文件名	AnyNodeS.txt
+【输出文件】最短路矩阵文件名	MatrixAnyPath.tsd
+
+说明：
+【输入文件】分析点对信息文件AnyNodeS.txt
+计算的节点数量及节点编号文件名

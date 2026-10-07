@@ -1,0 +1,192 @@
+{
+  "date": "2026-09-27T04:14:45.787126+00:00",
+  "stage": "research-completion-v2",
+  "base_commit": "fa3f918c",
+  "job_id": "20260927_115748_257465",
+  "protocols": {
+    "planning": "natural-strategy-plan-v4",
+    "execution": "observed-planning-v2"
+  },
+  "local_checks": {
+    "python_tests": 264,
+    "python_passed": true,
+    "node_map_passed": true,
+    "node_planner_passed": true,
+    "javascript_syntax_passed": true
+  },
+  "live": {
+    "status": "verified",
+    "model_requests": 4,
+    "tokens": 15886,
+    "per_request_tokens": [
+      3100,
+      2465,
+      4220,
+      6101
+    ],
+    "probe_requests": 0,
+    "retries": 0,
+    "completed_scenarios": 3,
+    "native_modules": 21,
+    "archive_files": 1763,
+    "archive_readonly_verified": true,
+    "independent_planning_audit": {
+      "passed": true,
+      "decisions": 3,
+      "model_selected_policies": 2,
+      "observations_from_current_job_only": true,
+      "actions_precede_execution": true
+    },
+    "completion_checks": [
+      {
+        "id": "baseline",
+        "label": "各需求的新基准",
+        "fulfilled": true
+      },
+      {
+        "id": "policy",
+        "label": "治理候选的实际执行与配对",
+        "fulfilled": true
+      },
+      {
+        "id": "strength",
+        "label": "同方向停车1级 / 2级完整对照",
+        "fulfilled": true
+      },
+      {
+        "id": "review",
+        "label": "模型读取完整结果并完成复核",
+        "fulfilled": true
+      }
+    ],
+    "comparison_directions": [
+      [
+        3244,
+        3245
+      ]
+    ],
+    "recommendation": "parking_2",
+    "scope_sizes": {
+      "core": 1,
+      "neighbor": 27,
+      "network": 32060
+    },
+    "policies": [
+      {
+        "run": "parking_1",
+        "level": 2,
+        "core_speed_kmh": 17.1,
+        "delta": {
+          "core": {
+            "speed_change_pct": 90.00000000000001,
+            "running_time_change_pct": -47.364553183791614,
+            "oversaturated_km_change": 0.0
+          },
+          "neighbor": {
+            "speed_change_pct": -0.00048673065802251614,
+            "running_time_change_pct": 0.0009638241274423365,
+            "oversaturated_km_change": 0.0
+          },
+          "network": {
+            "speed_change_pct": 0.04683697567573475,
+            "running_time_change_pct": -0.04681708562629394,
+            "oversaturated_km_change": 0.0
+          }
+        },
+        "new_neighbor_oversaturated_km": 0,
+        "eligible": true
+      },
+      {
+        "run": "parking_2",
+        "level": 1,
+        "core_speed_kmh": 23.380000000000003,
+        "delta": {
+          "core": {
+            "speed_change_pct": 159.7777777777778,
+            "running_time_change_pct": -61.447240674739,
+            "oversaturated_km_change": 0.0
+          },
+          "neighbor": {
+            "speed_change_pct": 0.01950268608990058,
+            "running_time_change_pct": 0.018347875294111304,
+            "oversaturated_km_change": 0.05600000000000005
+          },
+          "network": {
+            "speed_change_pct": 0.06074751550195767,
+            "running_time_change_pct": -0.060434066797299124,
+            "oversaturated_km_change": 0.05600000000004002
+          }
+        },
+        "new_neighbor_oversaturated_km": 0.056,
+        "eligible": true
+      }
+    ],
+    "model_caveats": [
+      "能力核对：当前停车工具只开放1/2级；文字提到的停车0级不在可执行目录内。",
+      "结论范围：仅比较本次实际测试的合法候选及需求条件，不能把“最优”外推到未测道路、需求或措施。"
+    ]
+  },
+  "browser": {
+    "completion": "4/4",
+    "both_strength_links_select_measured_map": true,
+    "baseline_and_policy_same_color_scale": true,
+    "console_errors": [],
+    "screenshot": "docs/validation/20260927_completion_comparison.png"
+  },
+  "previous_case": {
+    "job_id": "20260927_112008_4167a7",
+    "comparison_complete": false,
+    "archive_files": 1179,
+    "archive_readonly_verified": true,
+    "original_files_unchanged": true,
+    "display_status": "incomplete"
+  },
+  "scope": {
+    "fully_live_tested": [
+      "单需求同方向强度比较",
+      "基于新结果继续执行与完整复核",
+      "真实TranStar输入输出及决策审计"
+    ],
+    "locally_tested_only": [
+      "多需求模型候选完整网格与复跑",
+      "多研究组重排及调用预算预留",
+      "接口失败、非法停止、无收益负结果"
+    ],
+    "not_claimed": [
+      "连续交通仿真",
+      "全局最优",
+      "所有模型文字准确",
+      "现实标定",
+      "另一台物理电脑验收",
+      "最新源码便携包"
+    ]
+  },
+  "evidence_sha256": {
+    "state.json": "eb47f1e646df5c19eb4d70f14f092d2e05491aad898a30dbdf08f3323ef8d92d",
+    "plan.json": "5f389739d60ba7b905ab7f5107d675a842ed412f16dde5de21cab280d48f5455",
+    "verification.json": "32003207dcd79e0f0a65d2996b588980a973d0bde7d4d2094e4b261283575ccb",
+    "archive_manifest.json": "5d92cf0b8b466818356dbfbb2002e419b879d3fe10800c5666917dfc5f454866"
+  },
+  "implementation_sha256": {
+    "scripts/validate_observed_planning.py": "913c9b6cd3bf531c03cdac527517d0c9dcc9305d540699e29672fa163847b717",
+    "scripts/verify_experiment.py": "92b45c1070ae6889c1d84bad9dce163922912b190e08689d90c82ada74cb1047",
+    "tests/test_feedback_planner.py": "23d042fe31980fd2784d9f646ac5b004b4b755114689ddc84f162d17584dd329",
+    "tests/test_natural_plan.py": "bfc10ae2d37a72f23dbb4a222b596e67283ed45e6f93196b9214de3afa87bec6",
+    "tests/test_planner_view.cjs": "21868fb624b79f8b47b0f842fc188514efd2b3681147b017b30ad566777c3c86",
+    "tests/test_planning_review.py": "3ba1a0e24af8f606fe0ef21e197551b6bbc554177093b4cd76e88ef75bb5df37",
+    "traffic_agent/agent.py": "aacaf86017c0b2a320c063c7d4cdb3cff5a666044829693fd961dff2dc9c37cf",
+    "traffic_agent/dispatch.py": "fe2d3c43e6c3e4c2579736b6f983ca5a59d061a086b4c843030c37c625ff061d",
+    "traffic_agent/feedback_planner.py": "21ec9055305e1a3de416c5d3f6253c55da559c7a4778b40fe242521cf9ea368d",
+    "traffic_agent/model_search.py": "114e6a133eb6085af056d6861db8ce76e546e9c8d4941c6f0f405ae505c19e36",
+    "traffic_agent/natural_plan.py": "56f5e76f9d0ff417c56c3abc1b0dccf19877a612780c77ef2bd8a721dd4c70fc",
+    "traffic_agent/planning_audit.py": "625f171d9b3a10ae86512360416244adf5106848b2fe33a2ae9e7230ddd70558",
+    "traffic_agent/planning_review.py": "0c25dd4ba2271d76868d38d0f1136a2f550e582e2b10c94495b3e4dacd816e52",
+    "traffic_agent/planning_studies.py": "98341b578f0a3d508a9926e11989962d05714318ede92785e2177748d2e9b9f5",
+    "traffic_agent/report.py": "b11b2efee50a95f4f473bdd940180ef813d29d00009d7ed5556a64daca5ec854",
+    "traffic_agent/static/app.js": "c853844e968bd26c2525c8487b64ebce895e55e8578bff58a3bec1bb26a57e44",
+    "traffic_agent/static/dispatch.js": "d5b9a073447733956760a827ee9c7da4f6eee860c501ee3c7e867ed516d6619d",
+    "traffic_agent/static/planner_view.js": "a21d34e0f432f1c0f38174956e62362781916ceffa636309a1a123927f0d9848",
+    "traffic_agent/static/style.css": "0ab9e4aefa310536d0ef5e359952be1e0fcc82f913388647468713bb78e5e1c6",
+    "tests/test_planning_completion.py": "e054427d562255943352eb990df9c5ddaf1afa7b70cb90e52c0434b7deecf419"
+  }
+}

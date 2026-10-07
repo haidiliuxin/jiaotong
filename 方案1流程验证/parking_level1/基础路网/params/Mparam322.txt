@@ -1,0 +1,6 @@
+设计速度下的分方式交通网络时耗分析参数表Mparam322.TXT
+社会车辆出行路段时间消耗	TmDsgnLinkCar.tsd
+常规公交出行路段时间消耗	TmDsgnLinkBus.tsd
+轨道交通出行路段时间消耗        TmDsgnLinkSub.tsd
+步行交通出行路段时间消耗	TmDsgnLinkWalk.tsd
+非机动车出行路段时间消耗	TmDsgnLinkBic.tsd

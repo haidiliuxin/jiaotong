@@ -1,0 +1,85 @@
+{
+  "job": "20260919_205401_c8de76",
+  "read_only_verifier_preserved_all_file_metadata": true,
+  "audit_passed": true,
+  "risks": [
+    {
+      "run": "parking_1",
+      "new_network_overloaded_km": 0.785,
+      "added_time_pcu_h": 27.10429932047855,
+      "saved_time_pcu_h": 186.81864433536413,
+      "net_time_pcu_h": -159.71434501488557,
+      "worst_roads": [
+        {
+          "from_node": 4085,
+          "to_node": 3240,
+          "name": "18209路",
+          "time_increase_pcu_h": 9.930645540540539
+        },
+        {
+          "from_node": 4084,
+          "to_node": 3245,
+          "name": "18208路",
+          "time_increase_pcu_h": 2.5164081929216464
+        },
+        {
+          "from_node": 3246,
+          "to_node": 3111,
+          "name": "七东线",
+          "time_increase_pcu_h": 2.1530572413889892
+        },
+        {
+          "from_node": 3118,
+          "to_node": 3117,
+          "name": "环洲路",
+          "time_increase_pcu_h": 1.5852444444444183
+        },
+        {
+          "from_node": 3244,
+          "to_node": 3247,
+          "name": "七东线",
+          "time_increase_pcu_h": 1.4061062218322036
+        }
+      ]
+    },
+    {
+      "run": "parking_2",
+      "new_network_overloaded_km": 0.785,
+      "added_time_pcu_h": 39.495784407690664,
+      "saved_time_pcu_h": 246.61723802116765,
+      "net_time_pcu_h": -207.121453613477,
+      "worst_roads": [
+        {
+          "from_node": 4085,
+          "to_node": 3240,
+          "name": "18209路",
+          "time_increase_pcu_h": 10.496513873873875
+        },
+        {
+          "from_node": 4084,
+          "to_node": 3245,
+          "name": "18208路",
+          "time_increase_pcu_h": 3.8357786903231417
+        },
+        {
+          "from_node": 3246,
+          "to_node": 3111,
+          "name": "七东线",
+          "time_increase_pcu_h": 3.270773511075357
+        },
+        {
+          "from_node": 3118,
+          "to_node": 3117,
+          "name": "环洲路",
+          "time_increase_pcu_h": 3.133
+        },
+        {
+          "from_node": 3244,
+          "to_node": 3247,
+          "name": "七东线",
+          "time_increase_pcu_h": 2.1406422260785054
+        }
+      ]
+    }
+  ]
+}

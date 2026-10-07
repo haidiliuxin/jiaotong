@@ -1,0 +1,1 @@
+{"demand_factors":[0.9,1.0,1.1],"links":[[1179,1180],[1180,1181],[1181,1180]],"max_feedback":3,"max_links":3,"max_new_network_oversaturated_km":0.1,"max_runs":11,"recommendation_version":"tolerance-v2","repeat_baseline":true,"request":"兴浦路高密度负例的同区域开发性复测：单方向失败后按无治理基准固定次序尝试原核心其他方向，保持三需求与全网安全门槛","scenario":"parking","search_mode":"robust","backtrack_on_singleton_failure":true}

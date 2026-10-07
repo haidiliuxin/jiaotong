@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "source_commit": "e1a2bf02804ccd7b31f2c42532f8ff9b1872a08e",
+  "files": {
+    "criterion_repair_helpers__criterion_repair_ui_fixture.json": {
+      "source_archive": "docs/validation/20260928_criterion_repair_helpers.zip",
+      "archive_sha256": "285b1f58cd3edb7988199047281049aa8ba68262949df6f686713163e5aee40d",
+      "member": "criterion_repair_ui_fixture.json",
+      "sha256": "15b0c6d099b201330cdc150242dd9f8865239ff381bab02059e8269cec603be3",
+      "bytes": 69933
+    },
+    "policy_patch_helpers__policy_patch_ui_fixture.json": {
+      "source_archive": "docs/validation/20260928_policy_patch_helpers.zip",
+      "archive_sha256": "db13e830b0d44b8a30915bf5d3ae2426f453daecccd391ef733075ceb14bd57d",
+      "member": "policy_patch_ui_fixture.json",
+      "sha256": "4231c20e96fe0c5fd66a589be98582c49c9d0c74bf103ad4df5baf3a20de6514",
+      "bytes": 68566
+    },
+    "rc17_raw_evidence__preview_4d89cb70c5864dafafd667d27e98bc3d.json": {
+      "source_archive": "docs/validation/20260928_rc17_raw_evidence.zip",
+      "archive_sha256": "c9871bd1896b9e79223d8a0a1d851310f23e1258faf8ae1631d11c67a9400998",
+      "member": "智能体实验/planning_attempts/preview_4d89cb70c5864dafafd667d27e98bc3d.json",
+      "sha256": "2c2169f7794515e31defd775451b58a299681b3f0b9de1d4ba29ebedcd5fd956",
+      "bytes": 10041
+    },
+    "rc17_raw_evidence__preview_500a42e5ea634265aad403dbb99c9823.json": {
+      "source_archive": "docs/validation/20260928_rc17_raw_evidence.zip",
+      "archive_sha256": "c9871bd1896b9e79223d8a0a1d851310f23e1258faf8ae1631d11c67a9400998",
+      "member": "智能体实验/planning_attempts/preview_500a42e5ea634265aad403dbb99c9823.json",
+      "sha256": "4459e02753d2cc64446dfc13ebf41cd9696c249379c61012205fb225b2d3fb51",
+      "bytes": 13033
+    },
+    "rc18_raw_evidence__preview_0d9e01ffebe4473286b7ebc935c911eb.json": {
+      "source_archive": "docs/validation/20260928_rc18_raw_evidence.zip",
+      "archive_sha256": "70f7dec256f0c72e04a74c49bdc2beaeeed10677dbc9ad0a2d48e713dae924fd",
+      "member": "智能体实验/planning_attempts/preview_0d9e01ffebe4473286b7ebc935c911eb.json",
+      "sha256": "1e8867cf7972cd6a1e09b3ca4f0d6618f33700956505ed03cc47d53f1720291e",
+      "bytes": 10691
+    },
+    "rc19_raw_evidence__preview_e35d5441ade9443496e778bb011a8109.json": {
+      "source_archive": "docs/validation/20260928_rc19_raw_evidence.zip",
+      "archive_sha256": "f5662889506fa05e6d3505e9a36e8f4416bffbf7b9b0e9745e018f7e2f3ef7fd",
+      "member": "智能体实验/planning_attempts/preview_e35d5441ade9443496e778bb011a8109.json",
+      "sha256": "961af29da33b2fc1803c084134b256ea46d86288d15fd7530fb05f376b6ff7cd",
+      "bytes": 10385
+    },
+    "quantifier_live_raw_evidence__20260928_083527_0399ce.json": {
+      "source_archive": "docs/validation/20260928_quantifier_live_raw_evidence.zip",
+      "archive_sha256": "51b114500b585ec2225779afa49bf3320aedc2c8cfe85f10e4fb668deea5ebf7",
+      "member": "dispatches/20260928_083527_0399ce.json",
+      "sha256": "cdb934ec8c930aa8b7ebc0ab06bf58ca5b43f45f2356f1702d1e21e7b6175728",
+      "bytes": 410358
+    }
+  }
+}

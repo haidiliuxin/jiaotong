@@ -1,0 +1,61 @@
+{
+  "kind": "offline_diagnosis_intent_checks",
+  "commands": [
+    {
+      "label": "python",
+      "command": [
+        "F:\\ITS比赛\\.venv\\Scripts\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests"
+      ],
+      "returncode": 0,
+      "log": "20260928_diagnosis_intent_python_tests_verified.log"
+    },
+    {
+      "label": "planner",
+      "command": [
+        "node",
+        "tests/test_planner_view.cjs"
+      ],
+      "returncode": 0,
+      "log": "20260928_diagnosis_intent_planner_tests_verified.log"
+    },
+    {
+      "label": "dispatch",
+      "command": [
+        "node",
+        "tests/test_dispatch_ui.cjs"
+      ],
+      "returncode": 0,
+      "log": "20260928_diagnosis_intent_dispatch_tests_verified.log"
+    },
+    {
+      "label": "map",
+      "command": [
+        "node",
+        "tests/test_map_view.cjs"
+      ],
+      "returncode": 0,
+      "log": "20260928_diagnosis_intent_map_tests_verified.log"
+    }
+  ],
+  "source_sha256": {
+    "scripts/validate_observed_planning.py": "26876e177580492944299af841264004737f3f09f675ee1ead2771bef4fb8c60",
+    "tests/test_mixed_controller.py": "f106c649ebdc5ee22c670d7985dc0345347660c85056ac8c2e7a0e19906ffc14",
+    "tests/test_planner_view.cjs": "a4cd795d87bb9e0a57eb0ae321e9e5409d27d6300891134b1ae229b7535bc83a",
+    "traffic_agent/natural_plan.py": "729ec2abe3067600d70cac27652aa66be4d87c6365c407a34f94f597a6029776",
+    "traffic_agent/plan_compiler.py": "977a5411de188c8b90cf42cea58e63e71cc27b38a904c1ebed2e36c227aca2c2",
+    "traffic_agent/static/planner_view.js": "bb5ed0063076a29eeaa237e7a6c5fa3fef6b457969e00f04fd962bc1eea6a850",
+    "tests/test_diagnosis_intent.py": "1a4587532c6a693fe6954e37170dcf6b7ddd6ee52a498f4ef980ea79245acd0e"
+  },
+  "paid_calls": 0,
+  "new_native_scenes": 0,
+  "overall_complete": false,
+  "meaning": "两种接口、实际控制器配合合成模型和仿真边界；独立诊断与治理执行两份新基准，共3合成场景、4合成请求。不代表真实模型或交通效果通过。"
+}

@@ -1,0 +1,7 @@
+Mparam412.txt—常住人口出行发生吸引量—基于出行目的预测
+【输入文件】交通小区常住人口信息	TripPopulation.TXT
+【输入文件】出行目的结构信息	TripPuse.TXT
+【输出文件】交通区常住人口出行发生总量	TripGResiPurp.tsd
+【输出文件】交通区常住人口出行吸引总量	TripAResiPurp.tsd
+
+规划年常住人口日均出行次数	2.3

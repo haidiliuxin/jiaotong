@@ -1,0 +1,9 @@
+test_worst_core_uses_all_matching_demands_and_fallback_stays_missing (tests.test_challenge_report.ChallengeReportTests.test_worst_core_uses_all_matching_demands_and_fallback_stays_missing) ... ok
+test_failed_or_running_job_cannot_publish (tests.test_challenge_finalize.ChallengeFinalizeTests.test_failed_or_running_job_cannot_publish) ... ok
+test_failed_raw_audit_never_seals_or_exports (tests.test_challenge_finalize.ChallengeFinalizeTests.test_failed_raw_audit_never_seals_or_exports) ... ok
+test_incomplete_final_report_cannot_publish (tests.test_challenge_finalize.ChallengeFinalizeTests.test_incomplete_final_report_cannot_publish) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.019s
+
+OK

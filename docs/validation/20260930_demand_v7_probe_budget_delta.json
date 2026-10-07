@@ -1,0 +1,27 @@
+{
+  "kind": "project_recorded_usage_delta_v1",
+  "baseline_file": "docs/validation/20260930_demand_rc5_budget_delta.json",
+  "scope": "Project-retained provider responses, not a complete account bill. No credential, prompt body, or model reply body is copied into this ledger.",
+  "v7_first_model_only_probe": {
+    "record": "智能体实验/demand_v7_probe_20260930_01/probe.json",
+    "requests": 1,
+    "known_tokens": 17149,
+    "native_scenarios": 0,
+    "status": "rejected"
+  },
+  "v7_bounded_correction_probe": {
+    "record": "智能体实验/demand_v7_correction_probe_20260930_01/probe.json",
+    "requests": 1,
+    "known_tokens": 18218,
+    "native_scenarios": 0,
+    "status": "accepted"
+  },
+  "locally_recorded_cumulative_conservative": {
+    "requests": 102,
+    "known_tokens": 914551,
+    "request_limit": 684,
+    "known_token_limit": 4132560,
+    "remaining_requests": 582,
+    "remaining_known_tokens": 3218009
+  }
+}

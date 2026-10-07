@@ -1,0 +1,16 @@
+{
+    "Project_Name": "南京案例",
+    "Project_Schemes": [
+        {
+            "BasedProjectScheme_Name": "基础方案",
+            "Is_Active": true,
+            "Is_Basic": true,
+            "ProjectScheme_CreateTime": "2022.01.27  16:28:52",
+            "ProjectScheme_Id": "1643272132FYMKFIQDJWDLTDJMUBIN",
+            "ProjectScheme_Info": "",
+            "ProjectScheme_Name": "基础路网"
+        }
+    ],
+    "Project_Type": "City",
+    "version": 1.1
+}

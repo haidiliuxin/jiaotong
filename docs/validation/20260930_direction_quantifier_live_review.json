@@ -1,0 +1,33 @@
+{
+  "date": "2026-09-30",
+  "source_commit": "2e60c209",
+  "request": "长江村路停车拥堵。请至少比较两个不同停车备选方案，并检验单向组织及其组合的独立效果。最多7次仿真，不复跑基准；保护邻区。",
+  "root": "智能体实验/mixed_conclusion_v11_full_20260930_01",
+  "programme_id": "20260930_072120_13f92b",
+  "status": "incomplete",
+  "completed_scenes": 4,
+  "top_level_native_modules": 28,
+  "oneway_baseline_vehicle1_calls": 20,
+  "parking_job": {
+    "id": "20260930_072120_13f92b",
+    "status": "completed",
+    "raw_read_only_verification": true,
+    "scenes": 3,
+    "top_level_modules": 21,
+    "parking_1": {"core_running_time_change_pct": -23.308694361678317, "neighbor_running_time_change_pct": -0.18205257806130914, "neighbor_new_oversaturated_km": 0, "eligible": true, "edited_directed_links": 3},
+    "parking_2": {"core_running_time_change_pct": -8.846190921119224, "neighbor_running_time_change_pct": 0.06365802041863322, "neighbor_new_oversaturated_km": 0, "eligible": true, "edited_directed_links": 2}
+  },
+  "oneway_job": {"id": "20260930_072120_2a4fba", "status": "incomplete", "completed_scenes": 1, "treatment_scenes": 0, "failure_code": "direction_reversed", "shadow_v3_full_tool_validation": "accepted"},
+  "quantifier_review": {"hypothesis_id": "H1", "original": "至少存在一个", "evidence_needed": "两个停车候选均需通过", "frozen_quantifier": "all", "v4_conflicts": [], "v5_conflicts": ["quantifier_changed"], "original_record_unchanged": true},
+  "usage": {"new_unique_requests": 5, "new_known_tokens": 58117, "project_retained_cumulative_requests": 139, "project_retained_cumulative_known_tokens": 1323583, "authorized_max_requests": 684, "authorized_max_known_tokens": 4132560, "not_full_account_bill": true},
+  "hashes_sha256": {
+    "dispatches/20260930_072120_13f92b.json": "61b7983023ca3bc149f761e3828e38cc9b742a8e7703ee5981c170e26a859797",
+    "programmes/20260930_072120_13f92b/plan.json": "622db08e0a0770f5d75ce593ab9458e1f3068e182ce8506781af8e2ab539ed65",
+    "programmes/20260930_072120_13f92b/result.json": "61b7983023ca3bc149f761e3828e38cc9b742a8e7703ee5981c170e26a859797",
+    "jobs/20260930_072120_13f92b/state.json": "0cde8cc38f5761038077bf474cf2589bb130131506a55e6fa082e35980abce7e",
+    "jobs/20260930_072120_2a4fba/state.json": "4ea9d34947e47db57f9497cd6611d182b9cc422b830213a9d2905cb9f11b67cf",
+    "planning_attempts/preview_fe92d069e411499d83bd2b46125b6f33.json": "1a05cc75f891f026759b28a1db6b4b650820909e9575754f0e7763a93db25b54"
+  },
+  "offline_checks": {"python_tests": 643, "old_rc5_read_only_programme": "passed", "parking_raw_read_only_job": "passed", "new_programme_read_only": "refused_incomplete", "git_diff_check": "passed"},
+  "pending": ["new_v3_v5_model_native_end_to_end", "latest_portable_package", "physical_other_machine_acceptance"]
+}

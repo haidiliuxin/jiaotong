@@ -1,0 +1,33 @@
+{
+  "kind": "portable_display_alignment_validation_v1",
+  "archive": "工作材料/便携构建/20260930_智能规划_v6_RC2.zip",
+  "archive_sha256": "11856336f93579ea296ab0bccd894af57c2d74a7ae78bc8bb2dae8df88bfd1b9",
+  "source_commit_in_manifest": "4a936963b99fc37ac80ad6e20dd507f7688d29ac",
+  "extracted_root": "工作材料/便携异目录检查/20260930_v6_RC2",
+  "environment_record": "工作材料/便携异目录检查/20260930_v6_RC2_evidence/environment_verification.json",
+  "environment_status": "passed",
+  "immutable_files_verified": 16162,
+  "bundle_integrity_after_offline_render": "passed",
+  "saved_native_source": "工作材料/便携异目录检查/20260930_v6_RC1/智能体实验/v6_full_live_20260930_01/jobs/20260930_010417_f9a78a/state.json",
+  "saved_native_source_sha256_before_and_after": "5990727ddec40ebe092075670c13129dbb8e5b2b541b8f92043511501bd23a10",
+  "offline_preview": "工作材料/便携异目录检查/20260930_v6_RC2/智能体实验/v6_display_offline_preview_20260930",
+  "rendered_report_sha256": "49e8b019b0dfbff354460a4dc01ccd133014f4e07462c0233c433f15dbc9e0bb",
+  "checks": {
+    "recommendation_directly_under_heading": true,
+    "stop_basis_from_frozen_completion_guard": true,
+    "original_model_reason_retained_in_state_and_expandable_ui": true,
+    "internal_completion_field_names_absent_from_report": true,
+    "feedback_arrangement_in_chinese": true,
+    "measured_cost_and_recommendation_unchanged": true,
+    "frontend_rendered_with_rc2_bundled_script": true,
+    "historical_v5_still_needs_review": true
+  },
+  "test_suite": {
+    "python_unittest": 619,
+    "node_suites": 4,
+    "status": "passed"
+  },
+  "new_model_requests": 0,
+  "new_native_scenarios": 0,
+  "scope": "Same-computer package isolation and read-only rerender of previously measured observations. RC2 has not itself run a new model plus native task; RC1 is the archived full live case. Physical other-computer acceptance remains unverified."
+}

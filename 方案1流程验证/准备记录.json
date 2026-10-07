@@ -1,0 +1,8 @@
+{
+  "source": "F:\\ITS比赛\\南京市案例数据库\\南京案例",
+  "working_project": "F:\\ITS比赛\\方案1流程验证\\baseline",
+  "purpose": "fixed OD baseline / single parking intervention pilot",
+  "preserved_demand": true,
+  "workflow": "network basic information, existing vehicle multipath incremental assignment, vehicle link/node load and delay",
+  "note": "Inherited output files are not new simulation results; verify fresh timestamps and execution completion."
+}

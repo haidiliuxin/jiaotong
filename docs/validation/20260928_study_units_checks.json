@@ -1,0 +1,64 @@
+{
+  "kind": "offline_complete_study_unit_checks",
+  "commands": [
+    {
+      "label": "python",
+      "command": [
+        "F:\\ITS比赛\\.venv\\Scripts\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests"
+      ],
+      "returncode": 0,
+      "log": "20260928_study_units_python_tests.log",
+      "note": "Python source unchanged since this completed check; only the JS failure display was fixed subsequently."
+    },
+    {
+      "label": "planner",
+      "command": [
+        "node",
+        "tests/test_planner_view.cjs"
+      ],
+      "returncode": 0,
+      "log": "20260928_study_units_planner_tests_verified.log"
+    },
+    {
+      "label": "dispatch",
+      "command": [
+        "node",
+        "tests/test_dispatch_ui.cjs"
+      ],
+      "returncode": 0,
+      "log": "20260928_study_units_dispatch_tests_verified.log"
+    },
+    {
+      "label": "map",
+      "command": [
+        "node",
+        "tests/test_map_view.cjs"
+      ],
+      "returncode": 0,
+      "log": "20260928_study_units_map_tests_verified.log"
+    }
+  ],
+  "source_sha256": {
+    "tests/test_initial_planner.py": "ba4069073e3bcf543a90616772e24ffb9327edb05a10b5bad4ab404b9d11d41a",
+    "tests/test_mixed_controller.py": "1b9dc5b74ac6a6305938db562b7f8479afcf4b989bae3adb2de6eb8bf52dfabe",
+    "tests/test_planner_view.cjs": "9620ffc42b46dd272de2d4f34fff53e56646233beaeeaf8d23e0a513f3de309d",
+    "traffic_agent/natural_plan.py": "831c47c9232251f1018fcf829d6c15baa81511be3d39a1502bd41b567b37078f",
+    "traffic_agent/planning_attempt.py": "7b298ede4b130614523bb933ca50a1dbb09a184f19afdd4c3282ac348954bb32",
+    "traffic_agent/planning_budget.py": "a5bb32096e07dd2b4538008b3220fa2d217642582e0f45462c9141f29203f09a",
+    "traffic_agent/planning_studies.py": "50c7b35a05d4c532e74a2d36dc7ab6c1da209ec5b5cc76eabab96c2f66736ea3",
+    "traffic_agent/static/planner_view.js": "65319fd46b40c1ba4c69027103f6bd6c62b67332efe523510328eb0295416ead",
+    "scripts/inspect_study_unit_contract.py": "f4d42ba223ff2cd2fa1be5a0c0a1e2eca7b2bdc38318070c68a63b73f1ebfa33"
+  },
+  "paid_calls": 0,
+  "new_native_scenes": 0,
+  "overall_complete": false,
+  "meaning": "真实控制器和两种接口使用合成模型及仿真边界，检验预算修正后六个独立场景及两份新基准；不是线上模型或TranStar实跑。"
+}

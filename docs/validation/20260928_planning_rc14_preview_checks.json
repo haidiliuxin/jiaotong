@@ -1,0 +1,81 @@
+{
+  "kind": "fresh_candidate_preview_zero_paid_preflight",
+  "source_commit": "f7a86dbf89d67368caddace1db4803390be23268",
+  "port": 8808,
+  "capabilities": {
+    "planning_version": "natural-strategy-plan-v5",
+    "composition_protocol": "traffic-plan-decision-v3",
+    "transport_version": "llm-transport-v2",
+    "initial_review_protocol": "initial-plan-review-v2",
+    "max_initial_corrections": 1,
+    "initial_budget_protocol": "initial-plan-budget-v2",
+    "study_unit_protocol": "complete-study-unit-v1",
+    "compiler_protocol": "plan-compilation-v2",
+    "diagnosis_intent_protocol": "diagnosis-intent-v1",
+    "scope_protocol": "planning-scope-v2",
+    "prerequisite_protocol": "planning-prerequisites-v2",
+    "dynamic_initial_tools": true,
+    "preflight_protocol": "planning-preflight-v1",
+    "routing_budget_protocol": "study-routing-budget-v2",
+    "study_handoff_protocol": "study-handoff-v1",
+    "feedback_review_protocol": "feedback-review-permissions-v1",
+    "parking_completion_protocol": "parking-completion-v2",
+    "hypothesis_review_scope_protocol": "hypothesis-review-scope-v1",
+    "study_comparison_protocol": "study-comparison-v1",
+    "finding_reference_schema": "measured-findings-v1",
+    "response_check_protocol": "planning-response-check-v1",
+    "final_review_correction_protocol": "final-review-correction-v1",
+    "max_final_review_corrections": 1,
+    "feedback_instructions_sha256": "38ee70c412384fbcc72be5a1c5798e903f067b4ec7bb894ae7da358429d2ee05",
+    "conclusion_protocol": "measured-conclusion-v3",
+    "observables": {
+      "available": [
+        "方向级流量、速度、V/C",
+        "固定核心/邻区/全网行驶时间消耗",
+        "同条件配对变化、邻区毛新增过饱和",
+        "各候选区实际响应及约束判断"
+      ],
+      "unavailable": [
+        "排队长度或排队车辆数",
+        "逐秒轨迹、动态排队回堵",
+        "真实城市因果或零风险证明"
+      ],
+      "conditional": [
+        "全网毛新增过饱和仅在任务开启该检查时提供",
+        "路权及转向响应仅相应适配器提供"
+      ]
+    },
+    "instructions_sha256": "51ab007dd0df7374c0e179baaf47a72fb4ec1b75a8d68ae3bb318e325086df5e",
+    "initial_schema_sha256": "272896aa1eaada5b8814df28e855968612357751737d23d2f7e623fc1f31c932",
+    "engine": "TranStar batch",
+    "automatic_transport_retry": false,
+    "max_model_requests": 6
+  },
+  "settings": {
+    "base_url": "https://tokenrhythm.studio/v1",
+    "wire_api": "chat_completions",
+    "model": "deepseek-v4-flash",
+    "key_configured": true
+  },
+  "matched_roads": [
+    "七东线",
+    "长江村路"
+  ],
+  "jobs": [],
+  "dispatches": [],
+  "planning_attempts": [],
+  "new_model_calls": 0,
+  "new_native_scenes": 0,
+  "scope": "RC14空任务工作台与实际路网输入预检，不是模型回复或真实闭环验收",
+  "server_pid": 40204,
+  "wrapper_pid": 34452,
+  "browser": {
+    "natural_language_entry": true,
+    "case_geometry_only": true,
+    "road_count": 32060,
+    "console_errors": 0,
+    "console_warnings": 0,
+    "automatic_job_count": 0,
+    "screenshot": "docs/validation/20260928_planning_rc14_lobby.png"
+  }
+}

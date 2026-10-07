@@ -1,0 +1,99 @@
+{
+  "captured_at": "2026-09-07T21:02:08.343Z",
+  "elapsed_seconds": 102.887,
+  "url": "http://127.0.0.1:8765",
+  "video": "01_任务卡与实验复核.webm",
+  "browser": "Playwright Chromium, real local application",
+  "mode": "review_existing_completed_jobs",
+  "mocked_requests": false,
+  "application_data_modified": false,
+  "captions": "Only the labelled recording-caption element is injected; no result text is changed.",
+  "errors": [],
+  "events": [
+    {
+      "time": 346,
+      "type": "scene",
+      "label": "01_intro",
+      "caption": "真实浏览器操作：任务预览与已完成实验复核。本段不重新启动模型。"
+    },
+    {
+      "time": 6592,
+      "type": "request",
+      "method": "POST",
+      "url": "http://127.0.0.1:8765/api/plan"
+    },
+    {
+      "time": 6682,
+      "type": "scene",
+      "label": "02_task",
+      "caption": "结构化任务卡明确范围、预算和小汽车需求系数；自然语言入口采用公开模板。"
+    },
+    {
+      "time": 15880,
+      "type": "scene",
+      "label": "03_core",
+      "caption": "选择已完成的10场景停车实验。核心速度提高，但过饱和里程仍需同时评价。"
+    },
+    {
+      "time": 26008,
+      "type": "scene",
+      "label": "04_neighbor",
+      "caption": "切换固定邻区：不能只用核心区改善证明没有外溢。"
+    },
+    {
+      "time": 33153,
+      "type": "scene",
+      "label": "05_network",
+      "caption": "切换全网：行驶时间改善幅度较小，过饱和里程增加也如实保留。"
+    },
+    {
+      "time": 42262,
+      "type": "scene",
+      "label": "06_feedback",
+      "caption": "读取实测结果后，智能体决定增强治理或停止搜索；候选与理由保留。"
+    },
+    {
+      "time": 51367,
+      "type": "scene",
+      "label": "07_demand",
+      "caption": "0.9和1.1需求下原方案未通过约束，反馈将治理范围由3条缩至1条后重新比较。"
+    },
+    {
+      "time": 62485,
+      "type": "scene",
+      "label": "08_logs",
+      "caption": "真实工具调用有模块名、时间和结果记录。完整原始日志与输入差异随数据库保存。"
+    },
+    {
+      "time": 69689,
+      "type": "scene",
+      "label": "09_fallback",
+      "caption": "选择另一项真实实验：停车、禁转与组合未通过验证，程序保留baseline。"
+    },
+    {
+      "time": 78817,
+      "type": "scene",
+      "label": "10_rejection",
+      "caption": "拒绝无效方案是闭环的一部分。禁转进入缓存并不等于已通过实际响应检查。"
+    },
+    {
+      "time": 87954,
+      "type": "request",
+      "method": "POST",
+      "url": "http://127.0.0.1:8765/api/plan"
+    },
+    {
+      "time": 87982,
+      "type": "scene",
+      "label": "11_gate",
+      "caption": "未验证的微循环能力仍有门槛，不会被当成停车流程直接执行。"
+    },
+    {
+      "time": 96091,
+      "type": "scene",
+      "label": "12_end",
+      "caption": "本段为实际浏览器中的既有实验复核；源代码、输入数据库、报告与可复现命令一并提供。"
+    }
+  ],
+  "status": "completed"
+}

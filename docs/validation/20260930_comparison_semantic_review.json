@@ -1,0 +1,52 @@
+{
+  "kind": "independent_public_conclusion_review_v1",
+  "source_commit": "e8c736f1",
+  "dispatch": "智能体实验/study_depth_workspace_20260930_02/dispatches/20260930_002027_c6389a.json",
+  "job_state": "智能体实验/study_depth_workspace_20260930_02/jobs/20260930_002027_c6389a/state.json",
+  "automatic_dispatch_status": "completed",
+  "automatic_programme_verification": "passed",
+  "read_only_display_status_after_independent_review": "incomplete",
+  "recorded_status_preserved": "completed",
+  "actual_native_scenarios": 3,
+  "actual_model_requests": 5,
+  "measured_comparisons": [
+    {
+      "run": "parking_1",
+      "parking_level": 1,
+      "directions": [[3118, 3117], [3116, 3115], [3115, 3116]],
+      "core_time_change_pct": -28.520602863302624,
+      "neighbor_time_change_pct": 0.5109423118432543,
+      "neighbor_gross_new_oversaturated_km": 2.797,
+      "eligible": false
+    },
+    {
+      "run": "parking_2",
+      "parking_level": 1,
+      "directions": [[3107, 3108], [3108, 3107]],
+      "core_time_change_pct": -4.684479147762088,
+      "neighbor_time_change_pct": 0.006938242224618918,
+      "neighbor_gross_new_oversaturated_km": 0,
+      "eligible": true
+    }
+  ],
+  "independent_status": "needs_review",
+  "overall_acceptance": false,
+  "public_claim_issues": [
+    {
+      "field": "final.summary",
+      "code": "unsigned_gross_metric",
+      "observation": "The text displays the first policy's positive 2.797 km gross new neighbor oversaturation as -2.797 km."
+    },
+    {
+      "field": "final.reason",
+      "code": "model_budget_not_exhausted",
+      "observation": "The text says the budget was exhausted while one model request remained after the final response. The three native scenario slots were exhausted."
+    },
+    {
+      "field": "final.next_check",
+      "code": "parking_strength_reversed",
+      "observation": "The text calls untested parking level 2 stronger than the executed level 1; level 1 is the stronger parking intervention."
+    }
+  ],
+  "new_v6_check": "Offline only. It detects these three issues in a copied final entry. The original v5 record and automatic verification are preserved."
+}

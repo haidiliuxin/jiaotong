@@ -1,0 +1,159 @@
+{
+  "kind": "retrospective_matched_branch_comparison",
+  "new_model_calls": 0,
+  "old_job": "20260922_052448_fa12d2",
+  "guarded_job": "20260923_043018_f34e33",
+  "limit_km": 0.1,
+  "source_archive_sha256": {
+    "20260922_052448_fa12d2": "8a08eecd212abf16adc57f1357de23aebecd25f6d9bfa8c52da8bd5cc9af8b4d",
+    "20260923_043018_f34e33": "4c4a2824478773a3281592e1800652572e4e38429e068b0ab54263019b6a3d8b"
+  },
+  "audits": {
+    "20260922_052448_fa12d2": {
+      "passed": true,
+      "completed_scenarios": 4,
+      "module_executions": 28
+    },
+    "20260923_043018_f34e33": {
+      "passed": true,
+      "completed_scenarios": 4,
+      "module_executions": 28
+    }
+  },
+  "source_inputs_exact": true,
+  "scope_exact": true,
+  "selected_area_exact": true,
+  "common_output_arrays_exact": {
+    "baseline": {
+      "speed_kmh": true,
+      "flow_pcu_h": true,
+      "vc": true,
+      "time_s": true
+    },
+    "parking_1": {
+      "speed_kmh": true,
+      "flow_pcu_h": true,
+      "vc": true,
+      "time_s": true
+    },
+    "baseline_repeat": {
+      "speed_kmh": true,
+      "flow_pcu_h": true,
+      "vc": true,
+      "time_s": true
+    }
+  },
+  "old_recommendation": "parking_2",
+  "guarded_recommendation": "parking_2",
+  "old_candidates": [
+    {
+      "name": "parking_1",
+      "changes": [
+        {
+          "from_node": 3244,
+          "to_node": 3245,
+          "old_parking": 3,
+          "parking": 2
+        },
+        {
+          "from_node": 3245,
+          "to_node": 3244,
+          "old_parking": 3,
+          "parking": 2
+        },
+        {
+          "from_node": 3240,
+          "to_node": 3239,
+          "old_parking": 3,
+          "parking": 2
+        }
+      ],
+      "eligible": true,
+      "gross_new_network_oversaturated_km": 0.785,
+      "core_time_change_pct": -39.86654246259427,
+      "network_time_change_pct": -0.07025714831417895,
+      "network_net_oversaturated_km": 0.58400000000006,
+      "violations": []
+    },
+    {
+      "name": "parking_2",
+      "changes": [
+        {
+          "from_node": 3244,
+          "to_node": 3245,
+          "old_parking": 3,
+          "parking": 1
+        },
+        {
+          "from_node": 3245,
+          "to_node": 3244,
+          "old_parking": 3,
+          "parking": 1
+        },
+        {
+          "from_node": 3240,
+          "to_node": 3239,
+          "old_parking": 3,
+          "parking": 1
+        }
+      ],
+      "eligible": true,
+      "gross_new_network_oversaturated_km": 0.785,
+      "core_time_change_pct": -53.027080543243834,
+      "network_time_change_pct": -0.09111118155488152,
+      "network_net_oversaturated_km": 0.58400000000006,
+      "violations": []
+    }
+  ],
+  "guarded_candidates": [
+    {
+      "name": "parking_1",
+      "changes": [
+        {
+          "from_node": 3244,
+          "to_node": 3245,
+          "old_parking": 3,
+          "parking": 2
+        },
+        {
+          "from_node": 3245,
+          "to_node": 3244,
+          "old_parking": 3,
+          "parking": 2
+        },
+        {
+          "from_node": 3240,
+          "to_node": 3239,
+          "old_parking": 3,
+          "parking": 2
+        }
+      ],
+      "eligible": false,
+      "gross_new_network_oversaturated_km": 0.785,
+      "core_time_change_pct": -39.86654246259427,
+      "network_time_change_pct": -0.07025714831417895,
+      "network_net_oversaturated_km": 0.58400000000006,
+      "violations": [
+        "全网毛新增过饱和有向里程超过0.1km"
+      ]
+    },
+    {
+      "name": "parking_2",
+      "changes": [
+        {
+          "from_node": 3244,
+          "to_node": 3245,
+          "old_parking": 3,
+          "parking": 2
+        }
+      ],
+      "eligible": true,
+      "gross_new_network_oversaturated_km": 0,
+      "core_time_change_pct": -29.42437360727592,
+      "network_time_change_pct": -0.04681708562629394,
+      "network_net_oversaturated_km": 0.0,
+      "violations": []
+    }
+  ],
+  "limitation": "回顾性比较，虽输入和首轮原始数组完全相同且预算同为4场景，旧v4与新版为不同时刻的任务；不同第二候选是控制器分支结果，不是事前注册的随机对照或官方评分证明"
+}

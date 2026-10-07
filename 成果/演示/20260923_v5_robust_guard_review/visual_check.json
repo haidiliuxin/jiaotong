@@ -1,0 +1,49 @@
+{
+  "status": "passed",
+  "url": "http://127.0.0.1:8794/播放说明.html",
+  "metadata": {
+    "duration": 138.8,
+    "width": 1440,
+    "height": 1000,
+    "cues": 8,
+    "trackMode": "showing",
+    "mediaError": null
+  },
+  "chapterSeeks": [
+    {
+      "target": 4,
+      "actual": 4.014658
+    },
+    {
+      "target": 19,
+      "actual": 19.016039
+    },
+    {
+      "target": 36,
+      "actual": 36.011564
+    },
+    {
+      "target": 55,
+      "actual": 55.009567
+    },
+    {
+      "target": 73,
+      "actual": 73.009456
+    },
+    {
+      "target": 92,
+      "actual": 92.013922
+    },
+    {
+      "target": 110,
+      "actual": 110.011246
+    },
+    {
+      "target": 127,
+      "actual": 127.013066
+    }
+  ],
+  "video_sha256": "6ef99c00ca3ff058032bef0dc6a9192451fefec04fc4380b62367efdaf2ceb76",
+  "screenshots_present": true,
+  "errors": []
+}

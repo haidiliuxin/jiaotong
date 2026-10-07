@@ -1,0 +1,18 @@
+test_lfs_pointer_never_counts_as_delivered_file (test_portable.PortableTests.test_lfs_pointer_never_counts_as_delivered_file) ... ok
+test_loaded_planning_protocols_must_match_new_bundle_manifest (test_portable.PortableTests.test_loaded_planning_protocols_must_match_new_bundle_manifest) ... ok
+test_measurement_and_selection_require_modules_only_when_declared (test_portable.PortableTests.test_measurement_and_selection_require_modules_only_when_declared) ... ok
+test_missing_bootstrap_cannot_be_hidden_by_matching_manifest (test_portable.PortableTests.test_missing_bootstrap_cannot_be_hidden_by_matching_manifest) ... ok
+test_missing_extra_or_same_size_change_fails (test_portable.PortableTests.test_missing_extra_or_same_size_change_fails) ... ok
+test_new_conclusion_protocol_requires_its_action_facts_module (test_portable.PortableTests.test_new_conclusion_protocol_requires_its_action_facts_module) ... ok
+test_older_planning_profile_keeps_its_original_file_requirements (test_portable.PortableTests.test_older_planning_profile_keeps_its_original_file_requirements) ... ok
+test_packager_rejects_protected_settings_and_literal_keys_without_echo (test_portable.PortableTests.test_packager_rejects_protected_settings_and_literal_keys_without_echo) ... ok
+test_planning_release_requires_its_whole_programme_verifier_and_ui (test_portable.PortableTests.test_planning_release_requires_its_whole_programme_verifier_and_ui) ... ok
+test_relocation_and_generated_outputs_do_not_change_sealed_inputs (test_portable.PortableTests.test_relocation_and_generated_outputs_do_not_change_sealed_inputs) ... ok
+test_scoped_review_bundle_requires_both_new_modules (test_portable.PortableTests.test_scoped_review_bundle_requires_both_new_modules) ... ok
+test_unsafe_or_case_ambiguous_manifest_paths_fail (test_portable.PortableTests.test_unsafe_or_case_ambiguous_manifest_paths_fail) ... ok
+test_v3_conclusion_bundle_requires_numeric_scope_and_policy_modules (test_portable.PortableTests.test_v3_conclusion_bundle_requires_numeric_scope_and_policy_modules) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 1.069s
+
+OK

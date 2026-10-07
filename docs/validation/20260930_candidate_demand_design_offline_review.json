@@ -1,0 +1,200 @@
+{
+  "created": "2026-09-30T08:54:32.145809+00:00",
+  "kind": "candidate_demand_design_v7_offline_review",
+  "parent_commit": "31542f4de6edd98674eac04e540990a2457bae2c",
+  "source_files_sha256": {
+    "tests/test_candidate_comparison.py": "97cf9741d5eaa20f0ad60538ee4f099ad0fd535e596e7c2ddf4c7aa055968efd",
+    "tests/test_choice_view.cjs": "6523c0387c9bad004d4f7a49df6faf0900b90a14ad5b95a81b850f612525827a",
+    "tests/test_feedback_planner.py": "57a2aa5ed7c3f9e9c4581bb96f709bce74c2b74e6b292be0c508795d5213681c",
+    "tests/test_portable.py": "80c698bd7306dc19481f153b3ba98dfe9b98e943b4526ead704ec513e428bbb2",
+    "traffic_agent/candidate_comparison.py": "79d5499728beb280be3f5ace0d5ddf4fe2bd9898615b0b9ecb9fd358c020e216",
+    "traffic_agent/choice_evidence.py": "9d25e1eb84f251c7f270fb27cb6f447edc0ab7ca0e4fd246610344872374f9f6",
+    "traffic_agent/feedback_planner.py": "a9cc7792d47eb995dce7d1d8bb45748e229fbd4b48cda6923d76fb34b280b441",
+    "traffic_agent/planning_instructions.py": "8102f7dca368b43d25ebe77f28878848881f6ed5f115405ec226a729c2b016e6",
+    "traffic_agent/planning_response.py": "fdbcf729a70f1517dbaf4daf77dc1a8f4223b0c0ccb4102e64b26d2ce1f7a62f",
+    "traffic_agent/portable.py": "8874c99808a56faaa54883892e5bfe713214c53aa4b888fe6580308c0c5a3bd7",
+    "traffic_agent/report.py": "8c72a204c6b3c36ab7cd41ffbeb89d54f1a29d1a61de077e703184c9c82b470e",
+    "traffic_agent/static/choice_view.js": "a6ce9e90a444868a55f9560540af6454f08a5cba94e32b27aa781b96eae87da7"
+  },
+  "implemented": {
+    "choice_basis_protocol": "observed-choice-basis-v7",
+    "same_demand_designs_shared_by_id": true,
+    "planned_demands_separate_from_baseline_and_candidate_results": true,
+    "no_new_model_output_fields": true,
+    "model_still_selects_action": true,
+    "original_prose_not_rewritten": true,
+    "old_protocols_preserved": true
+  },
+  "offline": {
+    "audit": {
+      "path": "tmp\\20260930_demand_design_verified_audit.json",
+      "sha256": "9b8e02c4b0f1d4abd4694be82bba5f4bbc42911d05c990cd0f97dac336a3f4f6"
+    },
+    "synthetic_input": {
+      "path": "tmp\\20260930_demand_design_verified_input.json",
+      "sha256": "7a509de507348c5d93b7372ed47cda055ccd43f4203bcd69c0fe3b7d19dd50da"
+    },
+    "synthetic_view": {
+      "path": "tmp\\20260930_demand_design_verified_view.json",
+      "sha256": "23c95708737758871a1384b88f215c2be80a57e68dea1a40035bbaf56ca78aac"
+    },
+    "python_tests": 757,
+    "python_log": {
+      "path": "tmp\\20260930_demand_design_python_verified.log",
+      "sha256": "d051af5b288da46c298b96a0e69ad6385b1889caa0e0a3620e9aac3c2edcbcba"
+    },
+    "node_groups": 4,
+    "node_results": {
+      "path": "tmp\\20260930_demand_design_node_verified.json",
+      "sha256": "fab02f98c6363e6b53317540d4d6c5774daf9b5ef88b6c5e037a56c7797bc970"
+    },
+    "render": {
+      "path": "tmp\\20260930_demand_design_verified_render.json",
+      "sha256": "d184eb9e12498481a11979abcf471e1d55766aaf604e0ed4ca836b5b1b5e09fc"
+    },
+    "browser_visual_checked": false,
+    "old_decisions_replayed": 10,
+    "historical_files_unchanged": 10988,
+    "area2_candidates": 6,
+    "area2_planned_demand": 1.0,
+    "area2_reference_demand": 1.0,
+    "same_demand_baseline_provided": true,
+    "no_completed_area2_candidate_result": true,
+    "original_bad_reply_still_structurally_accepted": true,
+    "new_model_quality_not_verified": true
+  },
+  "input_size": {
+    "unit": "UTF-8 serialized request-content bytes, not billing tokens",
+    "previous": 30029,
+    "repeated_prototype": 32314,
+    "shared_final": 30556,
+    "final_added_bytes": 527,
+    "billed_cost_not_measured_in_this_phase": true
+  },
+  "original_failure_still_needs_review": "原回复将area_2未完成误称为不同需求未配对；当前结构校验仍不识别任意自由说明，这次数据与展示改进不算模型语义通过。",
+  "usage": {
+    "previous_ledger": {
+      "path": "docs\\validation\\20260930_compact_input_live_probe_review.json",
+      "sha256": "b173b52c323b6f9d5ed1f4fac2dae2236b181c667a4df048769c972b23085e9f"
+    },
+    "responses": [],
+    "new_unique_requests": 0,
+    "new_known_tokens": 0,
+    "project_retained_cumulative_requests": 181,
+    "project_retained_cumulative_known_tokens": 1799938,
+    "authorized_max_requests": 684,
+    "authorized_max_known_tokens": 4132560,
+    "not_full_account_bill": true
+  },
+  "manifests": [
+    {
+      "path": "工作材料\\源码联调证据\\20260930_action_summary_full_01\\original_files_manifest.json",
+      "sha256": "ef496f739d35622aa5651b808081159797ae8ed8c31103c0726b7644727db6aa",
+      "files": 7085,
+      "unchanged": true
+    },
+    {
+      "path": "工作材料\\源码联调证据\\20260930_action_execution_full_02\\original_files_manifest.json",
+      "sha256": "1046d72068c443a68f4e78dfb8c7da99a2060c91579329f698d53f27314fbf4b",
+      "files": 1588,
+      "unchanged": true
+    },
+    {
+      "path": "工作材料\\源码联调证据\\20260930_risk_boundary_01\\original_files_manifest.json",
+      "sha256": "d9bd4c0a84af2f683b1362e2e69499f794b1c2cd844dc26e4982caf26821f79c",
+      "files": 2178,
+      "unchanged": true
+    },
+    {
+      "path": "智能体实验\\rationale_input_model_probes_20260930_01\\original_files_manifest.json",
+      "sha256": "55e36d236904f4905c77967684be6ccd372e89b04146c48841d098af583f891c",
+      "files": 124,
+      "unchanged": true
+    },
+    {
+      "path": "工作材料\\源码联调证据\\20260930_candidate_comparison_01\\original_files_manifest.json",
+      "sha256": "9c77408f1d15b6d67d3394c8ca9840a6f114c9cd1eb4c8e398161e24bb8c8bbf",
+      "files": 6,
+      "unchanged": true
+    },
+    {
+      "path": "工作材料\\源码联调证据\\20260930_compact_input_01\\original_files_manifest.json",
+      "sha256": "a051f4717feeaa768fed894164b42f3b1e3840e48ad5291b1b5bfb83de46f3d2",
+      "files": 7,
+      "unchanged": true
+    }
+  ],
+  "end_state": {
+    "checked_runtime_locks": [
+      {
+        "path": "智能体实验\\runtime.lock",
+        "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+        "free": true,
+        "bytes_unchanged": true
+      },
+      {
+        "path": "智能体实验\\mixed_limit7_full_20260930_01\\runtime.lock",
+        "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+        "free": true,
+        "bytes_unchanged": true
+      },
+      {
+        "path": "工作材料\\便携异目录检查\\20260930_v2_RC13\\智能体实验\\oneway_scope_live_20260930_01\\runtime.lock",
+        "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+        "free": true,
+        "bytes_unchanged": true
+      },
+      {
+        "path": "工作材料\\便携异目录检查\\20260930_v2_RC14\\智能体实验\\mixed_complete_live_20260930_01\\runtime.lock",
+        "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+        "free": true,
+        "bytes_unchanged": true
+      },
+      {
+        "path": "智能体实验\\mixed_named_questions_full_20260930_01\\runtime.lock",
+        "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+        "free": true,
+        "bytes_unchanged": true
+      },
+      {
+        "path": "智能体实验\\mixed_action_execution_full_20260930_02\\runtime.lock",
+        "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+        "free": true,
+        "bytes_unchanged": true
+      },
+      {
+        "path": "智能体实验\\mixed_action_summary_full_20260930_01\\runtime.lock",
+        "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+        "free": true,
+        "bytes_unchanged": true
+      },
+      {
+        "path": "F:\\ITS比赛\\智能体实验\\risk_boundary_validation_20260930_01\\live\\runtime.lock",
+        "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+        "free": true,
+        "bytes_unchanged": true
+      }
+    ]
+  },
+  "new_native_scenes": 0,
+  "original_task_resumed": false,
+  "independent_semantic_status": "needs_review",
+  "overall_complete": false,
+  "pending": [
+    "模型自由取舍说明质量",
+    "当前协议完整模型与原生闭环",
+    "浏览器视觉",
+    "最新最终便携包",
+    "物理异机验收"
+  ],
+  "helpers": [
+    {
+      "path": "tmp\\audit_demand_design_verified_20260930.py",
+      "sha256": "938ee3ef1c5cb67748e711bfcdd9fff73c98233dcc71e9bef219fa35d660ee81"
+    },
+    {
+      "path": "tmp\\render_demand_design_verified_20260930.cjs",
+      "sha256": "4416d5e87fd8081dc7b578542c9beb590de84830ad2892b41c9fdca8679d15d9"
+    }
+  ]
+}

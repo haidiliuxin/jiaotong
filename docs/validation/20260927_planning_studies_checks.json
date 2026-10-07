@@ -1,0 +1,313 @@
+{
+  "recorded_at": "2026-09-27T02:45:32.963424+00:00",
+  "version": "natural-strategy-plan-v2",
+  "engine": "TranStar batch",
+  "python_tests": 240,
+  "planner_rendering": "passed",
+  "js_syntax": "passed",
+  "online_calls": 2,
+  "tokens": 6025,
+  "first_attempt": {
+    "started": "2026-09-27T02:31:15.999295+00:00",
+    "request": "长江村路和红景路高峰可能拥堵。先只做这两条道路的现状体检，分别定位问题，不执行治理，不做敏感性，不复跑，总共最多2次仿真。说明后续治理的备选方向与取舍，但本次不要执行这些治理措施。",
+    "status": "failed",
+    "api_requests_attempted": 1,
+    "native_run_budget": 2,
+    "native_launched": false,
+    "model_usage": {
+      "request_model": "deepseek-v4-flash",
+      "response_model": "deepseek-v4-flash-0731",
+      "response_id": "chatcmpl-6ab87ff6ae749e4d812f8ddd",
+      "tokens": 2907,
+      "latency_s": 3.672
+    },
+    "error": "ValueError: 模型没有形成可执行诊断规划；保存返回结果，不重试",
+    "finished": "2026-09-27T02:31:20.554862+00:00"
+  },
+  "corrected_attempt": {
+    "started": "2026-09-27T02:33:14.763057+00:00",
+    "request": "长江村路和红景路高峰可能拥堵。先只做这两条道路的现状体检，分别定位问题，不执行治理，不做敏感性，不复跑，总共最多2次仿真。说明后续治理的备选方向与取舍，但本次不要执行这些治理措施。",
+    "status": "verified",
+    "api_requests_attempted": 1,
+    "native_run_budget": 2,
+    "native_launched": true,
+    "model_usage": {
+      "request_model": "deepseek-v4-flash",
+      "response_model": "deepseek-v4-flash-0731",
+      "response_id": "chatcmpl-6ab8806cc057d23cfb3c9ba0",
+      "tokens": 3118,
+      "latency_s": 3.375
+    },
+    "job_ids": [
+      "20260927_103319_c12371",
+      "20260927_103319_704abc"
+    ],
+    "native": [
+      {
+        "id": "20260927_103319_c12371",
+        "status": "completed",
+        "run_count": 1,
+        "observations": [
+          {
+            "run": "baseline",
+            "car_demand_factor": 1.0,
+            "inspected_links": 2,
+            "roads_count": 1,
+            "overloaded_links": 2,
+            "top_roads": [
+              {
+                "name": "红景路",
+                "links": 2,
+                "time_pcu_h": 247.7068,
+                "overloaded_km": 1.32
+              }
+            ]
+          }
+        ],
+        "executed_modules": 7
+      },
+      {
+        "id": "20260927_103319_704abc",
+        "status": "completed",
+        "run_count": 1,
+        "observations": [
+          {
+            "run": "baseline",
+            "car_demand_factor": 1.0,
+            "inspected_links": 16,
+            "roads_count": 1,
+            "overloaded_links": 14,
+            "top_roads": [
+              {
+                "name": "长江村路",
+                "links": 16,
+                "time_pcu_h": 175.4819204199287,
+                "overloaded_km": 3.747
+              }
+            ]
+          }
+        ],
+        "executed_modules": 7
+      }
+    ],
+    "finished": "2026-09-27T02:37:57.360286+00:00"
+  },
+  "independent_verifications": [
+    {
+      "job_id": "20260927_103319_c12371",
+      "passed": true,
+      "completed_scenarios": 1,
+      "module_executions": 7,
+      "scope_sizes": {
+        "core": 2,
+        "neighbor": 24,
+        "network": 32060
+      },
+      "repeat_arrays_exact": null,
+      "verified_runs": [
+        {
+          "scenario": "baseline",
+          "modules": 7,
+          "result_rows": {
+            "speed_kmh": 32981,
+            "flow_pcu_h": 32981,
+            "vc": 32981,
+            "time_s": 32981
+          },
+          "input_difference_files": [],
+          "car_od_factor": 1.0,
+          "internal_od_factor": 1.0
+        }
+      ],
+      "limitations": "只核验保存的实验与输入输出证据，不证明现实标定有效或全部草案已实现"
+    },
+    {
+      "job_id": "20260927_103319_704abc",
+      "passed": true,
+      "completed_scenarios": 1,
+      "module_executions": 7,
+      "scope_sizes": {
+        "core": 3,
+        "neighbor": 43,
+        "network": 32060
+      },
+      "repeat_arrays_exact": null,
+      "verified_runs": [
+        {
+          "scenario": "baseline",
+          "modules": 7,
+          "result_rows": {
+            "speed_kmh": 32981,
+            "flow_pcu_h": 32981,
+            "vc": 32981,
+            "time_s": 32981
+          },
+          "input_difference_files": [],
+          "car_od_factor": 1.0,
+          "internal_od_factor": 1.0
+        }
+      ],
+      "limitations": "只核验保存的实验与输入输出证据，不证明现实标定有效或全部草案已实现"
+    }
+  ],
+  "actual_model_plan": {
+    "goal": "红景路与长江村路高峰现状体检，分别定位问题，不治理、不做敏感性、不复跑，最多2次仿真，并说明后续治理备选方向与取舍",
+    "reason": "用户明确只诊断现状，两条道路各一次体检即可覆盖，共2次仿真在预算内。诊断按固定需求base=1.0，不设敏感性、不复跑，符合fixed_conditions。后续停车、单向、禁转均为备选方向，仅在alternatives中说明取舍，不安排到本次实验。",
+    "assessment": [
+      {
+        "evidence_needed": "两条道路各自的仿真运行耗时排序、过饱和路段与关键节点",
+        "hypothesis": "红景路与长江村路高峰拥堵位置及程度不同，需分别定位而非统一处理"
+      },
+      {
+        "evidence_needed": "红景路十字街T引用对应路口的转向流量与排队",
+        "hypothesis": "需判断该路口转向是否构成局部瓶颈，以决定后续是否值得进入禁转对照"
+      }
+    ],
+    "alternatives": [
+      {
+        "approach": "停车强度优化(parking)",
+        "decision": "deferred",
+        "tradeoff": "本次只诊断找准拥堵点，下轮可依据实测收益在红景路/长江村路范围内启动停车2级并视收益增强或缩小范围"
+      },
+      {
+        "approach": "单向组织对照(parking+oneway)",
+        "decision": "deferred",
+        "tradeoff": "若诊断发现双向交织导致局部瓶颈可考虑，但需先确认公交与可达性影响，暂缓"
+      },
+      {
+        "approach": "路口禁转对照(parking+turn)",
+        "decision": "deferred",
+        "tradeoff": "红景路已有已校验T引用T_4797_5990_5991，若诊断显示该路口转向为关键节点可进入禁转对照，暂缓"
+      }
+    ]
+  },
+  "experiments": [
+    {
+      "title": "路网体检",
+      "study": "diagnosis",
+      "strategies": [],
+      "task": {
+        "request": "长江村路和红景路高峰可能拥堵。先只做这两条道路的现状体检，分别定位问题，不执行治理，不做敏感性，不复跑，总共最多2次仿真。说明后续治理的备选方向与取舍，但本次不要执行这些治理措施。",
+        "scenario": "diagnosis",
+        "search_mode": "standard",
+        "recommendation_version": "tolerance-v2",
+        "road_name": "红景路",
+        "links": [],
+        "turn": null,
+        "max_links": 3,
+        "max_runs": 1,
+        "max_feedback": 2,
+        "demand_factors": [
+          1.0
+        ],
+        "repeat_baseline": false,
+        "neighbor_hops": 2,
+        "target_speed_kmh": 25.0,
+        "max_neighbor_time_increase_pct": 0.5,
+        "max_network_time_increase_pct": 0.1,
+        "max_new_oversaturated_km": 0.1,
+        "module_timeout_seconds": 900
+      },
+      "runs": 1,
+      "design": {
+        "stages": [
+          {
+            "title": "建立本次基准",
+            "detail": "校验源数据并新建仿真副本，运行完整TranStar分配，读取实际速度、流量与V/C。"
+          },
+          {
+            "title": "定位与冻结范围",
+            "detail": "按所述范围的实测路段耗时排序，汇总道路与拥堵指标。"
+          },
+          {
+            "title": "形成结论与证据",
+            "detail": "保存原生输出、输入差异、失败及负收益结果；报告结论的适用范围。"
+          }
+        ],
+        "matrix": [
+          "无治理基准"
+        ],
+        "factors": [
+          1.0
+        ],
+        "criteria": [
+          "仅作现状诊断，不给出未经治理实验验证的收益"
+        ],
+        "recovery": "只保存观测和诊断，不执行停车、单向或禁转。未发现拥堵也如实报告。",
+        "stop": "原生执行失败、源输入变化或复现不一致时停止后续调度；无自动重试。"
+      },
+      "minimum_runs": 1,
+      "feedback_reserve": 0
+    },
+    {
+      "title": "路网体检",
+      "study": "diagnosis",
+      "strategies": [],
+      "task": {
+        "request": "长江村路和红景路高峰可能拥堵。先只做这两条道路的现状体检，分别定位问题，不执行治理，不做敏感性，不复跑，总共最多2次仿真。说明后续治理的备选方向与取舍，但本次不要执行这些治理措施。",
+        "scenario": "diagnosis",
+        "search_mode": "standard",
+        "recommendation_version": "tolerance-v2",
+        "road_name": "长江村路",
+        "links": [],
+        "turn": null,
+        "max_links": 3,
+        "max_runs": 1,
+        "max_feedback": 2,
+        "demand_factors": [
+          1.0
+        ],
+        "repeat_baseline": false,
+        "neighbor_hops": 2,
+        "target_speed_kmh": 25.0,
+        "max_neighbor_time_increase_pct": 0.5,
+        "max_network_time_increase_pct": 0.1,
+        "max_new_oversaturated_km": 0.1,
+        "module_timeout_seconds": 900
+      },
+      "runs": 1,
+      "design": {
+        "stages": [
+          {
+            "title": "建立本次基准",
+            "detail": "校验源数据并新建仿真副本，运行完整TranStar分配，读取实际速度、流量与V/C。"
+          },
+          {
+            "title": "定位与冻结范围",
+            "detail": "按所述范围的实测路段耗时排序，汇总道路与拥堵指标。"
+          },
+          {
+            "title": "形成结论与证据",
+            "detail": "保存原生输出、输入差异、失败及负收益结果；报告结论的适用范围。"
+          }
+        ],
+        "matrix": [
+          "无治理基准"
+        ],
+        "factors": [
+          1.0
+        ],
+        "criteria": [
+          "仅作现状诊断，不给出未经治理实验验证的收益"
+        ],
+        "recovery": "只保存观测和诊断，不执行停车、单向或禁转。未发现拥堵也如实报告。",
+        "stop": "原生执行失败、源输入变化或复现不一致时停止后续调度；无自动重试。"
+      },
+      "minimum_runs": 1,
+      "feedback_reserve": 0
+    }
+  ],
+  "ui_checks": [
+    "model/rules fields and draft isolation",
+    "expanded plan",
+    "map split and coloring",
+    "desktop and narrow layout, no horizontal overflow",
+    "temporary viewport reset"
+  ],
+  "limitations": [
+    "Diagnosis only; no governance benefit claimed",
+    "Other newly exposed study branches were checked locally, not rerun natively in this stage",
+    "Final Chinese wording refinements were not sent to the API again",
+    "No other-machine acceptance or new portable release"
+  ]
+}

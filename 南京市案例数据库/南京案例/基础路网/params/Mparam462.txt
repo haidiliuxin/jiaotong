@@ -1,0 +1,4 @@
+Mparam462.TXT-OD矩阵拆分分析
+交通大区拆分成的小区（输入文件）	ODDIVIDE.TXT
+交通大区OD矩阵（输入文件）	        Large.OD
+拆分后的交通小区OD矩阵（输出文件）	Largedivide.OD

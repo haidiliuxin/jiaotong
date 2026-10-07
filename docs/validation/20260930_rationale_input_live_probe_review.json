@@ -1,0 +1,563 @@
+{
+  "created": "2026-09-30T06:41:43.464045+00:00",
+  "kind": "choice_rationale_and_lossless_input_real_model_probe_review",
+  "root": "智能体实验\\rationale_input_model_probes_20260930_01",
+  "source_parent_commit": "7a05ae8490f98791faa5bcedad0a260ed7457ea9",
+  "source_files_sha256": {
+    "scripts/verify_experiment.py": "517e78d5df657f56b35bddaac7a60d5e997c7421be6200dcb46aefd7ed62ec3d",
+    "tests/test_choice_view.cjs": "5aa987503172b9ec76e260bb7cf5b9cfcfd8c4d08b1fce703f659e48bc6ff674",
+    "tests/test_feedback_planner.py": "dbbdccc1724abe9556c4bd0cb5bd5b829f7b5641e2c1cf8e9825f4225c40affd",
+    "tests/test_mixed_controller.py": "cfe413966a041638fe2d0a7b2032e50fc4751adfff26c8a6cd3e74498760d7c8",
+    "tests/test_natural_plan.py": "c9faf1fe6c5c561d85ce7e73f86b8d7e17373412396bea6bc6c21e656f802e53",
+    "tests/test_planning_completion.py": "e694ccccc1f70f476a55df80e808f9795a802421b3b37602cf6063bc5df71b64",
+    "tests/test_portable.py": "3e10081f5bf203b0bcf711bbd2e170be88a5fd0d4718cd812dca5a44e171c88c",
+    "traffic_agent/agent.py": "b5c8586c15b1f0f11095233943215867dcd7c661c6cdd81f80bb032362d0396b",
+    "traffic_agent/feedback_planner.py": "0f6d55af532f366b3738fafd830043c171d26ae0be8341d8e661be52eb518f79",
+    "traffic_agent/natural_plan.py": "7e39225ea384ab76a334d3f61baeb4023e07f2cd0b62fa0942ca21856e34beb7",
+    "traffic_agent/planning_audit.py": "d939a5ebcbd8caca8c9f1d65a8b940adb34f65eced40829dde049f4339323c26",
+    "traffic_agent/planning_instructions.py": "75502d2adbf33ff62060e920ae04ea304be0c58abe484fe959f380454cd1746b",
+    "traffic_agent/planning_review.py": "3beee512d6932fe6aec1eec0610017452ea542b702cab002e4840be042730fa8",
+    "traffic_agent/portable.py": "f7eac1d14228932d18f2ec24510eac68862e6c57e03002e8cbeb19c5cd7c1eaf",
+    "traffic_agent/programme_review.py": "fc225ae901caaff574031cbab6d876af8f3142bea86f08116f263ca08ac57ce5",
+    "traffic_agent/report.py": "95fe5335fc670831caf55a4f8973df033d75827a3f49c901a1e83ae64ded386c",
+    "traffic_agent/static/choice_view.js": "ed10b1419d894423a6f9f6d6044240c045145acdbdfebef12d47e3af3ae2cde3",
+    "traffic_agent/static/planner_view.js": "94934ed6b2a887770f82a01575596c9d088de3668a52a3aef6701afe3256e62d",
+    "traffic_agent/planning_payload.py": "36a58c85fd4693bd627646e3286c99dbd7eb8dfc9a7d9986982e16aba1cc4f7e",
+    "traffic_agent/choice_rationale.py": "648c5ef93e680b8b01ce330db488d86e2fce0d4a406e4d4dc54d65b62ea5de1c",
+    "tests/test_planning_payload.py": "82a061f8aad61ef2a013e18d9e76da3aa99d160439f6d11c77dbc561b063266d",
+    "tests/test_choice_rationale.py": "5fd487c3443340c2aec4ae1a9c9eedcad91fada43cf2bbd35d26052e26b62a42"
+  },
+  "tested_source_snapshot": {
+    "path": "智能体实验\\rationale_input_model_probes_20260930_01\\source_manifest.json",
+    "sha256": "0fb7952258c8afde40513faf2c67d32dce476e55042a5c458da75ed2ca16a082"
+  },
+  "probe_helper": {
+    "path": "tmp\\rationale_input_probe_20260930.py",
+    "sha256": "ce45c0ede4ae7aacb8cd0e86bfeeee6e3087f35f7ffbf2bfbde3534f45054544"
+  },
+  "overall_complete": false,
+  "independent_semantic_status": "needs_review",
+  "implementation": {
+    "choice_rationale": "choice-rationale-v1",
+    "input_protocol": "referenced-planning-input-v1",
+    "experimentally_empty_reason_and_single_model_authored_hypothesis": true,
+    "model_still_chooses_actions_hypotheses_falsifiers_and_alternatives": true,
+    "versions_frozen_before_baseline_and_audited": true,
+    "legacy_protocols_preserved": true,
+    "original_request_not_rewritten": true,
+    "primary_observations_and_costs_stay_inline": true,
+    "secondary_only_single_level_references": true,
+    "exact_roundtrip_required_before_request": true,
+    "no_adverse_data_removed": true,
+    "arbitrary_free_text_causality_not_certified": true
+  },
+  "offline": {
+    "python_tests": 730,
+    "added_python_tests": 8,
+    "python_log": {
+      "path": "tmp\\20260930_rationale_input_python_release.log",
+      "sha256": "430acda206bd0f72afc66faa43b9a112f6aeb7b5d8a928596f8c1da2cddb50b4"
+    },
+    "node_groups": 4,
+    "node_log": {
+      "path": "tmp\\20260930_rationale_input_node_release.json",
+      "sha256": "76b0315b2efbcab29e83ec283a3a3bb54db298a4d9ffb9516c11a373f7a4f964"
+    },
+    "both_http_adapters_and_study_orders_synthetic": true,
+    "protocol_tamper_checks": true,
+    "old_decisions_and_first_failure_replayed": [
+      {
+        "ordinal": 1,
+        "status": "accepted",
+        "action": "parking_a6b29e4dfd15",
+        "old_reference_schema": "measured-findings-v1",
+        "request_schema_and_instruction_hashes_unchanged": true,
+        "original_validation_preserved": true,
+        "first_missing_reference_still_rejected": true
+      },
+      {
+        "ordinal": 2,
+        "status": "accepted",
+        "action": "parking_f4c81e6f67ba",
+        "old_reference_schema": "measured-findings-v1",
+        "request_schema_and_instruction_hashes_unchanged": true,
+        "original_validation_preserved": true,
+        "first_missing_reference_still_rejected": false
+      },
+      {
+        "ordinal": 3,
+        "status": "accepted",
+        "action": "study_2",
+        "old_reference_schema": "measured-findings-v1",
+        "request_schema_and_instruction_hashes_unchanged": true,
+        "original_validation_preserved": true,
+        "first_missing_reference_still_rejected": false
+      },
+      {
+        "ordinal": 4,
+        "status": "accepted",
+        "action": "oneway_3237_3236",
+        "old_reference_schema": "measured-findings-v1",
+        "request_schema_and_instruction_hashes_unchanged": true,
+        "original_validation_preserved": true,
+        "first_missing_reference_still_rejected": false
+      },
+      {
+        "ordinal": 5,
+        "status": "accepted",
+        "action": "stop",
+        "old_reference_schema": "measured-findings-v1",
+        "request_schema_and_instruction_hashes_unchanged": true,
+        "original_validation_preserved": true,
+        "first_missing_reference_still_rejected": false
+      }
+    ],
+    "legacy_replay": {
+      "path": "tmp\\20260930_rationale_input_legacy_replay.json",
+      "sha256": "30b5d8c33f2592dd4013f2ff702196d3e289f4e5e7731698ffe85dc2bf62085b"
+    },
+    "projection": {
+      "path": "智能体实验\\rationale_input_model_probes_20260930_01\\offline.json",
+      "sha256": "5deb9dff5302b86a1daa00722a48691220337b01e783bdd027bbd026fd76e590"
+    },
+    "projection_measurements": [
+      {
+        "ordinal": 1,
+        "phase": "parking",
+        "old_request_bytes": 33575,
+        "new_request_bytes": 34367,
+        "unshared_payload_bytes": 27177,
+        "shared_payload_bytes": 27177,
+        "shared_references": 0,
+        "exact_roundtrip": true,
+        "completed_scenes": [
+          1,
+          0
+        ]
+      },
+      {
+        "ordinal": 2,
+        "phase": "parking",
+        "old_request_bytes": 40805,
+        "new_request_bytes": 42267,
+        "unshared_payload_bytes": 33729,
+        "shared_payload_bytes": 33729,
+        "shared_references": 0,
+        "exact_roundtrip": true,
+        "completed_scenes": [
+          2,
+          0
+        ]
+      },
+      {
+        "ordinal": 3,
+        "phase": "parking",
+        "old_request_bytes": 39540,
+        "new_request_bytes": 41169,
+        "unshared_payload_bytes": 36345,
+        "shared_payload_bytes": 36040,
+        "shared_references": 3,
+        "exact_roundtrip": true,
+        "completed_scenes": [
+          3,
+          0
+        ]
+      },
+      {
+        "ordinal": 4,
+        "phase": "oneway_target",
+        "old_request_bytes": 26734,
+        "new_request_bytes": 28805,
+        "unshared_payload_bytes": 21493,
+        "shared_payload_bytes": 21493,
+        "shared_references": 0,
+        "exact_roundtrip": true,
+        "completed_scenes": [
+          3,
+          1
+        ]
+      },
+      {
+        "ordinal": 5,
+        "phase": "route",
+        "old_request_bytes": 49044,
+        "new_request_bytes": 48828,
+        "unshared_payload_bytes": 44834,
+        "shared_payload_bytes": 40861,
+        "shared_references": 14,
+        "exact_roundtrip": true,
+        "completed_scenes": [
+          3,
+          4
+        ]
+      }
+    ],
+    "future_scenes_excluded": true,
+    "browser_visual_verified": false,
+    "portable_dependency_checks_only": true
+  },
+  "real_probes": [
+    {
+      "name": "selection",
+      "source_ordinal": 4,
+      "result": {
+        "path": "智能体实验\\rationale_input_model_probes_20260930_01\\selection\\result.json",
+        "sha256": "9737bcc7d9a9ec3739699aa117fd3b40f6cd97bfa6087c4704f6faacb2eac5ee"
+      },
+      "input": {
+        "path": "智能体实验\\rationale_input_model_probes_20260930_01\\selection\\input.json",
+        "sha256": "73a782b48988f8d5bd1759057fe95c2817bf0cfc7cf2371388195ea34615b25f"
+      },
+      "wire": {
+        "path": "智能体实验\\rationale_input_model_probes_20260930_01\\selection\\wire.json",
+        "sha256": "a7e3620bc2d8fff0f1e6c3dcaadc02cb179722a41d085a28def54bc91e3ee27d"
+      },
+      "tool": {
+        "path": "智能体实验\\rationale_input_model_probes_20260930_01\\selection\\tool.json",
+        "sha256": "d4921b91a871488d215d9f2133a16ce3c391821d1c5ab084e2694529b9cc2b9b"
+      },
+      "instructions": {
+        "path": "智能体实验\\rationale_input_model_probes_20260930_01\\selection\\instructions.txt",
+        "sha256": "8d1e8f35fbd798fc6a7e51a581feeb4b4ab0234f841a0a4a659dcbce4a1a2ca3"
+      },
+      "started_before_request": {
+        "path": "智能体实验\\rationale_input_model_probes_20260930_01\\selection\\request_started.json",
+        "sha256": "530e348e881d88a8f7fea7f7719a1ee8cabaa21659ccdcb20a3f769df4d85987"
+      },
+      "provenance": {
+        "path": "智能体实验\\rationale_input_model_probes_20260930_01\\selection\\provenance.json",
+        "sha256": "478610055bfbb35d9b6d8b89c46af6fb9b25f3dff2681024c0349d6eb84d3600"
+      },
+      "automatic_status": "accepted",
+      "schema_and_local_replay": true,
+      "wire_roundtrip": true,
+      "usage": {
+        "request_model": "deepseek-v4-flash",
+        "response_model": "deepseek-v4-flash-0731",
+        "response_id": "chatcmpl-6abcadc9d327ab2f7d430071",
+        "tokens": 9307,
+        "tokens_source": "reported_total",
+        "input_tokens": 8868,
+        "output_tokens": 439,
+        "reasoning_tokens": null,
+        "cached_input_tokens": null,
+        "latency_s": 3.547,
+        "finish_reason": "tool_calls",
+        "tool_call_count": 1,
+        "wire_api": "chat_completions",
+        "request_tool_choice": "required",
+        "request_tool_count": 1,
+        "request_max_output_tokens": 1600,
+        "request_size_bytes": 31788,
+        "request_schema_sha256": "0b75798fca3d8b8ff9353aac3bec6490fc797b294455e852cae9893b631dda6d",
+        "transport_version": "llm-transport-v2",
+        "tool_choice_profile": "tokenrhythm-deepseek-chat-v1",
+        "requested_tool_choice": "function:choose_next_experiment"
+      },
+      "old_matched_stage_usage": {
+        "request_model": "deepseek-v4-flash",
+        "response_model": "deepseek-v4-flash-0731",
+        "response_id": "chatcmpl-6abc9748161f281d168b606d",
+        "tokens": 8642,
+        "tokens_source": "reported_total",
+        "input_tokens": 8136,
+        "output_tokens": 506,
+        "reasoning_tokens": null,
+        "cached_input_tokens": null,
+        "latency_s": 4.266,
+        "finish_reason": "tool_calls",
+        "tool_call_count": 1,
+        "wire_api": "chat_completions",
+        "request_tool_choice": "required",
+        "request_tool_count": 1,
+        "request_max_output_tokens": 1600,
+        "request_size_bytes": 29422,
+        "request_schema_sha256": "c4a58d8bb71526f261e565d0196ed0473c633e24bb055757351c58822f0b30e7",
+        "transport_version": "llm-transport-v2",
+        "tool_choice_profile": "tokenrhythm-deepseek-chat-v1",
+        "requested_tool_choice": "function:choose_next_experiment"
+      },
+      "compared_input_token_change": 732,
+      "compared_total_token_change": 665,
+      "independent_semantic_status": "needs_review"
+    },
+    {
+      "name": "final",
+      "source_ordinal": 5,
+      "result": {
+        "path": "智能体实验\\rationale_input_model_probes_20260930_01\\final\\result.json",
+        "sha256": "2f389cc6721a872be8d63421fb3b6e3bb0fff1c91befc4507767a363c7bf0fcc"
+      },
+      "input": {
+        "path": "智能体实验\\rationale_input_model_probes_20260930_01\\final\\input.json",
+        "sha256": "64be876ca7cfc2e8e2f04ea700c1bab3df61ccb8716ea43f7687b0662cebeab5"
+      },
+      "wire": {
+        "path": "智能体实验\\rationale_input_model_probes_20260930_01\\final\\wire.json",
+        "sha256": "3c4ac579921dd7185b54f16c2b7f9218150b081fb47d6001260363744e5d4278"
+      },
+      "tool": {
+        "path": "智能体实验\\rationale_input_model_probes_20260930_01\\final\\tool.json",
+        "sha256": "c8eb4c107f68e629b28bd3e4b7cddaffbbc388317ccec87fe0b01d1f9c164177"
+      },
+      "instructions": {
+        "path": "智能体实验\\rationale_input_model_probes_20260930_01\\final\\instructions.txt",
+        "sha256": "e23557601fd743556d2d8f6ca202cf03d54099557ef2d68f62958efb8c5befec"
+      },
+      "started_before_request": {
+        "path": "智能体实验\\rationale_input_model_probes_20260930_01\\final\\request_started.json",
+        "sha256": "06915965c42180fa7820ad97d5953f8ab46379eadb53e303d5102f991da433c6"
+      },
+      "provenance": {
+        "path": "智能体实验\\rationale_input_model_probes_20260930_01\\final\\provenance.json",
+        "sha256": "e8d7876408f8968713375d2a67af07d686d6e68d5b997c4c0069ea28887bf54b"
+      },
+      "automatic_status": "accepted",
+      "schema_and_local_replay": true,
+      "wire_roundtrip": true,
+      "usage": {
+        "request_model": "deepseek-v4-flash",
+        "response_model": "deepseek-v4-flash-0731",
+        "response_id": "chatcmpl-6abcade4404f684478d42049",
+        "tokens": 17156,
+        "tokens_source": "reported_total",
+        "input_tokens": 16307,
+        "output_tokens": 849,
+        "reasoning_tokens": null,
+        "cached_input_tokens": null,
+        "latency_s": 11.125,
+        "finish_reason": "tool_calls",
+        "tool_call_count": 1,
+        "wire_api": "chat_completions",
+        "request_tool_choice": "required",
+        "request_tool_count": 1,
+        "request_max_output_tokens": 1600,
+        "request_size_bytes": 54773,
+        "request_schema_sha256": "5ed94b3b39f7829285f5496a3e1e63214b9cb95db38b4c8eb54f1fb79529615a",
+        "transport_version": "llm-transport-v2",
+        "tool_choice_profile": "tokenrhythm-deepseek-chat-v1",
+        "requested_tool_choice": "function:choose_next_experiment"
+      },
+      "old_matched_stage_usage": {
+        "request_model": "deepseek-v4-flash",
+        "response_model": "deepseek-v4-flash-0731",
+        "response_id": "chatcmpl-6abc98d445b44b4ef1c8e1d0",
+        "tokens": 17452,
+        "tokens_source": "reported_total",
+        "input_tokens": 16543,
+        "output_tokens": 909,
+        "reasoning_tokens": null,
+        "cached_input_tokens": null,
+        "latency_s": 5.484,
+        "finish_reason": "tool_calls",
+        "tool_call_count": 1,
+        "wire_api": "chat_completions",
+        "request_tool_choice": "required",
+        "request_tool_count": 1,
+        "request_max_output_tokens": 1600,
+        "request_size_bytes": 54875,
+        "request_schema_sha256": "b2e7655e0ba53f28b77c0a5f14c4eddbf02244b6f77698db167641f61f86339c",
+        "transport_version": "llm-transport-v2",
+        "tool_choice_profile": "tokenrhythm-deepseek-chat-v1",
+        "requested_tool_choice": "function:choose_next_experiment"
+      },
+      "compared_input_token_change": -236,
+      "compared_total_token_change": -296,
+      "independent_semantic_status": "needs_review"
+    }
+  ],
+  "independent_review": {
+    "selection": {
+      "status": "needs_review",
+      "supported": [
+        "reason为空且待验证假设保留",
+        "实际方向与工具一致",
+        "候选仅一个，两个备选字段为null",
+        "车速与V/C对应本组基准，阈值为0.5%与0.1km"
+      ],
+      "issues": [
+        {
+          "field": "risk",
+          "quote": "禁行方向为正向倒车拥堵段",
+          "issue": "原生字段没有倒车行为观测；可能是错词或未支持的行为解释，不能当作已测事实。"
+        }
+      ],
+      "limitation": "此轮只有一个合法单向候选，未检验多候选v5取舍质量。"
+    },
+    "final": {
+      "status": "needs_review",
+      "supported": [
+        "两组实际覆盖分别3场与4场，未重复旧全套覆盖错误",
+        "四项判断与冻结检验一致，引用仅含自身ID",
+        "只因邻区代价否决单向类，未再否定已经通过的原生控制响应",
+        "5条实测代价全部引用，停车微小正代价仍保留",
+        "4条新增过饱和路段名称来自完整明细，引用压缩后仍可读",
+        "数字5.53/5.26/24.89及171.9%/1.03km对应原件；0.5%/0.1km门槛一致"
+      ],
+      "issues": [
+        {
+          "field": "risk",
+          "quote": "禁行方向回堵风险高",
+          "issue": "这是模型风险判断；静态批次结果没有验证动态回堵程度及发生位置，不能视为已测回堵。"
+        },
+        {
+          "field": "programme_updates:H1",
+          "quote": "核心总耗时(5.53/5.26)",
+          "issue": "实际数值对应pcu·h，但此段自由解释未写单位；结构化观测保留原单位。"
+        }
+      ]
+    },
+    "original_run_still_needs_review": true,
+    "automatic_accepted_is_not_semantic_acceptance": true
+  },
+  "source_files": {
+    "manifest": "智能体实验\\rationale_input_model_probes_20260930_01\\original_files_manifest.json",
+    "manifest_sha256": "55e36d236904f4905c77967684be6ccd372e89b04146c48841d098af583f891c",
+    "files": 124
+  },
+  "retained_previous_originals": [
+    {
+      "path": "工作材料\\源码联调证据\\20260930_action_summary_full_01\\original_files_manifest.json",
+      "sha256": "ef496f739d35622aa5651b808081159797ae8ed8c31103c0726b7644727db6aa",
+      "files": 7085,
+      "unchanged": true
+    },
+    {
+      "path": "工作材料\\源码联调证据\\20260930_action_execution_full_02\\original_files_manifest.json",
+      "sha256": "1046d72068c443a68f4e78dfb8c7da99a2060c91579329f698d53f27314fbf4b",
+      "files": 1588,
+      "unchanged": true
+    }
+  ],
+  "usage": {
+    "previous_ledger": {
+      "path": "docs\\validation\\20260930_action_summary_v2_live_and_choice_v5_review.json",
+      "sha256": "3951a41c5e7497b01cf4c6f56d32560529ed0ba2a86879041b9e98dd3b7490e7"
+    },
+    "responses": [
+      {
+        "request_model": "deepseek-v4-flash",
+        "response_model": "deepseek-v4-flash-0731",
+        "response_id": "chatcmpl-6abcadc9d327ab2f7d430071",
+        "tokens": 9307,
+        "tokens_source": "reported_total",
+        "input_tokens": 8868,
+        "output_tokens": 439,
+        "reasoning_tokens": null,
+        "cached_input_tokens": null,
+        "latency_s": 3.547,
+        "finish_reason": "tool_calls",
+        "tool_call_count": 1,
+        "wire_api": "chat_completions",
+        "request_tool_choice": "required",
+        "request_tool_count": 1,
+        "request_max_output_tokens": 1600,
+        "request_size_bytes": 31788,
+        "request_schema_sha256": "0b75798fca3d8b8ff9353aac3bec6490fc797b294455e852cae9893b631dda6d",
+        "transport_version": "llm-transport-v2",
+        "tool_choice_profile": "tokenrhythm-deepseek-chat-v1",
+        "requested_tool_choice": "function:choose_next_experiment"
+      },
+      {
+        "request_model": "deepseek-v4-flash",
+        "response_model": "deepseek-v4-flash-0731",
+        "response_id": "chatcmpl-6abcade4404f684478d42049",
+        "tokens": 17156,
+        "tokens_source": "reported_total",
+        "input_tokens": 16307,
+        "output_tokens": 849,
+        "reasoning_tokens": null,
+        "cached_input_tokens": null,
+        "latency_s": 11.125,
+        "finish_reason": "tool_calls",
+        "tool_call_count": 1,
+        "wire_api": "chat_completions",
+        "request_tool_choice": "required",
+        "request_tool_count": 1,
+        "request_max_output_tokens": 1600,
+        "request_size_bytes": 54773,
+        "request_schema_sha256": "5ed94b3b39f7829285f5496a3e1e63214b9cb95db38b4c8eb54f1fb79529615a",
+        "transport_version": "llm-transport-v2",
+        "tool_choice_profile": "tokenrhythm-deepseek-chat-v1",
+        "requested_tool_choice": "function:choose_next_experiment"
+      }
+    ],
+    "new_unique_requests": 2,
+    "new_known_tokens": 26463,
+    "unknown_new_usage": 0,
+    "new_ids_not_in_prior_indexes": true,
+    "project_retained_cumulative_requests": 174,
+    "project_retained_cumulative_known_tokens": 1707517,
+    "authorized_max_requests": 684,
+    "authorized_max_known_tokens": 4132560,
+    "not_full_account_bill": true,
+    "actual_paired_stage_input_token_change": 496,
+    "actual_paired_stage_total_token_change": 369,
+    "aggregate_billed_token_reduction_verified": false
+  },
+  "native": {
+    "new_scenes": 0,
+    "original_task_resumed": false,
+    "model_only_independent_probes": true,
+    "probes_do_not_form_new_end_to_end_run": true,
+    "retained_source_scenes": 7,
+    "retained_source_top_level_modules": 49,
+    "retained_source_vehicle1_calls": 80
+  },
+  "end_state": {
+    "checked_runtime_locks": [
+      {
+        "path": "智能体实验\\runtime.lock",
+        "free": true,
+        "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+        "bytes_unchanged": true
+      },
+      {
+        "path": "智能体实验\\mixed_limit7_full_20260930_01\\runtime.lock",
+        "free": true,
+        "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+        "bytes_unchanged": true
+      },
+      {
+        "path": "工作材料\\便携异目录检查\\20260930_v2_RC13\\智能体实验\\oneway_scope_live_20260930_01\\runtime.lock",
+        "free": true,
+        "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+        "bytes_unchanged": true
+      },
+      {
+        "path": "工作材料\\便携异目录检查\\20260930_v2_RC14\\智能体实验\\mixed_complete_live_20260930_01\\runtime.lock",
+        "free": true,
+        "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+        "bytes_unchanged": true
+      },
+      {
+        "path": "智能体实验\\mixed_named_questions_full_20260930_01\\runtime.lock",
+        "free": true,
+        "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+        "bytes_unchanged": true
+      },
+      {
+        "path": "智能体实验\\mixed_action_execution_full_20260930_02\\runtime.lock",
+        "free": true,
+        "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+        "bytes_unchanged": true
+      },
+      {
+        "path": "智能体实验\\mixed_action_summary_full_20260930_01\\runtime.lock",
+        "free": true,
+        "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+        "bytes_unchanged": true
+      }
+    ],
+    "locks_free_and_unchanged": true
+  },
+  "pending": [
+    "free_text_risk_and_causal_boundaries",
+    "multi_candidate_choice_v5_live_quality",
+    "new_protocols_full_model_and_native_closed_loop",
+    "aggregate_input_cost_reduction",
+    "browser_visual_verification",
+    "final_portable_including_current_source",
+    "physical_other_machine_acceptance"
+  ]
+}

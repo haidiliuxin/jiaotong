@@ -1,0 +1,180 @@
+{
+  "kind": "partial_incomplete_programme_check",
+  "programme_status": "incomplete",
+  "job_ids": [
+    "20260927_200218_bdef1b",
+    "20260927_200218_88621a"
+  ],
+  "agent_source_commit": "adab37fd08f9e5c04379ce1b16f3b59a6431ab57",
+  "model_calls": 3,
+  "known_tokens": 19484,
+  "completed_native_scenes": 2,
+  "completed_native_modules": 14,
+  "input_changes_match_selected_policy": true,
+  "output_timestamps_match": true,
+  "metrics_recomputed": true,
+  "regional_cost_recomputed": true,
+  "model_received_only_completed_results": true,
+  "model_choice_preceded_execution": true,
+  "selected_changes": [
+    {
+      "from_node": 3244,
+      "to_node": 3245,
+      "old_parking": 3,
+      "parking": 1
+    },
+    {
+      "from_node": 3245,
+      "to_node": 3244,
+      "old_parking": 3,
+      "parking": 1
+    }
+  ],
+  "recommendation": "baseline",
+  "comparison": {
+    "before": {
+      "core": {
+        "directed_links": 3,
+        "directed_length_km": 2.495,
+        "weighted_speed_kmh": 11.130413145179952,
+        "running_time_pcu_h": 345.4695328775985,
+        "transport_pcu_km": 3845.2186300000003,
+        "oversaturated_km": 2.495,
+        "timelink_flagged_links": 0,
+        "timelink_sum_pcu_h": 348.51383400000003
+      },
+      "neighbor": {
+        "directed_links": 43,
+        "directed_length_km": 24.1833,
+        "weighted_speed_kmh": 9.861826026237678,
+        "running_time_pcu_h": 2278.934365826983,
+        "transport_pcu_km": 22474.454241,
+        "oversaturated_km": 13.67994,
+        "timelink_flagged_links": 0,
+        "timelink_sum_pcu_h": 14254.360896722223
+      },
+      "network": {
+        "directed_links": 32060,
+        "directed_length_km": 12446.9460498,
+        "weighted_speed_kmh": 33.43319835501451,
+        "running_time_pcu_h": 227328.24893586405,
+        "transport_pcu_km": 7600310.438370859,
+        "oversaturated_km": 1608.6958436,
+        "timelink_flagged_links": 44,
+        "timelink_sum_pcu_h": null
+      }
+    },
+    "after": {
+      "core": {
+        "directed_links": 3,
+        "directed_length_km": 2.495,
+        "weighted_speed_kmh": 25.085244052056574,
+        "running_time_pcu_h": 158.96295095734104,
+        "transport_pcu_km": 3987.62442,
+        "oversaturated_km": 2.495,
+        "timelink_flagged_links": 0,
+        "timelink_sum_pcu_h": 158.98404055555554
+      },
+      "neighbor": {
+        "directed_links": 43,
+        "directed_length_km": 24.1833,
+        "weighted_speed_kmh": 9.911255038279666,
+        "running_time_pcu_h": 2267.253948648307,
+        "transport_pcu_km": 22471.3321216,
+        "oversaturated_km": 13.73594,
+        "timelink_flagged_links": 0,
+        "timelink_sum_pcu_h": 14067.944879444443
+      },
+      "network": {
+        "directed_links": 32060,
+        "directed_length_km": 12446.9460498,
+        "weighted_speed_kmh": 33.46438226202371,
+        "running_time_pcu_h": 227130.00362249665,
+        "transport_pcu_km": 7600765.264398059,
+        "oversaturated_km": 1609.3358436,
+        "timelink_flagged_links": 44,
+        "timelink_sum_pcu_h": null
+      }
+    },
+    "delta": {
+      "core": {
+        "speed_change_pct": 125.37567765774975,
+        "running_time_change_pct": -53.98640521690741,
+        "oversaturated_km_change": 0.0
+      },
+      "neighbor": {
+        "speed_change_pct": 0.501215615753936,
+        "running_time_change_pct": -0.5125385510800995,
+        "oversaturated_km_change": 0.05599999999999916
+      },
+      "network": {
+        "speed_change_pct": 0.09327228187405723,
+        "running_time_change_pct": -0.087206633709358,
+        "oversaturated_km_change": 0.6400000000001
+      }
+    },
+    "eligible": false,
+    "violations": [
+      "候选区域area_2耗时增幅超过0.5%：其他区域改善不能抵消"
+    ],
+    "new_neighbor_oversaturated_km": 0.056,
+    "new_neighbor_oversaturated_links": [
+      {
+        "index": 10814,
+        "from_node": 4084,
+        "to_node": 3239,
+        "length_km": 0.056,
+        "road_class": 4,
+        "lanes": 1.0,
+        "name": "18208路",
+        "parking": 4,
+        "included": true,
+        "speed_kmh": 36.09,
+        "flow_pcu_h": 263.92,
+        "vc": 1.00404,
+        "time_s": 5.59,
+        "adjusted_capacity_pcu_h": 200.0,
+        "adjusted_load_ratio": 1.3196
+      }
+    ],
+    "regional_checks": [
+      {
+        "region": "area_1",
+        "before": {
+          "directed_links": 2,
+          "weighted_speed_kmh": 10.725401695512856,
+          "running_time_pcu_h": 337.846423180212,
+          "oversaturated_km": 2.286
+        },
+        "after": {
+          "directed_links": 2,
+          "weighted_speed_kmh": 25.181440941742704,
+          "running_time_pcu_h": 148.7099526458172,
+          "oversaturated_km": 2.286
+        },
+        "time_change_pct": -55.98297260453955,
+        "passed": true
+      },
+      {
+        "region": "area_2",
+        "before": {
+          "directed_links": 1,
+          "weighted_speed_kmh": 29.08,
+          "running_time_pcu_h": 7.623109697386521,
+          "oversaturated_km": 0.209
+        },
+        "after": {
+          "directed_links": 1,
+          "weighted_speed_kmh": 23.690000000000005,
+          "running_time_pcu_h": 10.252998311523848,
+          "oversaturated_km": 0.209
+        },
+        "time_change_pct": 34.4988950511751,
+        "passed": false
+      }
+    ]
+  },
+  "final_reply_exact_rejection_unknown": true,
+  "second_group_started": false,
+  "meaning": "仅核对已完成的新基准、治理及负结果；最终模型复核被拒，不能出具完整研究或新版回复校验修复的验收结论。"
+}

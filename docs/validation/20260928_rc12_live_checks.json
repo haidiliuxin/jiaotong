@@ -1,0 +1,360 @@
+{
+  "kind": "failed_live_attempt_and_offline_proposal_reassessment",
+  "source_commit": "14b47afbd4b9e33fa5b57add2e025b2d090b4df4",
+  "job_ids": [
+    "20260928_025217_e6d00a",
+    "20260928_025217_53291a"
+  ],
+  "model_budget": {
+    "limit": 6,
+    "used": 4,
+    "remaining": 2,
+    "known_tokens": 28201,
+    "unknown_usage": 0,
+    "halted": true
+  },
+  "native_scenes": 3,
+  "top_level_modules": 21,
+  "nested_vehicle1_calls": 20,
+  "immutable_bundle": {
+    "passed": true,
+    "kind": "portable_transtar_runtime_v1",
+    "files": 16150,
+    "bytes": 1722337144,
+    "code_commit": "14b47afbd4b9e33fa5b57add2e025b2d090b4df4",
+    "python_version": "3.12.6 (tags/v3.12.6:a4a2d2b, Sep  6 2024, 20:11:23) [MSC v.1940 64 bit (AMD64)]",
+    "manifest_sha256": "10f0d9bf63b9ce78962c81d1d0e059bc7d00b4b59d559dc85a59916cdd700226",
+    "new_model_calls": 0,
+    "meaning": "不可变文件完整性检查；不是数字签名、模型授权检查或真实求解证明"
+  },
+  "locks": [
+    {
+      "path": "F:\\ITS比赛\\智能体实验\\runtime.lock",
+      "free": true,
+      "unchanged": true,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "path": "F:\\ITS比赛\\工作材料\\便携异目录检查\\20260928 智能规划 RC12\\智能体实验\\runtime.lock",
+      "free": true,
+      "unchanged": true,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    }
+  ],
+  "root_original_records_unchanged": 50,
+  "native_manifest_and_file_checks": [
+    {
+      "job_id": "20260928_025217_e6d00a",
+      "run": "baseline",
+      "module_count": 7,
+      "nested_calls": 0,
+      "inputs_unchanged": true,
+      "fresh_outputs": {
+        "result/SpdLinkVeh.tsd": {
+          "bytes": 229783,
+          "mtime_ns": 1790535248040168000,
+          "sha256": "4e3ec8209f5f1c48301863842ce061de09afc64f86ff2a31a7e70e6f8658878c"
+        },
+        "result/VolLinkVeh.tsd": {
+          "bytes": 238243,
+          "mtime_ns": 1790535270177905100,
+          "sha256": "0024ba42ad8a2321f6627df4389d598859425065c320398a87b3192a15951623"
+        },
+        "result/VCLinkVeh.tsd": {
+          "bytes": 283149,
+          "mtime_ns": 1790535275431586300,
+          "sha256": "4ae3f73e1992cba52c788c7c75f00a290a05929a4cbd887218c120716413a350"
+        },
+        "result/TimeLink.tsd": {
+          "bytes": 232042,
+          "mtime_ns": 1790535248040168000,
+          "sha256": "8811e438c09077595a1ad5284c4709b60cb89aef42bff4aeaa03d4c2b7d96926"
+        },
+        "cache/CapLinkVehMan.dat": {
+          "bytes": 248743,
+          "mtime_ns": 1790535148996549400,
+          "sha256": "add521273195b2011a158bf7bbfdd4ddf7d067fcdeaaaa7ff37e557b1e527723"
+        },
+        "cache/Assign_car.od": {
+          "bytes": 1102240,
+          "mtime_ns": 1790535247093716900,
+          "sha256": "a143c95da42afc74a00ce91a42f8ae3fe77f722b470279343611b1c0596def2e"
+        }
+      }
+    },
+    {
+      "job_id": "20260928_025217_e6d00a",
+      "run": "parking_1",
+      "module_count": 7,
+      "nested_calls": 0,
+      "inputs_unchanged": true,
+      "fresh_outputs": {
+        "result/SpdLinkVeh.tsd": {
+          "bytes": 229784,
+          "mtime_ns": 1790535389849743300,
+          "sha256": "9547999de84f5147d85cfa70bbc2fb09c7dbf2ef17768ea82450a39365ae1636"
+        },
+        "result/VolLinkVeh.tsd": {
+          "bytes": 238244,
+          "mtime_ns": 1790535411914588700,
+          "sha256": "c80646b9911a00d8ea3a84f0af811bcaccabaeb2838569ec33e9e993d50a5d74"
+        },
+        "result/VCLinkVeh.tsd": {
+          "bytes": 283161,
+          "mtime_ns": 1790535417149753800,
+          "sha256": "50221717408664d1424e6b74f52cbaf7460a4564e23e7906d8ebbba3ba6e6e53"
+        },
+        "result/TimeLink.tsd": {
+          "bytes": 232043,
+          "mtime_ns": 1790535389849743300,
+          "sha256": "bf434b7948b740887ea358d82626af0c7411857ae5d6f18c963bada9fe6c18dd"
+        },
+        "cache/CapLinkVehMan.dat": {
+          "bytes": 248743,
+          "mtime_ns": 1790535291472530700,
+          "sha256": "919aa0978d0558601353c5a2990b2a4716758aad5477ee8fd291a198174dbe72"
+        },
+        "cache/Assign_car.od": {
+          "bytes": 1102240,
+          "mtime_ns": 1790535388855487600,
+          "sha256": "a143c95da42afc74a00ce91a42f8ae3fe77f722b470279343611b1c0596def2e"
+        }
+      }
+    },
+    {
+      "job_id": "20260928_025217_53291a",
+      "run": "baseline",
+      "module_count": 7,
+      "nested_calls": 20,
+      "inputs_unchanged": true,
+      "fresh_outputs": {
+        "result/SpdLinkVeh.tsd": {
+          "bytes": 230064,
+          "mtime_ns": 1790535530882050900,
+          "sha256": "7810d7fd4bcf45077d78535d7b7dd0558b53dca03b9a4cfab6a87e3981ee82f9"
+        },
+        "result/VolLinkVeh.tsd": {
+          "bytes": 241674,
+          "mtime_ns": 1790535551796976200,
+          "sha256": "d48ccbfd89c0d6c1c8638067dd6df7b76811eb819e8ed881f76c65eaf10cb506"
+        },
+        "result/VCLinkVeh.tsd": {
+          "bytes": 314174,
+          "mtime_ns": 1790535552222654700,
+          "sha256": "1459539e1fe7befc3b394a689029172ced0a8efbc18bd10c343a300a85103927"
+        },
+        "result/TimeLink.tsd": {
+          "bytes": 231244,
+          "mtime_ns": 1790535530882050900,
+          "sha256": "187a3927cb62a34a7054118b36b5c4634af17259d64616bff44f0b861923ac4b"
+        },
+        "cache/CapLinkVehMan.dat": {
+          "bytes": 248743,
+          "mtime_ns": 1790535437542809200,
+          "sha256": "add521273195b2011a158bf7bbfdd4ddf7d067fcdeaaaa7ff37e557b1e527723"
+        },
+        "cache/Assign_car.od": {
+          "bytes": 1102240,
+          "mtime_ns": 1790535530057630500,
+          "sha256": "a143c95da42afc74a00ce91a42f8ae3fe77f722b470279343611b1c0596def2e"
+        },
+        "cache/ManageR1.dat": {
+          "bytes": 1022411,
+          "mtime_ns": 1790535435756879800,
+          "sha256": "39c86cba98aae8e648d1052198ffedfa6c1812396e1b20bb3017bcc85cf57d94"
+        },
+        "result/VolLinkCar.tsd": {
+          "bytes": 236797,
+          "mtime_ns": 1790535551812561000,
+          "sha256": "7f7fb61c96ebf3535f6c51b3993bc7fb081de092921afa5985c08c399586e906"
+        },
+        "result/VolLinkTax.tsd": {
+          "bytes": 223802,
+          "mtime_ns": 1790535551825424600,
+          "sha256": "e7e7f61026f190a765742c43095c7a87a017dcd82f93e6502dfa8c399bd282e4"
+        },
+        "result/VolLinkMot.tsd": {
+          "bytes": 203925,
+          "mtime_ns": 1790535551846974400,
+          "sha256": "a3faf3f8aae9b36d99ce7caeacba7bfdaf9b6dfd9d6dfd2ce320e36b0d23b67e"
+        },
+        "result/VolLinkTrk.tsd": {
+          "bytes": 197989,
+          "mtime_ns": 1790535551833932300,
+          "sha256": "04b36c1ebf53320525c6f9ffc54e942876e15f1932048fa1c51891f4f72f2f3d"
+        },
+        "result/VolLinkBus.tsd": {
+          "bytes": 208477,
+          "mtime_ns": 1790535551782381500,
+          "sha256": "bcd62842bc6831d8c2324f0679c4d4e289a9899f7606a541edb6e9385191a2d8"
+        },
+        "cache/Ljt_car.dat": {
+          "bytes": 362812,
+          "mtime_ns": 1790535531474377500,
+          "sha256": "09e8970b33203b5e51fd9edd0535ed9530996658490d0aa00361d52c1141e66d"
+        },
+        "cache/Ljt_taxi.dat": {
+          "bytes": 362812,
+          "mtime_ns": 1790535531474377500,
+          "sha256": "09e8970b33203b5e51fd9edd0535ed9530996658490d0aa00361d52c1141e66d"
+        },
+        "cache/Ljt_motor.dat": {
+          "bytes": 374208,
+          "mtime_ns": 1790535531474377500,
+          "sha256": "019a55c693bc949f079855601a8d3a38c6eda51f28ae85f8bcadcc0e05505d99"
+        },
+        "cache/Ljt_truck.dat": {
+          "bytes": 369311,
+          "mtime_ns": 1790535531474377500,
+          "sha256": "3474976011efaf67a74dc29985a2bd27120b545e559dd930b3b902d02cadf023"
+        },
+        "cache/Rwm_car.dat": {
+          "bytes": 237020,
+          "mtime_ns": 1790535534349585200,
+          "sha256": "e62a83c151c8748136a59f4d392ea7cbe2e480b8541735ebb3c0504532c1f804"
+        },
+        "cache/Rwm_taxi.dat": {
+          "bytes": 237020,
+          "mtime_ns": 1790535534302130900,
+          "sha256": "e62a83c151c8748136a59f4d392ea7cbe2e480b8541735ebb3c0504532c1f804"
+        },
+        "cache/Rwm_motor.dat": {
+          "bytes": 249016,
+          "mtime_ns": 1790535534447939800,
+          "sha256": "f4730f24811fd8ce39566fb756a0687068ac8fb9fd06ab0ef14ec14ec429dfab"
+        },
+        "cache/Rwm_truck.dat": {
+          "bytes": 243918,
+          "mtime_ns": 1790535534399471200,
+          "sha256": "2ee6655bfd885dff8fba7e4536876d4abda9f41d8b02cb8f41553853f19874a9"
+        },
+        "cache/volume_car.dat": {
+          "bytes": 278516,
+          "mtime_ns": 1790535539333145100,
+          "sha256": "f05f78fd8916a78f29863f400deb51dd5f30c8d523f9c98d5f4f0331a85ba32f"
+        },
+        "cache/volume_taxi.dat": {
+          "bytes": 285638,
+          "mtime_ns": 1790535539334660300,
+          "sha256": "cd77f7fd539cac38e7b0629feeb2b967165b9a45c17bbe85df480b5af0127664"
+        },
+        "cache/volume_motor.dat": {
+          "bytes": 291609,
+          "mtime_ns": 1790535551675357000,
+          "sha256": "ede2379fd75d80d08d111304d2ce81f42ad9a4beb16414f966ff8e1b11a1a7bd"
+        },
+        "cache/volume_truck.dat": {
+          "bytes": 98943,
+          "mtime_ns": 1790535539296059800,
+          "sha256": "8f14f8d0075bb9d865575158830d3c917941c80ec4e822661261fb87243d0c1d"
+        }
+      }
+    }
+  ],
+  "current_readonly_checks": [
+    {
+      "ordinal": 1,
+      "recorded_status": "accepted",
+      "assessment": {
+        "version": "measured-conclusion-v2",
+        "status": "no_detected_conflict",
+        "costs": [],
+        "hypothesis_gaps": [],
+        "issues": [],
+        "scope": "核对已提供的配对指标、明确停车等级、零代价表述及已知未测量项；S1/S2/S3仅为场景编号。检查不覆盖任意语言，未发现冲突不等于已证明所有解释。批次分配不能证明动态排队回堵或零风险。"
+      }
+    },
+    {
+      "ordinal": 2,
+      "recorded_status": "accepted",
+      "assessment": {
+        "version": "measured-conclusion-v2",
+        "status": "needs_review",
+        "costs": [
+          {
+            "ref": "20260928_025217_e6d00a:parking_1",
+            "run": "parking_1",
+            "demand_factor": 1.0,
+            "roads": [
+              "七东线"
+            ],
+            "constraint_passed": false,
+            "violations": [
+              "候选区域area_2耗时增幅超过0.5%：其他区域改善不能抵消"
+            ],
+            "core_time_change_pct": -14.04953535368405,
+            "core_net_oversaturated_km": 0.0,
+            "neighbor_time_change_pct": -0.5290318473948119,
+            "neighbor_net_oversaturated_km": 0.0,
+            "network_time_change_pct": -0.027028025907627207,
+            "network_net_oversaturated_km": 0.58400000000006,
+            "neighbor_new_oversaturated_km": 0,
+            "network_new_oversaturated_km": null,
+            "has_measured_cost": true
+          }
+        ],
+        "hypothesis_gaps": [],
+        "issues": [
+          {
+            "code": "measured_time_scope",
+            "field": "summary",
+            "refs": [
+              "20260928_025217_e6d00a:parking_1"
+            ],
+            "quote": "核心耗时降14.05%（337.8→286.7 pcu·h",
+            "message": "核心范围同需求实测耗时为345.470→296.933 pcu·h，与原文不符；候选区、核心、邻区和全网必须分别引用。"
+          }
+        ],
+        "scope": "核对已提供的配对指标、明确停车等级、零代价表述及已知未测量项；S1/S2/S3仅为场景编号。检查不覆盖任意语言，未发现冲突不等于已证明所有解释。批次分配不能证明动态排队回堵或零风险。"
+      }
+    },
+    {
+      "ordinal": 3,
+      "recorded_status": "rejected",
+      "assessment": {
+        "version": "measured-conclusion-v2",
+        "status": "no_detected_conflict",
+        "costs": [
+          {
+            "ref": "20260928_025217_e6d00a:parking_1",
+            "run": "parking_1",
+            "demand_factor": 1.0,
+            "roads": [
+              "七东线"
+            ],
+            "constraint_passed": false,
+            "violations": [
+              "候选区域area_2耗时增幅超过0.5%：其他区域改善不能抵消"
+            ],
+            "core_time_change_pct": -14.04953535368405,
+            "core_net_oversaturated_km": 0.0,
+            "neighbor_time_change_pct": -0.5290318473948119,
+            "neighbor_net_oversaturated_km": 0.0,
+            "network_time_change_pct": -0.027028025907627207,
+            "network_net_oversaturated_km": 0.58400000000006,
+            "neighbor_new_oversaturated_km": 0,
+            "network_new_oversaturated_km": null,
+            "has_measured_cost": true
+          }
+        ],
+        "hypothesis_gaps": [],
+        "issues": [],
+        "scope": "核对已提供的配对指标、明确停车等级、零代价表述及已知未测量项；S1/S2/S3仅为场景编号。检查不覆盖任意语言，未发现冲突不等于已证明所有解释。批次分配不能证明动态排队回堵或零风险。"
+      }
+    }
+  ],
+  "captured_target_proposal_offline_validation": {
+    "status": "accepted",
+    "action": "oneway_3237_3236",
+    "scope": "原提议在新校验器中离线检查通过，没有调用模型或继续执行，不是新模型回复或联调通过"
+  },
+  "whole_programme_verifier_refused": "总任务尚未完整，不能出具完整验收结论",
+  "new_model_calls_during_reassessment": 0,
+  "new_native_scenes_during_reassessment": 0,
+  "overall": "incomplete",
+  "limitations": [
+    "没有执行第二组治理及组合对照",
+    "没有最终模型复核",
+    "未取得最新修复的真实闭环或物理异机证据"
+  ]
+}

@@ -1,0 +1,255 @@
+{
+  "kind": "matched_three_demand_portable_network_guard_replay",
+  "new_model_calls": 0,
+  "history_job": "20260911_021806_858461",
+  "guarded_job": "20260923_055121_7c20dd",
+  "history_recommendation": "robust_p3_1",
+  "guarded_recommendation": "robust_p3_1",
+  "source_inputs_exact": true,
+  "scope_exact": true,
+  "selected_area_exact": true,
+  "scenarios_exact": 11,
+  "raw_result_arrays_exact": {
+    "baseline": {
+      "speed_kmh": true,
+      "flow_pcu_h": true,
+      "vc": true,
+      "time_s": true
+    },
+    "robust_base_1.1": {
+      "speed_kmh": true,
+      "flow_pcu_h": true,
+      "vc": true,
+      "time_s": true
+    },
+    "robust_base_0.9": {
+      "speed_kmh": true,
+      "flow_pcu_h": true,
+      "vc": true,
+      "time_s": true
+    },
+    "robust_p1_1.1": {
+      "speed_kmh": true,
+      "flow_pcu_h": true,
+      "vc": true,
+      "time_s": true
+    },
+    "robust_p2_1.1": {
+      "speed_kmh": true,
+      "flow_pcu_h": true,
+      "vc": true,
+      "time_s": true
+    },
+    "robust_p2_1": {
+      "speed_kmh": true,
+      "flow_pcu_h": true,
+      "vc": true,
+      "time_s": true
+    },
+    "robust_p2_0.9": {
+      "speed_kmh": true,
+      "flow_pcu_h": true,
+      "vc": true,
+      "time_s": true
+    },
+    "robust_p3_1.1": {
+      "speed_kmh": true,
+      "flow_pcu_h": true,
+      "vc": true,
+      "time_s": true
+    },
+    "robust_p3_1": {
+      "speed_kmh": true,
+      "flow_pcu_h": true,
+      "vc": true,
+      "time_s": true
+    },
+    "robust_p3_0.9": {
+      "speed_kmh": true,
+      "flow_pcu_h": true,
+      "vc": true,
+      "time_s": true
+    },
+    "baseline_repeat": {
+      "speed_kmh": true,
+      "flow_pcu_h": true,
+      "vc": true,
+      "time_s": true
+    }
+  },
+  "uniform_recommendation_changes": [
+    {
+      "from_node": 3244,
+      "to_node": 3245,
+      "old_parking": 3,
+      "parking": 1
+    }
+  ],
+  "uniform_recommendation_passed_all_demands": true,
+  "guarded_policy_rows": [
+    {
+      "name": "robust_p1_1.1",
+      "demand_factor": 1.1,
+      "changes": [
+        {
+          "from_node": 3244,
+          "to_node": 3245,
+          "old_parking": 3,
+          "parking": 2
+        },
+        {
+          "from_node": 3245,
+          "to_node": 3244,
+          "old_parking": 3,
+          "parking": 2
+        },
+        {
+          "from_node": 3240,
+          "to_node": 3239,
+          "old_parking": 3,
+          "parking": 2
+        }
+      ],
+      "eligible": false,
+      "violations": [
+        "neighbor路段行驶时间增幅超过0.5%"
+      ],
+      "gross_new_network_oversaturated_km": 0,
+      "core_time_change_pct": -35.70314643341534,
+      "network_time_change_pct": -0.05991642990700319,
+      "neighbor_time_change_pct": 1.1728260378476296,
+      "new_neighbor_oversaturated_km": 0
+    },
+    {
+      "name": "robust_p2_1.1",
+      "demand_factor": 1.1,
+      "changes": [
+        {
+          "from_node": 3244,
+          "to_node": 3245,
+          "old_parking": 3,
+          "parking": 2
+        }
+      ],
+      "eligible": true,
+      "violations": [],
+      "gross_new_network_oversaturated_km": 0,
+      "core_time_change_pct": -24.22702153387284,
+      "network_time_change_pct": -0.036857707774973214,
+      "neighbor_time_change_pct": 0.0031174176598147696,
+      "new_neighbor_oversaturated_km": 0
+    },
+    {
+      "name": "robust_p2_1",
+      "demand_factor": 1.0,
+      "changes": [
+        {
+          "from_node": 3244,
+          "to_node": 3245,
+          "old_parking": 3,
+          "parking": 2
+        }
+      ],
+      "eligible": true,
+      "violations": [],
+      "gross_new_network_oversaturated_km": 0,
+      "core_time_change_pct": -29.42437360727592,
+      "network_time_change_pct": -0.04681708562629394,
+      "neighbor_time_change_pct": -0.0001316339888313145,
+      "new_neighbor_oversaturated_km": 0
+    },
+    {
+      "name": "robust_p2_0.9",
+      "demand_factor": 0.9,
+      "changes": [
+        {
+          "from_node": 3244,
+          "to_node": 3245,
+          "old_parking": 3,
+          "parking": 2
+        }
+      ],
+      "eligible": true,
+      "violations": [],
+      "gross_new_network_oversaturated_km": 0,
+      "core_time_change_pct": -35.25497891856399,
+      "network_time_change_pct": -0.04421261298879209,
+      "neighbor_time_change_pct": 0.002106514624866662,
+      "new_neighbor_oversaturated_km": 0
+    },
+    {
+      "name": "robust_p3_1.1",
+      "demand_factor": 1.1,
+      "changes": [
+        {
+          "from_node": 3244,
+          "to_node": 3245,
+          "old_parking": 3,
+          "parking": 1
+        }
+      ],
+      "eligible": true,
+      "violations": [],
+      "gross_new_network_oversaturated_km": 0,
+      "core_time_change_pct": -33.98397387302621,
+      "network_time_change_pct": -0.051705260669843156,
+      "neighbor_time_change_pct": 0.004102749122814053,
+      "new_neighbor_oversaturated_km": 0
+    },
+    {
+      "name": "robust_p3_1",
+      "demand_factor": 1.0,
+      "changes": [
+        {
+          "from_node": 3244,
+          "to_node": 3245,
+          "old_parking": 3,
+          "parking": 1
+        }
+      ],
+      "eligible": true,
+      "violations": [],
+      "gross_new_network_oversaturated_km": 0.056,
+      "core_time_change_pct": -38.17300425898128,
+      "network_time_change_pct": -0.060434066797299124,
+      "neighbor_time_change_pct": 0.019115307766104372,
+      "new_neighbor_oversaturated_km": 0.056
+    },
+    {
+      "name": "robust_p3_0.9",
+      "demand_factor": 0.9,
+      "changes": [
+        {
+          "from_node": 3244,
+          "to_node": 3245,
+          "old_parking": 3,
+          "parking": 1
+        }
+      ],
+      "eligible": true,
+      "violations": [],
+      "gross_new_network_oversaturated_km": 0,
+      "core_time_change_pct": -45.48465302747723,
+      "network_time_change_pct": -0.05704380124248454,
+      "neighbor_time_change_pct": 0.0025054667365020933,
+      "new_neighbor_oversaturated_km": 0
+    }
+  ],
+  "archive_sha256": {
+    "20260911_021806_858461": "319ff3977f710f5dbe394eed510cebd5d4b5562858a0377cdf73d7d66d7435d7",
+    "20260923_055121_7c20dd": "7fc7abd670fdf740bd45b0b5a9c4a8b38875009776bbbc83e8f835cedce5fec3"
+  },
+  "audits": {
+    "20260911_021806_858461": {
+      "passed": true,
+      "completed_scenarios": 11,
+      "module_executions": 77
+    },
+    "20260923_055121_7c20dd": {
+      "passed": true,
+      "completed_scenarios": 11,
+      "module_executions": 77
+    }
+  },
+  "limitation": "历史线索引导的新任务，同机同案例三种离散小汽车需求；非盲选、异机、跨城市或官方评分证明"
+}

@@ -1,0 +1,80 @@
+{
+  "status": "recorded_pending_visual_review",
+  "kind": "completed_real_task_review",
+  "new_model_calls": 0,
+  "started": "2026-09-22T22:33:15.102Z",
+  "plan_sha256": "9591deb10e5dbff8ff9418ff6035bf30d11d9c99c57788f7142b5fff94954188",
+  "script_sha256": "e384cad6ccebc378bde7f83b0c8e046bf0ace96b42280f05fff3dd7299aebbd3",
+  "job_id": "20260923_055121_7c20dd",
+  "archive_sha256": "7fc7abd670fdf740bd45b0b5a9c4a8b38875009776bbbc83e8f835cedce5fec3",
+  "state_sha256": "2234b704727fdd3aa460b4d4120f9d21f7dc7d1f940b1f9024f71ffaf9bf1e51",
+  "source_runtime_code": "5ac930a675a1b536e93ee5c54c5249ab9cb7fdb9",
+  "scenes": [
+    {
+      "title": "v5便携包已完成三需求任务；11场景、77次TranStar顶层调用，录制新增调用0。",
+      "start_seconds": 3.996,
+      "end_seconds": 18.474,
+      "job_title": "20260923_055121_7c20dd",
+      "status": "已完成"
+    },
+    {
+      "title": "基准需求1.0：单方向停车1级与同需求基准双图；全网耗时下降0.0604%。",
+      "start_seconds": 18.611,
+      "end_seconds": 35.07,
+      "job_title": "20260923_055121_7c20dd",
+      "status": "已完成"
+    },
+    {
+      "title": "低需求0.9独立配对：核心耗时下降45.485%，全网毛新增过饱和0公里。",
+      "start_seconds": 36.451,
+      "end_seconds": 52.872,
+      "job_title": "20260923_055121_7c20dd",
+      "status": "已完成"
+    },
+    {
+      "title": "高需求1.1独立配对：核心耗时下降33.984%，全网毛新增过饱和0公里。",
+      "start_seconds": 54.824,
+      "end_seconds": 71.228,
+      "job_title": "20260923_055121_7c20dd",
+      "status": "已完成"
+    },
+    {
+      "title": "三路段联合方案因邻区恶化被拒；按实测缩到单方向，并验证2级与1级。",
+      "start_seconds": 73.198,
+      "end_seconds": 91.671,
+      "job_title": "20260923_055121_7c20dd",
+      "status": "已完成"
+    },
+    {
+      "title": "基准需求1.0仍新增0.056公里过饱和路段；它低于固定的0.1公里硬上限。",
+      "start_seconds": 91.716,
+      "end_seconds": 109.146,
+      "job_title": "20260923_055121_7c20dd",
+      "status": "已完成"
+    },
+    {
+      "title": "档案保留三需求任务卡、固定范围、77次调用及逐路段原始输入输出。",
+      "start_seconds": 109.203,
+      "end_seconds": 126.427,
+      "job_title": "20260923_055121_7c20dd",
+      "status": "已完成"
+    },
+    {
+      "title": "事件时间线与反馈均来自已封存任务；片中没有重新求解，也不代表现实实施。",
+      "start_seconds": 126.482,
+      "end_seconds": 138.935,
+      "job_title": "20260923_055121_7c20dd",
+      "status": "已完成"
+    }
+  ],
+  "errors": [],
+  "blocked_requests": [],
+  "limits": "已完成三需求停车任务的界面回看，不是连续求解录像；1.0需求下仍有0.056km全网毛新增过饱和。",
+  "playwright_version": "1.62.1",
+  "video": {
+    "file": "已完成真实任务回看.webm",
+    "bytes": 12478322,
+    "sha256": "6ef99c00ca3ff058032bef0dc6a9192451fefec04fc4380b62367efdaf2ceb76"
+  },
+  "finished": "2026-09-22T22:36:17.225Z"
+}

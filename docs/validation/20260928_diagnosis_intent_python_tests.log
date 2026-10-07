@@ -1,0 +1,34 @@
+.....................................................................................................{"time": "2026-09-27T16:56:33.669477+00:00", "event": "failure", "data": {"error": "ValueError: 源场景与已匹配任务卡不一致，未开始原生仿真"}}
+...........................................................................................................{"time": "2026-09-27T16:56:46.846064+00:00", "event": "native_retry", "data": {"logical_name": "baseline", "failed_native_modules": 4, "attempt": 1, "locations": {"logs": "native_attempts/baseline/attempt_1/logs", "scenario": "native_attempts/baseline/attempt_1/scenario"}}}
+............................................................................................................................{"record": "C:\\Users\\asus\\AppData\\Local\\Temp\\tmp7xl_15hs\\evidence\\acceptance.json", "status": "failed", "job": null, "new_model_calls": 0, "error": "ValueError: 解压目录清单与环境检查记录不一致"}
+.{"record": "C:\\Users\\asus\\AppData\\Local\\Temp\\tmpv29zv8lp\\evidence\\acceptance.json", "status": "attention_required", "job": null, "new_model_calls": 0, "error": "TimeoutError: 前序仍未完成封存；未启动新模型，不重启前序任务"}
+..{"record": "C:\\Users\\asus\\AppData\\Local\\Temp\\tmpv1ukfevr\\evidence\\acceptance.json", "status": "failed", "job": null, "new_model_calls": 0, "error": "ValueError: 需要该解压目录已通过环境及真实编译检查的记录"}
+.{"record": "C:\\Users\\asus\\AppData\\Local\\Temp\\tmppbgyq13q\\evidence\\acceptance.json", "status": "failed", "job": null, "new_model_calls": 0, "error": "RuntimeError: 前序实验失败；保留现场，不自动推进新模型"}
+.{"record": "C:\\Users\\asus\\AppData\\Local\\Temp\\tmp84wdbeb_\\evidence\\acceptance.json", "status": "attention_required", "job": null, "new_model_calls": 0, "error": "TimeoutError: 前序仍未完成封存；未启动新模型，不重启前序任务"}
+............E..E...............................................................................................{"time": "2026-09-27T16:56:52.719108+00:00", "event": "capability_gate", "data": ["提供显式turn三节点以使用已验证的状态图组合流程；未指定转向的旧自动流程仍未通过响应验收"]}
+{"time": "2026-09-27T16:56:52.727207+00:00", "event": "failure", "data": {"error": "ValueError: entry reached"}}
+.............
+======================================================================
+ERROR: test_local_preflight_and_paid_planner_use_identical_permissions (test_programme_acceptance.ProgrammeAcceptanceTests.test_local_preflight_and_paid_planner_use_identical_permissions)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\ITS比赛\tests\test_programme_acceptance.py", line 64, in test_local_preflight_and_paid_planner_use_identical_permissions
+    validate_preflight(checked,case)
+  File "F:\ITS比赛\scripts\validate_observed_planning.py", line 45, in validate_preflight
+    raise ValueError('Local input preflight differs from the bounded case; no paid request')
+ValueError: Local input preflight differs from the bounded case; no paid request
+
+======================================================================
+ERROR: test_preflight_endpoint_needs_no_key_or_job_and_rejects_remote_origin (test_programme_acceptance.ProgrammeAcceptanceTests.test_preflight_endpoint_needs_no_key_or_job_and_rejects_remote_origin)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\ITS比赛\tests\test_programme_acceptance.py", line 112, in test_preflight_endpoint_needs_no_key_or_job_and_rejects_remote_origin
+    validate_preflight(handler.response[1],'programme')
+  File "F:\ITS比赛\scripts\validate_observed_planning.py", line 45, in validate_preflight
+    raise ValueError('Local input preflight differs from the bounded case; no paid request')
+ValueError: Local input preflight differs from the bounded case; no paid request
+
+----------------------------------------------------------------------
+Ran 461 tests in 20.281s
+
+FAILED (errors=2)

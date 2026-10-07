@@ -1,0 +1,38 @@
+{
+  "status": "passed",
+  "pdf_sha256": "640bde1eea16022e9be9f8ff52f15bb1b297157b59afef0fc80d8caffb5affa4",
+  "pages": 3,
+  "page_size": "A4",
+  "rendering": "Poppler pdftoppm -r 110 -png",
+  "rendered_pages": [
+    {
+      "page": 1,
+      "png_sha256": "0e487f01dfa866f9cfea2dcee17315ab218c297fd29f3bfe3d1ab5cee1c5e93e"
+    },
+    {
+      "page": 2,
+      "png_sha256": "a8f4420d316c6c3cfc1f0ae3c1b240198ca01f9636b2e32c8cdbe53d809257dc"
+    },
+    {
+      "page": 3,
+      "png_sha256": "bc6c5723882596d24b0f44c17bcb362288d68a840e641e02541cc7dfa2364bb8"
+    }
+  ],
+  "text_checks": [
+    "20260923_055121_7c20dd",
+    "3244",
+    "3245",
+    "77",
+    "11",
+    "0.056",
+    "0.1 km",
+    "1.1728",
+    "45.485",
+    "38.173",
+    "33.984",
+    "官方"
+  ],
+  "bound_sources": 11,
+  "visual_review": "三页已逐页目视检查：中文、表格、截图和页脚清晰，未见裁切、叠字或缺字",
+  "new_model_calls": 0
+}

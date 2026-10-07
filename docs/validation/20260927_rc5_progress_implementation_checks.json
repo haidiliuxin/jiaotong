@@ -1,0 +1,35 @@
+{
+  "kind": "offline_implementation_checks",
+  "commands": [
+    {
+      "name": "python",
+      "returncode": 0,
+      "log": "20260927_rc5_progress_python_tests_final.log"
+    },
+    {
+      "name": "map",
+      "returncode": 0,
+      "log": "20260927_rc5_progress_map_tests_final.log"
+    },
+    {
+      "name": "planner",
+      "returncode": 0,
+      "log": "20260927_rc5_progress_planner_tests_final.log"
+    },
+    {
+      "name": "dispatch",
+      "returncode": 0,
+      "log": "20260927_rc5_progress_dispatch_tests_final.log"
+    }
+  ],
+  "source_sha256": {
+    "tests/test_dispatch.py": "2f4171a6fd66af8d3d0c14684856bbafe23d5d6dfb900ba664d1bb621a24ad6b",
+    "tests/test_dispatch_ui.cjs": "c9fb904048a23cd7a37e0901837817e0f734392fa71d52d2945051d183e3b1ff",
+    "tests/test_planner_view.cjs": "8c717bf700f56793a99b4195e3cef13a35cd513b89316fd2e29e76598e9d9cc5",
+    "traffic_agent/dispatch.py": "92c14a1f180094e06c219306d821baa0fddf97e327506773836c8c71b7a06e9d",
+    "traffic_agent/static/planner_view.js": "fe93f80c9f65c236fb80bf6ac279113a044ca1c36a147c704939c59d0841ca43"
+  },
+  "paid_calls": 0,
+  "new_native_scenes": 0,
+  "meaning": "仅实现与合成边界检查；不代表新模型协议完成真实闭环。"
+}

@@ -1,0 +1,123 @@
+{
+  "kind": "same_machine_portable_candidate_check",
+  "release_status": "candidate_pending_live_acceptance",
+  "source_commit": "07c7880cca43f72b6384cb17e7cba08813271ebc",
+  "archive": "工作材料\\便携构建\\20260927_智能规划_RC4.zip",
+  "archive_sha256": "f96b136b5d97cc458c2ea649092a65875f538def89e040d99d080c479683a098",
+  "archive_bytes": 878563534,
+  "manifest_sha256": "99af8ebbe5d2c8408d536e473db7829c558e02f601072f8fca6b0fc030896f37",
+  "immutable_files": 16147,
+  "environment_status": "passed",
+  "commands": [
+    {
+      "name": "user_site_control",
+      "returncode": 0
+    },
+    {
+      "name": "child_without_B",
+      "returncode": 0
+    },
+    {
+      "name": "planning_modules_without_key",
+      "returncode": 0
+    },
+    {
+      "name": "bundle_gate",
+      "returncode": 0
+    },
+    {
+      "name": "check_parking",
+      "returncode": 0
+    },
+    {
+      "name": "check_turn",
+      "returncode": 0
+    },
+    {
+      "name": "check_oneway",
+      "returncode": 0
+    },
+    {
+      "name": "compile_wrapper",
+      "returncode": 0
+    }
+  ],
+  "storage_probe": {
+    "passed": true,
+    "module": "F:\\ITS比赛\\工作材料\\便携异目录检查\\20260927 智能规划 RC4\\traffic_agent\\data.py",
+    "winerrors": [
+      5
+    ],
+    "new_model_calls": 0,
+    "native_runs": 0,
+    "key_configured": false
+  },
+  "final_integrity": {
+    "passed": true,
+    "kind": "portable_transtar_runtime_v1",
+    "files": 16147,
+    "bytes": 1722281105,
+    "code_commit": "07c7880cca43f72b6384cb17e7cba08813271ebc",
+    "python_version": "3.12.6 (tags/v3.12.6:a4a2d2b, Sep  6 2024, 20:11:23) [MSC v.1940 64 bit (AMD64)]",
+    "manifest_sha256": "99af8ebbe5d2c8408d536e473db7829c558e02f601072f8fca6b0fc030896f37",
+    "new_model_calls": 0,
+    "meaning": "不可变文件完整性检查；不是数字签名、模型授权检查或真实求解证明"
+  },
+  "planning_protocols": {
+    "verified": true,
+    "note": "包内已加载协议与构建清单相同，不代表线上或原生闭环通过"
+  },
+  "planning_capabilities": {
+    "planning_version": "natural-strategy-plan-v5",
+    "composition_protocol": "traffic-plan-decision-v3",
+    "transport_version": "llm-transport-v2",
+    "initial_review_protocol": "initial-plan-review-v2",
+    "max_initial_corrections": 1,
+    "initial_budget_protocol": "initial-plan-budget-v1",
+    "scope_protocol": "planning-scope-v2",
+    "prerequisite_protocol": "planning-prerequisites-v2",
+    "dynamic_initial_tools": true,
+    "preflight_protocol": "planning-preflight-v1",
+    "routing_budget_protocol": "study-routing-budget-v2",
+    "study_handoff_protocol": "study-handoff-v1",
+    "response_check_protocol": "planning-response-check-v1",
+    "feedback_instructions_sha256": "f8972141da5ba88f73daf1eacd580bb42e2e52c996704dba588dca11ac30df55",
+    "conclusion_protocol": "measured-conclusion-v1",
+    "observables": {
+      "available": [
+        "方向级流量、速度、V/C",
+        "固定核心/邻区/全网行驶时间消耗",
+        "同条件配对变化、邻区毛新增过饱和",
+        "各候选区实际响应及约束判断"
+      ],
+      "unavailable": [
+        "排队长度或排队车辆数",
+        "逐秒轨迹、动态排队回堵",
+        "真实城市因果或零风险证明"
+      ],
+      "conditional": [
+        "全网毛新增过饱和仅在任务开启该检查时提供",
+        "路权及转向响应仅相应适配器提供"
+      ]
+    },
+    "instructions_sha256": "9f5fc34500dc782cf39862fb77fcddb317d2e116324de88abdcb78f794d20908",
+    "initial_schema_sha256": "178825c1cbb08666a2563a00457e5bc3b48c2e0acfad324e5aebd3e3c8d60fc4",
+    "engine": "TranStar batch",
+    "automatic_transport_retry": false,
+    "max_model_requests": 6
+  },
+  "browser": {
+    "settings_controls_checked": true,
+    "key_configured": false,
+    "empty_key_submission_blocked": true,
+    "dispatches": 0,
+    "model_attempts": 0,
+    "jobs": 0,
+    "settings_file_created": false,
+    "case_geometry_only": true,
+    "console_warnings_or_errors": []
+  },
+  "new_model_calls": 0,
+  "new_native_runs": 0,
+  "limitation": "同机独立解压、环境及浏览器检查，不是另一台物理电脑或真实模型与治理闭环验收。"
+}

@@ -1,0 +1,703 @@
+{
+  "created": "2026-09-30T05:17:40.871885+00:00",
+  "kind": "action_summary_v2_complete_native_and_choice_schema_v5",
+  "live_source_commit": "53b467b1f0e6c20a9cc8827ccf808f4afaacae83",
+  "root": "智能体实验\\mixed_action_summary_full_20260930_01",
+  "job_ids": [
+    "20260930_125008_3aa357",
+    "20260930_125008_90c0e3"
+  ],
+  "request": "长江村路停车拥堵。请至少比较两个不同停车备选方案，并检验单向组织及其组合的独立效果。最多7次仿真，不复跑基准；保护邻区。",
+  "original_request_unchanged": true,
+  "original_status": "completed",
+  "overall_complete": false,
+  "live_protocols": {
+    "action_execution": "action-execution-v2",
+    "choice_basis": "observed-choice-basis-v4",
+    "planning": "natural-strategy-plan-v10",
+    "conclusion": "measured-conclusion-v14"
+  },
+  "native": {
+    "scenes": 7,
+    "top_level_modules": 49,
+    "vehicle1_native_calls": 80,
+    "vehicle1_count_source": "runs[].hard_access_evidence.native_calls and logs/*/bridge_verification.json; top-level module records contain no calls field",
+    "raw_complete_verification": {
+      "passed": true,
+      "programme": "20260930_125008_3aa357",
+      "protocol": "programme-evidence-v1",
+      "native": [
+        {
+          "job_id": "20260930_125008_3aa357",
+          "raw_verified": true,
+          "archived": false,
+          "verification_kind": null
+        },
+        {
+          "job_id": "20260930_125008_90c0e3",
+          "raw_verified": true,
+          "archived": false,
+          "verification_kind": null
+        }
+      ],
+      "planning": {
+        "passed": true,
+        "groups": 2,
+        "decisions": 5,
+        "no_cross_engine_pooling": true,
+        "observations_checked_at_decision_time": true,
+        "request_reservations_checked": true
+      },
+      "model_requests": 7
+    },
+    "groups": [
+      {
+        "job_id": "20260930_125008_3aa357",
+        "scenario": "parking",
+        "recommendation": "parking_1",
+        "limits": {
+          "search_mode": "standard",
+          "neighbor_hops": 2,
+          "max_neighbor_time_increase_pct": 0.5,
+          "max_new_oversaturated_km": 0.1,
+          "max_new_network_oversaturated_km": null
+        },
+        "runs": [
+          {
+            "name": "baseline",
+            "changes": [],
+            "demand_factor": 1.0,
+            "core_time_pcu_h": 82.98941037504531,
+            "core_time_change_pct": null,
+            "neighbor_time_change_pct": null,
+            "neighbor_gross_new_oversaturated_km": null,
+            "regional_time_changes": [],
+            "recommendation_eligible": null,
+            "violations": [],
+            "native_control_response": null,
+            "top_level_modules": 7,
+            "vehicle1_native_calls": 0
+          },
+          {
+            "name": "parking_1",
+            "changes": [
+              {
+                "from_node": 3240,
+                "to_node": 3239,
+                "old_parking": 3,
+                "parking": 1
+              },
+              {
+                "from_node": 3239,
+                "to_node": 3240,
+                "old_parking": 3,
+                "parking": 1
+              },
+              {
+                "from_node": 3239,
+                "to_node": 3238,
+                "old_parking": 3,
+                "parking": 1
+              }
+            ],
+            "demand_factor": 1.0,
+            "core_time_pcu_h": 63.645662358167044,
+            "core_time_change_pct": -23.308694361678317,
+            "neighbor_time_change_pct": -0.18205257806130914,
+            "neighbor_gross_new_oversaturated_km": 0,
+            "regional_time_changes": [
+              {
+                "region": "area_1",
+                "time_change_pct": -32.92249156207415,
+                "passed": true
+              },
+              {
+                "region": "area_2",
+                "time_change_pct": 0.4755799391734872,
+                "passed": true
+              }
+            ],
+            "recommendation_eligible": true,
+            "violations": [],
+            "native_control_response": null,
+            "top_level_modules": 7,
+            "vehicle1_native_calls": 0
+          },
+          {
+            "name": "parking_2",
+            "changes": [
+              {
+                "from_node": 3237,
+                "to_node": 3236,
+                "old_parking": 3,
+                "parking": 1
+              },
+              {
+                "from_node": 3236,
+                "to_node": 3235,
+                "old_parking": 3,
+                "parking": 1
+              }
+            ],
+            "demand_factor": 1.0,
+            "core_time_pcu_h": 75.64800868895767,
+            "core_time_change_pct": -8.846190921119224,
+            "neighbor_time_change_pct": 0.06365802041863322,
+            "neighbor_gross_new_oversaturated_km": 0,
+            "regional_time_changes": [
+              {
+                "region": "area_1",
+                "time_change_pct": 0.391018841242885,
+                "passed": true
+              },
+              {
+                "region": "area_2",
+                "time_change_pct": -31.698798083820922,
+                "passed": true
+              }
+            ],
+            "recommendation_eligible": true,
+            "violations": [],
+            "native_control_response": null,
+            "top_level_modules": 7,
+            "vehicle1_native_calls": 0
+          }
+        ]
+      },
+      {
+        "job_id": "20260930_125008_90c0e3",
+        "scenario": "oneway",
+        "recommendation": "S1_parking",
+        "limits": {
+          "search_mode": "standard",
+          "neighbor_hops": 2,
+          "max_neighbor_time_increase_pct": 0.5,
+          "max_new_oversaturated_km": 0.1,
+          "max_new_network_oversaturated_km": null
+        },
+        "runs": [
+          {
+            "name": "baseline",
+            "changes": [],
+            "demand_factor": 1.0,
+            "core_time_pcu_h": 36.33161378527224,
+            "core_time_change_pct": null,
+            "neighbor_time_change_pct": null,
+            "neighbor_gross_new_oversaturated_km": null,
+            "regional_time_changes": [],
+            "recommendation_eligible": null,
+            "violations": [],
+            "native_control_response": null,
+            "top_level_modules": 7,
+            "vehicle1_native_calls": 20
+          },
+          {
+            "name": "S1_parking",
+            "changes": [
+              {
+                "from_node": 3237,
+                "to_node": 3236,
+                "old_parking": 3,
+                "parking": 2
+              },
+              {
+                "from_node": 3236,
+                "to_node": 3237,
+                "old_parking": 3,
+                "parking": 2
+              }
+            ],
+            "demand_factor": 1.0,
+            "core_time_pcu_h": 24.88762276051007,
+            "core_time_change_pct": -31.498713743899877,
+            "neighbor_time_change_pct": 1.4973412265639752e-05,
+            "neighbor_gross_new_oversaturated_km": 0,
+            "regional_time_changes": [],
+            "recommendation_eligible": true,
+            "violations": [],
+            "native_control_response": null,
+            "top_level_modules": 7,
+            "vehicle1_native_calls": 20
+          },
+          {
+            "name": "S2_oneway",
+            "changes": [
+              {
+                "kind": "oneway",
+                "closed_direction": [
+                  3237,
+                  3236
+                ]
+              }
+            ],
+            "demand_factor": 1.0,
+            "core_time_pcu_h": 5.53376348016816,
+            "core_time_change_pct": -84.76873746133626,
+            "neighbor_time_change_pct": 171.89852158658633,
+            "neighbor_gross_new_oversaturated_km": 1.03054,
+            "regional_time_changes": [],
+            "recommendation_eligible": false,
+            "violations": [
+              "neighbor路段行驶时间增幅超过0.5%",
+              "邻区新增过饱和有向里程超过0.1km"
+            ],
+            "native_control_response": {
+              "passed": true,
+              "cache_matches_all_access_rows": true,
+              "cache_encoding": "exact_input_codes_v48",
+              "motor_access_codes_correct": true,
+              "baseline_has_motor_flow": true,
+              "closed_all_motor_flows_zero": true,
+              "open_direction_has_motor_flow": true,
+              "closed_direction": [
+                3237,
+                3236
+              ],
+              "flows": {
+                "car": {
+                  "before": 946.55,
+                  "after": 0.0,
+                  "reverse_after": 474.22
+                },
+                "taxi": {
+                  "before": 281.69,
+                  "after": 0.0,
+                  "reverse_after": 141.13
+                },
+                "motor": {
+                  "before": 0.0,
+                  "after": 0.0,
+                  "reverse_after": 0.0
+                },
+                "truck": {
+                  "before": 0.0,
+                  "after": 0.0,
+                  "reverse_after": 0.0
+                },
+                "bus": {
+                  "before": 0.0,
+                  "after": 0.0,
+                  "reverse_after": 0.0
+                }
+              },
+              "limits": "路权和禁行响应成立不代表交通收益；各车型量纲分别呈现，不将合计用于收益指标"
+            },
+            "top_level_modules": 7,
+            "vehicle1_native_calls": 20
+          },
+          {
+            "name": "S3_combined",
+            "changes": [
+              {
+                "from_node": 3237,
+                "to_node": 3236,
+                "old_parking": 3,
+                "parking": 2
+              },
+              {
+                "from_node": 3236,
+                "to_node": 3237,
+                "old_parking": 3,
+                "parking": 2
+              },
+              {
+                "kind": "oneway",
+                "closed_direction": [
+                  3237,
+                  3236
+                ]
+              }
+            ],
+            "demand_factor": 1.0,
+            "core_time_pcu_h": 5.258853569567483,
+            "core_time_change_pct": -85.52540605366869,
+            "neighbor_time_change_pct": 171.89852158658633,
+            "neighbor_gross_new_oversaturated_km": 1.03054,
+            "regional_time_changes": [],
+            "recommendation_eligible": false,
+            "violations": [
+              "neighbor路段行驶时间增幅超过0.5%",
+              "邻区新增过饱和有向里程超过0.1km"
+            ],
+            "native_control_response": {
+              "passed": true,
+              "cache_matches_all_access_rows": true,
+              "cache_encoding": "exact_input_codes_v48",
+              "motor_access_codes_correct": true,
+              "baseline_has_motor_flow": true,
+              "closed_all_motor_flows_zero": true,
+              "open_direction_has_motor_flow": true,
+              "closed_direction": [
+                3237,
+                3236
+              ],
+              "flows": {
+                "car": {
+                  "before": 946.55,
+                  "after": 0.0,
+                  "reverse_after": 474.22
+                },
+                "taxi": {
+                  "before": 281.69,
+                  "after": 0.0,
+                  "reverse_after": 141.13
+                },
+                "motor": {
+                  "before": 0.0,
+                  "after": 0.0,
+                  "reverse_after": 0.0
+                },
+                "truck": {
+                  "before": 0.0,
+                  "after": 0.0,
+                  "reverse_after": 0.0
+                },
+                "bus": {
+                  "before": 0.0,
+                  "after": 0.0,
+                  "reverse_after": 0.0
+                }
+              },
+              "limits": "路权和禁行响应成立不代表交通收益；各车型量纲分别呈现，不将合计用于收益指标"
+            },
+            "top_level_modules": 7,
+            "vehicle1_native_calls": 20
+          }
+        ]
+      }
+    ],
+    "independent_groups_not_a_joint_scenario": true
+  },
+  "generated_actions": [
+    {
+      "ordinal": 1,
+      "action": "parking_a6b29e4dfd15",
+      "summary": "本轮选择待执行：3240→3239（停车1级）、3239→3240（停车1级）、3239→3238（停车1级）；效果等待本次新仿真。",
+      "summary_origin": "action-execution-v2",
+      "next_check": "在所选方向执行停车1级，需求系数1，共1个治理场景；结果返回后再由模型选择下一步。",
+      "next_check_origin": "action-execution-v2"
+    },
+    {
+      "ordinal": 2,
+      "action": "parking_f4c81e6f67ba",
+      "summary": "本轮选择待执行：3237→3236（停车1级）、3236→3235（停车1级）；效果等待本次新仿真。",
+      "summary_origin": "action-execution-v2",
+      "next_check": "在所选方向执行停车1级，需求系数1，共1个治理场景；结果返回后再由模型选择下一步。",
+      "next_check_origin": "action-execution-v2"
+    },
+    {
+      "ordinal": 3,
+      "action": "study_2",
+      "summary": "本轮选择下一组停车与单向研究；先计算该组独立新基准。",
+      "summary_origin": "action-execution-v2",
+      "next_check": "下一组先建立独立新基准，再由模型选择合法方向。每个需求依次计算停车2级、单向、停车2级＋单向；本动作安排共4个原生场景（含所需基准／复跑），全部返回后由模型复核。尚无这些新场景的效果。",
+      "next_check_origin": "action-execution-v2"
+    },
+    {
+      "ordinal": 4,
+      "action": "oneway_3237_3236",
+      "summary": "本轮选择单向对照：禁行3237→3236，保留3236→3237；效果等待停车、单向及组合的新仿真。",
+      "summary_origin": "action-execution-v2",
+      "next_check": "禁行3237→3236，保留3236→3237；每个需求依次计算停车2级、单向、停车2级＋单向；本动作安排共3个原生场景（含所需基准／复跑），全部返回后由模型复核。尚无这些新场景的效果。",
+      "next_check_origin": "action-execution-v2"
+    },
+    {
+      "ordinal": 5,
+      "action": "stop",
+      "summary": "本轮选择结束新增试验，复核已有观测和未验证范围。",
+      "summary_origin": "action-execution-v2",
+      "next_check": "不再追加原生场景；依据已经返回的观测复核结论、代价与未验证范围。",
+      "next_check_origin": "action-execution-v2"
+    }
+  ],
+  "hypothesis_judgments": [
+    {
+      "hypothesis_id": "H1",
+      "judgment": "supported"
+    },
+    {
+      "hypothesis_id": "H2",
+      "judgment": "contradicted"
+    },
+    {
+      "hypothesis_id": "H3",
+      "judgment": "contradicted"
+    },
+    {
+      "hypothesis_id": "H4",
+      "judgment": "supported"
+    }
+  ],
+  "independent_review": {
+    "status": "needs_review",
+    "findings": [
+      {
+        "kind": "incorrect_group_execution_coverage",
+        "quote": "两组均完成基准、停车、单向及组合的同需求对照",
+        "detail": "第1组只有新基准和两个停车1级候选；仅第2组有基准、停车2级、单向与组合四项。结构化执行原件正确，最终自由理由扩大了第1组的实测范围。"
+      },
+      {
+        "kind": "unproven_causal_claim",
+        "quote": "该方向为拥堵主因",
+        "detail": "选择单向前的新基准显示高V/C与低速，不证明该方向是拥堵主因；同段末尾虽说尚无治理效果，也不能支持这项因果断言。"
+      },
+      {
+        "kind": "ambiguous_control_and_admissibility_negation",
+        "quote": "未通过全部推荐约束和控制响应检查",
+        "detail": "H3的复合判据确实不成立，但S2和S3的原生禁行响应均通过。此复合否定不能当作控制失效证据，解释仍未明确分列控制通过与邻区约束失败。"
+      },
+      {
+        "kind": "extraneous_cross_hypothesis_reference",
+        "quote": "H1.finding_ids含hypothesis.H4",
+        "detail": "H1检验第2组相对仅停车的核心增益，H4检验第1组停车相对基准。H1另有正确的同组数值和证据，判断本身正确；额外H4引用不能支持H1。"
+      }
+    ],
+    "native_response_and_eligibility_distinguished_in_frozen_data": true,
+    "h1_h4_supported_h2_h3_contradicted_matches_frozen_evaluation": true,
+    "generated_action_text_matches_native_parameters": true,
+    "arbitrary_model_prose_not_certified": true,
+    "original_record_not_relabelled_or_rewritten": true
+  },
+  "implementation": {
+    "protocol": "observed-choice-basis-v5",
+    "changes": [
+      "multiple_candidates_require_non_null_alternative_and_observation_in_wire_schema",
+      "single_candidate_has_null_alternative_fields",
+      "experiment_only_menu_requires_selection_basis_object",
+      "stop_or_handoff_still_allows_null_basis",
+      "legacy_v4_tool_and_repair_instruction_replay_preserved"
+    ],
+    "chosen_action_and_effect_not_supplied_by_program": true,
+    "local_reference_validation_retained": true,
+    "generic_prose_coverage_causality_and_citation_relevance_fixed": false
+  },
+  "offline": {
+    "python_tests": 712,
+    "new_tests": 4,
+    "choice_boundary_tests": 25,
+    "python_log": {
+      "path": "tmp\\20260930_choice_v5_python_tests_release.log",
+      "sha256": "7e371ccc533f5e76a056ac7c3bf3bfe369ebffb76e8dec47dade9240eb157ee9"
+    },
+    "node_groups": 4,
+    "node_log": {
+      "path": "tmp\\20260930_choice_v5_node_tests.json",
+      "sha256": "3b964c696265a59dd7a15317d4e3c79d98bde43e5fc953059a46bebb0e55cae1"
+    },
+    "old_protocol_replay": [
+      {
+        "ordinal": 1,
+        "status": "accepted",
+        "action": "parking_a6b29e4dfd15",
+        "old_protocol": "observed-choice-basis-v4",
+        "original_request_schema_unchanged": true,
+        "original_validation_preserved": true,
+        "first_missing_reference_still_rejected": true
+      },
+      {
+        "ordinal": 2,
+        "status": "accepted",
+        "action": "parking_f4c81e6f67ba",
+        "old_protocol": "observed-choice-basis-v4",
+        "original_request_schema_unchanged": true,
+        "original_validation_preserved": true,
+        "first_missing_reference_still_rejected": false
+      },
+      {
+        "ordinal": 3,
+        "status": "accepted",
+        "action": "study_2",
+        "old_protocol": "observed-choice-basis-v4",
+        "original_request_schema_unchanged": true,
+        "original_validation_preserved": true,
+        "first_missing_reference_still_rejected": false
+      },
+      {
+        "ordinal": 4,
+        "status": "accepted",
+        "action": "oneway_3237_3236",
+        "old_protocol": "observed-choice-basis-v4",
+        "original_request_schema_unchanged": true,
+        "original_validation_preserved": true,
+        "first_missing_reference_still_rejected": false
+      },
+      {
+        "ordinal": 5,
+        "status": "accepted",
+        "action": "stop",
+        "old_protocol": "observed-choice-basis-v4",
+        "original_request_schema_unchanged": true,
+        "original_validation_preserved": true,
+        "first_missing_reference_still_rejected": false
+      }
+    ],
+    "wire_sizes": [
+      {
+        "ordinal": 1,
+        "old_bytes": 33577,
+        "new_bytes": 33508,
+        "complete_accepted_value_schema_valid": true,
+        "missing_reference_rejected_in_new_schema": true,
+        "original_record_migrated": false
+      },
+      {
+        "ordinal": 2,
+        "old_bytes": 40807,
+        "new_bytes": 40738,
+        "complete_accepted_value_schema_valid": true,
+        "missing_reference_rejected_in_new_schema": null,
+        "original_record_migrated": false
+      },
+      {
+        "ordinal": 4,
+        "old_bytes": 26736,
+        "new_bytes": 26596,
+        "complete_accepted_value_schema_valid": true,
+        "missing_reference_rejected_in_new_schema": null,
+        "original_record_migrated": false
+      }
+    ],
+    "size_unit": "UTF-8 JSON bytes, not billing tokens",
+    "both_http_adapters_with_synthetic_models": true,
+    "new_model_calls": 0,
+    "actual_v5_provider_call": false,
+    "billed_token_reduction_verified": false,
+    "first_real_correction_tokens": 12176
+  },
+  "source_files": {
+    "manifest": "工作材料\\源码联调证据\\20260930_action_summary_full_01\\original_files_manifest.json",
+    "manifest_sha256": "ef496f739d35622aa5651b808081159797ae8ed8c31103c0726b7644727db6aa",
+    "file_count": 7085,
+    "hashes_unchanged": true,
+    "source_request_sha256": "63a321bc5b439e5db6d45aa8a92058b8e23194b801e78689abb3712b4da5f041",
+    "raw_review": {
+      "path": "tmp\\20260930_action_summary_v2_live_raw_review.json",
+      "sha256": "8588bd0ddfc3018289d0a41a19c4dcdac5c535325404632b270bb0baa8084c75"
+    },
+    "offline_review": {
+      "path": "tmp\\20260930_choice_v5_real_replay.json",
+      "sha256": "8d7e841261c113582766a1c360e4abd02eb1c9629869b186591cc69d0ac17ba1"
+    },
+    "prior_originals": [
+      {
+        "path": "工作材料\\源码联调证据\\20260930_action_execution_full_02\\original_files_manifest.json",
+        "sha256": "1046d72068c443a68f4e78dfb8c7da99a2060c91579329f698d53f27314fbf4b",
+        "files": 1588,
+        "unchanged": true
+      }
+    ]
+  },
+  "usage": {
+    "responses": [
+      {
+        "response_id": "chatcmpl-6abc94fc8df2693f7de54f81",
+        "input_tokens": 7477,
+        "output_tokens": 754,
+        "tokens": 8231
+      },
+      {
+        "response_id": "chatcmpl-6abc95930b028097e04cc7a0",
+        "input_tokens": 11175,
+        "output_tokens": 355,
+        "tokens": 11530
+      },
+      {
+        "response_id": "chatcmpl-6abc959643c7ab1ebb998bdf",
+        "input_tokens": 11799,
+        "output_tokens": 377,
+        "tokens": 12176
+      },
+      {
+        "response_id": "chatcmpl-6abc962b71fc077f0a90d6f7",
+        "input_tokens": 14163,
+        "output_tokens": 477,
+        "tokens": 14640
+      },
+      {
+        "response_id": "chatcmpl-6abc96c055a978542a4b0bd1",
+        "input_tokens": 13797,
+        "output_tokens": 341,
+        "tokens": 14138
+      },
+      {
+        "response_id": "chatcmpl-6abc9748161f281d168b606d",
+        "input_tokens": 8136,
+        "output_tokens": 506,
+        "tokens": 8642
+      },
+      {
+        "response_id": "chatcmpl-6abc98d445b44b4ef1c8e1d0",
+        "input_tokens": 16543,
+        "output_tokens": 909,
+        "tokens": 17452
+      }
+    ],
+    "new_unique_requests": 7,
+    "new_known_tokens": 86809,
+    "project_retained_cumulative_requests": 172,
+    "project_retained_cumulative_known_tokens": 1681054,
+    "authorized_max_requests": 684,
+    "authorized_max_known_tokens": 4132560,
+    "new_ids_not_in_prior_indexes": true,
+    "previous_ledger": {
+      "path": "docs\\validation\\20260930_action_summary_live_and_offline_review.json",
+      "sha256": "0182eb284ff90570f8f6e4693fd66ba470aa19a276ecb674bccfecd8d5f317d1"
+    },
+    "not_full_account_bill": true
+  },
+  "end_state": {
+    "checked_runtime_locks": [
+      {
+        "path": "智能体实验\\runtime.lock",
+        "free": true,
+        "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+        "bytes_unchanged": true
+      },
+      {
+        "path": "智能体实验\\mixed_limit7_full_20260930_01\\runtime.lock",
+        "free": true,
+        "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+        "bytes_unchanged": true
+      },
+      {
+        "path": "工作材料\\便携异目录检查\\20260930_v2_RC13\\智能体实验\\oneway_scope_live_20260930_01\\runtime.lock",
+        "free": true,
+        "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+        "bytes_unchanged": true
+      },
+      {
+        "path": "工作材料\\便携异目录检查\\20260930_v2_RC14\\智能体实验\\mixed_complete_live_20260930_01\\runtime.lock",
+        "free": true,
+        "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+        "bytes_unchanged": true
+      },
+      {
+        "path": "智能体实验\\mixed_named_questions_full_20260930_01\\runtime.lock",
+        "free": true,
+        "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+        "bytes_unchanged": true
+      },
+      {
+        "path": "智能体实验\\mixed_action_execution_full_20260930_02\\runtime.lock",
+        "free": true,
+        "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+        "bytes_unchanged": true
+      },
+      {
+        "path": "智能体实验\\mixed_action_summary_full_20260930_01\\runtime.lock",
+        "free": true,
+        "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+        "bytes_unchanged": true
+      }
+    ]
+  },
+  "pending": [
+    "final_model_group_coverage_and_causal_wording",
+    "control_response_explanation_clarity",
+    "scoped_hypothesis_citation_relevance",
+    "v5_real_provider_validation",
+    "browser_visual_verification",
+    "final_portable_including_current_source",
+    "physical_other_machine_acceptance"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "kind": "research_evidence_wire_dedup_offline_validation_v1",
+  "source_dispatch": "工作材料/便携异目录检查/20260930_v2_RC5/智能体实验/demand_robustness_live_20260930_01/dispatches/20260930_024917_b4254a.json",
+  "source_dispatch_sha256": "0c37df3f5a0c5a8d19fd68b025ac522faaba23f684a170f8dc4d3a483d3bdcb5",
+  "baseline_wire_function": "git HEAD before this change, commit ff859ad1",
+  "comparison": [
+    {
+      "feedback_ordinal": 1,
+      "previous_utf8_json_bytes": 25414,
+      "new_utf8_json_bytes": 23661,
+      "saved_bytes": 1753
+    },
+    {
+      "feedback_ordinal": 2,
+      "previous_utf8_json_bytes": 34243,
+      "new_utf8_json_bytes": 32490,
+      "saved_bytes": 1753
+    }
+  ],
+  "restored_new_wire_equals_previous_wire": true,
+  "observations_and_frozen_task_unchanged": true,
+  "source_dispatch_bytes_unchanged": true,
+  "python_tests": 626,
+  "new_model_requests": 0,
+  "new_native_scenarios": 0,
+  "limitation": "Wire bytes are not billable tokens; model behavior under the compact wire has not yet been verified by a new provider response."
+}

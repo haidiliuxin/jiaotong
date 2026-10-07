@@ -1,0 +1,145 @@
+{
+  "created": "2026-09-27T10:04:54.579723+00:00",
+  "job": "20260927_173803_4edb0d",
+  "kind": "posthoc_readonly_conclusion_review",
+  "new_model_calls": 0,
+  "new_native_runs": 0,
+  "recorded_status": "completed",
+  "state_sha256": "2067cb4fff2c806723d5e0b37b8583555120ac9cd9d930dc764e6291ccc11886",
+  "archive_files": 1764,
+  "execution_audit": {
+    "passed": true,
+    "decisions": 3,
+    "model_selected_policies": 2,
+    "observations_from_current_job_only": true,
+    "actions_precede_execution": true
+  },
+  "conclusion_review": {
+    "version": "measured-conclusion-v1",
+    "status": "needs_review",
+    "costs": [
+      {
+        "ref": "20260927_173803_4edb0d:parking_1",
+        "run": "parking_1",
+        "demand_factor": 1.0,
+        "roads": [
+          "环洲路"
+        ],
+        "constraint_passed": true,
+        "violations": [],
+        "core_time_change_pct": -11.238471841010533,
+        "core_net_oversaturated_km": 0.0,
+        "neighbor_time_change_pct": 0.028356626064951485,
+        "neighbor_net_oversaturated_km": -0.2010000000000005,
+        "network_time_change_pct": -0.03444202597399082,
+        "network_net_oversaturated_km": 0.9519999999999982,
+        "neighbor_new_oversaturated_km": 0,
+        "network_new_oversaturated_km": null,
+        "has_measured_cost": true
+      },
+      {
+        "ref": "20260927_173803_4edb0d:parking_2",
+        "run": "parking_2",
+        "demand_factor": 1.0,
+        "roads": [
+          "七东线"
+        ],
+        "constraint_passed": true,
+        "violations": [],
+        "core_time_change_pct": -16.666285322677922,
+        "core_net_oversaturated_km": 0.0,
+        "neighbor_time_change_pct": 0.011169825881629514,
+        "neighbor_net_oversaturated_km": 0.05600000000000449,
+        "network_time_change_pct": -0.060434066797299124,
+        "network_net_oversaturated_km": 0.05600000000004002,
+        "neighbor_new_oversaturated_km": 0.056,
+        "network_new_oversaturated_km": null,
+        "has_measured_cost": true
+      }
+    ],
+    "issues": [
+      {
+        "code": "unmeasured_observable",
+        "field": "hypothesis_updates:H1",
+        "refs": [],
+        "message": "当前观测未提供排队长度、排队车辆数或逐秒动态回堵证据。该假设须保留未解决部分，不能整项判为支持或否定。",
+        "job_id": "20260927_173803_4edb0d",
+        "ordinal": 2
+      },
+      {
+        "code": "unmeasured_observable",
+        "field": "hypothesis_updates:H1",
+        "refs": [],
+        "message": "当前观测未提供排队长度、排队车辆数或逐秒动态回堵证据。该假设须保留未解决部分，不能整项判为支持或否定。",
+        "job_id": "20260927_173803_4edb0d",
+        "ordinal": 3
+      },
+      {
+        "code": "zero_neighbor_congestion",
+        "field": "summary",
+        "refs": [
+          "20260927_173803_4edb0d:parking_2"
+        ],
+        "quote": "无邻区过饱和溢出",
+        "message": "实际存在邻区毛新增过饱和；小于门槛仍不是零新增。",
+        "job_id": "20260927_173803_4edb0d",
+        "ordinal": 3
+      },
+      {
+        "code": "zero_neighbor_congestion",
+        "field": "reason",
+        "refs": [
+          "20260927_173803_4edb0d:parking_2"
+        ],
+        "quote": "无邻区新增过饱和",
+        "message": "实际存在邻区毛新增过饱和；小于门槛仍不是零新增。",
+        "job_id": "20260927_173803_4edb0d",
+        "ordinal": 3
+      },
+      {
+        "code": "zero_neighbor_cost",
+        "field": "reason",
+        "refs": [
+          "20260927_173803_4edb0d:parking_1",
+          "20260927_173803_4edb0d:parking_2"
+        ],
+        "quote": "无周边恶化",
+        "message": "实际存在邻区指标增加；通过约束不等于没有周边代价。",
+        "job_id": "20260927_173803_4edb0d",
+        "ordinal": 3
+      },
+      {
+        "code": "zero_neighbor_congestion",
+        "field": "hypothesis_updates:H2",
+        "refs": [
+          "20260927_173803_4edb0d:parking_2"
+        ],
+        "quote": "无邻区新增过饱和",
+        "message": "实际存在邻区毛新增过饱和；小于门槛仍不是零新增。",
+        "job_id": "20260927_173803_4edb0d",
+        "ordinal": 3
+      },
+      {
+        "code": "zero_risk",
+        "field": "hypothesis_updates:H2",
+        "refs": [
+          "20260927_173803_4edb0d:parking_1",
+          "20260927_173803_4edb0d:parking_2"
+        ],
+        "quote": "无周边溢出风险",
+        "message": "有限批次观测不能证明零风险；需保留实测代价与未测动态影响。",
+        "job_id": "20260927_173803_4edb0d",
+        "ordinal": 3
+      }
+    ],
+    "hypothesis_gaps": [
+      {
+        "hypothesis_id": "H1",
+        "missing": "当前观测未提供排队长度、排队车辆数或逐秒动态回堵证据。"
+      }
+    ],
+    "scope": "只核对已提供的配对指标、明确的零代价表述及已知未测量项；未发现冲突不等于已证明所有模型解释。批次分配不能证明动态排队回堵或零风险。"
+  },
+  "meaning": "读取封存原件后的独立结论核对；不是新模型回复、重新仿真或新协议线上验收。",
+  "original_archive_unchanged": true
+}

@@ -1,0 +1,59 @@
+{
+  "kind": "robust_network_guard_score_addendum_v1",
+  "pdf": "三需求全网风险稳健复验增补.pdf",
+  "pdf_sha256": "640bde1eea16022e9be9f8ff52f15bb1b297157b59afef0fc80d8caffb5affa4",
+  "job": "20260923_055121_7c20dd",
+  "history_job": "20260911_021806_858461",
+  "task_sha256": "2543fb496e76a313d387a1d5d6e8387438d1a33b9c585061c04b3ee8de8c3ba3",
+  "v5_runtime_code": "5ac930a675a1b536e93ee5c54c5249ab9cb7fdb9",
+  "scenarios": 11,
+  "transtar_top_level_calls": 77,
+  "new_model_calls_during_export": 0,
+  "sources": [
+    {
+      "path": "examples/parking_robust_network_guard.json",
+      "sha256": "2543fb496e76a313d387a1d5d6e8387438d1a33b9c585061c04b3ee8de8c3ba3"
+    },
+    {
+      "path": "成果/便携主程序/20260923_v5/三需求安全门槛验收/acceptance.json",
+      "sha256": "ed15561b35988f8c9b85fdc252934e6b3abd7e534ec3d75bfa0c07a18ed9e0a3"
+    },
+    {
+      "path": "成果/便携主程序/20260923_v5/三需求安全门槛验收/browser_ui.json",
+      "sha256": "42e2b0db41dc5a52f2e927c0e901123d81304c24944b6a9d7ef65b6900873a9c"
+    },
+    {
+      "path": "成果/复评/20260923_robust_network_guard/comparison.json",
+      "sha256": "50af6e3d2ba3326f18dc6b9d015b3667d7d0ae0ceb70c5ab93c4f019d79764c8"
+    },
+    {
+      "path": "成果/实测档案/20260923_robust_network_guard/package.json",
+      "sha256": "bac0c71403236718a062945493ef59512d533898d28e37c9fb70ac48d3af267b"
+    },
+    {
+      "path": "成果/实测档案/20260923_robust_network_guard/extraction_check.json",
+      "sha256": "22730b2991f3dbcad3a16c42bedb7f1dcf9bac2d3370af4515d3cd1e83f0496c"
+    },
+    {
+      "path": "成果/实测档案/20260923_robust_network_guard/三需求安全门槛真实任务档案.zip",
+      "sha256": "a3ab3c624a360b30878ad2b587dcb3afde7daf2ae3f2eebbe6c81c47a05feb90"
+    },
+    {
+      "path": "成果/演示/20260923_v5_robust_guard_review/recording.json",
+      "sha256": "137d033c8c0132fd1747ab61153bc6a6d1558ba3f0decd4f6014b38cd9093187"
+    },
+    {
+      "path": "成果/演示/20260923_v5_robust_guard_review/visual_check.json",
+      "sha256": "2415bd08f319658e10bf8f6efb89f9b3dc9d8adf089ea200f8fd738e1796f5bb"
+    },
+    {
+      "path": "成果/演示/20260923_v5_robust_guard_review/已完成真实任务回看.webm",
+      "sha256": "6ef99c00ca3ff058032bef0dc6a9192451fefec04fc4380b62367efdaf2ceb76"
+    },
+    {
+      "path": "成果/演示/20260923_v5_robust_guard_review/05.png",
+      "sha256": "452e44cf6454d1ff298393b9ae52adb9ff2fb44ae03080df872dcc6419472045"
+    }
+  ],
+  "scope": "同机同案例三种离散小汽车需求，非官方评分、异机或现实实施证明"
+}

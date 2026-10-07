@@ -1,0 +1,598 @@
+{
+  "protocol": "hypothesis-measurement-v1",
+  "passed": true,
+  "new_paid_model_requests": 0,
+  "new_native_scenes": 0,
+  "replay_kind": "事后人工定义的有界判据回放；不是RC15事前协议、原模型答复或新版真实联调通过",
+  "original_record_status": "completed",
+  "original_automatic_review_complete": true,
+  "original_hypotheses_unchanged": [
+    {
+      "id": "H1",
+      "hypothesis": "七东线停车治理能否在既有需求下降低该路通行代价",
+      "evidence_needed": "通过新基准观测七东线实测耗时与V/C、方向级流量速度，判断停车干扰是否为主要瓶颈"
+    },
+    {
+      "id": "H2",
+      "hypothesis": "长江村路单向组织（含与停车组合）对比仅停车是否有额外收益",
+      "evidence_needed": "新基准观测长江村路双向通行下的流量与耗时，评估单向组织是否比仅停车更有效"
+    },
+    {
+      "id": "H3",
+      "hypothesis": "两组治理均不产生不可接受周边回退",
+      "evidence_needed": "复核邻区与全网毛新增过饱和及配对变化，确认治理没有把代价转移到周边"
+    }
+  ],
+  "original_legacy_findings_unchanged": true,
+  "preserved_records": 74,
+  "preserved_locks": 7,
+  "original_state_sha256": {
+    "20260928_041115_874b70": "c44b350e9d3d1a80fa327b7e6c78dc0d8782bd887e1e8889826d6e154f11a8ec",
+    "20260928_041115_fa9f86": "5dcbac273f43a84b22a3f329c2515a5fe21597e9b496bfd7d86d711d378e104b"
+  },
+  "findings": [
+    {
+      "id": "hypothesis.H1",
+      "hypothesis_id": "H1",
+      "question": "停车已试措施的冻结核心是否有耗时收益",
+      "status": "supported",
+      "expected_judgment": "supported",
+      "evaluation": {
+        "version": "hypothesis-measurement-v1",
+        "test": "core_time_decrease",
+        "policies": "parking",
+        "quantifier": "any",
+        "scope": [
+          {
+            "study_id": "study_1",
+            "scenario": "parking",
+            "road": "七东线",
+            "demand_factors": [
+              1.0
+            ]
+          }
+        ],
+        "rule": "冻结核心范围的总耗时低于同需求基准；与是否通过推荐约束分开判断。"
+      },
+      "answer": "已测结果满足事前判据；不附加推荐资格或因果解释。",
+      "evidence_refs": [
+        "20260928_041115_874b70:baseline",
+        "20260928_041115_874b70:parking_1"
+      ],
+      "measurements": [
+        {
+          "study_id": "study_1",
+          "road": "七东线",
+          "passed": true,
+          "policies": [
+            {
+              "policy": "parking",
+              "runs": [
+                "parking_1"
+              ],
+              "passed": true,
+              "cases": [
+                {
+                  "passed": true,
+                  "evidence_refs": [
+                    "20260928_041115_874b70:baseline",
+                    "20260928_041115_874b70:parking_1"
+                  ],
+                  "values": {
+                    "baseline_pcu_h": 345.4695328775985,
+                    "candidate_pcu_h": 158.96295095734104,
+                    "core_time_change_pct": -53.98640521690741
+                  },
+                  "demand_factor": 1.0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hypothesis.H2",
+      "hypothesis_id": "H2",
+      "question": "停车已试措施是否通过推荐约束",
+      "status": "not_supported",
+      "expected_judgment": "contradicted",
+      "evaluation": {
+        "version": "hypothesis-measurement-v1",
+        "test": "admissible",
+        "policies": "parking",
+        "quantifier": "any",
+        "scope": [
+          {
+            "study_id": "study_1",
+            "scenario": "parking",
+            "road": "七东线",
+            "demand_factors": [
+              1.0
+            ]
+          }
+        ],
+        "rule": "本组全部原定约束与原生控制响应检查均通过；不等于没有代价。"
+      },
+      "answer": "已测结果不满足事前判据；原问题保持，不改写成较弱主张。",
+      "evidence_refs": [
+        "20260928_041115_874b70:baseline",
+        "20260928_041115_874b70:parking_1"
+      ],
+      "measurements": [
+        {
+          "study_id": "study_1",
+          "road": "七东线",
+          "passed": false,
+          "policies": [
+            {
+              "policy": "parking",
+              "runs": [
+                "parking_1"
+              ],
+              "passed": false,
+              "cases": [
+                {
+                  "passed": false,
+                  "evidence_refs": [
+                    "20260928_041115_874b70:baseline",
+                    "20260928_041115_874b70:parking_1"
+                  ],
+                  "values": {
+                    "constraint_passed": false,
+                    "control_response": true
+                  },
+                  "demand_factor": 1.0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hypothesis.H3",
+      "hypothesis_id": "H3",
+      "question": "第二组交通组织和组合是否分别比仅停车核心耗时低",
+      "status": "supported",
+      "expected_judgment": "supported",
+      "evaluation": {
+        "version": "hypothesis-measurement-v1",
+        "test": "core_advantage_over_parking",
+        "policies": "all",
+        "quantifier": "all",
+        "scope": [
+          {
+            "study_id": "study_2",
+            "scenario": "oneway",
+            "road": "长江村路",
+            "demand_factors": [
+              1.0
+            ]
+          }
+        ],
+        "rule": "交通组织单项或组合的核心总耗时严格低于本组仅停车；全部类型在此指交通组织和组合，不把仅停车与自身相比。"
+      },
+      "answer": "已测结果满足事前判据；不附加推荐资格或因果解释。",
+      "evidence_refs": [
+        "20260928_041115_fa9f86:baseline",
+        "20260928_041115_fa9f86:S2_oneway",
+        "20260928_041115_fa9f86:S1_parking",
+        "20260928_041115_fa9f86:S3_combined"
+      ],
+      "measurements": [
+        {
+          "study_id": "study_2",
+          "road": "长江村路",
+          "passed": true,
+          "policies": [
+            {
+              "policy": "traffic_control",
+              "runs": [
+                "S2_oneway"
+              ],
+              "passed": true,
+              "cases": [
+                {
+                  "passed": true,
+                  "evidence_refs": [
+                    "20260928_041115_fa9f86:baseline",
+                    "20260928_041115_fa9f86:S2_oneway",
+                    "20260928_041115_fa9f86:S1_parking"
+                  ],
+                  "values": {
+                    "candidate_minus_parking_pcu_h": -19.353859280341908
+                  },
+                  "demand_factor": 1.0
+                }
+              ]
+            },
+            {
+              "policy": "combined",
+              "runs": [
+                "S3_combined"
+              ],
+              "passed": true,
+              "cases": [
+                {
+                  "passed": true,
+                  "evidence_refs": [
+                    "20260928_041115_fa9f86:baseline",
+                    "20260928_041115_fa9f86:S3_combined",
+                    "20260928_041115_fa9f86:S1_parking"
+                  ],
+                  "values": {
+                    "candidate_minus_parking_pcu_h": -19.628769190942585
+                  },
+                  "demand_factor": 1.0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hypothesis.H4",
+      "hypothesis_id": "H4",
+      "question": "各组所有已试措施是否都满足邻区两项门槛",
+      "status": "not_supported",
+      "expected_judgment": "contradicted",
+      "evaluation": {
+        "version": "hypothesis-measurement-v1",
+        "test": "neighbor_limits",
+        "policies": "all",
+        "quantifier": "all",
+        "scope": [
+          {
+            "study_id": "study_1",
+            "scenario": "parking",
+            "road": "七东线",
+            "demand_factors": [
+              1.0
+            ]
+          },
+          {
+            "study_id": "study_2",
+            "scenario": "oneway",
+            "road": "长江村路",
+            "demand_factors": [
+              1.0
+            ]
+          }
+        ],
+        "rule": "邻区耗时增幅和毛新增过饱和均不超过本组原定门槛；不包括核心内其他候选子区。"
+      },
+      "answer": "已测结果不满足事前判据；原问题保持，不改写成较弱主张。",
+      "evidence_refs": [
+        "20260928_041115_874b70:baseline",
+        "20260928_041115_874b70:parking_1",
+        "20260928_041115_fa9f86:baseline",
+        "20260928_041115_fa9f86:S1_parking",
+        "20260928_041115_fa9f86:S2_oneway",
+        "20260928_041115_fa9f86:S3_combined"
+      ],
+      "measurements": [
+        {
+          "study_id": "study_1",
+          "road": "七东线",
+          "passed": true,
+          "policies": [
+            {
+              "policy": "parking",
+              "runs": [
+                "parking_1"
+              ],
+              "passed": true,
+              "cases": [
+                {
+                  "passed": true,
+                  "evidence_refs": [
+                    "20260928_041115_874b70:baseline",
+                    "20260928_041115_874b70:parking_1"
+                  ],
+                  "values": {
+                    "neighbor_time_change_pct": -0.5125385510800995,
+                    "neighbor_new_oversaturated_km": 0.056,
+                    "time_limit_pct": 0.5,
+                    "new_oversaturated_limit_km": 0.1
+                  },
+                  "demand_factor": 1.0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "study_id": "study_2",
+          "road": "长江村路",
+          "passed": false,
+          "policies": [
+            {
+              "policy": "parking",
+              "runs": [
+                "S1_parking"
+              ],
+              "passed": true,
+              "cases": [
+                {
+                  "passed": true,
+                  "evidence_refs": [
+                    "20260928_041115_fa9f86:baseline",
+                    "20260928_041115_fa9f86:S1_parking"
+                  ],
+                  "values": {
+                    "neighbor_time_change_pct": 1.4973412265639752e-05,
+                    "neighbor_new_oversaturated_km": 0,
+                    "time_limit_pct": 0.5,
+                    "new_oversaturated_limit_km": 0.1
+                  },
+                  "demand_factor": 1.0
+                }
+              ]
+            },
+            {
+              "policy": "traffic_control",
+              "runs": [
+                "S2_oneway"
+              ],
+              "passed": false,
+              "cases": [
+                {
+                  "passed": false,
+                  "evidence_refs": [
+                    "20260928_041115_fa9f86:baseline",
+                    "20260928_041115_fa9f86:S2_oneway"
+                  ],
+                  "values": {
+                    "neighbor_time_change_pct": 171.89852158658633,
+                    "neighbor_new_oversaturated_km": 1.03054,
+                    "time_limit_pct": 0.5,
+                    "new_oversaturated_limit_km": 0.1
+                  },
+                  "demand_factor": 1.0
+                }
+              ]
+            },
+            {
+              "policy": "combined",
+              "runs": [
+                "S3_combined"
+              ],
+              "passed": false,
+              "cases": [
+                {
+                  "passed": false,
+                  "evidence_refs": [
+                    "20260928_041115_fa9f86:baseline",
+                    "20260928_041115_fa9f86:S3_combined"
+                  ],
+                  "values": {
+                    "neighbor_time_change_pct": 171.89852158658633,
+                    "neighbor_new_oversaturated_km": 1.03054,
+                    "time_limit_pct": 0.5,
+                    "new_oversaturated_limit_km": 0.1
+                  },
+                  "demand_factor": 1.0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hypothesis.H5",
+      "hypothesis_id": "H5",
+      "question": "第二组是否存在通过约束的已试措施",
+      "status": "supported",
+      "expected_judgment": "supported",
+      "evaluation": {
+        "version": "hypothesis-measurement-v1",
+        "test": "admissible",
+        "policies": "all",
+        "quantifier": "any",
+        "scope": [
+          {
+            "study_id": "study_2",
+            "scenario": "oneway",
+            "road": "长江村路",
+            "demand_factors": [
+              1.0
+            ]
+          }
+        ],
+        "rule": "本组全部原定约束与原生控制响应检查均通过；不等于没有代价。"
+      },
+      "answer": "已测结果满足事前判据；不附加推荐资格或因果解释。",
+      "evidence_refs": [
+        "20260928_041115_fa9f86:baseline",
+        "20260928_041115_fa9f86:S1_parking",
+        "20260928_041115_fa9f86:S2_oneway",
+        "20260928_041115_fa9f86:S3_combined"
+      ],
+      "measurements": [
+        {
+          "study_id": "study_2",
+          "road": "长江村路",
+          "passed": true,
+          "policies": [
+            {
+              "policy": "parking",
+              "runs": [
+                "S1_parking"
+              ],
+              "passed": true,
+              "cases": [
+                {
+                  "passed": true,
+                  "evidence_refs": [
+                    "20260928_041115_fa9f86:baseline",
+                    "20260928_041115_fa9f86:S1_parking"
+                  ],
+                  "values": {
+                    "constraint_passed": true,
+                    "control_response": true
+                  },
+                  "demand_factor": 1.0
+                }
+              ]
+            },
+            {
+              "policy": "traffic_control",
+              "runs": [
+                "S2_oneway"
+              ],
+              "passed": false,
+              "cases": [
+                {
+                  "passed": false,
+                  "evidence_refs": [
+                    "20260928_041115_fa9f86:baseline",
+                    "20260928_041115_fa9f86:S2_oneway"
+                  ],
+                  "values": {
+                    "constraint_passed": false,
+                    "control_response": true
+                  },
+                  "demand_factor": 1.0
+                }
+              ]
+            },
+            {
+              "policy": "combined",
+              "runs": [
+                "S3_combined"
+              ],
+              "passed": false,
+              "cases": [
+                {
+                  "passed": false,
+                  "evidence_refs": [
+                    "20260928_041115_fa9f86:baseline",
+                    "20260928_041115_fa9f86:S3_combined"
+                  ],
+                  "values": {
+                    "constraint_passed": false,
+                    "control_response": true
+                  },
+                  "demand_factor": 1.0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hypothesis.H6",
+      "hypothesis_id": "H6",
+      "question": "是否已经识别现实排队成因",
+      "status": "unmeasured",
+      "expected_judgment": "unresolved",
+      "evaluation": {
+        "version": "hypothesis-measurement-v1",
+        "test": "unavailable",
+        "policies": "all",
+        "quantifier": "all",
+        "scope": [
+          {
+            "study_id": "study_1",
+            "scenario": "parking",
+            "road": "七东线",
+            "demand_factors": [
+              1.0
+            ]
+          },
+          {
+            "study_id": "study_2",
+            "scenario": "oneway",
+            "road": "长江村路",
+            "demand_factors": [
+              1.0
+            ]
+          }
+        ],
+        "rule": "本接口不能直接检验该问题，保留原问题和证据缺口，不用其他指标替代。"
+      },
+      "answer": "该判据仍有缺测、歧义或能力缺口，不能支持或否定。",
+      "evidence_refs": [],
+      "measurements": [
+        {
+          "study_id": "study_1",
+          "road": "七东线",
+          "passed": null,
+          "policies": [],
+          "gap": "本接口不能直接检验该问题，保留原问题和证据缺口，不用其他指标替代。"
+        },
+        {
+          "study_id": "study_2",
+          "road": "长江村路",
+          "passed": null,
+          "policies": [],
+          "gap": "本接口不能直接检验该问题，保留原问题和证据缺口，不用其他指标替代。"
+        }
+      ]
+    }
+  ],
+  "synthetic_ui": {
+    "real_controllers": true,
+    "model_boundary": "synthetic",
+    "execution_boundary": "synthetic",
+    "requests": 5,
+    "scenes": 6,
+    "complete": true
+  },
+  "capabilities": {
+    "planning_version": "natural-strategy-plan-v5",
+    "composition_protocol": "traffic-plan-decision-v3",
+    "hypothesis_contract_protocol": "hypothesis-measurement-v1",
+    "transport_version": "llm-transport-v2",
+    "initial_review_protocol": "initial-plan-review-v2",
+    "max_initial_corrections": 1,
+    "initial_budget_protocol": "initial-plan-budget-v2",
+    "study_unit_protocol": "complete-study-unit-v1",
+    "compiler_protocol": "plan-compilation-v2",
+    "diagnosis_intent_protocol": "diagnosis-intent-v1",
+    "scope_protocol": "planning-scope-v2",
+    "prerequisite_protocol": "planning-prerequisites-v2",
+    "dynamic_initial_tools": true,
+    "preflight_protocol": "planning-preflight-v1",
+    "routing_budget_protocol": "study-routing-budget-v2",
+    "study_handoff_protocol": "study-handoff-v1",
+    "feedback_review_protocol": "feedback-review-permissions-v1",
+    "parking_completion_protocol": "parking-completion-v2",
+    "hypothesis_review_scope_protocol": "hypothesis-review-scope-v1",
+    "study_comparison_protocol": "study-comparison-v1",
+    "finding_reference_schema": "measured-findings-v1",
+    "response_check_protocol": "planning-response-check-v1",
+    "final_review_correction_protocol": "final-review-correction-v1",
+    "max_final_review_corrections": 1,
+    "study_review_correction_protocol": "study-review-correction-v1",
+    "max_shared_review_corrections": 1,
+    "feedback_instructions_sha256": "f888c3935ca4c6bc7270ab1e19ef237076d25d3fcfed6fca4ae459986e8bb917",
+    "conclusion_protocol": "measured-conclusion-v3",
+    "observables": {
+      "available": [
+        "方向级流量、速度、V/C",
+        "固定核心/邻区/全网行驶时间消耗",
+        "同条件配对变化、邻区毛新增过饱和",
+        "各候选区实际响应及约束判断"
+      ],
+      "unavailable": [
+        "排队长度或排队车辆数",
+        "逐秒轨迹、动态排队回堵",
+        "真实城市因果或零风险证明"
+      ],
+      "conditional": [
+        "全网毛新增过饱和仅在任务开启该检查时提供",
+        "路权及转向响应仅相应适配器提供"
+      ]
+    },
+    "instructions_sha256": "e8b34734124400ca5c143598719265b8cad44e8039a9be2d60797b2a3acc9668",
+    "initial_schema_sha256": "20d9db1913d07f79e872a1ac1f9d2d1fec2b0fbefd36bd9b99cb60ea7a817101",
+    "engine": "TranStar batch",
+    "automatic_transport_retry": false,
+    "max_model_requests": 6
+  }
+}

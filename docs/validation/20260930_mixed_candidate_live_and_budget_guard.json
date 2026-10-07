@@ -1,0 +1,63 @@
+{
+  "kind": "mixed_parking_candidate_live_and_model_reserve_v1",
+  "rc11_package_attempt": {
+    "root": "工作材料/便携异目录检查/20260930_v2_RC11/智能体实验/mixed_v9_full_20260930_01",
+    "first_attempt": {
+      "file": "planning_attempts/preview_b492c7bf7bfb48ee98c192f13f87e851.json",
+      "sha256": "fbca2bace41e58b491d49b6dc6af088aa1c4d7b222be3ea7c61171a5cd4a4c9c",
+      "provider_response_id": "chatcmpl-6abc2ca22bf34eca07e902c9",
+      "known_tokens": 8448
+    },
+    "second_attempt": {
+      "file": "planning_attempts/preview_ba93e311a66f475b8c5bba02bbc1bb56.json",
+      "sha256": "f72dd8edf66e84d09fb787c0c35e0729a241ff0e5cfe4dfbdf536e3242eac03a",
+      "provider_response_id": "chatcmpl-6abc2c9dbb629418638a017d",
+      "known_tokens": 7047
+    },
+    "status": "validation_failed",
+    "failure": "Both proposals contained only a parking-plus-oneway study and omitted the independent parking group required to compare two parking candidates.",
+    "native_scenarios": 0,
+    "known_tokens": 15495
+  },
+  "source_study_design_v3_attempt": {
+    "root": "智能体实验/mixed_study_design_v3_20260930_01",
+    "dispatch": "dispatches/20260930_053035_eaa06b.json",
+    "dispatch_sha256": "a78254b227e4b1aa26b3c91daac0b382c64b26528b8c75c80196d3309309f3a4",
+    "first_job_state_sha256": "3a9b27b00eef5d73935bc95c00ec2994a8565a684ef9d56d6950dec1ad730241",
+    "status": "incomplete",
+    "initial_plan": "ready; two study groups; seven allocated native scenarios; six minimum model requests",
+    "provider_response_ids_and_tokens": {
+      "chatcmpl-6abc2df63131e8d8265107e1": 7195,
+      "chatcmpl-6abc2e842f88f487f79208e9": 12364,
+      "chatcmpl-6abc2e87ef72b7a868cf64c8": 13097
+    },
+    "known_tokens": 32656,
+    "native_scenarios": 2,
+    "native_top_level_modules": 14,
+    "partial_native_read_only_audit": "passed_for_baseline_and_first_parking_treatment; programme_not_certified",
+    "first_parking_treatment": {
+      "constraint_passed": true,
+      "core_time_change_pct": -23.308694361678317,
+      "neighbor_time_change_pct": -0.18205257806130914,
+      "neighbor_new_oversaturated_km": 0
+    },
+    "failure": "First candidate decision cited its own baseline but omitted the chosen different alternative's area baseline. A bounded correction succeeded, consuming an extra model request. The second parking treatment was then blocked by the remaining request reservation; the oneway group was skipped."
+  },
+  "new_source_changes": {
+    "study_unit_protocol": "complete-study-unit-v3",
+    "planning_input": "Typed independent parking-study obligation and minimum scene count exposed in the study-unit input and candidate tool description.",
+    "correction_feedback": "The same typed obligation is repeated when an initial prerequisite fails.",
+    "choice_repair_runtime_guard": "Reserves all future required parking decisions and pending study requests before spending a candidate-citation repair slot. This guard is offline tested but did not affect the already-running attempt."
+  },
+  "checks": {"python_unittest_count": 632, "old_rc5_v6_programme_read_only": "passed", "git_diff_check": "passed"},
+  "cumulative_project_recorded_budget": {
+    "deduplicated_requests": 120,
+    "known_tokens": 1115945,
+    "remaining_requests": 564,
+    "remaining_known_tokens": 3016615,
+    "authorized_request_cap": 684,
+    "authorized_known_token_cap": 4132560,
+    "scope": "Project-retained deduplicated provider records only; not a complete provider bill."
+  },
+  "boundary": "Neither mixed attempt completed the promised comparison. The new runtime repair guard has synthetic coverage only; no subsequent provider or native run validates it yet."
+}

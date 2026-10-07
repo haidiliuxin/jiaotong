@@ -1,0 +1,113 @@
+{
+  "kind": "partial_real_evidence_audit",
+  "programme_status": "incomplete",
+  "acceptance_status": "failed",
+  "source_commit": "07c7880cca43f72b6384cb17e7cba08813271ebc",
+  "paid_calls": 4,
+  "known_tokens": 25779,
+  "native_scenes": 3,
+  "native_modules": 21,
+  "locks": [
+    {
+      "path": "智能体实验\\runtime.lock",
+      "available": true,
+      "bytes_unchanged": true
+    },
+    {
+      "path": "工作材料\\便携异目录检查\\20260927 智能规划 RC3\\智能体实验\\runtime.lock",
+      "available": true,
+      "bytes_unchanged": true
+    },
+    {
+      "path": "F:\\ITS比赛\\工作材料\\便携异目录检查\\20260927 智能规划 RC4\\智能体实验\\runtime.lock",
+      "available": true,
+      "bytes_unchanged": true
+    }
+  ],
+  "planning_audits": {
+    "20260927_220409_164a26": {
+      "passed": true,
+      "decisions": 2,
+      "model_selected_policies": 1,
+      "observations_from_current_job_only": true,
+      "actions_precede_execution": true
+    },
+    "20260927_220409_7adeea": {
+      "passed": false,
+      "message": "研究结论与本次配对事实不符",
+      "missing_field": "research_review"
+    }
+  },
+  "programme_consistency": {
+    "passed": true,
+    "groups": 2,
+    "decisions": 3,
+    "no_cross_engine_pooling": true,
+    "observations_checked_at_decision_time": true,
+    "request_reservations_checked": true
+  },
+  "parking_native_audit": {
+    "passed": true,
+    "completed_scenarios": 2,
+    "module_executions": 14,
+    "scope_sizes": {
+      "core": 3,
+      "neighbor": 43,
+      "network": 32060
+    },
+    "repeat_arrays_exact": null,
+    "verified_runs": [
+      {
+        "scenario": "baseline",
+        "modules": 7,
+        "result_rows": {
+          "speed_kmh": 32981,
+          "flow_pcu_h": 32981,
+          "vc": 32981,
+          "time_s": 32981
+        },
+        "input_difference_files": [],
+        "car_od_factor": 1.0,
+        "internal_od_factor": 1.0
+      },
+      {
+        "scenario": "parking_1",
+        "modules": 7,
+        "result_rows": {
+          "speed_kmh": 32981,
+          "flow_pcu_h": 32981,
+          "vc": 32981,
+          "time_s": 32981
+        },
+        "input_difference_files": [
+          "data/manageL.txt"
+        ],
+        "car_od_factor": 1.0,
+        "internal_od_factor": 1.0
+      }
+    ],
+    "limitations": "只核验保存的实验与输入输出证据，不证明现实标定有效或全部草案已实现",
+    "model_planning_audit": {
+      "passed": true,
+      "decisions": 2,
+      "model_selected_policies": 1,
+      "observations_from_current_job_only": true,
+      "actions_precede_execution": true
+    }
+  },
+  "oneway_baseline_only": {
+    "modules": 7,
+    "fresh_output_timestamps_checked": 24,
+    "rows": 32981,
+    "metrics_recomputed": true,
+    "target_selection_accepted": false,
+    "governance_runs": 0
+  },
+  "rejection": {
+    "code": "premature_programme_review",
+    "proposal_fully_captured": true,
+    "valid_candidate_proposed": true,
+    "premature_programme_fields_present": true
+  },
+  "meaning": "只核对已完成的原件、停车组完整执行与第二组新基准；第二组治理及总任务仍未完成。未新增模型或仿真调用。"
+}

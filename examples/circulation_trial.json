@@ -1,0 +1,13 @@
+{
+  "request": "在案例停车瓶颈中寻找满足公交保护和转向状态绕行约束的验证区域，比较S0/S1/S2/S3；不预设禁转或组合更优",
+  "scenario": "circulation",
+  "max_links": 1,
+  "max_runs": 5,
+  "max_feedback": 0,
+  "demand_factors": [1.0],
+  "repeat_baseline": true,
+  "neighbor_hops": 2,
+  "max_neighbor_time_increase_pct": 0.5,
+  "max_network_time_increase_pct": 0.1,
+  "max_new_oversaturated_km": 0.1
+}

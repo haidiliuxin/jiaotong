@@ -1,0 +1,80 @@
+{
+  "status": "recorded_pending_visual_review",
+  "kind": "completed_real_task_review",
+  "new_model_calls": 0,
+  "started": "2026-09-22T20:23:30.907Z",
+  "plan_sha256": "e7bdde9b4e4581469d95de62b2bdd61c2126bb42e7179a0de098e8721bac406a",
+  "script_sha256": "a1c59ab4447e1548d418caddbd232d9e5db049df6375a78fcdaae5b91a119f03",
+  "job_id": "20260923_025908_fbc62a",
+  "archive_sha256": "7365c701074587e1cb764eda5bb5c63d38d9e1ee83d19dc8384d1c00bf0b3ad2",
+  "state_sha256": "91057f3fdf07af99ba85348587de8d852425e2430f189f996031e7e0f169ac5c",
+  "source_runtime_code": "5c9332494c08da354dc05a1868a9495ceb54d2a7",
+  "scenes": [
+    {
+      "title": "已完成的禁转实测任务；13场景、91顶层及520次原生车型调用，本次新增模型调用0。",
+      "start_seconds": 3.983,
+      "end_seconds": 18.442,
+      "job_title": "20260923_025908_fbc62a",
+      "status": "已完成"
+    },
+    {
+      "title": "基准需求下的S2禁转与同需求基准双图；有向路段颜色来自实际输出。",
+      "start_seconds": 18.559,
+      "end_seconds": 35.01,
+      "job_title": "20260923_025908_fbc62a",
+      "status": "已完成"
+    },
+    {
+      "title": "低需求0.9独立配对：只在各自的基准下比较，不跨需求混算收益。",
+      "start_seconds": 36.427,
+      "end_seconds": 52.863,
+      "job_title": "20260923_025908_fbc62a",
+      "status": "已完成"
+    },
+    {
+      "title": "高需求1.1仍有外溢风险；本片展示原版决策，不能把局部收益写成全面改善。",
+      "start_seconds": 54.757,
+      "end_seconds": 72.167,
+      "job_title": "20260923_025908_fbc62a",
+      "status": "已完成"
+    },
+    {
+      "title": "容差v2在已测需求下选择较简单的S2；其他候选及硬约束结果仍保留。",
+      "start_seconds": 72.254,
+      "end_seconds": 90.711,
+      "job_title": "20260923_025908_fbc62a",
+      "status": "已完成"
+    },
+    {
+      "title": "不利影响栏列出保存的同需求配对指标；过饱和净变化不等于毛新增。",
+      "start_seconds": 90.758,
+      "end_seconds": 108.183,
+      "job_title": "20260923_025908_fbc62a",
+      "status": "已完成"
+    },
+    {
+      "title": "实验档案核对三需求任务卡、13场景和全网指标；原始证据可独立复核。",
+      "start_seconds": 108.252,
+      "end_seconds": 125.443,
+      "job_title": "20260923_025908_fbc62a",
+      "status": "已完成"
+    },
+    {
+      "title": "时间线与禁转响应来自已保存的真实任务；这里没有重新运行TranStar。",
+      "start_seconds": 125.512,
+      "end_seconds": 137.989,
+      "job_title": "20260923_025908_fbc62a",
+      "status": "已完成"
+    }
+  ],
+  "errors": [],
+  "blocked_requests": [],
+  "limits": "已完成三需求禁转任务的界面回看，不是本次新建仿真的连续录像；高需求全网毛新增过饱和仍需单独披露。",
+  "playwright_version": "1.62.1",
+  "video": {
+    "file": "已完成真实任务回看.webm",
+    "bytes": 12229250,
+    "sha256": "abec3f2dfbe256f5e9c7c9f7dc50db62d303f2e97786e4897479730feb6dd759"
+  },
+  "finished": "2026-09-22T20:32:46.144Z"
+}

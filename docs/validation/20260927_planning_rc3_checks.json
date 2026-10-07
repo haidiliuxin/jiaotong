@@ -1,0 +1,80 @@
+{
+  "kind": "same_machine_portable_candidate_check",
+  "release_status": "candidate_pending_live_acceptance",
+  "source_commit": "adab37fd08f9e5c04379ce1b16f3b59a6431ab57",
+  "archive": "工作材料\\便携构建\\20260927_智能规划_RC3.zip",
+  "archive_sha256": "cf51f8b5c34e5f6b5d93cb853aad0f0f7684829a509739a2206f5b7676ff9d90",
+  "archive_bytes": 878552748,
+  "manifest_sha256": "74fc9cf1749ffae4827befd5a06f8834a6952c62319b1fd2b0ef79df9c9c2eff",
+  "immutable_files": 16145,
+  "environment_status": "passed",
+  "commands": [
+    {
+      "name": "user_site_control",
+      "returncode": 0
+    },
+    {
+      "name": "child_without_B",
+      "returncode": 0
+    },
+    {
+      "name": "planning_modules_without_key",
+      "returncode": 0
+    },
+    {
+      "name": "bundle_gate",
+      "returncode": 0
+    },
+    {
+      "name": "check_parking",
+      "returncode": 0
+    },
+    {
+      "name": "check_turn",
+      "returncode": 0
+    },
+    {
+      "name": "check_oneway",
+      "returncode": 0
+    },
+    {
+      "name": "compile_wrapper",
+      "returncode": 0
+    }
+  ],
+  "storage_probe": {
+    "passed": true,
+    "module": "F:\\ITS比赛\\工作材料\\便携异目录检查\\20260927 智能规划 RC3\\traffic_agent\\data.py",
+    "winerrors": [
+      5
+    ],
+    "new_model_calls": 0,
+    "native_runs": 0,
+    "key_configured": false
+  },
+  "final_integrity": {
+    "passed": true,
+    "kind": "portable_transtar_runtime_v1",
+    "files": 16145,
+    "bytes": 1722250826,
+    "code_commit": "adab37fd08f9e5c04379ce1b16f3b59a6431ab57",
+    "python_version": "3.12.6 (tags/v3.12.6:a4a2d2b, Sep  6 2024, 20:11:23) [MSC v.1940 64 bit (AMD64)]",
+    "manifest_sha256": "74fc9cf1749ffae4827befd5a06f8834a6952c62319b1fd2b0ef79df9c9c2eff",
+    "new_model_calls": 0,
+    "meaning": "不可变文件完整性检查；不是数字签名、模型授权检查或真实求解证明"
+  },
+  "browser": {
+    "settings_controls_checked": true,
+    "key_configured": false,
+    "empty_key_submission_blocked": true,
+    "dispatches": 0,
+    "model_attempts": 0,
+    "jobs": 0,
+    "settings_file_created": false,
+    "case_geometry_only": true,
+    "console_warnings_or_errors": []
+  },
+  "new_model_calls": 0,
+  "new_native_runs": 0,
+  "limitation": "同机独立解压、环境及浏览器检查，不是另一台物理电脑或真实模型与治理闭环验收。"
+}

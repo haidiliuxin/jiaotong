@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "F:\ITS比赛\scripts\check_deduplicated_job.py", line 135, in <module>
+    print(json.dumps(check(args.archive, args.output, args.restore_to), ensure_ascii=False))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\ITS比赛\scripts\check_deduplicated_job.py", line 96, in check
+    or not all(audit['repeat_arrays_exact'].values())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'values'

@@ -1,0 +1,598 @@
+{
+  "previous": {
+    "version": "curated-knowledge-rag-v2",
+    "fixture_sha256": "6127f8718c10461e2d24e18c71d4b012c5a2ef4436169bb71576e5030e3ad323",
+    "total": 24,
+    "passed": 17,
+    "failed_ids": [
+      "q02",
+      "q04",
+      "q05",
+      "q06",
+      "q08",
+      "q10",
+      "q11"
+    ],
+    "cases": [
+      {
+        "id": "q01",
+        "passed": true,
+        "topics": [
+          "parking"
+        ],
+        "hits": [
+          "parking.categories"
+        ],
+        "replay": "verified"
+      },
+      {
+        "id": "q02",
+        "passed": false,
+        "topics": [
+          "construction",
+          "parking"
+        ],
+        "hits": [
+          "construction.gate",
+          "parking.categories"
+        ],
+        "replay": "verified"
+      },
+      {
+        "id": "q03",
+        "passed": true,
+        "topics": [
+          "oneway"
+        ],
+        "hits": [
+          "oneway.vehicle1",
+          "oneway.full_grid"
+        ],
+        "replay": "verified"
+      },
+      {
+        "id": "q04",
+        "passed": false,
+        "topics": [
+          "signal",
+          "transit"
+        ],
+        "hits": [
+          "transit.gate",
+          "signal.gate",
+          "assignment.fixed"
+        ],
+        "replay": "verified"
+      },
+      {
+        "id": "q05",
+        "passed": false,
+        "topics": [
+          "construction",
+          "parking",
+          "staggered"
+        ],
+        "hits": [
+          "construction.gate",
+          "parking.categories",
+          "demand.sensitivity"
+        ],
+        "replay": "verified"
+      },
+      {
+        "id": "q06",
+        "passed": false,
+        "topics": [
+          "oneway",
+          "parking"
+        ],
+        "hits": [
+          "oneway.full_grid",
+          "parking.categories",
+          "oneway.vehicle1"
+        ],
+        "replay": "verified"
+      },
+      {
+        "id": "q07",
+        "passed": true,
+        "topics": [
+          "oneway"
+        ],
+        "hits": [
+          "oneway.vehicle1"
+        ],
+        "replay": "verified"
+      },
+      {
+        "id": "q08",
+        "passed": false,
+        "topics": [
+          "construction",
+          "transit"
+        ],
+        "hits": [
+          "transit.gate",
+          "construction.gate",
+          "assignment.fixed"
+        ],
+        "replay": "verified"
+      },
+      {
+        "id": "q09",
+        "passed": true,
+        "topics": [
+          "signal"
+        ],
+        "hits": [
+          "signal.gate"
+        ],
+        "replay": "verified"
+      },
+      {
+        "id": "q10",
+        "passed": false,
+        "topics": [
+          "circulation",
+          "oneway",
+          "parking"
+        ],
+        "hits": [
+          "oneway.vehicle1",
+          "oneway.full_grid",
+          "parking.categories"
+        ],
+        "replay": "verified"
+      },
+      {
+        "id": "q11",
+        "passed": false,
+        "topics": [
+          "circulation",
+          "oneway",
+          "parking"
+        ],
+        "hits": [
+          "oneway.vehicle1",
+          "oneway.full_grid",
+          "parking.categories"
+        ],
+        "replay": "verified"
+      },
+      {
+        "id": "q12",
+        "passed": true,
+        "topics": [
+          "oneway"
+        ],
+        "hits": [
+          "oneway.vehicle1",
+          "oneway.full_grid"
+        ],
+        "replay": "verified"
+      },
+      {
+        "id": "q13",
+        "passed": true,
+        "topics": [
+          "parking"
+        ],
+        "hits": [
+          "parking.categories"
+        ],
+        "replay": "verified"
+      },
+      {
+        "id": "q14",
+        "passed": true,
+        "topics": [],
+        "hits": [
+          "metrics.boundary",
+          "parking.categories"
+        ],
+        "replay": "verified"
+      },
+      {
+        "id": "q15",
+        "passed": true,
+        "topics": [],
+        "hits": [
+          "demand.sensitivity",
+          "assignment.fixed"
+        ],
+        "replay": "verified"
+      },
+      {
+        "id": "q16",
+        "passed": true,
+        "topics": [
+          "oneway"
+        ],
+        "hits": [
+          "oneway.vehicle1",
+          "oneway.full_grid"
+        ],
+        "replay": "verified"
+      },
+      {
+        "id": "q17",
+        "passed": true,
+        "topics": [
+          "oneway",
+          "parking"
+        ],
+        "hits": [
+          "oneway.full_grid",
+          "oneway.vehicle1"
+        ],
+        "replay": "verified"
+      },
+      {
+        "id": "q18",
+        "passed": true,
+        "topics": [
+          "construction"
+        ],
+        "hits": [
+          "construction.gate",
+          "contest.agent"
+        ],
+        "replay": "verified"
+      },
+      {
+        "id": "q19",
+        "passed": true,
+        "topics": [
+          "transit"
+        ],
+        "hits": [
+          "transit.gate"
+        ],
+        "replay": "verified"
+      },
+      {
+        "id": "q20",
+        "passed": true,
+        "topics": [
+          "signal"
+        ],
+        "hits": [
+          "signal.gate",
+          "contest.agent"
+        ],
+        "replay": "verified"
+      },
+      {
+        "id": "q21",
+        "passed": true,
+        "topics": [
+          "staggered"
+        ],
+        "hits": [
+          "staggered.gate",
+          "demand.sensitivity"
+        ],
+        "replay": "verified"
+      },
+      {
+        "id": "q22",
+        "passed": true,
+        "topics": [
+          "parking"
+        ],
+        "hits": [
+          "parking.categories",
+          "metrics.boundary"
+        ],
+        "replay": "verified"
+      },
+      {
+        "id": "q23",
+        "passed": true,
+        "topics": [],
+        "hits": [
+          "metrics.boundary"
+        ],
+        "replay": "verified"
+      },
+      {
+        "id": "q24",
+        "passed": true,
+        "topics": [
+          "oneway"
+        ],
+        "hits": [
+          "oneway.full_grid",
+          "oneway.vehicle1"
+        ],
+        "replay": "verified"
+      }
+    ],
+    "boundary": "实现前冻结的扩展验收集；不参与排名权重调优。不等于真实城市预测精度或统计泛化准确率。"
+  },
+  "current": {
+    "version": "curated-knowledge-rag-v3",
+    "fixture_sha256": "6127f8718c10461e2d24e18c71d4b012c5a2ef4436169bb71576e5030e3ad323",
+    "total": 24,
+    "passed": 24,
+    "failed_ids": [],
+    "cases": [
+      {
+        "id": "q01",
+        "passed": true,
+        "topics": [
+          "parking"
+        ],
+        "hits": [
+          "parking.categories"
+        ],
+        "replay": "verified"
+      },
+      {
+        "id": "q02",
+        "passed": true,
+        "topics": [
+          "parking"
+        ],
+        "hits": [
+          "parking.categories"
+        ],
+        "replay": "verified"
+      },
+      {
+        "id": "q03",
+        "passed": true,
+        "topics": [
+          "oneway"
+        ],
+        "hits": [
+          "oneway.vehicle1",
+          "oneway.full_grid"
+        ],
+        "replay": "verified"
+      },
+      {
+        "id": "q04",
+        "passed": true,
+        "topics": [
+          "signal"
+        ],
+        "hits": [
+          "assignment.fixed",
+          "signal.gate"
+        ],
+        "replay": "verified"
+      },
+      {
+        "id": "q05",
+        "passed": true,
+        "topics": [
+          "parking"
+        ],
+        "hits": [
+          "demand.sensitivity",
+          "parking.categories"
+        ],
+        "replay": "verified"
+      },
+      {
+        "id": "q06",
+        "passed": true,
+        "topics": [
+          "parking"
+        ],
+        "hits": [
+          "parking.categories",
+          "demand.sensitivity"
+        ],
+        "replay": "verified"
+      },
+      {
+        "id": "q07",
+        "passed": true,
+        "topics": [
+          "oneway"
+        ],
+        "hits": [
+          "oneway.vehicle1"
+        ],
+        "replay": "verified"
+      },
+      {
+        "id": "q08",
+        "passed": true,
+        "topics": [
+          "transit"
+        ],
+        "hits": [
+          "transit.gate",
+          "assignment.fixed"
+        ],
+        "replay": "verified"
+      },
+      {
+        "id": "q09",
+        "passed": true,
+        "topics": [
+          "signal"
+        ],
+        "hits": [
+          "signal.gate"
+        ],
+        "replay": "verified"
+      },
+      {
+        "id": "q10",
+        "passed": true,
+        "topics": [
+          "parking"
+        ],
+        "hits": [
+          "parking.categories",
+          "demand.sensitivity"
+        ],
+        "replay": "verified"
+      },
+      {
+        "id": "q11",
+        "passed": true,
+        "topics": [
+          "parking"
+        ],
+        "hits": [
+          "parking.categories"
+        ],
+        "replay": "verified"
+      },
+      {
+        "id": "q12",
+        "passed": true,
+        "topics": [
+          "oneway"
+        ],
+        "hits": [
+          "oneway.vehicle1",
+          "oneway.full_grid"
+        ],
+        "replay": "verified"
+      },
+      {
+        "id": "q13",
+        "passed": true,
+        "topics": [
+          "parking"
+        ],
+        "hits": [
+          "parking.categories"
+        ],
+        "replay": "verified"
+      },
+      {
+        "id": "q14",
+        "passed": true,
+        "topics": [],
+        "hits": [
+          "metrics.boundary",
+          "parking.categories"
+        ],
+        "replay": "verified"
+      },
+      {
+        "id": "q15",
+        "passed": true,
+        "topics": [],
+        "hits": [
+          "demand.sensitivity",
+          "assignment.fixed"
+        ],
+        "replay": "verified"
+      },
+      {
+        "id": "q16",
+        "passed": true,
+        "topics": [
+          "oneway"
+        ],
+        "hits": [
+          "oneway.vehicle1",
+          "oneway.full_grid"
+        ],
+        "replay": "verified"
+      },
+      {
+        "id": "q17",
+        "passed": true,
+        "topics": [
+          "oneway",
+          "parking"
+        ],
+        "hits": [
+          "oneway.full_grid",
+          "oneway.vehicle1"
+        ],
+        "replay": "verified"
+      },
+      {
+        "id": "q18",
+        "passed": true,
+        "topics": [
+          "construction"
+        ],
+        "hits": [
+          "construction.gate",
+          "contest.agent"
+        ],
+        "replay": "verified"
+      },
+      {
+        "id": "q19",
+        "passed": true,
+        "topics": [
+          "transit"
+        ],
+        "hits": [
+          "transit.gate"
+        ],
+        "replay": "verified"
+      },
+      {
+        "id": "q20",
+        "passed": true,
+        "topics": [
+          "signal"
+        ],
+        "hits": [
+          "signal.gate",
+          "contest.agent"
+        ],
+        "replay": "verified"
+      },
+      {
+        "id": "q21",
+        "passed": true,
+        "topics": [
+          "staggered"
+        ],
+        "hits": [
+          "staggered.gate",
+          "demand.sensitivity"
+        ],
+        "replay": "verified"
+      },
+      {
+        "id": "q22",
+        "passed": true,
+        "topics": [
+          "parking"
+        ],
+        "hits": [
+          "parking.categories",
+          "metrics.boundary"
+        ],
+        "replay": "verified"
+      },
+      {
+        "id": "q23",
+        "passed": true,
+        "topics": [],
+        "hits": [
+          "metrics.boundary"
+        ],
+        "replay": "verified"
+      },
+      {
+        "id": "q24",
+        "passed": true,
+        "topics": [
+          "oneway"
+        ],
+        "hits": [
+          "oneway.full_grid",
+          "oneway.vehicle1"
+        ],
+        "replay": "verified"
+      }
+    ],
+    "boundary": "实现前冻结的扩展验收集；不参与排名权重调优。不等于真实城市预测精度或统计泛化准确率。"
+  }
+}

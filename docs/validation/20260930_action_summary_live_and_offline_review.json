@@ -1,0 +1,385 @@
+{
+  "created": "2026-09-30T04:39:00.634191+00:00",
+  "kind": "action_summary_v2_real_failure_and_offline_fix",
+  "live_source_commit": "006f156aa0fd5968727ed2a4e98956178fecb7ed",
+  "root": "智能体实验\\mixed_action_execution_full_20260930_02",
+  "job_ids": [
+    "20260930_121756_34fa88",
+    "20260930_121756_0a4968"
+  ],
+  "request": "长江村路停车拥堵。请至少比较两个不同停车备选方案，并检验单向组织及其组合的独立效果。最多7次仿真，不复跑基准；保护邻区。",
+  "original_request_unchanged": true,
+  "original_status": "incomplete",
+  "overall_complete": false,
+  "initial": {
+    "requests": 1,
+    "status": "ready",
+    "schema_sha256": "25d90f5644c8b7e5b235f4362786697a25e53c19b54b14f917d4b22036d023ed",
+    "corrected_metric_policy_schema_used": true,
+    "whole_initial_narrative_certified": false
+  },
+  "native": {
+    "scenes": 2,
+    "top_level_modules": 14,
+    "second_study_started": false,
+    "raw_verification": [
+      {
+        "name": "baseline",
+        "modules": 7,
+        "result_rows": 32981,
+        "fresh_outputs_unchanged": true,
+        "inputs_unchanged": true,
+        "metrics_recomputed_equal": true,
+        "comparison_recomputed_equal": null
+      },
+      {
+        "name": "parking_1",
+        "modules": 7,
+        "result_rows": 32981,
+        "fresh_outputs_unchanged": true,
+        "inputs_unchanged": true,
+        "metrics_recomputed_equal": true,
+        "comparison_recomputed_equal": true
+      }
+    ],
+    "changes": [
+      {
+        "from_node": 3240,
+        "to_node": 3239,
+        "old_parking": 3,
+        "parking": 1
+      },
+      {
+        "from_node": 3239,
+        "to_node": 3240,
+        "old_parking": 3,
+        "parking": 1
+      }
+    ],
+    "core_time_change_pct": -18.73619698812542,
+    "neighbor_time_change_pct": -0.22858553748061894,
+    "neighbor_speed_change_pct": 0.2813101592033185,
+    "neighbor_new_oversaturated_km": 0,
+    "regional_time_changes": [
+      {
+        "region": "area_1",
+        "change_pct": -26.423413962968134,
+        "passed": true
+      },
+      {
+        "region": "area_2",
+        "change_pct": 0.2817699326137513,
+        "passed": true
+      }
+    ],
+    "selected_trial_eligible": true,
+    "complete_job_verification": {
+      "passed": false,
+      "reason": "任务尚未完成，不能出具完整验证结论"
+    },
+    "complete_programme_verification": {
+      "passed": false,
+      "reason": "总任务尚未完整，不能出具完整验收结论"
+    }
+  },
+  "original_rejection": {
+    "validation": {
+      "version": "planning-response-check-v1",
+      "status": "failed",
+      "code": "measured_conclusion",
+      "message": "模型结论与实测或证据范围冲突"
+    },
+    "issues": [
+      {
+        "code": "executed_parking_level",
+        "field": "summary",
+        "refs": [
+          "20260930_121756_34fa88:parking_1"
+        ],
+        "quote": "停车2级",
+        "message": "该实测场景实际执行停车1级，文字写成2级；S1/S2/S3是场景编号，不是停车等级。"
+      }
+    ],
+    "proposed_action": "parking_858a1a3c64af",
+    "proposed_summary": "本轮换区位2，实测两条方向（3237→3236与3236→3235）停车2级，作为第二个不同停车候选并与区1对照。",
+    "selected_definition": {
+      "title": "长江村路 · 2条方向 · 停车2级",
+      "changes": [
+        {
+          "from_node": 3237,
+          "to_node": 3236,
+          "old_parking": 3,
+          "parking": 2
+        },
+        {
+          "from_node": 3236,
+          "to_node": 3235,
+          "old_parking": 3,
+          "parking": 2
+        }
+      ],
+      "region": "area_2"
+    },
+    "action_executed": false
+  },
+  "independent_review": {
+    "status": "needs_review",
+    "findings": [
+      {
+        "kind": "future_action_summary_misread_as_executed",
+        "detail": "第二候选摘要描述本轮待执行的区2停车2级；所选菜单确为2级，但旧v1自由摘要被事实解析器误套到上一场区1停车1级。第二候选未执行。"
+      },
+      {
+        "kind": "different_levels_described_as_same",
+        "quote": "以同等级检验不同区域候选",
+        "actual": {
+          "previous_level": 1,
+          "proposed_level": 2
+        },
+        "detail": "用户只要求不同停车方案，允许不同位置和强度；但这不是同等级区域对照，不能据此归因位置效应。"
+      },
+      {
+        "kind": "direction_relationship_misstated",
+        "quote": "区2两条对向重载",
+        "actual_directions": [
+          [
+            3237,
+            3236
+          ],
+          [
+            3236,
+            3235
+          ]
+        ],
+        "detail": "两条有向边前后相接，不是互为反向；原工作假设保持。"
+      },
+      {
+        "kind": "unqualified_neighbor_metric",
+        "quote": "邻区+0.28%",
+        "detail": "未明确指标；实际邻区耗时-0.228586%、邻区速度+0.281310%，候选区2耗时另增+0.281770%。不得把它当作已核对的邻区耗时增加结论。"
+      },
+      {
+        "kind": "initial_protection_profile_misdescribed",
+        "quote": "邻区保护通过spillover门槛在本规划中以neighbor_limits判据覆盖",
+        "actual_task": {
+          "search_mode": "standard",
+          "neighbor_hops": 2,
+          "max_neighbor_time_increase_pct": 0.5,
+          "max_new_oversaturated_km": 0.1,
+          "max_new_network_oversaturated_km": null
+        },
+        "detail": "实际为standard、2跳邻区和0.1km邻区门槛，没有启用spillover的3跳与全网0km门槛。初始结构可执行不等于自由理由完全准确。"
+      }
+    ],
+    "no_new_acceptance_for_original_reply": true,
+    "bounded_checks_are_not_general_semantic_certification": true
+  },
+  "implementation": {
+    "protocol": "action-execution-v2",
+    "generated_fields": [
+      "summary",
+      "next_check"
+    ],
+    "model_still_selects": [
+      "action",
+      "evidence_refs",
+      "reason",
+      "risk",
+      "selection_basis",
+      "hypothesis_updates_when_allowed",
+      "programme_review_when_allowed"
+    ],
+    "raw_model_prose_retained": true,
+    "unexpected_old_summary_rejected_and_preserved": true,
+    "old_protocol_supported": "action-execution-v1",
+    "raw_native_parameters_changed": false,
+    "offline_source_sha256": {
+      "traffic_agent/action_execution.py": "d4a8fd2c89703b439ccb0ecee35930aa767f6f0d540765ba7ac12c66945e871d",
+      "traffic_agent/feedback_planner.py": "25c7db30a0ea85509204aecb88afc1f4ff97ad0e35fd2a369940d76488ee0ae9",
+      "traffic_agent/conclusion_review.py": "5fd1fff624cf8ad5a63362a9484f116c5a0bad925796aafe20f661468d07813a",
+      "traffic_agent/planning_instructions.py": "7e70b4bd8dfc7f412be6059097f982741336bef34a9f78ce08a8b10398aef280",
+      "traffic_agent/static/planner_view.js": "c6e35fcc2a5d80594df27c5fd99c349e50e637e2f5340cd6ac035943228f38fe",
+      "traffic_agent/report.py": "c41666dc4c933ea60c2a3279ff345fddda8b327d805ccae01edf49fc27afc40f",
+      "traffic_agent/portable.py": "04f2c5da1761198a9973467bd15ff02a21a77a074c4cc49bb0f6ce2e730a6b00"
+    },
+    "rejected_generated_text_bound_to_original_proposal": true
+  },
+  "offline": {
+    "python_tests": 708,
+    "new_tests": 4,
+    "boundary_tests": 13,
+    "python_log": "tmp\\20260930_action_summary_python_tests_release.log",
+    "python_log_sha256": "1c322b8b7b1cbc2c39817c969927eea0236bab9516131198d31c958ed4ec6670",
+    "node_groups": 4,
+    "node_commands": [
+      "node tests/test_choice_view.cjs",
+      "node tests/test_dispatch_ui.cjs",
+      "node tests/test_map_view.cjs",
+      "node tests/test_planner_view.cjs"
+    ],
+    "both_synthetic_http_adapters": true,
+    "old_protocol_replay": [
+      {
+        "ordinal": 1,
+        "protocol": "action-execution-v1",
+        "original_status": "accepted",
+        "replay_accepted": true,
+        "validation_code": null
+      },
+      {
+        "ordinal": 2,
+        "protocol": "action-execution-v1",
+        "original_status": "rejected",
+        "replay_accepted": false,
+        "validation_code": "measured_conclusion"
+      }
+    ],
+    "generated_previews": [
+      {
+        "ordinal": 1,
+        "action": "parking_0c0367fee535",
+        "generated": {
+          "next_check": "在所选方向执行停车1级，需求系数1，共1个治理场景；结果返回后再由模型选择下一步。",
+          "summary": "本轮选择待执行：3240→3239（停车1级）、3239→3240（停车1级）；效果等待本次新仿真。"
+        },
+        "original_reply_converted": false,
+        "original_reply_under_new_tool": "argument_fields"
+      },
+      {
+        "ordinal": 2,
+        "action": "parking_858a1a3c64af",
+        "generated": {
+          "next_check": "在所选方向执行停车2级，需求系数1，共1个治理场景；结果返回后再由模型选择下一步。",
+          "summary": "本轮选择待执行：3237→3236（停车2级）、3236→3235（停车2级）；效果等待本次新仿真。"
+        },
+        "original_reply_converted": false,
+        "original_reply_under_new_tool": "argument_fields"
+      }
+    ],
+    "original_reply_converted": false,
+    "originals_unchanged": 1588,
+    "input_size_comparison": [
+      {
+        "ordinal": 1,
+        "old_bytes": 33778,
+        "new_bytes": 33840
+      },
+      {
+        "ordinal": 2,
+        "old_bytes": 41288,
+        "new_bytes": 41350
+      }
+    ],
+    "size_unit": "UTF-8 JSON bytes, not billing tokens",
+    "billed_token_reduction_verified": false,
+    "browser_visual_check": "not_verified; prior file-scheme denial not bypassed",
+    "node_log": "tmp\\20260930_action_summary_node_tests_release.log",
+    "node_log_sha256": "3c95679f85213de2f3a8e9395c43b35d76737aaf217e7412d5fbf464a9040f15",
+    "rejected_proposal_source_and_ui_verified": true
+  },
+  "source_files": {
+    "manifest": "工作材料\\源码联调证据\\20260930_action_execution_full_02\\original_files_manifest.json",
+    "manifest_sha256": "1046d72068c443a68f4e78dfb8c7da99a2060c91579329f698d53f27314fbf4b",
+    "file_count": 1588,
+    "hashes_unchanged": true,
+    "source_request_sha256": "63a321bc5b439e5db6d45aa8a92058b8e23194b801e78689abb3712b4da5f041",
+    "raw_review": {
+      "path": "tmp\\20260930_action_execution_live_raw_review.json",
+      "sha256": "329240f265d7367184b94368dab813cc900f3aa5e4a5acdff0d4e7987b6056aa"
+    },
+    "offline_review": {
+      "path": "tmp\\20260930_action_summary_readonly_review.json",
+      "sha256": "88f53c4e3a8b05452b83d12e3618dd280645c4de508c591ca902a4b281720f11"
+    },
+    "working_review_draft_before_rejection_display_fix": {
+      "path": "tmp\\20260930_action_summary_index_first_draft.json",
+      "sha256": "32b32babc4dd82f4e377f8c1d1403765441588203c98009e8de48718027a2ce9"
+    }
+  },
+  "usage": {
+    "responses": [
+      {
+        "response_id": "chatcmpl-6abc8d6e18380bef155ee425",
+        "input_tokens": 7477,
+        "output_tokens": 760,
+        "tokens": 8237
+      },
+      {
+        "response_id": "chatcmpl-6abc8e0609d333ead1144f99",
+        "input_tokens": 11262,
+        "output_tokens": 549,
+        "tokens": 11811
+      },
+      {
+        "response_id": "chatcmpl-6abc8e9de05c819438493e2d",
+        "input_tokens": 14352,
+        "output_tokens": 580,
+        "tokens": 14932
+      }
+    ],
+    "new_unique_requests": 3,
+    "new_known_tokens": 34980,
+    "project_retained_cumulative_requests": 165,
+    "project_retained_cumulative_known_tokens": 1594245,
+    "authorized_max_requests": 684,
+    "authorized_max_known_tokens": 4132560,
+    "new_ids_not_in_prior_indexes": true,
+    "previous_ledger": {
+      "path": "docs\\validation\\20260930_action_execution_initial_failure_review.json",
+      "sha256": "11f3b13bdf1ca31bdc92a4ea9acdb33afca5ff82558f12b0c951b1f83ff01e81"
+    },
+    "not_full_account_bill": true
+  },
+  "end_state": {
+    "checked_runtime_locks": [
+      {
+        "path": "智能体实验\\runtime.lock",
+        "free": true,
+        "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+        "bytes_unchanged": true
+      },
+      {
+        "path": "智能体实验\\mixed_limit7_full_20260930_01\\runtime.lock",
+        "free": true,
+        "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+        "bytes_unchanged": true
+      },
+      {
+        "path": "工作材料\\便携异目录检查\\20260930_v2_RC13\\智能体实验\\oneway_scope_live_20260930_01\\runtime.lock",
+        "free": true,
+        "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+        "bytes_unchanged": true
+      },
+      {
+        "path": "工作材料\\便携异目录检查\\20260930_v2_RC14\\智能体实验\\mixed_complete_live_20260930_01\\runtime.lock",
+        "free": true,
+        "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+        "bytes_unchanged": true
+      },
+      {
+        "path": "智能体实验\\mixed_named_questions_full_20260930_01\\runtime.lock",
+        "free": true,
+        "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+        "bytes_unchanged": true
+      },
+      {
+        "path": "智能体实验\\mixed_action_execution_full_20260930_02\\runtime.lock",
+        "free": true,
+        "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+        "bytes_unchanged": true
+      }
+    ],
+    "native_and_python_processes_after_checks": []
+  },
+  "paid_retry_after_this_failure": false,
+  "old_task_resumed": false,
+  "pending": [
+    "v2_real_model_native_run",
+    "complete_mixed_acceptance",
+    "independent_model_narrative_acceptance",
+    "browser_visual_verification",
+    "final_portable_including_current_source",
+    "physical_other_machine_acceptance"
+  ],
+  "finalized": "2026-09-30T04:45:38.710374+00:00"
+}

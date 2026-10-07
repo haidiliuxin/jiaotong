@@ -1,0 +1,8 @@
+Mparam435.TXT—DETROIT模型参数表
+【输入文件】
+初始O-D矩阵	OLD_OD.TXT
+交通区发生量	TripGResiComp.tsd
+交通区吸引量	TripAResiComp.tsd
+【输出文件】
+O-D分布矩阵	Distribution.tsd
+最多迭代次数  	20

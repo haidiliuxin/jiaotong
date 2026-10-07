@@ -1,0 +1,11 @@
+EXTRACTED F:\ITS比赛\工作材料\便携解压验收\20260922 运行包
+{"record": "F:\\ITS比赛\\工作材料\\便携解压验收\\20260922环境证据\\environment_verification.json", "status": "failed", "error": "RuntimeError: child_without_B退出码1；保留原始输出供检查"}
+Traceback (most recent call last):
+  File "F:\ITS比赛\scripts\validate_portable_environment.py", line 132, in <module>
+    validate(args.archive.resolve(),args.root.resolve(),args.evidence.resolve())
+  File "F:\ITS比赛\scripts\validate_portable_environment.py", line 81, in validate
+    probe=json.loads(execute('child_without_B',[python,'-c',code]))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\ITS比赛\scripts\validate_portable_environment.py", line 66, in execute
+    raise RuntimeError(f'{name}退出码{proc.returncode}；保留原始输出供检查')
+RuntimeError: child_without_B退出码1；保留原始输出供检查

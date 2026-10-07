@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "initial_protocol": "initial-plan-review-v5",
+  "patch_protocol": "hypothesis-field-patch-v1",
+  "boundary": "Only original public fields; alternatives, catalogue and correction response are synthetic, not a full original reply replay or live acceptance.",
+  "actual_paid_requests": 0,
+  "new_native_scenes": 0,
+  "synthetic_requests": 2,
+  "all_four_questions_and_studies_preserved": true,
+  "legacy_failure_reproduced": true,
+  "rc19_still_failed": true,
+  "old_records_unchanged": 79,
+  "old_locks_free": 7,
+  "fixture_sha256": "0b239a3e84d02676d65f650a342e42425b2508050f7a461bd241723a01335a95",
+  "actual_fields": {
+    "H1": {
+      "quantifier": "any"
+    }
+  },
+  "overall_system_complete": false
+}

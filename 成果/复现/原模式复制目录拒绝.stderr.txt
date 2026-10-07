@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "F:\ITS比赛\scripts\verify_experiment.py", line 280, in <module>
+    verify(job, archived=args.archive)
+  File "F:\ITS比赛\scripts\verify_experiment.py", line 63, in verify
+    raise ValueError(f"{run['name']}/{name}在运行后改变")
+ValueError: baseline/result/SpdLinkVeh.tsd在运行后改变

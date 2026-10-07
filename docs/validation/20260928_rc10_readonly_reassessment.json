@@ -1,0 +1,279 @@
+{
+  "kind": "offline_read_only_reassessment",
+  "original_source_commit": "7d622906e5455ec9dd5c37d9f6a4cb5e82f9a414",
+  "original_dispatch_status": "completed",
+  "original_validator_status": "verified",
+  "current_status": "incomplete",
+  "conclusion_check": {
+    "version": "measured-conclusion-v2",
+    "status": "needs_review",
+    "costs": [
+      {
+        "ref": "20260928_011930_f0fe59:parking_1",
+        "run": "parking_1",
+        "demand_factor": 1.0,
+        "roads": [
+          "七东线"
+        ],
+        "constraint_passed": false,
+        "violations": [
+          "候选区域area_2耗时增幅超过0.5%：其他区域改善不能抵消"
+        ],
+        "core_time_change_pct": -53.98640521690741,
+        "core_net_oversaturated_km": 0.0,
+        "neighbor_time_change_pct": -0.5125385510800995,
+        "neighbor_net_oversaturated_km": 0.05599999999999916,
+        "network_time_change_pct": -0.087206633709358,
+        "network_net_oversaturated_km": 0.6400000000001,
+        "neighbor_new_oversaturated_km": 0.056,
+        "network_new_oversaturated_km": null,
+        "has_measured_cost": true
+      },
+      {
+        "ref": "20260928_011930_a1431b:S1_parking",
+        "run": "S1_parking",
+        "demand_factor": 1.0,
+        "roads": [
+          "长江村路"
+        ],
+        "constraint_passed": true,
+        "violations": [],
+        "core_time_change_pct": -31.498713743899877,
+        "core_net_oversaturated_km": 0.0,
+        "neighbor_time_change_pct": 1.4973412265639752e-05,
+        "neighbor_net_oversaturated_km": 0.0,
+        "network_time_change_pct": -0.005958321446231096,
+        "network_net_oversaturated_km": 0.0,
+        "neighbor_new_oversaturated_km": 0,
+        "network_new_oversaturated_km": null,
+        "has_measured_cost": true
+      },
+      {
+        "ref": "20260928_011930_a1431b:S2_oneway",
+        "run": "S2_oneway",
+        "demand_factor": 1.0,
+        "roads": [],
+        "constraint_passed": false,
+        "violations": [
+          "neighbor路段行驶时间增幅超过0.5%",
+          "邻区新增过饱和有向里程超过0.1km"
+        ],
+        "core_time_change_pct": -84.76873746133626,
+        "core_net_oversaturated_km": -0.984,
+        "neighbor_time_change_pct": 171.89852158658633,
+        "neighbor_net_oversaturated_km": 0.70854,
+        "network_time_change_pct": -0.039409309154680994,
+        "network_net_oversaturated_km": 6.897540000000163,
+        "neighbor_new_oversaturated_km": 1.03054,
+        "network_new_oversaturated_km": null,
+        "has_measured_cost": true
+      },
+      {
+        "ref": "20260928_011930_a1431b:S3_combined",
+        "run": "S3_combined",
+        "demand_factor": 1.0,
+        "roads": [
+          "长江村路"
+        ],
+        "constraint_passed": false,
+        "violations": [
+          "neighbor路段行驶时间增幅超过0.5%",
+          "邻区新增过饱和有向里程超过0.1km"
+        ],
+        "core_time_change_pct": -85.52540605366869,
+        "core_net_oversaturated_km": -0.984,
+        "neighbor_time_change_pct": 171.89852158658633,
+        "neighbor_net_oversaturated_km": 0.70854,
+        "network_time_change_pct": -0.03955243684344856,
+        "network_net_oversaturated_km": 6.897540000000163,
+        "neighbor_new_oversaturated_km": 1.03054,
+        "network_new_oversaturated_km": null,
+        "has_measured_cost": true
+      }
+    ],
+    "executed_policies": [
+      {
+        "ref": "20260928_011930_f0fe59:parking_1",
+        "run": "parking_1",
+        "roads": [
+          "七东线"
+        ],
+        "parking_levels": [
+          1
+        ],
+        "closed_directions": [],
+        "label": "停车1级"
+      },
+      {
+        "ref": "20260928_011930_a1431b:S1_parking",
+        "run": "S1_parking",
+        "roads": [
+          "长江村路"
+        ],
+        "parking_levels": [
+          2
+        ],
+        "closed_directions": [],
+        "label": "停车2级"
+      },
+      {
+        "ref": "20260928_011930_a1431b:S2_oneway",
+        "run": "S2_oneway",
+        "roads": [
+          "长江村路"
+        ],
+        "parking_levels": [],
+        "closed_directions": [
+          [
+            3237,
+            3236
+          ]
+        ],
+        "label": "无停车等级变更＋单向禁行"
+      },
+      {
+        "ref": "20260928_011930_a1431b:S3_combined",
+        "run": "S3_combined",
+        "roads": [
+          "长江村路"
+        ],
+        "parking_levels": [
+          2
+        ],
+        "closed_directions": [
+          [
+            3237,
+            3236
+          ]
+        ],
+        "label": "停车2级＋单向禁行"
+      }
+    ],
+    "issues": [
+      {
+        "code": "executed_parking_level",
+        "field": "summary",
+        "refs": [
+          "20260928_011930_a1431b:S1_parking"
+        ],
+        "quote": "停车1级",
+        "message": "该实测场景实际执行停车2级，文字写成1级；S1/S2/S3是场景编号，不是停车等级。",
+        "job_id": "20260928_011930_a1431b",
+        "ordinal": 4
+      },
+      {
+        "code": "zero_measured_cost",
+        "field": "summary",
+        "refs": [
+          "20260928_011930_a1431b:S1_parking"
+        ],
+        "quote": "代价0",
+        "message": "实际存在正代价，极小增加仍应保留；可说明接近零，不能直接写代价为零。",
+        "job_id": "20260928_011930_a1431b",
+        "ordinal": 4
+      },
+      {
+        "code": "executed_parking_level",
+        "field": "next_check",
+        "refs": [
+          "20260928_011930_a1431b:S1_parking"
+        ],
+        "quote": "停车1级",
+        "message": "该实测场景实际执行停车2级，文字写成1级；S1/S2/S3是场景编号，不是停车等级。",
+        "job_id": "20260928_011930_a1431b",
+        "ordinal": 4
+      },
+      {
+        "code": "executed_parking_level",
+        "field": "programme_summary",
+        "refs": [
+          "20260928_011930_a1431b:S1_parking",
+          "20260928_011930_a1431b:S3_combined"
+        ],
+        "quote": "停车1级",
+        "message": "该实测场景实际执行停车2级，文字写成1级；S1/S2/S3是场景编号，不是停车等级。",
+        "job_id": "20260928_011930_a1431b",
+        "ordinal": 4
+      },
+      {
+        "code": "zero_measured_cost",
+        "field": "programme_summary",
+        "refs": [
+          "20260928_011930_a1431b:S1_parking",
+          "20260928_011930_a1431b:S3_combined"
+        ],
+        "quote": "代价为0",
+        "message": "实际存在正代价，极小增加仍应保留；可说明接近零，不能直接写代价为零。",
+        "job_id": "20260928_011930_a1431b",
+        "ordinal": 4
+      },
+      {
+        "code": "executed_parking_level",
+        "field": "hypothesis_updates:H1",
+        "refs": [
+          "20260928_011930_a1431b:S1_parking",
+          "20260928_011930_a1431b:S3_combined"
+        ],
+        "quote": "停车1级",
+        "message": "该实测场景实际执行停车2级，文字写成1级；S1/S2/S3是场景编号，不是停车等级。",
+        "job_id": "20260928_011930_a1431b",
+        "ordinal": 4
+      },
+      {
+        "code": "zero_measured_cost",
+        "field": "hypothesis_updates:H1",
+        "refs": [
+          "20260928_011930_a1431b:S1_parking",
+          "20260928_011930_a1431b:S3_combined"
+        ],
+        "quote": "代价为0",
+        "message": "实际存在正代价，极小增加仍应保留；可说明接近零，不能直接写代价为零。",
+        "job_id": "20260928_011930_a1431b",
+        "ordinal": 4
+      },
+      {
+        "code": "executed_parking_level",
+        "field": "programme_updates:H1",
+        "refs": [
+          "20260928_011930_a1431b:S1_parking"
+        ],
+        "quote": "停车1级",
+        "message": "该实测场景实际执行停车2级，文字写成1级；S1/S2/S3是场景编号，不是停车等级。",
+        "job_id": "20260928_011930_a1431b",
+        "ordinal": 4
+      }
+    ],
+    "hypothesis_gaps": [],
+    "scope": "核对已提供的配对指标、明确停车等级、零代价表述及已知未测量项；S1/S2/S3仅为场景编号。检查不覆盖任意语言，未发现冲突不等于已证明所有解释。批次分配不能证明动态排队回堵或零风险。"
+  },
+  "whole_verifier_rejection": "模型结论没有通过实测代价与未测量项核对",
+  "original_file_sha256": {
+    "智能体实验\\dispatches\\20260928_011930_f0fe59.json": "307be35a92d32f627c30812f935afdee6b3799570c6db79349d02bf4709709e7",
+    "智能体实验\\programmes\\20260928_011930_f0fe59\\result.json": "307be35a92d32f627c30812f935afdee6b3799570c6db79349d02bf4709709e7",
+    "智能体实验\\validation_rc10_mixed_20260928\\acceptance.json": "42beb34563eadc05803b7496564910b8244922a8b24cbbd1f621a117e3decc1c",
+    "智能体实验\\jobs\\20260928_011930_f0fe59\\diagnosis.json": "07550e37336fa69fba904355ec58ddca5a8a0598fc46b9d9b56b47fb5bbd0a33",
+    "智能体实验\\jobs\\20260928_011930_f0fe59\\dispatch.json": "307be35a92d32f627c30812f935afdee6b3799570c6db79349d02bf4709709e7",
+    "智能体实验\\jobs\\20260928_011930_f0fe59\\plan.json": "949dca415ab2ed357d7c6d5774a7aa584051f0c71529857b621649520fdd1411",
+    "智能体实验\\jobs\\20260928_011930_f0fe59\\programme_plan.json": "80b7cfbe6cf31069d49d0b300a8b704ea9c54f764940b4abcd3dd472b25ff882",
+    "智能体实验\\jobs\\20260928_011930_f0fe59\\scopes.json": "f477aa55770140205e1deb8aff66758d935d02fb1e235543987ac8f3173c819d",
+    "智能体实验\\jobs\\20260928_011930_f0fe59\\source_inputs.json": "54d7003098197568f7f78476ea88fabefaf49b21ae67df917a8028ab260b02e4",
+    "智能体实验\\jobs\\20260928_011930_f0fe59\\state.json": "1cda56ecfddf0fd046365cc6fb0dac800bd98aeef69dd80082b49df5951d50e8",
+    "智能体实验\\jobs\\20260928_011930_f0fe59\\events.jsonl": "69248b25e961cd11415d546bb5c9d42145051ad61632fce17f6e0a9c56daf941",
+    "智能体实验\\jobs\\20260928_011930_a1431b\\diagnosis.json": "663a004fb1561e8961062ca1d3978f3081471e4ca8eb4e4a00b83468987b85ee",
+    "智能体实验\\jobs\\20260928_011930_a1431b\\dispatch.json": "307be35a92d32f627c30812f935afdee6b3799570c6db79349d02bf4709709e7",
+    "智能体实验\\jobs\\20260928_011930_a1431b\\factorial_protocol.json": "a2ae736b28d57decf70bfbe4ebe7bb54006670787ef441951c3b3740cbbc2678",
+    "智能体实验\\jobs\\20260928_011930_a1431b\\hard_access_profile.json": "ed420a70fab8c7b3f0b96ff87410829162f32abfa9be2fae0ba5a4df74deb5b0",
+    "智能体实验\\jobs\\20260928_011930_a1431b\\knowledge_used.json": "368a89233557dcb71c2f5d9c2b9b27d7182966dfeff73234e2761a4d1a972d09",
+    "智能体实验\\jobs\\20260928_011930_a1431b\\oneway_target_catalogue.json": "a392687e659a864a852603eb37c5554947ae89c2eda4d9561aa40549c50ff556",
+    "智能体实验\\jobs\\20260928_011930_a1431b\\plan.json": "fd7d1e1884cb84737969cc56527d7d68e3e21de12d551646990924b170eca1fc",
+    "智能体实验\\jobs\\20260928_011930_a1431b\\programme_plan.json": "80b7cfbe6cf31069d49d0b300a8b704ea9c54f764940b4abcd3dd472b25ff882",
+    "智能体实验\\jobs\\20260928_011930_a1431b\\scopes.json": "f625100d229f1f16610d08a880ae70f629eabf2172a3a75fe10d7c596c627867",
+    "智能体实验\\jobs\\20260928_011930_a1431b\\source_inputs.json": "54d7003098197568f7f78476ea88fabefaf49b21ae67df917a8028ab260b02e4",
+    "智能体实验\\jobs\\20260928_011930_a1431b\\state.json": "bc1c4e44fd492fd24790d35665321fe533c3476c765c89b046ec099f2d311e33",
+    "智能体实验\\jobs\\20260928_011930_a1431b\\events.jsonl": "e1fd4259e9a7f480c204048b8e0d6962cce7f3d6e4924f3262574367e247221e"
+  },
+  "original_bytes_unchanged": true,
+  "new_model_calls": 0,
+  "new_native_scenes": 0,
+  "meaning": "新校验器读取RC10原回复，拒绝误写停车等级与零代价；不是修正后模型回复，也没有继续旧任务。"
+}

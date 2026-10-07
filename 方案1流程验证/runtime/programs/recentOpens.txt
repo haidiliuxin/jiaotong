@@ -1,0 +1,15 @@
+{
+    "Recent_Project_Info": [
+        {
+            "name": "教学案例1",
+            "path": "F:/ITS比赛/TranStar城市交通版V4.8 - 试用版/examples/教学案例1",
+            "type": "City"
+        },
+        {
+            "name": "南京",
+            "path": "F:/ITS比赛/南京",
+            "type": "City"
+        }
+    ],
+    "version": 1
+}

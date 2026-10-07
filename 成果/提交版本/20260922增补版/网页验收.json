@@ -1,0 +1,139 @@
+{
+  "status": "passed",
+  "started": "2026-09-21T21:34:12.984030+00:00",
+  "scope": "同机便携目录的既有任务核验，不是异机实跑",
+  "new_model_calls": 0,
+  "observed_model_calls": 28,
+  "job_id": "20260922_052448_fa12d2",
+  "job": "F:\\ITS比赛\\工作材料\\便携解压验收\\20260922 运行包 v4\\智能体实验\\jobs\\20260922_052448_fa12d2",
+  "root": "F:\\ITS比赛\\工作材料\\便携解压验收\\20260922 运行包 v4",
+  "environment": "F:\\ITS比赛\\工作材料\\便携解压验收\\20260922环境证据v4\\environment_verification.json",
+  "environment_sha256": "50698c0a74ba46c2adc293a57a8e5a071479dc6524a07393c34477ba7de2e71a",
+  "script_sha256": "c912d7ff0e6e7da3a828fa0d7b5d73f7d11d11f2313b7b0f12b204cacfd892b8",
+  "code_commit": "5c9332494c08da354dc05a1868a9495ceb54d2a7",
+  "commands": [
+    {
+      "argv": [
+        "F:\\ITS比赛\\工作材料\\便携解压验收\\20260922 运行包 v4\\python\\python.exe",
+        "-B",
+        "F:\\ITS比赛\\工作材料\\便携解压验收\\20260922 运行包 v4\\scripts\\verify_experiment.py",
+        "F:\\ITS比赛\\工作材料\\便携解压验收\\20260922 运行包 v4\\智能体实验\\jobs\\20260922_052448_fa12d2",
+        "--seal"
+      ],
+      "returncode": 0,
+      "finished": "2026-09-21T21:34:39.609164+00:00"
+    },
+    {
+      "argv": [
+        "F:\\ITS比赛\\工作材料\\便携解压验收\\20260922 运行包 v4\\python\\python.exe",
+        "-B",
+        "F:\\ITS比赛\\工作材料\\便携解压验收\\20260922 运行包 v4\\scripts\\verify_experiment.py",
+        "F:\\ITS比赛\\工作材料\\便携解压验收\\20260922 运行包 v4\\智能体实验\\jobs\\20260922_052448_fa12d2",
+        "--archive"
+      ],
+      "returncode": 0,
+      "finished": "2026-09-21T21:34:46.231420+00:00"
+    }
+  ],
+  "initial_integrity": {
+    "passed": true,
+    "kind": "portable_transtar_runtime_v1",
+    "files": 16094,
+    "bytes": 1721744460,
+    "code_commit": "5c9332494c08da354dc05a1868a9495ceb54d2a7",
+    "python_version": "3.12.6 (tags/v3.12.6:a4a2d2b, Sep  6 2024, 20:11:23) [MSC v.1940 64 bit (AMD64)]",
+    "manifest_sha256": "f9c896b81047e6d731ec5c921e4373324cedfee6fb0d670da5b2e0b9e8d466e2",
+    "new_model_calls": 0,
+    "meaning": "不可变文件完整性检查；不是数字签名、模型授权检查或真实求解证明"
+  },
+  "source_inputs_unchanged": true,
+  "verification": {
+    "passed": true,
+    "completed_scenarios": 4,
+    "module_executions": 28,
+    "scope_sizes": {
+      "core": 3,
+      "neighbor": 39,
+      "network": 32060
+    },
+    "repeat_arrays_exact": {
+      "speed_kmh": true,
+      "flow_pcu_h": true,
+      "vc": true,
+      "time_s": true
+    },
+    "verified_runs": [
+      {
+        "scenario": "baseline",
+        "modules": 7,
+        "result_rows": {
+          "speed_kmh": 32981,
+          "flow_pcu_h": 32981,
+          "vc": 32981,
+          "time_s": 32981
+        },
+        "input_difference_files": [],
+        "car_od_factor": 1.0,
+        "internal_od_factor": 1.0
+      },
+      {
+        "scenario": "parking_1",
+        "modules": 7,
+        "result_rows": {
+          "speed_kmh": 32981,
+          "flow_pcu_h": 32981,
+          "vc": 32981,
+          "time_s": 32981
+        },
+        "input_difference_files": [
+          "data/manageL.txt"
+        ],
+        "car_od_factor": 1.0,
+        "internal_od_factor": 1.0
+      },
+      {
+        "scenario": "parking_2",
+        "modules": 7,
+        "result_rows": {
+          "speed_kmh": 32981,
+          "flow_pcu_h": 32981,
+          "vc": 32981,
+          "time_s": 32981
+        },
+        "input_difference_files": [
+          "data/manageL.txt"
+        ],
+        "car_od_factor": 1.0,
+        "internal_od_factor": 1.0
+      },
+      {
+        "scenario": "baseline_repeat",
+        "modules": 7,
+        "result_rows": {
+          "speed_kmh": 32981,
+          "flow_pcu_h": 32981,
+          "vc": 32981,
+          "time_s": 32981
+        },
+        "input_difference_files": [],
+        "car_od_factor": 1.0,
+        "internal_od_factor": 1.0
+      }
+    ],
+    "limitations": "只核验保存的实验与输入输出证据，不证明现实标定有效或全部草案已实现",
+    "portable_archive_verified": true
+  },
+  "job_archive_sha256": "8a08eecd212abf16adc57f1357de23aebecd25f6d9bfa8c52da8bd5cc9af8b4d",
+  "final_integrity": {
+    "passed": true,
+    "kind": "portable_transtar_runtime_v1",
+    "files": 16094,
+    "bytes": 1721744460,
+    "code_commit": "5c9332494c08da354dc05a1868a9495ceb54d2a7",
+    "python_version": "3.12.6 (tags/v3.12.6:a4a2d2b, Sep  6 2024, 20:11:23) [MSC v.1940 64 bit (AMD64)]",
+    "manifest_sha256": "f9c896b81047e6d731ec5c921e4373324cedfee6fb0d670da5b2e0b9e8d466e2",
+    "new_model_calls": 0,
+    "meaning": "不可变文件完整性检查；不是数字签名、模型授权检查或真实求解证明"
+  },
+  "finished": "2026-09-21T21:35:01.681191+00:00"
+}

@@ -1,0 +1,29 @@
+{
+  "kind": "incomplete_portable_programme_snapshot_v1",
+  "programme_status": "incomplete",
+  "validator_status": "failed",
+  "source_commit": "07c7880cca43f72b6384cb17e7cba08813271ebc",
+  "job_ids": [
+    "20260927_220409_164a26",
+    "20260927_220409_7adeea"
+  ],
+  "model_calls": 4,
+  "known_tokens": 25779,
+  "native_scenes": 3,
+  "native_modules": 21,
+  "governance_executed": true,
+  "governance_eligible": false,
+  "recommendation": "baseline",
+  "study_handoff_accepted": true,
+  "second_group_baseline_executed": true,
+  "second_group_governance_executed": false,
+  "rejection_code": "premature_programme_review",
+  "public_proposal_captured_in_full": true,
+  "second_group_review_metadata_missing": true,
+  "meaning": "原件字节快照：停车已执行但候选不合格，复核及转组成功；第二组建立新基准后选点回复被拒，未执行治理。不是完整任务或后续修复通过证明。runtime副本保留在原目录，未入包。",
+  "original_files": 2328,
+  "all_original_bytes_equal": true,
+  "zip_bytes": 169002185,
+  "zip_sha256": "ba5e3b7d2ea6da018a95076c001d149ee5dba200e48ae4ac0dae2034ce2856a7",
+  "zip_path": "20260927_rc4_mixed_incomplete.zip"
+}

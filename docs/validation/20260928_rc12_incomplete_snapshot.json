@@ -1,0 +1,21 @@
+{
+  "kind": "failed_programme_raw_snapshot_v1",
+  "source_commit": "14b47afbd4b9e33fa5b57add2e025b2d090b4df4",
+  "job_ids": [
+    "20260928_025217_e6d00a",
+    "20260928_025217_53291a"
+  ],
+  "programme_status": "incomplete",
+  "validator_status": "failed",
+  "model_calls": 4,
+  "known_tokens": 28201,
+  "unknown_usage": 0,
+  "native_scenes": 3,
+  "top_level_modules": 21,
+  "nested_vehicle1_calls": 20,
+  "meaning": "保留原始失败、错误解释、未测部分和全部已完成原件；不是完整通过或物理异机验收。运行副本留在原目录。",
+  "original_files": 2329,
+  "original_bytes_unchanged": true,
+  "zip_bytes": 169023733,
+  "zip_sha256": "86565b55c5c309912d66f252e96d2ae64ad6a89b37660b501dd04d5ccad7fd19"
+}

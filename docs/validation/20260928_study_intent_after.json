@@ -1,0 +1,158 @@
+{
+  "kind": "offline_study_intent_after_fix",
+  "source_base_commit": "c13f602d7b59eeae387b0d6b566613be19468f3d",
+  "cases": [
+    {
+      "case": "ordered_observation",
+      "request": "长江村路先做诊断，再研究停车治理；最多3次仿真，不复跑",
+      "model_boundary": "synthetic",
+      "outcome": {
+        "status": "ready",
+        "scenarios": [
+          "parking"
+        ],
+        "minimum_runs": [
+          2
+        ],
+        "compilation": {
+          "version": "plan-compilation-v2",
+          "proposed_studies": 1,
+          "executable_studies": 1,
+          "source_studies": [
+            {
+              "title": "停车治理与反馈",
+              "study": "standard",
+              "strategies": [
+                "parking"
+              ],
+              "rationale": "比较停车、交通组织单项及组合，检查邻区影响",
+              "target_ref": "auto",
+              "target_method": "新基准自动诊断"
+            }
+          ],
+          "actions": [],
+          "notes": [],
+          "requirements": {
+            "regional_comparison": 1,
+            "regions_per_parking_group": 1,
+            "strength_comparison": false,
+            "diagnosis_only": false,
+            "parking_groups": "一个停车组内根据新基准选择不同候选区",
+            "required_parking_policies_per_demand": 1,
+            "baseline_sharing": "同一停车组各需求只建一次新基准；不同适配器不共享",
+            "note": "区域数量是后续实际治理位置的数量，不是重复建立相同自动诊断组。"
+          }
+        }
+      }
+    },
+    {
+      "case": "independent_diagnosis",
+      "request": "长江村路需要独立体检，并另做停车治理，两组单独跑新基准；最多3次仿真，不复跑",
+      "model_boundary": "synthetic",
+      "outcome": {
+        "status": "ready",
+        "scenarios": [
+          "diagnosis",
+          "parking"
+        ],
+        "minimum_runs": [
+          1,
+          2
+        ],
+        "compilation": {
+          "version": "plan-compilation-v2",
+          "proposed_studies": 2,
+          "executable_studies": 2,
+          "source_studies": [
+            {
+              "title": "路网体检",
+              "study": "diagnosis",
+              "strategies": [],
+              "rationale": "比较停车、交通组织单项及组合，检查邻区影响",
+              "target_ref": "auto",
+              "target_method": "新基准自动诊断"
+            },
+            {
+              "title": "停车治理与反馈",
+              "study": "standard",
+              "strategies": [
+                "parking"
+              ],
+              "rationale": "比较停车、交通组织单项及组合，检查邻区影响",
+              "target_ref": "auto",
+              "target_method": "新基准自动诊断"
+            }
+          ],
+          "actions": [],
+          "notes": [],
+          "requirements": {
+            "regional_comparison": 1,
+            "regions_per_parking_group": 1,
+            "strength_comparison": false,
+            "diagnosis_only": false,
+            "parking_groups": "一个停车组内根据新基准选择不同候选区",
+            "required_parking_policies_per_demand": 1,
+            "baseline_sharing": "同一停车组各需求只建一次新基准；不同适配器不共享",
+            "note": "区域数量是后续实际治理位置的数量，不是重复建立相同自动诊断组。"
+          }
+        }
+      }
+    },
+    {
+      "case": "different_road_intents",
+      "request": "长江村路只做体检；红景路比较停车治理；最多3次仿真，不复跑",
+      "model_boundary": "synthetic",
+      "outcome": {
+        "status": "ready",
+        "scenarios": [
+          "diagnosis",
+          "parking"
+        ],
+        "minimum_runs": [
+          1,
+          2
+        ],
+        "compilation": {
+          "version": "plan-compilation-v2",
+          "proposed_studies": 2,
+          "executable_studies": 2,
+          "source_studies": [
+            {
+              "title": "路网体检",
+              "study": "diagnosis",
+              "strategies": [],
+              "rationale": "比较停车、交通组织单项及组合，检查邻区影响",
+              "target_ref": "auto",
+              "target_method": "新基准自动诊断"
+            },
+            {
+              "title": "停车治理与反馈",
+              "study": "standard",
+              "strategies": [
+                "parking"
+              ],
+              "rationale": "比较停车、交通组织单项及组合，检查邻区影响",
+              "target_ref": "auto",
+              "target_method": "新基准自动诊断"
+            }
+          ],
+          "actions": [],
+          "notes": [],
+          "requirements": {
+            "regional_comparison": 1,
+            "regions_per_parking_group": 1,
+            "strength_comparison": false,
+            "diagnosis_only": false,
+            "parking_groups": "按指定道路分别研究",
+            "required_parking_policies_per_demand": 1,
+            "baseline_sharing": "同一停车组各需求只建一次新基准；不同适配器不共享",
+            "note": "区域数量是后续实际治理位置的数量，不是重复建立相同自动诊断组。"
+          }
+        }
+      }
+    }
+  ],
+  "paid_calls": 0,
+  "new_native_scenes": 0,
+  "overall_complete": false
+}

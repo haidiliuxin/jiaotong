@@ -1,0 +1,101 @@
+{
+  "checked_at": "2026-09-27T05:39:14.115978+00:00",
+  "development_base": "13076dea",
+  "evidence_protocol": "question-evidence-v1",
+  "overall_complete": false,
+  "python": {
+    "command": "python -X utf8 -m unittest discover -s tests",
+    "tests": 292,
+    "passed": true,
+    "log": "tmp/hypothesis_checks.stdout.log",
+    "followup": "test_planning_attempt.py: 6 passed after malformed-ledger handling"
+  },
+  "node": {
+    "passed": true,
+    "scripts": [
+      "tests/test_dispatch_ui.cjs",
+      "tests/test_planner_view.cjs",
+      "tests/test_map_view.cjs"
+    ]
+  },
+  "syntax": {
+    "passed": true,
+    "files": [
+      "dispatch.js",
+      "planner_view.js",
+      "app.js",
+      "map.js",
+      "map_view.js"
+    ]
+  },
+  "browser": {
+    "service": "http://127.0.0.1:8770/",
+    "failure_kept_after_polling": true,
+    "local_preflight_requests": [
+      {
+        "id": "preview_d7e85853698e48439accba9be75bf595",
+        "requested": false,
+        "status": "validation_failed"
+      },
+      {
+        "id": "preview_b8d291f14d5a405aa8c4083f66f42ba3",
+        "requested": false,
+        "status": "validation_failed"
+      }
+    ],
+    "new_native_calls": 0,
+    "new_model_calls": 0,
+    "fixture_is_synthetic": true,
+    "fixture_screenshot": "20260927_hypothesis_panel_fixture.png",
+    "failure_screenshot": "20260927_hypothesis_failure_persistence.png",
+    "map_caption_matches_selected_metric": true,
+    "map_legacy_replay_screenshot": "20260927_hypothesis_map_legacy_replay.png"
+  },
+  "failed_live_attempt": {
+    "status": "failed",
+    "new_model_calls": 1,
+    "known_tokens": 2819,
+    "unknown_usage": 0,
+    "new_native_calls": 0,
+    "native_launched": false,
+    "returned_status": "needs_input",
+    "invalid_placeholder_fields": [
+      "goal",
+      "reason",
+      "missing"
+    ],
+    "experiments": 0,
+    "retried": false,
+    "service_cause": "unknown"
+  },
+  "same_origin_attempt_history_guard": {
+    "passed": true,
+    "foreign_origin_status": 403
+  },
+  "readonly_legacy_audit": {
+    "job_id": "20260927_115748_257465",
+    "archived": true,
+    "write": false,
+    "passed": true,
+    "note": "Checked earlier in this development stage; not a new v3/evidence-v1 native run"
+  },
+  "source_records": [
+    {
+      "path": "智能体实验/validation_hypothesis_planning_20260927/acceptance.json",
+      "sha256": "f89708f2328e2653b4314d7cd01a0868dc9f2f82566ed136ca0d6fffbcda31ed"
+    },
+    {
+      "path": "智能体实验/validation_hypothesis_planning_20260927/plan.json",
+      "sha256": "42bd67d41509dd50d89fea44755fdbd97af1a1658ffd796ba5b1c24573d03e95"
+    },
+    {
+      "path": "智能体实验/planning_attempts/preview_ec78c82b281640f88f52927c8139d422.json",
+      "sha256": "4845a16e79c88f55f1344d9dccdba07559fea0feafd1010de833a89acc61f9ae"
+    }
+  ],
+  "outstanding": [
+    "最新跨区域＋假设复核的真实完整闭环及封存审计",
+    "最新版本异机实跑；不能用旧任务或合成UI补足",
+    "单向/禁转与跨策略组的结构化假设复核尚待实现"
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "private": true,
+  "description": "Optional real-browser video recording for the ITS competition demo",
+  "devDependencies": { "playwright-core": "1.59.1" }
+}

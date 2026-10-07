@@ -1,0 +1,87 @@
+{
+  "kind": "separate_manual_review_of_original_model_and_native_results",
+  "source_commit": "dee47137d76eb07721ad5a0aef186901ead06af5",
+  "job_ids": [
+    "20260928_041115_874b70",
+    "20260928_041115_fa9f86"
+  ],
+  "raw_status_preserved": {
+    "validator": "verified",
+    "programme": "completed"
+  },
+  "executed_loop": "complete",
+  "policy_recommendation_consistent_with_measured_constraints": true,
+  "language_and_hypothesis_review": "needs_review",
+  "overall_product": "not_complete",
+  "paid_requests": 5,
+  "reported_tokens": 44610,
+  "correction_used": false,
+  "findings": [
+    {
+      "id": "first_study_rejected",
+      "scope": "七东线固定核心与候选子区分别核对",
+      "core_time_pct": -53.98640521690741,
+      "area_1_time_pct": -55.98297260453955,
+      "area_2_time_pct": 34.4988950511751,
+      "neighbor_new_oversaturated_km": 0.056,
+      "recommendation": "baseline",
+      "assessment": "核心改善真实；area_2超限导致拒绝，不把0.056km阈值内代价说成零"
+    },
+    {
+      "id": "second_study_comparison",
+      "scope": "长江村路自身Vehicle1新基准、需求1",
+      "parking_core_time_pct": -31.498713743899877,
+      "parking_neighbor_time_pct": 1.4973412265639752e-05,
+      "oneway_core_time_pct": -84.76873746133626,
+      "combined_core_time_pct": -85.52540605366869,
+      "oneway_and_combined_neighbor_time_pct": 171.89852158658633,
+      "oneway_and_combined_neighbor_new_oversaturated_km": 1.03054,
+      "recommendation": "S1_parking",
+      "assessment": "停车2级通过；单向与组合因邻区代价被拒；不跨组相加收益"
+    }
+  ],
+  "remaining_issues": [
+    {
+      "id": "hypothesis_scope_drift",
+      "hypothesis_id": "H1",
+      "original": "七东线停车治理能否在既有需求下降低该路通行代价",
+      "model_judgment": "contradicted",
+      "model_explanation": "未能证明停车治理降低通行代价且不带来周边回退，判断为未获支持。",
+      "concern": "原问题没有把通过周边约束作为降低通行代价的定义；模型在最终解释中加了条件。实测有核心耗时改善和区域回退，收益命题与可推荐性不能合成同一判断。应在规划时冻结具体检验口径。"
+    },
+    {
+      "id": "counterexample_not_resolved",
+      "hypothesis_id": "H3",
+      "original": "两组治理均不产生不可接受周边回退",
+      "model_judgment": "unresolved",
+      "concern": "已测单向与组合提供明确超限反例；模型解释保留了代价，但仅称整体假设被弱化。保守的不确定不等于已完成原命题的严格判断。"
+    },
+    {
+      "id": "selection_rationale_not_measured",
+      "ordinal": 3,
+      "original": "单向可消除双向冲突并压缩交叉口排队。",
+      "concern": "这是模型的选试验理由，当前批次观测不测动态排队，不能作为实测机制结论。"
+    },
+    {
+      "id": "flow_unit_label",
+      "ordinal": 3,
+      "concern": "模型把baseline_car_flow 946.55的单位写为pcu/h；该字段是小汽车veh/h，不能冒充全车型汇总流量。"
+    },
+    {
+      "id": "untested_upper_bound",
+      "ordinal": 1,
+      "concern": "测试停车1级不建立收益上限；没有同方向2级配对，不能据此证明强度优劣。"
+    },
+    {
+      "id": "map_oneway_missing_marker",
+      "concern": "原RC15地图只按from_node/to_node匹配措施，漏过closed_direction，真实单向场景显示治理0。后续源码修复与原冻结包分开验证。"
+    }
+  ],
+  "limits": [
+    "两个引擎各自建立新基准，不能共享或相加收益",
+    "仅一个固定需求与这次已测候选，不证明全局最优或需求稳健性",
+    "交接与最终有界修正本次未触发，不能记为其真实故障恢复验证",
+    "同机便携实测，不是物理异机验收",
+    "不修改原始状态、回复和通过证书；自动核验只在其公开覆盖范围内通过"
+  ]
+}

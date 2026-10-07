@@ -1,0 +1,43 @@
+{
+  "passed": true,
+  "actual_paid_requests": 0,
+  "new_native_scenes": 0,
+  "overall_system_complete": false,
+  "source": {
+    "port": 8829,
+    "empty": true,
+    "capabilities_match": true,
+    "script_matches": true
+  },
+  "offline_preview": {
+    "port": 8830,
+    "write_status": 405,
+    "fixture_sha256": "0b239a3e84d02676d65f650a342e42425b2508050f7a461bd241723a01335a95"
+  },
+  "services": {
+    "preview_port": 8830,
+    "preview_pid": 35312,
+    "source_port": 8829,
+    "source_pid": 42584
+  },
+  "browser": {
+    "tool": "cua_repl",
+    "source_tab": 53,
+    "offline_tab": 52,
+    "blank_request": true,
+    "geometry_only": 32060,
+    "checked": [
+      "H1量词明确选择any",
+      "四个原问题可展开且不改写",
+      "H2/H3全称保持",
+      "原问题与字段修正分列",
+      "合成边界固定可见"
+    ],
+    "console_errors": [],
+    "screenshot": "docs\\validation\\20260928_quantifier_patch_ui.png",
+    "screenshot_sha256": "296145bdc6af9dee784c00577d1e63f9bb15d3aa06c9964c290f325198a449e9"
+  },
+  "original_records_unchanged": 79,
+  "original_locks_bytes_unchanged": 7,
+  "rc19_still_failed": true
+}

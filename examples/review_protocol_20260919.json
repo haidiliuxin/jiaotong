@@ -1,0 +1,14 @@
+{
+  "version": "retrospective-review-v1",
+  "purpose": "历史档案再分析；预先固定本次扫描网格，但数据结果已知，不是盲测、独立样本或重新调用模型",
+  "jobs": ["20260908_100153_bb7198", "20260908_075938_e7444a", "20260911_021806_858461", "20260911_024329_7304a4"],
+  "neighbor_hops": [1, 2, 3],
+  "one_at_a_time_limits": {
+    "max_neighbor_time_increase_pct": [0, 0.25, 1],
+    "max_network_time_increase_pct": [0, 0.05, 0.2],
+    "max_new_oversaturated_km": [0, 0.05, 0.2]
+  },
+  "tolerance_multipliers": [0, 0.1, 1, 10],
+  "scope_rule": "核心和所有已测措施保持原样，只重算1/2/3跳邻区；不重新选点、不推断未测措施；阈值逐项变化，非全因子",
+  "warnings": "全网新增过饱和、恶化路段耗时和最差路段作为披露项，不事后加入原任务硬约束"
+}

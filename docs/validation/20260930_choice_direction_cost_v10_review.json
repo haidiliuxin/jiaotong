@@ -1,0 +1,80 @@
+{
+  "kind": "choice_direction_cost_v10_stage_review_v1",
+  "date_local": "2026-09-30",
+  "choice_v3_model_only_probe": {
+    "record": "智能体实验/choice_basis_v3_model_probe_20260930_01/probe.json",
+    "sha256": "c769d9b2548bb407e7d2b88622f78a116061b647ce5408271b24c0b2e78701bc",
+    "response_id": "chatcmpl-6abc340132f2139f6a012c35",
+    "requests": 1,
+    "known_tokens": 12380,
+    "status": "accepted",
+    "native_scenarios": 0
+  },
+  "mixed_v3_original_rejection": {
+    "record": "智能体实验/mixed_choice_v3_full_20260930_01/dispatches/20260930_055722_f32ce5.json",
+    "sha256": "bf8cf7d4ca014343b580f5f333273012b22abe55b935ccae75af90d04be81700",
+    "initial_response_id": "chatcmpl-6abc343e56f7019c044aacdf",
+    "direction_response_id": "chatcmpl-6abc34c864d379b9ac94d26e",
+    "requests": 2,
+    "known_tokens": 15817,
+    "native_scenarios": 1,
+    "top_level_modules": 7,
+    "status": "incomplete",
+    "rejection": "direction_reversed",
+    "read_only_v2_shadow": "accepted; actual native closure not executed"
+  },
+  "mixed_v9_original_rejection": {
+    "record": "智能体实验/mixed_direction_v2_full_20260930_01/dispatches/20260930_060715_7fa564.json",
+    "sha256": "126395fbb59ccd6be32e08b41f70c862cf0ea96b30e034ea7b015f889698b5f4",
+    "response_ids": [
+      "chatcmpl-6abc368fbdc57ec23f71f62b",
+      "chatcmpl-6abc371e18f2a82eb868f4f5",
+      "chatcmpl-6abc37ab23278fc273324559"
+    ],
+    "requests": 3,
+    "known_tokens": 35291,
+    "native_scenarios": 2,
+    "top_level_modules": 14,
+    "tested_policy": "area_1 parking level 1",
+    "tested_core_time_change_pct": -23.308694361678317,
+    "tested_neighbor_time_change_pct": -0.18205257806130914,
+    "tested_neighbor_new_oversaturated_km": 0,
+    "tested_policy_constraint_passed": true,
+    "unexecuted_second_candidate": "area_2 parking level 1",
+    "status": "incomplete",
+    "rejection": "measured_conclusion: cost_review_refs",
+    "read_only_v10_shadow": "accepted; second candidate not executed"
+  },
+  "v10_initial_criterion_rejection": {
+    "record": "智能体实验/mixed_cost_v10_full_20260930_01/planning_attempts/preview_10a519d550b84402a025e57668f6c581.json",
+    "sha256": "d06c57513b19c618e3c4598a753094c3081b19dd1e34884897c7901bcf17c380",
+    "response_id": "chatcmpl-6abc39831d2222ea673e6f94",
+    "requests": 1,
+    "known_tokens": 7111,
+    "status": "validation_failed",
+    "validation_code": "invalid_hypothesis_criterion",
+    "issue": "H3 text covers one-way and combination but criterion.policies=traffic_control",
+    "allowed_policies": ["all", "control_and_combined"],
+    "correction_feasible": false,
+    "reason": "complete plan requires all 6 model requests",
+    "native_scenarios": 0
+  },
+  "checks": {
+    "python_unittest_count": 636,
+    "node_groups": 4,
+    "old_rc5_v6_programme_read_only": "passed",
+    "git_diff_check": "passed",
+    "physical_other_computer": "not_performed"
+  },
+  "budget": {
+    "prior_deduplicated_requests": 120,
+    "prior_known_tokens": 1115945,
+    "new_requests": 7,
+    "new_known_tokens": 70599,
+    "cumulative_deduplicated_requests": 127,
+    "cumulative_known_tokens": 1186544,
+    "authorized_request_limit": 684,
+    "authorized_known_token_limit": 4132560,
+    "scope": "Locally retained provider response IDs, deduplicated; not a full account bill"
+  }
+}

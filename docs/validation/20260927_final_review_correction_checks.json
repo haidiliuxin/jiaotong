@@ -1,0 +1,68 @@
+{
+  "kind": "offline_final_review_correction_checks",
+  "commands": [
+    {
+      "label": "python",
+      "command": [
+        "F:\\ITS比赛\\.venv\\Scripts\\python.exe",
+        "-B",
+        "-X",
+        "utf8",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests"
+      ],
+      "returncode": 0,
+      "log": "20260927_final_review_correction_python_tests_verified.log"
+    },
+    {
+      "label": "planner",
+      "command": [
+        "node",
+        "tests/test_planner_view.cjs"
+      ],
+      "returncode": 0,
+      "log": "20260927_final_review_correction_planner_tests_verified.log"
+    },
+    {
+      "label": "dispatch",
+      "command": [
+        "node",
+        "tests/test_dispatch_ui.cjs"
+      ],
+      "returncode": 0,
+      "log": "20260927_final_review_correction_dispatch_tests_verified.log"
+    },
+    {
+      "label": "map",
+      "command": [
+        "node",
+        "tests/test_map_view.cjs"
+      ],
+      "returncode": 0,
+      "log": "20260927_final_review_correction_map_tests_verified.log"
+    }
+  ],
+  "source_sha256": {
+    "scripts/verify_programme.py": "43e9a89d4dea281bc5da437826761b7e6ed6c2aedd5352fa1a688ddb8be07cb1",
+    "tests/test_mixed_controller.py": "37413b8b310810ee53fe0bab0dc7840e4a9803d67d01a24b0d9b0ced0b5e2930",
+    "tests/test_natural_plan.py": "aefc851417f4cc836f63b513d485b24ee7d4d7182a404dc22140013c0aaf1c54",
+    "tests/test_planner_view.cjs": "04ab24d830bbec806af0deb7b1f1b6b8620772d815cff014d51837af34b78a3d",
+    "tests/test_planning_completion.py": "430ea2d4ff8b228761c62ec81611abfaf7436d15f30d60a4cea57060496fe2fd",
+    "traffic_agent/feedback_planner.py": "58cc9a0ddd388de09e459ed5b424b0261f7193c80c5735353367ac69768313c8",
+    "traffic_agent/natural_plan.py": "51bf0c7e19f28f6c485b30784e1e19c9b5ec4c4355c5e22c496e3358204007cb",
+    "traffic_agent/planning_response.py": "f0dd7402588a5caab5377ca9a34ce4b267f34a79b4f42f70e7099e585d0dd158",
+    "traffic_agent/programme_review.py": "6a61d258687dfe74ba0d819597f4cbb67cd400378c46115302ba9cde4177497a",
+    "traffic_agent/static/dispatch.js": "2503ca9164df51365399c726826e2ef633cb69c255150f95637d3e8d8bf68070",
+    "traffic_agent/static/planner_view.js": "22b2c1cec94274c6af091105d8f54c5d0e37c3fa6268caabd3af4d6aade93f4a",
+    "traffic_agent/static/style.css": "a02c794edb644488df1471885ce728f0b34056c9030208bc1e2c4ef063f662a3",
+    "tests/test_final_review_correction.py": "2161b55fc11299aa07e3cfc2f83b41dba2f3615c6521d1ccccca7305f6539fec",
+    "tests/fixtures/review_correction_view.cjs": "88c772cfd002d6e386575191a008a670e79373d3468f31563428c4da2f26b621"
+  },
+  "paid_calls": 0,
+  "new_native_scenes": 0,
+  "overall_complete": false,
+  "meaning": "真实控制器和两种接口的合成边界验证，不是线上模型或TranStar实跑；完整真实闭环仍待验证。"
+}

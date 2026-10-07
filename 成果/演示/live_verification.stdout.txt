@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "completed_scenarios": 4,
+  "module_executions": 28,
+  "scope_sizes": {
+    "core": 3,
+    "neighbor": 39,
+    "network": 32060
+  },
+  "repeat_arrays_exact": {
+    "speed_kmh": true,
+    "flow_pcu_h": true,
+    "vc": true,
+    "time_s": true
+  },
+  "limitations": "只核验保存的实验与输入输出证据，不证明现实标定有效或全部草案已实现"
+}

@@ -1,0 +1,4 @@
+多模式公交网络交通区间最短距离矩阵分析参数表Mparam334.TXT
+【输入文件】交通网络交通阻抗文件名	LenLinkBus.tsd
+【输入文件】交通网络交通阻抗文件名	LenLinkSub.tsd
+【输出文件】最短路矩阵文件名	MatrixDistAllBus.tsd

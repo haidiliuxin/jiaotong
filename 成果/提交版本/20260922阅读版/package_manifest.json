@@ -1,0 +1,478 @@
+{
+  "code_commit": "4c1c7a6b83639c8b016d5906ea98c650f20758bf",
+  "study": "20260922_015104_1bd73b",
+  "created_at": "2026-09-21T19:25:09.831313+00:00",
+  "new_model_calls": 0,
+  "kind": "offline_review_package",
+  "includes_full_model_database": false,
+  "files": {
+    "README.md": {
+      "bytes": 1704,
+      "sha256": "7da96c423289e3be23cb7fd55e150c11b36bb96dd3659de51461f57850d1b84b"
+    },
+    "事实摘要.json": {
+      "bytes": 640979,
+      "sha256": "2d75ab07fff5fe9f048c82af6bba7cdf2afba6bfd8e23e6e24bcedb041e2bdef"
+    },
+    "代码快照/examples/circulation_trial.json": {
+      "bytes": 440,
+      "sha256": "9070eed6d9c2d2946bf96a5a10e97624f31ce46cd5bdf4b484d84ff4c1716b38"
+    },
+    "代码快照/examples/oneway_changjiang.json": {
+      "bytes": 531,
+      "sha256": "a73a9f18a8ace1b0673cfd3c55eefba352edb0f1f16b8798f65f4aff1285f124"
+    },
+    "代码快照/examples/parking_agent.json": {
+      "bytes": 362,
+      "sha256": "cd4eac0fe06c35cb8e53ff03ad232922c5de276ef56c806ea4eacbe249a5f52e"
+    },
+    "代码快照/examples/parking_quickstart.json": {
+      "bytes": 221,
+      "sha256": "01c3f13b5c328ae91190cd06d0798d536a7c3b183bc443f1b5baeff374986c2f"
+    },
+    "代码快照/examples/parking_quickstart_v2.json": {
+      "bytes": 274,
+      "sha256": "a1f49c97f47322551de96e41e41b970469afe2f89826f6165a47b7e7d18148e3"
+    },
+    "代码快照/examples/parking_robust.json": {
+      "bytes": 344,
+      "sha256": "0caa3d7153d3f66ce48f96090807f6c4492fd6a6a010db44b0a32ff4ca309c06"
+    },
+    "代码快照/examples/parking_robust_migration.json": {
+      "bytes": 311,
+      "sha256": "a281696cf93a00148ac9fd8f16fccf29436f724b163829d4df76c6eb244d4eed"
+    },
+    "代码快照/examples/parking_transfer_huanzhou.json": {
+      "bytes": 407,
+      "sha256": "3da3b0447724bb423662f834c30a478aa31a434f37708c4bf49c877e7298c05d"
+    },
+    "代码快照/examples/review_protocol_20260919.json": {
+      "bytes": 853,
+      "sha256": "5738c67b4e8234caa6ae23664b7baf06b319512220bde5dd2f6bf72076e23e53"
+    },
+    "代码快照/examples/single_link.json": {
+      "bytes": 294,
+      "sha256": "86e5e2ecaeb7188ff2c47dc28ca071522114ff54039246ec3a2d6ca495c7d300"
+    },
+    "代码快照/examples/strict_spillover.json": {
+      "bytes": 345,
+      "sha256": "726262bda6a99d698dca1f63b597572d26968f6036ca75d28d7d06ab1e93a93e"
+    },
+    "代码快照/examples/turn_access_grid.json": {
+      "bytes": 602,
+      "sha256": "877aba59be9d48f2c428d1e8e13bca96f9696929b13f80c0958c41aaa8cdcfde"
+    },
+    "代码快照/scripts/audit_bus_impact.py": {
+      "bytes": 5666,
+      "sha256": "72ad4399f9b5993d51ee93b1b5ac6401702e2b240291037f203bb70e09e2ca32"
+    },
+    "代码快照/scripts/audit_oneway_costs.py": {
+      "bytes": 3699,
+      "sha256": "617a30460c265b0bd3768121300d8ddbc5898584ca3e4baa08bc0fcae5069fbe"
+    },
+    "代码快照/scripts/audit_turn_table.py": {
+      "bytes": 3860,
+      "sha256": "18bd937baeeb68d4be77e8cda342a7eba0647063cd99783b6a449f2fefc99309"
+    },
+    "代码快照/scripts/benchmark_feedback.py": {
+      "bytes": 8352,
+      "sha256": "4e466f18d839e644c65dddf28433ad6e44a972cd98f809a751e03c1680f3aebb"
+    },
+    "代码快照/scripts/benchmark_regions.py": {
+      "bytes": 409,
+      "sha256": "edd920d9d00d0f60bb671b999eefc2a0e8fbdfcdc550ad0d41731786c910e50f"
+    },
+    "代码快照/scripts/build_submission.py": {
+      "bytes": 52286,
+      "sha256": "b1144a58e759ba2c289009e35d741fc0723d91696d8a2166dd0da50ad5c1b3e6"
+    },
+    "代码快照/scripts/capture_oneway_increment.py": {
+      "bytes": 6140,
+      "sha256": "47fd4cf14fae92d8f9941f03873f0404460ef2c24ef844b452489b5b2c46c546"
+    },
+    "代码快照/scripts/check_turn_response.py": {
+      "bytes": 1357,
+      "sha256": "2d6c98564d39539652caae776564e603ba9aa5d3d6ff0f2d51366824f8fd8655"
+    },
+    "代码快照/scripts/observe_assignment_od.py": {
+      "bytes": 2773,
+      "sha256": "fd43f98d6719f56cb2ceb6e576844cd4b2cb2e5707f3b53e283e68a98dc04b48"
+    },
+    "代码快照/scripts/observe_oneway_stages.py": {
+      "bytes": 4247,
+      "sha256": "db9c83a14845557bc141774a2beb51b2975ce8bac34534de1bc28cc942db7748"
+    },
+    "代码快照/scripts/plot_benchmark.py": {
+      "bytes": 4431,
+      "sha256": "5062b99c6c1a25fba986351e0b40f72a63e941076fb66334a53d627b552715a6"
+    },
+    "代码快照/scripts/plot_experiment.py": {
+      "bytes": 9768,
+      "sha256": "7fbc6da9790a3cd077939753d85155b4b84e5c32f7d04e22cf0d38a53bb7d9b4"
+    },
+    "代码快照/scripts/plot_full_turn_access.py": {
+      "bytes": 3074,
+      "sha256": "796914a2255b3d4f789e067c6e23dca74497c384d2a6127592dc1ae56248a91a"
+    },
+    "代码快照/scripts/plot_oneway_experiment.py": {
+      "bytes": 4073,
+      "sha256": "565dc50b79460ea502be5402bb03a118d0cca97efa8ddb9391e540ce9f8ca2d1"
+    },
+    "代码快照/scripts/plot_oneway_probe.py": {
+      "bytes": 4182,
+      "sha256": "44207572511f190a0f11486b29a9ade2b897a660cb805008e5aa3949e9345d39"
+    },
+    "代码快照/scripts/plot_turn_experiment.py": {
+      "bytes": 9183,
+      "sha256": "ae9eaadb95cde14abbb7510617dcde54001476a78266cc3b2e1c476ae8225307"
+    },
+    "代码快照/scripts/probe_assignment_turn.py": {
+      "bytes": 8002,
+      "sha256": "f87796bbc9c88d9bc3f4c9e8401e7af91a88a07df2098c430e41c2fd0eb1db23"
+    },
+    "代码快照/scripts/probe_full_turn_access.py": {
+      "bytes": 7748,
+      "sha256": "d38229842d4936ab55882df32628c8bb937ea25ae3a92ad608e561524691bbbe"
+    },
+    "代码快照/scripts/probe_hard_access.py": {
+      "bytes": 7989,
+      "sha256": "8ecee86ebe1d432d0928579e073bed80e3b1e5b3458f52067469ba98ac9c8c3c"
+    },
+    "代码快照/scripts/probe_native_turn.py": {
+      "bytes": 12251,
+      "sha256": "c2f7f743470b339f0e81f0be8b0fc5ba892de3854b7441cc8d11055a5341354b"
+    },
+    "代码快照/scripts/probe_node_cost.py": {
+      "bytes": 8169,
+      "sha256": "fe3298b4ef57fedaa7821ca2505ebc68d4d8ddc572308100ea2bf430f901711f"
+    },
+    "代码快照/scripts/probe_node_pruning.py": {
+      "bytes": 8973,
+      "sha256": "e31c06ed53ca90558b8da272f62835596362d0283bee82c301fc1bc1bc239aa2"
+    },
+    "代码快照/scripts/probe_oneway.py": {
+      "bytes": 7682,
+      "sha256": "6166235b82247918026cb8578ab819949c6e07bfca8c1e1449dc5421d7ffa3e0"
+    },
+    "代码快照/scripts/probe_turn_reference.py": {
+      "bytes": 4867,
+      "sha256": "be5b8461ad5fe8b9c8a94d12e60642b77bbed151b015fa445d03555be891ee48"
+    },
+    "代码快照/scripts/probe_turn_terminals.py": {
+      "bytes": 11740,
+      "sha256": "26376de6ab7c2781992f9061640966d2f3e63bf83c714fa0db78857a2d239360"
+    },
+    "代码快照/scripts/probe_without_turn_rules.py": {
+      "bytes": 7231,
+      "sha256": "d68e1160b2a765ff56523329139569888845158c7d0fea41885f4f2bb11d3613"
+    },
+    "代码快照/scripts/report_region_study.py": {
+      "bytes": 12141,
+      "sha256": "ac492d5ce5e419cfda332349c736b8eaebd5328ee232142e34c3d80a9c229df1"
+    },
+    "代码快照/scripts/review_experiments.py": {
+      "bytes": 13161,
+      "sha256": "96947b80961a84753b7d2cfb16710a35f6b492f631fc765e2ae25edbafd41d06"
+    },
+    "代码快照/scripts/serve_region_study.py": {
+      "bytes": 554,
+      "sha256": "07124f935747b4ec59833748d1967f3eaffadd5db7bfbeda8532e899e1de08a7"
+    },
+    "代码快照/scripts/vehicle1_parameters.py": {
+      "bytes": 186,
+      "sha256": "d1d431941a7026d1d3f69db59b379af5a59bdc92dca2c922450f4d92308bf7c2"
+    },
+    "代码快照/scripts/verify_benchmark.py": {
+      "bytes": 6306,
+      "sha256": "43e17485629dc6117cba38f323f1d193ef18ac1a5cee6424e0d29431d3c2e1a5"
+    },
+    "代码快照/scripts/verify_experiment.py": {
+      "bytes": 21632,
+      "sha256": "a791fc34c36d74a811c1f787d3d25971e409d78c140b2f8b82bdb926636dc270"
+    },
+    "代码快照/scripts/verify_full_turn_access.py": {
+      "bytes": 7866,
+      "sha256": "6cfc0c698da4e985b9339880f4614ff236ec6ccda352e89bebdf3c8c2ae47445"
+    },
+    "代码快照/scripts/verify_hard_access.py": {
+      "bytes": 9117,
+      "sha256": "a576319b6f54be31a11cea32079b13529388e230c11d5bb1e425bf9d6612ab71"
+    },
+    "代码快照/scripts/verify_node_cost.py": {
+      "bytes": 3959,
+      "sha256": "2c5ccb64bb6cee5a7196d5040965a52006643e5bbe0cec6af5f5715445454cf3"
+    },
+    "代码快照/scripts/verify_oneway_probe.py": {
+      "bytes": 10364,
+      "sha256": "09f1c0ca3db686d7abd7be7ca4b3c5daeb217948c59c623f09e508990521f722"
+    },
+    "代码快照/scripts/verify_oneway_stages.py": {
+      "bytes": 6397,
+      "sha256": "ca86e08a0ea24a21d92d44ce584eddce84aa4df47167d066c1ccc04a16d6d800"
+    },
+    "代码快照/scripts/verify_region_study.py": {
+      "bytes": 1253,
+      "sha256": "79702694581806281148f7120523675f652e7983a1d800b741b089cf158c5a2c"
+    },
+    "代码快照/scripts/verify_submission.py": {
+      "bytes": 806,
+      "sha256": "33fe623fa6b6033a78906efdc7c126ebcd035f34f27695768dc8bc999a8ad129"
+    },
+    "代码快照/scripts/verify_turn_control.py": {
+      "bytes": 4496,
+      "sha256": "18f599088d98939365b2eac1f723891c8d72b8f0f2fd54c9bde83ff77f926cb5"
+    },
+    "代码快照/scripts/verify_turn_probe.py": {
+      "bytes": 5304,
+      "sha256": "6a8875e9a99a1dd20556155b8a7ad606de1d1533982bb8c0448c1bd168f6ae77"
+    },
+    "代码快照/scripts/verify_turn_terminals.py": {
+      "bytes": 11425,
+      "sha256": "2fdfc380a97a45221ecd5c1cd34cb8ddec603deaece693f6b42cb22853025843"
+    },
+    "代码快照/start.ps1": {
+      "bytes": 1069,
+      "sha256": "ec99e35276311eb356782da69fe2916e34978fbbe60b24456a7db2538f5c1124"
+    },
+    "代码快照/traffic_agent/__init__.py": {
+      "bytes": 105,
+      "sha256": "141e4788cc6b0b0435be8db283bbfed242224db656ef0c9f18ea0afc59aeb402"
+    },
+    "代码快照/traffic_agent/__main__.py": {
+      "bytes": 3732,
+      "sha256": "d3935e8b45cfaf6a0f2fa6b1d02fc04ad50f4fece27f988dd7ea8b1df60ad66c"
+    },
+    "代码快照/traffic_agent/agent.py": {
+      "bytes": 33236,
+      "sha256": "19e7722f667aec0d03fe7ef871bfc5af10225f1d29c51335e507f83d8c5ab9c5"
+    },
+    "代码快照/traffic_agent/archive.py": {
+      "bytes": 2464,
+      "sha256": "34240887640ed72f36bfd8be29da5ec4c089a62bee7d927b7b00b7e62c96b9f7"
+    },
+    "代码快照/traffic_agent/circulation.py": {
+      "bytes": 11117,
+      "sha256": "dd31972b299d841e95bdc0c9519f98d8b0288c3e445cb589539608f7cb82cdcc"
+    },
+    "代码快照/traffic_agent/circulation_agent.py": {
+      "bytes": 8767,
+      "sha256": "c0bea5c56722cd801d4e5eac4915ee8fd428371a341e3935f293cbf93100a44f"
+    },
+    "代码快照/traffic_agent/data.py": {
+      "bytes": 12756,
+      "sha256": "36e642dace58184ef8166bd1af4d9e069aff443c42e73aed2d33fb44a80630ea"
+    },
+    "代码快照/traffic_agent/decision_analysis.py": {
+      "bytes": 8254,
+      "sha256": "2be00463e444b4dfe9ab9524c26c0c5d2ec4d35fbb5d1b63646d7c651f2cc274"
+    },
+    "代码快照/traffic_agent/delivery.py": {
+      "bytes": 4727,
+      "sha256": "2450a251aa53dada56732472935ea04ec2e310db4f2343550c9386afab5d5590"
+    },
+    "代码快照/traffic_agent/hard_access.py": {
+      "bytes": 9536,
+      "sha256": "92adc4e7e64c8c09c562d6dfcfe8341c6f8a3d284c16da902a2ac4a3c816ef41"
+    },
+    "代码快照/traffic_agent/knowledge.json": {
+      "bytes": 6183,
+      "sha256": "8f2cea2711c96ac8a89f2d6ff5ab7042868c2100e1b718a3bb9cab9e66570e2e"
+    },
+    "代码快照/traffic_agent/map_data.py": {
+      "bytes": 6962,
+      "sha256": "ea37ff5d467e9b66b8db6d445464071444834778eb01eb271802c08990b36deb"
+    },
+    "代码快照/traffic_agent/mechanism.py": {
+      "bytes": 1963,
+      "sha256": "ca944784ff0a167cf6e8d1be35cb8676ad3b7b02f538493f133c65694e5474c1"
+    },
+    "代码快照/traffic_agent/native_access_bridge.py": {
+      "bytes": 8995,
+      "sha256": "273f949e27a125852cbdce76d491fa8473c325272412e7b6627bb185ecde9d47"
+    },
+    "代码快照/traffic_agent/native_turn_bridge.py": {
+      "bytes": 8755,
+      "sha256": "658b7e83ee8d265a92d14c8337170f3f9d7b3c660297f893cc37c8264887c926"
+    },
+    "代码快照/traffic_agent/oneway.py": {
+      "bytes": 11164,
+      "sha256": "ca8a3a6eb72a71bf22dda6eefe35cfaf88f2290a247c6a736d90236b4ea40527"
+    },
+    "代码快照/traffic_agent/oneway_agent.py": {
+      "bytes": 8765,
+      "sha256": "dc667e402461cebcb205d6b933c456f868aecc41432599fd09cb314f27de14d1"
+    },
+    "代码快照/traffic_agent/preflight.py": {
+      "bytes": 3258,
+      "sha256": "3e312bdd725aa754d32a7a38e5bdd8108722559eb73ec21d21ee8d6d8e0da30f"
+    },
+    "代码快照/traffic_agent/report.py": {
+      "bytes": 16482,
+      "sha256": "94f304868d31ab4fe7f26d7dda8e0f4db9a5fa2ec7380f31f57c8715656efc6b"
+    },
+    "代码快照/traffic_agent/robust_search.py": {
+      "bytes": 10691,
+      "sha256": "397b30cb441909ba99ba3d8828b8254ea585cbe580f5438764d8bf8bf08e3581"
+    },
+    "代码快照/traffic_agent/runner.py": {
+      "bytes": 9270,
+      "sha256": "25b0e29a8655ba3d610ce66fc474d48f1faa6af3d725a8ba42e1fff6ddabdffa"
+    },
+    "代码快照/traffic_agent/search_audit.py": {
+      "bytes": 6003,
+      "sha256": "f710a6ec260673ded90f3f12ef722a920cb2f0ecf4c8540adc0ac1de88b590af"
+    },
+    "代码快照/traffic_agent/selection.py": {
+      "bytes": 3358,
+      "sha256": "1d6b4ed253dd5b7795a23448475892216278abc56b71b6ec96c089b0843b70af"
+    },
+    "代码快照/traffic_agent/startup.py": {
+      "bytes": 4973,
+      "sha256": "5352843b02b9962db0f49b8361d2883d0b2d48ad0db1389e6c9a0675feba0eb4"
+    },
+    "代码快照/traffic_agent/static/index.html": {
+      "bytes": 10658,
+      "sha256": "636fc39e6a65ad9ea7316566e0341308697d5a97423e5930fabcf11799cf0182"
+    },
+    "代码快照/traffic_agent/static/study.html": {
+      "bytes": 22680,
+      "sha256": "62429380f93729b62888fd522d447a6367bb77433972222d277b132fb8de4c56"
+    },
+    "代码快照/traffic_agent/study.py": {
+      "bytes": 8603,
+      "sha256": "6cac1bf05b698a4067ed9df62e9a86605f00cb76c53962e4bec73faa5fddfa0f"
+    },
+    "代码快照/traffic_agent/study_audit.py": {
+      "bytes": 19329,
+      "sha256": "6a0c55ac203b44a74ea233a7340078d0b863d8f79f1d99e55a2f6d0795cac23a"
+    },
+    "代码快照/traffic_agent/study_dashboard.py": {
+      "bytes": 8272,
+      "sha256": "24ad4c2b4abd54cb38909b4487c06da20929d5e60895de100c10912066b40036"
+    },
+    "代码快照/traffic_agent/study_runner.py": {
+      "bytes": 18973,
+      "sha256": "6102dfdb5f42c2d90294f8d92eb7a439497d11954e518e21dfe34a44b621eec6"
+    },
+    "代码快照/traffic_agent/task.py": {
+      "bytes": 12047,
+      "sha256": "9693e3001fb1326f36c683fd647022370f8ac3a56827b728d42a24bb9b2b4e8d"
+    },
+    "代码快照/traffic_agent/tradeoffs.py": {
+      "bytes": 1707,
+      "sha256": "539f5802cab4803ceee743fc45cce89d06f3a05d446b9454f07c75cb3e4294f5"
+    },
+    "代码快照/traffic_agent/turn_access.py": {
+      "bytes": 14425,
+      "sha256": "4b233df2db6f4a54bb144481faa6d2c87b54f5aadec52eddea924c5a5791ae16"
+    },
+    "代码快照/traffic_agent/turn_agent.py": {
+      "bytes": 10066,
+      "sha256": "92c7f087013eea91a4f4c4a2853e1e10f6474e8a03de30c358fe29ee1f91841e"
+    },
+    "代码快照/traffic_agent/turn_graph.py": {
+      "bytes": 4294,
+      "sha256": "ac1711d9b36d230a1639b714837159dae524768e2664f8d831f9027c0cc7aa9a"
+    },
+    "代码快照/traffic_agent/vehicle1.py": {
+      "bytes": 2544,
+      "sha256": "387ddaac2da2e48c92838761e96584640c04d9e60a9f458fbcc85dd9c1372eba"
+    },
+    "代码快照/traffic_agent/web.py": {
+      "bytes": 6608,
+      "sha256": "07e174567078ad82971363201550d210e80c1fa8f5f036527d5b0c633d3ea225"
+    },
+    "图表数据.json": {
+      "bytes": 82523,
+      "sha256": "ecab64d268df2f7436c354d18021fdc9eb1ac4fea1fa9ba60b9781378309a719"
+    },
+    "排版核验.json": {
+      "bytes": 3353,
+      "sha256": "1d577ee6ce875ba42fe57617c7b2c653255b46493ac46df1870c3bec3112f882"
+    },
+    "操作手册.pdf": {
+      "bytes": 329637,
+      "sha256": "6aa2c6941deff948029b6d730779232e61291df7436213c963347c54309ca819"
+    },
+    "本次导出原始核验.json": {
+      "bytes": 5948,
+      "sha256": "7e4e1d3b18c3d9b98578b05e4213c7d1ec990a5d6911c2cb40a2caafc4a10161"
+    },
+    "研究报告.pdf": {
+      "bytes": 470890,
+      "sha256": "6e22d3e8efd4554f66c5dcb9950b6a33603bea93b90b3e305c2948530442d4c7"
+    },
+    "证据/E01_赛题原文.txt": {
+      "bytes": 7746,
+      "sha256": "ccc6bf666e63d61b0b8aa7d9a13e30393303e73ba75a92d7220f970568f8bdc0"
+    },
+    "证据/E02_软件手册.txt": {
+      "bytes": 534618,
+      "sha256": "df760f49ffdccc599343fece2e54f6264159fa14f58cea49b8f55c6c32b00757"
+    },
+    "证据/E03_参数依据与容差.md": {
+      "bytes": 7202,
+      "sha256": "77b7e07339cc3fa48a3f6614fb6fe7268a3b0c1839c73440bd74f0d4b1e88db2"
+    },
+    "证据/E04_前瞻协议.json": {
+      "bytes": 4149,
+      "sha256": "30c5506696cda81110ddb4b5900f815da27ed97d563fb418d842fcbaad70d4dc"
+    },
+    "证据/E05_事前选区.json": {
+      "bytes": 2234415,
+      "sha256": "a8d634a59db90c33190161b970ec20458c1835e5e212da935c203a50606ab829"
+    },
+    "证据/E06_研究状态与指标.json": {
+      "bytes": 733783,
+      "sha256": "3ea8d725e874647796e7ce3ac62eb7cac8680498900bc4691fbe583f90a335f0"
+    },
+    "证据/E07_原始独立核验.json": {
+      "bytes": 5946,
+      "sha256": "5e280db351540c6e7f2290ac7593967ac4fb49a9d33b68df0853e07fa7290a5b"
+    },
+    "证据/E08_追加决定与观察.jsonl": {
+      "bytes": 93344,
+      "sha256": "12adaea9caa65b355561c851360f8166bd20127b95b2f1e3fdc51d4c3aa662e3"
+    },
+    "证据/E09_完整原始档案清单.json": {
+      "bytes": 2818848,
+      "sha256": "8264d8d2f64d2b46311a8154cfa2a7cfdf46d8df3af3e44a2084373c98e13618"
+    },
+    "证据/E10_本版自动测试.log": {
+      "bytes": 18515,
+      "sha256": "fd80d487af1c8ed5a825b1404169ebbca17a5c58558782179762c44b73684799"
+    },
+    "证据/E11_复制档案核验.json": {
+      "bytes": 6782,
+      "sha256": "44b8cf403fe808e152df4189251b396b095bb04df77ad6ab11e44563d9fc5dd1"
+    },
+    "证据/E12_地图浏览器验收.json": {
+      "bytes": 2618,
+      "sha256": "c3b0151dbdc6656bb002e94558d6f977be47a5760da64f4509d1cfddb09549d1"
+    },
+    "证据/E13_禁转历史完整结果.md": {
+      "bytes": 6905,
+      "sha256": "5421a6a727d173e6dc52e01748f87c23fca9712a888d585faae9458e462e4bb4"
+    },
+    "证据/E14_单向历史完整结果.md": {
+      "bytes": 5778,
+      "sha256": "cc52bfc4bbdc238de2dd77a47e3454825567e39412264d1816229a1024b0d569"
+    },
+    "证据/E15_历史容差和范围敏感性.md": {
+      "bytes": 15429,
+      "sha256": "adf99b9ddecad65e66f9cf6d02f91b641c7b688a4852c3b3c863ca847f1f2a8b"
+    },
+    "证据/E16_历史演示范围.md": {
+      "bytes": 4219,
+      "sha256": "ff516774e40fb931eeaa8dc6fd5ddf7558bba4326a93d9862e8bc1c123d40413"
+    },
+    "证据/E17_启动和异机验收.md": {
+      "bytes": 4125,
+      "sha256": "f07285ccf91aa32941bab425774eaf125e9b7e29bdd5c7bb1f4c897881476f50"
+    },
+    "证据索引.json": {
+      "bytes": 30520,
+      "sha256": "ba561288864c0ff460d1be19fd246e13421cb5d51be04043c957e7cc2e52d71e"
+    }
+  }
+}

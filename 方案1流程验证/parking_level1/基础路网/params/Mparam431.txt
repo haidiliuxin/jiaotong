@@ -1,0 +1,10 @@
+Mparam431.TXT—GRAVITY模型参数标定表
+【输入文件】
+初始O-D矩阵	OLD_OD.TXT
+距离矩阵	MatrixDist.tsd
+【输出文件】
+重力模型参数	ZLMXCS.TXT
+【屏幕输入参数】
+参数初始值	0
+参数终止值	1
+迭代步长	0.1

@@ -1,0 +1,9 @@
+Mparam454.txt—用于公共交通系统分析的乘客OD矩阵分析
+
+OD矩阵内容	输入矩阵名称	时段系数	输出矩阵名称
+地面公交乘客OD矩阵	DistribBus.tsd	 0.2	ODBusPsgr.tsd
+轨道交通乘客OD矩阵	DistribSub.tsd	 0.2	ODSubPsgr.tsd
+公共交通乘客OD矩阵	-	-	ODPublicPsgr.tsd
+
+说明：公共交通乘客OD矩阵的输入矩阵为地面公交乘客OD矩阵与轨道交通
+乘客OD矩阵，无需额外的输入矩阵。

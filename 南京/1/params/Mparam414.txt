@@ -1,0 +1,7 @@
+Mparam414.txt—常住人口出行发生吸引量—基于职业结构预测
+【输入文件】交通小区常住人口信息	TripPopulation.TXT
+【输入文件】城市居民职业结构信息	TripJob.TXT
+【输出文件】交通区常住人口出行发生总量	TripGResiProstru.tsd
+【输出文件】交通区常住人口出行吸引总量	TripAResiProstru.tsd
+
+规划年常住人口日均出行次数	2.3

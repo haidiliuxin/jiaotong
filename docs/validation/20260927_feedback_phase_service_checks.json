@@ -1,0 +1,101 @@
+{
+  "kind": "zero_paid_source_service_preflight",
+  "source_commit": "070a31205723978cd8a1fcbd128d9027c222aef7",
+  "port": 8772,
+  "capabilities": {
+    "planning_version": "natural-strategy-plan-v5",
+    "composition_protocol": "traffic-plan-decision-v3",
+    "transport_version": "llm-transport-v2",
+    "initial_review_protocol": "initial-plan-review-v2",
+    "max_initial_corrections": 1,
+    "initial_budget_protocol": "initial-plan-budget-v1",
+    "scope_protocol": "planning-scope-v2",
+    "prerequisite_protocol": "planning-prerequisites-v2",
+    "dynamic_initial_tools": true,
+    "preflight_protocol": "planning-preflight-v1",
+    "routing_budget_protocol": "study-routing-budget-v2",
+    "study_handoff_protocol": "study-handoff-v1",
+    "feedback_review_protocol": "feedback-review-permissions-v1",
+    "parking_completion_protocol": "parking-completion-v2",
+    "response_check_protocol": "planning-response-check-v1",
+    "feedback_instructions_sha256": "9f97a0db4a3b1f489af92de46e5ac6e7cb503927c67d880c0813abdd3abbcc63",
+    "conclusion_protocol": "measured-conclusion-v1",
+    "observables": {
+      "available": [
+        "方向级流量、速度、V/C",
+        "固定核心/邻区/全网行驶时间消耗",
+        "同条件配对变化、邻区毛新增过饱和",
+        "各候选区实际响应及约束判断"
+      ],
+      "unavailable": [
+        "排队长度或排队车辆数",
+        "逐秒轨迹、动态排队回堵",
+        "真实城市因果或零风险证明"
+      ],
+      "conditional": [
+        "全网毛新增过饱和仅在任务开启该检查时提供",
+        "路权及转向响应仅相应适配器提供"
+      ]
+    },
+    "instructions_sha256": "9f5fc34500dc782cf39862fb77fcddb317d2e116324de88abdcb78f794d20908",
+    "initial_schema_sha256": "178825c1cbb08666a2563a00457e5bc3b48c2e0acfad324e5aebd3e3c8d60fc4",
+    "engine": "TranStar batch",
+    "automatic_transport_retry": false,
+    "max_model_requests": 6
+  },
+  "matched_roads": [
+    "七东线",
+    "长江村路"
+  ],
+  "conditions": {
+    "total_runs": 6,
+    "repeat_baseline": false,
+    "demand_factors": [
+      1.0
+    ],
+    "diagnosis_only": false,
+    "max_links": 2,
+    "explicit": {
+      "max_links": 2,
+      "demand_factors": [
+        1.0
+      ],
+      "repeat_baseline": false
+    }
+  },
+  "permissions": {
+    "version": "planning-prerequisites-v2",
+    "clarification_needs": [],
+    "clarification_quotes": {},
+    "intents": [
+      "execute",
+      "unsupported"
+    ],
+    "basis": "只为原文中尚未解析的具体定位或必需禁转目标开放追问；已解析道路和全网自动选点不缺道路名称。",
+    "plan_selection": "研究、策略组合、假设与取舍仍由模型提出；位置与等级在新基准完成后选择。"
+  },
+  "source_inputs_sha256": "06ec4a127359a801cce656a6b1602a912eecbc691649c0765d9d54adee2624ba",
+  "settings": {
+    "base_url": "https://tokenrhythm.studio/v1",
+    "wire_api": "chat_completions",
+    "model": "deepseek-v4-flash",
+    "key_configured": true
+  },
+  "dispatch_attempt_and_job_lists_unchanged": true,
+  "paid_calls": 0,
+  "new_native_scenes": 0,
+  "browser_review": {
+    "port": 8797,
+    "original_job": "20260927_220409_164a26",
+    "overall_status": "incomplete",
+    "progress": "1 / 2 组完成 · 已执行 3 / 6 场景",
+    "speed_pair_kmh": [
+      9,
+      23.4
+    ],
+    "changed_directed_links": 135,
+    "console_warnings_or_errors": [],
+    "screenshot": "20260927_rc4_review_overall_status.png",
+    "meaning": "当前界面只读显示RC4原件；不是新模型执行或修复后真实通过证明。"
+  }
+}

@@ -1,0 +1,12 @@
+{"record": "C:\\Users\\asus\\AppData\\Local\\Temp\\tmprsp6fi_w\\evidence\\acceptance.json", "status": "failed", "job": null, "new_model_calls": 0, "error": "ValueError: 解压目录清单与环境检查记录不一致"}
+{"record": "C:\\Users\\asus\\AppData\\Local\\Temp\\tmpy7_tnuyy\\evidence\\acceptance.json", "status": "attention_required", "job": null, "new_model_calls": 0, "error": "TimeoutError: 前序仍未完成封存；未启动新模型，不重启前序任务"}
+{"record": "C:\\Users\\asus\\AppData\\Local\\Temp\\tmprnxi0tjy\\evidence\\acceptance.json", "status": "failed", "job": null, "new_model_calls": 0, "error": "ValueError: 需要该解压目录已通过环境及真实编译检查的记录"}
+{"record": "C:\\Users\\asus\\AppData\\Local\\Temp\\tmp25rfpll7\\evidence\\acceptance.json", "status": "failed", "job": null, "new_model_calls": 0, "error": "RuntimeError: 前序实验失败；保留现场，不自动推进新模型"}
+{"record": "C:\\Users\\asus\\AppData\\Local\\Temp\\tmpm1zcz76e\\evidence\\acceptance.json", "status": "attention_required", "job": null, "new_model_calls": 0, "error": "TimeoutError: 前序仍未完成封存；未启动新模型，不重启前序任务"}
+{"time": "2026-09-21T21:08:28.976448+00:00", "event": "capability_gate", "data": ["提供显式turn三节点以使用已验证的状态图组合流程；未指定转向的旧自动流程仍未通过响应验收"]}
+{"time": "2026-09-21T21:08:28.981789+00:00", "event": "failure", "data": {"error": "ValueError: entry reached"}}
+...........................................................................................................................................................
+----------------------------------------------------------------------
+Ran 155 tests in 2.230s
+
+OK

@@ -1,0 +1,3 @@
+Mparam351.txt—交通网络广义交通阻抗最短路矩阵分析
+交通网络交通阻抗文件名【输入文件】	LinkImpedance.dat
+最短路矩阵文件名【输出文件】   	MatrixImpedance.tsd

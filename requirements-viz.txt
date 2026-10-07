@@ -1,0 +1,2 @@
+# Optional report figures only. The agent and web UI use the Python standard library.
+matplotlib==3.11.1

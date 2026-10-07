@@ -1,0 +1,7 @@
+Mparam612.txt
+expressways:	1600
+major-artery:	1400
+minor-artery:	1000
+monor-road:	800
+highways:	600
+freeways:	1500

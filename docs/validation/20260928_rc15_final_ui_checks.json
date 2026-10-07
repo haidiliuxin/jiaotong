@@ -1,0 +1,45 @@
+{
+  "kind": "zero_paid_source_and_separate_manual_viewer_check",
+  "passed": true,
+  "source_workspace": {
+    "port": 8814,
+    "pid": 49028,
+    "empty": true,
+    "capabilities_match_current_source": true,
+    "provider": {
+      "base_url": "https://tokenrhythm.studio/v1",
+      "wire_api": "chat_completions",
+      "model": "deepseek-v4-flash",
+      "key_configured": true
+    }
+  },
+  "readonly_viewer": {
+    "port": 8813,
+    "pid": 41784,
+    "raw_status": "completed",
+    "display_status": "incomplete",
+    "conclusion_status": "needs_review",
+    "basis": "separate manual review bound to the original state hashes",
+    "post_status": 405
+  },
+  "original_rc15_records_unchanged": true,
+  "older_records_unchanged": 70,
+  "normalized_source_hashes": {
+    "traffic_agent\\map_data.py": "24fe621171fbf08d67e20656d6ad7680d0ac298dca1ec8e70de9a886332a6451",
+    "traffic_agent\\static\\map.js": "449e19a2e51c086267726cd04e047b7312b2f43a7fbc84a5d1549b8aae97d841",
+    "traffic_agent\\static\\map_view.js": "80b0e556d9cc4d06d2d78225b899d74430aa00bca687791b25f53b60bff75ea5"
+  },
+  "map_regression": "20260928_rc15_map_controls_checks.json",
+  "new_model_calls_during_display_checks": 0,
+  "new_native_scenes_during_display_checks": 0,
+  "source_vs_frozen_live_bundle": {
+    "unchanged_bundled_code_files": 94,
+    "changed_code_files": [
+      "traffic_agent/map_data.py",
+      "traffic_agent/static/map.js",
+      "traffic_agent/static/map_view.js"
+    ],
+    "repository_only_scripts_not_part_of_bundle": 104,
+    "meaning": "规划、模型传输、执行、指标计算与自动核验代码均未改；仅三份地图显示代码有变化。该比较不消除人工发现的解释质量问题。"
+  }
+}

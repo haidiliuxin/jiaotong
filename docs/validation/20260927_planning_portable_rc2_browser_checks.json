@@ -1,0 +1,70 @@
+{
+  "created": "2026-09-27T07:54:59.030343+00:00",
+  "code_commit": "b528c986cad89604ab6166886f8f32d6bea87c9c",
+  "url": "http://127.0.0.1:8791",
+  "inspection": "Codex CUA browser on the real extracted bundle; no synthetic page data",
+  "source": "工作材料/便携解压验收/20260927 智能规划 RC2",
+  "controls": {
+    "api_url": true,
+    "wire_types": [
+      "chat_completions",
+      "responses"
+    ],
+    "model": true,
+    "key_actions": [
+      "keep",
+      "replace",
+      "clear"
+    ],
+    "password_field": true,
+    "empty_key": true
+  },
+  "initial": {
+    "mode": "model",
+    "model_title": "描述交通问题，开始智能规划",
+    "rule_title": "先预览任务，再开始仿真",
+    "rules_hidden_in_model": true,
+    "viewport": 1094,
+    "document_width": 1094,
+    "geometry_only_roads": 32060,
+    "has_traffic_metrics": false
+  },
+  "local_submit": {
+    "request": "只做路网体检；需求系数：1；最多2次仿真，不复跑。",
+    "result": "本次未启动仿真；API 未配置密钥",
+    "new_provider_requests": 0,
+    "new_native_scenarios": 0,
+    "automatic_rule_fallback": false
+  },
+  "console_warnings_or_errors": [],
+  "settings_saved": false,
+  "provider_connection_test_clicked": false,
+  "isolated_settings_file_created": false,
+  "after": {
+    "settings": {
+      "base_url": "https://tokenrhythm.studio/v1",
+      "wire_api": "chat_completions",
+      "model": "deepseek-v4-flash",
+      "timeout_s": 45,
+      "max_output_tokens": 1600,
+      "key_configured": false
+    },
+    "dispatches": [],
+    "planning_attempts": []
+  },
+  "screenshots": {
+    "20260927_planning_portable_rc2_lobby.png": {
+      "bytes": 63548,
+      "sha256": "82d5cbf9f7a637c84bc9680d0a6f8382fe47d4ef63ac4e8fddef1e339a04c1e6"
+    },
+    "20260927_planning_portable_rc2_settings.png": {
+      "bytes": 38246,
+      "sha256": "a87c8293a9fc2a8060ffbcdf3c0e16a9048a2a4fb21802eb3c160e80b5ebaf3f"
+    },
+    "20260927_planning_portable_rc2_no_key.png": {
+      "bytes": 66815,
+      "sha256": "fd2ee48b01b74c3340040c4c17dcfa9722fef8a2dd336b0653dce3abfeca9d03"
+    }
+  },
+  "overall_complete": false
+}

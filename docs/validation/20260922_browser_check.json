@@ -1,0 +1,81 @@
+{
+  "recorded_at": "2026-09-22T02:58:02.938536+08:00",
+  "url": "http://127.0.0.1:8782/",
+  "job_id": "20260922_015104_1bd73b",
+  "mode": "read-only live localhost UI; CUA browser checks",
+  "new_model_calls": 0,
+  "status": "原始数据与决策链核验通过",
+  "physical_scenes": 22,
+  "native_module_calls_in_existing_study": 154,
+  "final_selection": "×1 · 1路段 / 停车2级 · 通过 [case_010]",
+  "final_recommendation": "三种需求均通过 · 有统一建议",
+  "final_visible_changes_percent": {
+    "frozen_core": -7.4613,
+    "frozen_neighbor": -0.0028,
+    "network": -0.0035
+  },
+  "map_geometry": {
+    "matched_directed_roads": 32060,
+    "displayed_directed_roads": 32060,
+    "source": "case SHP"
+  },
+  "comparison": [
+    {
+      "region": "high",
+      "strategy": "fixed",
+      "feasible_policies": 0,
+      "logical_scenes": 6,
+      "logical_limit": 10
+    },
+    {
+      "region": "high",
+      "strategy": "feedback",
+      "feasible_policies": 0,
+      "logical_scenes": 6,
+      "logical_limit": 10
+    },
+    {
+      "region": "medium",
+      "strategy": "fixed",
+      "feasible_policies": 0,
+      "logical_scenes": 10,
+      "logical_limit": 10
+    },
+    {
+      "region": "medium",
+      "strategy": "feedback",
+      "feasible_policies": 1,
+      "logical_scenes": 10,
+      "logical_limit": 10
+    },
+    {
+      "region": "low",
+      "strategy": "fixed",
+      "feasible_policies": 2,
+      "logical_scenes": 10,
+      "logical_limit": 10
+    },
+    {
+      "region": "low",
+      "strategy": "feedback",
+      "feasible_policies": 2,
+      "logical_scenes": 10,
+      "logical_limit": 10
+    }
+  ],
+  "checks": [
+    "Final page reload shows completed and independently verified state",
+    "Region, strategy, observed demand and map layer switching",
+    "Whole-network fit and local study view",
+    "Medium first three-road policy at 0.9 demand displays rejection and neighbor deterioration",
+    "Directed-road click displays paired actual speed, flow, V/C and parking values",
+    "Uniform recommendation opens medium feedback single-road scene case_010",
+    "Fixed evaluation core and actually treated roads use distinct map markers",
+    "Visual screenshot inspection and empty browser warning/error log",
+    "JavaScript inline script passes node --check"
+  ],
+  "browser_warning_error_entries": [],
+  "screenshot_file_created": false,
+  "video_created": false,
+  "note": "浏览器功能与画面检查记录；不是新模型运行、保存截图或新版演示录像。"
+}

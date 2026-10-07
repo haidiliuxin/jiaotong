@@ -1,0 +1,49 @@
+# Preserve model input encodings and existing line endings byte for byte.
+* -text
+
+# Sealed JSON members retain their original CRLF bytes and checksums.
+tests/fixtures/sealed_planning/*.json whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+
+# Store supplied binary software, documents and media with Git LFS.
+*.exe filter=lfs diff=lfs merge=lfs -text
+*.dll filter=lfs diff=lfs merge=lfs -text
+*.wmv filter=lfs diff=lfs merge=lfs -text
+*.7z filter=lfs diff=lfs merge=lfs -text
+*.zip filter=lfs diff=lfs merge=lfs -text
+*.pdf filter=lfs diff=lfs merge=lfs -text
+*.tif filter=lfs diff=lfs merge=lfs -text
+*.tiff filter=lfs diff=lfs merge=lfs -text
+*.xlsx filter=lfs diff=lfs merge=lfs -text
+*.docx filter=lfs diff=lfs merge=lfs -text
+*.doc filter=lfs diff=lfs merge=lfs -text
+*.pptx filter=lfs diff=lfs merge=lfs -text
+*.png filter=lfs diff=lfs merge=lfs -text
+*.jpg filter=lfs diff=lfs merge=lfs -text
+*.jpeg filter=lfs diff=lfs merge=lfs -text
+*.gif filter=lfs diff=lfs merge=lfs -text
+*.bmp filter=lfs diff=lfs merge=lfs -text
+*.dmp filter=lfs diff=lfs merge=lfs -text
+*.pdb filter=lfs diff=lfs merge=lfs -text
+*.shp filter=lfs diff=lfs merge=lfs -text
+*.dbf filter=lfs diff=lfs merge=lfs -text
+*.shx filter=lfs diff=lfs merge=lfs -text
+*.avi filter=lfs diff=lfs merge=lfs -text
+*.mp4 filter=lfs diff=lfs merge=lfs -text
+*.webm filter=lfs diff=lfs merge=lfs -text
+
+# Generated traffic arrays are verified numerically and by SHA-256; avoid
+# rendering hundreds of millions of numeric rows as a source-code diff.
+*.tsd -diff
+*.dat -diff
+*.od -diff
+
+# Keep captured verifier and media-decoder logs byte-for-byte, including CRLF.
+成果/演示/20260923_v4_turn_completed_review/*.stdout.txt -diff
+成果/演示/20260923_v4_turn_completed_review/*.log -diff
+# Generated per-file package manifests are verified by their SHA-256 and are
+# too large to review as line diffs; preserve their exact released bytes.
+成果/便携主程序/*/运行包清单.json -diff
+成果/便携主程序/*/环境验收/*.stdout.txt -diff
+
+# Preserve diagnostic native logs and their source-byte copies without text diffs.
+成果/复评/20260923_guard_native_failure/evidence/** -diff

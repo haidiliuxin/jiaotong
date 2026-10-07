@@ -1,0 +1,128 @@
+Read-only inspection; vendor binary not modified.
+Binary: 智能体实验\runtime\programs\M6AssignVehicle.exe
+SHA256: 174b8474e939e0ebe5c6faf30ad02e622cf6291706e3ff947f016a37523b0717
+Offsets below are image virtual addresses of this build.
+local vector construction
+
+M6AssignVehicle.exe:     file format pei-i386
+
+
+Disassembly of section .text:
+
+00404932 <.text+0x3932>:
+  404932:	51                   	push   ecx
+  404933:	8d 4d 98             	lea    ecx,[ebp-0x68]
+  404936:	e8 d5 3f 00 00       	call   0x408910
+  40493b:	e8 80 ac 00 00       	call   0x40f5c0
+  404940:	8d 4d e4             	lea    ecx,[ebp-0x1c]
+  404943:	c6 45 fc 29          	mov    BYTE PTR [ebp-0x4],0x29
+  404947:	e8 c4 a8 00 00       	call   0x40f210
+  40494c:	b9 88 67 47 00       	mov    ecx,0x476788
+  404951:	8b 00                	mov    eax,DWORD PTR [eax]
+  404953:	89 45 e8             	mov    DWORD PTR [ebp-0x18],eax
+  404956:	a1 e4 67 47 00       	mov    eax,ds:0x4767e4
+  40495b:	89 45 dc             	mov    DWORD PTR [ebp-0x24],eax
+  40495e:	8d 45 e8             	lea    eax,[ebp-0x18]
+  404961:	50                   	push   eax
+  404962:	e8 79 ad 00 00       	call   0x40f6e0
+
+zero initialization
+
+M6AssignVehicle.exe:     file format pei-i386
+
+
+Disassembly of section .text:
+
+00408910 <.text+0x7910>:
+  408910:	0f 57 c0             	xorps  xmm0,xmm0
+  408913:	66 0f d6 01          	movq   QWORD PTR [ecx],xmm0
+  408917:	c7 41 08 00 00 00 00 	mov    DWORD PTR [ecx+0x8],0x0
+  40891e:	c2 04 00             	ret    0x4
+
+empty vector constructor
+
+M6AssignVehicle.exe:     file format pei-i386
+
+
+Disassembly of section .text:
+
+0040f5c0 <.text+0xe5c0>:
+  40f5c0:	c7 01 00 00 00 00    	mov    DWORD PTR [ecx],0x0
+  40f5c6:	8b c1                	mov    eax,ecx
+  40f5c8:	c7 41 04 00 00 00 00 	mov    DWORD PTR [ecx+0x4],0x0
+  40f5cf:	c7 41 08 00 00 00 00 	mov    DWORD PTR [ecx+0x8],0x0
+  40f5d6:	c3                   	ret
+
+restriction lookup before adding transition
+
+M6AssignVehicle.exe:     file format pei-i386
+
+
+Disassembly of section .text:
+
+00404dde <.text+0x3dde>:
+  404dde:	8b f0                	mov    esi,eax
+  404de0:	8d 4d 98             	lea    ecx,[ebp-0x68]
+  404de3:	8d 85 1c f8 ff ff    	lea    eax,[ebp-0x7e4]
+  404de9:	50                   	push   eax
+  404dea:	e8 71 a6 00 00       	call   0x40f460
+  404def:	8b f8                	mov    edi,eax
+  404df1:	8d 4d 98             	lea    ecx,[ebp-0x68]
+  404df4:	8d 85 18 f8 ff ff    	lea    eax,[ebp-0x7e8]
+  404dfa:	50                   	push   eax
+  404dfb:	e8 30 a3 00 00       	call   0x40f130
+  404e00:	8b d0                	mov    edx,eax
+  404e02:	8d 4d 98             	lea    ecx,[ebp-0x68]
+  404e05:	8d 85 14 f8 ff ff    	lea    eax,[ebp-0x7ec]
+  404e0b:	50                   	push   eax
+  404e0c:	e8 4f a6 00 00       	call   0x40f460
+  404e11:	8b 0b                	mov    ecx,DWORD PTR [ebx]
+  404e13:	83 c1 34             	add    ecx,0x34
+  404e16:	50                   	push   eax
+  404e17:	51                   	push   ecx
+  404e18:	8b 0e                	mov    ecx,DWORD PTR [esi]
+  404e1a:	83 c1 34             	add    ecx,0x34
+  404e1d:	51                   	push   ecx
+  404e1e:	8d 8d ec f7 ff ff    	lea    ecx,[ebp-0x814]
+  404e24:	e8 57 3f 01 00       	call   0x418d80
+  404e29:	ff 37                	push   DWORD PTR [edi]
+  404e2b:	8d 8d 10 f8 ff ff    	lea    ecx,[ebp-0x7f0]
+  404e31:	ff 32                	push   DWORD PTR [edx]
+  404e33:	8b d0                	mov    edx,eax
+  404e35:	e8 76 41 01 00       	call   0x418fb0
+  404e3a:	83 c4 08             	add    esp,0x8
+  404e3d:	8b c8                	mov    ecx,eax
+  404e3f:	e8 fc a5 00 00       	call   0x40f440
+  404e44:	84 c0                	test   al,al
+  404e46:	0f 84 e3 00 00 00    	je     0x404f2f
+  404e4c:	8d 45 ec             	lea    eax,[ebp-0x14]
+  404e4f:	b9 88 67 47 00       	mov    ecx,0x476788
+  404e54:	50                   	push   eax
+  404e55:	e8 86 a8 00 00       	call   0x40f6e0
+  404e5a:	b9 88 67 47 00       	mov    ecx,0x476788
+  404e5f:	8b 00                	mov    eax,DWORD PTR [eax]
+  404e61:	8b 70 34             	mov    esi,DWORD PTR [eax+0x34]
+  404e64:	8d 45 e0             	lea    eax,[ebp-0x20]
+  404e67:	50                   	push   eax
+  404e68:	e8 73 a8 00 00       	call   0x40f6e0
+  404e6d:	8b 00                	mov    eax,DWORD PTR [eax]
+  404e6f:	3b 70 34             	cmp    esi,DWORD PTR [eax+0x34]
+  404e72:	0f 84 b7 00 00 00    	je     0x404f2f
+
+iterator comparison
+
+M6AssignVehicle.exe:     file format pei-i386
+
+
+Disassembly of section .text:
+
+0040f440 <.text+0xe440>:
+  40f440:	55                   	push   ebp
+  40f441:	8b ec                	mov    ebp,esp
+  40f443:	8b 11                	mov    edx,DWORD PTR [ecx]
+  40f445:	33 c0                	xor    eax,eax
+  40f447:	8b 4d 08             	mov    ecx,DWORD PTR [ebp+0x8]
+  40f44a:	3b 11                	cmp    edx,DWORD PTR [ecx]
+  40f44c:	0f 94 c0             	sete   al
+  40f44f:	5d                   	pop    ebp
+  40f450:	c2 04 00             	ret    0x4

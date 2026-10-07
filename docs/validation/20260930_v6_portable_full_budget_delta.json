@@ -1,0 +1,21 @@
+{
+  "kind": "project_recorded_usage_delta_v1",
+  "baseline_file": "docs/validation/20260930_v6_reassessment_budget_delta.json",
+  "scope": "Locally retained project responses only, not a complete provider account bill. Five response IDs in this run are distinct within the run and from the recorded second v6 reassessment; the earlier recorder-incomplete reassessment is conservatively retained as a separate count.",
+  "portable_full_live_run": {
+    "dispatch": "工作材料/便携异目录检查/20260930_v6_RC1/智能体实验/v6_full_live_20260930_01/dispatches/20260930_010417_f9a78a.json",
+    "requests": 5,
+    "known_tokens": 62495,
+    "native_scenarios": 3,
+    "status": "completed",
+    "independent_semantic_review": "passed_for_this_bounded_case"
+  },
+  "locally_recorded_cumulative_conservative": {
+    "requests": 92,
+    "known_tokens": 778163,
+    "request_limit": 684,
+    "known_token_limit": 4132560,
+    "remaining_requests": 592,
+    "remaining_known_tokens": 3354397
+  }
+}

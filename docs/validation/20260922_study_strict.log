@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "version": "prospective-study-audit-v1",
+  "physical_scenes": 22,
+  "native_module_calls": 154,
+  "regions": 3,
+  "state_sha256": "3ea8d725e874647796e7ce3ac62eb7cac8680498900bc4691fbe583f90a335f0",
+  "protocol_sha256": "30c5506696cda81110ddb4b5900f815da27ed97d563fb418d842fcbaad70d4dc",
+  "selection_sha256": "a8d634a59db90c33190161b970ec20458c1835e5e212da935c203a50606ab829",
+  "raw_inputs_outputs_verified": true,
+  "prospective_selection_rebuilt": true,
+  "decisions_replayed": {
+    "decisions": 28,
+    "unique_policy_scenes": 18,
+    "shared_observations": 10,
+    "logical_scenes": 52
+  },
+  "repeatability": true,
+  "meaning": "原始文件重算、时序与代码摘要核对；不是数字签名、独立机器重跑或统计显著性证明",
+  "sealed_files": 12891
+}

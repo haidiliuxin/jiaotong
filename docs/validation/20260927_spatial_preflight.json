@@ -1,0 +1,16 @@
+{
+  "local_http_error": "一次任务的仿真总预算须在2—30次之间",
+  "model_calls": 0,
+  "native_calls": 0,
+  "attempt": {
+    "id": "preview_a4100807408d4084a77ba92bb265e0d7",
+    "started": "2026-09-27T04:59:21.706031+00:00",
+    "request": "本地预算校验：最多1次仿真，不复跑",
+    "status": "validation_failed",
+    "requested": false,
+    "usage": null,
+    "native_started": false,
+    "finished": "2026-09-27T04:59:21.708651+00:00",
+    "error": "一次任务的仿真总预算须在2—30次之间"
+  }
+}

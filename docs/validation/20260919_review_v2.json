@@ -1,0 +1,49 @@
+{
+  "verified_at": "2026-09-19T13:16:17.144580+00:00",
+  "tests": 104,
+  "tests_passed": true,
+  "unreachable_proxy_tests": 104,
+  "fresh_job": "20260919_205401_c8de76",
+  "real_scenarios": 4,
+  "real_module_calls": 28,
+  "strict_and_portable_audit": true,
+  "repeat_arrays_exact": true,
+  "historical_jobs_reviewed": [
+    "20260908_100153_bb7198",
+    "20260908_075938_e7444a",
+    "20260911_021806_858461",
+    "20260911_024329_7304a4"
+  ],
+  "retrospective_threshold_scope_cases": 120,
+  "retrospective_tolerance_cases": 16,
+  "browser": {
+    "url": "http://127.0.0.1:8771/?job=20260908_100153_bb7198",
+    "new_v2_task_preview": true,
+    "old_frozen_S3_and_review_S2_both_visible": true,
+    "review_map_button_selected_S2": true,
+    "console_errors": [],
+    "merged_adverse_effects_visible": true,
+    "fresh_job_v2_single_demand_boundary_visible": true
+  },
+  "local_document_links_checked": [
+    "成果/20260919优化验收.md",
+    "docs/参数依据与决策容差.md",
+    "docs/统一启动与异机验收.md",
+    "docs/下一轮前瞻实验协议.md",
+    "成果/参赛研究报告.md",
+    "成果/评审阅读指南.md",
+    "docs/智能体操作说明.md",
+    "README.md"
+  ],
+  "not_completed": [
+    "另一台物理电脑实际运行",
+    "新版完整视频",
+    "预选更多区域等预算前瞻实验",
+    "其他数据集及现实成本验证"
+  ],
+  "collaborator_commit_integrated": "bdc8421450d5ba552549543ed91b7bb7d004c133",
+  "legacy_launcher_parameters_checked": true,
+  "offline_html_structure_checked": true,
+  "offline_html_visual_review": false,
+  "offline_html_preview_limit": "Browser file URL blocked; no alternate browser route attempted"
+}

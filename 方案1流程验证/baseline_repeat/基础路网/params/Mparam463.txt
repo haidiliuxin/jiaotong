@@ -1,0 +1,4 @@
+Mparam463.TXT-OD矩阵赋值
+赋值的OD矩阵名称	ODcar.tsd
+OD矩阵元素赋值（如置零）	0
+交通小区个数	0

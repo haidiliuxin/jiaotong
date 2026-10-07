@@ -1,0 +1,288 @@
+{
+  "created": "2026-09-30T08:03:09.983177+00:00",
+  "kind": "candidate_parameter_comparison_and_risk_v2_real_model_probe_review",
+  "root": "智能体实验\\candidate_comparison_validation_20260930_01",
+  "model_source_commit": "71de93e544fe01d914d05c47ea7d0b40680869b3",
+  "current_review_source_parent_commit": "71de93e544fe01d914d05c47ea7d0b40680869b3",
+  "source_files_sha256": {
+    "tests/test_candidate_comparison.py": "4e2f9fa10c8d99abe7d44738097bc41b91cfc03989a0ce22c977e5d89c367c72",
+    "tests/test_choice_view.cjs": "6455e50b61dd32e17f633cbcf81f0f240171c834e9ccf99b0556704b755437da",
+    "tests/test_feedback_planner.py": "cac95c5d2f326ba2f77e67ba4869101c5f61e34dcc07e55d67f521ded386828b",
+    "tests/test_planner_view.cjs": "185cb85dc88cf8dded87d32e7e9032e4320bdfd6556ca34c9f52a7421e1798fb",
+    "tests/test_portable.py": "baf480e64e1556ac9c627aec8e12b0ae284a3d393f50aa921877c4f5dfa6fe1d",
+    "tests/test_risk_review.py": "f302e785c7c92ac80656f509dfcce93e04471315fb14080748b6f8b5a65ce49b",
+    "traffic_agent/candidate_comparison.py": "1323a79e6cd0adf6acaec2aaa62900fc99af29d9e11d0b4eb24ca30875cf477b",
+    "traffic_agent/choice_evidence.py": "9198ba481500e64d30d7ee2be2cff51f2eb0a701f5d7ca9a7a3245b6329be62c",
+    "traffic_agent/feedback_planner.py": "78858c91146b0ad27f19bb4fe14cbd0ca4f41e06c06fa24429e34030723dcf33",
+    "traffic_agent/planning_instructions.py": "fa54707a2854abe8b4c6f0f81e1a8fc1a7aaf58373eefc7934871cea9ac0c56a",
+    "traffic_agent/planning_response.py": "26ae197dd49304eb396e18ab2ae42635cf09351d5381113a7b5e284b1ad20d0e",
+    "traffic_agent/planning_review.py": "30c5e6aa9497569bc15af9002b41b4128532a0b67a84b7eafc84fd82fd395b9a",
+    "traffic_agent/portable.py": "5c0fef71fd0b3b753ee915c8310bd0dcb59f084f595ce7a7c0b110485873c394",
+    "traffic_agent/report.py": "198e2774ea6cd2d7e7cd7d72cafc2af7164d6a9af630ad041be2f648c1d1e042",
+    "traffic_agent/risk_review.py": "cd3ff5a5d91e0ed676a58cd78a29075e5b3ec8640e7eb34ecb1e4ebd97f9e8d2",
+    "traffic_agent/static/choice_view.js": "33133da3b21907ff28c715b92f1c728072b48681ca92275c95a4d0f9afe1e100",
+    "traffic_agent/static/planner_view.js": "064d54b48bec601dcc51258a2da48b920457e5c4c2e65fae9bdbe83a40ed73bc"
+  },
+  "record": {
+    "path": "智能体实验\\candidate_comparison_validation_20260930_01\\negative_probe\\result.json",
+    "sha256": "5c7c0c3a3b0c121b679934a5f23cde64561d6bc1a16b503038b29b4efeb6390d"
+  },
+  "source_record": {
+    "path": "F:\\ITS比赛\\智能体实验\\risk_boundary_validation_20260930_01\\live\\dispatches\\20260930_150731_272f6c.json",
+    "sha256": "1bfe3bd6ea5c77a8e8e1c7c786bc0fec4674e2e9a2599e215b90daf82f6cc7cb"
+  },
+  "protocols": {
+    "choice": "observed-choice-basis-v6",
+    "risk": "observed-risk-boundary-v2"
+  },
+  "structural_verification_passed": true,
+  "original_request_preserved": true,
+  "original_observation_fields_preserved": true,
+  "native_neighbor_details_added_from_existing_source": true,
+  "future_scene_count": 0,
+  "selected_action": "parking_2b3d14b62b50",
+  "selected_comparison": {
+    "reference_ref": "20260930_150731_272f6c:parking_1",
+    "reference_demand_factor": 1.0,
+    "reference_direction_count": 3,
+    "scope": "仅比较本轮动作参数与最近已完成试验；不排序、不预测效果。保持同组冻结评价范围；尚未执行的候选仍待验证。",
+    "chosen": {
+      "direction_relation": "relocated",
+      "level_relation": "same",
+      "matching_demand": true,
+      "actions": [
+        "parking_2b3d14b62b50",
+        "parking_691a3bfe6040",
+        "parking_3ec16cf7c77c"
+      ],
+      "interpretation": "换到不同治理方向；等级不变。可比较同等级的治理范围或方向组合；不能分离其中单一路段的贡献。",
+      "action": "parking_2b3d14b62b50",
+      "direction_count": 2
+    },
+    "alternative": {
+      "direction_relation": "relocated",
+      "level_relation": "weaker",
+      "matching_demand": true,
+      "actions": [
+        "parking_d71847bdf74e",
+        "parking_200b51c2fdaa",
+        "parking_27f81ffb311a"
+      ],
+      "interpretation": "换到不同治理方向；治理等级减弱。可比较两个完整方案，但位置／范围和等级同时改变，不能单独归因于其中一项。",
+      "action": "parking_d71847bdf74e",
+      "direction_count": 2
+    }
+  },
+  "actual_input_detail_coverage": [
+    {
+      "ref": "20260930_150731_272f6c:parking_1",
+      "provided": 4,
+      "total": 4,
+      "complete": true,
+      "text": "已提供4条／总计4条（完整）"
+    }
+  ],
+  "positive_findings": [
+    "模型选择换区域、保持1级，实际比较两个不同方向组合。",
+    "暂缓备选说明明确位置与等级同时改变不能单独归因。",
+    "H1核心收益与H2邻区约束分别判断，未把首个反例当作所有候选失败。",
+    "风险验证选择配对邻区指标与单独动态证据，字段格式符合v2。"
+  ],
+  "semantic_findings": [
+    {
+      "field": "selection_basis.working_hypothesis",
+      "quote": "area_2两条方向停车1级治理是不同候选区域的新方案，可能大幅降低该区三条高V/C方向耗时，同时因流量较小带来的邻区新增过饱和与非治理区耗时增幅低于已测3方向方案。",
+      "issue": "所选area_2只有2条方向，原文却称该区三条；参数与方向计数不能由假设原文覆盖。"
+    },
+    {
+      "field": "unverified_risks[0].hypothesis",
+      "quote": "已测3方向1级在邻区产生2.797km毛新增过饱和，换到更小范围area_2治理是否仍会引发类似邻区回堵有待实测；新增明细注明部分静态节选可能无法覆盖全部排队。",
+      "issue": "输入明细为4/4且完整，原文误称部分节选；静态过饱和清单也不是排队覆盖数据。"
+    }
+  ],
+  "mitigation": {
+    "actual_direction_counts_displayed": true,
+    "actual_detail_coverage_displayed": true,
+    "model_words_unchanged": true,
+    "model_generation_errors_not_claimed_resolved": true,
+    "new_model_calls_for_display": 0
+  },
+  "independent_semantic_status": "needs_review",
+  "overall_complete": false,
+  "new_native_scenes": 0,
+  "original_job_resumed": false,
+  "real_view": {
+    "path": "tmp\\20260930_candidate_comparison_probe_view.json",
+    "sha256": "2e3d0be34a34186f3ab8f712ba5d0f27826ec0603ac08306a4ac8c985154b877"
+  },
+  "source_files": {
+    "manifest": "工作材料\\源码联调证据\\20260930_candidate_comparison_01\\original_files_manifest.json",
+    "manifest_sha256": "9c77408f1d15b6d67d3394c8ca9840a6f114c9cd1eb4c8e398161e24bb8c8bbf",
+    "files": 6
+  },
+  "prior_manifest_rechecked": {
+    "path": "工作材料\\源码联调证据\\20260930_risk_boundary_01\\original_files_manifest.json",
+    "files": 2178,
+    "unchanged": true
+  },
+  "input_cost": {
+    "unit": "compact UTF-8 JSON bytes; not billing tokens",
+    "original_input": 39484,
+    "new_input": 44014,
+    "billing_reduction_proven": false
+  },
+  "usage": {
+    "previous_ledger": {
+      "path": "docs\\validation\\20260930_risk_boundary_live_and_v2_offline_review.json",
+      "sha256": "9158a39fc8c6e36976e08a33a6a792720ad60200b35e835026f7d6c8d3cc5c4b"
+    },
+    "responses": [
+      {
+        "request_model": "deepseek-v4-flash",
+        "response_model": "deepseek-v4-flash-0731",
+        "response_id": "chatcmpl-6abcc02176bb75e21300f301",
+        "tokens": 15871,
+        "tokens_source": "reported_total",
+        "input_tokens": 15157,
+        "output_tokens": 714,
+        "reasoning_tokens": null,
+        "cached_input_tokens": null,
+        "latency_s": 5.906,
+        "finish_reason": "tool_calls",
+        "tool_call_count": 1,
+        "wire_api": "chat_completions",
+        "request_tool_choice": "required",
+        "request_tool_count": 1,
+        "request_max_output_tokens": 1600,
+        "request_size_bytes": 49148,
+        "request_schema_sha256": "a2e950f320f2594b5fe0e574462bb64be53678b59e584bd092101e1a40381b6a",
+        "transport_version": "llm-transport-v2",
+        "tool_choice_profile": "tokenrhythm-deepseek-chat-v1",
+        "requested_tool_choice": "function:choose_next_experiment"
+      }
+    ],
+    "new_unique_requests": 1,
+    "new_known_tokens": 15871,
+    "project_retained_cumulative_requests": 180,
+    "project_retained_cumulative_known_tokens": 1785697,
+    "authorized_max_requests": 684,
+    "authorized_max_known_tokens": 4132560,
+    "new_ids_not_in_prior_indexes": true,
+    "not_full_account_bill": true
+  },
+  "end_state": {
+    "checked_runtime_locks": [
+      {
+        "path": "智能体实验\\runtime.lock",
+        "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+        "free": true,
+        "bytes_unchanged": true
+      },
+      {
+        "path": "智能体实验\\mixed_limit7_full_20260930_01\\runtime.lock",
+        "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+        "free": true,
+        "bytes_unchanged": true
+      },
+      {
+        "path": "工作材料\\便携异目录检查\\20260930_v2_RC13\\智能体实验\\oneway_scope_live_20260930_01\\runtime.lock",
+        "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+        "free": true,
+        "bytes_unchanged": true
+      },
+      {
+        "path": "工作材料\\便携异目录检查\\20260930_v2_RC14\\智能体实验\\mixed_complete_live_20260930_01\\runtime.lock",
+        "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+        "free": true,
+        "bytes_unchanged": true
+      },
+      {
+        "path": "智能体实验\\mixed_named_questions_full_20260930_01\\runtime.lock",
+        "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+        "free": true,
+        "bytes_unchanged": true
+      },
+      {
+        "path": "智能体实验\\mixed_action_execution_full_20260930_02\\runtime.lock",
+        "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+        "free": true,
+        "bytes_unchanged": true
+      },
+      {
+        "path": "智能体实验\\mixed_action_summary_full_20260930_01\\runtime.lock",
+        "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+        "free": true,
+        "bytes_unchanged": true
+      },
+      {
+        "path": "F:\\ITS比赛\\智能体实验\\risk_boundary_validation_20260930_01\\live\\runtime.lock",
+        "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+        "free": true,
+        "bytes_unchanged": true
+      }
+    ]
+  },
+  "pending": [
+    "自由事实转述质量",
+    "当前协议完整模型与原生闭环",
+    "浏览器视觉",
+    "最新最终便携包",
+    "物理异机验收"
+  ],
+  "offline": {
+    "python_tests": 748,
+    "python_log": {
+      "path": "tmp\\20260930_candidate_comparison_python_verified.log",
+      "sha256": "c38d02c41ee243bce5f91f7ea87090bd1b34c7807d1ee06794b42898db8017bb"
+    },
+    "node_groups": 4,
+    "node_results": {
+      "path": "tmp\\20260930_candidate_comparison_node_verified.json",
+      "sha256": "a0357ccd4c20614a35a4d5e646850f1880a3ae8b9931535ae1b47ba48993d072"
+    },
+    "legacy_replays": [
+      {
+        "path": "tmp\\20260930_candidate_comparison_older_replay.json",
+        "sha256": "30b5d8c33f2592dd4013f2ff702196d3e289f4e5e7731698ffe85dc2bf62085b"
+      },
+      {
+        "path": "tmp\\20260930_candidate_comparison_v1_replay.json",
+        "sha256": "d99015a991b93ea5eb514d45249a88007b7c88e86079c62ba15454954b69ef43"
+      }
+    ],
+    "real_probe_render": {
+      "path": "tmp\\20260930_candidate_comparison_probe_render.json",
+      "sha256": "c5ff88febdd6417df080542ea89f187837971e6e8ee9e98cb19bc212832ee32a"
+    },
+    "browser_visual_checked": false,
+    "older_7085_plus_1588_and_previous_2178_plus_124_originals_unchanged": true
+  },
+  "original_audit": {
+    "path": "tmp\\20260930_candidate_comparison_probe_audit.json",
+    "sha256": "1a83d79c2c8f8ac99812dd65025cdb4311b336c670ca2fdbec129313f5fba1df"
+  },
+  "helpers": [
+    {
+      "path": "tmp\\candidate_comparison_validation_20260930.py",
+      "sha256": "0abffa1fcd9dd00c2a846a44acd28841083756b1ac7ba64dee40a57f8b2422e1"
+    },
+    {
+      "path": "tmp\\audit_candidate_comparison_probe_20260930.py",
+      "sha256": "748d7ca66a8febf4abe503b379a9e8587a6311eeaf08bb55dfef13b6458dcc64"
+    },
+    {
+      "path": "tmp\\render_candidate_comparison_probe_20260930.cjs",
+      "sha256": "724a3d1c9474c23d3e90094359d31c243ef0666c7f320f1f602ef9cbdf186ddc"
+    }
+  ],
+  "implementation": {
+    "comparison_context": "grouped_exact_action_parameter_relations",
+    "ranking_or_predicted_benefit": false,
+    "model_still_chooses_candidate_and_tradeoff": true,
+    "no_additional_model_output_fields": true,
+    "direction_counts_and_input_detail_coverage_derived": true,
+    "historical_input_schema_and_original_words_preserved": true,
+    "generated_count_display_needs_no_new_model_call": true,
+    "full_native_loop_verified_at_current_protocol": false
+  }
+}

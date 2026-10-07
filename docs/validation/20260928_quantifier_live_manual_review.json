@@ -1,0 +1,204 @@
+{
+  "kind": "independent_review_preserving_original_outcomes",
+  "source_commit": "a30094076d06d3488e3f9e2c1f0fcf3acea5b908",
+  "job_ids": [
+    "20260928_083527_0399ce",
+    "20260928_083527_e1de2c"
+  ],
+  "raw_status_preserved": {
+    "validator": "verified",
+    "programme": "completed"
+  },
+  "executed_loop": "complete",
+  "language_and_hypothesis_review": "needs_review",
+  "overall_product": "not_complete",
+  "paid_requests": 6,
+  "reported_tokens": 67906,
+  "recommendations": [
+    {
+      "job_id": "20260928_083527_0399ce",
+      "recommendation": "baseline"
+    },
+    {
+      "job_id": "20260928_083527_e1de2c",
+      "recommendation": "S1_parking"
+    }
+  ],
+  "final_programme_summary": "七东线停车1级核心耗时降53.99%但area_2增幅超0.5%被拒；长江村路停车2级通过（核心-31.50%、邻区无新增过饱和），单向与组合引起邻区行驶时间+171.9%及新增过饱和1.03km被拒。推荐保留长江村路停车2级，其余措施不推荐。",
+  "remaining_issues": [
+    {
+      "id": "full_policy_list_reduced_by_local_checker",
+      "hypothesis_id": "H2",
+      "original": "长江村路停车、单向及组合的每种已试措施核心总耗时均低于同需求新基准",
+      "evidence_needed": "长江村路停车、单向及组合各自核心总耗时低于新基准",
+      "retained_criterion": {
+        "policies": "control_and_combined",
+        "quantifier": "all",
+        "studies": [
+          2
+        ],
+        "test": "core_time_decrease"
+      },
+      "model_update": {
+        "explanation": "长江村路单向与组合核心耗时均低于基准，满足core_time_decrease判据；不附加推荐资格。",
+        "finding_ids": [
+          "hypothesis.H2"
+        ],
+        "hypothesis_id": "H2",
+        "judgment": "supported"
+      },
+      "concern": "本地v2规则在完整的停车、单向及组合列表内匹配子串单向及组合，误拒绝原all判据并要求模型改为不含仅停车。最终判断只回答了较窄问题。虽然停车也有实测改善，不能把遗漏的原检验视为已正确执行。"
+    },
+    {
+      "id": "oneway_prose_reverses_actual_closure",
+      "ordinal": 3,
+      "action": "oneway_3237_3236",
+      "closed_direction": [
+        3237,
+        3236
+      ],
+      "kept_direction": [
+        3236,
+        3237
+      ],
+      "original_reason": "长江村路3237→3236方向小汽车946.55 veh/h、V/C 1.869、速度20.6，相比反向V/C 1.11更拥堵；单向仅对拥堵方向通行，绕行最大1.13km、比值2.89，图检合格。选定该方向后冻结双向核心，测齐本位置全部单项与组合。",
+      "original_risk": "单向禁行反向带来绕行，可能把过饱和迁往邻区；组合不一定优于单项，需逐项核对；双向核心与邻区代价可能使约束不通过。",
+      "original_selection_basis": {
+        "alternative_action": null,
+        "alternative_tradeoff": "菜单仅开放oneway_3237_3236一个方向候选，无备选方向可比较；未选方向未实测，不得宣称其无效。",
+        "disconfirming_result": "若单向或组合场景中邻区新增过饱和超过约束阈值、或核心耗时于同需求基准未下降，则否定该治理方向有效。",
+        "observed_ids": [
+          "target:20260928_083527_e1de2c:baseline:oneway_3237_3236"
+        ],
+        "working_hypothesis": "对更拥堵的3237→3236方向单向通行，可降低该组核心总耗时并缓解该方向过饱和。"
+      },
+      "actual_native_responses": [
+        {
+          "run": "S2_oneway",
+          "response": {
+            "passed": true,
+            "cache_matches_all_access_rows": true,
+            "cache_encoding": "exact_input_codes_v48",
+            "motor_access_codes_correct": true,
+            "baseline_has_motor_flow": true,
+            "closed_all_motor_flows_zero": true,
+            "open_direction_has_motor_flow": true,
+            "closed_direction": [
+              3237,
+              3236
+            ],
+            "flows": {
+              "car": {
+                "before": 946.55,
+                "after": 0.0,
+                "reverse_after": 474.22
+              },
+              "taxi": {
+                "before": 281.69,
+                "after": 0.0,
+                "reverse_after": 141.13
+              },
+              "motor": {
+                "before": 0.0,
+                "after": 0.0,
+                "reverse_after": 0.0
+              },
+              "truck": {
+                "before": 0.0,
+                "after": 0.0,
+                "reverse_after": 0.0
+              },
+              "bus": {
+                "before": 0.0,
+                "after": 0.0,
+                "reverse_after": 0.0
+              }
+            },
+            "limits": "路权和禁行响应成立不代表交通收益；各车型量纲分别呈现，不将合计用于收益指标"
+          }
+        },
+        {
+          "run": "S3_combined",
+          "response": {
+            "passed": true,
+            "cache_matches_all_access_rows": true,
+            "cache_encoding": "exact_input_codes_v48",
+            "motor_access_codes_correct": true,
+            "baseline_has_motor_flow": true,
+            "closed_all_motor_flows_zero": true,
+            "open_direction_has_motor_flow": true,
+            "closed_direction": [
+              3237,
+              3236
+            ],
+            "flows": {
+              "car": {
+                "before": 946.55,
+                "after": 0.0,
+                "reverse_after": 474.22
+              },
+              "taxi": {
+                "before": 281.69,
+                "after": 0.0,
+                "reverse_after": 141.13
+              },
+              "motor": {
+                "before": 0.0,
+                "after": 0.0,
+                "reverse_after": 0.0
+              },
+              "truck": {
+                "before": 0.0,
+                "after": 0.0,
+                "reverse_after": 0.0
+              },
+              "bus": {
+                "before": 0.0,
+                "after": 0.0,
+                "reverse_after": 0.0
+              }
+            },
+            "limits": "路权和禁行响应成立不代表交通收益；各车型量纲分别呈现，不将合计用于收益指标"
+          }
+        }
+      ],
+      "concern": "模型理由和工作假设称拥堵的3237→3236保留通行、反向禁行，实际工具与原生场景关闭3237→3236并保留3236→3237。原生执行与类型化动作一致，但说明与动作相反。"
+    },
+    {
+      "id": "native_response_and_recommendation_scope",
+      "hypothesis_id": "H4",
+      "original": "七东线停车与长江村路各措施均通过本组全部原生控制响应约束",
+      "evidence_needed": "两组各自既定原生控制响应检查全部通过",
+      "retained_criterion": {
+        "policies": "all",
+        "quantifier": "all",
+        "studies": [
+          1,
+          2
+        ],
+        "test": "admissible"
+      },
+      "model_update": {
+        "explanation": "七东线停车1级被拒、长江村路单向及组合被拒，并非全部措施通过原定约束，与其事前判据矛盾。",
+        "finding_ids": [
+          "hypothesis.H4"
+        ],
+        "hypothesis_id": "H4",
+        "judgment": "contradicted"
+      },
+      "concern": "原问题与证据需求点名原生控制响应，绑定的admissible却还要求全部推荐约束，最终因周边代价给出否定。单向及组合的实际禁行响应通过；不能以推荐拒绝代替对控制响应问题的回答。"
+    },
+    {
+      "id": "unbudgeted_alternative_suggestion",
+      "ordinal": 1,
+      "original": "停车2级缓解较温和，未选不代表无效；若1级在约束内收益不足或代价超标，再回测2级作对照。",
+      "concern": "理由建议必要时回测2级，但本任务预算未安排强度比较。控制器没有执行这项额外试验；解释应明确它是需新预算的后续研究。"
+    }
+  ],
+  "limits": [
+    "本次使用的是措施字段修正，不是新增量词字段工具的真实服务验收。",
+    "两个引擎各自使用新基准与独立固定范围，收益不能相加。",
+    "本次为固定源码的本机实测，不是最新便携包或物理异机验收。",
+    "自动核验覆盖有限；原状态与回复保持，不由事后评审改写原始通过证书。"
+  ]
+}

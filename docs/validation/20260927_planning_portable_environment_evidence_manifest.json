@@ -1,0 +1,247 @@
+{
+  "archive": "docs/validation/20260927_planning_portable_environment_evidence.zip",
+  "sha256": "6d224b694c4f4ddf92e9316ba94680bba47a71bb63f6f218500e6d225f3e77d1",
+  "files": [
+    {
+      "path": "智能体实验/portable_acceptance/20260927_planning_rc1_environment/bundle_gate.stderr.bin",
+      "entry": "智能体实验/portable_acceptance/20260927_planning_rc1_environment/bundle_gate.stderr.bin",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "智能体实验/portable_acceptance/20260927_planning_rc1_environment/bundle_gate.stderr.txt",
+      "entry": "智能体实验/portable_acceptance/20260927_planning_rc1_environment/bundle_gate.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "智能体实验/portable_acceptance/20260927_planning_rc1_environment/bundle_gate.stdout.bin",
+      "entry": "智能体实验/portable_acceptance/20260927_planning_rc1_environment/bundle_gate.stdout.bin",
+      "bytes": 1559,
+      "sha256": "20606a41727afd1c8dd2807c4811f5ad3eaa09f873ea67bbfff59df1238d7e87"
+    },
+    {
+      "path": "智能体实验/portable_acceptance/20260927_planning_rc1_environment/bundle_gate.stdout.txt",
+      "entry": "智能体实验/portable_acceptance/20260927_planning_rc1_environment/bundle_gate.stdout.txt",
+      "bytes": 1585,
+      "sha256": "90d7fe8085cb374fbbb7670ade44cd5d7a520c398450b9b058247a22802d2b64"
+    },
+    {
+      "path": "智能体实验/portable_acceptance/20260927_planning_rc1_environment/check_oneway.stderr.bin",
+      "entry": "智能体实验/portable_acceptance/20260927_planning_rc1_environment/check_oneway.stderr.bin",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "智能体实验/portable_acceptance/20260927_planning_rc1_environment/check_oneway.stderr.txt",
+      "entry": "智能体实验/portable_acceptance/20260927_planning_rc1_environment/check_oneway.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "智能体实验/portable_acceptance/20260927_planning_rc1_environment/check_oneway.stdout.bin",
+      "entry": "智能体实验/portable_acceptance/20260927_planning_rc1_environment/check_oneway.stdout.bin",
+      "bytes": 12526,
+      "sha256": "09a1fbc3a7db3666cda32b63ab28cc26fbc2a6a2b675b41bf2756ba73eefa941"
+    },
+    {
+      "path": "智能体实验/portable_acceptance/20260927_planning_rc1_environment/check_oneway.stdout.txt",
+      "entry": "智能体实验/portable_acceptance/20260927_planning_rc1_environment/check_oneway.stdout.txt",
+      "bytes": 12710,
+      "sha256": "d476e89d06bc3960dd5f58c3bd1128ba31a62e2e77c4780e33bac6f8f5a5bc8b"
+    },
+    {
+      "path": "智能体实验/portable_acceptance/20260927_planning_rc1_environment/check_parking.stderr.bin",
+      "entry": "智能体实验/portable_acceptance/20260927_planning_rc1_environment/check_parking.stderr.bin",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "智能体实验/portable_acceptance/20260927_planning_rc1_environment/check_parking.stderr.txt",
+      "entry": "智能体实验/portable_acceptance/20260927_planning_rc1_environment/check_parking.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "智能体实验/portable_acceptance/20260927_planning_rc1_environment/check_parking.stdout.bin",
+      "entry": "智能体实验/portable_acceptance/20260927_planning_rc1_environment/check_parking.stdout.bin",
+      "bytes": 12070,
+      "sha256": "4a29fa7be3671936a50af46302c6106e4feb8ba70d25f0067a469b74d2456254"
+    },
+    {
+      "path": "智能体实验/portable_acceptance/20260927_planning_rc1_environment/check_parking.stdout.txt",
+      "entry": "智能体实验/portable_acceptance/20260927_planning_rc1_environment/check_parking.stdout.txt",
+      "bytes": 12244,
+      "sha256": "8240ef18c663808d3e7d7b0045c3b0f8de5debadb11025d2f7f962f2debc780b"
+    },
+    {
+      "path": "智能体实验/portable_acceptance/20260927_planning_rc1_environment/check_turn.stderr.bin",
+      "entry": "智能体实验/portable_acceptance/20260927_planning_rc1_environment/check_turn.stderr.bin",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "智能体实验/portable_acceptance/20260927_planning_rc1_environment/check_turn.stderr.txt",
+      "entry": "智能体实验/portable_acceptance/20260927_planning_rc1_environment/check_turn.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "智能体实验/portable_acceptance/20260927_planning_rc1_environment/check_turn.stdout.bin",
+      "entry": "智能体实验/portable_acceptance/20260927_planning_rc1_environment/check_turn.stdout.bin",
+      "bytes": 12849,
+      "sha256": "6b58c1ce3891abbbbff63e6c68bd7865aaf8ad0b1d350650e2c701e6ec088cdb"
+    },
+    {
+      "path": "智能体实验/portable_acceptance/20260927_planning_rc1_environment/check_turn.stdout.txt",
+      "entry": "智能体实验/portable_acceptance/20260927_planning_rc1_environment/check_turn.stdout.txt",
+      "bytes": 13039,
+      "sha256": "d7e6f1373c4268be877d11ef85effed76b842c2ea15e6a254b030abbf1f0858a"
+    },
+    {
+      "path": "智能体实验/portable_acceptance/20260927_planning_rc1_environment/child_without_B.stderr.bin",
+      "entry": "智能体实验/portable_acceptance/20260927_planning_rc1_environment/child_without_B.stderr.bin",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "智能体实验/portable_acceptance/20260927_planning_rc1_environment/child_without_B.stderr.txt",
+      "entry": "智能体实验/portable_acceptance/20260927_planning_rc1_environment/child_without_B.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "智能体实验/portable_acceptance/20260927_planning_rc1_environment/child_without_B.stdout.bin",
+      "entry": "智能体实验/portable_acceptance/20260927_planning_rc1_environment/child_without_B.stdout.bin",
+      "bytes": 1033,
+      "sha256": "f5c7ec66875927a5afa7aa0ef774da01984604e533460382ecb7ddd416961113"
+    },
+    {
+      "path": "智能体实验/portable_acceptance/20260927_planning_rc1_environment/child_without_B.stdout.txt",
+      "entry": "智能体实验/portable_acceptance/20260927_planning_rc1_environment/child_without_B.stdout.txt",
+      "bytes": 1034,
+      "sha256": "145e0ddec247e5f4663e5c2ae87fe561d91f8704c46ecbde9de0de15f3e9a9fd"
+    },
+    {
+      "path": "智能体实验/portable_acceptance/20260927_planning_rc1_environment/compile_wrapper.stderr.bin",
+      "entry": "智能体实验/portable_acceptance/20260927_planning_rc1_environment/compile_wrapper.stderr.bin",
+      "bytes": 162,
+      "sha256": "19e9c79c7b3d83f532b39f4a298b6986f07bdb572d362659bb847dc9747680d9"
+    },
+    {
+      "path": "智能体实验/portable_acceptance/20260927_planning_rc1_environment/compile_wrapper.stderr.txt",
+      "entry": "智能体实验/portable_acceptance/20260927_planning_rc1_environment/compile_wrapper.stderr.txt",
+      "bytes": 166,
+      "sha256": "d80a90101261459a20b2506e09365573b38dc788d0e8514c94ef8f4bb8e9bdc6"
+    },
+    {
+      "path": "智能体实验/portable_acceptance/20260927_planning_rc1_environment/compile_wrapper.stdout.bin",
+      "entry": "智能体实验/portable_acceptance/20260927_planning_rc1_environment/compile_wrapper.stdout.bin",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "智能体实验/portable_acceptance/20260927_planning_rc1_environment/compile_wrapper.stdout.txt",
+      "entry": "智能体实验/portable_acceptance/20260927_planning_rc1_environment/compile_wrapper.stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "智能体实验/portable_acceptance/20260927_planning_rc1_environment/environment_verification.json",
+      "entry": "智能体实验/portable_acceptance/20260927_planning_rc1_environment/environment_verification.json",
+      "bytes": 43284,
+      "sha256": "5586423ff8967d955dcf5f80c03b73cce59f55897fef30ac52e00e0621fa8eae"
+    },
+    {
+      "path": "智能体实验/portable_acceptance/20260927_planning_rc1_environment/planning_modules_without_key.stderr.bin",
+      "entry": "智能体实验/portable_acceptance/20260927_planning_rc1_environment/planning_modules_without_key.stderr.bin",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "智能体实验/portable_acceptance/20260927_planning_rc1_environment/planning_modules_without_key.stderr.txt",
+      "entry": "智能体实验/portable_acceptance/20260927_planning_rc1_environment/planning_modules_without_key.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "智能体实验/portable_acceptance/20260927_planning_rc1_environment/planning_modules_without_key.stdout.bin",
+      "entry": "智能体实验/portable_acceptance/20260927_planning_rc1_environment/planning_modules_without_key.stdout.bin",
+      "bytes": 1541,
+      "sha256": "95ab814957ed0f0b653582cbe148e4840719e97cce1e3172e2d4a6931fd0bdbe"
+    },
+    {
+      "path": "智能体实验/portable_acceptance/20260927_planning_rc1_environment/planning_modules_without_key.stdout.txt",
+      "entry": "智能体实验/portable_acceptance/20260927_planning_rc1_environment/planning_modules_without_key.stdout.txt",
+      "bytes": 1542,
+      "sha256": "efb535e7c551d53cf68f14e58fab0b0d5877efd63d2ccbc59f82c52d94a895eb"
+    },
+    {
+      "path": "智能体实验/portable_acceptance/20260927_planning_rc1_environment/user_site_control.stderr.bin",
+      "entry": "智能体实验/portable_acceptance/20260927_planning_rc1_environment/user_site_control.stderr.bin",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "智能体实验/portable_acceptance/20260927_planning_rc1_environment/user_site_control.stderr.txt",
+      "entry": "智能体实验/portable_acceptance/20260927_planning_rc1_environment/user_site_control.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "智能体实验/portable_acceptance/20260927_planning_rc1_environment/user_site_control.stdout.bin",
+      "entry": "智能体实验/portable_acceptance/20260927_planning_rc1_environment/user_site_control.stdout.bin",
+      "bytes": 6,
+      "sha256": "ca4a016eae14ab0c7ebb935a6e24ae8b512958f25c788f11eb99566d066b7957"
+    },
+    {
+      "path": "智能体实验/portable_acceptance/20260927_planning_rc1_environment/user_site_control.stdout.txt",
+      "entry": "智能体实验/portable_acceptance/20260927_planning_rc1_environment/user_site_control.stdout.txt",
+      "bytes": 7,
+      "sha256": "9d973cb00a1cc1839d0a930a2cd6d3340536b4c4305538b1d022d22ca5519a44"
+    },
+    {
+      "path": "智能体实验/portable_acceptance/20260927_planning_rc1_environment/wrapper.c",
+      "entry": "智能体实验/portable_acceptance/20260927_planning_rc1_environment/wrapper.c",
+      "bytes": 1432,
+      "sha256": "59481e890ffa9564a695e2c2f972c905a23cac0a1638123cad4319c7e72d33e7"
+    },
+    {
+      "path": "智能体实验/portable_acceptance/20260927_planning_rc1_environment/wrapper.exe",
+      "entry": "智能体实验/portable_acceptance/20260927_planning_rc1_environment/wrapper.exe",
+      "bytes": 56037,
+      "sha256": "7e11bc78fb9efe59ce98ca76e9d8e9291e28e6bc266135672741878cfa32e14a"
+    },
+    {
+      "path": "docs/validation/20260927_planning_portable_tests.log",
+      "entry": "logs/tests.log",
+      "bytes": 2402,
+      "sha256": "c2aa0863d41ea537701bf711748173f14ae6ac978c551646bd31b81d9afb4288"
+    },
+    {
+      "path": "docs/validation/20260927_planning_portable_build.log",
+      "entry": "logs/build.log",
+      "bytes": 876,
+      "sha256": "6b15628925df8ba6c99465c384eecf6f755eac62189e4e1c416f93aa4ac2a04c"
+    },
+    {
+      "path": "docs/validation/20260927_planning_portable_environment.log",
+      "entry": "logs/environment.log",
+      "bytes": 250,
+      "sha256": "3a32b9a3c2985cf31104780d1878f8b66e1596bf653b7e79fc44d402843455df"
+    },
+    {
+      "path": "工作材料/便携构建/20260927_智能规划_RC1/runtime_manifest.json",
+      "entry": "bundle/runtime_manifest.json",
+      "bytes": 2812912,
+      "sha256": "6102e3eff04cf417c3febbbb1954b8871f6f40f915884fcd452771e68e329fa1"
+    },
+    {
+      "path": "工作材料/便携构建/20260927_智能规划_RC1/开始使用.md",
+      "entry": "bundle/开始使用.md",
+      "bytes": 5496,
+      "sha256": "0388088292a3cdde50e07853d9a077c5c35a42cf02076ea50d43cf990314eec3"
+    }
+  ],
+  "credential_pattern_scan": true
+}

@@ -1,0 +1,54 @@
+{
+  "passed": true,
+  "current_job": "智能体实验\\clean_environment\\jobs\\20260908_110226_1d7e69",
+  "reference_job": "智能体实验\\jobs\\20260908_051630_12acc1",
+  "recommendation_exact": true,
+  "scope_exact": true,
+  "runs": [
+    {
+      "scenario": "baseline",
+      "arrays_exact": {
+        "SpdLinkVeh.tsd": true,
+        "VolLinkVeh.tsd": true,
+        "VCLinkVeh.tsd": true,
+        "TimeLink.tsd": true
+      },
+      "metrics_exact": true,
+      "changes_exact": true
+    },
+    {
+      "scenario": "parking_1",
+      "arrays_exact": {
+        "SpdLinkVeh.tsd": true,
+        "VolLinkVeh.tsd": true,
+        "VCLinkVeh.tsd": true,
+        "TimeLink.tsd": true
+      },
+      "metrics_exact": true,
+      "changes_exact": true
+    },
+    {
+      "scenario": "parking_2",
+      "arrays_exact": {
+        "SpdLinkVeh.tsd": true,
+        "VolLinkVeh.tsd": true,
+        "VCLinkVeh.tsd": true,
+        "TimeLink.tsd": true
+      },
+      "metrics_exact": true,
+      "changes_exact": true
+    },
+    {
+      "scenario": "baseline_repeat",
+      "arrays_exact": {
+        "SpdLinkVeh.tsd": true,
+        "VolLinkVeh.tsd": true,
+        "VCLinkVeh.tsd": true,
+        "TimeLink.tsd": true
+      },
+      "metrics_exact": true,
+      "changes_exact": true
+    }
+  ],
+  "limits": "同一台Windows上的隔离Python与新runtime重算，非另一台电脑或独立随机样本"
+}

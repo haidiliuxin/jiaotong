@@ -1,0 +1,322 @@
+{
+  "created": "2026-09-30T02:39:52.742592+00:00",
+  "kind": "new_v6_initial_plan_real_failure",
+  "source_commit": "3c743be8e4be1cba1fcf362f819e6389d0bdcfc8",
+  "request": "长江村路停车拥堵。请至少比较两个不同停车备选方案，并检验单向组织及其组合的独立效果。最多7次仿真，不复跑基准；保护邻区。",
+  "original_request_unchanged": true,
+  "original_status": "validation_failed",
+  "question_protocol": "typed-initial-questions-v1",
+  "wording_protocol": "bounded-question-wording-v6",
+  "conclusion_protocol": "measured-conclusion-v14",
+  "conclusion_stage_reached": false,
+  "planned_studies": [
+    {
+      "study": "standard",
+      "strategies": [
+        "parking"
+      ],
+      "road": "长江村路",
+      "target": "auto",
+      "demand_profile": "base",
+      "rationale": "在长江村路新基准下顺序实测两个不同停车候选，比较停车强度与位置的独立效果，为单向组的停车参照提供依据。"
+    },
+    {
+      "study": "standard",
+      "strategies": [
+        "parking",
+        "oneway"
+      ],
+      "road": "长江村路",
+      "target": "auto",
+      "demand_profile": "base",
+      "rationale": "完整比较无治理/停车/单向/停车+单向四项对照，检验单向组织相对仅停车的独立效果及组合收益，并同时守护邻区。"
+    }
+  ],
+  "initial_assessment": [
+    {
+      "hypothesis": "停车、单向或其组合任一措施能使长江村路核心总耗时低于无治理基准。",
+      "evidence_needed": "长江村路核心范围在仅停车、单向、停车＋单向三种措施下，各自同需求（1.0）总耗时均须严格低于同组无治理新基准；至少一个可通行有效措施即可，各指定候选分别核对。",
+      "criterion": {
+        "test": "core_time_decrease",
+        "studies": [
+          1
+        ],
+        "policies": "all",
+        "quantifier": "any"
+      }
+    },
+    {
+      "hypothesis": "单向组织或其组合相对仅停车能带来进一步的核心耗时下降。",
+      "evidence_needed": "单向措施与停车＋单向组合的核心总耗时，须分别严格低于同需求（1.0）仅停车措施；用以判断交通组织相对仅停车是否带来额外收益。",
+      "criterion": {
+        "test": "core_advantage_over_parking",
+        "studies": [
+          1
+        ],
+        "policies": "traffic_control",
+        "quantifier": "any"
+      }
+    },
+    {
+      "hypothesis": "至少存在一个同时满足全部推荐约束的可推荐措施。",
+      "evidence_needed": "各组已试措施（停车、单向、组合）须通过全部原定推荐约束及控制响应检查，才能获得推荐资格；未达标措施如实保留其试验结果。",
+      "criterion": {
+        "test": "admissible",
+        "studies": [
+          1
+        ],
+        "policies": "all",
+        "quantifier": "all"
+      }
+    },
+    {
+      "hypothesis": "所有已试措施均不会把拥堵代价转移到邻区而突破保护门槛。",
+      "evidence_needed": "各已试措施下邻区耗时增幅与毛新增过饱和均须不超过原定保护门槛；邻区可因治理产生有限代价但不得突破硬门槛。",
+      "criterion": {
+        "test": "neighbor_limits",
+        "studies": [
+          1
+        ],
+        "policies": "all",
+        "quantifier": "all"
+      }
+    }
+  ],
+  "original_initial_check": {
+    "version": "initial-hypothesis-correction-v3",
+    "design": {
+      "studies": [
+        {
+          "source_studies": [
+            1
+          ],
+          "task": {
+            "scenario": "parking",
+            "road_name": "长江村路",
+            "demand_factors": [
+              1.0
+            ],
+            "max_neighbor_time_increase_pct": 0.5,
+            "max_new_oversaturated_km": 0.1
+          }
+        },
+        {
+          "source_studies": [
+            2
+          ],
+          "task": {
+            "scenario": "oneway",
+            "road_name": "长江村路",
+            "demand_factors": [
+              1.0
+            ],
+            "max_neighbor_time_increase_pct": 0.5,
+            "max_new_oversaturated_km": 0.1
+          }
+        }
+      ],
+      "aliases": []
+    },
+    "budget_check": {
+      "version": "initial-plan-budget-v3",
+      "groups": [
+        {
+          "ordinal": 1,
+          "title": "停车治理与反馈",
+          "study": "standard",
+          "target_ref": "auto",
+          "conditions": {
+            "scenario": "parking",
+            "road_name": "长江村路",
+            "search_mode": "standard",
+            "recommendation_version": "tolerance-v2",
+            "demand_factors": [
+              1.0
+            ],
+            "repeat_baseline": false,
+            "max_links": 3,
+            "max_feedback": 2,
+            "comparison_regions": 1,
+            "completion_required": true,
+            "comparison_policies": 2
+          },
+          "native_runs": 3,
+          "model_requests": 3,
+          "assignment_module": "M6AssignVehicle.exe",
+          "may_omit": false
+        },
+        {
+          "ordinal": 2,
+          "title": "停车＋单向组织",
+          "study": "standard",
+          "target_ref": "auto",
+          "conditions": {
+            "scenario": "oneway",
+            "road_name": "长江村路",
+            "search_mode": "standard",
+            "recommendation_version": "tolerance-v2",
+            "demand_factors": [
+              1.0
+            ],
+            "repeat_baseline": false,
+            "max_links": 3,
+            "max_feedback": 2,
+            "completion_required": true
+          },
+          "native_runs": 4,
+          "model_requests": 2,
+          "assignment_module": "M6AssignVehicle1.exe",
+          "may_omit": false
+        }
+      ],
+      "native": {
+        "required": 7,
+        "limit": 7
+      },
+      "model": {
+        "required": 6,
+        "used": 1,
+        "limit": 7
+      },
+      "fits": true,
+      "correction_feasible": false,
+      "rule": "保护必需研究及原条件。仅可由模型撤回明确标记的额外体检，或原文只要求完整组合且未要求独立比较的额外停车提议；组合四项对照仍需独立新基准。不会自动删组、合并引擎或共享结果。"
+    },
+    "issues": [
+      {
+        "hypothesis_id": "H2",
+        "message": "假设选择的措施不在该研究组的对照中",
+        "allowed_policies": []
+      },
+      {
+        "hypothesis_id": "H3",
+        "message": "假设与事前判据冲突：假设中的“所有”与“至少一个”必须沿用，不能更换量词。",
+        "allowed_policies": [],
+        "allowed_fields": {
+          "quantifier": [
+            "any"
+          ]
+        }
+      }
+    ],
+    "correction_feasible": false,
+    "wording_protocol": "bounded-question-wording-v6"
+  },
+  "independent_review": {
+    "status": "failed_initial_plan",
+    "findings": [
+      {
+        "hypothesis": "H1",
+        "kind": "ambiguous_evidence_quantifier_and_scope",
+        "quote": "三种措施下，各自同需求（1.0）总耗时均须严格低于同组无治理新基准；至少一个可通行有效措施即可",
+        "detail": "同一证据需求同时使用全部和至少一个，criterion仅引用停车组；不能将其视为完整一致的三类措施检验。"
+      },
+      {
+        "hypothesis": "H2",
+        "kind": "wrong_study_and_incomplete_policy_scope",
+        "detail": "相对仅停车的比较类型已选对，但单向/组合问题引用仅停车组1，且policies仅traffic_control不含组合。原检查已在组别不合法处拒绝。"
+      },
+      {
+        "hypothesis": "H3",
+        "kind": "existential_claim_with_universal_criterion",
+        "detail": "至少存在一个的原话与all不一致；原检查识别，但另一项组别错误使整份提议无可用有界修正。"
+      },
+      {
+        "hypothesis": "H4",
+        "kind": "group_coverage_requires_review",
+        "detail": "文字称所有已试措施，但仅引用停车组1，未明确区分单向组2；原回复保留，不代为扩大范围。"
+      }
+    ],
+    "no_native_acceptance": true,
+    "initial_generation_quality": "not_passed",
+    "bounded_checks_are_not_general_semantic_certification": true
+  },
+  "source_files": {
+    "root": "智能体实验\\mixed_question_v6_complete_20260930_01",
+    "file_count": 3,
+    "files": {
+      "launch_scope.json": {
+        "bytes": 1038,
+        "sha256": "1019aec19321703d22f49b2f8a1121b1e19d1b74df441c7c582f0e3e445b3c1e"
+      },
+      "planning_attempts/preview_165414b4a026435b94b18db773a82152.json": {
+        "bytes": 11443,
+        "sha256": "568bbf8f782259e9fc8d357149da828bba99764a2bcb572ae6ac7f479cbcce08"
+      },
+      "runtime.stdout.log": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    "previous_failed_root_unchanged": true
+  },
+  "usage": {
+    "responses": [
+      {
+        "response_id": "chatcmpl-6abc75d0ccc40afc1105fb7e",
+        "input_tokens": 6888,
+        "output_tokens": 865,
+        "tokens": 7753
+      }
+    ],
+    "previous_ledger": {
+      "path": "docs\\validation\\20260930_initial_question_v6_review.json",
+      "sha256": "d6b03dd5919b1ac493773a44b91b689151a4a020840042108302e859e6804183"
+    },
+    "prior_requests": 154,
+    "prior_known_tokens": 1475492,
+    "new_unique_requests": 1,
+    "new_known_tokens": 7753,
+    "project_retained_cumulative_requests": 155,
+    "project_retained_cumulative_known_tokens": 1483245,
+    "authorized_max_requests": 684,
+    "authorized_max_known_tokens": 4132560,
+    "new_response_ids_absent_from_prior_validation_indexes": true,
+    "prior_indexes_checked": 194,
+    "actual_input_tokens": 6888,
+    "previous_same_request_input_tokens": 6816,
+    "input_token_reduction_demonstrated": false,
+    "not_full_account_bill": true
+  },
+  "native": {
+    "new_scenes": 0,
+    "job_created": false,
+    "dispatch_created": false
+  },
+  "old_task_resumed": false,
+  "paid_retry_after_this_failure": false,
+  "end_state": {
+    "checked_runtime_locks": [
+      {
+        "path": "智能体实验\\runtime.lock",
+        "free": true,
+        "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+        "bytes_unchanged": true
+      },
+      {
+        "path": "智能体实验\\mixed_limit7_full_20260930_01\\runtime.lock",
+        "free": true,
+        "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+        "bytes_unchanged": true
+      },
+      {
+        "path": "工作材料\\便携异目录检查\\20260930_v2_RC13\\智能体实验\\oneway_scope_live_20260930_01\\runtime.lock",
+        "free": true,
+        "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+        "bytes_unchanged": true
+      },
+      {
+        "path": "工作材料\\便携异目录检查\\20260930_v2_RC14\\智能体实验\\mixed_complete_live_20260930_01\\runtime.lock",
+        "free": true,
+        "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+        "bytes_unchanged": true
+      }
+    ]
+  },
+  "pending": [
+    "reliable_initial_scope_and_quantifier_generation",
+    "v14_complete_mixed_model_native_task",
+    "final_portable_including_current_source",
+    "physical_other_machine_acceptance"
+  ]
+}

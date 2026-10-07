@@ -1,0 +1,11 @@
+{
+  "request": "主动稳健停车治理：高需求优先、按实测反馈缩小范围、补齐多需求验证",
+  "scenario": "parking",
+  "search_mode": "robust",
+  "links": [[3244, 3245], [3245, 3244], [3240, 3239]],
+  "max_links": 3,
+  "max_runs": 11,
+  "max_feedback": 2,
+  "demand_factors": [0.9, 1.0, 1.1],
+  "repeat_baseline": true
+}

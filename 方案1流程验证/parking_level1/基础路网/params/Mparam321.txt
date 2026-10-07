@@ -1,0 +1,7 @@
+多模式交通网络分方式路段长度分析参数表Mparam321.TXT
+社会车辆出行交通网络路段长度	LenLinkCar.tsd
+常规公交出行交通网络路段长度	LenLinkBus.tsd
+轨道交通出行交通网络路段长度	LenLinkSub.tsd
+步行交通出行交通网络路段长度	LenLinkWalk.tsd
+非机动车出行交通网络路段长度	LenLinkBic.tsd
+综合交通系统基础网络路段长度	LenLink.tsd

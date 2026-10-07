@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graphicInfo>
+    <Title TitleFont="黑体,12,-1,5,50,0,0,0,0,0" TitleColor="0,0,0" TitleSize="13" TitleWeight="1" TitleTilt="0">公共交通线网分布</Title>
+    <LegendTitle LegendTitleFont="黑体,12,-1,5,50,0,0,0,0,0" LegendTitleColor="0,0,0" LegendTitleSize="13" LegendTitleWeight="1" LegendTitleTilt="0" LegendTitle="图例:(条)"/>
+    <Legend LegendFont="黑体,12,-1,5,50,0,0,0,0,0" LegendColor="0,0,0" LegendSize="13" LegendWeight="1" LegendTilt="0"/>
+    <NodeEntities/>
+    <SecEntities>
+        <entity category="&lt;1" size="0.1" color="150,150,150" zValue="0" type="0"/>
+        <entity category="1~6" size="1" color="0,0,255" zValue="1" type="0"/>
+        <entity category="6~11" size="1" color="0,85,0" zValue="2" type="0"/>
+        <entity category="11~20" size="2" color="255,170,0" zValue="3" type="0"/>
+        <entity category="&gt;=20" size="2" color="231,0,0" zValue="4" type="0"/>
+        <entity category="水运航道" size="3" color="87,210,247" zValue="0" type="0"/>
+        <entity category="轨道交通" size="2" color="0,0,0" zValue="15" type="2"/>
+    </SecEntities>
+    <StationEntities/>
+    <ZoneEntities/>
+    <ZoneLineEntities/>
+    <Visibles>
+        <visible visible="1"/>
+        <visible visible="1"/>
+        <visible visible="1"/>
+        <visible visible="1"/>
+        <visible visible="1"/>
+        <visible visible="1"/>
+        <visible visible="1"/>
+        <visible visible="1"/>
+        <visible visible="1"/>
+        <visible visible="1"/>
+    </Visibles>
+</graphicInfo>

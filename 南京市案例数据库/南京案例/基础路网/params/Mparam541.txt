@@ -1,0 +1,7 @@
+Mparam541.txt—多模式公交网络交通分配客流参数表
+公交乘客O-D矩阵（输入文件）                     BusPassenger.od
+基于多路径分配的普通公交线路客流分布（输出文件） PassengerBus.dat
+基于多路径分配的快速公交线路客流分布（输出文件） PassengerBRT.dat
+基于多路径分配的轨道交通线路客流分布（输出文件） PassengerTrain.dat
+基于多路径分配的水运航线客流分布（输出文件）     PassengerWaterway.dat
+公交客流路径选择结果（输出文件）                 PassengerRoute.dat

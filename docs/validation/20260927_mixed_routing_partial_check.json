@@ -1,0 +1,27 @@
+{
+  "kind": "partial_failed_run_check",
+  "job_id": "20260927_192816_356d6a",
+  "programme_status": "failed",
+  "completed_native_scenes": 1,
+  "completed_native_modules": 7,
+  "input_bytes_unchanged": true,
+  "fresh_output_stamps_match": true,
+  "baseline_metrics_recomputed": true,
+  "model_received_completed_baseline": true,
+  "model_selected_changes": [
+    {
+      "from_node": 3244,
+      "to_node": 3245,
+      "old_parking": 3,
+      "parking": 1
+    },
+    {
+      "from_node": 3245,
+      "to_node": 3244,
+      "old_parking": 3,
+      "parking": 1
+    }
+  ],
+  "governance_executed": false,
+  "meaning": "只核对失败前基准及模型收到的观测；不是完整任务、治理效果或修复后的真实验收。"
+}

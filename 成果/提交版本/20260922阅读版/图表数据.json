@@ -1,0 +1,3916 @@
+[
+  {
+    "region": "medium",
+    "strategy": "feedback",
+    "run": "medium_feedback_p1_0.9",
+    "physical_run": "case_006",
+    "baseline": "baseline_0.9",
+    "factor": 0.9,
+    "changes": [
+      {
+        "from_node": 74,
+        "to_node": 645,
+        "old_parking": 3,
+        "parking": 2
+      },
+      {
+        "from_node": 645,
+        "to_node": 74,
+        "old_parking": 3,
+        "parking": 2
+      },
+      {
+        "from_node": 645,
+        "to_node": 782,
+        "old_parking": 3,
+        "parking": 2
+      }
+    ],
+    "comparison": {
+      "before": {
+        "core": {
+          "directed_links": 3,
+          "directed_length_km": 1.423,
+          "weighted_speed_kmh": 30.162582898244512,
+          "running_time_pcu_h": 87.88865028380204,
+          "transport_pcu_km": 2650.9487,
+          "oversaturated_km": 1.423,
+          "timelink_flagged_links": 0,
+          "timelink_sum_pcu_h": 87.88812308333334
+        },
+        "neighbor": {
+          "directed_links": 47,
+          "directed_length_km": 19.129,
+          "weighted_speed_kmh": 58.895926902976704,
+          "running_time_pcu_h": 206.68951369173115,
+          "transport_pcu_km": 12173.17049,
+          "oversaturated_km": 3.655,
+          "timelink_flagged_links": 0,
+          "timelink_sum_pcu_h": 206.68471402777777
+        },
+        "network": {
+          "directed_links": 32060,
+          "directed_length_km": 12446.9460498,
+          "weighted_speed_kmh": 35.17828051472454,
+          "running_time_pcu_h": 197224.99385735166,
+          "transport_pcu_km": 6938036.158428742,
+          "oversaturated_km": 1422.0844065000001,
+          "timelink_flagged_links": 44,
+          "timelink_sum_pcu_h": null
+        }
+      },
+      "after": {
+        "core": {
+          "directed_links": 3,
+          "directed_length_km": 1.423,
+          "weighted_speed_kmh": 32.06296152972371,
+          "running_time_pcu_h": 84.45199697132699,
+          "transport_pcu_km": 2707.7811300000003,
+          "oversaturated_km": 1.423,
+          "timelink_flagged_links": 0,
+          "timelink_sum_pcu_h": 84.45274383333333
+        },
+        "neighbor": {
+          "directed_links": 47,
+          "directed_length_km": 19.129,
+          "weighted_speed_kmh": 56.04604249741775,
+          "running_time_pcu_h": 213.23773593025115,
+          "transport_pcu_km": 11951.13121,
+          "oversaturated_km": 3.655,
+          "timelink_flagged_links": 0,
+          "timelink_sum_pcu_h": 213.22952083333334
+        },
+        "network": {
+          "directed_links": 32060,
+          "directed_length_km": 12446.9460498,
+          "weighted_speed_kmh": 35.19201966402947,
+          "running_time_pcu_h": 197160.35470609684,
+          "transport_pcu_km": 6938471.079783986,
+          "oversaturated_km": 1424.3512422,
+          "timelink_flagged_links": 44,
+          "timelink_sum_pcu_h": null
+        }
+      },
+      "delta": {
+        "core": {
+          "speed_change_pct": 6.300450587704143,
+          "running_time_change_pct": -3.910235623573366,
+          "oversaturated_km_change": 0.0
+        },
+        "neighbor": {
+          "speed_change_pct": -4.838848041654497,
+          "running_time_change_pct": 3.168144392795069,
+          "oversaturated_km_change": 0.0
+        },
+        "network": {
+          "speed_change_pct": 0.03905577277769634,
+          "running_time_change_pct": -0.032774320328576856,
+          "oversaturated_km_change": 2.266835699999774
+        }
+      },
+      "eligible": false,
+      "violations": [
+        "neighbor路段行驶时间增幅超过0.5%"
+      ],
+      "new_neighbor_oversaturated_km": 0,
+      "new_neighbor_oversaturated_links": []
+    },
+    "before": {
+      "core": {
+        "directed_links": 3,
+        "directed_length_km": 1.423,
+        "weighted_speed_kmh": 30.162582898244512,
+        "running_time_pcu_h": 87.88865028380204,
+        "transport_pcu_km": 2650.9487,
+        "oversaturated_km": 1.423,
+        "timelink_flagged_links": 0,
+        "timelink_sum_pcu_h": 87.88812308333334
+      },
+      "neighbor": {
+        "directed_links": 47,
+        "directed_length_km": 19.129,
+        "weighted_speed_kmh": 58.895926902976704,
+        "running_time_pcu_h": 206.68951369173115,
+        "transport_pcu_km": 12173.17049,
+        "oversaturated_km": 3.655,
+        "timelink_flagged_links": 0,
+        "timelink_sum_pcu_h": 206.68471402777777
+      },
+      "network": {
+        "directed_links": 32060,
+        "directed_length_km": 12446.9460498,
+        "weighted_speed_kmh": 35.17828051472454,
+        "running_time_pcu_h": 197224.99385735166,
+        "transport_pcu_km": 6938036.158428742,
+        "oversaturated_km": 1422.0844065000001,
+        "timelink_flagged_links": 44,
+        "timelink_sum_pcu_h": null
+      }
+    },
+    "after": {
+      "core": {
+        "directed_links": 3,
+        "directed_length_km": 1.423,
+        "weighted_speed_kmh": 32.06296152972371,
+        "running_time_pcu_h": 84.45199697132699,
+        "transport_pcu_km": 2707.7811300000003,
+        "oversaturated_km": 1.423,
+        "timelink_flagged_links": 0,
+        "timelink_sum_pcu_h": 84.45274383333333
+      },
+      "neighbor": {
+        "directed_links": 47,
+        "directed_length_km": 19.129,
+        "weighted_speed_kmh": 56.04604249741775,
+        "running_time_pcu_h": 213.23773593025115,
+        "transport_pcu_km": 11951.13121,
+        "oversaturated_km": 3.655,
+        "timelink_flagged_links": 0,
+        "timelink_sum_pcu_h": 213.22952083333334
+      },
+      "network": {
+        "directed_links": 32060,
+        "directed_length_km": 12446.9460498,
+        "weighted_speed_kmh": 35.19201966402947,
+        "running_time_pcu_h": 197160.35470609684,
+        "transport_pcu_km": 6938471.079783986,
+        "oversaturated_km": 1424.3512422,
+        "timelink_flagged_links": 44,
+        "timelink_sum_pcu_h": null
+      }
+    },
+    "risk": {
+      "inner_neighbor_links": 21,
+      "inner_neighbor_time_change_pct": 1.98816888003992,
+      "new_network_oversaturated_km": 4.18232,
+      "gross_time_added_pcu_h": 360.63357212087453,
+      "gross_time_saved_pcu_h": 425.27272337569525,
+      "worst_links": [
+        {
+          "from_node": 10305,
+          "to_node": 32,
+          "name": "11044路",
+          "time_increase_pcu_h": 10.334474398650276,
+          "new_overloaded": false
+        },
+        {
+          "from_node": 96,
+          "to_node": 10277,
+          "name": "浦口大道",
+          "time_increase_pcu_h": 8.97770221112172,
+          "new_overloaded": false
+        },
+        {
+          "from_node": 6580,
+          "to_node": 6837,
+          "name": "25040路",
+          "time_increase_pcu_h": 8.37694151196486,
+          "new_overloaded": true
+        },
+        {
+          "from_node": 645,
+          "to_node": 74,
+          "name": "虎桥路",
+          "time_increase_pcu_h": 7.457331062404016,
+          "new_overloaded": false
+        },
+        {
+          "from_node": 651,
+          "to_node": 191,
+          "name": "庙东路",
+          "time_increase_pcu_h": 6.982282125354562,
+          "new_overloaded": true
+        }
+      ]
+    },
+    "links": [
+      {
+        "id": 190,
+        "start": 74,
+        "end": 78,
+        "name": "浦滨路",
+        "length": 0.761,
+        "group": "neighbor",
+        "treated": false,
+        "paths": [
+          [
+            [
+              651934.97,
+              3542741.85
+            ],
+            [
+              652297.96,
+              3543412.46
+            ]
+          ]
+        ],
+        "geometry": "shp",
+        "before": [
+          77.6,
+          2116.55,
+          0.661757,
+          2
+        ],
+        "after": [
+          76.94,
+          2201.38,
+          0.68828,
+          2
+        ]
+      },
+      {
+        "id": 191,
+        "start": 74,
+        "end": 179,
+        "name": "浦滨路",
+        "length": 0.44,
+        "group": "neighbor",
+        "treated": false,
+        "paths": [
+          [
+            [
+              651934.97,
+              3542741.85
+            ],
+            [
+              651684.03,
+              3542378.19
+            ]
+          ]
+        ],
+        "geometry": "shp",
+        "before": [
+          80.0,
+          322.66,
+          0.133902,
+          2
+        ],
+        "after": [
+          80.0,
+          225.77,
+          0.0936929,
+          2
+        ]
+      },
+      {
+        "id": 192,
+        "start": 74,
+        "end": 645,
+        "name": "虎桥路",
+        "length": 0.528,
+        "group": "core",
+        "treated": true,
+        "paths": [
+          [
+            [
+              651934.97,
+              3542741.85
+            ],
+            [
+              651445.52,
+              3542941.26
+            ]
+          ]
+        ],
+        "geometry": "shp",
+        "before": [
+          28.58,
+          1929.59,
+          1.35776,
+          3
+        ],
+        "after": [
+          33.77,
+          1929.65,
+          1.3578,
+          2
+        ]
+      },
+      {
+        "id": 201,
+        "start": 77,
+        "end": 181,
+        "name": "绿水湾路",
+        "length": 0.387,
+        "group": "neighbor",
+        "treated": false,
+        "paths": [
+          [
+            [
+              651447.42,
+              3543684.2
+            ],
+            [
+              651815.03,
+              3543563.0
+            ]
+          ]
+        ],
+        "geometry": "shp",
+        "before": [
+          80.0,
+          67.69,
+          0.0233966,
+          2
+        ],
+        "after": [
+          80.0,
+          136.74,
+          0.0472632,
+          2
+        ]
+      },
+      {
+        "id": 203,
+        "start": 77,
+        "end": 648,
+        "name": "大华路",
+        "length": 0.367,
+        "group": "neighbor",
+        "treated": false,
+        "paths": [
+          [
+            [
+              651447.42,
+              3543684.2
+            ],
+            [
+              651266.66,
+              3543363.56
+            ]
+          ]
+        ],
+        "geometry": "shp",
+        "before": [
+          44.27,
+          1235.67,
+          1.02369,
+          3
+        ],
+        "after": [
+          34.9,
+          1473.71,
+          1.2209,
+          3
+        ]
+      },
+      {
+        "id": 204,
+        "start": 78,
+        "end": 74,
+        "name": "浦滨路",
+        "length": 0.761,
+        "group": "neighbor",
+        "treated": false,
+        "paths": [
+          [
+            [
+              652297.96,
+              3543412.46
+            ],
+            [
+              651934.97,
+              3542741.85
+            ]
+          ]
+        ],
+        "geometry": "shp",
+        "before": [
+          77.22,
+          2252.24,
+          0.704181,
+          2
+        ],
+        "after": [
+          77.58,
+          2155.43,
+          0.673913,
+          2
+        ]
+      },
+      {
+        "id": 205,
+        "start": 78,
+        "end": 181,
+        "name": "绿水湾路",
+        "length": 0.505,
+        "group": "neighbor",
+        "treated": false,
+        "paths": [
+          [
+            [
+              652297.96,
+              3543412.46
+            ],
+            [
+              651815.03,
+              3543563.0
+            ]
+          ]
+        ],
+        "geometry": "shp",
+        "before": [
+          79.95,
+          832.95,
+          0.255417,
+          2
+        ],
+        "after": [
+          79.94,
+          880.84,
+          0.270102,
+          2
+        ]
+      },
+      {
+        "id": 206,
+        "start": 78,
+        "end": 187,
+        "name": "浦滨路",
+        "length": 0.339,
+        "group": "neighbor",
+        "treated": false,
+        "paths": [
+          [
+            [
+              652297.96,
+              3543412.46
+            ],
+            [
+              652444.48,
+              3543719.42
+            ]
+          ]
+        ],
+        "geometry": "shp",
+        "before": [
+          61.86,
+          2445.93,
+          1.13158,
+          2
+        ],
+        "after": [
+          60.36,
+          2467.95,
+          1.14177,
+          2
+        ]
+      },
+      {
+        "id": 207,
+        "start": 78,
+        "end": 1900,
+        "name": "12010路",
+        "length": 0.14,
+        "group": "neighbor",
+        "treated": false,
+        "paths": [
+          [
+            [
+              652297.96,
+              3543412.46
+            ],
+            [
+              652436.19,
+              3543389.0
+            ]
+          ]
+        ],
+        "geometry": "shp",
+        "before": [
+          40.0,
+          0.0,
+          0.0,
+          4
+        ],
+        "after": [
+          40.0,
+          0.0,
+          0.0,
+          4
+        ]
+      },
+      {
+        "id": 565,
+        "start": 178,
+        "end": 179,
+        "name": "浦滨路",
+        "length": 0.351,
+        "group": "neighbor",
+        "treated": false,
+        "paths": [
+          [
+            [
+              651489.43,
+              3542084.92
+            ],
+            [
+              651684.03,
+              3542378.19
+            ]
+          ]
+        ],
+        "geometry": "shp",
+        "before": [
+          80.0,
+          5.99,
+          0.0027339,
+          2
+        ],
+        "after": [
+          80.0,
+          4.94,
+          0.00225467,
+          2
+        ]
+      },
+      {
+        "id": 566,
+        "start": 178,
+        "end": 773,
+        "name": "12186路",
+        "length": 0.467,
+        "group": "neighbor",
+        "treated": false,
+        "paths": [
+          [
+            [
+              651489.43,
+              3542084.92
+            ],
+            [
+              651039.4,
+              3542212.0
+            ]
+          ]
+        ],
+        "geometry": "shp",
+        "before": [
+          60.0,
+          6.71,
+          0.00500731,
+          3
+        ],
+        "after": [
+          60.0,
+          6.38,
+          0.00476105,
+          3
+        ]
+      },
+      {
+        "id": 567,
+        "start": 179,
+        "end": 74,
+        "name": "浦滨路",
+        "length": 0.44,
+        "group": "neighbor",
+        "treated": false,
+        "paths": [
+          [
+            [
+              651684.03,
+              3542378.19
+            ],
+            [
+              651934.97,
+              3542741.85
+            ]
+          ]
+        ],
+        "geometry": "shp",
+        "before": [
+          80.0,
+          132.59,
+          0.0550239,
+          2
+        ],
+        "after": [
+          80.0,
+          0.0,
+          0.0,
+          2
+        ]
+      },
+      {
+        "id": 568,
+        "start": 179,
+        "end": 178,
+        "name": "浦滨路",
+        "length": 0.351,
+        "group": "neighbor",
+        "treated": false,
+        "paths": [
+          [
+            [
+              651684.03,
+              3542378.19
+            ],
+            [
+              651489.43,
+              3542084.92
+            ]
+          ]
+        ],
+        "geometry": "shp",
+        "before": [
+          80.0,
+          0.0,
+          0.0,
+          2
+        ],
+        "after": [
+          80.0,
+          0.0,
+          0.0,
+          2
+        ]
+      },
+      {
+        "id": 569,
+        "start": 179,
+        "end": 771,
+        "name": "外江路",
+        "length": 0.473,
+        "group": "neighbor",
+        "treated": false,
+        "paths": [
+          [
+            [
+              651684.03,
+              3542378.19
+            ],
+            [
+              651239.19,
+              3542540.46
+            ]
+          ]
+        ],
+        "geometry": "shp",
+        "before": [
+          60.0,
+          328.64,
+          0.33462,
+          3
+        ],
+        "after": [
+          60.0,
+          230.71,
+          0.234908,
+          3
+        ]
+      },
+      {
+        "id": 574,
+        "start": 181,
+        "end": 77,
+        "name": "绿水湾路",
+        "length": 0.387,
+        "group": "neighbor",
+        "treated": false,
+        "paths": [
+          [
+            [
+              651815.03,
+              3543563.0
+            ],
+            [
+              651447.42,
+              3543684.2
+            ]
+          ]
+        ],
+        "geometry": "shp",
+        "before": [
+          80.0,
+          235.72,
+          0.0814749,
+          2
+        ],
+        "after": [
+          80.0,
+          228.6,
+          0.079014,
+          2
+        ]
+      },
+      {
+        "id": 575,
+        "start": 181,
+        "end": 78,
+        "name": "绿水湾路",
+        "length": 0.505,
+        "group": "neighbor",
+        "treated": false,
+        "paths": [
+          [
+            [
+              651815.03,
+              3543563.0
+            ],
+            [
+              652297.96,
+              3543412.46
+            ]
+          ]
+        ],
+        "geometry": "shp",
+        "before": [
+          79.99,
+          633.24,
+          0.194177,
+          2
+        ],
+        "after": [
+          79.99,
+          535.57,
+          0.164228,
+          2
+        ]
+      },
+      {
+        "id": 576,
+        "start": 181,
+        "end": 782,
+        "name": "象贤路",
+        "length": 0.354,
+        "group": "neighbor",
+        "treated": false,
+        "paths": [
+          [
+            [
+              651815.03,
+              3543563.0
+            ],
+            [
+              651630.15,
+              3543259.95
+            ]
+          ]
+        ],
+        "geometry": "shp",
+        "before": [
+          49.39,
+          1077.14,
+          1.2426,
+          3
+        ],
+        "after": [
+          49.63,
+          1066.3,
+          1.2301,
+          3
+        ]
+      },
+      {
+        "id": 577,
+        "start": 181,
+        "end": 785,
+        "name": "象贤路",
+        "length": 0.378,
+        "group": "neighbor",
+        "treated": false,
+        "paths": [
+          [
+            [
+              651815.03,
+              3543563.0
+            ],
+            [
+              651982.08,
+              3543903.19
+            ]
+          ]
+        ],
+        "geometry": "shp",
+        "before": [
+          59.27,
+          578.6,
+          0.650045,
+          3
+        ],
+        "after": [
+          59.24,
+          579.57,
+          0.651135,
+          3
+        ]
+      },
+      {
+        "id": 597,
+        "start": 187,
+        "end": 78,
+        "name": "浦滨路",
+        "length": 0.339,
+        "group": "neighbor",
+        "treated": false,
+        "paths": [
+          [
+            [
+              652444.48,
+              3543719.42
+            ],
+            [
+              652297.96,
+              3543412.46
+            ]
+          ]
+        ],
+        "geometry": "shp",
+        "before": [
+          54.18,
+          2781.34,
+          1.28675,
+          2
+        ],
+        "after": [
+          54.3,
+          2767.27,
+          1.28024,
+          2
+        ]
+      },
+      {
+        "id": 1722,
+        "start": 578,
+        "end": 644,
+        "name": "虎桥路",
+        "length": 0.459,
+        "group": "neighbor",
+        "treated": false,
+        "paths": [
+          [
+            [
+              651081.99,
+              3543046.83
+            ],
+            [
+              650634.21,
+              3543152.39
+            ]
+          ]
+        ],
+        "geometry": "shp",
+        "before": [
+          58.98,
+          716.43,
+          0.538908,
+          3
+        ],
+        "after": [
+          58.96,
+          721.0,
+          0.542346,
+          3
+        ]
+      },
+      {
+        "id": 1723,
+        "start": 578,
+        "end": 645,
+        "name": "虎桥路",
+        "length": 0.378,
+        "group": "neighbor",
+        "treated": false,
+        "paths": [
+          [
+            [
+              651081.99,
+              3543046.83
+            ],
+            [
+              651445.52,
+              3542941.26
+            ]
+          ]
+        ],
+        "geometry": "shp",
+        "before": [
+          42.56,
+          1328.97,
+          1.0878,
+          3
+        ],
+        "after": [
+          34.77,
+          1495.58,
+          1.22418,
+          3
+        ]
+      },
+      {
+        "id": 1724,
+        "start": 578,
+        "end": 648,
+        "name": "大华路",
+        "length": 0.366,
+        "group": "neighbor",
+        "treated": false,
+        "paths": [
+          [
+            [
+              651081.99,
+              3543046.83
+            ],
+            [
+              651266.66,
+              3543363.56
+            ]
+          ]
+        ],
+        "geometry": "shp",
+        "before": [
+          58.25,
+          745.76,
+          0.618508,
+          3
+        ],
+        "after": [
+          58.14,
+          757.85,
+          0.628535,
+          3
+        ]
+      },
+      {
+        "id": 1725,
+        "start": 578,
+        "end": 770,
+        "name": "大华路",
+        "length": 0.46,
+        "group": "neighbor",
+        "treated": false,
+        "paths": [
+          [
+            [
+              651081.99,
+              3543046.83
+            ],
+            [
+              650825.61,
+              3542663.62
+            ]
+          ]
+        ],
+        "geometry": "shp",
+        "before": [
+          60.0,
+          37.85,
+          0.0284428,
+          3
+        ],
+        "after": [
+          60.0,
+          54.76,
+          0.04115,
+          3
+        ]
+      },
+      {
+        "id": 1952,
+        "start": 644,
+        "end": 578,
+        "name": "虎桥路",
+        "length": 0.459,
+        "group": "neighbor",
+        "treated": false,
+        "paths": [
+          [
+            [
+              650634.21,
+              3543152.39
+            ],
+            [
+              651081.99,
+              3543046.83
+            ]
+          ]
+        ],
+        "geometry": "shp",
+        "before": [
+          60.0,
+          112.38,
+          0.0845337,
+          3
+        ],
+        "after": [
+          60.0,
+          130.02,
+          0.0978028,
+          3
+        ]
+      },
+      {
+        "id": 1954,
+        "start": 644,
+        "end": 780,
+        "name": "西华路",
+        "length": 0.409,
+        "group": "neighbor",
+        "treated": false,
+        "paths": [
+          [
+            [
+              650634.21,
+              3543152.39
+            ],
+            [
+              650872.21,
+              3543486.72
+            ]
+          ]
+        ],
+        "geometry": "shp",
+        "before": [
+          59.92,
+          358.37,
+          0.38948,
+          3
+        ],
+        "after": [
+          59.92,
+          373.49,
+          0.405913,
+          3
+        ]
+      },
+      {
+        "id": 1955,
+        "start": 645,
+        "end": 74,
+        "name": "虎桥路",
+        "length": 0.528,
+        "group": "core",
+        "treated": true,
+        "paths": [
+          [
+            [
+              651445.52,
+              3542941.26
+            ],
+            [
+              651934.97,
+              3542741.85
+            ]
+          ]
+        ],
+        "geometry": "shp",
+        "before": [
+          30.16,
+          1983.96,
+          1.39601,
+          3
+        ],
+        "after": [
+          27.55,
+          2201.38,
+          1.549,
+          2
+        ]
+      },
+      {
+        "id": 1956,
+        "start": 645,
+        "end": 578,
+        "name": "虎桥路",
+        "length": 0.378,
+        "group": "neighbor",
+        "treated": false,
+        "paths": [
+          [
+            [
+              651445.52,
+              3542941.26
+            ],
+            [
+              651081.99,
+              3543046.83
+            ]
+          ]
+        ],
+        "geometry": "shp",
+        "before": [
+          42.41,
+          1458.07,
+          1.19348,
+          3
+        ],
+        "after": [
+          41.88,
+          1421.68,
+          1.16369,
+          3
+        ]
+      },
+      {
+        "id": 1957,
+        "start": 645,
+        "end": 771,
+        "name": "象贤路",
+        "length": 0.45,
+        "group": "neighbor",
+        "treated": false,
+        "paths": [
+          [
+            [
+              651445.52,
+              3542941.26
+            ],
+            [
+              651239.19,
+              3542540.46
+            ]
+          ]
+        ],
+        "geometry": "shp",
+        "before": [
+          60.0,
+          132.83,
+          0.138387,
+          3
+        ],
+        "after": [
+          60.0,
+          109.83,
+          0.114424,
+          3
+        ]
+      },
+      {
+        "id": 1958,
+        "start": 645,
+        "end": 782,
+        "name": "象贤路",
+        "length": 0.367,
+        "group": "core",
+        "treated": true,
+        "paths": [
+          [
+            [
+              651445.52,
+              3542941.26
+            ],
+            [
+              651630.15,
+              3543259.95
+            ]
+          ]
+        ],
+        "geometry": "shp",
+        "before": [
+          33.39,
+          1592.9,
+          1.81128,
+          3
+        ],
+        "after": [
+          43.55,
+          1434.87,
+          1.63158,
+          2
+        ]
+      },
+      {
+        "id": 1966,
+        "start": 648,
+        "end": 77,
+        "name": "大华路",
+        "length": 0.367,
+        "group": "neighbor",
+        "treated": false,
+        "paths": [
+          [
+            [
+              651266.66,
+              3543363.56
+            ],
+            [
+              651447.42,
+              3543684.2
+            ]
+          ]
+        ],
+        "geometry": "shp",
+        "before": [
+          59.18,
+          616.79,
+          0.510981,
+          3
+        ],
+        "after": [
+          59.35,
+          579.39,
+          0.479997,
+          3
+        ]
+      },
+      {
+        "id": 1967,
+        "start": 648,
+        "end": 578,
+        "name": "大华路",
+        "length": 0.366,
+        "group": "neighbor",
+        "treated": false,
+        "paths": [
+          [
+            [
+              651266.66,
+              3543363.56
+            ],
+            [
+              651081.99,
+              3543046.83
+            ]
+          ]
+        ],
+        "geometry": "shp",
+        "before": [
+          44.02,
+          1254.44,
+          1.04039,
+          3
+        ],
+        "after": [
+          36.96,
+          1420.28,
+          1.17793,
+          3
+        ]
+      },
+      {
+        "id": 1968,
+        "start": 648,
+        "end": 780,
+        "name": "虎桥东路",
+        "length": 0.413,
+        "group": "neighbor",
+        "treated": false,
+        "paths": [
+          [
+            [
+              651266.66,
+              3543363.56
+            ],
+            [
+              650872.21,
+              3543486.72
+            ]
+          ]
+        ],
+        "geometry": "shp",
+        "before": [
+          44.1,
+          579.42,
+          1.12504,
+          3
+        ],
+        "after": [
+          47.41,
+          538.59,
+          1.04577,
+          3
+        ]
+      },
+      {
+        "id": 1969,
+        "start": 648,
+        "end": 782,
+        "name": "虎桥东路",
+        "length": 0.377,
+        "group": "neighbor",
+        "treated": false,
+        "paths": [
+          [
+            [
+              651266.66,
+              3543363.56
+            ],
+            [
+              651630.15,
+              3543259.95
+            ]
+          ]
+        ],
+        "geometry": "shp",
+        "before": [
+          60.0,
+          20.01,
+          0.0403769,
+          3
+        ],
+        "after": [
+          59.92,
+          123.91,
+          0.25003,
+          3
+        ]
+      },
+      {
+        "id": 2352,
+        "start": 770,
+        "end": 578,
+        "name": "大华路",
+        "length": 0.46,
+        "group": "neighbor",
+        "treated": false,
+        "paths": [
+          [
+            [
+              650825.61,
+              3542663.62
+            ],
+            [
+              651081.99,
+              3543046.83
+            ]
+          ]
+        ],
+        "geometry": "shp",
+        "before": [
+          60.0,
+          4.11,
+          0.00308851,
+          3
+        ],
+        "after": [
+          60.0,
+          57.21,
+          0.0429911,
+          3
+        ]
+      },
+      {
+        "id": 2354,
+        "start": 770,
+        "end": 771,
+        "name": "外江路",
+        "length": 0.431,
+        "group": "neighbor",
+        "treated": false,
+        "paths": [
+          [
+            [
+              650825.61,
+              3542663.62
+            ],
+            [
+              651239.19,
+              3542540.46
+            ]
+          ]
+        ],
+        "geometry": "shp",
+        "before": [
+          59.92,
+          447.28,
+          0.475102,
+          3
+        ],
+        "after": [
+          60.0,
+          287.52,
+          0.305404,
+          3
+        ]
+      },
+      {
+        "id": 2356,
+        "start": 771,
+        "end": 179,
+        "name": "外江路",
+        "length": 0.473,
+        "group": "neighbor",
+        "treated": false,
+        "paths": [
+          [
+            [
+              651239.19,
+              3542540.46
+            ],
+            [
+              651684.03,
+              3542378.19
+            ]
+          ]
+        ],
+        "geometry": "shp",
+        "before": [
+          60.0,
+          132.59,
+          0.0923901,
+          3
+        ],
+        "after": [
+          60.0,
+          0.0,
+          0.0,
+          3
+        ]
+      },
+      {
+        "id": 2357,
+        "start": 771,
+        "end": 645,
+        "name": "象贤路",
+        "length": 0.45,
+        "group": "neighbor",
+        "treated": false,
+        "paths": [
+          [
+            [
+              651239.19,
+              3542540.46
+            ],
+            [
+              651445.52,
+              3542941.26
+            ]
+          ]
+        ],
+        "geometry": "shp",
+        "before": [
+          59.92,
+          808.52,
+          0.563385,
+          3
+        ],
+        "after": [
+          60.0,
+          548.31,
+          0.382068,
+          3
+        ]
+      },
+      {
+        "id": 2358,
+        "start": 771,
+        "end": 770,
+        "name": "外江路",
+        "length": 0.431,
+        "group": "neighbor",
+        "treated": false,
+        "paths": [
+          [
+            [
+              651239.19,
+              3542540.46
+            ],
+            [
+              650825.61,
+              3542663.62
+            ]
+          ]
+        ],
+        "geometry": "shp",
+        "before": [
+          60.0,
+          0.24,
+          0.000167235,
+          3
+        ],
+        "after": [
+          60.0,
+          109.83,
+          0.0765307,
+          3
+        ]
+      },
+      {
+        "id": 2359,
+        "start": 771,
+        "end": 773,
+        "name": "象贤路",
+        "length": 0.383,
+        "group": "neighbor",
+        "treated": false,
+        "paths": [
+          [
+            [
+              651239.19,
+              3542540.46
+            ],
+            [
+              651039.4,
+              3542212.0
+            ]
+          ]
+        ],
+        "geometry": "shp",
+        "before": [
+          60.0,
+          0.0,
+          0.0,
+          3
+        ],
+        "after": [
+          60.0,
+          0.0,
+          0.0,
+          3
+        ]
+      },
+      {
+        "id": 2363,
+        "start": 773,
+        "end": 178,
+        "name": "13214路",
+        "length": 0.467,
+        "group": "neighbor",
+        "treated": false,
+        "paths": [
+          [
+            [
+              651039.4,
+              3542212.0
+            ],
+            [
+              651489.43,
+              3542084.92
+            ]
+          ]
+        ],
+        "geometry": "shp",
+        "before": [
+          60.0,
+          0.0,
+          0.0,
+          3
+        ],
+        "after": [
+          60.0,
+          0.0,
+          0.0,
+          3
+        ]
+      },
+      {
+        "id": 2364,
+        "start": 773,
+        "end": 771,
+        "name": "象贤路",
+        "length": 0.383,
+        "group": "neighbor",
+        "treated": false,
+        "paths": [
+          [
+            [
+              651039.4,
+              3542212.0
+            ],
+            [
+              651239.19,
+              3542540.46
+            ]
+          ]
+        ],
+        "geometry": "shp",
+        "before": [
+          60.0,
+          32.6,
+          0.0364271,
+          3
+        ],
+        "after": [
+          60.0,
+          30.08,
+          0.0336113,
+          3
+        ]
+      },
+      {
+        "id": 2386,
+        "start": 780,
+        "end": 644,
+        "name": "西华路",
+        "length": 0.409,
+        "group": "neighbor",
+        "treated": false,
+        "paths": [
+          [
+            [
+              650872.21,
+              3543486.72
+            ],
+            [
+              650634.21,
+              3543152.39
+            ]
+          ]
+        ],
+        "geometry": "shp",
+        "before": [
+          59.97,
+          324.14,
+          0.352278,
+          3
+        ],
+        "after": [
+          60.0,
+          234.32,
+          0.254661,
+          3
+        ]
+      },
+      {
+        "id": 2388,
+        "start": 780,
+        "end": 648,
+        "name": "虎桥东路",
+        "length": 0.413,
+        "group": "neighbor",
+        "treated": false,
+        "paths": [
+          [
+            [
+              650872.21,
+              3543486.72
+            ],
+            [
+              651266.66,
+              3543363.56
+            ]
+          ]
+        ],
+        "geometry": "shp",
+        "before": [
+          60.0,
+          39.55,
+          0.0767931,
+          3
+        ],
+        "after": [
+          59.99,
+          70.48,
+          0.136849,
+          3
+        ]
+      },
+      {
+        "id": 2394,
+        "start": 782,
+        "end": 181,
+        "name": "象贤路",
+        "length": 0.354,
+        "group": "neighbor",
+        "treated": false,
+        "paths": [
+          [
+            [
+              651630.15,
+              3543259.95
+            ],
+            [
+              651815.03,
+              3543563.0
+            ]
+          ]
+        ],
+        "geometry": "shp",
+        "before": [
+          48.21,
+          1143.7,
+          1.3194,
+          3
+        ],
+        "after": [
+          50.31,
+          1074.74,
+          1.23984,
+          3
+        ]
+      },
+      {
+        "id": 2395,
+        "start": 782,
+        "end": 645,
+        "name": "象贤路",
+        "length": 0.367,
+        "group": "neighbor",
+        "treated": false,
+        "paths": [
+          [
+            [
+              651630.15,
+              3543259.95
+            ],
+            [
+              651445.52,
+              3542941.26
+            ]
+          ]
+        ],
+        "geometry": "shp",
+        "before": [
+          49.25,
+          1096.68,
+          1.24704,
+          3
+        ],
+        "after": [
+          45.94,
+          1190.21,
+          1.35339,
+          3
+        ]
+      },
+      {
+        "id": 2396,
+        "start": 782,
+        "end": 648,
+        "name": "虎桥东路",
+        "length": 0.377,
+        "group": "neighbor",
+        "treated": false,
+        "paths": [
+          [
+            [
+              651630.15,
+              3543259.95
+            ],
+            [
+              651266.66,
+              3543363.56
+            ]
+          ]
+        ],
+        "geometry": "shp",
+        "before": [
+          52.16,
+          449.68,
+          0.907381,
+          3
+        ],
+        "after": [
+          56.47,
+          360.13,
+          0.726684,
+          3
+        ]
+      },
+      {
+        "id": 2397,
+        "start": 782,
+        "end": 1896,
+        "name": "13223路",
+        "length": 0.293,
+        "group": "neighbor",
+        "treated": false,
+        "paths": [
+          [
+            [
+              651630.15,
+              3543259.95
+            ],
+            [
+              651911.01,
+              3543175.89
+            ]
+          ]
+        ],
+        "geometry": "shp",
+        "before": [
+          40.0,
+          0.0,
+          0.0,
+          4
+        ],
+        "after": [
+          40.0,
+          0.0,
+          0.0,
+          4
+        ]
+      },
+      {
+        "id": 2406,
+        "start": 785,
+        "end": 181,
+        "name": "象贤路",
+        "length": 0.378,
+        "group": "neighbor",
+        "treated": false,
+        "paths": [
+          [
+            [
+              651982.08,
+              3543903.19
+            ],
+            [
+              651815.03,
+              3543563.0
+            ]
+          ]
+        ],
+        "geometry": "shp",
+        "before": [
+          59.77,
+          480.35,
+          0.539794,
+          3
+        ],
+        "after": [
+          59.96,
+          317.72,
+          0.357038,
+          3
+        ]
+      },
+      {
+        "id": 5282,
+        "start": 1896,
+        "end": 782,
+        "name": "14436路",
+        "length": 0.293,
+        "group": "neighbor",
+        "treated": false,
+        "paths": [
+          [
+            [
+              651911.01,
+              3543175.89
+            ],
+            [
+              651630.15,
+              3543259.95
+            ]
+          ]
+        ],
+        "geometry": "shp",
+        "before": [
+          40.0,
+          0.0,
+          0.0,
+          4
+        ],
+        "after": [
+          40.0,
+          0.0,
+          0.0,
+          4
+        ]
+      },
+      {
+        "id": 5290,
+        "start": 1900,
+        "end": 78,
+        "name": "14440路",
+        "length": 0.14,
+        "group": "neighbor",
+        "treated": false,
+        "paths": [
+          [
+            [
+              652436.19,
+              3543389.0
+            ],
+            [
+              652297.96,
+              3543412.46
+            ]
+          ]
+        ],
+        "geometry": "shp",
+        "before": [
+          40.0,
+          0.0,
+          0.0,
+          4
+        ],
+        "after": [
+          40.0,
+          0.0,
+          0.0,
+          4
+        ]
+      }
+    ],
+    "mechanism": {
+      "roads": [
+        {
+          "from_node": 74,
+          "to_node": 645,
+          "name": "虎桥路",
+          "parking_before": 3,
+          "parking_after": 2,
+          "capacity_before_pcu_h": 1172.46,
+          "capacity_after_pcu_h": 1279.04,
+          "speed_before_kmh": 28.58,
+          "speed_after_kmh": 33.77,
+          "load_before": 1.6457619023250258,
+          "load_after": 1.5086705654240682,
+          "joint_saved_time_pcu_h": 5.477705308602863,
+          "note": "管理容量与速度均上升；仍须检查流量转移及核心、邻区、全网结果"
+        },
+        {
+          "from_node": 645,
+          "to_node": 74,
+          "name": "虎桥路",
+          "parking_before": 3,
+          "parking_after": 2,
+          "capacity_before_pcu_h": 1172.46,
+          "capacity_after_pcu_h": 1279.04,
+          "speed_before_kmh": 30.16,
+          "speed_after_kmh": 27.55,
+          "load_before": 1.692134486464357,
+          "load_after": 1.7211189642231675,
+          "joint_saved_time_pcu_h": -7.457331062404016,
+          "note": "管理容量上升，但本次速度没有提高；容量联动不等于耗时收益"
+        },
+        {
+          "from_node": 645,
+          "to_node": 782,
+          "name": "象贤路",
+          "parking_before": 3,
+          "parking_after": 2,
+          "capacity_before_pcu_h": 995.833,
+          "capacity_after_pcu_h": 1086.36,
+          "speed_before_kmh": 33.39,
+          "speed_after_kmh": 43.55,
+          "load_before": 1.5995653889758625,
+          "load_after": 1.3208052579255496,
+          "joint_saved_time_pcu_h": 5.416279066276194,
+          "note": "管理容量与速度均上升；仍须检查流量转移及核心、邻区、全网结果"
+        }
+      ],
+      "no_positive_joint_link_benefit": false,
+      "interpretation": "每条道路是联合治理仿真的观察，不是拆分干预的因果贡献；未验证停车需求承接和执法成本"
+    },
+    "geometry_note": "32060/32060 条有向道路匹配案例 SHP；未匹配几何采用案例节点直连"
+  },
+  {
+    "region": "medium",
+    "strategy": "feedback",
+    "run": "medium_feedback_p2_0.9",
+    "physical_run": "case_012",
+    "baseline": "baseline_0.9",
+    "factor": 0.9,
+    "changes": [
+      {
+        "from_node": 74,
+        "to_node": 645,
+        "old_parking": 3,
+        "parking": 2
+      }
+    ],
+    "comparison": {
+      "before": {
+        "core": {
+          "directed_links": 3,
+          "directed_length_km": 1.423,
+          "weighted_speed_kmh": 30.162582898244512,
+          "running_time_pcu_h": 87.88865028380204,
+          "transport_pcu_km": 2650.9487,
+          "oversaturated_km": 1.423,
+          "timelink_flagged_links": 0,
+          "timelink_sum_pcu_h": 87.88812308333334
+        },
+        "neighbor": {
+          "directed_links": 47,
+          "directed_length_km": 19.129,
+          "weighted_speed_kmh": 58.895926902976704,
+          "running_time_pcu_h": 206.68951369173115,
+          "transport_pcu_km": 12173.17049,
+          "oversaturated_km": 3.655,
+          "timelink_flagged_links": 0,
+          "timelink_sum_pcu_h": 206.68471402777777
+        },
+        "network": {
+          "directed_links": 32060,
+          "directed_length_km": 12446.9460498,
+          "weighted_speed_kmh": 35.17828051472454,
+          "running_time_pcu_h": 197224.99385735166,
+          "transport_pcu_km": 6938036.158428742,
+          "oversaturated_km": 1422.0844065000001,
+          "timelink_flagged_links": 44,
+          "timelink_sum_pcu_h": null
+        }
+      },
+      "after": {
+        "core": {
+          "directed_links": 3,
+          "directed_length_km": 1.423,
+          "weighted_speed_kmh": 32.16786177804814,
+          "running_time_pcu_h": 82.4131339002806,
+          "transport_pcu_km": 2651.0543,
+          "oversaturated_km": 1.423,
+          "timelink_flagged_links": 0,
+          "timelink_sum_pcu_h": 82.40799816666667
+        },
+        "neighbor": {
+          "directed_links": 47,
+          "directed_length_km": 19.129,
+          "weighted_speed_kmh": 58.89583114319703,
+          "running_time_pcu_h": 206.68474090132727,
+          "transport_pcu_km": 12172.8696,
+          "oversaturated_km": 3.655,
+          "timelink_flagged_links": 0,
+          "timelink_sum_pcu_h": 206.68766711111112
+        },
+        "network": {
+          "directed_links": 32060,
+          "directed_length_km": 12446.9460498,
+          "weighted_speed_kmh": 35.17925278134649,
+          "running_time_pcu_h": 197219.63861338331,
+          "transport_pcu_km": 6938039.520226015,
+          "oversaturated_km": 1422.0844065000001,
+          "timelink_flagged_links": 44,
+          "timelink_sum_pcu_h": null
+        }
+      },
+      "delta": {
+        "core": {
+          "speed_change_pct": 6.648233298085149,
+          "running_time_change_pct": -6.230060839301088,
+          "oversaturated_km_change": 0.0
+        },
+        "neighbor": {
+          "speed_change_pct": -0.00016259151475184197,
+          "running_time_change_pct": -0.0023091594336999144,
+          "oversaturated_km_change": 0.0
+        },
+        "network": {
+          "speed_change_pct": 0.0027638264512130917,
+          "running_time_change_pct": -0.0027152968108179465,
+          "oversaturated_km_change": 0.0
+        }
+      },
+      "eligible": true,
+      "violations": [],
+      "new_neighbor_oversaturated_km": 0,
+      "new_neighbor_oversaturated_links": []
+    },
+    "before": {
+      "core": {
+        "directed_links": 3,
+        "directed_length_km": 1.423,
+        "weighted_speed_kmh": 30.162582898244512,
+        "running_time_pcu_h": 87.88865028380204,
+        "transport_pcu_km": 2650.9487,
+        "oversaturated_km": 1.423,
+        "timelink_flagged_links": 0,
+        "timelink_sum_pcu_h": 87.88812308333334
+      },
+      "neighbor": {
+        "directed_links": 47,
+        "directed_length_km": 19.129,
+        "weighted_speed_kmh": 58.895926902976704,
+        "running_time_pcu_h": 206.68951369173115,
+        "transport_pcu_km": 12173.17049,
+        "oversaturated_km": 3.655,
+        "timelink_flagged_links": 0,
+        "timelink_sum_pcu_h": 206.68471402777777
+      },
+      "network": {
+        "directed_links": 32060,
+        "directed_length_km": 12446.9460498,
+        "weighted_speed_kmh": 35.17828051472454,
+        "running_time_pcu_h": 197224.99385735166,
+        "transport_pcu_km": 6938036.158428742,
+        "oversaturated_km": 1422.0844065000001,
+        "timelink_flagged_links": 44,
+        "timelink_sum_pcu_h": null
+      }
+    },
+    "after": {
+      "core": {
+        "directed_links": 3,
+        "directed_length_km": 1.423,
+        "weighted_speed_kmh": 32.16786177804814,
+        "running_time_pcu_h": 82.4131339002806,
+        "transport_pcu_km": 2651.0543,
+        "oversaturated_km": 1.423,
+        "timelink_flagged_links": 0,
+        "timelink_sum_pcu_h": 82.40799816666667
+      },
+      "neighbor": {
+        "directed_links": 47,
+        "directed_length_km": 19.129,
+        "weighted_speed_kmh": 58.89583114319703,
+        "running_time_pcu_h": 206.68474090132727,
+        "transport_pcu_km": 12172.8696,
+        "oversaturated_km": 3.655,
+        "timelink_flagged_links": 0,
+        "timelink_sum_pcu_h": 206.68766711111112
+      },
+      "network": {
+        "directed_links": 32060,
+        "directed_length_km": 12446.9460498,
+        "weighted_speed_kmh": 35.17925278134649,
+        "running_time_pcu_h": 197219.63861338331,
+        "transport_pcu_km": 6938039.520226015,
+        "oversaturated_km": 1422.0844065000001,
+        "timelink_flagged_links": 44,
+        "timelink_sum_pcu_h": null
+      }
+    },
+    "risk": {
+      "inner_neighbor_links": 21,
+      "inner_neighbor_time_change_pct": -0.0036055842890569956,
+      "new_network_oversaturated_km": 0.0,
+      "gross_time_added_pcu_h": 0.3466392402563776,
+      "gross_time_saved_pcu_h": 5.701883208597953,
+      "worst_links": [
+        {
+          "from_node": 96,
+          "to_node": 10277,
+          "name": "浦口大道",
+          "time_increase_pcu_h": 0.044345870960710757,
+          "new_overloaded": false
+        },
+        {
+          "from_node": 210,
+          "to_node": 92,
+          "name": "龙华路",
+          "time_increase_pcu_h": 0.029698169366065244,
+          "new_overloaded": false
+        },
+        {
+          "from_node": 11138,
+          "to_node": 96,
+          "name": "浦口大道",
+          "time_increase_pcu_h": 0.024437327030650793,
+          "new_overloaded": false
+        },
+        {
+          "from_node": 10277,
+          "to_node": 95,
+          "name": "浦口大道",
+          "time_increase_pcu_h": 0.02436745027995147,
+          "new_overloaded": false
+        },
+        {
+          "from_node": 95,
+          "to_node": 212,
+          "name": "龙华路",
+          "time_increase_pcu_h": 0.02077400502214921,
+          "new_overloaded": false
+        }
+      ]
+    },
+    "links": [
+      {
+        "id": 190,
+        "start": 74,
+        "end": 78,
+        "name": "浦滨路",
+        "length": 0.761,
+        "group": "neighbor",
+        "treated": false,
+        "paths": [
+          [
+            [
+              651934.97,
+              3542741.85
+            ],
+            [
+              652297.96,
+              3543412.46
+            ]
+          ]
+        ],
+        "geometry": "shp",
+        "before": [
+          77.6,
+          2116.55,
+          0.661757,
+          2
+        ],
+        "after": [
+          77.6,
+          2116.55,
+          0.661757,
+          2
+        ]
+      },
+      {
+        "id": 191,
+        "start": 74,
+        "end": 179,
+        "name": "浦滨路",
+        "length": 0.44,
+        "group": "neighbor",
+        "treated": false,
+        "paths": [
+          [
+            [
+              651934.97,
+              3542741.85
+            ],
+            [
+              651684.03,
+              3542378.19
+            ]
+          ]
+        ],
+        "geometry": "shp",
+        "before": [
+          80.0,
+          322.66,
+          0.133902,
+          2
+        ],
+        "after": [
+          80.0,
+          322.46,
+          0.133819,
+          2
+        ]
+      },
+      {
+        "id": 192,
+        "start": 74,
+        "end": 645,
+        "name": "虎桥路",
+        "length": 0.528,
+        "group": "core",
+        "treated": true,
+        "paths": [
+          [
+            [
+              651934.97,
+              3542741.85
+            ],
+            [
+              651445.52,
+              3542941.26
+            ]
+          ]
+        ],
+        "geometry": "shp",
+        "before": [
+          28.58,
+          1929.59,
+          1.35776,
+          3
+        ],
+        "after": [
+          33.77,
+          1929.79,
+          1.3579,
+          2
+        ]
+      },
+      {
+        "id": 201,
+        "start": 77,
+        "end": 181,
+        "name": "绿水湾路",
+        "length": 0.387,
+        "group": "neighbor",
+        "treated": false,
+        "paths": [
+          [
+            [
+              651447.42,
+              3543684.2
+            ],
+            [
+              651815.03,
+              3543563.0
+            ]
+          ]
+        ],
+        "geometry": "shp",
+        "before": [
+          80.0,
+          67.69,
+          0.0233966,
+          2
+        ],
+        "after": [
+          80.0,
+          67.69,
+          0.0233966,
+          2
+        ]
+      },
+      {
+        "id": 203,
+        "start": 77,
+        "end": 648,
+        "name": "大华路",
+        "length": 0.367,
+        "group": "neighbor",
+        "treated": false,
+        "paths": [
+          [
+            [
+              651447.42,
+              3543684.2
+            ],
+            [
+              651266.66,
+              3543363.56
+            ]
+          ]
+        ],
+        "geometry": "shp",
+        "before": [
+          44.27,
+          1235.67,
+          1.02369,
+          3
+        ],
+        "after": [
+          44.27,
+          1235.63,
+          1.02366,
+          3
+        ]
+      },
+      {
+        "id": 204,
+        "start": 78,
+        "end": 74,
+        "name": "浦滨路",
+        "length": 0.761,
+        "group": "neighbor",
+        "treated": false,
+        "paths": [
+          [
+            [
+              652297.96,
+              3543412.46
+            ],
+            [
+              651934.97,
+              3542741.85
+            ]
+          ]
+        ],
+        "geometry": "shp",
+        "before": [
+          77.22,
+          2252.24,
+          0.704181,
+          2
+        ],
+        "after": [
+          77.22,
+          2252.25,
+          0.704185,
+          2
+        ]
+      },
+      {
+        "id": 205,
+        "start": 78,
+        "end": 181,
+        "name": "绿水湾路",
+        "length": 0.505,
+        "group": "neighbor",
+        "treated": false,
+        "paths": [
+          [
+            [
+              652297.96,
+              3543412.46
+            ],
+            [
+              651815.03,
+              3543563.0
+            ]
+          ]
+        ],
+        "geometry": "shp",
+        "before": [
+          79.95,
+          832.95,
+          0.255417,
+          2
+        ],
+        "after": [
+          79.95,
+          832.95,
+          0.255417,
+          2
+        ]
+      },
+      {
+        "id": 206,
+        "start": 78,
+        "end": 187,
+        "name": "浦滨路",
+        "length": 0.339,
+        "group": "neighbor",
+        "treated": false,
+        "paths": [
+          [
+            [
+              652297.96,
+              3543412.46
+            ],
+            [
+              652444.48,
+              3543719.42
+            ]
+          ]
+        ],
+        "geometry": "shp",
+        "before": [
+          61.86,
+          2445.93,
+          1.13158,
+          2
+        ],
+        "after": [
+          61.86,
+          2445.93,
+          1.13158,
+          2
+        ]
+      },
+      {
+        "id": 207,
+        "start": 78,
+        "end": 1900,
+        "name": "12010路",
+        "length": 0.14,
+        "group": "neighbor",
+        "treated": false,
+        "paths": [
+          [
+            [
+              652297.96,
+              3543412.46
+            ],
+            [
+              652436.19,
+              3543389.0
+            ]
+          ]
+        ],
+        "geometry": "shp",
+        "before": [
+          40.0,
+          0.0,
+          0.0,
+          4
+        ],
+        "after": [
+          40.0,
+          0.0,
+          0.0,
+          4
+        ]
+      },
+      {
+        "id": 565,
+        "start": 178,
+        "end": 179,
+        "name": "浦滨路",
+        "length": 0.351,
+        "group": "neighbor",
+        "treated": false,
+        "paths": [
+          [
+            [
+              651489.43,
+              3542084.92
+            ],
+            [
+              651684.03,
+              3542378.19
+            ]
+          ]
+        ],
+        "geometry": "shp",
+        "before": [
+          80.0,
+          5.99,
+          0.0027339,
+          2
+        ],
+        "after": [
+          80.0,
+          5.99,
+          0.0027339,
+          2
+        ]
+      },
+      {
+        "id": 566,
+        "start": 178,
+        "end": 773,
+        "name": "12186路",
+        "length": 0.467,
+        "group": "neighbor",
+        "treated": false,
+        "paths": [
+          [
+            [
+              651489.43,
+              3542084.92
+            ],
+            [
+              651039.4,
+              3542212.0
+            ]
+          ]
+        ],
+        "geometry": "shp",
+        "before": [
+          60.0,
+          6.71,
+          0.00500731,
+          3
+        ],
+        "after": [
+          60.0,
+          6.72,
+          0.00501478,
+          3
+        ]
+      },
+      {
+        "id": 567,
+        "start": 179,
+        "end": 74,
+        "name": "浦滨路",
+        "length": 0.44,
+        "group": "neighbor",
+        "treated": false,
+        "paths": [
+          [
+            [
+              651684.03,
+              3542378.19
+            ],
+            [
+              651934.97,
+              3542741.85
+            ]
+          ]
+        ],
+        "geometry": "shp",
+        "before": [
+          80.0,
+          132.59,
+          0.0550239,
+          2
+        ],
+        "after": [
+          80.0,
+          132.58,
+          0.0550198,
+          2
+        ]
+      },
+      {
+        "id": 568,
+        "start": 179,
+        "end": 178,
+        "name": "浦滨路",
+        "length": 0.351,
+        "group": "neighbor",
+        "treated": false,
+        "paths": [
+          [
+            [
+              651684.03,
+              3542378.19
+            ],
+            [
+              651489.43,
+              3542084.92
+            ]
+          ]
+        ],
+        "geometry": "shp",
+        "before": [
+          80.0,
+          0.0,
+          0.0,
+          2
+        ],
+        "after": [
+          80.0,
+          0.0,
+          0.0,
+          2
+        ]
+      },
+      {
+        "id": 569,
+        "start": 179,
+        "end": 771,
+        "name": "外江路",
+        "length": 0.473,
+        "group": "neighbor",
+        "treated": false,
+        "paths": [
+          [
+            [
+              651684.03,
+              3542378.19
+            ],
+            [
+              651239.19,
+              3542540.46
+            ]
+          ]
+        ],
+        "geometry": "shp",
+        "before": [
+          60.0,
+          328.64,
+          0.33462,
+          3
+        ],
+        "after": [
+          60.0,
+          328.45,
+          0.334426,
+          3
+        ]
+      },
+      {
+        "id": 574,
+        "start": 181,
+        "end": 77,
+        "name": "绿水湾路",
+        "length": 0.387,
+        "group": "neighbor",
+        "treated": false,
+        "paths": [
+          [
+            [
+              651815.03,
+              3543563.0
+            ],
+            [
+              651447.42,
+              3543684.2
+            ]
+          ]
+        ],
+        "geometry": "shp",
+        "before": [
+          80.0,
+          235.72,
+          0.0814749,
+          2
+        ],
+        "after": [
+          80.0,
+          235.72,
+          0.0814749,
+          2
+        ]
+      },
+      {
+        "id": 575,
+        "start": 181,
+        "end": 78,
+        "name": "绿水湾路",
+        "length": 0.505,
+        "group": "neighbor",
+        "treated": false,
+        "paths": [
+          [
+            [
+              651815.03,
+              3543563.0
+            ],
+            [
+              652297.96,
+              3543412.46
+            ]
+          ]
+        ],
+        "geometry": "shp",
+        "before": [
+          79.99,
+          633.24,
+          0.194177,
+          2
+        ],
+        "after": [
+          79.99,
+          633.22,
+          0.194171,
+          2
+        ]
+      },
+      {
+        "id": 576,
+        "start": 181,
+        "end": 782,
+        "name": "象贤路",
+        "length": 0.354,
+        "group": "neighbor",
+        "treated": false,
+        "paths": [
+          [
+            [
+              651815.03,
+              3543563.0
+            ],
+            [
+              651630.15,
+              3543259.95
+            ]
+          ]
+        ],
+        "geometry": "shp",
+        "before": [
+          49.39,
+          1077.14,
+          1.2426,
+          3
+        ],
+        "after": [
+          49.39,
+          1077.13,
+          1.24259,
+          3
+        ]
+      },
+      {
+        "id": 577,
+        "start": 181,
+        "end": 785,
+        "name": "象贤路",
+        "length": 0.378,
+        "group": "neighbor",
+        "treated": false,
+        "paths": [
+          [
+            [
+              651815.03,
+              3543563.0
+            ],
+            [
+              651982.08,
+              3543903.19
+            ]
+          ]
+        ],
+        "geometry": "shp",
+        "before": [
+          59.27,
+          578.6,
+          0.650045,
+          3
+        ],
+        "after": [
+          59.27,
+          578.6,
+          0.650045,
+          3
+        ]
+      },
+      {
+        "id": 597,
+        "start": 187,
+        "end": 78,
+        "name": "浦滨路",
+        "length": 0.339,
+        "group": "neighbor",
+        "treated": false,
+        "paths": [
+          [
+            [
+              652444.48,
+              3543719.42
+            ],
+            [
+              652297.96,
+              3543412.46
+            ]
+          ]
+        ],
+        "geometry": "shp",
+        "before": [
+          54.18,
+          2781.34,
+          1.28675,
+          2
+        ],
+        "after": [
+          54.18,
+          2781.37,
+          1.28677,
+          2
+        ]
+      },
+      {
+        "id": 1722,
+        "start": 578,
+        "end": 644,
+        "name": "虎桥路",
+        "length": 0.459,
+        "group": "neighbor",
+        "treated": false,
+        "paths": [
+          [
+            [
+              651081.99,
+              3543046.83
+            ],
+            [
+              650634.21,
+              3543152.39
+            ]
+          ]
+        ],
+        "geometry": "shp",
+        "before": [
+          58.98,
+          716.43,
+          0.538908,
+          3
+        ],
+        "after": [
+          58.98,
+          716.43,
+          0.538908,
+          3
+        ]
+      },
+      {
+        "id": 1723,
+        "start": 578,
+        "end": 645,
+        "name": "虎桥路",
+        "length": 0.378,
+        "group": "neighbor",
+        "treated": false,
+        "paths": [
+          [
+            [
+              651081.99,
+              3543046.83
+            ],
+            [
+              651445.52,
+              3542941.26
+            ]
+          ]
+        ],
+        "geometry": "shp",
+        "before": [
+          42.56,
+          1328.97,
+          1.0878,
+          3
+        ],
+        "after": [
+          42.56,
+          1328.98,
+          1.08781,
+          3
+        ]
+      },
+      {
+        "id": 1724,
+        "start": 578,
+        "end": 648,
+        "name": "大华路",
+        "length": 0.366,
+        "group": "neighbor",
+        "treated": false,
+        "paths": [
+          [
+            [
+              651081.99,
+              3543046.83
+            ],
+            [
+              651266.66,
+              3543363.56
+            ]
+          ]
+        ],
+        "geometry": "shp",
+        "before": [
+          58.25,
+          745.76,
+          0.618508,
+          3
+        ],
+        "after": [
+          58.25,
+          745.76,
+          0.618508,
+          3
+        ]
+      },
+      {
+        "id": 1725,
+        "start": 578,
+        "end": 770,
+        "name": "大华路",
+        "length": 0.46,
+        "group": "neighbor",
+        "treated": false,
+        "paths": [
+          [
+            [
+              651081.99,
+              3543046.83
+            ],
+            [
+              650825.61,
+              3542663.62
+            ]
+          ]
+        ],
+        "geometry": "shp",
+        "before": [
+          60.0,
+          37.85,
+          0.0284428,
+          3
+        ],
+        "after": [
+          60.0,
+          37.84,
+          0.0284353,
+          3
+        ]
+      },
+      {
+        "id": 1952,
+        "start": 644,
+        "end": 578,
+        "name": "虎桥路",
+        "length": 0.459,
+        "group": "neighbor",
+        "treated": false,
+        "paths": [
+          [
+            [
+              650634.21,
+              3543152.39
+            ],
+            [
+              651081.99,
+              3543046.83
+            ]
+          ]
+        ],
+        "geometry": "shp",
+        "before": [
+          60.0,
+          112.38,
+          0.0845337,
+          3
+        ],
+        "after": [
+          60.0,
+          112.43,
+          0.0845714,
+          3
+        ]
+      },
+      {
+        "id": 1954,
+        "start": 644,
+        "end": 780,
+        "name": "西华路",
+        "length": 0.409,
+        "group": "neighbor",
+        "treated": false,
+        "paths": [
+          [
+            [
+              650634.21,
+              3543152.39
+            ],
+            [
+              650872.21,
+              3543486.72
+            ]
+          ]
+        ],
+        "geometry": "shp",
+        "before": [
+          59.92,
+          358.37,
+          0.38948,
+          3
+        ],
+        "after": [
+          59.92,
+          358.37,
+          0.38948,
+          3
+        ]
+      },
+      {
+        "id": 1955,
+        "start": 645,
+        "end": 74,
+        "name": "虎桥路",
+        "length": 0.528,
+        "group": "core",
+        "treated": false,
+        "paths": [
+          [
+            [
+              651445.52,
+              3542941.26
+            ],
+            [
+              651934.97,
+              3542741.85
+            ]
+          ]
+        ],
+        "geometry": "shp",
+        "before": [
+          30.16,
+          1983.96,
+          1.39601,
+          3
+        ],
+        "after": [
+          30.16,
+          1983.96,
+          1.39601,
+          3
+        ]
+      },
+      {
+        "id": 1956,
+        "start": 645,
+        "end": 578,
+        "name": "虎桥路",
+        "length": 0.378,
+        "group": "neighbor",
+        "treated": false,
+        "paths": [
+          [
+            [
+              651445.52,
+              3542941.26
+            ],
+            [
+              651081.99,
+              3543046.83
+            ]
+          ]
+        ],
+        "geometry": "shp",
+        "before": [
+          42.41,
+          1458.07,
+          1.19348,
+          3
+        ],
+        "after": [
+          42.41,
+          1458.08,
+          1.19348,
+          3
+        ]
+      },
+      {
+        "id": 1957,
+        "start": 645,
+        "end": 771,
+        "name": "象贤路",
+        "length": 0.45,
+        "group": "neighbor",
+        "treated": false,
+        "paths": [
+          [
+            [
+              651445.52,
+              3542941.26
+            ],
+            [
+              651239.19,
+              3542540.46
+            ]
+          ]
+        ],
+        "geometry": "shp",
+        "before": [
+          60.0,
+          132.83,
+          0.138387,
+          3
+        ],
+        "after": [
+          60.0,
+          132.82,
+          0.138376,
+          3
+        ]
+      },
+      {
+        "id": 1958,
+        "start": 645,
+        "end": 782,
+        "name": "象贤路",
+        "length": 0.367,
+        "group": "core",
+        "treated": false,
+        "paths": [
+          [
+            [
+              651445.52,
+              3542941.26
+            ],
+            [
+              651630.15,
+              3543259.95
+            ]
+          ]
+        ],
+        "geometry": "shp",
+        "before": [
+          33.39,
+          1592.9,
+          1.81128,
+          3
+        ],
+        "after": [
+          33.39,
+          1592.9,
+          1.81128,
+          3
+        ]
+      },
+      {
+        "id": 1966,
+        "start": 648,
+        "end": 77,
+        "name": "大华路",
+        "length": 0.367,
+        "group": "neighbor",
+        "treated": false,
+        "paths": [
+          [
+            [
+              651266.66,
+              3543363.56
+            ],
+            [
+              651447.42,
+              3543684.2
+            ]
+          ]
+        ],
+        "geometry": "shp",
+        "before": [
+          59.18,
+          616.79,
+          0.510981,
+          3
+        ],
+        "after": [
+          59.18,
+          616.79,
+          0.510981,
+          3
+        ]
+      },
+      {
+        "id": 1967,
+        "start": 648,
+        "end": 578,
+        "name": "大华路",
+        "length": 0.366,
+        "group": "neighbor",
+        "treated": false,
+        "paths": [
+          [
+            [
+              651266.66,
+              3543363.56
+            ],
+            [
+              651081.99,
+              3543046.83
+            ]
+          ]
+        ],
+        "geometry": "shp",
+        "before": [
+          44.02,
+          1254.44,
+          1.04039,
+          3
+        ],
+        "after": [
+          44.02,
+          1254.39,
+          1.04035,
+          3
+        ]
+      },
+      {
+        "id": 1968,
+        "start": 648,
+        "end": 780,
+        "name": "虎桥东路",
+        "length": 0.413,
+        "group": "neighbor",
+        "treated": false,
+        "paths": [
+          [
+            [
+              651266.66,
+              3543363.56
+            ],
+            [
+              650872.21,
+              3543486.72
+            ]
+          ]
+        ],
+        "geometry": "shp",
+        "before": [
+          44.1,
+          579.42,
+          1.12504,
+          3
+        ],
+        "after": [
+          44.1,
+          579.42,
+          1.12504,
+          3
+        ]
+      },
+      {
+        "id": 1969,
+        "start": 648,
+        "end": 782,
+        "name": "虎桥东路",
+        "length": 0.377,
+        "group": "neighbor",
+        "treated": false,
+        "paths": [
+          [
+            [
+              651266.66,
+              3543363.56
+            ],
+            [
+              651630.15,
+              3543259.95
+            ]
+          ]
+        ],
+        "geometry": "shp",
+        "before": [
+          60.0,
+          20.01,
+          0.0403769,
+          3
+        ],
+        "after": [
+          60.0,
+          20.01,
+          0.0403769,
+          3
+        ]
+      },
+      {
+        "id": 2352,
+        "start": 770,
+        "end": 578,
+        "name": "大华路",
+        "length": 0.46,
+        "group": "neighbor",
+        "treated": false,
+        "paths": [
+          [
+            [
+              650825.61,
+              3542663.62
+            ],
+            [
+              651081.99,
+              3543046.83
+            ]
+          ]
+        ],
+        "geometry": "shp",
+        "before": [
+          60.0,
+          4.11,
+          0.00308851,
+          3
+        ],
+        "after": [
+          60.0,
+          4.11,
+          0.00308851,
+          3
+        ]
+      },
+      {
+        "id": 2354,
+        "start": 770,
+        "end": 771,
+        "name": "外江路",
+        "length": 0.431,
+        "group": "neighbor",
+        "treated": false,
+        "paths": [
+          [
+            [
+              650825.61,
+              3542663.62
+            ],
+            [
+              651239.19,
+              3542540.46
+            ]
+          ]
+        ],
+        "geometry": "shp",
+        "before": [
+          59.92,
+          447.28,
+          0.475102,
+          3
+        ],
+        "after": [
+          59.92,
+          447.24,
+          0.475059,
+          3
+        ]
+      },
+      {
+        "id": 2356,
+        "start": 771,
+        "end": 179,
+        "name": "外江路",
+        "length": 0.473,
+        "group": "neighbor",
+        "treated": false,
+        "paths": [
+          [
+            [
+              651239.19,
+              3542540.46
+            ],
+            [
+              651684.03,
+              3542378.19
+            ]
+          ]
+        ],
+        "geometry": "shp",
+        "before": [
+          60.0,
+          132.59,
+          0.0923901,
+          3
+        ],
+        "after": [
+          60.0,
+          132.58,
+          0.0923832,
+          3
+        ]
+      },
+      {
+        "id": 2357,
+        "start": 771,
+        "end": 645,
+        "name": "象贤路",
+        "length": 0.45,
+        "group": "neighbor",
+        "treated": false,
+        "paths": [
+          [
+            [
+              651239.19,
+              3542540.46
+            ],
+            [
+              651445.52,
+              3542941.26
+            ]
+          ]
+        ],
+        "geometry": "shp",
+        "before": [
+          59.92,
+          808.52,
+          0.563385,
+          3
+        ],
+        "after": [
+          59.92,
+          808.31,
+          0.563239,
+          3
+        ]
+      },
+      {
+        "id": 2358,
+        "start": 771,
+        "end": 770,
+        "name": "外江路",
+        "length": 0.431,
+        "group": "neighbor",
+        "treated": false,
+        "paths": [
+          [
+            [
+              651239.19,
+              3542540.46
+            ],
+            [
+              650825.61,
+              3542663.62
+            ]
+          ]
+        ],
+        "geometry": "shp",
+        "before": [
+          60.0,
+          0.24,
+          0.000167235,
+          3
+        ],
+        "after": [
+          60.0,
+          0.24,
+          0.000167235,
+          3
+        ]
+      },
+      {
+        "id": 2359,
+        "start": 771,
+        "end": 773,
+        "name": "象贤路",
+        "length": 0.383,
+        "group": "neighbor",
+        "treated": false,
+        "paths": [
+          [
+            [
+              651239.19,
+              3542540.46
+            ],
+            [
+              651039.4,
+              3542212.0
+            ]
+          ]
+        ],
+        "geometry": "shp",
+        "before": [
+          60.0,
+          0.0,
+          0.0,
+          3
+        ],
+        "after": [
+          60.0,
+          0.0,
+          0.0,
+          3
+        ]
+      },
+      {
+        "id": 2363,
+        "start": 773,
+        "end": 178,
+        "name": "13214路",
+        "length": 0.467,
+        "group": "neighbor",
+        "treated": false,
+        "paths": [
+          [
+            [
+              651039.4,
+              3542212.0
+            ],
+            [
+              651489.43,
+              3542084.92
+            ]
+          ]
+        ],
+        "geometry": "shp",
+        "before": [
+          60.0,
+          0.0,
+          0.0,
+          3
+        ],
+        "after": [
+          60.0,
+          0.0,
+          0.0,
+          3
+        ]
+      },
+      {
+        "id": 2364,
+        "start": 773,
+        "end": 771,
+        "name": "象贤路",
+        "length": 0.383,
+        "group": "neighbor",
+        "treated": false,
+        "paths": [
+          [
+            [
+              651039.4,
+              3542212.0
+            ],
+            [
+              651239.19,
+              3542540.46
+            ]
+          ]
+        ],
+        "geometry": "shp",
+        "before": [
+          60.0,
+          32.6,
+          0.0364271,
+          3
+        ],
+        "after": [
+          60.0,
+          32.63,
+          0.0364607,
+          3
+        ]
+      },
+      {
+        "id": 2386,
+        "start": 780,
+        "end": 644,
+        "name": "西华路",
+        "length": 0.409,
+        "group": "neighbor",
+        "treated": false,
+        "paths": [
+          [
+            [
+              650872.21,
+              3543486.72
+            ],
+            [
+              650634.21,
+              3543152.39
+            ]
+          ]
+        ],
+        "geometry": "shp",
+        "before": [
+          59.97,
+          324.14,
+          0.352278,
+          3
+        ],
+        "after": [
+          59.97,
+          324.14,
+          0.352278,
+          3
+        ]
+      },
+      {
+        "id": 2388,
+        "start": 780,
+        "end": 648,
+        "name": "虎桥东路",
+        "length": 0.413,
+        "group": "neighbor",
+        "treated": false,
+        "paths": [
+          [
+            [
+              650872.21,
+              3543486.72
+            ],
+            [
+              651266.66,
+              3543363.56
+            ]
+          ]
+        ],
+        "geometry": "shp",
+        "before": [
+          60.0,
+          39.55,
+          0.0767931,
+          3
+        ],
+        "after": [
+          60.0,
+          39.56,
+          0.0768126,
+          3
+        ]
+      },
+      {
+        "id": 2394,
+        "start": 782,
+        "end": 181,
+        "name": "象贤路",
+        "length": 0.354,
+        "group": "neighbor",
+        "treated": false,
+        "paths": [
+          [
+            [
+              651630.15,
+              3543259.95
+            ],
+            [
+              651815.03,
+              3543563.0
+            ]
+          ]
+        ],
+        "geometry": "shp",
+        "before": [
+          48.21,
+          1143.7,
+          1.3194,
+          3
+        ],
+        "after": [
+          48.21,
+          1143.7,
+          1.3194,
+          3
+        ]
+      },
+      {
+        "id": 2395,
+        "start": 782,
+        "end": 645,
+        "name": "象贤路",
+        "length": 0.367,
+        "group": "neighbor",
+        "treated": false,
+        "paths": [
+          [
+            [
+              651630.15,
+              3543259.95
+            ],
+            [
+              651445.52,
+              3542941.26
+            ]
+          ]
+        ],
+        "geometry": "shp",
+        "before": [
+          49.25,
+          1096.68,
+          1.24704,
+          3
+        ],
+        "after": [
+          49.25,
+          1096.67,
+          1.24702,
+          3
+        ]
+      },
+      {
+        "id": 2396,
+        "start": 782,
+        "end": 648,
+        "name": "虎桥东路",
+        "length": 0.377,
+        "group": "neighbor",
+        "treated": false,
+        "paths": [
+          [
+            [
+              651630.15,
+              3543259.95
+            ],
+            [
+              651266.66,
+              3543363.56
+            ]
+          ]
+        ],
+        "geometry": "shp",
+        "before": [
+          52.16,
+          449.68,
+          0.907381,
+          3
+        ],
+        "after": [
+          52.16,
+          449.68,
+          0.907381,
+          3
+        ]
+      },
+      {
+        "id": 2397,
+        "start": 782,
+        "end": 1896,
+        "name": "13223路",
+        "length": 0.293,
+        "group": "neighbor",
+        "treated": false,
+        "paths": [
+          [
+            [
+              651630.15,
+              3543259.95
+            ],
+            [
+              651911.01,
+              3543175.89
+            ]
+          ]
+        ],
+        "geometry": "shp",
+        "before": [
+          40.0,
+          0.0,
+          0.0,
+          4
+        ],
+        "after": [
+          40.0,
+          0.0,
+          0.0,
+          4
+        ]
+      },
+      {
+        "id": 2406,
+        "start": 785,
+        "end": 181,
+        "name": "象贤路",
+        "length": 0.378,
+        "group": "neighbor",
+        "treated": false,
+        "paths": [
+          [
+            [
+              651982.08,
+              3543903.19
+            ],
+            [
+              651815.03,
+              3543563.0
+            ]
+          ]
+        ],
+        "geometry": "shp",
+        "before": [
+          59.77,
+          480.35,
+          0.539794,
+          3
+        ],
+        "after": [
+          59.77,
+          480.32,
+          0.53976,
+          3
+        ]
+      },
+      {
+        "id": 5282,
+        "start": 1896,
+        "end": 782,
+        "name": "14436路",
+        "length": 0.293,
+        "group": "neighbor",
+        "treated": false,
+        "paths": [
+          [
+            [
+              651911.01,
+              3543175.89
+            ],
+            [
+              651630.15,
+              3543259.95
+            ]
+          ]
+        ],
+        "geometry": "shp",
+        "before": [
+          40.0,
+          0.0,
+          0.0,
+          4
+        ],
+        "after": [
+          40.0,
+          0.0,
+          0.0,
+          4
+        ]
+      },
+      {
+        "id": 5290,
+        "start": 1900,
+        "end": 78,
+        "name": "14440路",
+        "length": 0.14,
+        "group": "neighbor",
+        "treated": false,
+        "paths": [
+          [
+            [
+              652436.19,
+              3543389.0
+            ],
+            [
+              652297.96,
+              3543412.46
+            ]
+          ]
+        ],
+        "geometry": "shp",
+        "before": [
+          40.0,
+          0.0,
+          0.0,
+          4
+        ],
+        "after": [
+          40.0,
+          0.0,
+          0.0,
+          4
+        ]
+      }
+    ],
+    "mechanism": {
+      "roads": [
+        {
+          "from_node": 74,
+          "to_node": 645,
+          "name": "虎桥路",
+          "parking_before": 3,
+          "parking_after": 2,
+          "capacity_before_pcu_h": 1172.46,
+          "capacity_after_pcu_h": 1279.04,
+          "speed_before_kmh": 28.58,
+          "speed_after_kmh": 33.77,
+          "load_before": 1.6457619023250258,
+          "load_after": 1.5087800225168877,
+          "joint_saved_time_pcu_h": 5.475516383521431,
+          "note": "管理容量与速度均上升；仍须检查流量转移及核心、邻区、全网结果"
+        }
+      ],
+      "no_positive_joint_link_benefit": false,
+      "interpretation": "每条道路是联合治理仿真的观察，不是拆分干预的因果贡献；未验证停车需求承接和执法成本"
+    },
+    "geometry_note": "32060/32060 条有向道路匹配案例 SHP；未匹配几何采用案例节点直连"
+  }
+]

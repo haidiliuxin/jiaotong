@@ -1,0 +1,12 @@
+{"record": "C:\\Users\\asus\\AppData\\Local\\Temp\\tmp6crw43m0\\evidence\\acceptance.json", "status": "failed", "job": null, "new_model_calls": 0, "error": "ValueError: ��ѹĿ¼�嵥�뻷������¼��һ��"}
+{"record": "C:\\Users\\asus\\AppData\\Local\\Temp\\tmprf7wnjqc\\evidence\\acceptance.json", "status": "attention_required", "job": null, "new_model_calls": 0, "error": "TimeoutError: ǰ����δ��ɷ�棻δ������ģ�ͣ�������ǰ������"}
+{"record": "C:\\Users\\asus\\AppData\\Local\\Temp\\tmpx0a97eg7\\evidence\\acceptance.json", "status": "failed", "job": null, "new_model_calls": 0, "error": "ValueError: ��Ҫ�ý�ѹĿ¼��ͨ����������ʵ������ļ�¼"}
+{"record": "C:\\Users\\asus\\AppData\\Local\\Temp\\tmp2pqu5vy2\\evidence\\acceptance.json", "status": "failed", "job": null, "new_model_calls": 0, "error": "RuntimeError: ǰ��ʵ��ʧ�ܣ������ֳ������Զ��ƽ���ģ��"}
+{"record": "C:\\Users\\asus\\AppData\\Local\\Temp\\tmp3zr34yyb\\evidence\\acceptance.json", "status": "attention_required", "job": null, "new_model_calls": 0, "error": "TimeoutError: ǰ����δ��ɷ�棻δ������ģ�ͣ�������ǰ������"}
+{"time": "2026-09-21T20:48:02.066240+00:00", "event": "capability_gate", "data": ["�ṩ��ʽturn���ڵ���ʹ������֤��״̬ͼ������̣�δָ��ת��ľ��Զ�������δͨ����Ӧ����"]}
+{"time": "2026-09-21T20:48:02.071764+00:00", "event": "failure", "data": {"error": "ValueError: entry reached"}}
+.......................................................................................................................................................
+----------------------------------------------------------------------
+Ran 151 tests in 1.632s
+
+OK

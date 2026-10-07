@@ -1,0 +1,10 @@
+{
+  "request": "容差推荐新版真实流程验收：停车干扰治理与同输入复跑",
+  "scenario": "parking",
+  "recommendation_version": "tolerance-v2",
+  "max_links": 3,
+  "max_runs": 4,
+  "max_feedback": 2,
+  "demand_factors": [1.0],
+  "repeat_baseline": true
+}

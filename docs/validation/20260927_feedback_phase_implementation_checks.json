@@ -1,0 +1,49 @@
+{
+  "kind": "offline_implementation_checks",
+  "commands": [
+    {
+      "name": "python",
+      "returncode": 0,
+      "log": "20260927_feedback_phase_python_tests_final.log"
+    },
+    {
+      "name": "map",
+      "returncode": 0,
+      "log": "20260927_feedback_phase_map_tests_final.log"
+    },
+    {
+      "name": "planner",
+      "returncode": 0,
+      "log": "20260927_feedback_phase_planner_tests_final.log"
+    },
+    {
+      "name": "dispatch",
+      "returncode": 0,
+      "log": "20260927_feedback_phase_dispatch_tests_final.log"
+    }
+  ],
+  "source_sha256": {
+    "tests/test_dispatch_ui.cjs": "45993481640e22ae532df295aa7b26eb21af56839ad8ea14a5294d2229768c70",
+    "tests/test_mixed_controller.py": "6fac70262ff8d842177e3e483042e004395f2ecdb0b319b3d9638952618bcfdd",
+    "tests/test_oneway_planning.py": "dd657dca1378a846f8e6efd133f3b4ac762b0ceeb0f0fa839f4eb00bcb4ce553",
+    "tests/test_planner_view.cjs": "2f26b50f78ae07238d2c32933ad11550cd04c84f4e7f75db4fa194e9a77e4e9f",
+    "tests/test_planning_completion.py": "32e59a400d0cf3bc0078d46bc0ce6a7a08f1b8e15653b6d7f8ed0c17b35663b5",
+    "tests/test_planning_contract.py": "c48013a73c35d0d21434807f122e5ff6cbbb692e0513f0043482098f96b21c42",
+    "tests/test_planning_response.py": "8d7a54606534685d6488c22770746613c7ba4ce5ac36899b206e2239377d4bb7",
+    "tests/test_spatial_requirements.py": "0d35dfbe241ee29bd4315c3b84d16c5541f7c3b5989628c1f67158f3af716789",
+    "traffic_agent/feedback_planner.py": "a887554a2f45df056bd6929baae97311d1228a8baf398d7f76cbdc311be326c2",
+    "traffic_agent/natural_plan.py": "44cdecea72546b96d25b934a8d23fd061b44a4407908e8883012e399d04e8cf5",
+    "traffic_agent/oneway_planning.py": "15a17c0c9f154bd924867d7e6a32ccebe9eea3d3c24f74d3faedeebbe1a7ea77",
+    "traffic_agent/planning_audit.py": "17d470f4283a56acf169e71c67f8b66c8bd6faee7e9c1b29932781769f90be02",
+    "traffic_agent/planning_review.py": "62b5f722e4ed28ffb413fb3e8d20b7b9d5e8cce2491d33e7d1b2b4d98f197df9",
+    "traffic_agent/programme_review.py": "f8fab7201f4d468459e0795eff46219cfe2c2d25e746149a147721d514e86139",
+    "traffic_agent/static/dispatch.css": "3c7f34164e181f56c3784de2a572beec931afe8d2943027abe101d83d0fdde74",
+    "traffic_agent/static/dispatch.js": "d830998b0b2767eabaeeb1c1cefe0ee723f7249471e1a4987e50e119851553f7",
+    "traffic_agent/static/index.html": "764726a9320ebb32ec6c6fc5a264bccdf85d89e52f925960e154448477ac795b",
+    "traffic_agent/static/planner_view.js": "35b0efafda36c4039d08f5023ea387eb64b0510377056fb368980c0450d87f85",
+    "scripts/inspect_feedback_phase_contract.py": "922643ee40699bf65dd8ac61e61d529a270c72a9dfdb716cfa7b768a27aa5169"
+  },
+  "paid_calls": 0,
+  "new_native_scenes": 0,
+  "meaning": "仅实现与合成边界检查；不代表新模型协议完成真实闭环。"
+}

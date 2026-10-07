@@ -1,0 +1,241 @@
+{
+  "kind": "named_question_offline_review",
+  "old_failures": [
+    {
+      "source": "智能体实验\\mixed_v14_complete_20260930_01\\planning_attempts\\preview_a40340d283974785a3c3772c1e47a41e.json",
+      "sha256": "5396446b8b46392cb01e9f7dea71b62541b768871f38bbf0fcd9a6350fe8821a",
+      "protocol": "bounded-question-wording-v5",
+      "old_status": "validation_failed",
+      "old_issues": [
+        "H1"
+      ],
+      "exact_replay": true,
+      "original_prose_preserved": true,
+      "converted_to_structured": false
+    },
+    {
+      "source": "智能体实验\\mixed_question_v6_complete_20260930_01\\planning_attempts\\preview_165414b4a026435b94b18db773a82152.json",
+      "sha256": "568bbf8f782259e9fc8d357149da828bba99764a2bcb572ae6ac7f479cbcce08",
+      "protocol": "bounded-question-wording-v6",
+      "old_status": "validation_failed",
+      "old_issues": [
+        "H2",
+        "H3"
+      ],
+      "exact_replay": true,
+      "original_prose_preserved": true,
+      "converted_to_structured": false
+    }
+  ],
+  "prompt_size": {
+    "previous_bytes": 27588,
+    "current_bytes": 29162,
+    "delta_bytes": 1574,
+    "unit": "UTF-8 instructions/messages/tools JSON bytes, not provider tokens"
+  },
+  "new_model_calls": 0,
+  "new_native_scenes": 0,
+  "current_protocol": "named-question-authoring-v1",
+  "created": "2026-09-30T03:03:08.422834+00:00",
+  "source_commit_before_changes": "b866c4ca",
+  "implemented": [
+    "named_study_key_binding",
+    "single_authored_measurement_definition",
+    "verbatim_questions_preserved",
+    "frozen_authoring_provenance_verified",
+    "generated_text_labelled_in_ui",
+    "portable_dependency_gate"
+  ],
+  "offline_checks": {
+    "python_tests": 687,
+    "python_log": "tmp\\20260930_named_questions_python_tests_final.log",
+    "python_log_sha256": "bbf48cdfa9e3f952e909f04f7e6e735d6ee2b01c891b475ecfdbe1e7a8664428",
+    "new_targeted_tests": 10,
+    "node_groups": 4,
+    "synthetic_transport_adapters": [
+      "chat_completions",
+      "responses"
+    ],
+    "synthetic_initial_scope": {
+      "parking_candidates": 2,
+      "native_allocated": 7,
+      "groups": 2,
+      "request_preserved": true
+    },
+    "frozen_reply_preflight": {
+      "cases": [
+        {
+          "case": "rc14_first_choice",
+          "original_protocol": "measured-conclusion-v13",
+          "original_permissions_verified": true,
+          "correction_chain_verified_before_standalone_shadow": false,
+          "current_protocol": "measured-conclusion-v14",
+          "accepted": true,
+          "expected": true,
+          "validation_code": null,
+          "issues": []
+        },
+        {
+          "case": "rc14_region_state",
+          "original_protocol": "measured-conclusion-v13",
+          "original_permissions_verified": true,
+          "correction_chain_verified_before_standalone_shadow": false,
+          "current_protocol": "measured-conclusion-v14",
+          "accepted": true,
+          "expected": true,
+          "validation_code": null,
+          "issues": []
+        },
+        {
+          "case": "rc13_direction_choice",
+          "original_protocol": "measured-conclusion-v12",
+          "original_permissions_verified": true,
+          "correction_chain_verified_before_standalone_shadow": false,
+          "current_protocol": "measured-conclusion-v14",
+          "accepted": true,
+          "expected": true,
+          "validation_code": null,
+          "issues": []
+        },
+        {
+          "case": "rc13_zero_claim",
+          "original_protocol": "measured-conclusion-v12",
+          "original_permissions_verified": true,
+          "correction_chain_verified_before_standalone_shadow": false,
+          "current_protocol": "measured-conclusion-v14",
+          "accepted": false,
+          "expected": false,
+          "validation_code": "measured_conclusion",
+          "issues": [
+            {
+              "code": "measured_metric_assertion",
+              "field": "hypothesis_updates:H3",
+              "refs": [
+                "20260930_085809_7c79a1:S1_parking"
+              ],
+              "quote": "邻区耗时增幅与毛新增过饱和均为0",
+              "metric": "neighbor_time_change_pct",
+              "claimed_value": 0.0,
+              "claimed_unit": "%",
+              "observed_value": 1.4973412265639752e-05,
+              "unit": "%",
+              "message": "S1_parking 的邻区耗时变化实测为 +1.4973412e-05%，与说明不符；并列指标须分别核对，极小非零值不能直接写成零。"
+            }
+          ]
+        },
+        {
+          "case": "mixed_second_choice",
+          "original_protocol": "measured-conclusion-v11",
+          "original_permissions_verified": true,
+          "correction_chain_verified_before_standalone_shadow": false,
+          "current_protocol": "measured-conclusion-v14",
+          "accepted": true,
+          "expected": true,
+          "validation_code": null,
+          "issues": []
+        },
+        {
+          "case": "mixed_corrected_handoff",
+          "original_protocol": "measured-conclusion-v11",
+          "original_permissions_verified": true,
+          "correction_chain_verified_before_standalone_shadow": true,
+          "current_protocol": "measured-conclusion-v14",
+          "accepted": true,
+          "expected": true,
+          "validation_code": null,
+          "issues": []
+        },
+        {
+          "case": "mixed_first_handoff_negation",
+          "original_protocol": "measured-conclusion-v11",
+          "original_permissions_verified": true,
+          "correction_chain_verified_before_standalone_shadow": false,
+          "current_protocol": "measured-conclusion-v14",
+          "accepted": true,
+          "expected": true,
+          "validation_code": null,
+          "issues": []
+        },
+        {
+          "case": "two_demand_final_review",
+          "original_protocol": "measured-conclusion-v9",
+          "original_permissions_verified": true,
+          "correction_chain_verified_before_standalone_shadow": false,
+          "current_protocol": "measured-conclusion-v14",
+          "accepted": true,
+          "expected": true,
+          "validation_code": null,
+          "issues": []
+        }
+      ],
+      "source_files": [
+        {
+          "path": "工作材料\\便携异目录检查\\20260930_v2_RC14\\智能体实验\\mixed_complete_live_20260930_01\\dispatches\\20260930_093644_f3962e.json",
+          "sha256": "5eec554ad79a3759c1cf5f66b6e3bd545bf3fc52677fecc1c060567ea52ea4ed"
+        },
+        {
+          "path": "工作材料\\便携异目录检查\\20260930_v2_RC13\\智能体实验\\oneway_scope_live_20260930_01\\dispatches\\20260930_085809_7c79a1.json",
+          "sha256": "6138aeab14085ce1349c9bedf029e62ae2dbf48a6846f5093422fd66a78a32d7"
+        },
+        {
+          "path": "智能体实验\\mixed_limit7_full_20260930_01\\dispatches\\20260930_080603_c82f1e.json",
+          "sha256": "63a321bc5b439e5db6d45aa8a92058b8e23194b801e78689abb3712b4da5f041"
+        },
+        {
+          "path": "智能体实验\\v9_final_model_probe_20260930_01\\probe.json",
+          "sha256": "9f9c1355fbf26b242c5947e441a760604366c6d9d08aeb6c7d1f352c1d94bcb9"
+        }
+      ],
+      "originals_unchanged": true,
+      "new_model_calls": 0,
+      "new_native_scenes": 0
+    }
+  },
+  "usage": {
+    "new_unique_requests": 0,
+    "new_known_tokens": 0,
+    "project_retained_cumulative_requests": 155,
+    "project_retained_cumulative_known_tokens": 1483245,
+    "authorized_max_requests": 684,
+    "authorized_max_known_tokens": 4132560,
+    "previous_ledger": {
+      "path": "docs\\validation\\20260930_initial_question_v6_live_failure.json",
+      "sha256": "13abd34d902bb75d402b40fea31b02fd4f91531c3f392398e4e4b561a71919bc"
+    },
+    "not_full_account_bill": true
+  },
+  "end_state": {
+    "checked_runtime_locks": [
+      {
+        "path": "智能体实验\\runtime.lock",
+        "free": true,
+        "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+        "bytes_unchanged": true
+      },
+      {
+        "path": "智能体实验\\mixed_limit7_full_20260930_01\\runtime.lock",
+        "free": true,
+        "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+        "bytes_unchanged": true
+      },
+      {
+        "path": "工作材料\\便携异目录检查\\20260930_v2_RC13\\智能体实验\\oneway_scope_live_20260930_01\\runtime.lock",
+        "free": true,
+        "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+        "bytes_unchanged": true
+      },
+      {
+        "path": "工作材料\\便携异目录检查\\20260930_v2_RC14\\智能体实验\\mixed_complete_live_20260930_01\\runtime.lock",
+        "free": true,
+        "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+        "bytes_unchanged": true
+      }
+    ]
+  },
+  "pending": [
+    "new_authoring_real_initial_plan",
+    "complete_mixed_model_native_validation",
+    "final_portable_including_current_source",
+    "physical_other_machine_acceptance"
+  ]
+}

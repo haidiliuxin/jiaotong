@@ -1,0 +1,802 @@
+{
+  "kind": "project_recorded_usage_budget_v1",
+  "authorized_text": "上限为目前为止总量的12倍吧",
+  "interpretation": "Conservative cumulative cap including previous use; both requests and reported tokens are bounded at 12 times the verifiable project baseline.",
+  "snapshot_sha256": "94fbcfc7ed9729b59209a047a0609d0ce578a3f2b55b16022e3efc3d873c4896",
+  "original_records": 78,
+  "baseline_calls_with_provider_id": 57,
+  "baseline_reported_tokens": 344380,
+  "unknown_initial_calls": [],
+  "excluded_unidentifiable_usage": [],
+  "multiplier": 12,
+  "cumulative_request_limit": 684,
+  "cumulative_known_token_limit": 4132560,
+  "scope": "Locally retained project records only; provider response IDs deduplicated across attempt, dispatch and job copies. Not an account billing total. Missing usage is unknown, not zero; excluded entries do not inflate the baseline.",
+  "next_batch": {
+    "candidate": "RC19",
+    "max_requests": 6,
+    "max_native_scenes": 6,
+    "case": "one mixed programme",
+    "automatic_retry": false
+  },
+  "responses": {
+    "chatcmpl-6ab905c7209e43e90f9bcc74": {
+      "tokens": 4705,
+      "model": "deepseek-v4-flash-0731",
+      "sources": [
+        {
+          "file": "工作材料\\便携异目录检查\\20260927 智能规划 RC3\\智能体实验\\dispatches\\20260927_200218_bdef1b.json",
+          "field": ".model_usage"
+        },
+        {
+          "file": "工作材料\\便携异目录检查\\20260927 智能规划 RC3\\智能体实验\\dispatches\\20260927_200218_bdef1b.json",
+          "field": ".initial_model_usages[0]"
+        },
+        {
+          "file": "工作材料\\便携异目录检查\\20260927 智能规划 RC3\\智能体实验\\dispatches\\20260927_200218_bdef1b.json",
+          "field": ".initial_planning_attempts[0].usage"
+        },
+        {
+          "file": "工作材料\\便携异目录检查\\20260927 智能规划 RC3\\智能体实验\\planning_attempts\\preview_191b1701c9d748ccbbca945a59ffe7b0.json",
+          "field": ".usage"
+        }
+      ]
+    },
+    "chatcmpl-6ab90656e0a05901f17c6006": {
+      "tokens": 6400,
+      "model": "deepseek-v4-flash-0731",
+      "sources": [
+        {
+          "file": "工作材料\\便携异目录检查\\20260927 智能规划 RC3\\智能体实验\\dispatches\\20260927_200218_bdef1b.json",
+          "field": ".planning_trace[0].usage"
+        },
+        {
+          "file": "工作材料\\便携异目录检查\\20260927 智能规划 RC3\\智能体实验\\jobs\\20260927_200218_bdef1b\\state.json",
+          "field": ".planner_trace[0].usage"
+        }
+      ]
+    },
+    "chatcmpl-6ab906e3ead14a6f05d1a407": {
+      "tokens": 8379,
+      "model": "deepseek-v4-flash-0731",
+      "sources": [
+        {
+          "file": "工作材料\\便携异目录检查\\20260927 智能规划 RC3\\智能体实验\\dispatches\\20260927_200218_bdef1b.json",
+          "field": ".planning_trace[1].usage"
+        },
+        {
+          "file": "工作材料\\便携异目录检查\\20260927 智能规划 RC3\\智能体实验\\jobs\\20260927_200218_bdef1b\\state.json",
+          "field": ".planner_trace[1].usage"
+        }
+      ]
+    },
+    "chatcmpl-6ab922579202ca3626fb08d8": {
+      "tokens": 4788,
+      "model": "deepseek-v4-flash-0731",
+      "sources": [
+        {
+          "file": "工作材料\\便携异目录检查\\20260927 智能规划 RC4\\智能体实验\\dispatches\\20260927_220409_164a26.json",
+          "field": ".model_usage"
+        },
+        {
+          "file": "工作材料\\便携异目录检查\\20260927 智能规划 RC4\\智能体实验\\dispatches\\20260927_220409_164a26.json",
+          "field": ".initial_model_usages[0]"
+        },
+        {
+          "file": "工作材料\\便携异目录检查\\20260927 智能规划 RC4\\智能体实验\\dispatches\\20260927_220409_164a26.json",
+          "field": ".initial_planning_attempts[0].usage"
+        },
+        {
+          "file": "工作材料\\便携异目录检查\\20260927 智能规划 RC4\\智能体实验\\planning_attempts\\preview_f78ad8ce4fcc4f068d3c1403613b97f7.json",
+          "field": ".usage"
+        }
+      ]
+    },
+    "chatcmpl-6ab922e59ee55bf4caab4150": {
+      "tokens": 6571,
+      "model": "deepseek-v4-flash-0731",
+      "sources": [
+        {
+          "file": "工作材料\\便携异目录检查\\20260927 智能规划 RC4\\智能体实验\\dispatches\\20260927_220409_164a26.json",
+          "field": ".planning_trace[0].usage"
+        },
+        {
+          "file": "工作材料\\便携异目录检查\\20260927 智能规划 RC4\\智能体实验\\jobs\\20260927_220409_164a26\\state.json",
+          "field": ".planner_trace[0].usage"
+        }
+      ]
+    },
+    "chatcmpl-6ab92372cb10e3fbd9c1bcc7": {
+      "tokens": 8947,
+      "model": "deepseek-v4-flash-0731",
+      "sources": [
+        {
+          "file": "工作材料\\便携异目录检查\\20260927 智能规划 RC4\\智能体实验\\dispatches\\20260927_220409_164a26.json",
+          "field": ".planning_trace[1].usage"
+        },
+        {
+          "file": "工作材料\\便携异目录检查\\20260927 智能规划 RC4\\智能体实验\\jobs\\20260927_220409_164a26\\state.json",
+          "field": ".planner_trace[1].usage"
+        }
+      ]
+    },
+    "chatcmpl-6ab923ff388aa93ca7db735b": {
+      "tokens": 5473,
+      "model": "deepseek-v4-flash-0731",
+      "sources": [
+        {
+          "file": "工作材料\\便携异目录检查\\20260927 智能规划 RC4\\智能体实验\\dispatches\\20260927_220409_164a26.json",
+          "field": ".planning_trace[2].usage"
+        },
+        {
+          "file": "工作材料\\便携异目录检查\\20260927 智能规划 RC4\\智能体实验\\jobs\\20260927_220409_7adeea\\state.json",
+          "field": ".planner_trace[0].usage"
+        }
+      ]
+    },
+    "chatcmpl-6ab92cf5e02b12cbd060fa46": {
+      "tokens": 4917,
+      "model": "deepseek-v4-flash-0731",
+      "sources": [
+        {
+          "file": "工作材料\\便携异目录检查\\20260927 智能规划 RC5\\智能体实验\\dispatches\\20260927_224930_69ff12.json",
+          "field": ".model_usage"
+        },
+        {
+          "file": "工作材料\\便携异目录检查\\20260927 智能规划 RC5\\智能体实验\\dispatches\\20260927_224930_69ff12.json",
+          "field": ".initial_model_usages[0]"
+        },
+        {
+          "file": "工作材料\\便携异目录检查\\20260927 智能规划 RC5\\智能体实验\\dispatches\\20260927_224930_69ff12.json",
+          "field": ".initial_planning_attempts[0].usage"
+        },
+        {
+          "file": "工作材料\\便携异目录检查\\20260927 智能规划 RC5\\智能体实验\\planning_attempts\\preview_9717a18d73b149feb7ce606f66da14b3.json",
+          "field": ".usage"
+        }
+      ]
+    },
+    "chatcmpl-6ab92d855345bc183bef780f": {
+      "tokens": 6875,
+      "model": "deepseek-v4-flash-0731",
+      "sources": [
+        {
+          "file": "工作材料\\便携异目录检查\\20260927 智能规划 RC5\\智能体实验\\dispatches\\20260927_224930_69ff12.json",
+          "field": ".planning_trace[0].usage"
+        },
+        {
+          "file": "工作材料\\便携异目录检查\\20260927 智能规划 RC5\\智能体实验\\jobs\\20260927_224930_69ff12\\state.json",
+          "field": ".planner_trace[0].usage"
+        }
+      ]
+    },
+    "chatcmpl-6ab92e1213c75e9a8ec97f51": {
+      "tokens": 9260,
+      "model": "deepseek-v4-flash-0731",
+      "sources": [
+        {
+          "file": "工作材料\\便携异目录检查\\20260927 智能规划 RC5\\智能体实验\\dispatches\\20260927_224930_69ff12.json",
+          "field": ".planning_trace[1].usage"
+        },
+        {
+          "file": "工作材料\\便携异目录检查\\20260927 智能规划 RC5\\智能体实验\\jobs\\20260927_224930_69ff12\\state.json",
+          "field": ".planner_trace[1].usage"
+        }
+      ]
+    },
+    "chatcmpl-6ab92e9ee4d9ff41132c246e": {
+      "tokens": 4908,
+      "model": "deepseek-v4-flash-0731",
+      "sources": [
+        {
+          "file": "工作材料\\便携异目录检查\\20260927 智能规划 RC5\\智能体实验\\dispatches\\20260927_224930_69ff12.json",
+          "field": ".planning_trace[2].usage"
+        },
+        {
+          "file": "工作材料\\便携异目录检查\\20260927 智能规划 RC5\\智能体实验\\jobs\\20260927_224930_45a743\\state.json",
+          "field": ".planner_trace[0].usage"
+        }
+      ]
+    },
+    "chatcmpl-6ab930371b764be958229757": {
+      "tokens": 13912,
+      "model": "deepseek-v4-flash-0731",
+      "sources": [
+        {
+          "file": "工作材料\\便携异目录检查\\20260927 智能规划 RC5\\智能体实验\\dispatches\\20260927_224930_69ff12.json",
+          "field": ".planning_trace[3].usage"
+        },
+        {
+          "file": "工作材料\\便携异目录检查\\20260927 智能规划 RC5\\智能体实验\\jobs\\20260927_224930_45a743\\state.json",
+          "field": ".planner_trace[1].usage"
+        }
+      ]
+    },
+    "chatcmpl-6ab9501f78c1306f64017e57": {
+      "tokens": 5369,
+      "model": "deepseek-v4-flash-0731",
+      "sources": [
+        {
+          "file": "工作材料\\便携异目录检查\\20260928 智能规划 RC10\\智能体实验\\dispatches\\20260928_011930_f0fe59.json",
+          "field": ".model_usage"
+        },
+        {
+          "file": "工作材料\\便携异目录检查\\20260928 智能规划 RC10\\智能体实验\\dispatches\\20260928_011930_f0fe59.json",
+          "field": ".initial_model_usages[0]"
+        },
+        {
+          "file": "工作材料\\便携异目录检查\\20260928 智能规划 RC10\\智能体实验\\dispatches\\20260928_011930_f0fe59.json",
+          "field": ".initial_planning_attempts[0].usage"
+        },
+        {
+          "file": "工作材料\\便携异目录检查\\20260928 智能规划 RC10\\智能体实验\\planning_attempts\\preview_420e8398b6a94b1b932928c8e0415a05.json",
+          "field": ".usage"
+        }
+      ]
+    },
+    "chatcmpl-6ab950af996d943d2c5e532f": {
+      "tokens": 7157,
+      "model": "deepseek-v4-flash-0731",
+      "sources": [
+        {
+          "file": "工作材料\\便携异目录检查\\20260928 智能规划 RC10\\智能体实验\\dispatches\\20260928_011930_f0fe59.json",
+          "field": ".planning_trace[0].usage"
+        },
+        {
+          "file": "工作材料\\便携异目录检查\\20260928 智能规划 RC10\\智能体实验\\jobs\\20260928_011930_f0fe59\\state.json",
+          "field": ".planner_trace[0].usage"
+        }
+      ]
+    },
+    "chatcmpl-6ab9513cccf34463717bb5d7": {
+      "tokens": 9365,
+      "model": "deepseek-v4-flash-0731",
+      "sources": [
+        {
+          "file": "工作材料\\便携异目录检查\\20260928 智能规划 RC10\\智能体实验\\dispatches\\20260928_011930_f0fe59.json",
+          "field": ".planning_trace[1].usage"
+        },
+        {
+          "file": "工作材料\\便携异目录检查\\20260928 智能规划 RC10\\智能体实验\\jobs\\20260928_011930_f0fe59\\state.json",
+          "field": ".planner_trace[1].usage"
+        }
+      ]
+    },
+    "chatcmpl-6ab951c9cf8d8fe7461addee": {
+      "tokens": 5067,
+      "model": "deepseek-v4-flash-0731",
+      "sources": [
+        {
+          "file": "工作材料\\便携异目录检查\\20260928 智能规划 RC10\\智能体实验\\dispatches\\20260928_011930_f0fe59.json",
+          "field": ".planning_trace[2].usage"
+        },
+        {
+          "file": "工作材料\\便携异目录检查\\20260928 智能规划 RC10\\智能体实验\\jobs\\20260928_011930_a1431b\\state.json",
+          "field": ".planner_trace[0].usage"
+        }
+      ]
+    },
+    "chatcmpl-6ab9536094d4be1a59d02808": {
+      "tokens": 14049,
+      "model": "deepseek-v4-flash-0731",
+      "sources": [
+        {
+          "file": "工作材料\\便携异目录检查\\20260928 智能规划 RC10\\智能体实验\\dispatches\\20260928_011930_f0fe59.json",
+          "field": ".planning_trace[3].usage"
+        },
+        {
+          "file": "工作材料\\便携异目录检查\\20260928 智能规划 RC10\\智能体实验\\jobs\\20260928_011930_a1431b\\state.json",
+          "field": ".planner_trace[1].usage"
+        }
+      ]
+    },
+    "chatcmpl-6ab965def85165dd78ff6a5c": {
+      "tokens": 5422,
+      "model": "deepseek-v4-flash-0731",
+      "sources": [
+        {
+          "file": "工作材料\\便携异目录检查\\20260928 智能规划 RC12\\智能体实验\\dispatches\\20260928_025217_e6d00a.json",
+          "field": ".model_usage"
+        },
+        {
+          "file": "工作材料\\便携异目录检查\\20260928 智能规划 RC12\\智能体实验\\dispatches\\20260928_025217_e6d00a.json",
+          "field": ".initial_model_usages[0]"
+        },
+        {
+          "file": "工作材料\\便携异目录检查\\20260928 智能规划 RC12\\智能体实验\\dispatches\\20260928_025217_e6d00a.json",
+          "field": ".initial_planning_attempts[0].usage"
+        },
+        {
+          "file": "工作材料\\便携异目录检查\\20260928 智能规划 RC12\\智能体实验\\planning_attempts\\preview_8b729606d54a4994aeb736088de1eb80.json",
+          "field": ".usage"
+        }
+      ]
+    },
+    "chatcmpl-6ab966705efc862080c0fbed": {
+      "tokens": 7206,
+      "model": "deepseek-v4-flash-0731",
+      "sources": [
+        {
+          "file": "工作材料\\便携异目录检查\\20260928 智能规划 RC12\\智能体实验\\dispatches\\20260928_025217_e6d00a.json",
+          "field": ".planning_trace[0].usage"
+        },
+        {
+          "file": "工作材料\\便携异目录检查\\20260928 智能规划 RC12\\智能体实验\\jobs\\20260928_025217_e6d00a\\state.json",
+          "field": ".planner_trace[0].usage"
+        }
+      ]
+    },
+    "chatcmpl-6ab966fd11b12c78656bf11e": {
+      "tokens": 9582,
+      "model": "deepseek-v4-flash-0731",
+      "sources": [
+        {
+          "file": "工作材料\\便携异目录检查\\20260928 智能规划 RC12\\智能体实验\\dispatches\\20260928_025217_e6d00a.json",
+          "field": ".planning_trace[1].usage"
+        },
+        {
+          "file": "工作材料\\便携异目录检查\\20260928 智能规划 RC12\\智能体实验\\jobs\\20260928_025217_e6d00a\\state.json",
+          "field": ".planner_trace[1].usage"
+        }
+      ]
+    },
+    "chatcmpl-6ab9678d76aa03b16c8a3d97": {
+      "tokens": 5991,
+      "model": "deepseek-v4-flash-0731",
+      "sources": [
+        {
+          "file": "工作材料\\便携异目录检查\\20260928 智能规划 RC12\\智能体实验\\dispatches\\20260928_025217_e6d00a.json",
+          "field": ".planning_trace[2].usage"
+        },
+        {
+          "file": "工作材料\\便携异目录检查\\20260928 智能规划 RC12\\智能体实验\\jobs\\20260928_025217_53291a\\state.json",
+          "field": ".planner_trace[0].usage"
+        }
+      ]
+    },
+    "chatcmpl-6ab97860179b8afecd1eda7a": {
+      "tokens": 5548,
+      "model": "deepseek-v4-flash-0731",
+      "sources": [
+        {
+          "file": "工作材料\\便携异目录检查\\20260928 智能规划 RC15\\智能体实验\\dispatches\\20260928_041115_874b70.json",
+          "field": ".model_usage"
+        },
+        {
+          "file": "工作材料\\便携异目录检查\\20260928 智能规划 RC15\\智能体实验\\dispatches\\20260928_041115_874b70.json",
+          "field": ".initial_model_usages[0]"
+        },
+        {
+          "file": "工作材料\\便携异目录检查\\20260928 智能规划 RC15\\智能体实验\\dispatches\\20260928_041115_874b70.json",
+          "field": ".initial_planning_attempts[0].usage"
+        },
+        {
+          "file": "工作材料\\便携异目录检查\\20260928 智能规划 RC15\\智能体实验\\planning_attempts\\preview_fcb88cb8551b42a6af12a5defbe244bc.json",
+          "field": ".usage"
+        }
+      ]
+    },
+    "chatcmpl-6ab978f05c55f2583c135d45": {
+      "tokens": 7392,
+      "model": "deepseek-v4-flash-0731",
+      "sources": [
+        {
+          "file": "工作材料\\便携异目录检查\\20260928 智能规划 RC15\\智能体实验\\dispatches\\20260928_041115_874b70.json",
+          "field": ".planning_trace[0].usage"
+        },
+        {
+          "file": "工作材料\\便携异目录检查\\20260928 智能规划 RC15\\智能体实验\\jobs\\20260928_041115_874b70\\state.json",
+          "field": ".planner_trace[0].usage"
+        }
+      ]
+    },
+    "chatcmpl-6ab9797c5832d6e2e5464bd0": {
+      "tokens": 9813,
+      "model": "deepseek-v4-flash-0731",
+      "sources": [
+        {
+          "file": "工作材料\\便携异目录检查\\20260928 智能规划 RC15\\智能体实验\\dispatches\\20260928_041115_874b70.json",
+          "field": ".planning_trace[1].usage"
+        },
+        {
+          "file": "工作材料\\便携异目录检查\\20260928 智能规划 RC15\\智能体实验\\jobs\\20260928_041115_874b70\\state.json",
+          "field": ".planner_trace[1].usage"
+        }
+      ]
+    },
+    "chatcmpl-6ab97a0a42f39bc86f97bb58": {
+      "tokens": 6189,
+      "model": "deepseek-v4-flash-0731",
+      "sources": [
+        {
+          "file": "工作材料\\便携异目录检查\\20260928 智能规划 RC15\\智能体实验\\dispatches\\20260928_041115_874b70.json",
+          "field": ".planning_trace[2].usage"
+        },
+        {
+          "file": "工作材料\\便携异目录检查\\20260928 智能规划 RC15\\智能体实验\\jobs\\20260928_041115_fa9f86\\state.json",
+          "field": ".planner_trace[0].usage"
+        }
+      ]
+    },
+    "chatcmpl-6ab97ba4824b2c2a4ed3a132": {
+      "tokens": 15668,
+      "model": "deepseek-v4-flash-0731",
+      "sources": [
+        {
+          "file": "工作材料\\便携异目录检查\\20260928 智能规划 RC15\\智能体实验\\dispatches\\20260928_041115_874b70.json",
+          "field": ".planning_trace[3].usage"
+        },
+        {
+          "file": "工作材料\\便携异目录检查\\20260928 智能规划 RC15\\智能体实验\\jobs\\20260928_041115_fa9f86\\state.json",
+          "field": ".planner_trace[1].usage"
+        }
+      ]
+    },
+    "chatcmpl-6ab996d6973caa25951b0d2c": {
+      "tokens": 6592,
+      "model": "deepseek-v4-flash-0731",
+      "sources": [
+        {
+          "file": "工作材料\\便携异目录检查\\20260928 智能规划 RC16\\智能体实验\\planning_attempts\\preview_316806ea3f7c434ebe1648d2d3938170.json",
+          "field": ".usage"
+        }
+      ]
+    },
+    "chatcmpl-6ab9a043e0bc4e8266c58be5": {
+      "tokens": 6669,
+      "model": "deepseek-v4-flash-0731",
+      "sources": [
+        {
+          "file": "工作材料\\便携异目录检查\\20260928 智能规划 RC17\\智能体实验\\planning_attempts\\preview_4d89cb70c5864dafafd667d27e98bc3d.json",
+          "field": ".usage"
+        }
+      ]
+    },
+    "chatcmpl-6ab9a047db6796f9c3bc9969": {
+      "tokens": 8628,
+      "model": "deepseek-v4-flash-0731",
+      "sources": [
+        {
+          "file": "工作材料\\便携异目录检查\\20260928 智能规划 RC17\\智能体实验\\planning_attempts\\preview_500a42e5ea634265aad403dbb99c9823.json",
+          "field": ".usage"
+        }
+      ]
+    },
+    "chatcmpl-6ab9411007be7d1578cedd21": {
+      "tokens": 4931,
+      "model": "deepseek-v4-flash-0731",
+      "sources": [
+        {
+          "file": "工作材料\\便携异目录检查\\20260928 智能规划 RC9\\智能体实验\\planning_attempts\\preview_d2369a7572b3466ab246441ed316fefe.json",
+          "field": ".usage"
+        }
+      ]
+    },
+    "chatcmpl-6ab86fd43f5a81f5d83f0c36": {
+      "tokens": 667,
+      "model": "deepseek-v4-flash-0731",
+      "sources": [
+        {
+          "file": "智能体实验\\dispatches\\20260927_092230_2a933f.json",
+          "field": ".model_usage"
+        }
+      ]
+    },
+    "chatcmpl-6ab8806cc057d23cfb3c9ba0": {
+      "tokens": 3118,
+      "model": "deepseek-v4-flash-0731",
+      "sources": [
+        {
+          "file": "智能体实验\\dispatches\\20260927_103319_c12371.json",
+          "field": ".model_usage"
+        }
+      ]
+    },
+    "chatcmpl-6ab88b652c5b5986b7ebd754": {
+      "tokens": 3122,
+      "model": "deepseek-v4-flash-0731",
+      "sources": [
+        {
+          "file": "智能体实验\\dispatches\\20260927_112008_4167a7.json",
+          "field": ".model_usage"
+        }
+      ]
+    },
+    "chatcmpl-6ab88bf65badeddd970d3be3": {
+      "tokens": 2112,
+      "model": "deepseek-v4-flash-0731",
+      "sources": [
+        {
+          "file": "智能体实验\\dispatches\\20260927_112008_4167a7.json",
+          "field": ".planning_trace[0].usage"
+        },
+        {
+          "file": "智能体实验\\jobs\\20260927_112008_4167a7\\state.json",
+          "field": ".planner_trace[0].usage"
+        }
+      ]
+    },
+    "chatcmpl-6ab88c86130bac895ea345fd": {
+      "tokens": 3011,
+      "model": "deepseek-v4-flash-0731",
+      "sources": [
+        {
+          "file": "智能体实验\\dispatches\\20260927_112008_4167a7.json",
+          "field": ".planning_trace[1].usage"
+        },
+        {
+          "file": "智能体实验\\jobs\\20260927_112008_4167a7\\state.json",
+          "field": ".planner_trace[1].usage"
+        }
+      ]
+    },
+    "chatcmpl-6ab894390fc6b75ed12dec61": {
+      "tokens": 3100,
+      "model": "deepseek-v4-flash-0731",
+      "sources": [
+        {
+          "file": "智能体实验\\dispatches\\20260927_115748_257465.json",
+          "field": ".model_usage"
+        }
+      ]
+    },
+    "chatcmpl-6ab894cc8a1941c8d25e684b": {
+      "tokens": 2465,
+      "model": "deepseek-v4-flash-0731",
+      "sources": [
+        {
+          "file": "智能体实验\\dispatches\\20260927_115748_257465.json",
+          "field": ".planning_trace[0].usage"
+        },
+        {
+          "file": "智能体实验\\jobs\\20260927_115748_257465\\state.json",
+          "field": ".planner_trace[0].usage"
+        }
+      ]
+    },
+    "chatcmpl-6ab8955bd3a78ab94dc1e1cd": {
+      "tokens": 4220,
+      "model": "deepseek-v4-flash-0731",
+      "sources": [
+        {
+          "file": "智能体实验\\dispatches\\20260927_115748_257465.json",
+          "field": ".planning_trace[1].usage"
+        },
+        {
+          "file": "智能体实验\\jobs\\20260927_115748_257465\\state.json",
+          "field": ".planner_trace[1].usage"
+        }
+      ]
+    },
+    "chatcmpl-6ab895e813ff3d779b6ea046": {
+      "tokens": 6101,
+      "model": "deepseek-v4-flash-0731",
+      "sources": [
+        {
+          "file": "智能体实验\\dispatches\\20260927_115748_257465.json",
+          "field": ".planning_trace[2].usage"
+        },
+        {
+          "file": "智能体实验\\jobs\\20260927_115748_257465\\state.json",
+          "field": ".planner_trace[2].usage"
+        }
+      ]
+    },
+    "chatcmpl-6ab8e3f8e50524b571c5afa7": {
+      "tokens": 4141,
+      "model": "deepseek-v4-flash-0731",
+      "sources": [
+        {
+          "file": "智能体实验\\dispatches\\20260927_173803_4edb0d.json",
+          "field": ".model_usage"
+        },
+        {
+          "file": "智能体实验\\dispatches\\20260927_173803_4edb0d.json",
+          "field": ".initial_model_usages[0]"
+        },
+        {
+          "file": "智能体实验\\dispatches\\20260927_173803_4edb0d.json",
+          "field": ".initial_planning_attempts[0].usage"
+        },
+        {
+          "file": "智能体实验\\planning_attempts\\preview_ee3a799f46884bb080e0151d7f9f4161.json",
+          "field": ".usage"
+        }
+      ]
+    },
+    "chatcmpl-6ab8e4856aa3219f12049a26": {
+      "tokens": 5810,
+      "model": "deepseek-v4-flash-0731",
+      "sources": [
+        {
+          "file": "智能体实验\\dispatches\\20260927_173803_4edb0d.json",
+          "field": ".planning_trace[0].usage"
+        },
+        {
+          "file": "智能体实验\\jobs\\20260927_173803_4edb0d\\state.json",
+          "field": ".planner_trace[0].usage"
+        }
+      ]
+    },
+    "chatcmpl-6ab8e511962b5376ee8a794a": {
+      "tokens": 8054,
+      "model": "deepseek-v4-flash-0731",
+      "sources": [
+        {
+          "file": "智能体实验\\dispatches\\20260927_173803_4edb0d.json",
+          "field": ".planning_trace[1].usage"
+        },
+        {
+          "file": "智能体实验\\jobs\\20260927_173803_4edb0d\\state.json",
+          "field": ".planner_trace[1].usage"
+        }
+      ]
+    },
+    "chatcmpl-6ab8e59d7c6c07868454c492": {
+      "tokens": 10534,
+      "model": "deepseek-v4-flash-0731",
+      "sources": [
+        {
+          "file": "智能体实验\\dispatches\\20260927_173803_4edb0d.json",
+          "field": ".planning_trace[2].usage"
+        },
+        {
+          "file": "智能体实验\\jobs\\20260927_173803_4edb0d\\state.json",
+          "field": ".planner_trace[2].usage"
+        }
+      ]
+    },
+    "chatcmpl-6ab8fdcdd23262972ef1caf5": {
+      "tokens": 4876,
+      "model": "deepseek-v4-flash-0731",
+      "sources": [
+        {
+          "file": "智能体实验\\dispatches\\20260927_192816_356d6a.json",
+          "field": ".model_usage"
+        },
+        {
+          "file": "智能体实验\\dispatches\\20260927_192816_356d6a.json",
+          "field": ".initial_model_usages[0]"
+        },
+        {
+          "file": "智能体实验\\dispatches\\20260927_192816_356d6a.json",
+          "field": ".initial_planning_attempts[0].usage"
+        },
+        {
+          "file": "智能体实验\\planning_attempts\\preview_fa9d2b7e1f9c4f9f855db826bc887267.json",
+          "field": ".usage"
+        }
+      ]
+    },
+    "chatcmpl-6ab8fe5c513ed70dfbb08751": {
+      "tokens": 6468,
+      "model": "deepseek-v4-flash-0731",
+      "sources": [
+        {
+          "file": "智能体实验\\dispatches\\20260927_192816_356d6a.json",
+          "field": ".planning_trace[0].usage"
+        }
+      ]
+    },
+    "chatcmpl-6ab8d7bc0cdd546b689e7c93": {
+      "tokens": 4086,
+      "model": "deepseek-v4-flash-0731",
+      "sources": [
+        {
+          "file": "智能体实验\\planning_attempts\\preview_1a7346a23a47404a89c64668a5d3f810.json",
+          "field": ".usage"
+        }
+      ]
+    },
+    "chatcmpl-6ab8d90f5b8cb32f1fb2c97f": {
+      "tokens": 4037,
+      "model": "deepseek-v4-flash-0731",
+      "sources": [
+        {
+          "file": "智能体实验\\planning_attempts\\preview_1e6f11fb4acb46118dd236ce55c9a526.json",
+          "field": ".usage"
+        }
+      ]
+    },
+    "chatcmpl-6ab8f073a475bd4d37db4dc7": {
+      "tokens": 4497,
+      "model": "deepseek-v4-flash-0731",
+      "sources": [
+        {
+          "file": "智能体实验\\planning_attempts\\preview_1ee375cafe604d44adf42a96e3398d06.json",
+          "field": ".usage"
+        }
+      ]
+    },
+    "chatcmpl-6ab8dfeae5ae57e8b7c00638": {
+      "tokens": 4060,
+      "model": "deepseek-v4-flash-0731",
+      "sources": [
+        {
+          "file": "智能体实验\\planning_attempts\\preview_26e14d4a2c9a4c578b32cc24d8bdd462.json",
+          "field": ".usage"
+        }
+      ]
+    },
+    "chatcmpl-6ab917b88aea266316eaee25": {
+      "tokens": 4916,
+      "model": "deepseek-v4-flash-0731",
+      "sources": [
+        {
+          "file": "智能体实验\\planning_attempts\\preview_273862c7f1224204b9e0b5835e8e5aec.json",
+          "field": ".usage"
+        }
+      ]
+    },
+    "chatcmpl-6ab8d2a9bf18a46173962314": {
+      "tokens": 3296,
+      "model": "deepseek-v4-flash-0731",
+      "sources": [
+        {
+          "file": "智能体实验\\planning_attempts\\preview_3051c6d650d742d5a002022635d710de.json",
+          "field": ".usage"
+        }
+      ]
+    },
+    "chatcmpl-6ab8dfec9f981ec8aac64914": {
+      "tokens": 4839,
+      "model": "deepseek-v4-flash-0731",
+      "sources": [
+        {
+          "file": "智能体实验\\planning_attempts\\preview_53b637b75665403d8c4b939408708da1.json",
+          "field": ".usage"
+        }
+      ]
+    },
+    "chatcmpl-6ab8b82220d86700d6946358": {
+      "tokens": 3273,
+      "model": "deepseek-v4-flash-0731",
+      "sources": [
+        {
+          "file": "智能体实验\\planning_attempts\\preview_58d8d941bf734149bb0d81276134c3b5.json",
+          "field": ".usage"
+        }
+      ]
+    },
+    "chatcmpl-6ab8f076d77a2931a397ab1c": {
+      "tokens": 5300,
+      "model": "deepseek-v4-flash-0731",
+      "sources": [
+        {
+          "file": "智能体实验\\planning_attempts\\preview_6fdc4517fb3c4e2d9153206c864cd697.json",
+          "field": ".usage"
+        }
+      ]
+    },
+    "chatcmpl-6ab8c4ac157cd4c460279fc9": {
+      "tokens": 2989,
+      "model": "deepseek-v4-flash-0731",
+      "sources": [
+        {
+          "file": "智能体实验\\planning_attempts\\preview_b7e949ab19d04b668a08989e657a8f4a.json",
+          "field": ".usage"
+        }
+      ]
+    },
+    "chatcmpl-6ab8a738555dbcb8406b196c": {
+      "tokens": 2819,
+      "model": "deepseek-v4-flash-0731",
+      "sources": [
+        {
+          "file": "智能体实验\\planning_attempts\\preview_ec78c82b281640f88f52927c8139d422.json",
+          "field": ".usage"
+        }
+      ]
+    },
+    "chatcmpl-6ab9aa3bd3444db0bfeb8b43": {
+      "tokens": 6696,
+      "model": "deepseek-v4-flash-0731",
+      "sources": [
+        {
+          "file": "工作材料\\便携异目录检查\\20260928 智能规划 RC18\\智能体实验\\planning_attempts\\preview_0d9e01ffebe4473286b7ebc935c911eb.json",
+          "field": ".usage"
+        }
+      ]
+    }
+  }
+}

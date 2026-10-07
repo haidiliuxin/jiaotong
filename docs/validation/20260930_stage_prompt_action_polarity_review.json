@@ -1,0 +1,58 @@
+{
+  "date": "2026-09-30",
+  "source_commit": "023c1c8e",
+  "source_record": "智能体实验/mixed_limit7_full_20260930_01/dispatches/20260930_080603_c82f1e.json",
+  "source_sha256": "63a321bc5b439e5db6d45aa8a92058b8e23194b801e78689abb3712b4da5f041",
+  "handoff_reassessment": {
+    "trace_ordinal": 3,
+    "attempt": "review_correction.first_attempt",
+    "field": "proposal_excerpt.reason",
+    "source_quote": "先前决策未选停车2级对照",
+    "old_protocol": "measured-conclusion-v11",
+    "old_code": "executed_parking_level",
+    "new_protocol": "measured-conclusion-v12",
+    "shadow_full_tool_check": "accepted",
+    "classification": "false_positive_negated_selection",
+    "previous_stage_prose_misattributed_model_error": true,
+    "original_record_unchanged": true,
+    "original_programme_status": "incomplete"
+  },
+  "instruction_protocol": "stage-planning-instructions-v1",
+  "instruction_bytes": [
+    {"turn": 1, "phase": "parking", "before": 9494, "after": 3318},
+    {"turn": 2, "phase": "parking", "before": 9494, "after": 4218},
+    {"turn": 3, "phase": "parking_handoff", "before": 12484, "after": 3345},
+    {"turn": 4, "phase": "oneway_target", "before": 12484, "after": 3866}
+  ],
+  "model_only_probe": {
+    "path": "智能体实验/stage_prompt_v1_model_probe_20260930_01/probe.json",
+    "sha256": "a107f167ce5c3d8c94fa9ac253ec78240dfcb36176be42ab5bfa8da96c17d50f",
+    "response_id": "chatcmpl-6abc5b9edb07731c89b49a0f",
+    "status": "accepted",
+    "request_unchanged": true,
+    "observations_unchanged": true,
+    "action_menu_unchanged": true,
+    "tool_schema_sha256": "3686d7a0364614a25f06d9d0d5898ae38269a94006004d8b5235412d47b4216a",
+    "closed_direction": [3237, 3236],
+    "retained_reverse_claim_consistent": true,
+    "original_task_resumed": false,
+    "native_scenes": 0,
+    "input_tokens_before": 8671,
+    "input_tokens_after": 6867,
+    "output_tokens": 572,
+    "known_tokens": 7439,
+    "not_complete_loop_evidence": true,
+    "not_long_term_reliability_evidence": true
+  },
+  "offline_checks": {"python_tests": 649, "node_groups": 4, "old_rc5_original_protocol_read_only": "passed", "git_diff_check": "passed"},
+  "usage": {
+    "new_unique_requests": 1,
+    "new_known_tokens": 7439,
+    "project_retained_cumulative_requests": 147,
+    "project_retained_cumulative_known_tokens": 1411943,
+    "authorized_max_requests": 684,
+    "authorized_max_known_tokens": 4132560,
+    "not_full_account_bill": true
+  },
+  "pending": ["new_protocol_full_oneway_combination_native_loop", "latest_portable_candidate_full_task", "physical_other_machine_acceptance"]
+}

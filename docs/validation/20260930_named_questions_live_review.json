@@ -1,0 +1,4425 @@
+{
+  "created": "2026-09-30T03:15:05.664692+00:00",
+  "kind": "named_questions_new_mixed_run_readonly_review",
+  "source_commit": "2851d1967349553f2700799cc1358cf24ee6aaac",
+  "root": "智能体实验\\mixed_named_questions_full_20260930_01",
+  "job_id": "20260930_110453_b91dea",
+  "job_ids": [
+    "20260930_110453_b91dea",
+    "20260930_110453_1bf58f"
+  ],
+  "request": "长江村路停车拥堵。请至少比较两个不同停车备选方案，并检验单向组织及其组合的独立效果。最多7次仿真，不复跑基准；保护邻区。",
+  "original_status": "incomplete",
+  "complete_verification": {
+    "passed": false,
+    "reason": "总任务尚未完整，不能出具完整验收结论"
+  },
+  "initial_request_count": 1,
+  "question_authoring_protocol": "named-question-authoring-v1",
+  "assessment": [
+    {
+      "hypothesis": "第1组、第2组分别检验：每组至少一个已试措施（本组可检验的全部治理类型）在全部约定需求下冻结核心范围总耗时严格低于同需求无治理基准。",
+      "evidence_needed": "按所选判据配对本组同需求原生观测；所需基准或对照缺失时保留未知。",
+      "criterion": {
+        "test": "core_time_decrease",
+        "studies": [
+          1,
+          2
+        ],
+        "policies": "all",
+        "quantifier": "any"
+      },
+      "authoring": {
+        "version": "named-question-authoring-v1",
+        "definition": {
+          "policies": "all",
+          "quantifier": "any",
+          "study_keys": [
+            "parking_cmp",
+            "oneway_comb"
+          ],
+          "test": "core_time_decrease"
+        },
+        "study_keys": {
+          "parking_cmp": 1,
+          "oneway_comb": 2
+        }
+      },
+      "evaluation": {
+        "version": "hypothesis-measurement-v1",
+        "test": "core_time_decrease",
+        "policies": "all",
+        "quantifier": "any",
+        "scope": [
+          {
+            "study_id": "study_1",
+            "scenario": "parking",
+            "road": "长江村路",
+            "demand_factors": [
+              1.0
+            ]
+          },
+          {
+            "study_id": "study_2",
+            "scenario": "oneway",
+            "road": "长江村路",
+            "demand_factors": [
+              1.0
+            ]
+          }
+        ],
+        "rule": "冻结核心范围的总耗时低于同需求基准；与是否通过推荐约束分开判断。",
+        "definition": {
+          "version": "typed-initial-questions-v1",
+          "metric": "core_running_time",
+          "comparator": "untreated_baseline",
+          "relation": "strictly_lower",
+          "predicate": "冻结核心范围总耗时严格低于同需求无治理基准"
+        },
+        "interpretation": {
+          "version": "bounded-question-wording-v6",
+          "question": "逐组独立检验：第1组（长江村路），需求×1；第2组（长江村路），需求×1。每组全部治理类型中至少一个已试措施，是否在每个约定需求下冻结核心范围总耗时严格低于同需求无治理基准？",
+          "wording_check": "generated_from_definition",
+          "boundary": "本问题由模型选择的结构化定义生成；原用户输入和模型研究理由另行保留。判据通过不证明现实因果，也不代表未测措施已被检验。",
+          "limits": [
+            "各组独立与自身新基准比较，不共享不同引擎的效果。",
+            "核心指标仅适用于本次冻结的评价方向，不自动覆盖整条道路。",
+            "只涉及本次已试措施与离散需求，不代表全局最优或实时变化。"
+          ],
+          "contract": {
+            "test": "core_time_decrease",
+            "policies": "all",
+            "quantifier": "any",
+            "scope": [
+              {
+                "study_id": "study_1",
+                "scenario": "parking",
+                "road": "长江村路",
+                "demand_factors": [
+                  1.0
+                ]
+              },
+              {
+                "study_id": "study_2",
+                "scenario": "oneway",
+                "road": "长江村路",
+                "demand_factors": [
+                  1.0
+                ]
+              }
+            ]
+          },
+          "origin": "model_structured_definition"
+        }
+      }
+    },
+    {
+      "hypothesis": "第1组、第2组分别检验：每组至少一个已试措施（本组可检验的全部治理类型）在全部约定需求下邻区耗时增幅和毛新增过饱和均不超过该组原定门槛。",
+      "evidence_needed": "按所选判据配对本组同需求原生观测；所需基准或对照缺失时保留未知。",
+      "criterion": {
+        "test": "neighbor_limits",
+        "studies": [
+          1,
+          2
+        ],
+        "policies": "all",
+        "quantifier": "any"
+      },
+      "authoring": {
+        "version": "named-question-authoring-v1",
+        "definition": {
+          "policies": "all",
+          "quantifier": "any",
+          "study_keys": [
+            "parking_cmp",
+            "oneway_comb"
+          ],
+          "test": "neighbor_limits"
+        },
+        "study_keys": {
+          "parking_cmp": 1,
+          "oneway_comb": 2
+        }
+      },
+      "evaluation": {
+        "version": "hypothesis-measurement-v1",
+        "test": "neighbor_limits",
+        "policies": "all",
+        "quantifier": "any",
+        "scope": [
+          {
+            "study_id": "study_1",
+            "scenario": "parking",
+            "road": "长江村路",
+            "demand_factors": [
+              1.0
+            ],
+            "max_neighbor_time_increase_pct": 0.5,
+            "max_new_oversaturated_km": 0.1
+          },
+          {
+            "study_id": "study_2",
+            "scenario": "oneway",
+            "road": "长江村路",
+            "demand_factors": [
+              1.0
+            ],
+            "max_neighbor_time_increase_pct": 0.5,
+            "max_new_oversaturated_km": 0.1
+          }
+        ],
+        "rule": "邻区耗时增幅和毛新增过饱和均不超过本组原定门槛；不包括核心内其他候选子区。",
+        "definition": {
+          "version": "typed-initial-questions-v1",
+          "metric": "neighbor_time_and_gross_new_oversaturation",
+          "comparator": "frozen_neighbor_limits",
+          "relation": "within_both_limits",
+          "predicate": "邻区耗时增幅和毛新增过饱和均不超过该组原定门槛"
+        },
+        "interpretation": {
+          "version": "bounded-question-wording-v6",
+          "question": "逐组独立检验：第1组（长江村路），需求×1，邻区耗时增幅≤0.5%，毛新增过饱和≤0.1km；第2组（长江村路），需求×1，邻区耗时增幅≤0.5%，毛新增过饱和≤0.1km。每组全部治理类型中至少一个已试措施，是否在每个约定需求下邻区耗时增幅和毛新增过饱和均不超过该组原定门槛？",
+          "wording_check": "generated_from_definition",
+          "boundary": "本问题由模型选择的结构化定义生成；原用户输入和模型研究理由另行保留。判据通过不证明现实因果，也不代表未测措施已被检验。",
+          "limits": [
+            "各组独立与自身新基准比较，不共享不同引擎的效果。",
+            "核心指标仅适用于本次冻结的评价方向，不自动覆盖整条道路。",
+            "只涉及本次已试措施与离散需求，不代表全局最优或实时变化。"
+          ],
+          "contract": {
+            "test": "neighbor_limits",
+            "policies": "all",
+            "quantifier": "any",
+            "scope": [
+              {
+                "study_id": "study_1",
+                "scenario": "parking",
+                "road": "长江村路",
+                "demand_factors": [
+                  1.0
+                ],
+                "max_neighbor_time_increase_pct": 0.5,
+                "max_new_oversaturated_km": 0.1
+              },
+              {
+                "study_id": "study_2",
+                "scenario": "oneway",
+                "road": "长江村路",
+                "demand_factors": [
+                  1.0
+                ],
+                "max_neighbor_time_increase_pct": 0.5,
+                "max_new_oversaturated_km": 0.1
+              }
+            ]
+          },
+          "origin": "model_structured_definition"
+        }
+      }
+    },
+    {
+      "hypothesis": "第2组分别检验：每组至少一个已试措施（交通组织及组合）在全部约定需求下冻结核心总耗时严格低于同需求的仅停车措施。",
+      "evidence_needed": "按所选判据配对本组同需求原生观测；所需基准或对照缺失时保留未知。",
+      "criterion": {
+        "test": "core_advantage_over_parking",
+        "studies": [
+          2
+        ],
+        "policies": "control_and_combined",
+        "quantifier": "any"
+      },
+      "authoring": {
+        "version": "named-question-authoring-v1",
+        "definition": {
+          "policies": "control_and_combined",
+          "quantifier": "any",
+          "study_keys": [
+            "oneway_comb"
+          ],
+          "test": "core_advantage_over_parking"
+        },
+        "study_keys": {
+          "oneway_comb": 2
+        }
+      },
+      "evaluation": {
+        "version": "hypothesis-measurement-v1",
+        "test": "core_advantage_over_parking",
+        "policies": "control_and_combined",
+        "quantifier": "any",
+        "scope": [
+          {
+            "study_id": "study_2",
+            "scenario": "oneway",
+            "road": "长江村路",
+            "demand_factors": [
+              1.0
+            ]
+          }
+        ],
+        "rule": "交通组织单项或组合的核心总耗时严格低于本组仅停车；全部类型在此指交通组织和组合，不把仅停车与自身相比。",
+        "definition": {
+          "version": "typed-initial-questions-v1",
+          "metric": "core_running_time",
+          "comparator": "parking_only",
+          "relation": "strictly_lower",
+          "predicate": "冻结核心总耗时严格低于同需求的仅停车措施"
+        },
+        "interpretation": {
+          "version": "bounded-question-wording-v6",
+          "question": "逐组独立检验：第2组（长江村路），需求×1。每组交通组织和组合措施（不含仅停车）中至少一个已试措施，是否在每个约定需求下冻结核心总耗时严格低于同需求的仅停车措施？",
+          "wording_check": "generated_from_definition",
+          "boundary": "本问题由模型选择的结构化定义生成；原用户输入和模型研究理由另行保留。判据通过不证明现实因果，也不代表未测措施已被检验。",
+          "limits": [
+            "各组独立与自身新基准比较，不共享不同引擎的效果。",
+            "核心指标仅适用于本次冻结的评价方向，不自动覆盖整条道路。",
+            "只涉及本次已试措施与离散需求，不代表全局最优或实时变化。"
+          ],
+          "contract": {
+            "test": "core_advantage_over_parking",
+            "policies": "control_and_combined",
+            "quantifier": "any",
+            "scope": [
+              {
+                "study_id": "study_2",
+                "scenario": "oneway",
+                "road": "长江村路",
+                "demand_factors": [
+                  1.0
+                ]
+              }
+            ]
+          },
+          "origin": "model_structured_definition"
+        }
+      }
+    },
+    {
+      "hypothesis": "第2组分别检验：每组至少一个已试措施（组合措施）在全部约定需求下冻结核心总耗时分别严格低于同需求的两个单项措施。",
+      "evidence_needed": "按所选判据配对本组同需求原生观测；所需基准或对照缺失时保留未知。",
+      "criterion": {
+        "test": "combination_core_advantage",
+        "studies": [
+          2
+        ],
+        "policies": "combined",
+        "quantifier": "any"
+      },
+      "authoring": {
+        "version": "named-question-authoring-v1",
+        "definition": {
+          "policies": "combined",
+          "quantifier": "any",
+          "study_keys": [
+            "oneway_comb"
+          ],
+          "test": "combination_core_advantage"
+        },
+        "study_keys": {
+          "oneway_comb": 2
+        }
+      },
+      "evaluation": {
+        "version": "hypothesis-measurement-v1",
+        "test": "combination_core_advantage",
+        "policies": "combined",
+        "quantifier": "any",
+        "scope": [
+          {
+            "study_id": "study_2",
+            "scenario": "oneway",
+            "road": "长江村路",
+            "demand_factors": [
+              1.0
+            ]
+          }
+        ],
+        "rule": "组合的核心总耗时分别严格低于本组停车单项和交通组织单项；不等于更适合推荐或已证明协同成因。",
+        "definition": {
+          "version": "typed-initial-questions-v1",
+          "metric": "core_running_time",
+          "comparator": "both_single_measures",
+          "relation": "strictly_lower_than_each",
+          "predicate": "冻结核心总耗时分别严格低于同需求的两个单项措施"
+        },
+        "interpretation": {
+          "version": "bounded-question-wording-v6",
+          "question": "逐组独立检验：第2组（长江村路），需求×1。每组组合措施中至少一个已试措施，是否在每个约定需求下冻结核心总耗时分别严格低于同需求的两个单项措施？",
+          "wording_check": "generated_from_definition",
+          "boundary": "本问题由模型选择的结构化定义生成；原用户输入和模型研究理由另行保留。判据通过不证明现实因果，也不代表未测措施已被检验。",
+          "limits": [
+            "各组独立与自身新基准比较，不共享不同引擎的效果。",
+            "核心指标仅适用于本次冻结的评价方向，不自动覆盖整条道路。",
+            "只涉及本次已试措施与离散需求，不代表全局最优或实时变化。"
+          ],
+          "contract": {
+            "test": "combination_core_advantage",
+            "policies": "combined",
+            "quantifier": "any",
+            "scope": [
+              {
+                "study_id": "study_2",
+                "scenario": "oneway",
+                "road": "长江村路",
+                "demand_factors": [
+                  1.0
+                ]
+              }
+            ]
+          },
+          "origin": "model_structured_definition"
+        }
+      }
+    }
+  ],
+  "groups": [
+    {
+      "job_id": "20260930_110453_b91dea",
+      "started": true,
+      "status": "completed",
+      "scenario": "parking",
+      "task": {
+        "request": "长江村路停车拥堵。请至少比较两个不同停车备选方案，并检验单向组织及其组合的独立效果。最多7次仿真，不复跑基准；保护邻区。",
+        "scenario": "parking",
+        "search_mode": "standard",
+        "recommendation_version": "tolerance-v2",
+        "road_name": "长江村路",
+        "links": [],
+        "turn": null,
+        "max_links": 3,
+        "max_runs": 3,
+        "max_feedback": 2,
+        "comparison_regions": 1,
+        "comparison_policies": 2,
+        "demand_factors": [
+          1.0
+        ],
+        "repeat_baseline": false,
+        "neighbor_hops": 2,
+        "target_speed_kmh": 25.0,
+        "max_neighbor_time_increase_pct": 0.5,
+        "max_network_time_increase_pct": 0.1,
+        "max_new_oversaturated_km": 0.1,
+        "module_timeout_seconds": 900
+      },
+      "raw_verification": {
+        "passed": true,
+        "completed_scenarios": 3,
+        "module_executions": 21,
+        "scope_sizes": {
+          "core": 5,
+          "neighbor": 45,
+          "network": 32060
+        },
+        "repeat_arrays_exact": null,
+        "verified_runs": [
+          {
+            "scenario": "baseline",
+            "modules": 7,
+            "result_rows": {
+              "speed_kmh": 32981,
+              "flow_pcu_h": 32981,
+              "vc": 32981,
+              "time_s": 32981
+            },
+            "input_difference_files": [],
+            "car_od_factor": 1.0,
+            "internal_od_factor": 1.0
+          },
+          {
+            "scenario": "parking_1",
+            "modules": 7,
+            "result_rows": {
+              "speed_kmh": 32981,
+              "flow_pcu_h": 32981,
+              "vc": 32981,
+              "time_s": 32981
+            },
+            "input_difference_files": [
+              "data/manageL.txt"
+            ],
+            "car_od_factor": 1.0,
+            "internal_od_factor": 1.0
+          },
+          {
+            "scenario": "parking_2",
+            "modules": 7,
+            "result_rows": {
+              "speed_kmh": 32981,
+              "flow_pcu_h": 32981,
+              "vc": 32981,
+              "time_s": 32981
+            },
+            "input_difference_files": [
+              "data/manageL.txt"
+            ],
+            "car_od_factor": 1.0,
+            "internal_od_factor": 1.0
+          }
+        ],
+        "limitations": "只核验保存的实验与输入输出证据，不证明现实标定有效或全部草案已实现",
+        "model_planning_audit": {
+          "passed": true,
+          "decisions": 3,
+          "model_selected_policies": 2,
+          "observations_from_current_job_only": true,
+          "actions_precede_execution": true
+        }
+      },
+      "runs": [
+        {
+          "name": "baseline",
+          "demand_factor": 1.0,
+          "changes": [],
+          "comparison": {},
+          "control_response": null,
+          "execution_status": "completed",
+          "top_level_modules": 7,
+          "module_names": [
+            "M3DataRoadNetwork.exe",
+            "M3DataBusNetwork.exe",
+            "M3DataTrafficManage.exe",
+            "M6AssignVehicle.exe",
+            "M6TrafficLoadLinkVeh.exe",
+            "M6TrafficLoadNodeVeh.exe",
+            "M6NodeQueueDelay.exe"
+          ]
+        },
+        {
+          "name": "parking_1",
+          "demand_factor": 1.0,
+          "changes": [
+            {
+              "from_node": 3240,
+              "to_node": 3239,
+              "old_parking": 3,
+              "parking": 1
+            },
+            {
+              "from_node": 3239,
+              "to_node": 3240,
+              "old_parking": 3,
+              "parking": 1
+            },
+            {
+              "from_node": 3239,
+              "to_node": 3238,
+              "old_parking": 3,
+              "parking": 1
+            }
+          ],
+          "comparison": {
+            "before": {
+              "core": {
+                "directed_links": 5,
+                "directed_length_km": 2.088,
+                "weighted_speed_kmh": 32.70104676892661,
+                "running_time_pcu_h": 82.98941037504531,
+                "transport_pcu_km": 2713.84059,
+                "oversaturated_km": 2.088,
+                "timelink_flagged_links": 0,
+                "timelink_sum_pcu_h": 82.98277647222223
+              },
+              "neighbor": {
+                "directed_links": 45,
+                "directed_length_km": 11.05848,
+                "weighted_speed_kmh": 14.045576953059824,
+                "running_time_pcu_h": 433.7017707537425,
+                "transport_pcu_km": 6091.5915958000005,
+                "oversaturated_km": 3.838,
+                "timelink_flagged_links": 0,
+                "timelink_sum_pcu_h": 8357.379558416666
+              },
+              "network": {
+                "directed_links": 32060,
+                "directed_length_km": 12446.9460498,
+                "weighted_speed_kmh": 33.43319835501451,
+                "running_time_pcu_h": 227328.24893586405,
+                "transport_pcu_km": 7600310.438370859,
+                "oversaturated_km": 1608.6958436,
+                "timelink_flagged_links": 44,
+                "timelink_sum_pcu_h": null
+              }
+            },
+            "after": {
+              "core": {
+                "directed_links": 5,
+                "directed_length_km": 2.088,
+                "weighted_speed_kmh": 42.91060095550325,
+                "running_time_pcu_h": 63.645662358167044,
+                "transport_pcu_km": 2731.07362,
+                "oversaturated_km": 2.088,
+                "timelink_flagged_links": 0,
+                "timelink_sum_pcu_h": 63.64733938888889
+              },
+              "neighbor": {
+                "directed_links": 45,
+                "directed_length_km": 11.05848,
+                "weighted_speed_kmh": 14.083733920997652,
+                "running_time_pcu_h": 432.91220549898776,
+                "transport_pcu_km": 6097.0203134,
+                "oversaturated_km": 3.838,
+                "timelink_flagged_links": 0,
+                "timelink_sum_pcu_h": 8355.581412333333
+              },
+              "network": {
+                "directed_links": 32060,
+                "directed_length_km": 12446.9460498,
+                "weighted_speed_kmh": 33.43601776578891,
+                "running_time_pcu_h": 227307.11553074908,
+                "transport_pcu_km": 7600244.7531763585,
+                "oversaturated_km": 1608.6958436,
+                "timelink_flagged_links": 44,
+                "timelink_sum_pcu_h": null
+              }
+            },
+            "delta": {
+              "core": {
+                "speed_change_pct": 31.22087882605038,
+                "running_time_change_pct": -23.308694361678317,
+                "oversaturated_km_change": 0.0
+              },
+              "neighbor": {
+                "speed_change_pct": 0.2716653652986123,
+                "running_time_change_pct": -0.18205257806130914,
+                "oversaturated_km_change": 0.0
+              },
+              "network": {
+                "speed_change_pct": 0.008432967568516858,
+                "running_time_change_pct": -0.009296427176952449,
+                "oversaturated_km_change": 0.0
+              }
+            },
+            "eligible": true,
+            "violations": [],
+            "new_neighbor_oversaturated_km": 0,
+            "new_neighbor_oversaturated_links": [],
+            "regional_checks": [
+              {
+                "region": "area_1",
+                "before": {
+                  "directed_links": 3,
+                  "weighted_speed_kmh": 32.322398964327775,
+                  "running_time_pcu_h": 59.1005052597812,
+                  "oversaturated_km": 1.489
+                },
+                "after": {
+                  "directed_links": 3,
+                  "weighted_speed_kmh": 48.524945534578976,
+                  "running_time_pcu_h": 39.64314640248654,
+                  "oversaturated_km": 1.489
+                },
+                "time_change_pct": -32.92249156207415,
+                "passed": true
+              },
+              {
+                "region": "area_2",
+                "before": {
+                  "directed_links": 2,
+                  "weighted_speed_kmh": 33.63781119824318,
+                  "running_time_pcu_h": 23.888905115264116,
+                  "oversaturated_km": 0.599
+                },
+                "after": {
+                  "directed_links": 2,
+                  "weighted_speed_kmh": 33.63781119824318,
+                  "running_time_pcu_h": 24.0025159556805,
+                  "oversaturated_km": 0.599
+                },
+                "time_change_pct": 0.4755799391734872,
+                "passed": true
+              }
+            ]
+          },
+          "control_response": null,
+          "execution_status": "completed",
+          "top_level_modules": 7,
+          "module_names": [
+            "M3DataRoadNetwork.exe",
+            "M3DataBusNetwork.exe",
+            "M3DataTrafficManage.exe",
+            "M6AssignVehicle.exe",
+            "M6TrafficLoadLinkVeh.exe",
+            "M6TrafficLoadNodeVeh.exe",
+            "M6NodeQueueDelay.exe"
+          ]
+        },
+        {
+          "name": "parking_2",
+          "demand_factor": 1.0,
+          "changes": [
+            {
+              "from_node": 3240,
+              "to_node": 3239,
+              "old_parking": 3,
+              "parking": 2
+            },
+            {
+              "from_node": 3239,
+              "to_node": 3240,
+              "old_parking": 3,
+              "parking": 2
+            },
+            {
+              "from_node": 3239,
+              "to_node": 3238,
+              "old_parking": 3,
+              "parking": 2
+            }
+          ],
+          "comparison": {
+            "before": {
+              "core": {
+                "directed_links": 5,
+                "directed_length_km": 2.088,
+                "weighted_speed_kmh": 32.70104676892661,
+                "running_time_pcu_h": 82.98941037504531,
+                "transport_pcu_km": 2713.84059,
+                "oversaturated_km": 2.088,
+                "timelink_flagged_links": 0,
+                "timelink_sum_pcu_h": 82.98277647222223
+              },
+              "neighbor": {
+                "directed_links": 45,
+                "directed_length_km": 11.05848,
+                "weighted_speed_kmh": 14.045576953059824,
+                "running_time_pcu_h": 433.7017707537425,
+                "transport_pcu_km": 6091.5915958000005,
+                "oversaturated_km": 3.838,
+                "timelink_flagged_links": 0,
+                "timelink_sum_pcu_h": 8357.379558416666
+              },
+              "network": {
+                "directed_links": 32060,
+                "directed_length_km": 12446.9460498,
+                "weighted_speed_kmh": 33.43319835501451,
+                "running_time_pcu_h": 227328.24893586405,
+                "transport_pcu_km": 7600310.438370859,
+                "oversaturated_km": 1608.6958436,
+                "timelink_flagged_links": 44,
+                "timelink_sum_pcu_h": null
+              }
+            },
+            "after": {
+              "core": {
+                "directed_links": 5,
+                "directed_length_km": 2.088,
+                "weighted_speed_kmh": 40.064443682567074,
+                "running_time_pcu_h": 68.08819040677149,
+                "transport_pcu_km": 2727.91547,
+                "oversaturated_km": 2.088,
+                "timelink_flagged_links": 0,
+                "timelink_sum_pcu_h": 68.09015183333332
+              },
+              "neighbor": {
+                "directed_links": 45,
+                "directed_length_km": 11.05848,
+                "weighted_speed_kmh": 14.074515212158897,
+                "running_time_pcu_h": 433.0481292978825,
+                "transport_pcu_km": 6094.9424834,
+                "oversaturated_km": 3.838,
+                "timelink_flagged_links": 0,
+                "timelink_sum_pcu_h": 8355.892391722222
+              },
+              "network": {
+                "directed_links": 32060,
+                "directed_length_km": 12446.9460498,
+                "weighted_speed_kmh": 33.435385677410814,
+                "running_time_pcu_h": 227311.86063654258,
+                "transport_pcu_km": 7600259.729432659,
+                "oversaturated_km": 1608.6958436,
+                "timelink_flagged_links": 44,
+                "timelink_sum_pcu_h": null
+              }
+            },
+            "delta": {
+              "core": {
+                "speed_change_pct": 22.517312567001248,
+                "running_time_change_pct": -17.955567946479324,
+                "oversaturated_km_change": 0.0
+              },
+              "neighbor": {
+                "speed_change_pct": 0.20603111709676103,
+                "running_time_change_pct": -0.15071219440123684,
+                "oversaturated_km_change": 0.0
+              },
+              "network": {
+                "speed_change_pct": 0.006542366581485659,
+                "running_time_change_pct": -0.007209090554372022,
+                "oversaturated_km_change": 0.0
+              }
+            },
+            "eligible": true,
+            "violations": [],
+            "new_neighbor_oversaturated_km": 0,
+            "new_neighbor_oversaturated_links": [],
+            "regional_checks": [
+              {
+                "region": "area_1",
+                "before": {
+                  "directed_links": 3,
+                  "weighted_speed_kmh": 32.322398964327775,
+                  "running_time_pcu_h": 59.1005052597812,
+                  "oversaturated_km": 1.489
+                },
+                "after": {
+                  "directed_links": 3,
+                  "weighted_speed_kmh": 43.5581046227787,
+                  "running_time_pcu_h": 44.10935821562921,
+                  "oversaturated_km": 1.489
+                },
+                "time_change_pct": -25.365514183435756,
+                "passed": true
+              },
+              {
+                "region": "area_2",
+                "before": {
+                  "directed_links": 2,
+                  "weighted_speed_kmh": 33.63781119824318,
+                  "running_time_pcu_h": 23.888905115264116,
+                  "oversaturated_km": 0.599
+                },
+                "after": {
+                  "directed_links": 2,
+                  "weighted_speed_kmh": 33.63781119824317,
+                  "running_time_pcu_h": 23.97883219114229,
+                  "oversaturated_km": 0.599
+                },
+                "time_change_pct": 0.3764386665871644,
+                "passed": true
+              }
+            ]
+          },
+          "control_response": null,
+          "execution_status": "completed",
+          "top_level_modules": 7,
+          "module_names": [
+            "M3DataRoadNetwork.exe",
+            "M3DataBusNetwork.exe",
+            "M3DataTrafficManage.exe",
+            "M6AssignVehicle.exe",
+            "M6TrafficLoadLinkVeh.exe",
+            "M6TrafficLoadNodeVeh.exe",
+            "M6NodeQueueDelay.exe"
+          ]
+        }
+      ],
+      "review": null
+    },
+    {
+      "job_id": "20260930_110453_1bf58f",
+      "started": true,
+      "status": "incomplete",
+      "scenario": "oneway",
+      "task": {
+        "request": "长江村路停车拥堵。请至少比较两个不同停车备选方案，并检验单向组织及其组合的独立效果。最多7次仿真，不复跑基准；保护邻区。",
+        "scenario": "oneway",
+        "search_mode": "standard",
+        "recommendation_version": "tolerance-v2",
+        "road_name": "长江村路",
+        "links": [],
+        "turn": null,
+        "max_links": 3,
+        "max_runs": 4,
+        "max_feedback": 2,
+        "demand_factors": [
+          1.0
+        ],
+        "repeat_baseline": false,
+        "neighbor_hops": 2,
+        "target_speed_kmh": 25.0,
+        "max_neighbor_time_increase_pct": 0.5,
+        "max_network_time_increase_pct": 0.1,
+        "max_new_oversaturated_km": 0.1,
+        "module_timeout_seconds": 900
+      },
+      "raw_verification": {
+        "passed": false,
+        "reason": "任务尚未完成，不能出具完整验证结论"
+      },
+      "runs": [
+        {
+          "name": "baseline",
+          "demand_factor": 1.0,
+          "changes": [],
+          "comparison": {},
+          "control_response": null,
+          "execution_status": "completed",
+          "top_level_modules": 7,
+          "module_names": [
+            "M3DataRoadNetwork.exe",
+            "M3DataBusNetwork.exe",
+            "M3DataTrafficManage.exe",
+            "M6AssignVehicle1.exe",
+            "M6TrafficLoadLinkVeh.exe",
+            "M6TrafficLoadNodeVeh.exe",
+            "M6NodeQueueDelay.exe"
+          ],
+          "verified_vehicle1_native_calls": 20
+        }
+      ],
+      "review": null
+    }
+  ],
+  "programme_review": {
+    "version": "programme-evidence-v1",
+    "evidence": {
+      "version": "programme-evidence-v1",
+      "programme_id": "20260930_110453_b91dea",
+      "groups": [
+        {
+          "id": "study_1",
+          "job_id": "20260930_110453_b91dea",
+          "title": "停车治理与反馈",
+          "scenario": "parking",
+          "engine": "TranStar 基础分配",
+          "execution_complete": true,
+          "finding_ids": [
+            "study_1.benefit",
+            "study_1.tradeoff",
+            "study_1.strength",
+            "study_1.regions",
+            "study_1.robustness"
+          ]
+        },
+        {
+          "id": "study_2",
+          "job_id": "20260930_110453_1bf58f",
+          "title": "停车＋单向组织",
+          "scenario": "oneway",
+          "engine": "TranStar Vehicle1＋道路禁行适配",
+          "execution_complete": false,
+          "finding_ids": [
+            "study_2.factorial",
+            "study_2.response",
+            "study_2.benefit",
+            "study_2.combination",
+            "study_2.robustness"
+          ]
+        }
+      ],
+      "findings": [
+        {
+          "id": "study_1.benefit",
+          "question": "停车治理与反馈：已测停车措施能否在约束内改善交通？",
+          "status": "supported",
+          "answer": "2项措施在全部约定需求下通过约束。",
+          "evidence_refs": [
+            "20260930_110453_b91dea:baseline",
+            "20260930_110453_b91dea:parking_1",
+            "20260930_110453_b91dea:parking_2"
+          ],
+          "measurements": []
+        },
+        {
+          "id": "study_1.tradeoff",
+          "question": "停车治理与反馈：局部改善是否伴随不能接受的代价？",
+          "status": "not_observed",
+          "answer": "已测完整措施中未发现此类反例；仍受当前阈值和需求范围限制。",
+          "evidence_refs": [
+            "20260930_110453_b91dea:baseline",
+            "20260930_110453_b91dea:parking_1",
+            "20260930_110453_b91dea:parking_2"
+          ],
+          "measurements": []
+        },
+        {
+          "id": "study_1.strength",
+          "question": "停车治理与反馈：更强的停车1级是否比2级更合适？",
+          "status": "measured",
+          "answer": "完成1组同方向、全需求强度对照；按固定约束和容差分别筛选，不能假定强度与收益单调。",
+          "evidence_refs": [
+            "20260930_110453_b91dea:baseline",
+            "20260930_110453_b91dea:parking_1",
+            "20260930_110453_b91dea:parking_2"
+          ],
+          "measurements": [
+            {
+              "directions": [
+                [
+                  3239,
+                  3238
+                ],
+                [
+                  3239,
+                  3240
+                ],
+                [
+                  3240,
+                  3239
+                ]
+              ],
+              "preferred_level": 1,
+              "levels": [
+                {
+                  "level": 1,
+                  "run": "parking_1",
+                  "feasible": true,
+                  "worst": [
+                    -0.009296427176952449,
+                    -0.18205257806130914,
+                    0
+                  ]
+                },
+                {
+                  "level": 2,
+                  "run": "parking_2",
+                  "feasible": true,
+                  "worst": [
+                    -0.007209090554372022,
+                    -0.15071219440123684,
+                    0
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "study_1.regions",
+          "question": "停车治理与反馈：不同区域的已测措施有什么取舍？",
+          "status": "unmeasured",
+          "answer": "尚未实测两个不同区域，不能比较位置优劣。",
+          "evidence_refs": [],
+          "measurements": []
+        },
+        {
+          "id": "study_1.robustness",
+          "question": "停车治理与反馈：同一措施在约定需求波动下是否仍可用？",
+          "status": "unmeasured",
+          "answer": "尚无完整的多需求治理证据；单一需求不能证明稳健性。",
+          "evidence_refs": [],
+          "measurements": []
+        },
+        {
+          "id": "study_2.factorial",
+          "question": "停车＋单向组织：停车、交通组织与组合是否完成公平对照？",
+          "status": "unmeasured",
+          "answer": "尚未测齐四项同需求对照；缺测不能补推。",
+          "evidence_refs": [
+            "20260930_110453_1bf58f:baseline"
+          ],
+          "measurements": [
+            {
+              "factor": 1.0,
+              "baseline": "baseline",
+              "cells": [
+                {
+                  "label": "S1_parking",
+                  "title": "停车",
+                  "run": null,
+                  "eligible": false,
+                  "delta": null,
+                  "violations": [],
+                  "control_response": null
+                },
+                {
+                  "label": "S2_oneway",
+                  "title": "单向",
+                  "run": null,
+                  "eligible": false,
+                  "delta": null,
+                  "violations": [],
+                  "control_response": null
+                },
+                {
+                  "label": "S3_combined",
+                  "title": "停车＋单向",
+                  "run": null,
+                  "eligible": false,
+                  "delta": null,
+                  "violations": [],
+                  "control_response": null
+                }
+              ],
+              "interaction_pcu_h": null
+            }
+          ]
+        },
+        {
+          "id": "study_2.response",
+          "question": "停车＋单向组织：单向是否真的进入原生交通分配？",
+          "status": "unmeasured",
+          "answer": "原生控制响应证据不足。",
+          "evidence_refs": [
+            "20260930_110453_1bf58f:baseline"
+          ],
+          "measurements": []
+        },
+        {
+          "id": "study_2.benefit",
+          "question": "停车＋单向组织：哪些措施在约定需求下通过约束？",
+          "status": "unmeasured",
+          "answer": "没有完成全部需求且通过检查的措施。",
+          "evidence_refs": [
+            "20260930_110453_1bf58f:baseline"
+          ],
+          "measurements": []
+        },
+        {
+          "id": "study_2.combination",
+          "question": "停车＋单向组织：叠加措施是否一定更合适？",
+          "status": "unmeasured",
+          "answer": "等待完整组合配对。",
+          "evidence_refs": [
+            "20260930_110453_1bf58f:baseline"
+          ],
+          "measurements": [
+            {
+              "factor": 1.0,
+              "baseline": "baseline",
+              "cells": [
+                {
+                  "label": "S1_parking",
+                  "title": "停车",
+                  "run": null,
+                  "eligible": false,
+                  "delta": null,
+                  "violations": [],
+                  "control_response": null
+                },
+                {
+                  "label": "S2_oneway",
+                  "title": "单向",
+                  "run": null,
+                  "eligible": false,
+                  "delta": null,
+                  "violations": [],
+                  "control_response": null
+                },
+                {
+                  "label": "S3_combined",
+                  "title": "停车＋单向",
+                  "run": null,
+                  "eligible": false,
+                  "delta": null,
+                  "violations": [],
+                  "control_response": null
+                }
+              ],
+              "interaction_pcu_h": null
+            }
+          ]
+        },
+        {
+          "id": "study_2.robustness",
+          "question": "停车＋单向组织：同一措施在需求波动下是否仍然可用？",
+          "status": "unmeasured",
+          "answer": "单需求或缺测不能证明跨需求稳健性。",
+          "evidence_refs": [],
+          "measurements": []
+        },
+        {
+          "id": "hypothesis.H1",
+          "hypothesis_id": "H1",
+          "question": "逐组独立检验：第1组（长江村路），需求×1；第2组（长江村路），需求×1。每组全部治理类型中至少一个已试措施，是否在每个约定需求下冻结核心范围总耗时严格低于同需求无治理基准？",
+          "model_question": "第1组、第2组分别检验：每组至少一个已试措施（本组可检验的全部治理类型）在全部约定需求下冻结核心范围总耗时严格低于同需求无治理基准。",
+          "status": "unmeasured",
+          "expected_judgment": "unresolved",
+          "evaluation": {
+            "version": "hypothesis-measurement-v1",
+            "test": "core_time_decrease",
+            "policies": "all",
+            "quantifier": "any",
+            "scope": [
+              {
+                "study_id": "study_1",
+                "scenario": "parking",
+                "road": "长江村路",
+                "demand_factors": [
+                  1.0
+                ]
+              },
+              {
+                "study_id": "study_2",
+                "scenario": "oneway",
+                "road": "长江村路",
+                "demand_factors": [
+                  1.0
+                ]
+              }
+            ],
+            "rule": "冻结核心范围的总耗时低于同需求基准；与是否通过推荐约束分开判断。",
+            "definition": {
+              "version": "typed-initial-questions-v1",
+              "metric": "core_running_time",
+              "comparator": "untreated_baseline",
+              "relation": "strictly_lower",
+              "predicate": "冻结核心范围总耗时严格低于同需求无治理基准"
+            },
+            "interpretation": {
+              "version": "bounded-question-wording-v6",
+              "question": "逐组独立检验：第1组（长江村路），需求×1；第2组（长江村路），需求×1。每组全部治理类型中至少一个已试措施，是否在每个约定需求下冻结核心范围总耗时严格低于同需求无治理基准？",
+              "wording_check": "generated_from_definition",
+              "boundary": "本问题由模型选择的结构化定义生成；原用户输入和模型研究理由另行保留。判据通过不证明现实因果，也不代表未测措施已被检验。",
+              "limits": [
+                "各组独立与自身新基准比较，不共享不同引擎的效果。",
+                "核心指标仅适用于本次冻结的评价方向，不自动覆盖整条道路。",
+                "只涉及本次已试措施与离散需求，不代表全局最优或实时变化。"
+              ],
+              "contract": {
+                "test": "core_time_decrease",
+                "policies": "all",
+                "quantifier": "any",
+                "scope": [
+                  {
+                    "study_id": "study_1",
+                    "scenario": "parking",
+                    "road": "长江村路",
+                    "demand_factors": [
+                      1.0
+                    ]
+                  },
+                  {
+                    "study_id": "study_2",
+                    "scenario": "oneway",
+                    "road": "长江村路",
+                    "demand_factors": [
+                      1.0
+                    ]
+                  }
+                ]
+              },
+              "origin": "model_structured_definition"
+            }
+          },
+          "answer": "该判据仍有缺测、歧义或能力缺口，不能支持或否定。",
+          "evidence_refs": [
+            "20260930_110453_b91dea:baseline",
+            "20260930_110453_b91dea:parking_1",
+            "20260930_110453_b91dea:parking_2",
+            "20260930_110453_1bf58f:baseline"
+          ],
+          "measurements": [
+            {
+              "study_id": "study_1",
+              "road": "长江村路",
+              "passed": true,
+              "policies": [
+                {
+                  "policy": "parking",
+                  "runs": [
+                    "parking_1"
+                  ],
+                  "passed": true,
+                  "cases": [
+                    {
+                      "passed": true,
+                      "evidence_refs": [
+                        "20260930_110453_b91dea:baseline",
+                        "20260930_110453_b91dea:parking_1"
+                      ],
+                      "values": {
+                        "baseline_pcu_h": 82.98941037504531,
+                        "candidate_pcu_h": 63.645662358167044,
+                        "core_time_change_pct": -23.308694361678317
+                      },
+                      "demand_factor": 1.0
+                    }
+                  ]
+                },
+                {
+                  "policy": "parking",
+                  "runs": [
+                    "parking_2"
+                  ],
+                  "passed": true,
+                  "cases": [
+                    {
+                      "passed": true,
+                      "evidence_refs": [
+                        "20260930_110453_b91dea:baseline",
+                        "20260930_110453_b91dea:parking_2"
+                      ],
+                      "values": {
+                        "baseline_pcu_h": 82.98941037504531,
+                        "candidate_pcu_h": 68.08819040677149,
+                        "core_time_change_pct": -17.955567946479324
+                      },
+                      "demand_factor": 1.0
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "study_id": "study_2",
+              "road": "长江村路",
+              "passed": null,
+              "policies": [
+                {
+                  "policy": "parking",
+                  "runs": [],
+                  "passed": null,
+                  "cases": [
+                    {
+                      "passed": null,
+                      "evidence_refs": [
+                        "20260930_110453_1bf58f:baseline"
+                      ],
+                      "values": {},
+                      "demand_factor": 1.0
+                    }
+                  ]
+                },
+                {
+                  "policy": "traffic_control",
+                  "runs": [],
+                  "passed": null,
+                  "cases": [
+                    {
+                      "passed": null,
+                      "evidence_refs": [
+                        "20260930_110453_1bf58f:baseline"
+                      ],
+                      "values": {},
+                      "demand_factor": 1.0
+                    }
+                  ]
+                },
+                {
+                  "policy": "combined",
+                  "runs": [],
+                  "passed": null,
+                  "cases": [
+                    {
+                      "passed": null,
+                      "evidence_refs": [
+                        "20260930_110453_1bf58f:baseline"
+                      ],
+                      "values": {},
+                      "demand_factor": 1.0
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "hypothesis.H2",
+          "hypothesis_id": "H2",
+          "question": "逐组独立检验：第1组（长江村路），需求×1，邻区耗时增幅≤0.5%，毛新增过饱和≤0.1km；第2组（长江村路），需求×1，邻区耗时增幅≤0.5%，毛新增过饱和≤0.1km。每组全部治理类型中至少一个已试措施，是否在每个约定需求下邻区耗时增幅和毛新增过饱和均不超过该组原定门槛？",
+          "model_question": "第1组、第2组分别检验：每组至少一个已试措施（本组可检验的全部治理类型）在全部约定需求下邻区耗时增幅和毛新增过饱和均不超过该组原定门槛。",
+          "status": "unmeasured",
+          "expected_judgment": "unresolved",
+          "evaluation": {
+            "version": "hypothesis-measurement-v1",
+            "test": "neighbor_limits",
+            "policies": "all",
+            "quantifier": "any",
+            "scope": [
+              {
+                "study_id": "study_1",
+                "scenario": "parking",
+                "road": "长江村路",
+                "demand_factors": [
+                  1.0
+                ],
+                "max_neighbor_time_increase_pct": 0.5,
+                "max_new_oversaturated_km": 0.1
+              },
+              {
+                "study_id": "study_2",
+                "scenario": "oneway",
+                "road": "长江村路",
+                "demand_factors": [
+                  1.0
+                ],
+                "max_neighbor_time_increase_pct": 0.5,
+                "max_new_oversaturated_km": 0.1
+              }
+            ],
+            "rule": "邻区耗时增幅和毛新增过饱和均不超过本组原定门槛；不包括核心内其他候选子区。",
+            "definition": {
+              "version": "typed-initial-questions-v1",
+              "metric": "neighbor_time_and_gross_new_oversaturation",
+              "comparator": "frozen_neighbor_limits",
+              "relation": "within_both_limits",
+              "predicate": "邻区耗时增幅和毛新增过饱和均不超过该组原定门槛"
+            },
+            "interpretation": {
+              "version": "bounded-question-wording-v6",
+              "question": "逐组独立检验：第1组（长江村路），需求×1，邻区耗时增幅≤0.5%，毛新增过饱和≤0.1km；第2组（长江村路），需求×1，邻区耗时增幅≤0.5%，毛新增过饱和≤0.1km。每组全部治理类型中至少一个已试措施，是否在每个约定需求下邻区耗时增幅和毛新增过饱和均不超过该组原定门槛？",
+              "wording_check": "generated_from_definition",
+              "boundary": "本问题由模型选择的结构化定义生成；原用户输入和模型研究理由另行保留。判据通过不证明现实因果，也不代表未测措施已被检验。",
+              "limits": [
+                "各组独立与自身新基准比较，不共享不同引擎的效果。",
+                "核心指标仅适用于本次冻结的评价方向，不自动覆盖整条道路。",
+                "只涉及本次已试措施与离散需求，不代表全局最优或实时变化。"
+              ],
+              "contract": {
+                "test": "neighbor_limits",
+                "policies": "all",
+                "quantifier": "any",
+                "scope": [
+                  {
+                    "study_id": "study_1",
+                    "scenario": "parking",
+                    "road": "长江村路",
+                    "demand_factors": [
+                      1.0
+                    ],
+                    "max_neighbor_time_increase_pct": 0.5,
+                    "max_new_oversaturated_km": 0.1
+                  },
+                  {
+                    "study_id": "study_2",
+                    "scenario": "oneway",
+                    "road": "长江村路",
+                    "demand_factors": [
+                      1.0
+                    ],
+                    "max_neighbor_time_increase_pct": 0.5,
+                    "max_new_oversaturated_km": 0.1
+                  }
+                ]
+              },
+              "origin": "model_structured_definition"
+            }
+          },
+          "answer": "该判据仍有缺测、歧义或能力缺口，不能支持或否定。",
+          "evidence_refs": [
+            "20260930_110453_b91dea:baseline",
+            "20260930_110453_b91dea:parking_1",
+            "20260930_110453_b91dea:parking_2",
+            "20260930_110453_1bf58f:baseline"
+          ],
+          "measurements": [
+            {
+              "study_id": "study_1",
+              "road": "长江村路",
+              "passed": true,
+              "policies": [
+                {
+                  "policy": "parking",
+                  "runs": [
+                    "parking_1"
+                  ],
+                  "passed": true,
+                  "cases": [
+                    {
+                      "passed": true,
+                      "evidence_refs": [
+                        "20260930_110453_b91dea:baseline",
+                        "20260930_110453_b91dea:parking_1"
+                      ],
+                      "values": {
+                        "neighbor_time_change_pct": -0.18205257806130914,
+                        "neighbor_new_oversaturated_km": 0,
+                        "time_limit_pct": 0.5,
+                        "new_oversaturated_limit_km": 0.1
+                      },
+                      "demand_factor": 1.0
+                    }
+                  ]
+                },
+                {
+                  "policy": "parking",
+                  "runs": [
+                    "parking_2"
+                  ],
+                  "passed": true,
+                  "cases": [
+                    {
+                      "passed": true,
+                      "evidence_refs": [
+                        "20260930_110453_b91dea:baseline",
+                        "20260930_110453_b91dea:parking_2"
+                      ],
+                      "values": {
+                        "neighbor_time_change_pct": -0.15071219440123684,
+                        "neighbor_new_oversaturated_km": 0,
+                        "time_limit_pct": 0.5,
+                        "new_oversaturated_limit_km": 0.1
+                      },
+                      "demand_factor": 1.0
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "study_id": "study_2",
+              "road": "长江村路",
+              "passed": null,
+              "policies": [
+                {
+                  "policy": "parking",
+                  "runs": [],
+                  "passed": null,
+                  "cases": [
+                    {
+                      "passed": null,
+                      "evidence_refs": [
+                        "20260930_110453_1bf58f:baseline"
+                      ],
+                      "values": {},
+                      "demand_factor": 1.0
+                    }
+                  ]
+                },
+                {
+                  "policy": "traffic_control",
+                  "runs": [],
+                  "passed": null,
+                  "cases": [
+                    {
+                      "passed": null,
+                      "evidence_refs": [
+                        "20260930_110453_1bf58f:baseline"
+                      ],
+                      "values": {},
+                      "demand_factor": 1.0
+                    }
+                  ]
+                },
+                {
+                  "policy": "combined",
+                  "runs": [],
+                  "passed": null,
+                  "cases": [
+                    {
+                      "passed": null,
+                      "evidence_refs": [
+                        "20260930_110453_1bf58f:baseline"
+                      ],
+                      "values": {},
+                      "demand_factor": 1.0
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "hypothesis.H3",
+          "hypothesis_id": "H3",
+          "question": "逐组独立检验：第2组（长江村路），需求×1。每组交通组织和组合措施（不含仅停车）中至少一个已试措施，是否在每个约定需求下冻结核心总耗时严格低于同需求的仅停车措施？",
+          "model_question": "第2组分别检验：每组至少一个已试措施（交通组织及组合）在全部约定需求下冻结核心总耗时严格低于同需求的仅停车措施。",
+          "status": "unmeasured",
+          "expected_judgment": "unresolved",
+          "evaluation": {
+            "version": "hypothesis-measurement-v1",
+            "test": "core_advantage_over_parking",
+            "policies": "control_and_combined",
+            "quantifier": "any",
+            "scope": [
+              {
+                "study_id": "study_2",
+                "scenario": "oneway",
+                "road": "长江村路",
+                "demand_factors": [
+                  1.0
+                ]
+              }
+            ],
+            "rule": "交通组织单项或组合的核心总耗时严格低于本组仅停车；全部类型在此指交通组织和组合，不把仅停车与自身相比。",
+            "definition": {
+              "version": "typed-initial-questions-v1",
+              "metric": "core_running_time",
+              "comparator": "parking_only",
+              "relation": "strictly_lower",
+              "predicate": "冻结核心总耗时严格低于同需求的仅停车措施"
+            },
+            "interpretation": {
+              "version": "bounded-question-wording-v6",
+              "question": "逐组独立检验：第2组（长江村路），需求×1。每组交通组织和组合措施（不含仅停车）中至少一个已试措施，是否在每个约定需求下冻结核心总耗时严格低于同需求的仅停车措施？",
+              "wording_check": "generated_from_definition",
+              "boundary": "本问题由模型选择的结构化定义生成；原用户输入和模型研究理由另行保留。判据通过不证明现实因果，也不代表未测措施已被检验。",
+              "limits": [
+                "各组独立与自身新基准比较，不共享不同引擎的效果。",
+                "核心指标仅适用于本次冻结的评价方向，不自动覆盖整条道路。",
+                "只涉及本次已试措施与离散需求，不代表全局最优或实时变化。"
+              ],
+              "contract": {
+                "test": "core_advantage_over_parking",
+                "policies": "control_and_combined",
+                "quantifier": "any",
+                "scope": [
+                  {
+                    "study_id": "study_2",
+                    "scenario": "oneway",
+                    "road": "长江村路",
+                    "demand_factors": [
+                      1.0
+                    ]
+                  }
+                ]
+              },
+              "origin": "model_structured_definition"
+            }
+          },
+          "answer": "该判据仍有缺测、歧义或能力缺口，不能支持或否定。",
+          "evidence_refs": [
+            "20260930_110453_1bf58f:baseline"
+          ],
+          "measurements": [
+            {
+              "study_id": "study_2",
+              "road": "长江村路",
+              "passed": null,
+              "policies": [
+                {
+                  "policy": "traffic_control",
+                  "runs": [],
+                  "passed": null,
+                  "cases": [
+                    {
+                      "passed": null,
+                      "evidence_refs": [
+                        "20260930_110453_1bf58f:baseline"
+                      ],
+                      "values": {},
+                      "demand_factor": 1.0
+                    }
+                  ]
+                },
+                {
+                  "policy": "combined",
+                  "runs": [],
+                  "passed": null,
+                  "cases": [
+                    {
+                      "passed": null,
+                      "evidence_refs": [
+                        "20260930_110453_1bf58f:baseline"
+                      ],
+                      "values": {},
+                      "demand_factor": 1.0
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "hypothesis.H4",
+          "hypothesis_id": "H4",
+          "question": "逐组独立检验：第2组（长江村路），需求×1。每组组合措施中至少一个已试措施，是否在每个约定需求下冻结核心总耗时分别严格低于同需求的两个单项措施？",
+          "model_question": "第2组分别检验：每组至少一个已试措施（组合措施）在全部约定需求下冻结核心总耗时分别严格低于同需求的两个单项措施。",
+          "status": "unmeasured",
+          "expected_judgment": "unresolved",
+          "evaluation": {
+            "version": "hypothesis-measurement-v1",
+            "test": "combination_core_advantage",
+            "policies": "combined",
+            "quantifier": "any",
+            "scope": [
+              {
+                "study_id": "study_2",
+                "scenario": "oneway",
+                "road": "长江村路",
+                "demand_factors": [
+                  1.0
+                ]
+              }
+            ],
+            "rule": "组合的核心总耗时分别严格低于本组停车单项和交通组织单项；不等于更适合推荐或已证明协同成因。",
+            "definition": {
+              "version": "typed-initial-questions-v1",
+              "metric": "core_running_time",
+              "comparator": "both_single_measures",
+              "relation": "strictly_lower_than_each",
+              "predicate": "冻结核心总耗时分别严格低于同需求的两个单项措施"
+            },
+            "interpretation": {
+              "version": "bounded-question-wording-v6",
+              "question": "逐组独立检验：第2组（长江村路），需求×1。每组组合措施中至少一个已试措施，是否在每个约定需求下冻结核心总耗时分别严格低于同需求的两个单项措施？",
+              "wording_check": "generated_from_definition",
+              "boundary": "本问题由模型选择的结构化定义生成；原用户输入和模型研究理由另行保留。判据通过不证明现实因果，也不代表未测措施已被检验。",
+              "limits": [
+                "各组独立与自身新基准比较，不共享不同引擎的效果。",
+                "核心指标仅适用于本次冻结的评价方向，不自动覆盖整条道路。",
+                "只涉及本次已试措施与离散需求，不代表全局最优或实时变化。"
+              ],
+              "contract": {
+                "test": "combination_core_advantage",
+                "policies": "combined",
+                "quantifier": "any",
+                "scope": [
+                  {
+                    "study_id": "study_2",
+                    "scenario": "oneway",
+                    "road": "长江村路",
+                    "demand_factors": [
+                      1.0
+                    ]
+                  }
+                ]
+              },
+              "origin": "model_structured_definition"
+            }
+          },
+          "answer": "该判据仍有缺测、歧义或能力缺口，不能支持或否定。",
+          "evidence_refs": [
+            "20260930_110453_1bf58f:baseline"
+          ],
+          "measurements": [
+            {
+              "study_id": "study_2",
+              "road": "长江村路",
+              "passed": null,
+              "policies": [
+                {
+                  "policy": "combined",
+                  "runs": [],
+                  "passed": null,
+                  "cases": [
+                    {
+                      "passed": null,
+                      "evidence_refs": [
+                        "20260930_110453_1bf58f:baseline"
+                      ],
+                      "values": {},
+                      "demand_factor": 1.0
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "scope": "各组采用各自的新基准与固定范围。跨组可以比较约束是否通过及证据缺口；不能混合收益、绝对值排名或推断联合实施效果。"
+    },
+    "hypotheses": [
+      {
+        "id": "H1",
+        "hypothesis": "第1组、第2组分别检验：每组至少一个已试措施（本组可检验的全部治理类型）在全部约定需求下冻结核心范围总耗时严格低于同需求无治理基准。",
+        "evidence_needed": "按所选判据配对本组同需求原生观测；所需基准或对照缺失时保留未知。",
+        "criterion": {
+          "test": "core_time_decrease",
+          "studies": [
+            1,
+            2
+          ],
+          "policies": "all",
+          "quantifier": "any"
+        },
+        "evaluation": {
+          "version": "hypothesis-measurement-v1",
+          "test": "core_time_decrease",
+          "policies": "all",
+          "quantifier": "any",
+          "scope": [
+            {
+              "study_id": "study_1",
+              "scenario": "parking",
+              "road": "长江村路",
+              "demand_factors": [
+                1.0
+              ]
+            },
+            {
+              "study_id": "study_2",
+              "scenario": "oneway",
+              "road": "长江村路",
+              "demand_factors": [
+                1.0
+              ]
+            }
+          ],
+          "rule": "冻结核心范围的总耗时低于同需求基准；与是否通过推荐约束分开判断。",
+          "definition": {
+            "version": "typed-initial-questions-v1",
+            "metric": "core_running_time",
+            "comparator": "untreated_baseline",
+            "relation": "strictly_lower",
+            "predicate": "冻结核心范围总耗时严格低于同需求无治理基准"
+          },
+          "interpretation": {
+            "version": "bounded-question-wording-v6",
+            "question": "逐组独立检验：第1组（长江村路），需求×1；第2组（长江村路），需求×1。每组全部治理类型中至少一个已试措施，是否在每个约定需求下冻结核心范围总耗时严格低于同需求无治理基准？",
+            "wording_check": "generated_from_definition",
+            "boundary": "本问题由模型选择的结构化定义生成；原用户输入和模型研究理由另行保留。判据通过不证明现实因果，也不代表未测措施已被检验。",
+            "limits": [
+              "各组独立与自身新基准比较，不共享不同引擎的效果。",
+              "核心指标仅适用于本次冻结的评价方向，不自动覆盖整条道路。",
+              "只涉及本次已试措施与离散需求，不代表全局最优或实时变化。"
+            ],
+            "contract": {
+              "test": "core_time_decrease",
+              "policies": "all",
+              "quantifier": "any",
+              "scope": [
+                {
+                  "study_id": "study_1",
+                  "scenario": "parking",
+                  "road": "长江村路",
+                  "demand_factors": [
+                    1.0
+                  ]
+                },
+                {
+                  "study_id": "study_2",
+                  "scenario": "oneway",
+                  "road": "长江村路",
+                  "demand_factors": [
+                    1.0
+                  ]
+                }
+              ]
+            },
+            "origin": "model_structured_definition"
+          }
+        },
+        "authoring": {
+          "version": "named-question-authoring-v1",
+          "definition": {
+            "policies": "all",
+            "quantifier": "any",
+            "study_keys": [
+              "parking_cmp",
+              "oneway_comb"
+            ],
+            "test": "core_time_decrease"
+          },
+          "study_keys": {
+            "parking_cmp": 1,
+            "oneway_comb": 2
+          }
+        }
+      },
+      {
+        "id": "H2",
+        "hypothesis": "第1组、第2组分别检验：每组至少一个已试措施（本组可检验的全部治理类型）在全部约定需求下邻区耗时增幅和毛新增过饱和均不超过该组原定门槛。",
+        "evidence_needed": "按所选判据配对本组同需求原生观测；所需基准或对照缺失时保留未知。",
+        "criterion": {
+          "test": "neighbor_limits",
+          "studies": [
+            1,
+            2
+          ],
+          "policies": "all",
+          "quantifier": "any"
+        },
+        "evaluation": {
+          "version": "hypothesis-measurement-v1",
+          "test": "neighbor_limits",
+          "policies": "all",
+          "quantifier": "any",
+          "scope": [
+            {
+              "study_id": "study_1",
+              "scenario": "parking",
+              "road": "长江村路",
+              "demand_factors": [
+                1.0
+              ],
+              "max_neighbor_time_increase_pct": 0.5,
+              "max_new_oversaturated_km": 0.1
+            },
+            {
+              "study_id": "study_2",
+              "scenario": "oneway",
+              "road": "长江村路",
+              "demand_factors": [
+                1.0
+              ],
+              "max_neighbor_time_increase_pct": 0.5,
+              "max_new_oversaturated_km": 0.1
+            }
+          ],
+          "rule": "邻区耗时增幅和毛新增过饱和均不超过本组原定门槛；不包括核心内其他候选子区。",
+          "definition": {
+            "version": "typed-initial-questions-v1",
+            "metric": "neighbor_time_and_gross_new_oversaturation",
+            "comparator": "frozen_neighbor_limits",
+            "relation": "within_both_limits",
+            "predicate": "邻区耗时增幅和毛新增过饱和均不超过该组原定门槛"
+          },
+          "interpretation": {
+            "version": "bounded-question-wording-v6",
+            "question": "逐组独立检验：第1组（长江村路），需求×1，邻区耗时增幅≤0.5%，毛新增过饱和≤0.1km；第2组（长江村路），需求×1，邻区耗时增幅≤0.5%，毛新增过饱和≤0.1km。每组全部治理类型中至少一个已试措施，是否在每个约定需求下邻区耗时增幅和毛新增过饱和均不超过该组原定门槛？",
+            "wording_check": "generated_from_definition",
+            "boundary": "本问题由模型选择的结构化定义生成；原用户输入和模型研究理由另行保留。判据通过不证明现实因果，也不代表未测措施已被检验。",
+            "limits": [
+              "各组独立与自身新基准比较，不共享不同引擎的效果。",
+              "核心指标仅适用于本次冻结的评价方向，不自动覆盖整条道路。",
+              "只涉及本次已试措施与离散需求，不代表全局最优或实时变化。"
+            ],
+            "contract": {
+              "test": "neighbor_limits",
+              "policies": "all",
+              "quantifier": "any",
+              "scope": [
+                {
+                  "study_id": "study_1",
+                  "scenario": "parking",
+                  "road": "长江村路",
+                  "demand_factors": [
+                    1.0
+                  ],
+                  "max_neighbor_time_increase_pct": 0.5,
+                  "max_new_oversaturated_km": 0.1
+                },
+                {
+                  "study_id": "study_2",
+                  "scenario": "oneway",
+                  "road": "长江村路",
+                  "demand_factors": [
+                    1.0
+                  ],
+                  "max_neighbor_time_increase_pct": 0.5,
+                  "max_new_oversaturated_km": 0.1
+                }
+              ]
+            },
+            "origin": "model_structured_definition"
+          }
+        },
+        "authoring": {
+          "version": "named-question-authoring-v1",
+          "definition": {
+            "policies": "all",
+            "quantifier": "any",
+            "study_keys": [
+              "parking_cmp",
+              "oneway_comb"
+            ],
+            "test": "neighbor_limits"
+          },
+          "study_keys": {
+            "parking_cmp": 1,
+            "oneway_comb": 2
+          }
+        }
+      },
+      {
+        "id": "H3",
+        "hypothesis": "第2组分别检验：每组至少一个已试措施（交通组织及组合）在全部约定需求下冻结核心总耗时严格低于同需求的仅停车措施。",
+        "evidence_needed": "按所选判据配对本组同需求原生观测；所需基准或对照缺失时保留未知。",
+        "criterion": {
+          "test": "core_advantage_over_parking",
+          "studies": [
+            2
+          ],
+          "policies": "control_and_combined",
+          "quantifier": "any"
+        },
+        "evaluation": {
+          "version": "hypothesis-measurement-v1",
+          "test": "core_advantage_over_parking",
+          "policies": "control_and_combined",
+          "quantifier": "any",
+          "scope": [
+            {
+              "study_id": "study_2",
+              "scenario": "oneway",
+              "road": "长江村路",
+              "demand_factors": [
+                1.0
+              ]
+            }
+          ],
+          "rule": "交通组织单项或组合的核心总耗时严格低于本组仅停车；全部类型在此指交通组织和组合，不把仅停车与自身相比。",
+          "definition": {
+            "version": "typed-initial-questions-v1",
+            "metric": "core_running_time",
+            "comparator": "parking_only",
+            "relation": "strictly_lower",
+            "predicate": "冻结核心总耗时严格低于同需求的仅停车措施"
+          },
+          "interpretation": {
+            "version": "bounded-question-wording-v6",
+            "question": "逐组独立检验：第2组（长江村路），需求×1。每组交通组织和组合措施（不含仅停车）中至少一个已试措施，是否在每个约定需求下冻结核心总耗时严格低于同需求的仅停车措施？",
+            "wording_check": "generated_from_definition",
+            "boundary": "本问题由模型选择的结构化定义生成；原用户输入和模型研究理由另行保留。判据通过不证明现实因果，也不代表未测措施已被检验。",
+            "limits": [
+              "各组独立与自身新基准比较，不共享不同引擎的效果。",
+              "核心指标仅适用于本次冻结的评价方向，不自动覆盖整条道路。",
+              "只涉及本次已试措施与离散需求，不代表全局最优或实时变化。"
+            ],
+            "contract": {
+              "test": "core_advantage_over_parking",
+              "policies": "control_and_combined",
+              "quantifier": "any",
+              "scope": [
+                {
+                  "study_id": "study_2",
+                  "scenario": "oneway",
+                  "road": "长江村路",
+                  "demand_factors": [
+                    1.0
+                  ]
+                }
+              ]
+            },
+            "origin": "model_structured_definition"
+          }
+        },
+        "authoring": {
+          "version": "named-question-authoring-v1",
+          "definition": {
+            "policies": "control_and_combined",
+            "quantifier": "any",
+            "study_keys": [
+              "oneway_comb"
+            ],
+            "test": "core_advantage_over_parking"
+          },
+          "study_keys": {
+            "oneway_comb": 2
+          }
+        }
+      },
+      {
+        "id": "H4",
+        "hypothesis": "第2组分别检验：每组至少一个已试措施（组合措施）在全部约定需求下冻结核心总耗时分别严格低于同需求的两个单项措施。",
+        "evidence_needed": "按所选判据配对本组同需求原生观测；所需基准或对照缺失时保留未知。",
+        "criterion": {
+          "test": "combination_core_advantage",
+          "studies": [
+            2
+          ],
+          "policies": "combined",
+          "quantifier": "any"
+        },
+        "evaluation": {
+          "version": "hypothesis-measurement-v1",
+          "test": "combination_core_advantage",
+          "policies": "combined",
+          "quantifier": "any",
+          "scope": [
+            {
+              "study_id": "study_2",
+              "scenario": "oneway",
+              "road": "长江村路",
+              "demand_factors": [
+                1.0
+              ]
+            }
+          ],
+          "rule": "组合的核心总耗时分别严格低于本组停车单项和交通组织单项；不等于更适合推荐或已证明协同成因。",
+          "definition": {
+            "version": "typed-initial-questions-v1",
+            "metric": "core_running_time",
+            "comparator": "both_single_measures",
+            "relation": "strictly_lower_than_each",
+            "predicate": "冻结核心总耗时分别严格低于同需求的两个单项措施"
+          },
+          "interpretation": {
+            "version": "bounded-question-wording-v6",
+            "question": "逐组独立检验：第2组（长江村路），需求×1。每组组合措施中至少一个已试措施，是否在每个约定需求下冻结核心总耗时分别严格低于同需求的两个单项措施？",
+            "wording_check": "generated_from_definition",
+            "boundary": "本问题由模型选择的结构化定义生成；原用户输入和模型研究理由另行保留。判据通过不证明现实因果，也不代表未测措施已被检验。",
+            "limits": [
+              "各组独立与自身新基准比较，不共享不同引擎的效果。",
+              "核心指标仅适用于本次冻结的评价方向，不自动覆盖整条道路。",
+              "只涉及本次已试措施与离散需求，不代表全局最优或实时变化。"
+            ],
+            "contract": {
+              "test": "combination_core_advantage",
+              "policies": "combined",
+              "quantifier": "any",
+              "scope": [
+                {
+                  "study_id": "study_2",
+                  "scenario": "oneway",
+                  "road": "长江村路",
+                  "demand_factors": [
+                    1.0
+                  ]
+                }
+              ]
+            },
+            "origin": "model_structured_definition"
+          }
+        },
+        "authoring": {
+          "version": "named-question-authoring-v1",
+          "definition": {
+            "policies": "combined",
+            "quantifier": "any",
+            "study_keys": [
+              "oneway_comb"
+            ],
+            "test": "combination_core_advantage"
+          },
+          "study_keys": {
+            "oneway_comb": 2
+          }
+        }
+      }
+    ],
+    "updates": [],
+    "summary": "尚未完成整个研究任务的模型复核。",
+    "reviewed": false,
+    "complete": false,
+    "unanswered": [
+      "停车＋单向组织：约定的原生对照仍未齐。",
+      "停车＋单向组织：本组执行或复核未正常完成。",
+      "整个研究任务尚无完整模型复核。"
+    ]
+  },
+  "decisions": [
+    {
+      "ordinal": 1,
+      "job_id": "20260930_110453_b91dea",
+      "kind": "parking",
+      "status": "accepted",
+      "action": "parking_a6b29e4dfd15",
+      "reason": "area_1（长江村路3方向）全部超饱和、vc最高2.14，停车3级为最高干扰等级，优先对受影响最集中的area_1整体做最强治理（停车1级）作为首候选，建立完整同需求配对。",
+      "risk": "强制停车1级可能引发绕行或邻区过载，需实测邻区耗时增幅与毛新增过饱和；若未能通过约束则转向2级或分方向方案。实测代价以本轮结果为准。",
+      "next_check": "检验area_1三条方向整体停车1级是否比基准降低核心耗时、邻区增幅≤0.5%且毛新增过饱和≤0.1km；若通过，再比较同区域2级与另一候选方案。",
+      "stop_basis": null,
+      "summary": "本轮选择area_1整体停车1级作为首个候选，对比基准建立同需求配对。核心5条方向均vc>1.7、停车3级，先测最强等级确定收益上限与邻区代价。",
+      "selection_basis": {
+        "alternative_action": "parking_58ff01cdf4e9",
+        "alternative_observed_id": "area:20260930_110453_b91dea:baseline:area_1",
+        "alternative_tradeoff": "同区域停车2级属较弱对照，先测更强1级确定收益上限；2级效果仍未实测，留待本候选不过关或需对照时再测。",
+        "disconfirming_result": "若area_1停车1级导致邻区耗时增幅超过0.5%或毛新增过饱和超过0.1km，则整体强治理在本约束下代价不可接受，应转向分方向或较弱等级。",
+        "observed_ids": [
+          "area:20260930_110453_b91dea:baseline:area_1"
+        ],
+        "working_hypothesis": "对全部超饱和的area_1三方向统一停车1级可降低核心耗时与过饱和，而不致邻区明显恶化。"
+      },
+      "selected": {
+        "title": "长江村路 · 3条方向 · 停车1级",
+        "changes": [
+          {
+            "from_node": 3240,
+            "to_node": 3239,
+            "old_parking": 3,
+            "parking": 1
+          },
+          {
+            "from_node": 3239,
+            "to_node": 3240,
+            "old_parking": 3,
+            "parking": 1
+          },
+          {
+            "from_node": 3239,
+            "to_node": 3238,
+            "old_parking": 3,
+            "parking": 1
+          }
+        ],
+        "region": "area_1"
+      },
+      "validation": {
+        "version": "planning-response-check-v1",
+        "status": "passed"
+      },
+      "hypothesis_updates": null,
+      "programme_updates": null,
+      "cost_acknowledgements": null,
+      "review_correction": {
+        "version": "candidate-choice-correction-v1",
+        "first_attempt": {
+          "version": "observed-planning-v3",
+          "ordinal": 1,
+          "time": "2026-09-30T03:07:09.759714+00:00",
+          "kind": "parking",
+          "job_id": "20260930_110453_b91dea",
+          "review_protocol": "feedback-review-permissions-v1",
+          "finding_reference_schema": "measured-findings-v1",
+          "observation_digest": "629210c98aa37653589d5620a20803f644ddf6417351093d9953536d2af6abc5",
+          "requested": true,
+          "status": "rejected",
+          "instructions_sha256": "32f9d1c48821b79075bff358a30e4f546a0f37eea86678a89b280bf49643a88c",
+          "usage": {
+            "request_model": "deepseek-v4-flash",
+            "response_model": "deepseek-v4-flash-0731",
+            "response_id": "chatcmpl-6abc7cde1195f3ca6ce9ddaa",
+            "tokens": 11155,
+            "tokens_source": "reported_total",
+            "input_tokens": 10607,
+            "output_tokens": 548,
+            "reasoning_tokens": null,
+            "cached_input_tokens": null,
+            "latency_s": 5.36,
+            "finish_reason": "tool_calls",
+            "tool_call_count": 1,
+            "wire_api": "chat_completions",
+            "request_tool_choice": "required",
+            "request_tool_count": 1,
+            "request_max_output_tokens": 1600,
+            "request_size_bytes": 36028,
+            "request_schema_sha256": "fd3e7a759e61e1fd88184bb6351c844c4beb683dd8adf34c812c8221cb35b375",
+            "transport_version": "llm-transport-v2",
+            "tool_choice_profile": "tokenrhythm-deepseek-chat-v1",
+            "requested_tool_choice": "function:choose_next_experiment"
+          },
+          "proposal_excerpt": {
+            "action": "parking_a6b29e4dfd15",
+            "summary": "本轮选择area_1整体停车1级作为首个候选，对比基准建立同需求配对。核心5条方向均vc>1.7、停车3级，先测最强等级确定收益上限与邻区代价。",
+            "reason": "area_1（长江村路3方向）全部超饱和vc最高2.33，停车3级为最高干扰等级，优先对受影响最集中的area_1整体做最强治理（停车1级）作为第一候选，建立完整同需求配对。",
+            "risk": "强制停车1级可能引发绕行或邻区过载，需实测邻区耗时增幅与毛新增过饱和；若未能通过约束则转向2级或分方向方案。",
+            "next_check": "检验area_1三条方向整体停车1级是否比基准降低核心耗时、邻区增幅≤0.5%且毛新增过饱和≤0.1km；若通过，再比较同区域2级与另一候选方案。",
+            "evidence_refs": [
+              "20260930_110453_b91dea:baseline"
+            ],
+            "selection_basis": {
+              "observed_ids": [
+                "area:20260930_110453_b91dea:baseline:area_1"
+              ],
+              "working_hypothesis": "对全部超饱和的area_1三个方向统一停车1级，可降低核心能耗与过饱和里程而不造成邻区明显恶化。",
+              "disconfirming_result": "若area_1停车1级导致邻区耗时增幅超过0.5%或毛新增过饱和超过0.1km，则说明整体强制强治理在本任务约束下代价不可接受，应转向分方向或较弱等级。",
+              "alternative_action": "parking_58ff01cdf4e9",
+              "alternative_tradeoff": "同区域停车2级属于较弱的1级对照，先测更强1级以确定上限收益；2级留待本候选偏保守或不过关时再实测。不能由此推断2级无效。",
+              "alternative_observed_id": null
+            }
+          },
+          "proposal_capture": {
+            "version": "planning-response-check-v1",
+            "omitted_fields": 0,
+            "omitted_items": 0,
+            "shortened_strings": 0,
+            "redacted_strings": 0,
+            "invalid_values": 0,
+            "excerpted": false
+          },
+          "validation": {
+            "version": "planning-response-check-v1",
+            "status": "failed",
+            "code": "choice_basis",
+            "message": "备选取舍必须引用该备选实际可见的观测"
+          },
+          "action": "stop",
+          "finished": "2026-09-30T03:07:15.143301+00:00",
+          "reason": "备选取舍必须引用该备选实际可见的观测；未执行动作"
+        },
+        "input": {
+          "request": "长江村路停车拥堵。请至少比较两个不同停车备选方案，并检验单向组织及其组合的独立效果。最多7次仿真，不复跑基准；保护邻区。",
+          "phase": "parking",
+          "observations": [
+            {
+              "ref": "20260930_110453_b91dea:baseline",
+              "run": "baseline",
+              "demand_factor": 1.0,
+              "changes": [],
+              "metrics": {
+                "core": {
+                  "directed_links": 5,
+                  "weighted_speed_kmh": 32.70104676892661,
+                  "running_time_pcu_h": 82.98941037504531,
+                  "oversaturated_km": 2.088
+                },
+                "neighbor": {
+                  "directed_links": 45,
+                  "weighted_speed_kmh": 14.045576953059824,
+                  "running_time_pcu_h": 433.7017707537425,
+                  "oversaturated_km": 3.838
+                },
+                "network": {
+                  "directed_links": 32060,
+                  "weighted_speed_kmh": 33.43319835501451,
+                  "running_time_pcu_h": 227328.24893586405,
+                  "oversaturated_km": 1608.6958436
+                }
+              },
+              "delta": null,
+              "eligible": null,
+              "violations": [],
+              "new_neighbor_oversaturated_km": null,
+              "new_network_oversaturated_km": null,
+              "core_roads": [
+                {
+                  "index": 8910,
+                  "name": "长江村路",
+                  "from_node": 3240,
+                  "to_node": 3239,
+                  "speed_kmh": 31.23,
+                  "vc": 2.14191,
+                  "flow_pcu_h": 1407.54,
+                  "parking": 3
+                },
+                {
+                  "index": 8907,
+                  "name": "长江村路",
+                  "from_node": 3239,
+                  "to_node": 3240,
+                  "speed_kmh": 29.4,
+                  "vc": 1.74907,
+                  "flow_pcu_h": 1149.39,
+                  "parking": 3
+                },
+                {
+                  "index": 8906,
+                  "name": "长江村路",
+                  "from_node": 3239,
+                  "to_node": 3238,
+                  "speed_kmh": 38.21,
+                  "vc": 1.96881,
+                  "flow_pcu_h": 1293.79,
+                  "parking": 3
+                },
+                {
+                  "index": 8900,
+                  "name": "长江村路",
+                  "from_node": 3237,
+                  "to_node": 3236,
+                  "speed_kmh": 35.39,
+                  "vc": 2.04144,
+                  "flow_pcu_h": 1341.52,
+                  "parking": 3
+                },
+                {
+                  "index": 8897,
+                  "name": "长江村路",
+                  "from_node": 3236,
+                  "to_node": 3235,
+                  "speed_kmh": 27.4,
+                  "vc": 2.33454,
+                  "flow_pcu_h": 1341.52,
+                  "parking": 3
+                }
+              ],
+              "spatial": {
+                "inspected_links": 32060,
+                "overloaded_links": 4406,
+                "regions": [
+                  {
+                    "id": "area_1",
+                    "title": "长江村路",
+                    "indices": [
+                      8910,
+                      8907,
+                      8906
+                    ],
+                    "directions": [
+                      [
+                        3240,
+                        3239
+                      ],
+                      [
+                        3239,
+                        3240
+                      ],
+                      [
+                        3239,
+                        3238
+                      ]
+                    ],
+                    "directed_links": 3,
+                    "weighted_speed_kmh": 32.322398964327775,
+                    "running_time_pcu_h": 59.1005052597812,
+                    "oversaturated_km": 1.489,
+                    "roads": [
+                      {
+                        "index": 8910,
+                        "name": "长江村路",
+                        "from_node": 3240,
+                        "to_node": 3239,
+                        "speed_kmh": 31.23,
+                        "vc": 2.14191,
+                        "parking": 3
+                      },
+                      {
+                        "index": 8907,
+                        "name": "长江村路",
+                        "from_node": 3239,
+                        "to_node": 3240,
+                        "speed_kmh": 29.4,
+                        "vc": 1.74907,
+                        "parking": 3
+                      },
+                      {
+                        "index": 8906,
+                        "name": "长江村路",
+                        "from_node": 3239,
+                        "to_node": 3238,
+                        "speed_kmh": 38.21,
+                        "vc": 1.96881,
+                        "parking": 3
+                      }
+                    ]
+                  },
+                  {
+                    "id": "area_2",
+                    "title": "长江村路",
+                    "indices": [
+                      8900,
+                      8897
+                    ],
+                    "directions": [
+                      [
+                        3237,
+                        3236
+                      ],
+                      [
+                        3236,
+                        3235
+                      ]
+                    ],
+                    "directed_links": 2,
+                    "weighted_speed_kmh": 33.63781119824318,
+                    "running_time_pcu_h": 23.888905115264116,
+                    "oversaturated_km": 0.599,
+                    "roads": [
+                      {
+                        "index": 8900,
+                        "name": "长江村路",
+                        "from_node": 3237,
+                        "to_node": 3236,
+                        "speed_kmh": 35.39,
+                        "vc": 2.04144,
+                        "parking": 3
+                      },
+                      {
+                        "index": 8897,
+                        "name": "长江村路",
+                        "from_node": 3236,
+                        "to_node": 3235,
+                        "speed_kmh": 27.4,
+                        "vc": 2.33454,
+                        "parking": 3
+                      }
+                    ]
+                  }
+                ],
+                "outside_hotspots": [
+                  {
+                    "index": 30785,
+                    "name": "宁洛高速",
+                    "from_node": 10837,
+                    "to_node": 4186,
+                    "speed_kmh": 18.0,
+                    "vc": 3.09655
+                  },
+                  {
+                    "index": 603,
+                    "name": "12201路",
+                    "from_node": 188,
+                    "to_node": 236,
+                    "speed_kmh": 12.6,
+                    "vc": 2.32601
+                  },
+                  {
+                    "index": 11093,
+                    "name": "宁洛高速",
+                    "from_node": 4186,
+                    "to_node": 10836,
+                    "speed_kmh": 18.0,
+                    "vc": 3.11605
+                  },
+                  {
+                    "index": 83,
+                    "name": "11044路",
+                    "from_node": 32,
+                    "to_node": 10305,
+                    "speed_kmh": 21.0,
+                    "vc": 3.20461
+                  },
+                  {
+                    "index": 311,
+                    "name": "12052路",
+                    "from_node": 106,
+                    "to_node": 235,
+                    "speed_kmh": 12.0,
+                    "vc": 2.84443
+                  }
+                ]
+              },
+              "regional_checks": []
+            }
+          ],
+          "evidence_refs": [
+            "20260930_110453_b91dea:baseline"
+          ],
+          "allowed_actions": {
+            "parking_58ff01cdf4e9": {
+              "title": "长江村路 · 3条方向 · 停车2级",
+              "changes": [
+                {
+                  "from_node": 3240,
+                  "to_node": 3239,
+                  "old_parking": 3,
+                  "parking": 2
+                },
+                {
+                  "from_node": 3239,
+                  "to_node": 3240,
+                  "old_parking": 3,
+                  "parking": 2
+                },
+                {
+                  "from_node": 3239,
+                  "to_node": 3238,
+                  "old_parking": 3,
+                  "parking": 2
+                }
+              ],
+              "region": "area_1"
+            },
+            "parking_a6b29e4dfd15": {
+              "title": "长江村路 · 3条方向 · 停车1级",
+              "changes": [
+                {
+                  "from_node": 3240,
+                  "to_node": 3239,
+                  "old_parking": 3,
+                  "parking": 1
+                },
+                {
+                  "from_node": 3239,
+                  "to_node": 3240,
+                  "old_parking": 3,
+                  "parking": 1
+                },
+                {
+                  "from_node": 3239,
+                  "to_node": 3238,
+                  "old_parking": 3,
+                  "parking": 1
+                }
+              ],
+              "region": "area_1"
+            },
+            "parking_ea33c82954c5": {
+              "title": "长江村路 · 1条方向 · 停车2级",
+              "changes": [
+                {
+                  "from_node": 3240,
+                  "to_node": 3239,
+                  "old_parking": 3,
+                  "parking": 2
+                }
+              ],
+              "region": "area_1"
+            },
+            "parking_37d45972c1e7": {
+              "title": "长江村路 · 1条方向 · 停车1级",
+              "changes": [
+                {
+                  "from_node": 3240,
+                  "to_node": 3239,
+                  "old_parking": 3,
+                  "parking": 1
+                }
+              ],
+              "region": "area_1"
+            },
+            "parking_0a4d9891ceb7": {
+              "title": "长江村路 · 1条方向 · 停车2级",
+              "changes": [
+                {
+                  "from_node": 3239,
+                  "to_node": 3240,
+                  "old_parking": 3,
+                  "parking": 2
+                }
+              ],
+              "region": "area_1"
+            },
+            "parking_e0839c0a7e5a": {
+              "title": "长江村路 · 1条方向 · 停车1级",
+              "changes": [
+                {
+                  "from_node": 3239,
+                  "to_node": 3240,
+                  "old_parking": 3,
+                  "parking": 1
+                }
+              ],
+              "region": "area_1"
+            },
+            "parking_7f2df4a5e59b": {
+              "title": "长江村路 · 1条方向 · 停车2级",
+              "changes": [
+                {
+                  "from_node": 3239,
+                  "to_node": 3238,
+                  "old_parking": 3,
+                  "parking": 2
+                }
+              ],
+              "region": "area_1"
+            },
+            "parking_652eba0f54c9": {
+              "title": "长江村路 · 1条方向 · 停车1级",
+              "changes": [
+                {
+                  "from_node": 3239,
+                  "to_node": 3238,
+                  "old_parking": 3,
+                  "parking": 1
+                }
+              ],
+              "region": "area_1"
+            },
+            "parking_4c2e42f3dc18": {
+              "title": "长江村路 · 2条方向 · 停车2级",
+              "changes": [
+                {
+                  "from_node": 3240,
+                  "to_node": 3239,
+                  "old_parking": 3,
+                  "parking": 2
+                },
+                {
+                  "from_node": 3239,
+                  "to_node": 3240,
+                  "old_parking": 3,
+                  "parking": 2
+                }
+              ],
+              "region": "area_1"
+            },
+            "parking_0c0367fee535": {
+              "title": "长江村路 · 2条方向 · 停车1级",
+              "changes": [
+                {
+                  "from_node": 3240,
+                  "to_node": 3239,
+                  "old_parking": 3,
+                  "parking": 1
+                },
+                {
+                  "from_node": 3239,
+                  "to_node": 3240,
+                  "old_parking": 3,
+                  "parking": 1
+                }
+              ],
+              "region": "area_1"
+            },
+            "parking_858a1a3c64af": {
+              "title": "长江村路 · 2条方向 · 停车2级",
+              "changes": [
+                {
+                  "from_node": 3237,
+                  "to_node": 3236,
+                  "old_parking": 3,
+                  "parking": 2
+                },
+                {
+                  "from_node": 3236,
+                  "to_node": 3235,
+                  "old_parking": 3,
+                  "parking": 2
+                }
+              ],
+              "region": "area_2"
+            },
+            "parking_f4c81e6f67ba": {
+              "title": "长江村路 · 2条方向 · 停车1级",
+              "changes": [
+                {
+                  "from_node": 3237,
+                  "to_node": 3236,
+                  "old_parking": 3,
+                  "parking": 1
+                },
+                {
+                  "from_node": 3236,
+                  "to_node": 3235,
+                  "old_parking": 3,
+                  "parking": 1
+                }
+              ],
+              "region": "area_2"
+            },
+            "parking_582f485073fb": {
+              "title": "长江村路 · 1条方向 · 停车2级",
+              "changes": [
+                {
+                  "from_node": 3237,
+                  "to_node": 3236,
+                  "old_parking": 3,
+                  "parking": 2
+                }
+              ],
+              "region": "area_2"
+            },
+            "parking_a3ec245cb132": {
+              "title": "长江村路 · 1条方向 · 停车1级",
+              "changes": [
+                {
+                  "from_node": 3237,
+                  "to_node": 3236,
+                  "old_parking": 3,
+                  "parking": 1
+                }
+              ],
+              "region": "area_2"
+            },
+            "parking_68e429a21d2b": {
+              "title": "长江村路 · 1条方向 · 停车2级",
+              "changes": [
+                {
+                  "from_node": 3236,
+                  "to_node": 3235,
+                  "old_parking": 3,
+                  "parking": 2
+                }
+              ],
+              "region": "area_2"
+            },
+            "parking_23ca8d8c0507": {
+              "title": "长江村路 · 1条方向 · 停车1级",
+              "changes": [
+                {
+                  "from_node": 3236,
+                  "to_node": 3235,
+                  "old_parking": 3,
+                  "parking": 1
+                }
+              ],
+              "region": "area_2"
+            }
+          },
+          "context": {
+            "task": {
+              "request": "长江村路停车拥堵。请至少比较两个不同停车备选方案，并检验单向组织及其组合的独立效果。最多7次仿真，不复跑基准；保护邻区。",
+              "scenario": "parking",
+              "search_mode": "standard",
+              "recommendation_version": "tolerance-v2",
+              "road_name": "长江村路",
+              "links": [],
+              "turn": null,
+              "max_links": 3,
+              "max_runs": 3,
+              "max_feedback": 2,
+              "comparison_regions": 1,
+              "comparison_policies": 2,
+              "demand_factors": [
+                1.0
+              ],
+              "repeat_baseline": false,
+              "neighbor_hops": 2,
+              "target_speed_kmh": 25.0,
+              "max_neighbor_time_increase_pct": 0.5,
+              "max_network_time_increase_pct": 0.1,
+              "max_new_oversaturated_km": 0.1,
+              "module_timeout_seconds": 900
+            },
+            "available_policy_runs": 2,
+            "research_depth": {
+              "version": "research-depth-v3",
+              "intent": "compare_candidates",
+              "minimum_candidates": 2,
+              "demand_validation": false,
+              "comparison_quote": "请至少比较两个不同停车备选方案，并检验单向组织及其组合的独立效果",
+              "demand_quote": "",
+              "find_one_quote": "",
+              "candidate_domain": "parking"
+            },
+            "usable_candidate_found": false,
+            "policy_cost": 1,
+            "full_demand_grid": false,
+            "goal_review": {
+              "strength_comparison_requested": false,
+              "strength_compared": false,
+              "requirements": [
+                {
+                  "id": "baseline",
+                  "label": "各需求的新基准",
+                  "fulfilled": true
+                },
+                {
+                  "id": "policy",
+                  "label": "治理候选的实际执行与配对",
+                  "fulfilled": false
+                },
+                {
+                  "id": "alternatives",
+                  "label": "至少2个不同停车方案的完整同需求配对",
+                  "fulfilled": false
+                },
+                {
+                  "id": "review",
+                  "label": "模型读取完整结果并完成复核",
+                  "fulfilled": false
+                },
+                {
+                  "id": "conclusion",
+                  "label": "实测代价确认与已知证据缺口核对",
+                  "fulfilled": false
+                }
+              ],
+              "comparison_directions": [],
+              "execution_complete": false,
+              "measured_levels": [],
+              "unanswered": [
+                "治理候选的实际执行与配对尚未完成。",
+                "至少2个不同停车方案的完整同需求配对尚未完成。",
+                "模型读取完整结果并完成复核尚未完成。",
+                "实测代价确认与已知证据缺口核对尚未完成。"
+              ],
+              "complete": false,
+              "remaining_native_runs": 2
+            },
+            "initial_hypotheses": [],
+            "research_evidence": {
+              "version": "question-evidence-v1",
+              "findings": [
+                {
+                  "id": "benefit",
+                  "question": "已测停车措施能否在约束内改善交通？",
+                  "status": "unmeasured",
+                  "answer": "尚无完成全部需求配对的治理措施。",
+                  "evidence_refs": []
+                },
+                {
+                  "id": "tradeoff",
+                  "question": "局部改善是否伴随不能接受的代价？",
+                  "status": "unmeasured",
+                  "answer": "等待治理配对，不能由基准推断代价。",
+                  "evidence_refs": []
+                },
+                {
+                  "id": "strength",
+                  "question": "更强的停车1级是否比2级更合适？",
+                  "status": "unmeasured",
+                  "answer": "未完成同方向的1/2级完整配对，不能比较强弱优劣。",
+                  "evidence_refs": []
+                },
+                {
+                  "id": "regions",
+                  "question": "不同区域的已测措施有什么取舍？",
+                  "status": "unmeasured",
+                  "answer": "尚未实测两个不同区域，不能比较位置优劣。",
+                  "evidence_refs": []
+                },
+                {
+                  "id": "robustness",
+                  "question": "同一措施在约定需求波动下是否仍可用？",
+                  "status": "unmeasured",
+                  "answer": "尚无完整的多需求治理证据；单一需求不能证明稳健性。",
+                  "evidence_refs": []
+                }
+              ],
+              "preferred_tested_policy": null,
+              "selection_basis": "按预先冻结的约束和容差，仅筛选已完成的同一措施。",
+              "scope": "仅本任务本次已完成配对；不认证任意文字假设，不外推现实因果或未测方案。"
+            },
+            "completion_guard": {
+              "required_policy_decisions": 2,
+              "required_native_runs": 2,
+              "required_model_requests": 3,
+              "stop_allowed": false,
+              "can_finish": true,
+              "reason": "尚需完成2项停车候选及其约定需求配对，再复核结果。本任务未要求1/2级强度对照。另须实测至少2个不同停车方案。",
+              "version": "parking-completion-v3",
+              "strength_comparison_required": false,
+              "required_candidate_comparisons": 2,
+              "measured_candidate_comparisons": 0
+            },
+            "reserved_model_requests": 2,
+            "scope": "候选区域并集是固定评价核心；每次治理不超过max_links。其他候选区也执行耗时增幅门槛。",
+            "previous_decisions": [],
+            "programme_id": "20260930_110453_b91dea",
+            "programme_plan_digest": "180d5d050b997ef1cc307ef660f58a600d3bc79eb7510c67a4b1d59b1c862d53",
+            "programme_evidence": {
+              "version": "programme-evidence-v1",
+              "programme_id": "20260930_110453_b91dea",
+              "groups": [
+                {
+                  "id": "study_1",
+                  "job_id": "20260930_110453_b91dea",
+                  "title": "停车治理与反馈",
+                  "scenario": "parking",
+                  "engine": "TranStar 基础分配",
+                  "execution_complete": false,
+                  "finding_ids": [
+                    "study_1.benefit",
+                    "study_1.tradeoff",
+                    "study_1.strength",
+                    "study_1.regions",
+                    "study_1.robustness"
+                  ]
+                },
+                {
+                  "id": "study_2",
+                  "job_id": "20260930_110453_1bf58f",
+                  "title": "停车＋单向组织",
+                  "scenario": "oneway",
+                  "engine": "TranStar Vehicle1＋道路禁行适配",
+                  "execution_complete": false,
+                  "finding_ids": [
+                    "study_2.factorial",
+                    "study_2.response",
+                    "study_2.benefit",
+                    "study_2.combination",
+                    "study_2.robustness"
+                  ]
+                }
+              ],
+              "findings": [
+                {
+                  "id": "study_1.benefit",
+                  "question": "停车治理与反馈：已测停车措施能否在约束内改善交通？",
+                  "status": "unmeasured",
+                  "answer": "尚无完成全部需求配对的治理措施。",
+                  "evidence_refs": []
+                },
+                {
+                  "id": "study_1.tradeoff",
+                  "question": "停车治理与反馈：局部改善是否伴随不能接受的代价？",
+                  "status": "unmeasured",
+                  "answer": "等待治理配对，不能由基准推断代价。",
+                  "evidence_refs": []
+                },
+                {
+                  "id": "study_1.strength",
+                  "question": "停车治理与反馈：更强的停车1级是否比2级更合适？",
+                  "status": "unmeasured",
+                  "answer": "未完成同方向的1/2级完整配对，不能比较强弱优劣。",
+                  "evidence_refs": []
+                },
+                {
+                  "id": "study_1.regions",
+                  "question": "停车治理与反馈：不同区域的已测措施有什么取舍？",
+                  "status": "unmeasured",
+                  "answer": "尚未实测两个不同区域，不能比较位置优劣。",
+                  "evidence_refs": []
+                },
+                {
+                  "id": "study_1.robustness",
+                  "question": "停车治理与反馈：同一措施在约定需求波动下是否仍可用？",
+                  "status": "unmeasured",
+                  "answer": "尚无完整的多需求治理证据；单一需求不能证明稳健性。",
+                  "evidence_refs": []
+                },
+                {
+                  "id": "study_2.factorial",
+                  "question": "停车＋单向组织：停车、交通组织与组合是否完成公平对照？",
+                  "status": "unmeasured",
+                  "answer": "尚未测齐四项同需求对照；缺测不能补推。",
+                  "evidence_refs": []
+                },
+                {
+                  "id": "study_2.response",
+                  "question": "停车＋单向组织：单向是否真的进入原生交通分配？",
+                  "status": "unmeasured",
+                  "answer": "原生控制响应证据不足。",
+                  "evidence_refs": []
+                },
+                {
+                  "id": "study_2.benefit",
+                  "question": "停车＋单向组织：哪些措施在约定需求下通过约束？",
+                  "status": "unmeasured",
+                  "answer": "没有完成全部需求且通过检查的措施。",
+                  "evidence_refs": []
+                },
+                {
+                  "id": "study_2.combination",
+                  "question": "停车＋单向组织：叠加措施是否一定更合适？",
+                  "status": "unmeasured",
+                  "answer": "等待完整组合配对。",
+                  "evidence_refs": []
+                },
+                {
+                  "id": "study_2.robustness",
+                  "question": "停车＋单向组织：同一措施在需求波动下是否仍然可用？",
+                  "status": "unmeasured",
+                  "answer": "单需求或缺测不能证明跨需求稳健性。",
+                  "evidence_refs": []
+                },
+                {
+                  "id": "hypothesis.H1",
+                  "hypothesis_id": "H1",
+                  "question": "逐组独立检验：第1组（长江村路），需求×1；第2组（长江村路），需求×1。每组全部治理类型中至少一个已试措施，是否在每个约定需求下冻结核心范围总耗时严格低于同需求无治理基准？",
+                  "model_question": "第1组、第2组分别检验：每组至少一个已试措施（本组可检验的全部治理类型）在全部约定需求下冻结核心范围总耗时严格低于同需求无治理基准。",
+                  "status": "unmeasured",
+                  "expected_judgment": "unresolved",
+                  "evaluation": {
+                    "version": "hypothesis-measurement-v1",
+                    "test": "core_time_decrease",
+                    "policies": "all",
+                    "quantifier": "any",
+                    "scope": [
+                      {
+                        "study_id": "study_1",
+                        "scenario": "parking",
+                        "road": "长江村路",
+                        "demand_factors": [
+                          1.0
+                        ]
+                      },
+                      {
+                        "study_id": "study_2",
+                        "scenario": "oneway",
+                        "road": "长江村路",
+                        "demand_factors": [
+                          1.0
+                        ]
+                      }
+                    ],
+                    "rule": "冻结核心范围的总耗时低于同需求基准；与是否通过推荐约束分开判断。",
+                    "definition": {
+                      "version": "typed-initial-questions-v1",
+                      "metric": "core_running_time",
+                      "comparator": "untreated_baseline",
+                      "relation": "strictly_lower",
+                      "predicate": "冻结核心范围总耗时严格低于同需求无治理基准"
+                    },
+                    "interpretation": {
+                      "version": "bounded-question-wording-v6",
+                      "question": "逐组独立检验：第1组（长江村路），需求×1；第2组（长江村路），需求×1。每组全部治理类型中至少一个已试措施，是否在每个约定需求下冻结核心范围总耗时严格低于同需求无治理基准？",
+                      "wording_check": "generated_from_definition",
+                      "boundary": "本问题由模型选择的结构化定义生成；原用户输入和模型研究理由另行保留。判据通过不证明现实因果，也不代表未测措施已被检验。",
+                      "limits": [
+                        "各组独立与自身新基准比较，不共享不同引擎的效果。",
+                        "核心指标仅适用于本次冻结的评价方向，不自动覆盖整条道路。",
+                        "只涉及本次已试措施与离散需求，不代表全局最优或实时变化。"
+                      ],
+                      "contract": {
+                        "test": "core_time_decrease",
+                        "policies": "all",
+                        "quantifier": "any",
+                        "scope": [
+                          {
+                            "study_id": "study_1",
+                            "scenario": "parking",
+                            "road": "长江村路",
+                            "demand_factors": [
+                              1.0
+                            ]
+                          },
+                          {
+                            "study_id": "study_2",
+                            "scenario": "oneway",
+                            "road": "长江村路",
+                            "demand_factors": [
+                              1.0
+                            ]
+                          }
+                        ]
+                      },
+                      "origin": "model_structured_definition"
+                    }
+                  },
+                  "answer": "该判据仍有缺测、歧义或能力缺口，不能支持或否定。",
+                  "evidence_refs": []
+                },
+                {
+                  "id": "hypothesis.H2",
+                  "hypothesis_id": "H2",
+                  "question": "逐组独立检验：第1组（长江村路），需求×1，邻区耗时增幅≤0.5%，毛新增过饱和≤0.1km；第2组（长江村路），需求×1，邻区耗时增幅≤0.5%，毛新增过饱和≤0.1km。每组全部治理类型中至少一个已试措施，是否在每个约定需求下邻区耗时增幅和毛新增过饱和均不超过该组原定门槛？",
+                  "model_question": "第1组、第2组分别检验：每组至少一个已试措施（本组可检验的全部治理类型）在全部约定需求下邻区耗时增幅和毛新增过饱和均不超过该组原定门槛。",
+                  "status": "unmeasured",
+                  "expected_judgment": "unresolved",
+                  "evaluation": {
+                    "version": "hypothesis-measurement-v1",
+                    "test": "neighbor_limits",
+                    "policies": "all",
+                    "quantifier": "any",
+                    "scope": [
+                      {
+                        "study_id": "study_1",
+                        "scenario": "parking",
+                        "road": "长江村路",
+                        "demand_factors": [
+                          1.0
+                        ],
+                        "max_neighbor_time_increase_pct": 0.5,
+                        "max_new_oversaturated_km": 0.1
+                      },
+                      {
+                        "study_id": "study_2",
+                        "scenario": "oneway",
+                        "road": "长江村路",
+                        "demand_factors": [
+                          1.0
+                        ],
+                        "max_neighbor_time_increase_pct": 0.5,
+                        "max_new_oversaturated_km": 0.1
+                      }
+                    ],
+                    "rule": "邻区耗时增幅和毛新增过饱和均不超过本组原定门槛；不包括核心内其他候选子区。",
+                    "definition": {
+                      "version": "typed-initial-questions-v1",
+                      "metric": "neighbor_time_and_gross_new_oversaturation",
+                      "comparator": "frozen_neighbor_limits",
+                      "relation": "within_both_limits",
+                      "predicate": "邻区耗时增幅和毛新增过饱和均不超过该组原定门槛"
+                    },
+                    "interpretation": {
+                      "version": "bounded-question-wording-v6",
+                      "question": "逐组独立检验：第1组（长江村路），需求×1，邻区耗时增幅≤0.5%，毛新增过饱和≤0.1km；第2组（长江村路），需求×1，邻区耗时增幅≤0.5%，毛新增过饱和≤0.1km。每组全部治理类型中至少一个已试措施，是否在每个约定需求下邻区耗时增幅和毛新增过饱和均不超过该组原定门槛？",
+                      "wording_check": "generated_from_definition",
+                      "boundary": "本问题由模型选择的结构化定义生成；原用户输入和模型研究理由另行保留。判据通过不证明现实因果，也不代表未测措施已被检验。",
+                      "limits": [
+                        "各组独立与自身新基准比较，不共享不同引擎的效果。",
+                        "核心指标仅适用于本次冻结的评价方向，不自动覆盖整条道路。",
+                        "只涉及本次已试措施与离散需求，不代表全局最优或实时变化。"
+                      ],
+                      "contract": {
+                        "test": "neighbor_limits",
+                        "policies": "all",
+                        "quantifier": "any",
+                        "scope": [
+                          {
+                            "study_id": "study_1",
+                            "scenario": "parking",
+                            "road": "长江村路",
+                            "demand_factors": [
+                              1.0
+                            ],
+                            "max_neighbor_time_increase_pct": 0.5,
+                            "max_new_oversaturated_km": 0.1
+                          },
+                          {
+                            "study_id": "study_2",
+                            "scenario": "oneway",
+                            "road": "长江村路",
+                            "demand_factors": [
+                              1.0
+                            ],
+                            "max_neighbor_time_increase_pct": 0.5,
+                            "max_new_oversaturated_km": 0.1
+                          }
+                        ]
+                      },
+                      "origin": "model_structured_definition"
+                    }
+                  },
+                  "answer": "该判据仍有缺测、歧义或能力缺口，不能支持或否定。",
+                  "evidence_refs": []
+                },
+                {
+                  "id": "hypothesis.H3",
+                  "hypothesis_id": "H3",
+                  "question": "逐组独立检验：第2组（长江村路），需求×1。每组交通组织和组合措施（不含仅停车）中至少一个已试措施，是否在每个约定需求下冻结核心总耗时严格低于同需求的仅停车措施？",
+                  "model_question": "第2组分别检验：每组至少一个已试措施（交通组织及组合）在全部约定需求下冻结核心总耗时严格低于同需求的仅停车措施。",
+                  "status": "unmeasured",
+                  "expected_judgment": "unresolved",
+                  "evaluation": {
+                    "version": "hypothesis-measurement-v1",
+                    "test": "core_advantage_over_parking",
+                    "policies": "control_and_combined",
+                    "quantifier": "any",
+                    "scope": [
+                      {
+                        "study_id": "study_2",
+                        "scenario": "oneway",
+                        "road": "长江村路",
+                        "demand_factors": [
+                          1.0
+                        ]
+                      }
+                    ],
+                    "rule": "交通组织单项或组合的核心总耗时严格低于本组仅停车；全部类型在此指交通组织和组合，不把仅停车与自身相比。",
+                    "definition": {
+                      "version": "typed-initial-questions-v1",
+                      "metric": "core_running_time",
+                      "comparator": "parking_only",
+                      "relation": "strictly_lower",
+                      "predicate": "冻结核心总耗时严格低于同需求的仅停车措施"
+                    },
+                    "interpretation": {
+                      "version": "bounded-question-wording-v6",
+                      "question": "逐组独立检验：第2组（长江村路），需求×1。每组交通组织和组合措施（不含仅停车）中至少一个已试措施，是否在每个约定需求下冻结核心总耗时严格低于同需求的仅停车措施？",
+                      "wording_check": "generated_from_definition",
+                      "boundary": "本问题由模型选择的结构化定义生成；原用户输入和模型研究理由另行保留。判据通过不证明现实因果，也不代表未测措施已被检验。",
+                      "limits": [
+                        "各组独立与自身新基准比较，不共享不同引擎的效果。",
+                        "核心指标仅适用于本次冻结的评价方向，不自动覆盖整条道路。",
+                        "只涉及本次已试措施与离散需求，不代表全局最优或实时变化。"
+                      ],
+                      "contract": {
+                        "test": "core_advantage_over_parking",
+                        "policies": "control_and_combined",
+                        "quantifier": "any",
+                        "scope": [
+                          {
+                            "study_id": "study_2",
+                            "scenario": "oneway",
+                            "road": "长江村路",
+                            "demand_factors": [
+                              1.0
+                            ]
+                          }
+                        ]
+                      },
+                      "origin": "model_structured_definition"
+                    }
+                  },
+                  "answer": "该判据仍有缺测、歧义或能力缺口，不能支持或否定。",
+                  "evidence_refs": []
+                },
+                {
+                  "id": "hypothesis.H4",
+                  "hypothesis_id": "H4",
+                  "question": "逐组独立检验：第2组（长江村路），需求×1。每组组合措施中至少一个已试措施，是否在每个约定需求下冻结核心总耗时分别严格低于同需求的两个单项措施？",
+                  "model_question": "第2组分别检验：每组至少一个已试措施（组合措施）在全部约定需求下冻结核心总耗时分别严格低于同需求的两个单项措施。",
+                  "status": "unmeasured",
+                  "expected_judgment": "unresolved",
+                  "evaluation": {
+                    "version": "hypothesis-measurement-v1",
+                    "test": "combination_core_advantage",
+                    "policies": "combined",
+                    "quantifier": "any",
+                    "scope": [
+                      {
+                        "study_id": "study_2",
+                        "scenario": "oneway",
+                        "road": "长江村路",
+                        "demand_factors": [
+                          1.0
+                        ]
+                      }
+                    ],
+                    "rule": "组合的核心总耗时分别严格低于本组停车单项和交通组织单项；不等于更适合推荐或已证明协同成因。",
+                    "definition": {
+                      "version": "typed-initial-questions-v1",
+                      "metric": "core_running_time",
+                      "comparator": "both_single_measures",
+                      "relation": "strictly_lower_than_each",
+                      "predicate": "冻结核心总耗时分别严格低于同需求的两个单项措施"
+                    },
+                    "interpretation": {
+                      "version": "bounded-question-wording-v6",
+                      "question": "逐组独立检验：第2组（长江村路），需求×1。每组组合措施中至少一个已试措施，是否在每个约定需求下冻结核心总耗时分别严格低于同需求的两个单项措施？",
+                      "wording_check": "generated_from_definition",
+                      "boundary": "本问题由模型选择的结构化定义生成；原用户输入和模型研究理由另行保留。判据通过不证明现实因果，也不代表未测措施已被检验。",
+                      "limits": [
+                        "各组独立与自身新基准比较，不共享不同引擎的效果。",
+                        "核心指标仅适用于本次冻结的评价方向，不自动覆盖整条道路。",
+                        "只涉及本次已试措施与离散需求，不代表全局最优或实时变化。"
+                      ],
+                      "contract": {
+                        "test": "combination_core_advantage",
+                        "policies": "combined",
+                        "quantifier": "any",
+                        "scope": [
+                          {
+                            "study_id": "study_2",
+                            "scenario": "oneway",
+                            "road": "长江村路",
+                            "demand_factors": [
+                              1.0
+                            ]
+                          }
+                        ]
+                      },
+                      "origin": "model_structured_definition"
+                    }
+                  },
+                  "answer": "该判据仍有缺测、歧义或能力缺口，不能支持或否定。",
+                  "evidence_refs": []
+                }
+              ],
+              "scope": "各组采用各自的新基准与固定范围。跨组可以比较约束是否通过及证据缺口；不能混合收益、绝对值排名或推断联合实施效果。"
+            },
+            "programme_hypotheses": [
+              {
+                "id": "H1",
+                "hypothesis": "第1组、第2组分别检验：每组至少一个已试措施（本组可检验的全部治理类型）在全部约定需求下冻结核心范围总耗时严格低于同需求无治理基准。",
+                "evidence_needed": "按所选判据配对本组同需求原生观测；所需基准或对照缺失时保留未知。",
+                "criterion": {
+                  "test": "core_time_decrease",
+                  "studies": [
+                    1,
+                    2
+                  ],
+                  "policies": "all",
+                  "quantifier": "any"
+                },
+                "evaluation": {
+                  "version": "hypothesis-measurement-v1",
+                  "test": "core_time_decrease",
+                  "policies": "all",
+                  "quantifier": "any",
+                  "scope": [
+                    {
+                      "study_id": "study_1",
+                      "scenario": "parking",
+                      "road": "长江村路",
+                      "demand_factors": [
+                        1.0
+                      ]
+                    },
+                    {
+                      "study_id": "study_2",
+                      "scenario": "oneway",
+                      "road": "长江村路",
+                      "demand_factors": [
+                        1.0
+                      ]
+                    }
+                  ],
+                  "rule": "冻结核心范围的总耗时低于同需求基准；与是否通过推荐约束分开判断。",
+                  "definition": {
+                    "version": "typed-initial-questions-v1",
+                    "metric": "core_running_time",
+                    "comparator": "untreated_baseline",
+                    "relation": "strictly_lower",
+                    "predicate": "冻结核心范围总耗时严格低于同需求无治理基准"
+                  },
+                  "interpretation": {
+                    "version": "bounded-question-wording-v6",
+                    "question": "逐组独立检验：第1组（长江村路），需求×1；第2组（长江村路），需求×1。每组全部治理类型中至少一个已试措施，是否在每个约定需求下冻结核心范围总耗时严格低于同需求无治理基准？",
+                    "wording_check": "generated_from_definition",
+                    "boundary": "本问题由模型选择的结构化定义生成；原用户输入和模型研究理由另行保留。判据通过不证明现实因果，也不代表未测措施已被检验。",
+                    "limits": [
+                      "各组独立与自身新基准比较，不共享不同引擎的效果。",
+                      "核心指标仅适用于本次冻结的评价方向，不自动覆盖整条道路。",
+                      "只涉及本次已试措施与离散需求，不代表全局最优或实时变化。"
+                    ],
+                    "contract": {
+                      "test": "core_time_decrease",
+                      "policies": "all",
+                      "quantifier": "any",
+                      "scope": [
+                        {
+                          "study_id": "study_1",
+                          "scenario": "parking",
+                          "road": "长江村路",
+                          "demand_factors": [
+                            1.0
+                          ]
+                        },
+                        {
+                          "study_id": "study_2",
+                          "scenario": "oneway",
+                          "road": "长江村路",
+                          "demand_factors": [
+                            1.0
+                          ]
+                        }
+                      ]
+                    },
+                    "origin": "model_structured_definition"
+                  }
+                },
+                "authoring": {
+                  "version": "named-question-authoring-v1",
+                  "definition": {
+                    "policies": "all",
+                    "quantifier": "any",
+                    "study_keys": [
+                      "parking_cmp",
+                      "oneway_comb"
+                    ],
+                    "test": "core_time_decrease"
+                  },
+                  "study_keys": {
+                    "parking_cmp": 1,
+                    "oneway_comb": 2
+                  }
+                }
+              },
+              {
+                "id": "H2",
+                "hypothesis": "第1组、第2组分别检验：每组至少一个已试措施（本组可检验的全部治理类型）在全部约定需求下邻区耗时增幅和毛新增过饱和均不超过该组原定门槛。",
+                "evidence_needed": "按所选判据配对本组同需求原生观测；所需基准或对照缺失时保留未知。",
+                "criterion": {
+                  "test": "neighbor_limits",
+                  "studies": [
+                    1,
+                    2
+                  ],
+                  "policies": "all",
+                  "quantifier": "any"
+                },
+                "evaluation": {
+                  "version": "hypothesis-measurement-v1",
+                  "test": "neighbor_limits",
+                  "policies": "all",
+                  "quantifier": "any",
+                  "scope": [
+                    {
+                      "study_id": "study_1",
+                      "scenario": "parking",
+                      "road": "长江村路",
+                      "demand_factors": [
+                        1.0
+                      ],
+                      "max_neighbor_time_increase_pct": 0.5,
+                      "max_new_oversaturated_km": 0.1
+                    },
+                    {
+                      "study_id": "study_2",
+                      "scenario": "oneway",
+                      "road": "长江村路",
+                      "demand_factors": [
+                        1.0
+                      ],
+                      "max_neighbor_time_increase_pct": 0.5,
+                      "max_new_oversaturated_km": 0.1
+                    }
+                  ],
+                  "rule": "邻区耗时增幅和毛新增过饱和均不超过本组原定门槛；不包括核心内其他候选子区。",
+                  "definition": {
+                    "version": "typed-initial-questions-v1",
+                    "metric": "neighbor_time_and_gross_new_oversaturation",
+                    "comparator": "frozen_neighbor_limits",
+                    "relation": "within_both_limits",
+                    "predicate": "邻区耗时增幅和毛新增过饱和均不超过该组原定门槛"
+                  },
+                  "interpretation": {
+                    "version": "bounded-question-wording-v6",
+                    "question": "逐组独立检验：第1组（长江村路），需求×1，邻区耗时增幅≤0.5%，毛新增过饱和≤0.1km；第2组（长江村路），需求×1，邻区耗时增幅≤0.5%，毛新增过饱和≤0.1km。每组全部治理类型中至少一个已试措施，是否在每个约定需求下邻区耗时增幅和毛新增过饱和均不超过该组原定门槛？",
+                    "wording_check": "generated_from_definition",
+                    "boundary": "本问题由模型选择的结构化定义生成；原用户输入和模型研究理由另行保留。判据通过不证明现实因果，也不代表未测措施已被检验。",
+                    "limits": [
+                      "各组独立与自身新基准比较，不共享不同引擎的效果。",
+                      "核心指标仅适用于本次冻结的评价方向，不自动覆盖整条道路。",
+                      "只涉及本次已试措施与离散需求，不代表全局最优或实时变化。"
+                    ],
+                    "contract": {
+                      "test": "neighbor_limits",
+                      "policies": "all",
+                      "quantifier": "any",
+                      "scope": [
+                        {
+                          "study_id": "study_1",
+                          "scenario": "parking",
+                          "road": "长江村路",
+                          "demand_factors": [
+                            1.0
+                          ],
+                          "max_neighbor_time_increase_pct": 0.5,
+                          "max_new_oversaturated_km": 0.1
+                        },
+                        {
+                          "study_id": "study_2",
+                          "scenario": "oneway",
+                          "road": "长江村路",
+                          "demand_factors": [
+                            1.0
+                          ],
+                          "max_neighbor_time_increase_pct": 0.5,
+                          "max_new_oversaturated_km": 0.1
+                        }
+                      ]
+                    },
+                    "origin": "model_structured_definition"
+                  }
+                },
+                "authoring": {
+                  "version": "named-question-authoring-v1",
+                  "definition": {
+                    "policies": "all",
+                    "quantifier": "any",
+                    "study_keys": [
+                      "parking_cmp",
+                      "oneway_comb"
+                    ],
+                    "test": "neighbor_limits"
+                  },
+                  "study_keys": {
+                    "parking_cmp": 1,
+                    "oneway_comb": 2
+                  }
+                }
+              },
+              {
+                "id": "H3",
+                "hypothesis": "第2组分别检验：每组至少一个已试措施（交通组织及组合）在全部约定需求下冻结核心总耗时严格低于同需求的仅停车措施。",
+                "evidence_needed": "按所选判据配对本组同需求原生观测；所需基准或对照缺失时保留未知。",
+                "criterion": {
+                  "test": "core_advantage_over_parking",
+                  "studies": [
+                    2
+                  ],
+                  "policies": "control_and_combined",
+                  "quantifier": "any"
+                },
+                "evaluation": {
+                  "version": "hypothesis-measurement-v1",
+                  "test": "core_advantage_over_parking",
+                  "policies": "control_and_combined",
+                  "quantifier": "any",
+                  "scope": [
+                    {
+                      "study_id": "study_2",
+                      "scenario": "oneway",
+                      "road": "长江村路",
+                      "demand_factors": [
+                        1.0
+                      ]
+                    }
+                  ],
+                  "rule": "交通组织单项或组合的核心总耗时严格低于本组仅停车；全部类型在此指交通组织和组合，不把仅停车与自身相比。",
+                  "definition": {
+                    "version": "typed-initial-questions-v1",
+                    "metric": "core_running_time",
+                    "comparator": "parking_only",
+                    "relation": "strictly_lower",
+                    "predicate": "冻结核心总耗时严格低于同需求的仅停车措施"
+                  },
+                  "interpretation": {
+                    "version": "bounded-question-wording-v6",
+                    "question": "逐组独立检验：第2组（长江村路），需求×1。每组交通组织和组合措施（不含仅停车）中至少一个已试措施，是否在每个约定需求下冻结核心总耗时严格低于同需求的仅停车措施？",
+                    "wording_check": "generated_from_definition",
+                    "boundary": "本问题由模型选择的结构化定义生成；原用户输入和模型研究理由另行保留。判据通过不证明现实因果，也不代表未测措施已被检验。",
+                    "limits": [
+                      "各组独立与自身新基准比较，不共享不同引擎的效果。",
+                      "核心指标仅适用于本次冻结的评价方向，不自动覆盖整条道路。",
+                      "只涉及本次已试措施与离散需求，不代表全局最优或实时变化。"
+                    ],
+                    "contract": {
+                      "test": "core_advantage_over_parking",
+                      "policies": "control_and_combined",
+                      "quantifier": "any",
+                      "scope": [
+                        {
+                          "study_id": "study_2",
+                          "scenario": "oneway",
+                          "road": "长江村路",
+                          "demand_factors": [
+                            1.0
+                          ]
+                        }
+                      ]
+                    },
+                    "origin": "model_structured_definition"
+                  }
+                },
+                "authoring": {
+                  "version": "named-question-authoring-v1",
+                  "definition": {
+                    "policies": "control_and_combined",
+                    "quantifier": "any",
+                    "study_keys": [
+                      "oneway_comb"
+                    ],
+                    "test": "core_advantage_over_parking"
+                  },
+                  "study_keys": {
+                    "oneway_comb": 2
+                  }
+                }
+              },
+              {
+                "id": "H4",
+                "hypothesis": "第2组分别检验：每组至少一个已试措施（组合措施）在全部约定需求下冻结核心总耗时分别严格低于同需求的两个单项措施。",
+                "evidence_needed": "按所选判据配对本组同需求原生观测；所需基准或对照缺失时保留未知。",
+                "criterion": {
+                  "test": "combination_core_advantage",
+                  "studies": [
+                    2
+                  ],
+                  "policies": "combined",
+                  "quantifier": "any"
+                },
+                "evaluation": {
+                  "version": "hypothesis-measurement-v1",
+                  "test": "combination_core_advantage",
+                  "policies": "combined",
+                  "quantifier": "any",
+                  "scope": [
+                    {
+                      "study_id": "study_2",
+                      "scenario": "oneway",
+                      "road": "长江村路",
+                      "demand_factors": [
+                        1.0
+                      ]
+                    }
+                  ],
+                  "rule": "组合的核心总耗时分别严格低于本组停车单项和交通组织单项；不等于更适合推荐或已证明协同成因。",
+                  "definition": {
+                    "version": "typed-initial-questions-v1",
+                    "metric": "core_running_time",
+                    "comparator": "both_single_measures",
+                    "relation": "strictly_lower_than_each",
+                    "predicate": "冻结核心总耗时分别严格低于同需求的两个单项措施"
+                  },
+                  "interpretation": {
+                    "version": "bounded-question-wording-v6",
+                    "question": "逐组独立检验：第2组（长江村路），需求×1。每组组合措施中至少一个已试措施，是否在每个约定需求下冻结核心总耗时分别严格低于同需求的两个单项措施？",
+                    "wording_check": "generated_from_definition",
+                    "boundary": "本问题由模型选择的结构化定义生成；原用户输入和模型研究理由另行保留。判据通过不证明现实因果，也不代表未测措施已被检验。",
+                    "limits": [
+                      "各组独立与自身新基准比较，不共享不同引擎的效果。",
+                      "核心指标仅适用于本次冻结的评价方向，不自动覆盖整条道路。",
+                      "只涉及本次已试措施与离散需求，不代表全局最优或实时变化。"
+                    ],
+                    "contract": {
+                      "test": "combination_core_advantage",
+                      "policies": "combined",
+                      "quantifier": "any",
+                      "scope": [
+                        {
+                          "study_id": "study_2",
+                          "scenario": "oneway",
+                          "road": "长江村路",
+                          "demand_factors": [
+                            1.0
+                          ]
+                        }
+                      ]
+                    },
+                    "origin": "model_structured_definition"
+                  }
+                },
+                "authoring": {
+                  "version": "named-question-authoring-v1",
+                  "definition": {
+                    "policies": "combined",
+                    "quantifier": "any",
+                    "study_keys": [
+                      "oneway_comb"
+                    ],
+                    "test": "combination_core_advantage"
+                  },
+                  "study_keys": {
+                    "oneway_comb": 2
+                  }
+                }
+              }
+            ],
+            "programme_final_group": false,
+            "programme_current_job": "20260930_110453_b91dea",
+            "review_scope": {
+              "version": "hypothesis-review-scope-v1",
+              "mode": "programme_final_only",
+              "rule": "多组任务的初始假设只在最终总复核中逐项判断，并引用带study编号的证据；中途完整复核本组实测和代价。"
+            },
+            "programme_comparisons": [
+              {
+                "version": "study-comparison-v1",
+                "job_id": "20260930_110453_b91dea",
+                "scenario": "parking",
+                "road": "长江村路",
+                "factors": [
+                  {
+                    "demand_factor": 1.0,
+                    "baseline_ref": "20260930_110453_b91dea:baseline",
+                    "policies": [],
+                    "combination_contrasts": []
+                  }
+                ],
+                "scope": "同组、同需求、新基准。措施行列出相对基准的变化；组合差值=组合耗时−单项耗时，负值表示组合更低，单位pcu·h。约束通过与耗时更低分别判断；单需求不能证明稳健性，不跨组混算或推断现实协同。",
+                "study_id": "study_1",
+                "title": "停车治理与反馈",
+                "engine": "TranStar 基础分配"
+              },
+              {
+                "version": "study-comparison-v1",
+                "job_id": "20260930_110453_1bf58f",
+                "scenario": "oneway",
+                "road": "长江村路",
+                "factors": [
+                  {
+                    "demand_factor": 1.0,
+                    "baseline_ref": null,
+                    "policies": [],
+                    "combination_contrasts": []
+                  }
+                ],
+                "scope": "同组、同需求、新基准。措施行列出相对基准的变化；组合差值=组合耗时−单项耗时，负值表示组合更低，单位pcu·h。约束通过与耗时更低分别判断；单需求不能证明稳健性，不跨组混算或推断现实协同。",
+                "study_id": "study_2",
+                "title": "停车＋单向组织",
+                "engine": "TranStar Vehicle1＋道路禁行适配"
+              }
+            ],
+            "study_review_correction_protocol": "study-review-correction-v1",
+            "study_routing_protocol": "study-routing-budget-v2",
+            "programme_cost_facts": [],
+            "programme_policy_facts": [],
+            "instruction_protocol": "stage-planning-instructions-v1",
+            "measured_conclusion": {
+              "version": "measured-conclusion-v14",
+              "costs": [],
+              "hypothesis_gaps": [],
+              "scope": "停车等级按原始观测引用、区域与基准／现状／执行改动来源核对，未来备选不冒充执行。明确的并列指标等值断言按范围、单位和唯一实测场景分别核对；不将近似值、未知值或通过门槛视为零。区分明确否定的选择、执行或测量动作与已执行等级断言；否定不跨转折继承。明确候选区的停车等级仅与该区实际改动场景核对；未试区域不得继承其他候选区的治理等级。跨需求全称代价表述还需按每个需求的冻结门槛逐项核对。另核对邻区新增里程的符号、模型剩余额度和停车等级强弱的明确公开说法。另核对公开说明中明确声称的邻区数值门槛是否与冻结任务一致。另核对明确标注范围和pcu·h单位的前后耗时及其百分比，允许显示精度误差；未来试验不继承其他组的已执行措施。核对已提供的配对指标、明确停车等级、零代价表述及已知未测量项；S1/S2/S3仅为场景编号。检查不覆盖任意语言，未发现冲突不等于已证明所有解释。批次分配不能证明动态排队回堵或零风险。",
+              "policy_protocol": "executed-policy-facts-v1",
+              "executed_policies": [],
+              "metric_assertions": {
+                "version": "measured-metric-assertions-v1",
+                "scopes": {
+                  "核心": "core",
+                  "邻区": "neighbor",
+                  "周边": "neighbor",
+                  "全网": "network"
+                },
+                "metrics": {
+                  "time_change_pct": {
+                    "label": "耗时变化",
+                    "unit": "%"
+                  },
+                  "net_oversaturated_km": {
+                    "label": "过饱和净变化",
+                    "unit": "km"
+                  },
+                  "new_oversaturated_km": {
+                    "label": "毛新增过饱和",
+                    "unit": "km"
+                  }
+                },
+                "rule": "范围+指标对应costs同名字段。明确零值须为实际零；近似值按所写精度核对。并列指标分别判断，未测值不视为零。"
+              },
+              "parking_claim_sources": {
+                "version": "parking-claim-sources-v1",
+                "sources": {
+                  "baseline": "本组无治理基准的区域道路parking字段",
+                  "observed": "明确场景及区域的道路parking字段；未治理区域不继承其他区域的改动",
+                  "executed": "所指区域已执行changes中的parking字段",
+                  "proposed": "未来或条件措施，不作为已执行等级断言"
+                },
+                "boundary": "仅核对可定位的场景与区域；跨组、跨需求或混合等级歧义保留未判定，不认证任意自然语言。"
+              }
+            },
+            "review_permissions": {
+              "version": "feedback-review-permissions-v1",
+              "study_review_actions": [],
+              "programme_review_actions": []
+            },
+            "choice_basis_protocol": "observed-choice-basis-v4",
+            "choice_observations": {
+              "version": "observed-choice-basis-v4",
+              "sources": [
+                {
+                  "id": "area:20260930_110453_b91dea:baseline:area_1",
+                  "kind": "area",
+                  "ref": "20260930_110453_b91dea:baseline",
+                  "region": "area_1",
+                  "actions": [
+                    "parking_58ff01cdf4e9",
+                    "parking_a6b29e4dfd15",
+                    "parking_ea33c82954c5",
+                    "parking_37d45972c1e7",
+                    "parking_0a4d9891ceb7",
+                    "parking_e0839c0a7e5a",
+                    "parking_7f2df4a5e59b",
+                    "parking_652eba0f54c9",
+                    "parking_4c2e42f3dc18",
+                    "parking_0c0367fee535"
+                  ]
+                },
+                {
+                  "id": "area:20260930_110453_b91dea:baseline:area_2",
+                  "kind": "area",
+                  "ref": "20260930_110453_b91dea:baseline",
+                  "region": "area_2",
+                  "actions": [
+                    "parking_858a1a3c64af",
+                    "parking_f4c81e6f67ba",
+                    "parking_582f485073fb",
+                    "parking_a3ec245cb132",
+                    "parking_68e429a21d2b",
+                    "parking_23ca8d8c0507"
+                  ]
+                }
+              ],
+              "units": {
+                "speed_kmh": "km/h",
+                "vc": "ratio",
+                "flow_pcu_h": "pcu/h",
+                "baseline_car_flow": "veh/h",
+                "running_time_pcu_h": "pcu·h",
+                "time_change_pct": "%",
+                "new_neighbor_oversaturated_km": "km",
+                "max_extra_km": "km",
+                "parking": "level"
+              },
+              "recent_trial": null,
+              "scope": "所选动作须引用自己的新基准；同区域已试方案的反馈可解释暂缓备选，但不能证明备选效果。小汽车量为veh/h，汇总当量流量为pcu/h。"
+            }
+          },
+          "model_budget": {
+            "limit": 7,
+            "used": 2,
+            "remaining": 5,
+            "known_tokens": 19106,
+            "unknown_usage": 0,
+            "halted": false
+          },
+          "review_feedback": {
+            "version": "candidate-choice-correction-v1",
+            "correction": 1,
+            "maximum": 1,
+            "validation": {
+              "version": "planning-response-check-v1",
+              "status": "failed",
+              "code": "choice_basis",
+              "message": "备选取舍必须引用该备选实际可见的观测"
+            },
+            "previous_proposal": {
+              "action": "parking_a6b29e4dfd15",
+              "summary": "本轮选择area_1整体停车1级作为首个候选，对比基准建立同需求配对。核心5条方向均vc>1.7、停车3级，先测最强等级确定收益上限与邻区代价。",
+              "reason": "area_1（长江村路3方向）全部超饱和vc最高2.33，停车3级为最高干扰等级，优先对受影响最集中的area_1整体做最强治理（停车1级）作为第一候选，建立完整同需求配对。",
+              "risk": "强制停车1级可能引发绕行或邻区过载，需实测邻区耗时增幅与毛新增过饱和；若未能通过约束则转向2级或分方向方案。",
+              "next_check": "检验area_1三条方向整体停车1级是否比基准降低核心耗时、邻区增幅≤0.5%且毛新增过饱和≤0.1km；若通过，再比较同区域2级与另一候选方案。",
+              "evidence_refs": [
+                "20260930_110453_b91dea:baseline"
+              ],
+              "selection_basis": {
+                "observed_ids": [
+                  "area:20260930_110453_b91dea:baseline:area_1"
+                ],
+                "working_hypothesis": "对全部超饱和的area_1三个方向统一停车1级，可降低核心能耗与过饱和里程而不造成邻区明显恶化。",
+                "disconfirming_result": "若area_1停车1级导致邻区耗时增幅超过0.5%或毛新增过饱和超过0.1km，则说明整体强制强治理在本任务约束下代价不可接受，应转向分方向或较弱等级。",
+                "alternative_action": "parking_58ff01cdf4e9",
+                "alternative_tradeoff": "同区域停车2级属于较弱的1级对照，先测更强1级以确定上限收益；2级留待本候选偏保守或不过关时再实测。不能由此推断2级无效。",
+                "alternative_observed_id": null
+              }
+            },
+            "conclusion_issues": [],
+            "allowed_finding_ids": {
+              "hypothesis_updates": [],
+              "programme_updates": []
+            },
+            "instruction": "本轮动作尚未执行；仅因选点观测引用缺漏而修正一次。保留retained_action和retained_alternative_action，完整重交工具字段；observed_ids须引用所选动作自己的新基准；alternative_observed_id须单独引用备选自己的新基准或同区域实测反馈。若有recent_trial，顶层evidence_refs须引用其对应的实际场景ref，无须在observed_ids重复。不得改实测、门槛或选定实验。修正计入总预算；再次失败即停止。",
+            "retained_action": "parking_a6b29e4dfd15",
+            "retained_alternative_action": "parking_58ff01cdf4e9",
+            "relevant_observation_ids": [
+              "area:20260930_110453_b91dea:baseline:area_1"
+            ],
+            "recent_trial": null
+          }
+        },
+        "observation_digest": "4c8f729f7d31c585757df79bdd9e722609df13dc0904e2e24f15d3d926735e54",
+        "time": "2026-09-30T03:07:15.146386+00:00",
+        "requested": true
+      },
+      "conclusion_check": {
+        "version": "measured-conclusion-v14",
+        "status": "no_detected_conflict",
+        "costs": [],
+        "hypothesis_gaps": [],
+        "issues": [],
+        "scope": "停车等级按原始观测引用、区域与基准／现状／执行改动来源核对，未来备选不冒充执行。明确的并列指标等值断言按范围、单位和唯一实测场景分别核对；不将近似值、未知值或通过门槛视为零。区分明确否定的选择、执行或测量动作与已执行等级断言；否定不跨转折继承。明确候选区的停车等级仅与该区实际改动场景核对；未试区域不得继承其他候选区的治理等级。跨需求全称代价表述还需按每个需求的冻结门槛逐项核对。另核对邻区新增里程的符号、模型剩余额度和停车等级强弱的明确公开说法。另核对公开说明中明确声称的邻区数值门槛是否与冻结任务一致。另核对明确标注范围和pcu·h单位的前后耗时及其百分比，允许显示精度误差；未来试验不继承其他组的已执行措施。核对已提供的配对指标、明确停车等级、零代价表述及已知未测量项；S1/S2/S3仅为场景编号。检查不覆盖任意语言，未发现冲突不等于已证明所有解释。批次分配不能证明动态排队回堵或零风险。"
+      }
+    },
+    {
+      "ordinal": 2,
+      "job_id": "20260930_110453_b91dea",
+      "kind": "parking",
+      "status": "accepted",
+      "action": "parking_58ff01cdf4e9",
+      "reason": "已测parking_1（area_1三级方向整体停车1级）核心耗时降23.3%通过约束。现需至少比较2个不同停车方案；选择area_1整体停车2级作为第二候选，与parking_1同区域、不同等级形成完整对比，同时检验强度2级是否保持改善且保护邻区。备选考虑area_2停车1级作位置对比。",
+      "risk": "parking_1实测无邻区代价（neighbor time_change -0.18%、毛新增0）。但2级弱于1级，收益可能衰减或反向；且area_1仍有过饱和1.489km未消，本试验不改方案，剩余过饱和延续。",
+      "next_check": "检验area_1停车2级在核心耗时后是否仍低于基准，以及邻区耗时增幅与毛新增过饱和是否维持门槛内。",
+      "stop_basis": null,
+      "summary": "本轮比较area_1整体停车2级与已测停车1级，检验强度梯度及邻区保护是否保持。",
+      "selection_basis": {
+        "alternative_action": "parking_f4c81e6f67ba",
+        "alternative_observed_id": "area:20260930_110453_b91dea:baseline:area_2",
+        "alternative_tradeoff": "area_2停车1级作位置对比，可说明不同区域取舍；但先同区域完成强弱梯度对比更直接，且剩余原生运行有限，area_2收益未实测，暂缓不代表无效。",
+        "disconfirming_result": "若area_1停车2级核心耗时增幅或邻区毛新增过饱和超过门槛，则强度梯度非单调，2级不构成可推荐候选。",
+        "observed_ids": [
+          "area:20260930_110453_b91dea:baseline:area_1"
+        ],
+        "working_hypothesis": "停车2级对area_1整体仍能压低停车干扰、维持核心耗时低于基准，且邻区无超限代价。"
+      },
+      "selected": {
+        "title": "长江村路 · 3条方向 · 停车2级",
+        "changes": [
+          {
+            "from_node": 3240,
+            "to_node": 3239,
+            "old_parking": 3,
+            "parking": 2
+          },
+          {
+            "from_node": 3239,
+            "to_node": 3240,
+            "old_parking": 3,
+            "parking": 2
+          },
+          {
+            "from_node": 3239,
+            "to_node": 3238,
+            "old_parking": 3,
+            "parking": 2
+          }
+        ],
+        "region": "area_1"
+      },
+      "validation": {
+        "version": "planning-response-check-v1",
+        "status": "passed"
+      },
+      "hypothesis_updates": null,
+      "programme_updates": null,
+      "cost_acknowledgements": null,
+      "review_correction": null,
+      "conclusion_check": {
+        "version": "measured-conclusion-v14",
+        "status": "no_detected_conflict",
+        "costs": [
+          {
+            "ref": "20260930_110453_b91dea:parking_1",
+            "run": "parking_1",
+            "demand_factor": 1.0,
+            "roads": [
+              "长江村路"
+            ],
+            "constraint_passed": true,
+            "violations": [],
+            "core_time_change_pct": -23.308694361678317,
+            "core_net_oversaturated_km": 0.0,
+            "neighbor_time_change_pct": -0.18205257806130914,
+            "neighbor_net_oversaturated_km": 0.0,
+            "network_time_change_pct": -0.009296427176952449,
+            "network_net_oversaturated_km": 0.0,
+            "neighbor_new_oversaturated_km": 0,
+            "network_new_oversaturated_km": null,
+            "has_measured_cost": false
+          }
+        ],
+        "hypothesis_gaps": [],
+        "issues": [],
+        "scope": "停车等级按原始观测引用、区域与基准／现状／执行改动来源核对，未来备选不冒充执行。明确的并列指标等值断言按范围、单位和唯一实测场景分别核对；不将近似值、未知值或通过门槛视为零。区分明确否定的选择、执行或测量动作与已执行等级断言；否定不跨转折继承。明确候选区的停车等级仅与该区实际改动场景核对；未试区域不得继承其他候选区的治理等级。跨需求全称代价表述还需按每个需求的冻结门槛逐项核对。另核对邻区新增里程的符号、模型剩余额度和停车等级强弱的明确公开说法。另核对公开说明中明确声称的邻区数值门槛是否与冻结任务一致。另核对明确标注范围和pcu·h单位的前后耗时及其百分比，允许显示精度误差；未来试验不继承其他组的已执行措施。核对已提供的配对指标、明确停车等级、零代价表述及已知未测量项；S1/S2/S3仅为场景编号。检查不覆盖任意语言，未发现冲突不等于已证明所有解释。批次分配不能证明动态排队回堵或零风险。"
+      }
+    },
+    {
+      "ordinal": 3,
+      "job_id": "20260930_110453_b91dea",
+      "kind": "parking",
+      "status": "accepted",
+      "action": "study_2",
+      "reason": "本组停车的两个候选（1/2级）在需求×1下均通过约束且未现邻区代价，强度对照已完成。按研究深度需转第二组检验单向组织及组合的独立效果，故调用study_2开组。",
+      "risk": "两措施均无实测代价（邻区/全网耗时增幅与过饱和净变化均近0且无违规），但核心过饱和公里仍2.088与车位等级无关，方案仅改善车速与耗时；单向组织尚未实测，其效果与停车组合收益不可预判。",
+      "next_check": "在study_2中测单向组织单项及其与停车1级组合，建立独立新基准，检验单向是否进入分配及组合收益，最终逐项复核本组假设与实测代价。",
+      "stop_basis": null,
+      "summary": "本组两停车候选均通过约束且无邻区代价，强度对照完成；现转第二组以独立新基准检验单向组织及其与停车组合的独立效果。",
+      "selection_basis": null,
+      "selected": {
+        "title": "停车＋单向组织",
+        "road": "长江村路",
+        "scenario": "oneway",
+        "runs": 4
+      },
+      "validation": {
+        "version": "planning-response-check-v1",
+        "status": "passed"
+      },
+      "hypothesis_updates": null,
+      "programme_updates": null,
+      "cost_acknowledgements": null,
+      "review_correction": null,
+      "conclusion_check": {
+        "version": "measured-conclusion-v14",
+        "status": "no_detected_conflict",
+        "costs": [
+          {
+            "ref": "20260930_110453_b91dea:parking_1",
+            "run": "parking_1",
+            "demand_factor": 1.0,
+            "roads": [
+              "长江村路"
+            ],
+            "constraint_passed": true,
+            "violations": [],
+            "core_time_change_pct": -23.308694361678317,
+            "core_net_oversaturated_km": 0.0,
+            "neighbor_time_change_pct": -0.18205257806130914,
+            "neighbor_net_oversaturated_km": 0.0,
+            "network_time_change_pct": -0.009296427176952449,
+            "network_net_oversaturated_km": 0.0,
+            "neighbor_new_oversaturated_km": 0,
+            "network_new_oversaturated_km": null,
+            "has_measured_cost": false
+          },
+          {
+            "ref": "20260930_110453_b91dea:parking_2",
+            "run": "parking_2",
+            "demand_factor": 1.0,
+            "roads": [
+              "长江村路"
+            ],
+            "constraint_passed": true,
+            "violations": [],
+            "core_time_change_pct": -17.955567946479324,
+            "core_net_oversaturated_km": 0.0,
+            "neighbor_time_change_pct": -0.15071219440123684,
+            "neighbor_net_oversaturated_km": 0.0,
+            "network_time_change_pct": -0.007209090554372022,
+            "network_net_oversaturated_km": 0.0,
+            "neighbor_new_oversaturated_km": 0,
+            "network_new_oversaturated_km": null,
+            "has_measured_cost": false
+          }
+        ],
+        "hypothesis_gaps": [],
+        "issues": [],
+        "scope": "停车等级按原始观测引用、区域与基准／现状／执行改动来源核对，未来备选不冒充执行。明确的并列指标等值断言按范围、单位和唯一实测场景分别核对；不将近似值、未知值或通过门槛视为零。区分明确否定的选择、执行或测量动作与已执行等级断言；否定不跨转折继承。明确候选区的停车等级仅与该区实际改动场景核对；未试区域不得继承其他候选区的治理等级。跨需求全称代价表述还需按每个需求的冻结门槛逐项核对。另核对邻区新增里程的符号、模型剩余额度和停车等级强弱的明确公开说法。另核对公开说明中明确声称的邻区数值门槛是否与冻结任务一致。另核对明确标注范围和pcu·h单位的前后耗时及其百分比，允许显示精度误差；未来试验不继承其他组的已执行措施。核对已提供的配对指标、明确停车等级、零代价表述及已知未测量项；S1/S2/S3仅为场景编号。检查不覆盖任意语言，未发现冲突不等于已证明所有解释。批次分配不能证明动态排队回堵或零风险。"
+      }
+    },
+    {
+      "ordinal": 4,
+      "job_id": "20260930_110453_1bf58f",
+      "kind": "oneway_target",
+      "status": "rejected",
+      "action": "stop",
+      "reason": "说明中的禁行/保留方向与所选动作相反；未执行单向措施；未执行动作；未自动重试",
+      "risk": null,
+      "next_check": null,
+      "stop_basis": null,
+      "summary": null,
+      "selection_basis": null,
+      "selected": null,
+      "validation": {
+        "version": "planning-response-check-v1",
+        "status": "failed",
+        "code": "direction_reversed",
+        "message": "说明中的禁行/保留方向与所选动作相反；未执行单向措施"
+      },
+      "hypothesis_updates": null,
+      "programme_updates": null,
+      "cost_acknowledgements": null,
+      "review_correction": null,
+      "conclusion_check": null
+    }
+  ],
+  "source_files": {
+    "manifest": "工作材料\\源码联调证据\\20260930_named_questions_full_01\\original_files_manifest.json",
+    "manifest_sha256": "e4335e3e596212593ec0fe4894481870b1f05f41e524a581367ba5e65eeea23a",
+    "file_count": 3718,
+    "hashes_unchanged": true,
+    "source_request_sha256": "63a321bc5b439e5db6d45aa8a92058b8e23194b801e78689abb3712b4da5f041"
+  },
+  "usage": {
+    "responses": [
+      {
+        "response_id": "chatcmpl-6abc7c4a33694184cde2b00a",
+        "input_tokens": 7325,
+        "output_tokens": 626,
+        "tokens": 7951
+      },
+      {
+        "response_id": "chatcmpl-6abc7cde1195f3ca6ce9ddaa",
+        "input_tokens": 10607,
+        "output_tokens": 548,
+        "tokens": 11155
+      },
+      {
+        "response_id": "chatcmpl-6abc7ce376f655ec3469f0e7",
+        "input_tokens": 11405,
+        "output_tokens": 563,
+        "tokens": 11968
+      },
+      {
+        "response_id": "chatcmpl-6abc7d6e903814b27794f440",
+        "input_tokens": 13674,
+        "output_tokens": 602,
+        "tokens": 14276
+      },
+      {
+        "response_id": "chatcmpl-6abc7df9fe41740cf6c17b72",
+        "input_tokens": 13676,
+        "output_tokens": 414,
+        "tokens": 14090
+      },
+      {
+        "response_id": "chatcmpl-6abc7e828c00f1d572cd7467",
+        "input_tokens": 7967,
+        "output_tokens": 563,
+        "tokens": 8530
+      }
+    ],
+    "new_unique_requests": 6,
+    "new_known_tokens": 67970,
+    "project_retained_cumulative_requests": 161,
+    "project_retained_cumulative_known_tokens": 1551215,
+    "authorized_max_requests": 684,
+    "authorized_max_known_tokens": 4132560,
+    "new_ids_not_in_prior_indexes": true,
+    "previous_ledger": {
+      "path": "docs\\validation\\20260930_named_question_offline_review.json",
+      "sha256": "c534aac8b9b3b706de8cda3a91768a16cfb87d261172840054248bc38494d33c"
+    },
+    "not_full_account_bill": true
+  },
+  "end_state": {
+    "checked_runtime_locks": [
+      {
+        "path": "智能体实验\\runtime.lock",
+        "free": true,
+        "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+        "bytes_unchanged": true
+      },
+      {
+        "path": "智能体实验\\mixed_limit7_full_20260930_01\\runtime.lock",
+        "free": true,
+        "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+        "bytes_unchanged": true
+      },
+      {
+        "path": "工作材料\\便携异目录检查\\20260930_v2_RC13\\智能体实验\\oneway_scope_live_20260930_01\\runtime.lock",
+        "free": true,
+        "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+        "bytes_unchanged": true
+      },
+      {
+        "path": "工作材料\\便携异目录检查\\20260930_v2_RC14\\智能体实验\\mixed_complete_live_20260930_01\\runtime.lock",
+        "free": true,
+        "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+        "bytes_unchanged": true
+      },
+      {
+        "path": "智能体实验\\mixed_named_questions_full_20260930_01\\runtime.lock",
+        "free": true,
+        "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+        "bytes_unchanged": true
+      }
+    ],
+    "after_review_original_hashes_unchanged": true,
+    "after_review_locks_free_and_unchanged": true
+  },
+  "independent_semantic_review": {
+    "status": "needs_review",
+    "reviewed": "2026-09-30T03:31:11.420022+00:00",
+    "conclusion": "初始具名定义和两项停车强度配对已真实验证；整项只有4/7场景，单向及组合未执行，不能通过整体验收。",
+    "verified": [
+      "四项生成问题的具名研究、指标、参照、措施和量词与模型原始结构定义一致；原用户请求SHA保持。",
+      "H2展示两组实际邻区阈值0.5%和0.1km；H3/H4绑定单向组2；此处未发现旧组号或量词重复表述冲突。",
+      "停车组用相同三方向分别独立从基准3级改到1级和2级，两者均实际执行并通过约束；可以满足两个不同停车方案，不能说已比较两个位置。",
+      "第二候选依据首个实测结果主动选同区域2级；area_2仅为暂缓备选。初始双区域理由与后续强度选择分别保留。",
+      "首次停车选择发生一次备选观测引用修正；所选动作和备选保持，两次请求均计费，没有追加原生场景。",
+      "单向选点原回复的关闭3237→3236、保留3236→3237与工具一致，旧v3拒绝是指代误报。",
+      "全任务核验正确拒绝完整出证；两个独立基准的收益没有相加。"
+    ],
+    "remaining_issues": [
+      {
+        "id": "handoff_parking_level",
+        "source": "planning_trace[2].next_check",
+        "original": "在study_2中测单向组织单项及其与停车1级组合，建立独立新基准，检验单向是否进入分配及组合收益，最终逐项复核本组假设与实测代价。",
+        "fact": "固定源码2851d196的oneway_agent.analyze_oneway与单向菜单均指定停车2级；交接却写与停车1级组合。",
+        "state": "not_fixed_by_direction_v4"
+      },
+      {
+        "id": "target_execution_order",
+        "source": "planning_trace[3].proposal_excerpt.reason/next_check",
+        "original": {
+          "reason": "长江村路仅有新基准观测；停车2项（parking_1/2）已在独立组验证通过约束，本轮进入单向组需先执行单向试验建立本组事实。候选3237→3236禁行方向为本方向，反向3236→3237保留通行，符合方向语义。",
+          "next_check": "单向禁行后需核对：反向3236→3237保留通行；时间预算尚余2次，本轮选单向试验，待其完成后仍需停车单项与组合对照才可判定H3/H4优劣。"
+        },
+        "fact": "当前原生适配器选择目标后依次执行S1停车2级、S2单向、S3组合；不是先做单向，再等待下一轮选择停车及组合。",
+        "state": "not_fixed_by_direction_v4"
+      },
+      {
+        "id": "budget_type_ambiguous",
+        "source": "planning_trace[3].proposal_excerpt.next_check",
+        "original": "时间预算尚余2次",
+        "fact": "该次输入有2次模型请求（含本次），原生已完成4/7场景、尚余3个单项/组合场景。未写预算类型会误导；不能当成仿真只剩2次。",
+        "state": "not_fixed_by_direction_v4"
+      },
+      {
+        "id": "highest_parking_level_overstatement",
+        "source": "planning_trace[0].reason",
+        "original": "area_1（长江村路3方向）全部超饱和、vc最高2.14，停车3级为最高干扰等级，优先对受影响最集中的area_1整体做最强治理（停车1级）作为首候选，建立完整同需求配对。",
+        "fact": "原候选区当前为停车3级；接口还支持4级状态。这里应限定当前候选现状，不能把3级泛称全接口最高等级。",
+        "state": "needs_explicit_scope_in_model_text"
+      }
+    ],
+    "limitations": [
+      "v4影子校验通过不是全部语义已正确。",
+      "本次停止后不续跑、不改写原答复、不补发完成证明。"
+    ]
+  },
+  "pending": [
+    "model_next_action_level_order_and_budget_semantics",
+    "complete_new_mixed_native_acceptance",
+    "final_portable_including_current_source",
+    "physical_other_machine_acceptance"
+  ],
+  "partial_oneway_baseline_verification": {
+    "passed": true,
+    "scope": "baseline_only_not_complete_study",
+    "top_level_modules": 7,
+    "vehicle1_native_calls": 20,
+    "bridge": {
+      "passed": true,
+      "native_calls": 20,
+      "modes": {
+        "car": {
+          "calls": 5,
+          "od_cells": 110224,
+          "max_cell_od_sum_difference": 1.4210854715202004e-14,
+          "max_volume_sum_difference": 0.005000000001018634,
+          "transform_inputs_verified": true
+        },
+        "taxi": {
+          "calls": 5,
+          "od_cells": 110224,
+          "max_cell_od_sum_difference": 3.552713678800501e-15,
+          "max_volume_sum_difference": 0.005000000000109139,
+          "transform_inputs_verified": true
+        },
+        "motor": {
+          "calls": 5,
+          "od_cells": 110224,
+          "max_cell_od_sum_difference": 4.440892098500626e-16,
+          "max_volume_sum_difference": 0.005000000000002558,
+          "transform_inputs_verified": true
+        },
+        "truck": {
+          "calls": 5,
+          "od_cells": 110224,
+          "max_cell_od_sum_difference": 0.0,
+          "max_volume_sum_difference": 0.0,
+          "transform_inputs_verified": true
+        }
+      },
+      "policy_closures": [],
+      "transform_version": 2
+    },
+    "result_rows": {
+      "speed_kmh": 32981,
+      "flow_pcu_h": 32981,
+      "vc": 32981,
+      "time_s": 32981
+    },
+    "input_difference_files": [
+      "params/AsignParameter_car.dat",
+      "params/AsignParameter_motor.dat",
+      "params/AsignParameter_taxi.dat",
+      "params/AsignParameter_truck.dat",
+      "params/Mparam635.txt"
+    ],
+    "fresh_output_count": 24,
+    "stored_metrics_recomputed": true,
+    "core_not_yet_frozen": true,
+    "original_status": "incomplete"
+  },
+  "direction_v4_offline": {
+    "source": "tmp\\20260930_named_questions_direction_shadow.json",
+    "sha256": "1dea51e5c673399cf33c9c790c21ebdc213f1ca738f57ac87414e3a5272f3d1b",
+    "result": {
+      "kind": "read_only_direction_shadow",
+      "source": "智能体实验\\mixed_named_questions_full_20260930_01\\dispatches\\20260930_110453_b91dea.json",
+      "source_sha256": "dfba3b25a46a7e22846098cc7077c2d0e858b1ae91fdee95ae5bfe5437ad96de",
+      "source_status": "incomplete",
+      "original_proposal_sha256": "0359202a1e3a20671846f1b40097fd19b9fbed7b0e10ffb6aaafe5b377dd67e2",
+      "original_proposal_changed": false,
+      "only_changed_input_field": "context.direction_semantics_protocol",
+      "results": [
+        {
+          "protocol": "oneway-direction-v3",
+          "accepted": false,
+          "validation_code": "direction_reversed",
+          "conclusion_issues": []
+        },
+        {
+          "protocol": "oneway-direction-v4",
+          "accepted": true,
+          "validation_code": null,
+          "conclusion_issues": []
+        }
+      ],
+      "direction_claims": [
+        {
+          "field": "summary",
+          "clause": "本轮选取长江村路3237→3236禁行方向",
+          "direction": [
+            3237,
+            3236
+          ],
+          "role": "closed",
+          "reference_kind": "explicit",
+          "predicate": "禁行"
+        },
+        {
+          "field": "summary",
+          "clause": "反向保留",
+          "direction": [
+            3236,
+            3237
+          ],
+          "role": "retained",
+          "reference_kind": "reverse",
+          "predicate": "保留"
+        },
+        {
+          "field": "reason",
+          "clause": "候选3237→3236禁行方向为本方向",
+          "direction": [
+            3237,
+            3236
+          ],
+          "role": "closed",
+          "reference_kind": "explicit",
+          "predicate": "禁行"
+        },
+        {
+          "field": "reason",
+          "clause": "反向3236→3237保留通行",
+          "direction": [
+            3236,
+            3237
+          ],
+          "role": "retained",
+          "reference_kind": "explicit",
+          "predicate": "保留通行"
+        },
+        {
+          "field": "next_check",
+          "clause": "反向3236→3237保留通行",
+          "direction": [
+            3236,
+            3237
+          ],
+          "role": "retained",
+          "reference_kind": "explicit",
+          "predicate": "保留通行"
+        },
+        {
+          "field": "selection_basis.working_hypothesis",
+          "clause": "禁行拥堵方向3237→3236后",
+          "direction": [
+            3237,
+            3236
+          ],
+          "role": "closed",
+          "reference_kind": "explicit",
+          "predicate": "禁行"
+        },
+        {
+          "field": "selection_basis.working_hypothesis",
+          "clause": "反向保留通行",
+          "direction": [
+            3236,
+            3237
+          ],
+          "role": "retained",
+          "reference_kind": "reverse",
+          "predicate": "保留通行"
+        }
+      ],
+      "old_actual_reversal_still_rejected": {
+        "source": "docs\\validation\\20260928_quantifier_live_manual_review.json",
+        "sha256": "8c70ef1e8991dcbc8a4869ceab733662e41eaad5df4f153df93eeba0dfdb7b4e"
+      },
+      "new_model_calls": 0,
+      "new_native_scenes": 0,
+      "limitation": "工具影子通过只验证当前有限检查。原回复的后续停车等级、执行顺序及预算类型问题仍须独立复核；原任务不补发通过或续跑。"
+    },
+    "implementation_source": "working tree after 2851d196; original live run used v3",
+    "finite_grammar_boundary": "仅检查明确节点对/反向指代的局部禁行保留谓词，不证明任意自然语言、执行顺序或参数语义。"
+  },
+  "offline_checks_after_live": {
+    "python_tests": 693,
+    "python_log": "tmp\\20260930_direction_v4_python_tests.log",
+    "python_log_sha256": "ca5b4b4570a467c0be6ecb831ce634b2cedeac1ef3af6a0a7f7be48fe2bde7bb",
+    "targeted_python_tests": 45,
+    "node_groups": 4,
+    "additional_paid_requests": 0,
+    "additional_native_scenes": 0,
+    "frozen_reply_preflight": {
+      "source": "tmp\\20260930_v14_frozen_reply_preflight.json",
+      "sha256": "ca83479e0231968a6a925274a16f62397e64f34fe2a08e3890b8eb931c6d776f",
+      "result": {
+        "cases": [
+          {
+            "case": "rc14_first_choice",
+            "original_protocol": "measured-conclusion-v13",
+            "original_permissions_verified": true,
+            "correction_chain_verified_before_standalone_shadow": false,
+            "current_protocol": "measured-conclusion-v14",
+            "accepted": true,
+            "expected": true,
+            "validation_code": null,
+            "issues": []
+          },
+          {
+            "case": "rc14_region_state",
+            "original_protocol": "measured-conclusion-v13",
+            "original_permissions_verified": true,
+            "correction_chain_verified_before_standalone_shadow": false,
+            "current_protocol": "measured-conclusion-v14",
+            "accepted": true,
+            "expected": true,
+            "validation_code": null,
+            "issues": []
+          },
+          {
+            "case": "rc13_direction_choice",
+            "original_protocol": "measured-conclusion-v12",
+            "original_permissions_verified": true,
+            "correction_chain_verified_before_standalone_shadow": false,
+            "current_protocol": "measured-conclusion-v14",
+            "accepted": true,
+            "expected": true,
+            "validation_code": null,
+            "issues": []
+          },
+          {
+            "case": "rc13_zero_claim",
+            "original_protocol": "measured-conclusion-v12",
+            "original_permissions_verified": true,
+            "correction_chain_verified_before_standalone_shadow": false,
+            "current_protocol": "measured-conclusion-v14",
+            "accepted": false,
+            "expected": false,
+            "validation_code": "measured_conclusion",
+            "issues": [
+              {
+                "code": "measured_metric_assertion",
+                "field": "hypothesis_updates:H3",
+                "refs": [
+                  "20260930_085809_7c79a1:S1_parking"
+                ],
+                "quote": "邻区耗时增幅与毛新增过饱和均为0",
+                "metric": "neighbor_time_change_pct",
+                "claimed_value": 0.0,
+                "claimed_unit": "%",
+                "observed_value": 1.4973412265639752e-05,
+                "unit": "%",
+                "message": "S1_parking 的邻区耗时变化实测为 +1.4973412e-05%，与说明不符；并列指标须分别核对，极小非零值不能直接写成零。"
+              }
+            ]
+          },
+          {
+            "case": "mixed_second_choice",
+            "original_protocol": "measured-conclusion-v11",
+            "original_permissions_verified": true,
+            "correction_chain_verified_before_standalone_shadow": false,
+            "current_protocol": "measured-conclusion-v14",
+            "accepted": true,
+            "expected": true,
+            "validation_code": null,
+            "issues": []
+          },
+          {
+            "case": "mixed_corrected_handoff",
+            "original_protocol": "measured-conclusion-v11",
+            "original_permissions_verified": true,
+            "correction_chain_verified_before_standalone_shadow": true,
+            "current_protocol": "measured-conclusion-v14",
+            "accepted": true,
+            "expected": true,
+            "validation_code": null,
+            "issues": []
+          },
+          {
+            "case": "mixed_first_handoff_negation",
+            "original_protocol": "measured-conclusion-v11",
+            "original_permissions_verified": true,
+            "correction_chain_verified_before_standalone_shadow": false,
+            "current_protocol": "measured-conclusion-v14",
+            "accepted": true,
+            "expected": true,
+            "validation_code": null,
+            "issues": []
+          },
+          {
+            "case": "two_demand_final_review",
+            "original_protocol": "measured-conclusion-v9",
+            "original_permissions_verified": true,
+            "correction_chain_verified_before_standalone_shadow": false,
+            "current_protocol": "measured-conclusion-v14",
+            "accepted": true,
+            "expected": true,
+            "validation_code": null,
+            "issues": []
+          }
+        ],
+        "source_files": [
+          {
+            "path": "工作材料\\便携异目录检查\\20260930_v2_RC14\\智能体实验\\mixed_complete_live_20260930_01\\dispatches\\20260930_093644_f3962e.json",
+            "sha256": "5eec554ad79a3759c1cf5f66b6e3bd545bf3fc52677fecc1c060567ea52ea4ed"
+          },
+          {
+            "path": "工作材料\\便携异目录检查\\20260930_v2_RC13\\智能体实验\\oneway_scope_live_20260930_01\\dispatches\\20260930_085809_7c79a1.json",
+            "sha256": "6138aeab14085ce1349c9bedf029e62ae2dbf48a6846f5093422fd66a78a32d7"
+          },
+          {
+            "path": "智能体实验\\mixed_limit7_full_20260930_01\\dispatches\\20260930_080603_c82f1e.json",
+            "sha256": "63a321bc5b439e5db6d45aa8a92058b8e23194b801e78689abb3712b4da5f041"
+          },
+          {
+            "path": "智能体实验\\v9_final_model_probe_20260930_01\\probe.json",
+            "sha256": "9f9c1355fbf26b242c5947e441a760604366c6d9d08aeb6c7d1f352c1d94bcb9"
+          }
+        ],
+        "originals_unchanged": true,
+        "new_model_calls": 0,
+        "new_native_scenes": 0
+      }
+    }
+  }
+}

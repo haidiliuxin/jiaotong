@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Scheme Name="基础路网">
+    <Node Id="mFAnRoot" Name="交通方案设计">
+        <Node Id="mFAnWLTZ" Name="方案网络特征分析">
+            <Node Id="mFAnJCFX" Name="交通网络基础信息分析" />
+            </Node>
+    </Node>
+    <Node Id="mSJDnRoot_1" Name="交通运行分析">
+        <Node Id="mSJDnZHFP" Name="机动车交通分配">
+            <Node Id="mSJDnZHFPDLJRL" Name="多路径-增量加载交通分配" />
+        </Node>
+        <Node Id="mSJDnWLYN" Name="道路网络交通负荷分析">
+            <Node Id="mSJDnWLYNSECFH" Name="机动车路段交通负荷" />
+            <Node Id="mSJDnWLYNNODEFH" Name="机动车交叉口交通负荷" />
+            <Node Id="mSJDnWLYNNODEYW" Name="机动车交叉口延误与排队" />
+            </Node>
+    </Node>
+    <Node Id="mZSnRoot" Name="分析结果展示">
+        <Node Id="mZSnBG" Name="研究报告">
+            <Node Id="mZSnBGZT" Name="交通系统整体功能评估" />
+            <Node Id="mZSnBGZB" Name="交通运行指标统计汇总" />
+        </Node>
+        <Node Id="mZSnJZ" Name="数据表格">
+            <Node Id="mZSnJZJCKLL" Name="交通小区居民出行发生吸引量信息表" />
+            <Node Id="mZSnJZJCKXXB" Name="居民出行总OD矩阵" />
+            <Node Id="mZSnJZLDXXB" Name="居民出行分方式OD矩阵（人次）">
+                <Node Id="mZSnBXCXOD" Name="步行出行OD矩阵" />
+                <Node Id="mZSnZXCCXOD" Name="自行车出行OD矩阵" />
+                <Node Id="mZSnGGJTCXOD" Name="公共交通出行OD矩阵" />
+                <Node Id="mZSnFGJJDCCXOD" Name="非公交机动车出行OD矩阵" />
+            </Node>
+            <Node Id="mZSnJZXQCJZ" Name="机动车OD矩阵（PCU）">
+                <Node Id="mZSnGJCCXOD" Name="公交车OD矩阵" />
+                <Node Id="mZSnFGJKCCXOD" Name="非公交客车OD矩阵" />
+                <Node Id="mZSnMTCCXOD" Name="摩托车OD矩阵" />
+                <Node Id="mZSnCZCCXOD" Name="出租车OD矩阵" />
+                <Node Id="mZSnHYCLOD" Name="货运车辆OD矩阵" />
+            </Node>
+            <Node Id="mZSnLDJTNYHJXXB" Name="道路路段交通量与能源环境信息表" />
+            <Node Id="mZSnJCKJTNYHJXXB" Name="道路交叉口交通量与能源环境信息表" />
+            <Node Id="mZSnJZXZXQCJZ" Name="道路交叉口机动车流量流向表" />
+        </Node>
+    </Node>
+</Scheme>

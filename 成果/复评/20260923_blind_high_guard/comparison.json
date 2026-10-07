@@ -1,0 +1,132 @@
+{
+  "kind": "baseline_only_blind_high_guard_review_v1",
+  "new_model_calls": 0,
+  "job": "20260923_075629_706ef0",
+  "preregistration_card_sha256": "5589609d68da3e88205e20769344305b4d4256004040639776e9711ee2da43da",
+  "preregistration_selection_sha256": "9e5c32d7917bb07c8888347094cdd1255a08aa76f1068c98909e04f7ece31f31",
+  "old_baseline_job": "20260922_034228_3141eb",
+  "original_inputs_exact": true,
+  "baseline_raw_arrays_exact": {
+    "speed_kmh": true,
+    "flow_pcu_h": true,
+    "vc": true,
+    "time_s": true
+  },
+  "frozen_scope_exact": true,
+  "selected_roads": [
+    "兴浦路"
+  ],
+  "selected_directions": [
+    [
+      1179,
+      1180
+    ],
+    [
+      1180,
+      1181
+    ],
+    [
+      1181,
+      1180
+    ]
+  ],
+  "scope_sizes": {
+    "core": 3,
+    "neighbor": 15,
+    "network": 32060
+  },
+  "scenarios": 6,
+  "native_calls": 42,
+  "repeat_arrays_exact": {
+    "speed_kmh": true,
+    "flow_pcu_h": true,
+    "vc": true,
+    "time_s": true
+  },
+  "decision_replay": {
+    "protocol_frozen_before_first_run": true,
+    "raw_observations_verified": true,
+    "decisions_replayed": 5,
+    "chronological_decisions": true,
+    "budget_and_stopping_verified": true,
+    "complete_demand_recommendation_verified": true,
+    "report_exports_present": true
+  },
+  "recommendation": "baseline",
+  "recommended_changes": [],
+  "robust_across_tested_demand": null,
+  "full_demand_policies": [],
+  "rows": [
+    {
+      "name": "robust_p1_1.1",
+      "demand": 1.1,
+      "directions": [
+        "1179→1180",
+        "1180→1181",
+        "1181→1180"
+      ],
+      "parking_level": 2,
+      "core_time_before_pcu_h": 55.41794764151041,
+      "core_time_after_pcu_h": 42.870265389838465,
+      "neighbor_time_before_pcu_h": 133.51467462905387,
+      "neighbor_time_after_pcu_h": 167.76465197347295,
+      "core_time_pct": -22.641910762991145,
+      "neighbor_time_pct": 25.652593948625046,
+      "network_time_pct": 0.0029989903040261723,
+      "gross_new_network_km": 0.468,
+      "eligible": false,
+      "violations": [
+        "neighbor路段行驶时间增幅超过0.5%",
+        "全网毛新增过饱和有向里程超过0.1km"
+      ]
+    },
+    {
+      "name": "robust_p2_1.1",
+      "demand": 1.1,
+      "directions": [
+        "1180→1181"
+      ],
+      "parking_level": 2,
+      "core_time_before_pcu_h": 55.41794764151041,
+      "core_time_after_pcu_h": 51.48121776986973,
+      "neighbor_time_before_pcu_h": 133.51467462905387,
+      "neighbor_time_after_pcu_h": 166.51884112972348,
+      "core_time_pct": -7.103709247961943,
+      "neighbor_time_pct": 24.719504872678357,
+      "network_time_pct": 0.005947909374048876,
+      "gross_new_network_km": 0.468,
+      "eligible": false,
+      "violations": [
+        "neighbor路段行驶时间增幅超过0.5%",
+        "全网毛新增过饱和有向里程超过0.1km"
+      ]
+    }
+  ],
+  "search_stop": {
+    "version": "adaptive-paired-search-v1",
+    "stop_reason": "单路段措施仍违反约束，停止该方向搜索",
+    "early_rejections": [
+      {
+        "policy": "robust_p1_1.1",
+        "failed_factor": 1.1,
+        "unmeasured_factors": [
+          1.0,
+          0.9
+        ]
+      },
+      {
+        "policy": "robust_p2_1.1",
+        "failed_factor": 1.1,
+        "unmeasured_factors": [
+          1.0,
+          0.9
+        ]
+      }
+    ],
+    "candidates_started": 2,
+    "actual_runs": 6,
+    "unused_budget": 5
+  },
+  "archive_manifest_sha256": "8ce522a366a407e68947c09601e444bf8dbecdbc21d362a4aef2cb1f25e458a9",
+  "limitation": "事前排除历史治理范围的同案例高密度新区域；没有等预算新旧策略对照、异机或跨城市验证，也不是官方评分"
+}

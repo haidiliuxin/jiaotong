@@ -1,0 +1,37 @@
+{
+  "version": "natural-strategy-plan-v1",
+  "base_commit": "d7432c9a",
+  "local_tests": 229,
+  "javascript_syntax": "passed",
+  "new_live_api_requests": 0,
+  "new_native_simulations": 0,
+  "browser_checks": [
+    "model mode: textarea and launch, no scenario cards",
+    "manual settings hidden and disabled",
+    "rule mode restores controls",
+    "mode drafts preserved",
+    "no model call during refresh"
+  ],
+  "source_topology_checks": [
+    {
+      "road": "长江村路",
+      "automatic_oneway_diagnosis_available": true
+    },
+    {
+      "road": "红景路",
+      "eligible_turns": [
+        [
+          4797,
+          5990,
+          5991
+        ]
+      ],
+      "scope": "topology only, not simulated benefit"
+    }
+  ],
+  "remaining": [
+    "new planning tool and prompt not yet tested online",
+    "new multi-experiment native dispatch not yet run against TranStar",
+    "another physical machine not verified"
+  ]
+}

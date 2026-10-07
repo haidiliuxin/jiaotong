@@ -1,0 +1,143 @@
+{
+  "passed": true,
+  "new_paid_requests": 0,
+  "new_native_scenes": 0,
+  "source": {
+    "port": 8814,
+    "pid": 41732,
+    "empty": true,
+    "loaded_capabilities_match": true,
+    "protocol": "hypothesis-measurement-v1"
+  },
+  "readonly_synthetic_ui": {
+    "port": 8815,
+    "pid": 36920,
+    "write_http_status": 405,
+    "model_and_native_routes": false,
+    "judgments": [
+      "supported",
+      "contradicted",
+      "contradicted"
+    ],
+    "fixture_sha256": "9312bac636e15e0a216a11787c609fc7f5163a34b961bf68afc418760bed8f6e"
+  },
+  "browser": {
+    "tool": "cua_repl",
+    "source_tab": 37,
+    "synthetic_tab": 38,
+    "source_geometry_only": 32060,
+    "observation": "展开本假设配对值并点击场景引用；核心收益成立与推荐约束不成立并列，持续显示离线边界标识。",
+    "source_request_blank": true,
+    "console_errors": [],
+    "screenshot": "docs\\validation\\20260928_hypothesis_contract_ui.png",
+    "screenshot_sha256": "f566b5df94dc8a62ada5535e3746f28ee84a54072fea22ac49c0b56adf327c2c"
+  },
+  "preserved_records": 74,
+  "locks_free_and_unchanged": 7,
+  "original_records_sha256": {
+    "工作材料\\便携异目录检查\\20260927 智能规划 RC3\\智能体实验\\dispatches\\20260927_200218_bdef1b.json": "a9ffe44f0e67aa56a193c85800c45ba83c46bbbd4e7227228ad36d7eb4f0c8e6",
+    "工作材料\\便携异目录检查\\20260927 智能规划 RC3\\智能体实验\\jobs\\20260927_200218_bdef1b\\state.json": "fa285be08a605a4ab1b1f376247739e7daff78bf0cf868278a49631c715b6110",
+    "工作材料\\便携异目录检查\\20260927 智能规划 RC3\\智能体实验\\planning_attempts\\preview_191b1701c9d748ccbbca945a59ffe7b0.json": "5fa472438ee35c7fedffc97690d23b3d4caf69cc957136e69b716ee9122dd4d9",
+    "工作材料\\便携异目录检查\\20260927 智能规划 RC4\\智能体实验\\dispatches\\20260927_220409_164a26.json": "66729e340eae95ec775e160ac21b4e62a9b8fac411a789021d54d181e5d8985f",
+    "工作材料\\便携异目录检查\\20260927 智能规划 RC4\\智能体实验\\jobs\\20260927_220409_164a26\\state.json": "75c222dcbf40a2a65acd98340ff6d21914e2539202ebe0255f51c6c65e59a148",
+    "工作材料\\便携异目录检查\\20260927 智能规划 RC4\\智能体实验\\jobs\\20260927_220409_7adeea\\state.json": "81260436fde45d627e9545d288ec2f21edb2d6459bf10436d41936c2a2c2c402",
+    "工作材料\\便携异目录检查\\20260927 智能规划 RC4\\智能体实验\\planning_attempts\\preview_f78ad8ce4fcc4f068d3c1403613b97f7.json": "27587047e86290dd55c008020aa9a168d90c004a515f5828682fbca4c8caa5cf",
+    "工作材料\\便携异目录检查\\20260927 智能规划 RC5\\智能体实验\\dispatches\\20260927_224930_69ff12.json": "c2b4b1c95cff7b212cd1fe8c93aeed223d76df4e05cc41e28126d0777bffb8ad",
+    "工作材料\\便携异目录检查\\20260927 智能规划 RC5\\智能体实验\\jobs\\20260927_224930_45a743\\state.json": "c396a06927783593613771280036be6f876f85fdcc4222f1673c48dfc01f7b32",
+    "工作材料\\便携异目录检查\\20260927 智能规划 RC5\\智能体实验\\jobs\\20260927_224930_69ff12\\state.json": "ffe8f0ab5a4688e06404523a51e1153687d59a01686cd3dcf5fdfc7812a06381",
+    "工作材料\\便携异目录检查\\20260927 智能规划 RC5\\智能体实验\\planning_attempts\\preview_9717a18d73b149feb7ce606f66da14b3.json": "a4ce4e3e25afb8612475d60c043d3642dc8dc972e1f98f055df264a5598da109",
+    "工作材料\\便携异目录检查\\20260928 智能规划 RC10\\智能体实验\\dispatches\\20260928_011930_f0fe59.json": "307be35a92d32f627c30812f935afdee6b3799570c6db79349d02bf4709709e7",
+    "工作材料\\便携异目录检查\\20260928 智能规划 RC10\\智能体实验\\jobs\\20260928_011930_a1431b\\state.json": "bc1c4e44fd492fd24790d35665321fe533c3476c765c89b046ec099f2d311e33",
+    "工作材料\\便携异目录检查\\20260928 智能规划 RC10\\智能体实验\\jobs\\20260928_011930_f0fe59\\state.json": "1cda56ecfddf0fd046365cc6fb0dac800bd98aeef69dd80082b49df5951d50e8",
+    "工作材料\\便携异目录检查\\20260928 智能规划 RC10\\智能体实验\\planning_attempts\\preview_420e8398b6a94b1b932928c8e0415a05.json": "55fd023c7de1127e443521facadb12c211eae03bc801a035c2b721af68b51805",
+    "工作材料\\便携异目录检查\\20260928 智能规划 RC12\\智能体实验\\dispatches\\20260928_025217_e6d00a.json": "b734bba409f5d9cb99a2077b2ca9e00eb79d51902cf9687758455a9c13a8c55e",
+    "工作材料\\便携异目录检查\\20260928 智能规划 RC12\\智能体实验\\jobs\\20260928_025217_53291a\\state.json": "a4a31521e5d90287c1567848630921d42bdafb1ccf20ebc8b414abbe0672b7ee",
+    "工作材料\\便携异目录检查\\20260928 智能规划 RC12\\智能体实验\\jobs\\20260928_025217_e6d00a\\state.json": "5c476a798deac902ad719c78e0303bcc7c6c324cdbfc38702f4657f7877186ac",
+    "工作材料\\便携异目录检查\\20260928 智能规划 RC12\\智能体实验\\planning_attempts\\preview_8b729606d54a4994aeb736088de1eb80.json": "cd78b73356e621dcad6e926704a6bca84502165f9a2dfdd2d178985106c72525",
+    "工作材料\\便携异目录检查\\20260928 智能规划 RC15\\智能体实验\\dispatches\\20260928_041115_874b70.json": "166b56aff7a16d2c8484ad8d93e2e7e038d1af153875bd236305ad2ca9b5ae3b",
+    "工作材料\\便携异目录检查\\20260928 智能规划 RC15\\智能体实验\\jobs\\20260928_041115_874b70\\state.json": "c44b350e9d3d1a80fa327b7e6c78dc0d8782bd887e1e8889826d6e154f11a8ec",
+    "工作材料\\便携异目录检查\\20260928 智能规划 RC15\\智能体实验\\jobs\\20260928_041115_fa9f86\\state.json": "5dcbac273f43a84b22a3f329c2515a5fe21597e9b496bfd7d86d711d378e104b",
+    "工作材料\\便携异目录检查\\20260928 智能规划 RC15\\智能体实验\\planning_attempts\\preview_fcb88cb8551b42a6af12a5defbe244bc.json": "bf52fd2073f563a89920b17754a1fdad20f93e199b9b923987ea4f8b6f444ec8",
+    "工作材料\\便携异目录检查\\20260928 智能规划 RC9\\智能体实验\\planning_attempts\\preview_d2369a7572b3466ab246441ed316fefe.json": "7c63cbe264bf282740d4cab0d72fbab774df18a2b099e71ee72afd739fe24e70",
+    "智能体实验\\dispatches\\20260927_092230_2a933f.json": "8e56be809df6863ff9526c3a8fe5eb5f53300205b637a8ef63793610d096ea2a",
+    "智能体实验\\dispatches\\20260927_103319_c12371.json": "fcdc9ea348f8e2426db7579d19b5f2cb57fa95c185f55be368b8e6e604b2eb68",
+    "智能体实验\\dispatches\\20260927_112008_4167a7.json": "00e6c3b5d481e9fedf414ff1566c0b21d8bda355ef0cdbb4d830784e09f236cd",
+    "智能体实验\\dispatches\\20260927_115748_257465.json": "38ac91d12556f138390f43e8469c40d19bdba375a071ba138ce60544c246260b",
+    "智能体实验\\dispatches\\20260927_173803_4edb0d.json": "808faea100de3055ae4853969ae3eab743624e1fd7d33d8e60eabc43d4fd72e0",
+    "智能体实验\\dispatches\\20260927_192816_356d6a.json": "1d271b6bfb50e683c7f3ef2a9d0721223e1ced67fdf42f5acb7fa187c40af11f",
+    "智能体实验\\jobs\\20260908_031854_677ea5\\state.json": "1a757ed158c09b3b3e85b300a72ff362d7efe8c3083623628e91e5f0d6e29cae",
+    "智能体实验\\jobs\\20260908_040515_6a3455\\state.json": "d67819303b43a89512385c323b2e8ab9344cb76d9c04d904575ea2a376dc84f2",
+    "智能体实验\\jobs\\20260908_051630_12acc1\\state.json": "7c6f73684697258fc0477fa6a710404bb9006b22f45b7a8e8fd41a2d4798fd6a",
+    "智能体实验\\jobs\\20260908_053733_fe5765\\state.json": "100095d79f54061b52f2abbca69ab97a1bed3c4de0f244ac338ab1cd80f5e828",
+    "智能体实验\\jobs\\20260908_063947_a72333\\state.json": "222d4e504b25ae3d25c20a042dba132780aa9b3574d09685f30caf0e1b89c1a1",
+    "智能体实验\\jobs\\20260908_075938_e7444a\\state.json": "17b9bc742b4933e4beb064b1d16b33898997f4e91fd74b24c1c05bb5e4e7e605",
+    "智能体实验\\jobs\\20260908_100153_bb7198\\state.json": "17a515837eeae08b7e37d03d1df1f4ab3b0087d5043164b2e8c44ae4582922cf",
+    "智能体实验\\jobs\\20260908_164303_45ebd2\\state.json": "34fae8c1bc64ef3b0f5b3f65d2133cf13d095bff7f20f935e1cf930107eb06c3",
+    "智能体实验\\jobs\\20260908_164305_ad0d5e\\state.json": "c7fbecda0492aa7fbe260ced4f23bec4691ae9f40f8205002af89a19bd5a9a12",
+    "智能体实验\\jobs\\20260908_164310_11ac3b\\state.json": "e5845d2b3a349187f0629a34012bcddc0e448523751e023cd5df73496c3d3c72",
+    "智能体实验\\jobs\\20260908_172910_d5cdd1\\state.json": "5db68240c3e04eaeb314d043e31c1edd6529d609e171e072cf8a83827ed8edad",
+    "智能体实验\\jobs\\20260911_021806_858461\\state.json": "f15c3f026aaa917b18c9f28604acc17cec4c4f241cdb3d240c8681903e49418a",
+    "智能体实验\\jobs\\20260911_024329_7304a4\\state.json": "e7cdf1fb650a45e39f47a3498079568d3f2deeea0d864a8f188dd5b35399942c",
+    "智能体实验\\jobs\\20260919_205401_c8de76\\state.json": "9b465cb21f97ab242fe05e1627ae6d6a717cbb3bc2039127cce759484e6937f4",
+    "智能体实验\\jobs\\20260923_043018_f34e33\\state.json": "0ae0214ea240be619388fce98cd6e90f80a576b81f388e3623f06c68675f286b",
+    "智能体实验\\jobs\\20260923_052614_69e402\\state.json": "b0e93de38f441b5c2d79d0f832ec5658dc82f223e377e76dc39ea6ee033a4fdb",
+    "智能体实验\\jobs\\20260923_070135_0f0c08\\state.json": "a9d2cd6b7eb1cc495332e8824178c9abb6f9b9b44a22713deb83f479adcc61cf",
+    "智能体实验\\jobs\\20260923_075629_706ef0\\state.json": "545ca1fbfec516229528084515a90fba27b4b2a71596ff6cb7d79a6bc5081f6e",
+    "智能体实验\\jobs\\20260923_082625_c01eb1\\state.json": "e01b9ab7afad2efe5c7736738c9ccb0dad1251db48baf7af04a63bd0e6b09f43",
+    "智能体实验\\jobs\\20260923_083136_743057\\state.json": "1ffa6fbcf4b9615a0ece2c79ca047422c024c18eea7c52883f87d530e60f41bb",
+    "智能体实验\\jobs\\20260923_130932_39bcf6\\state.json": "73241a1b9d03a7515bf0bae2479555d89e31ccc216399f9432a36f75514f06c0",
+    "智能体实验\\jobs\\20260927_092230_2a933f\\state.json": "be6596ca6048b269c16953f290cb7b22281bd301f98453a548ab402b4896f4fc",
+    "智能体实验\\jobs\\20260927_103319_704abc\\state.json": "785681257ac8737d26214565f21e89a6088d4430e475321b87c07833d2fa54b2",
+    "智能体实验\\jobs\\20260927_103319_c12371\\state.json": "6ca685fdec6451ca5dd21e355d1154c76b8d523605e34a07a3abd89693ab2024",
+    "智能体实验\\jobs\\20260927_112008_4167a7\\state.json": "c17546c5b907d517e655ea33086e66dc65a1f09c6e94c9159fc02635c0644ef8",
+    "智能体实验\\jobs\\20260927_115748_257465\\state.json": "eb47f1e646df5c19eb4d70f14f092d2e05491aad898a30dbdf08f3323ef8d92d",
+    "智能体实验\\jobs\\20260927_173803_4edb0d\\state.json": "2067cb4fff2c806723d5e0b37b8583555120ac9cd9d930dc764e6291ccc11886",
+    "智能体实验\\jobs\\20260927_192816_356d6a\\state.json": "ec7c9c552da20f5083fd337fb917b331f3c7363ebbdf5c95e37383b46b12edb4",
+    "智能体实验\\planning_attempts\\preview_1a7346a23a47404a89c64668a5d3f810.json": "0cd5049087ad742b477556b505d02553e41bfa5eef7f234073774fa9e6c4ce1b",
+    "智能体实验\\planning_attempts\\preview_1e6f11fb4acb46118dd236ce55c9a526.json": "5655ec6416f91314dd59fbf2fff8d572ce02d728209cc3fd3bc22afe6a6fcd73",
+    "智能体实验\\planning_attempts\\preview_1ee375cafe604d44adf42a96e3398d06.json": "a4ffce9fc42096eba77cb3393c8e70ed4242dfb90ee7b25a4b0d1d2695de473f",
+    "智能体实验\\planning_attempts\\preview_26e14d4a2c9a4c578b32cc24d8bdd462.json": "a77f6a1a44462bff9dfb5652298847d9845a7f1e52724345f900ecfd74e8b57b",
+    "智能体实验\\planning_attempts\\preview_273862c7f1224204b9e0b5835e8e5aec.json": "9436626033b06f894dcb7ac58229d664b32d6eecc26898302416fe94224959c8",
+    "智能体实验\\planning_attempts\\preview_3051c6d650d742d5a002022635d710de.json": "393e8ee232e190558d44fd3a993c10d6594a7b79b8e9eccc5ecec2cff48051da",
+    "智能体实验\\planning_attempts\\preview_53b637b75665403d8c4b939408708da1.json": "23ecc1f1196a574d898b3c03d2b3a955de228230c31c3a1b322873512a30e8a3",
+    "智能体实验\\planning_attempts\\preview_58d8d941bf734149bb0d81276134c3b5.json": "200a3e08be72f30967ba249238485ff4fddd834207e9ce3a90c774d2290922e3",
+    "智能体实验\\planning_attempts\\preview_6fdc4517fb3c4e2d9153206c864cd697.json": "92781a1c1d9a3bf8f466547afa2684bb8ec59778009e5caae4db6f814409687a",
+    "智能体实验\\planning_attempts\\preview_a4100807408d4084a77ba92bb265e0d7.json": "6c679bda8ab6794daa12de445e560aa860ba9464d6d4a70ec735796949c55327",
+    "智能体实验\\planning_attempts\\preview_b7e949ab19d04b668a08989e657a8f4a.json": "7ff91dfedfced57b5704f54387ed1fd0fe6f6c20509b21c1604ae2c74ccf60ec",
+    "智能体实验\\planning_attempts\\preview_b8d291f14d5a405aa8c4083f66f42ba3.json": "775e7a607f26bbf275afd99f72e3c75d4ac419b2fdf7664ff48e8b189b1c6420",
+    "智能体实验\\planning_attempts\\preview_d7e85853698e48439accba9be75bf595.json": "edcaf65e7e40d6c8b01df19c154a49236a66e25c89315843aa147843a11a2362",
+    "智能体实验\\planning_attempts\\preview_ec78c82b281640f88f52927c8139d422.json": "4845a16e79c88f55f1344d9dccdba07559fea0feafd1010de833a89acc61f9ae",
+    "智能体实验\\planning_attempts\\preview_ee3a799f46884bb080e0151d7f9f4161.json": "1507e068be43b1692b9ce99810d1c358dd659a5a8c0e963f4584ff05bf4dd2ad",
+    "智能体实验\\planning_attempts\\preview_fa9d2b7e1f9c4f9f855db826bc887267.json": "8d469d313dc8aeec6c851e3934d323394488d8b0afaad31c732e93da7c8943df"
+  },
+  "locks": {
+    "智能体实验\\runtime.lock": {
+      "free": true,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    "工作材料\\便携异目录检查\\20260927 智能规划 RC3\\智能体实验\\runtime.lock": {
+      "free": true,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    "工作材料\\便携异目录检查\\20260927 智能规划 RC4\\智能体实验\\runtime.lock": {
+      "free": true,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    "工作材料\\便携异目录检查\\20260927 智能规划 RC5\\智能体实验\\runtime.lock": {
+      "free": true,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    "工作材料\\便携异目录检查\\20260928 智能规划 RC10\\智能体实验\\runtime.lock": {
+      "free": true,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    "工作材料\\便携异目录检查\\20260928 智能规划 RC12\\智能体实验\\runtime.lock": {
+      "free": true,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    "工作材料\\便携异目录检查\\20260928 智能规划 RC15\\智能体实验\\runtime.lock": {
+      "free": true,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    }
+  }
+}

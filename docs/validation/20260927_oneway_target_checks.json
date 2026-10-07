@@ -1,0 +1,107 @@
+{
+  "stage": "oneway-target-v1",
+  "base_commit": "4ea336af",
+  "created": "2026-09-27T07:20:14.236222+00:00",
+  "overall_complete": false,
+  "live": {
+    "new_model_calls": 0,
+    "new_native_scenarios": 0,
+    "credentials_read_or_changed": false
+  },
+  "local_checks": {
+    "python_tests": 319,
+    "python_passed": true,
+    "node_checks": [
+      "test_planner_view.cjs",
+      "test_map_view.cjs",
+      "test_dispatch_ui.cjs"
+    ],
+    "javascript_syntax_files": 5,
+    "synthetic_controller": {
+      "nonfirst_target": [
+        3,
+        4
+      ],
+      "demand_factors": [
+        1,
+        1.1
+      ],
+      "scenarios": 8,
+      "model_slots_including_composition": 3,
+      "programme_consistency_passed": true,
+      "raw_native_evidence": false,
+      "full_agent_entry_success_and_failure": true
+    },
+    "checks_include": [
+      "explicit_road_and_direction_scope",
+      "graph_and_reverse_parking_gate",
+      "finite_four_target_catalogue",
+      "real_action_parameters_follow_choice",
+      "no_retry_or_rule_fallback",
+      "reserve_final_review_and_other_groups",
+      "reject_missing_or_modified_choice",
+      "reject_execution_before_choice"
+    ],
+    "final_targeted_python_tests": 39,
+    "final_targeted_python_passed": true
+  },
+  "browser": {
+    "preview": "http://127.0.0.1:8772/",
+    "fixture_is_synthetic": true,
+    "fixture_is_native_acceptance": false,
+    "screenshot": "20260927_oneway_target_panel_fixture.png",
+    "candidate_card_width": 329,
+    "candidate_content_width": 329,
+    "viewport_width": 1081,
+    "document_width": 1081,
+    "selected_cards": 1,
+    "main_preview_errors": [],
+    "main_map_is_historical_job": "20260927_115748_257465",
+    "fixture_buttons_not_live_map_tests": true
+  },
+  "legacy_read_only_audit": {
+    "job": "20260922_054924_651bba",
+    "path": "智能体实验/portable_runs/20260922_054924_651bba",
+    "command": "verify(job, archived=True, write=False)",
+    "passed": true,
+    "scenarios": 13,
+    "module_executions": 91,
+    "repeat_arrays_exact": {
+      "speed_kmh": true,
+      "flow_pcu_h": true,
+      "vc": true,
+      "time_s": true
+    },
+    "is_current_protocol_acceptance": false,
+    "source_untouched": true
+  },
+  "runtime": {
+    "native_lock_available_before_work_and_preview_restart": true,
+    "active_dispatches_before_preview_restart": [],
+    "managed_preview_port": 8772,
+    "historical_preview_ports_preserved": [
+      8769,
+      8770,
+      8771
+    ],
+    "preview_restart_note": "终止旧的受管预览时一个客户端断连报告WinError10053；新受管预览已启动，同一页面读到历史任务标识且没有前端错误。无活动仿真被中断。"
+  },
+  "source_sha256": {
+    "traffic_agent/oneway_planning.py": "e498696626724de602ceb55835503f74eb9f830559f7e3aabb774a1376245e01",
+    "traffic_agent/oneway_agent.py": "5fef5f1b8285de521027fcf8c8dfc18140b878b976a65aeed937ee3046196e12",
+    "traffic_agent/agent.py": "c343b983a2962779e8d1bb4cab4e049bafaa19677ce88e3221d0dce71130d07b",
+    "traffic_agent/dispatch.py": "faf0d1426305ee51a4553bd34f187fe781b0aa66a6d2b1a0616cf3771dbca083",
+    "traffic_agent/feedback_planner.py": "413b44677a7805e3e34c8690a17c20d246307f52206294944c99b51cdc6ef2e4",
+    "traffic_agent/natural_plan.py": "5a5dd33ed1e9b314dff86d44a3134e9397eff1972ec752562e389ae2c51fcb1c",
+    "traffic_agent/planning_audit.py": "ac46dd718af0558f662eb553fb28122fac9ea824a4684f9228c3e570c23c8de3",
+    "traffic_agent/planning_review.py": "2b5f005bbc732fb46803c94b029a90772f21ca455a7c3cb56ef609388a988fe5",
+    "traffic_agent/static/planner_view.js": "da8d37b795e26c3a492aab10003ed5e3dd5acc8b4c1e41a519a151979b9c6a0b",
+    "scripts/verify_experiment.py": "f5869beac145fbb4b3dc32f50a0fbd9b4aac200fc3c2115be68f635858889591"
+  },
+  "pending": [
+    "latest_model_target_selection_with_real_native_outputs",
+    "latest_multi_region_and_programme_live_acceptance",
+    "current_portable_release",
+    "separate_physical_machine_acceptance"
+  ]
+}

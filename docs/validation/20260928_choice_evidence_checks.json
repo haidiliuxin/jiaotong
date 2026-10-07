@@ -1,0 +1,45 @@
+{
+  "passed": true,
+  "protocol": "observed-choice-basis-v1",
+  "model_boundary": "synthetic",
+  "execution_boundary": "synthetic",
+  "paid_requests": 0,
+  "new_native_scenes": 0,
+  "synthetic_requests": 5,
+  "synthetic_scenes": 6,
+  "choices": [
+    {
+      "phase": "parking",
+      "action": "parking_7f8dcfb2d67d",
+      "basis": {
+        "observed_ids": [
+          "area:20260928_054305_e09a2f:baseline:area_1"
+        ],
+        "alternative_action": "parking_7fb705f53245",
+        "working_hypothesis": "合成流程假设：所选措施的核心收益与周边代价仍需配对试验。",
+        "disconfirming_result": "若同需求核心耗时不降低或周边代价超过原阈值，则不推荐该措施。",
+        "alternative_tradeoff": "仅比较本轮可见条件，备选未测效果仍未知。"
+      }
+    },
+    {
+      "phase": "oneway_target",
+      "action": "oneway_5_4",
+      "basis": {
+        "observed_ids": [
+          "target:20260928_054305_d59312:baseline:oneway_5_4",
+          "target:20260928_054305_d59312:baseline:oneway_4_5"
+        ],
+        "alternative_action": "oneway_4_5",
+        "working_hypothesis": "合成流程假设：所选措施的核心收益与周边代价仍需配对试验。",
+        "disconfirming_result": "若同需求核心耗时不降低或周边代价超过原阈值，则不推荐该措施。",
+        "alternative_tradeoff": "仅比较本轮可见条件，备选未测效果仍未知。"
+      }
+    }
+  ],
+  "legacy_choice_contract_unchanged": true,
+  "legacy_findings_unchanged": true,
+  "preserved_records": 74,
+  "preserved_locks": 7,
+  "fixture_sha256": "66bda810f3a514905c925c37375ef6b6ff8c8aeb69488b7f1edc90de2b27d4bc",
+  "limitation": "引用与字段边界通过，不等于任意文字推理正确；新版协议仍待少量真实联调。"
+}

@@ -1,0 +1,761 @@
+{
+  "job": "20260922_034228_3141eb",
+  "verification": {
+    "passed": true,
+    "version": "backtracking-challenge-audit-v1",
+    "physical_scenes": 37,
+    "native_module_calls": 259,
+    "regions": 3,
+    "state_sha256": "b6953fc9f2aafc3db8d600bc728b9ffdf4d8e9a9cb36ecf1d7fb063d9abc12e5",
+    "protocol_sha256": "034310de86495e48e8d8062dd040caa16e3afeac478e69cbb18b8c43899dbecd",
+    "selection_sha256": "7459b6e706b3bd5b846477360890052b18715ef789efb2efb89c7fcda338d300",
+    "raw_inputs_outputs_verified": true,
+    "prospective_selection_rebuilt": true,
+    "decisions_replayed": {
+      "decisions": 69,
+      "unique_policy_scenes": 33,
+      "shared_observations": 36,
+      "logical_scenes": 105
+    },
+    "repeatability": true,
+    "runs": [
+      {
+        "name": "baseline",
+        "modules": 7,
+        "rows": 32981,
+        "demand_factor": 1.0,
+        "internal_factor": 1.0,
+        "changed_inputs": []
+      },
+      {
+        "name": "baseline_1.1",
+        "modules": 7,
+        "rows": 32981,
+        "demand_factor": 1.1,
+        "internal_factor": 1.099999832501556,
+        "changed_inputs": [
+          "result/ODCar.tsd"
+        ]
+      },
+      {
+        "name": "baseline_0.9",
+        "modules": 7,
+        "rows": 32981,
+        "demand_factor": 0.9,
+        "internal_factor": 0.8999999282149527,
+        "changed_inputs": [
+          "result/ODCar.tsd"
+        ]
+      },
+      {
+        "name": "case_001",
+        "modules": 7,
+        "rows": 32981,
+        "demand_factor": 1.1,
+        "internal_factor": 1.099999832501556,
+        "changed_inputs": [
+          "data/manageL.txt",
+          "result/ODCar.tsd"
+        ]
+      },
+      {
+        "name": "case_002",
+        "modules": 7,
+        "rows": 32981,
+        "demand_factor": 1.0,
+        "internal_factor": 1.0,
+        "changed_inputs": [
+          "data/manageL.txt"
+        ]
+      },
+      {
+        "name": "case_003",
+        "modules": 7,
+        "rows": 32981,
+        "demand_factor": 0.9,
+        "internal_factor": 0.8999999282149527,
+        "changed_inputs": [
+          "data/manageL.txt",
+          "result/ODCar.tsd"
+        ]
+      },
+      {
+        "name": "case_004",
+        "modules": 7,
+        "rows": 32981,
+        "demand_factor": 1.1,
+        "internal_factor": 1.099999832501556,
+        "changed_inputs": [
+          "data/manageL.txt",
+          "result/ODCar.tsd"
+        ]
+      },
+      {
+        "name": "case_005",
+        "modules": 7,
+        "rows": 32981,
+        "demand_factor": 1.1,
+        "internal_factor": 1.099999832501556,
+        "changed_inputs": [
+          "data/manageL.txt",
+          "result/ODCar.tsd"
+        ]
+      },
+      {
+        "name": "case_006",
+        "modules": 7,
+        "rows": 32981,
+        "demand_factor": 1.0,
+        "internal_factor": 1.0,
+        "changed_inputs": [
+          "data/manageL.txt"
+        ]
+      },
+      {
+        "name": "case_007",
+        "modules": 7,
+        "rows": 32981,
+        "demand_factor": 1.0,
+        "internal_factor": 1.0,
+        "changed_inputs": [
+          "data/manageL.txt"
+        ]
+      },
+      {
+        "name": "case_008",
+        "modules": 7,
+        "rows": 32981,
+        "demand_factor": 0.9,
+        "internal_factor": 0.8999999282149527,
+        "changed_inputs": [
+          "data/manageL.txt",
+          "result/ODCar.tsd"
+        ]
+      },
+      {
+        "name": "case_009",
+        "modules": 7,
+        "rows": 32981,
+        "demand_factor": 0.9,
+        "internal_factor": 0.8999999282149527,
+        "changed_inputs": [
+          "data/manageL.txt",
+          "result/ODCar.tsd"
+        ]
+      },
+      {
+        "name": "case_010",
+        "modules": 7,
+        "rows": 32981,
+        "demand_factor": 1.1,
+        "internal_factor": 1.099999832501556,
+        "changed_inputs": [
+          "data/manageL.txt",
+          "result/ODCar.tsd"
+        ]
+      },
+      {
+        "name": "case_011",
+        "modules": 7,
+        "rows": 32981,
+        "demand_factor": 1.1,
+        "internal_factor": 1.099999832501556,
+        "changed_inputs": [
+          "data/manageL.txt",
+          "result/ODCar.tsd"
+        ]
+      },
+      {
+        "name": "case_012",
+        "modules": 7,
+        "rows": 32981,
+        "demand_factor": 1.0,
+        "internal_factor": 1.0,
+        "changed_inputs": [
+          "data/manageL.txt"
+        ]
+      },
+      {
+        "name": "case_013",
+        "modules": 7,
+        "rows": 32981,
+        "demand_factor": 1.0,
+        "internal_factor": 1.0,
+        "changed_inputs": [
+          "data/manageL.txt"
+        ]
+      },
+      {
+        "name": "case_014",
+        "modules": 7,
+        "rows": 32981,
+        "demand_factor": 0.9,
+        "internal_factor": 0.8999999282149527,
+        "changed_inputs": [
+          "data/manageL.txt",
+          "result/ODCar.tsd"
+        ]
+      },
+      {
+        "name": "case_015",
+        "modules": 7,
+        "rows": 32981,
+        "demand_factor": 0.9,
+        "internal_factor": 0.8999999282149527,
+        "changed_inputs": [
+          "data/manageL.txt",
+          "result/ODCar.tsd"
+        ]
+      },
+      {
+        "name": "case_016",
+        "modules": 7,
+        "rows": 32981,
+        "demand_factor": 1.1,
+        "internal_factor": 1.099999832501556,
+        "changed_inputs": [
+          "data/manageL.txt",
+          "result/ODCar.tsd"
+        ]
+      },
+      {
+        "name": "case_017",
+        "modules": 7,
+        "rows": 32981,
+        "demand_factor": 1.0,
+        "internal_factor": 1.0,
+        "changed_inputs": [
+          "data/manageL.txt"
+        ]
+      },
+      {
+        "name": "case_018",
+        "modules": 7,
+        "rows": 32981,
+        "demand_factor": 0.9,
+        "internal_factor": 0.8999999282149527,
+        "changed_inputs": [
+          "data/manageL.txt",
+          "result/ODCar.tsd"
+        ]
+      },
+      {
+        "name": "case_019",
+        "modules": 7,
+        "rows": 32981,
+        "demand_factor": 1.1,
+        "internal_factor": 1.099999832501556,
+        "changed_inputs": [
+          "data/manageL.txt",
+          "result/ODCar.tsd"
+        ]
+      },
+      {
+        "name": "case_020",
+        "modules": 7,
+        "rows": 32981,
+        "demand_factor": 1.1,
+        "internal_factor": 1.099999832501556,
+        "changed_inputs": [
+          "data/manageL.txt",
+          "result/ODCar.tsd"
+        ]
+      },
+      {
+        "name": "case_021",
+        "modules": 7,
+        "rows": 32981,
+        "demand_factor": 1.0,
+        "internal_factor": 1.0,
+        "changed_inputs": [
+          "data/manageL.txt"
+        ]
+      },
+      {
+        "name": "case_022",
+        "modules": 7,
+        "rows": 32981,
+        "demand_factor": 1.0,
+        "internal_factor": 1.0,
+        "changed_inputs": [
+          "data/manageL.txt"
+        ]
+      },
+      {
+        "name": "case_023",
+        "modules": 7,
+        "rows": 32981,
+        "demand_factor": 0.9,
+        "internal_factor": 0.8999999282149527,
+        "changed_inputs": [
+          "data/manageL.txt",
+          "result/ODCar.tsd"
+        ]
+      },
+      {
+        "name": "case_024",
+        "modules": 7,
+        "rows": 32981,
+        "demand_factor": 0.9,
+        "internal_factor": 0.8999999282149527,
+        "changed_inputs": [
+          "data/manageL.txt",
+          "result/ODCar.tsd"
+        ]
+      },
+      {
+        "name": "case_025",
+        "modules": 7,
+        "rows": 32981,
+        "demand_factor": 1.1,
+        "internal_factor": 1.099999832501556,
+        "changed_inputs": [
+          "data/manageL.txt",
+          "result/ODCar.tsd"
+        ]
+      },
+      {
+        "name": "case_026",
+        "modules": 7,
+        "rows": 32981,
+        "demand_factor": 1.0,
+        "internal_factor": 1.0,
+        "changed_inputs": [
+          "data/manageL.txt"
+        ]
+      },
+      {
+        "name": "case_027",
+        "modules": 7,
+        "rows": 32981,
+        "demand_factor": 0.9,
+        "internal_factor": 0.8999999282149527,
+        "changed_inputs": [
+          "data/manageL.txt",
+          "result/ODCar.tsd"
+        ]
+      },
+      {
+        "name": "case_028",
+        "modules": 7,
+        "rows": 32981,
+        "demand_factor": 1.1,
+        "internal_factor": 1.099999832501556,
+        "changed_inputs": [
+          "data/manageL.txt",
+          "result/ODCar.tsd"
+        ]
+      },
+      {
+        "name": "case_029",
+        "modules": 7,
+        "rows": 32981,
+        "demand_factor": 1.0,
+        "internal_factor": 1.0,
+        "changed_inputs": [
+          "data/manageL.txt"
+        ]
+      },
+      {
+        "name": "case_030",
+        "modules": 7,
+        "rows": 32981,
+        "demand_factor": 0.9,
+        "internal_factor": 0.8999999282149527,
+        "changed_inputs": [
+          "data/manageL.txt",
+          "result/ODCar.tsd"
+        ]
+      },
+      {
+        "name": "case_031",
+        "modules": 7,
+        "rows": 32981,
+        "demand_factor": 1.1,
+        "internal_factor": 1.099999832501556,
+        "changed_inputs": [
+          "data/manageL.txt",
+          "result/ODCar.tsd"
+        ]
+      },
+      {
+        "name": "case_032",
+        "modules": 7,
+        "rows": 32981,
+        "demand_factor": 1.0,
+        "internal_factor": 1.0,
+        "changed_inputs": [
+          "data/manageL.txt"
+        ]
+      },
+      {
+        "name": "case_033",
+        "modules": 7,
+        "rows": 32981,
+        "demand_factor": 0.9,
+        "internal_factor": 0.8999999282149527,
+        "changed_inputs": [
+          "data/manageL.txt",
+          "result/ODCar.tsd"
+        ]
+      },
+      {
+        "name": "baseline_repeat",
+        "modules": 7,
+        "rows": 32981,
+        "demand_factor": 1.0,
+        "internal_factor": 1.0,
+        "changed_inputs": []
+      }
+    ],
+    "meaning": "原始文件重算、时序与代码摘要核对；不是数字签名、独立机器重跑或统计显著性证明"
+  },
+  "outcomes": [
+    {
+      "region": "high",
+      "roads": [
+        "珍珠南路"
+      ],
+      "strategy": "fixed_diverse",
+      "qualified": true,
+      "eligible": 3,
+      "recommendation": "high_fixed_diverse_p1_1",
+      "changes": [
+        {
+          "from_node": 694,
+          "to_node": 693,
+          "old_parking": 3,
+          "parking": 2
+        },
+        {
+          "from_node": 694,
+          "to_node": 695,
+          "old_parking": 3,
+          "parking": 2
+        },
+        {
+          "from_node": 695,
+          "to_node": 694,
+          "old_parking": 3,
+          "parking": 2
+        }
+      ],
+      "core_change": -12.202489734860134,
+      "neighbor_change": 0.28374881233148574,
+      "network_change": -0.014923243309883372,
+      "logical_scenes": 13,
+      "budget": 13,
+      "backtracks": [],
+      "risks": {
+        "worst_new_network_oversaturated_km": 1.048921,
+        "worst_inner_neighbor_time_change_pct": 3.991836109472957,
+        "worst_gross_time_added_pcu_h": 52.82700402170499
+      }
+    },
+    {
+      "region": "high",
+      "roads": [
+        "珍珠南路"
+      ],
+      "strategy": "feedback_halving",
+      "qualified": true,
+      "eligible": 2,
+      "recommendation": "high_feedback_halving_p1_1",
+      "changes": [
+        {
+          "from_node": 694,
+          "to_node": 693,
+          "old_parking": 3,
+          "parking": 2
+        },
+        {
+          "from_node": 694,
+          "to_node": 695,
+          "old_parking": 3,
+          "parking": 2
+        },
+        {
+          "from_node": 695,
+          "to_node": 694,
+          "old_parking": 3,
+          "parking": 2
+        }
+      ],
+      "core_change": -12.202489734860134,
+      "neighbor_change": 0.28374881233148574,
+      "network_change": -0.014923243309883372,
+      "logical_scenes": 13,
+      "budget": 13,
+      "backtracks": [],
+      "risks": {
+        "worst_new_network_oversaturated_km": 1.048921,
+        "worst_inner_neighbor_time_change_pct": 3.991836109472957,
+        "worst_gross_time_added_pcu_h": 52.82700402170499
+      }
+    },
+    {
+      "region": "high",
+      "roads": [
+        "珍珠南路"
+      ],
+      "strategy": "feedback_backtracking",
+      "qualified": true,
+      "eligible": 2,
+      "recommendation": "high_feedback_backtracking_p1_1",
+      "changes": [
+        {
+          "from_node": 694,
+          "to_node": 693,
+          "old_parking": 3,
+          "parking": 2
+        },
+        {
+          "from_node": 694,
+          "to_node": 695,
+          "old_parking": 3,
+          "parking": 2
+        },
+        {
+          "from_node": 695,
+          "to_node": 694,
+          "old_parking": 3,
+          "parking": 2
+        }
+      ],
+      "core_change": -12.202489734860134,
+      "neighbor_change": 0.28374881233148574,
+      "network_change": -0.014923243309883372,
+      "logical_scenes": 13,
+      "budget": 13,
+      "backtracks": [],
+      "risks": {
+        "worst_new_network_oversaturated_km": 1.048921,
+        "worst_inner_neighbor_time_change_pct": 3.991836109472957,
+        "worst_gross_time_added_pcu_h": 52.82700402170499
+      }
+    },
+    {
+      "region": "medium",
+      "roads": [
+        "新浦路"
+      ],
+      "strategy": "fixed_diverse",
+      "qualified": true,
+      "eligible": 3,
+      "recommendation": "medium_fixed_diverse_p1_1",
+      "changes": [
+        {
+          "from_node": 96,
+          "to_node": 682,
+          "old_parking": 3,
+          "parking": 2
+        },
+        {
+          "from_node": 681,
+          "to_node": 686,
+          "old_parking": 3,
+          "parking": 2
+        },
+        {
+          "from_node": 686,
+          "to_node": 681,
+          "old_parking": 3,
+          "parking": 2
+        }
+      ],
+      "core_change": -16.269071921048052,
+      "neighbor_change": 0.027488830061961345,
+      "network_change": -0.0054444177051693465,
+      "logical_scenes": 13,
+      "budget": 13,
+      "backtracks": [],
+      "risks": {
+        "worst_new_network_oversaturated_km": 0.195,
+        "worst_inner_neighbor_time_change_pct": 0.043501334571738326,
+        "worst_gross_time_added_pcu_h": 29.638543181888544
+      }
+    },
+    {
+      "region": "medium",
+      "roads": [
+        "新浦路"
+      ],
+      "strategy": "feedback_halving",
+      "qualified": true,
+      "eligible": 2,
+      "recommendation": "medium_feedback_halving_p2_1",
+      "changes": [
+        {
+          "from_node": 96,
+          "to_node": 682,
+          "old_parking": 3,
+          "parking": 1
+        },
+        {
+          "from_node": 681,
+          "to_node": 686,
+          "old_parking": 3,
+          "parking": 1
+        },
+        {
+          "from_node": 686,
+          "to_node": 681,
+          "old_parking": 3,
+          "parking": 1
+        }
+      ],
+      "core_change": -23.996799428393956,
+      "neighbor_change": 0.3293262613876635,
+      "network_change": -0.006868539134141649,
+      "logical_scenes": 10,
+      "budget": 13,
+      "backtracks": [],
+      "risks": {
+        "worst_new_network_oversaturated_km": 2.320921,
+        "worst_inner_neighbor_time_change_pct": 0.6245252372433008,
+        "worst_gross_time_added_pcu_h": 60.96318043719433
+      }
+    },
+    {
+      "region": "medium",
+      "roads": [
+        "新浦路"
+      ],
+      "strategy": "feedback_backtracking",
+      "qualified": true,
+      "eligible": 3,
+      "recommendation": "medium_feedback_backtracking_p2_1",
+      "changes": [
+        {
+          "from_node": 96,
+          "to_node": 682,
+          "old_parking": 3,
+          "parking": 1
+        },
+        {
+          "from_node": 681,
+          "to_node": 686,
+          "old_parking": 3,
+          "parking": 1
+        },
+        {
+          "from_node": 686,
+          "to_node": 681,
+          "old_parking": 3,
+          "parking": 1
+        }
+      ],
+      "core_change": -23.996799428393956,
+      "neighbor_change": 0.3293262613876635,
+      "network_change": -0.006868539134141649,
+      "logical_scenes": 13,
+      "budget": 13,
+      "backtracks": [
+        {
+          "after_policy": 2,
+          "changes": [
+            {
+              "from_node": 681,
+              "to_node": 686,
+              "old_parking": 3,
+              "parking": 2
+            }
+          ]
+        }
+      ],
+      "risks": {
+        "worst_new_network_oversaturated_km": 2.320921,
+        "worst_inner_neighbor_time_change_pct": 0.6245252372433008,
+        "worst_gross_time_added_pcu_h": 60.96318043719433
+      }
+    },
+    {
+      "region": "low",
+      "roads": [
+        "临滁路"
+      ],
+      "strategy": "fixed_diverse",
+      "qualified": true,
+      "eligible": 2,
+      "recommendation": "low_fixed_diverse_p1_1",
+      "changes": [
+        {
+          "from_node": 219,
+          "to_node": 1051,
+          "old_parking": 3,
+          "parking": 2
+        }
+      ],
+      "core_change": -14.06220186987216,
+      "neighbor_change": 0.0013121331397414338,
+      "network_change": -0.00022443697011986785,
+      "logical_scenes": 10,
+      "budget": 13,
+      "backtracks": [],
+      "risks": {
+        "worst_new_network_oversaturated_km": 0.0,
+        "worst_inner_neighbor_time_change_pct": 0.00049020188397364,
+        "worst_gross_time_added_pcu_h": 0.004097548189150861
+      }
+    },
+    {
+      "region": "low",
+      "roads": [
+        "临滁路"
+      ],
+      "strategy": "feedback_halving",
+      "qualified": true,
+      "eligible": 2,
+      "recommendation": "low_feedback_halving_p1_1",
+      "changes": [
+        {
+          "from_node": 219,
+          "to_node": 1051,
+          "old_parking": 3,
+          "parking": 2
+        }
+      ],
+      "core_change": -14.06220186987216,
+      "neighbor_change": 0.0013121331397414338,
+      "network_change": -0.00022443697011986785,
+      "logical_scenes": 10,
+      "budget": 13,
+      "backtracks": [],
+      "risks": {
+        "worst_new_network_oversaturated_km": 0.0,
+        "worst_inner_neighbor_time_change_pct": 0.00049020188397364,
+        "worst_gross_time_added_pcu_h": 0.004097548189150861
+      }
+    },
+    {
+      "region": "low",
+      "roads": [
+        "临滁路"
+      ],
+      "strategy": "feedback_backtracking",
+      "qualified": true,
+      "eligible": 2,
+      "recommendation": "low_feedback_backtracking_p1_1",
+      "changes": [
+        {
+          "from_node": 219,
+          "to_node": 1051,
+          "old_parking": 3,
+          "parking": 2
+        }
+      ],
+      "core_change": -14.06220186987216,
+      "neighbor_change": 0.0013121331397414338,
+      "network_change": -0.00022443697011986785,
+      "logical_scenes": 10,
+      "budget": 13,
+      "backtracks": [],
+      "risks": {
+        "worst_new_network_oversaturated_km": 0.0,
+        "worst_inner_neighbor_time_change_pct": 0.00049020188397364,
+        "worst_gross_time_added_pcu_h": 0.004097548189150861
+      }
+    }
+  ],
+  "code": "2c4f40332aa0eb93d47341ac72c27dd986a750ce"
+}

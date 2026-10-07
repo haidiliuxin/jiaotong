@@ -1,0 +1,24 @@
+{
+  "kind": "rc11_v9_same_machine_portable_validation_v1",
+  "archive": "工作材料/便携构建/20260930_智能规划_v2_RC11.zip",
+  "archive_bytes": 878647477,
+  "archive_sha256": "ac5522b705d794093535fe61dd99952cd2e483b59f155c5d2a76e3605c778517",
+  "code_commit_in_manifest": "4620edbac0dfc523be97e645f2105cc2af184e30",
+  "manifest_sha256": "3bd63d603134004f37acf14bfaed8cd4705ca86a15b55b50e663a384bd33df41",
+  "immutable_files": 16162,
+  "extracted_root": "工作材料/便携异目录检查/20260930_v2_RC11",
+  "environment_record": "工作材料/便携异目录检查/20260930_v2_RC11_evidence/environment_verification.json",
+  "environment_status": "passed",
+  "package_integrity_after_checks": "passed",
+  "package_internal_protocols": {
+    "question_wording": "bounded-question-wording-v4",
+    "measured_conclusion": "measured-conclusion-v9"
+  },
+  "package_internal_old_rc5_original_v6_programme_verification": "passed_no_write",
+  "package_internal_sealed_v4_hypothesis_check": "0_issues_read_only",
+  "package_internal_v9_model_reply_review": "no_detected_conflict_read_only",
+  "new_model_requests_for_build_and_environment_validation": 0,
+  "new_native_scenarios_for_build_and_environment_validation": 0,
+  "physical_other_computer_acceptance": "not_performed",
+  "boundary": "Same-machine relocated bundle validation. It does not make the incomplete RC10 programme complete or establish a fresh v9 end-to-end native run."
+}

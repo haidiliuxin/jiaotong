@@ -1,0 +1,245 @@
+{
+  "kind": "preregistered_same_region_backtrack_development_review_v1",
+  "new_model_calls_during_review": 0,
+  "old_job": "20260923_075629_706ef0",
+  "new_job": "20260923_083136_743057",
+  "preregistered_task_sha256": "8867273f99594fe99c942616964a47052cc0fff956da8e63181ae401dfa86aa9",
+  "old_archive_sha256": "8ce522a366a407e68947c09601e444bf8dbecdbc21d362a4aef2cb1f25e458a9",
+  "new_archive_sha256": "f71a9ff211c1b88bd4ef5d891234366c2ec1a597f1487f0e1ab2c9381233c650",
+  "original_source_inputs_exact": true,
+  "frozen_scope_exact": true,
+  "shared_native_raw_arrays_exact": {
+    "baseline": {
+      "speed_kmh": true,
+      "flow_pcu_h": true,
+      "vc": true,
+      "time_s": true
+    },
+    "robust_base_1.1": {
+      "speed_kmh": true,
+      "flow_pcu_h": true,
+      "vc": true,
+      "time_s": true
+    },
+    "robust_base_0.9": {
+      "speed_kmh": true,
+      "flow_pcu_h": true,
+      "vc": true,
+      "time_s": true
+    },
+    "robust_p1_1.1": {
+      "speed_kmh": true,
+      "flow_pcu_h": true,
+      "vc": true,
+      "time_s": true
+    },
+    "robust_p2_1.1": {
+      "speed_kmh": true,
+      "flow_pcu_h": true,
+      "vc": true,
+      "time_s": true
+    },
+    "baseline_repeat": {
+      "speed_kmh": true,
+      "flow_pcu_h": true,
+      "vc": true,
+      "time_s": true
+    }
+  },
+  "old_scenarios": 6,
+  "new_scenarios": 10,
+  "new_native_calls": 70,
+  "decision_replay": {
+    "protocol_frozen_before_first_run": true,
+    "raw_observations_verified": true,
+    "decisions_replayed": 9,
+    "chronological_decisions": true,
+    "budget_and_stopping_verified": true,
+    "complete_demand_recommendation_verified": true,
+    "report_exports_present": true
+  },
+  "repeat_arrays_exact": {
+    "speed_kmh": true,
+    "flow_pcu_h": true,
+    "vc": true,
+    "time_s": true
+  },
+  "old_recommendation": "baseline",
+  "new_recommendation": "robust_p4_1",
+  "recommended_changes": [
+    {
+      "from_node": 1181,
+      "to_node": 1180,
+      "old_parking": 3,
+      "parking": 2
+    }
+  ],
+  "full_demand_eligible_policies": [
+    {
+      "changes": [
+        {
+          "from_node": 1181,
+          "to_node": 1180,
+          "old_parking": 3,
+          "parking": 2
+        }
+      ],
+      "factors": [
+        0.9,
+        1.0,
+        1.1
+      ],
+      "all_eligible": true
+    }
+  ],
+  "search_stop": {
+    "version": "adaptive-paired-search-v2",
+    "stop_reason": "达到预定反馈候选数上限",
+    "early_rejections": [
+      {
+        "policy": "robust_p1_1.1",
+        "failed_factor": 1.1,
+        "unmeasured_factors": [
+          1.0,
+          0.9
+        ]
+      },
+      {
+        "policy": "robust_p2_1.1",
+        "failed_factor": 1.1,
+        "unmeasured_factors": [
+          1.0,
+          0.9
+        ]
+      },
+      {
+        "policy": "robust_p3_1.1",
+        "failed_factor": 1.1,
+        "unmeasured_factors": [
+          1.0,
+          0.9
+        ]
+      }
+    ],
+    "candidates_started": 4,
+    "actual_runs": 10,
+    "unused_budget": 1,
+    "backtracks": [
+      {
+        "after_failed_run": "robust_p2_1.1",
+        "from_policy": "[{\"from_node\": 1180, \"old_parking\": 3, \"parking\": 2, \"to_node\": 1181}]",
+        "next_link": [
+          1179,
+          1180
+        ],
+        "untreated_base_ql_over_v_pcu_h": 26.786333933624906
+      },
+      {
+        "after_failed_run": "robust_p3_1.1",
+        "from_policy": "[{\"from_node\": 1179, \"old_parking\": 3, \"parking\": 2, \"to_node\": 1180}]",
+        "next_link": [
+          1181,
+          1180
+        ],
+        "untreated_base_ql_over_v_pcu_h": 7.145801269337563
+      }
+    ]
+  },
+  "rows": [
+    {
+      "name": "robust_p1_1.1",
+      "demand": 1.1,
+      "directions": [
+        "1179→1180",
+        "1180→1181",
+        "1181→1180"
+      ],
+      "parking_level": 2,
+      "core_time_pct": -22.641910762991145,
+      "neighbor_time_pct": 25.652593948625046,
+      "network_time_pct": 0.0029989903040261723,
+      "gross_new_network_km": 0.468,
+      "eligible": false,
+      "violations": [
+        "neighbor路段行驶时间增幅超过0.5%",
+        "全网毛新增过饱和有向里程超过0.1km"
+      ]
+    },
+    {
+      "name": "robust_p2_1.1",
+      "demand": 1.1,
+      "directions": [
+        "1180→1181"
+      ],
+      "parking_level": 2,
+      "core_time_pct": -7.103709247961943,
+      "neighbor_time_pct": 24.719504872678357,
+      "network_time_pct": 0.005947909374048876,
+      "gross_new_network_km": 0.468,
+      "eligible": false,
+      "violations": [
+        "neighbor路段行驶时间增幅超过0.5%",
+        "全网毛新增过饱和有向里程超过0.1km"
+      ]
+    },
+    {
+      "name": "robust_p3_1.1",
+      "demand": 1.1,
+      "directions": [
+        "1179→1180"
+      ],
+      "parking_level": 2,
+      "core_time_pct": -6.683177562918141,
+      "neighbor_time_pct": 0.5162170605022665,
+      "network_time_pct": -0.0012806650791175045,
+      "gross_new_network_km": 0,
+      "eligible": false,
+      "violations": [
+        "neighbor路段行驶时间增幅超过0.5%"
+      ]
+    },
+    {
+      "name": "robust_p4_1.1",
+      "demand": 1.1,
+      "directions": [
+        "1181→1180"
+      ],
+      "parking_level": 2,
+      "core_time_pct": -6.232304955242096,
+      "neighbor_time_pct": 0.007147182227784654,
+      "network_time_pct": -0.0013265351979319107,
+      "gross_new_network_km": 0,
+      "eligible": true,
+      "violations": []
+    },
+    {
+      "name": "robust_p4_1",
+      "demand": 1.0,
+      "directions": [
+        "1181→1180"
+      ],
+      "parking_level": 2,
+      "core_time_pct": -3.7375452714930812,
+      "neighbor_time_pct": 0.06606553627197531,
+      "network_time_pct": -0.0010117791090280548,
+      "gross_new_network_km": 0,
+      "eligible": true,
+      "violations": []
+    },
+    {
+      "name": "robust_p4_0.9",
+      "demand": 0.9,
+      "directions": [
+        "1181→1180"
+      ],
+      "parking_level": 2,
+      "core_time_pct": -3.2233008958054588,
+      "neighbor_time_pct": 0.0332782695644962,
+      "network_time_pct": -0.0008099124117810774,
+      "gross_new_network_km": 0,
+      "eligible": true,
+      "violations": []
+    }
+  ],
+  "limitation": "同一已知负例上的算法开发性复测；反馈上限也由2改为3，不能据此估计盲测得分、统计泛化或现实实施效果"
+}

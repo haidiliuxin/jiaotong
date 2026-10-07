@@ -1,0 +1,13 @@
+{
+  "request": "区域迁移验证：环洲路；按同一停车候选规则与阈值执行基准、治理、反馈和复跑",
+  "scenario": "parking",
+  "road_name": "环洲路",
+  "max_links": 3,
+  "max_runs": 4,
+  "max_feedback": 2,
+  "demand_factors": [1.0],
+  "repeat_baseline": true,
+  "max_neighbor_time_increase_pct": 0.5,
+  "max_network_time_increase_pct": 0.1,
+  "max_new_oversaturated_km": 0.1
+}

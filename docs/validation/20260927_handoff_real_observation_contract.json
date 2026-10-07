@@ -1,0 +1,82 @@
+{
+  "kind": "offline_handoff_contract_inspection_v1",
+  "handoff_protocol": "study-handoff-v1",
+  "original_job": "20260927_200218_bdef1b",
+  "original_status": "incomplete",
+  "original_snapshot_sha256": "01283bd906a58bff87c2cfbd8ca8212411b2a67d6da55284b3825a9138b07028",
+  "original_files_checked": [
+    "智能体实验/dispatches/20260927_200218_bdef1b.json",
+    "智能体实验/programmes/20260927_200218_bdef1b/plan.json",
+    "智能体实验/jobs/20260927_200218_bdef1b/state.json",
+    "智能体实验/jobs/20260927_200218_bdef1b/diagnosis.json"
+  ],
+  "original_snapshot_unchanged": true,
+  "original_exact_rejection_still_unknown": true,
+  "paid_calls": 0,
+  "new_native_scenes": 0,
+  "minimum_request_slots": {
+    "previous": 6,
+    "current": 5
+  },
+  "variants": [
+    {
+      "fixture": "complete_fields",
+      "status": "accepted",
+      "validation": {
+        "version": "planning-response-check-v1",
+        "status": "passed"
+      },
+      "allowed_actions": [
+        "study_2"
+      ],
+      "route_budget": {
+        "version": "study-routing-budget-v2",
+        "requests_after_this_decision": 3,
+        "minimum_remaining_requests": 2,
+        "choices": {
+          "study_2": {
+            "title": "停车＋单向组织",
+            "required_requests": 2,
+            "feasible": true
+          }
+        },
+        "note": "暂不开放的组仍须完成；只限制本轮顺序，为后续必需实验和复核保留请求。"
+      },
+      "observations_unchanged": true,
+      "observations_sha256": "5d66daaa2c3c7828de0e8222da250de3c5caca161439f8003ae706cd3373f233",
+      "future_results_supplied": false,
+      "selected_study": "停车＋单向组织"
+    },
+    {
+      "fixture": "missing_review",
+      "status": "rejected",
+      "validation": {
+        "version": "planning-response-check-v1",
+        "status": "failed",
+        "code": "hypothesis_coverage",
+        "message": "最终复核遗漏初始假设，研究未完成"
+      },
+      "allowed_actions": [
+        "study_2"
+      ],
+      "route_budget": {
+        "version": "study-routing-budget-v2",
+        "requests_after_this_decision": 3,
+        "minimum_remaining_requests": 2,
+        "choices": {
+          "study_2": {
+            "title": "停车＋单向组织",
+            "required_requests": 2,
+            "feasible": true
+          }
+        },
+        "note": "暂不开放的组仍须完成；只限制本轮顺序，为后续必需实验和复核保留请求。"
+      },
+      "observations_unchanged": true,
+      "observations_sha256": "5d66daaa2c3c7828de0e8222da250de3c5caca161439f8003ae706cd3373f233",
+      "future_results_supplied": false,
+      "selected_study": null
+    }
+  ],
+  "meaning": "只用封存实测检查新协议；回复为明确标注的结构样例。没有恢复原模型回复、调用服务、续跑原任务或取得新的仿真结果；原研究仍未完成。"
+}

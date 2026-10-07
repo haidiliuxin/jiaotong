@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "protocol": "initial-plan-review-v4",
+  "model_boundary": "synthetic_transport",
+  "public_source": "RC17 first attempt, retained public questions and study fields only",
+  "synthetic_fields": [
+    "alternatives",
+    "catalog",
+    "policy_patch_reply",
+    "transport_usage"
+  ],
+  "synthetic_requests": 2,
+  "actual_paid_requests_during_check": 0,
+  "new_native_scenes": 0,
+  "original_questions_and_studies_unchanged": true,
+  "minimum_required_requests": 6,
+  "native_scene_budget": 6,
+  "actual_patch": {
+    "version": "hypothesis-policy-patch-v1",
+    "source_attempt_id": "preview_7d867dcdd7d04c2886286ef9ed441d59",
+    "tool_name": "correct_hypothesis_policies",
+    "tool_call_count": 1,
+    "arguments_valid": true,
+    "selections": {
+      "H2": "combined"
+    },
+    "status": "applied"
+  },
+  "compiled_proposal_origin": "original_plus_model_policy_patch",
+  "rc17_real_attempt_still_failed": true,
+  "rc17_archive_sha256": "c9871bd1896b9e79223d8a0a1d851310f23e1258faf8ae1631d11c67a9400998",
+  "old_records_unchanged": 77,
+  "old_locks_unchanged_and_free": 7,
+  "fixture_sha256": "4231c20e96fe0c5fd66a589be98582c49c9d0c74bf103ad4df5baf3a20de6514",
+  "overall_system_complete": false,
+  "boundary": "字段级离线校验通过不等于修复后的真实闭环通过；完整重述失败原件保持，有限词句检查不是通用语义认证。"
+}

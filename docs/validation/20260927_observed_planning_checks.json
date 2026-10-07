@@ -1,0 +1,177 @@
+{
+  "implemented": "observed-planning-v1",
+  "python_tests": 253,
+  "javascript_checks": [
+    "map_view",
+    "planner_view",
+    "syntax"
+  ],
+  "total_online_requests": 4,
+  "total_tokens": 11365,
+  "first_attempt": {
+    "status": "failed",
+    "native_launched": false,
+    "tokens": 3120,
+    "reason": "ValueError: Model plan does not meet this bounded case; not launched or retried"
+  },
+  "live": {
+    "job_id": "20260927_112008_4167a7",
+    "run_count": 2,
+    "recommendation": "parking_1",
+    "modules": 14,
+    "model_budget": {
+      "limit": 6,
+      "used": 3,
+      "remaining": 3,
+      "known_tokens": 8245,
+      "unknown_usage": 0,
+      "halted": false
+    },
+    "decisions": [
+      {
+        "ordinal": 1,
+        "action": "parking_d8fe019d7437",
+        "status": "accepted",
+        "summary": "基线核心七东线车速9.0km/h、V/C 2.69、全程过饱和；选择对该方向实施停车1级治理。",
+        "reason": "新基准显示核心路段七东线车速仅9.0km/h、V/C高达2.69、全程过饱和，停车等级为3。最直接的方向是降低停车干扰。从最强治理（1级）开始，若有效可再测2级比较强度；本项目最多3次仿真，先测最强治理能最快判断可治理空间。",
+        "risk": "1级停车治理可能将车流转移至邻区，需关注邻区运行时间增幅是否超过0.5%门槛及新增过饱和里程；若1级无效或代价超标，需降级或停止。",
+        "next_check": "验证停车1级是否显著提升核心车速并控制邻区代价",
+        "evidence_refs": [
+          "20260927_112008_4167a7:baseline"
+        ],
+        "usage": {
+          "request_model": "deepseek-v4-flash",
+          "response_model": "deepseek-v4-flash-0731",
+          "response_id": "chatcmpl-6ab88bf65badeddd970d3be3",
+          "tokens": 2112,
+          "latency_s": 3.453
+        }
+      },
+      {
+        "ordinal": 2,
+        "action": "stop",
+        "status": "accepted",
+        "summary": "停车1级治理使核心七东线车速9.0→23.38km/h（+160%），运行时间下降61%，邻区时间仅增0.02%且过饱和新增0.056km合规，无违例。最强治理已接近达标，停止本研究。",
+        "reason": "停车1级已大幅提升核心车速（9.0→23.38km/h，+160%），运行时间减少61%，核心已接近目标速度25km/h。邻区代价极小（时间+0.02%，过饱和仅+0.056km，低于0.1km阈值），无违例。2级（弱治理）效应必然弱于1级，且已无充足预算再做有增量信息验证。",
+        "risk": "核心仍处过饱和（V/C 2.70），车速23.38km/h略低于25km/h目标；邻区过饱和新增0.056km虽合规但存在少量转移。停车0级（完全禁止）未测，无法排除更强收益，但预算已用2次、剩余1次不足以覆盖2级+验证。",
+        "next_check": "停车1级已使核心车速从9.0提升至23.38km/h（+160%），接近25km/h目标；2级预期介于两者之间，收益有限。",
+        "evidence_refs": [
+          "20260927_112008_4167a7:baseline",
+          "20260927_112008_4167a7:parking_1"
+        ],
+        "usage": {
+          "request_model": "deepseek-v4-flash",
+          "response_model": "deepseek-v4-flash-0731",
+          "response_id": "chatcmpl-6ab88c86130bac895ea345fd",
+          "tokens": 3011,
+          "latency_s": 3.297
+        }
+      }
+    ],
+    "delta": {
+      "core": {
+        "speed_change_pct": 159.7777777777778,
+        "running_time_change_pct": -61.447240674739,
+        "oversaturated_km_change": 0.0
+      },
+      "neighbor": {
+        "speed_change_pct": 0.01950268608990058,
+        "running_time_change_pct": 0.018347875294111304,
+        "oversaturated_km_change": 0.05600000000000005
+      },
+      "network": {
+        "speed_change_pct": 0.06074751550195767,
+        "running_time_change_pct": -0.060434066797299124,
+        "oversaturated_km_change": 0.05600000000004002
+      }
+    },
+    "source_unchanged": true
+  },
+  "goal_review": {
+    "strength_comparison_requested": true,
+    "strength_compared": false,
+    "measured_levels": [
+      1
+    ],
+    "unanswered": [
+      "尚未在相同需求、相同治理方向下比较停车1级与2级，不能判断哪个强度更合适。"
+    ],
+    "complete": false,
+    "remaining_native_runs": 1
+  },
+  "decision_notes": [
+    "执行器核对：仍有1次候选仿真预算；一项未测候选需要1次。此次停止是模型选择，并非预算耗尽。",
+    "未测试的方案不能断言必然更差；只可比较已经完成的同条件结果。",
+    "能力核对：当前停车工具只开放1/2级；文字提到的停车0级不在可执行目录内。"
+  ],
+  "native_verification": {
+    "passed": true,
+    "completed_scenarios": 2,
+    "module_executions": 14,
+    "scope_sizes": {
+      "core": 1,
+      "neighbor": 27,
+      "network": 32060
+    },
+    "repeat_arrays_exact": null,
+    "limitations": "只核验保存的实验与输入输出证据，不证明现实标定有效或全部草案已实现",
+    "model_planning_audit": {
+      "passed": true,
+      "decisions": 2,
+      "model_selected_policies": 1,
+      "observations_from_current_job_only": true,
+      "actions_precede_execution": true
+    },
+    "portable_archive_verified": true
+  },
+  "archive_files": 1179,
+  "map_comparison": {
+    "kind": "policy",
+    "comparable": true,
+    "reason": "两图来自本任务同需求的新基准与候选；颜色表示路段状态，数值标注实际变化。",
+    "changed_links": 31,
+    "improved_links": 5,
+    "worsened_links": 15,
+    "treated_links": 1,
+    "newly_overloaded": 1,
+    "relieved": 0,
+    "counts": {
+      "before": {
+        "normal": 26461,
+        "near_capacity": 1193,
+        "overloaded": 2056,
+        "severe": 2350
+      },
+      "after": {
+        "normal": 26461,
+        "near_capacity": 1192,
+        "overloaded": 2057,
+        "severe": 2350
+      }
+    },
+    "thresholds": {
+      "speed_kmh": 0.1,
+      "flow_pcu_h": 0.1,
+      "vc": 0.001,
+      "time_pcu_h": 0.01
+    }
+  },
+  "limitations": [
+    "Native results verified, but this live model stopped before testing parking level 2; strength comparison is incomplete.",
+    "Model claimed budget shortage and monotonic policy quality without evidence; original text retained and local UI warnings added.",
+    "Revised prompting and goal review have local checks only; no extra live API test.",
+    "Multi-demand model-selected search and group reordering have local tests, no new native live validation.",
+    "No continuous-world simulation or other-machine validation."
+  ],
+  "browser_checks": {
+    "native_change_map": true,
+    "same_demand_speed_comparison": true,
+    "worsening_link_navigation": true,
+    "observation_link_navigation": true,
+    "diagnosis_comparison_disabled": true,
+    "mobile_horizontal_overflow": false,
+    "mobile_split_pane_height_px": 305.87,
+    "viewport_override_reset": true,
+    "console_errors": []
+  }
+}

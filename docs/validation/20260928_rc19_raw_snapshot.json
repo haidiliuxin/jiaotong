@@ -1,0 +1,28 @@
+{
+  "kind": "initial_quantifier_conflict",
+  "source_commit": "f441fcd7c34ca6f013e8d76c5a907aab327e77bd",
+  "status": "failed",
+  "model_calls": 1,
+  "known_tokens": 6637,
+  "native_scenes": 0,
+  "top_level_modules": 0,
+  "original_question": "至少一种停车措施能降低七东线核心历时",
+  "criterion": {
+    "policies": "parking",
+    "quantifier": "all",
+    "studies": [
+      1
+    ],
+    "test": "core_time_decrease"
+  },
+  "error": "初始假设判据未通过：H1：假设与事前判据冲突：假设中的“所有”与“至少一个”必须沿用，不能更换量词。",
+  "diagnosis": "模型原文是存在量词，判据却是全称；拦截正确。现有修正仅允许措施类型，尚不能修正量词字段。",
+  "original_records_unchanged": 78,
+  "original_locks_free_and_unchanged": 7,
+  "physical_other_machine": false,
+  "overall_system_complete": false,
+  "original_files": 9,
+  "original_bytes_unchanged": true,
+  "zip_sha256": "f5662889506fa05e6d3505e9a36e8f4416bffbf7b9b0e9745e018f7e2f3ef7fd",
+  "zip_bytes": 816386
+}

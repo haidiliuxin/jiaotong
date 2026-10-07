@@ -1,0 +1,2 @@
+Failed new planning stays visible across polling and delayed map loading; explicit history selection restores old result without a model request
+Initial correction cost includes failed and unknown-usage requests

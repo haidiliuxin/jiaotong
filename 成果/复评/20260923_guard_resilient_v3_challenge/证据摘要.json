@@ -1,0 +1,640 @@
+{
+  "job": "20260923_112453_e47232",
+  "verification": {
+    "passed": true,
+    "version": "network-guard-challenge-vehicle-cache-audit-v3",
+    "physical_scenes": 39,
+    "native_module_calls": 273,
+    "regions": 3,
+    "state_sha256": "4d24df185df8a733a783eee4ae7e668e51d5bb7f30941ec1fa4e93418618401c",
+    "protocol_sha256": "cb9a12d8f7c03a583dced80e0ff0ba1e6283e2dfa8d16ebc1595ab1cc0a3fab6",
+    "selection_sha256": "4748486ab0ec00bd61a3661e4c6417c452b46641ef3ff2a6f2ab7f46b79580fe",
+    "raw_inputs_outputs_verified": true,
+    "prospective_selection_rebuilt": true,
+    "decisions_replayed": {
+      "decisions": 50,
+      "unique_policy_scenes": 35,
+      "shared_observations": 15,
+      "logical_scenes": 74
+    },
+    "repeatability": true,
+    "runs": [
+      {
+        "name": "baseline",
+        "modules": 7,
+        "rows": 32981,
+        "demand_factor": 1.0,
+        "internal_factor": 1.0,
+        "changed_inputs": []
+      },
+      {
+        "name": "baseline_1.1",
+        "modules": 7,
+        "rows": 32981,
+        "demand_factor": 1.1,
+        "internal_factor": 1.099999832501556,
+        "changed_inputs": [
+          "result/ODCar.tsd"
+        ]
+      },
+      {
+        "name": "baseline_0.9",
+        "modules": 7,
+        "rows": 32981,
+        "demand_factor": 0.9,
+        "internal_factor": 0.8999999282149527,
+        "changed_inputs": [
+          "result/ODCar.tsd"
+        ]
+      },
+      {
+        "name": "case_001",
+        "modules": 7,
+        "rows": 32981,
+        "demand_factor": 1.1,
+        "internal_factor": 1.099999832501556,
+        "changed_inputs": [
+          "data/manageL.txt",
+          "result/ODCar.tsd"
+        ]
+      },
+      {
+        "name": "case_002",
+        "modules": 7,
+        "rows": 32981,
+        "demand_factor": 1.0,
+        "internal_factor": 1.0,
+        "changed_inputs": [
+          "data/manageL.txt"
+        ]
+      },
+      {
+        "name": "case_003",
+        "modules": 7,
+        "rows": 32981,
+        "demand_factor": 1.1,
+        "internal_factor": 1.099999832501556,
+        "changed_inputs": [
+          "data/manageL.txt",
+          "result/ODCar.tsd"
+        ]
+      },
+      {
+        "name": "case_004",
+        "modules": 7,
+        "rows": 32981,
+        "demand_factor": 1.0,
+        "internal_factor": 1.0,
+        "changed_inputs": [
+          "data/manageL.txt"
+        ]
+      },
+      {
+        "name": "case_005",
+        "modules": 7,
+        "rows": 32981,
+        "demand_factor": 0.9,
+        "internal_factor": 0.8999999282149527,
+        "changed_inputs": [
+          "data/manageL.txt",
+          "result/ODCar.tsd"
+        ]
+      },
+      {
+        "name": "case_006",
+        "modules": 7,
+        "rows": 32981,
+        "demand_factor": 1.1,
+        "internal_factor": 1.099999832501556,
+        "changed_inputs": [
+          "data/manageL.txt",
+          "result/ODCar.tsd"
+        ]
+      },
+      {
+        "name": "case_007",
+        "modules": 7,
+        "rows": 32981,
+        "demand_factor": 1.1,
+        "internal_factor": 1.099999832501556,
+        "changed_inputs": [
+          "data/manageL.txt",
+          "result/ODCar.tsd"
+        ]
+      },
+      {
+        "name": "case_008",
+        "modules": 7,
+        "rows": 32981,
+        "demand_factor": 1.0,
+        "internal_factor": 1.0,
+        "changed_inputs": [
+          "data/manageL.txt"
+        ]
+      },
+      {
+        "name": "case_009",
+        "modules": 7,
+        "rows": 32981,
+        "demand_factor": 1.0,
+        "internal_factor": 1.0,
+        "changed_inputs": [
+          "data/manageL.txt"
+        ]
+      },
+      {
+        "name": "case_010",
+        "modules": 7,
+        "rows": 32981,
+        "demand_factor": 1.1,
+        "internal_factor": 1.099999832501556,
+        "changed_inputs": [
+          "data/manageL.txt",
+          "result/ODCar.tsd"
+        ]
+      },
+      {
+        "name": "case_011",
+        "modules": 7,
+        "rows": 32981,
+        "demand_factor": 0.9,
+        "internal_factor": 0.8999999282149527,
+        "changed_inputs": [
+          "data/manageL.txt",
+          "result/ODCar.tsd"
+        ]
+      },
+      {
+        "name": "case_012",
+        "modules": 7,
+        "rows": 32981,
+        "demand_factor": 1.0,
+        "internal_factor": 1.0,
+        "changed_inputs": [
+          "data/manageL.txt"
+        ]
+      },
+      {
+        "name": "case_013",
+        "modules": 7,
+        "rows": 32981,
+        "demand_factor": 0.9,
+        "internal_factor": 0.8999999282149527,
+        "changed_inputs": [
+          "data/manageL.txt",
+          "result/ODCar.tsd"
+        ]
+      },
+      {
+        "name": "case_014",
+        "modules": 7,
+        "rows": 32981,
+        "demand_factor": 1.1,
+        "internal_factor": 1.099999832501556,
+        "changed_inputs": [
+          "data/manageL.txt",
+          "result/ODCar.tsd"
+        ]
+      },
+      {
+        "name": "case_015",
+        "modules": 7,
+        "rows": 32981,
+        "demand_factor": 1.1,
+        "internal_factor": 1.099999832501556,
+        "changed_inputs": [
+          "data/manageL.txt",
+          "result/ODCar.tsd"
+        ]
+      },
+      {
+        "name": "case_016",
+        "modules": 7,
+        "rows": 32981,
+        "demand_factor": 1.1,
+        "internal_factor": 1.099999832501556,
+        "changed_inputs": [
+          "data/manageL.txt",
+          "result/ODCar.tsd"
+        ]
+      },
+      {
+        "name": "case_017",
+        "modules": 7,
+        "rows": 32981,
+        "demand_factor": 1.0,
+        "internal_factor": 1.0,
+        "changed_inputs": [
+          "data/manageL.txt"
+        ]
+      },
+      {
+        "name": "case_018",
+        "modules": 7,
+        "rows": 32981,
+        "demand_factor": 0.9,
+        "internal_factor": 0.8999999282149527,
+        "changed_inputs": [
+          "data/manageL.txt",
+          "result/ODCar.tsd"
+        ]
+      },
+      {
+        "name": "case_019",
+        "modules": 7,
+        "rows": 32981,
+        "demand_factor": 1.1,
+        "internal_factor": 1.099999832501556,
+        "changed_inputs": [
+          "data/manageL.txt",
+          "result/ODCar.tsd"
+        ]
+      },
+      {
+        "name": "case_020",
+        "modules": 7,
+        "rows": 32981,
+        "demand_factor": 1.1,
+        "internal_factor": 1.099999832501556,
+        "changed_inputs": [
+          "data/manageL.txt",
+          "result/ODCar.tsd"
+        ]
+      },
+      {
+        "name": "case_021",
+        "modules": 7,
+        "rows": 32981,
+        "demand_factor": 1.0,
+        "internal_factor": 1.0,
+        "changed_inputs": [
+          "data/manageL.txt"
+        ]
+      },
+      {
+        "name": "case_022",
+        "modules": 7,
+        "rows": 32981,
+        "demand_factor": 1.0,
+        "internal_factor": 1.0,
+        "changed_inputs": [
+          "data/manageL.txt"
+        ]
+      },
+      {
+        "name": "case_023",
+        "modules": 7,
+        "rows": 32981,
+        "demand_factor": 0.9,
+        "internal_factor": 0.8999999282149527,
+        "changed_inputs": [
+          "data/manageL.txt",
+          "result/ODCar.tsd"
+        ]
+      },
+      {
+        "name": "case_024",
+        "modules": 7,
+        "rows": 32981,
+        "demand_factor": 0.9,
+        "internal_factor": 0.8999999282149527,
+        "changed_inputs": [
+          "data/manageL.txt",
+          "result/ODCar.tsd"
+        ]
+      },
+      {
+        "name": "case_025",
+        "modules": 7,
+        "rows": 32981,
+        "demand_factor": 0.9,
+        "internal_factor": 0.8999999282149527,
+        "changed_inputs": [
+          "data/manageL.txt",
+          "result/ODCar.tsd"
+        ]
+      },
+      {
+        "name": "case_026",
+        "modules": 7,
+        "rows": 32981,
+        "demand_factor": 1.1,
+        "internal_factor": 1.099999832501556,
+        "changed_inputs": [
+          "data/manageL.txt",
+          "result/ODCar.tsd"
+        ]
+      },
+      {
+        "name": "case_027",
+        "modules": 7,
+        "rows": 32981,
+        "demand_factor": 1.0,
+        "internal_factor": 1.0,
+        "changed_inputs": [
+          "data/manageL.txt"
+        ]
+      },
+      {
+        "name": "case_028",
+        "modules": 7,
+        "rows": 32981,
+        "demand_factor": 1.1,
+        "internal_factor": 1.099999832501556,
+        "changed_inputs": [
+          "data/manageL.txt",
+          "result/ODCar.tsd"
+        ]
+      },
+      {
+        "name": "case_029",
+        "modules": 7,
+        "rows": 32981,
+        "demand_factor": 1.0,
+        "internal_factor": 1.0,
+        "changed_inputs": [
+          "data/manageL.txt"
+        ]
+      },
+      {
+        "name": "case_030",
+        "modules": 7,
+        "rows": 32981,
+        "demand_factor": 1.0,
+        "internal_factor": 1.0,
+        "changed_inputs": [
+          "data/manageL.txt"
+        ]
+      },
+      {
+        "name": "case_031",
+        "modules": 7,
+        "rows": 32981,
+        "demand_factor": 1.1,
+        "internal_factor": 1.099999832501556,
+        "changed_inputs": [
+          "data/manageL.txt",
+          "result/ODCar.tsd"
+        ]
+      },
+      {
+        "name": "case_032",
+        "modules": 7,
+        "rows": 32981,
+        "demand_factor": 0.9,
+        "internal_factor": 0.8999999282149527,
+        "changed_inputs": [
+          "data/manageL.txt",
+          "result/ODCar.tsd"
+        ]
+      },
+      {
+        "name": "case_033",
+        "modules": 7,
+        "rows": 32981,
+        "demand_factor": 1.1,
+        "internal_factor": 1.099999832501556,
+        "changed_inputs": [
+          "data/manageL.txt",
+          "result/ODCar.tsd"
+        ]
+      },
+      {
+        "name": "case_034",
+        "modules": 7,
+        "rows": 32981,
+        "demand_factor": 1.0,
+        "internal_factor": 1.0,
+        "changed_inputs": [
+          "data/manageL.txt"
+        ]
+      },
+      {
+        "name": "case_035",
+        "modules": 7,
+        "rows": 32981,
+        "demand_factor": 0.9,
+        "internal_factor": 0.8999999282149527,
+        "changed_inputs": [
+          "data/manageL.txt",
+          "result/ODCar.tsd"
+        ]
+      },
+      {
+        "name": "baseline_repeat",
+        "modules": 7,
+        "rows": 32981,
+        "demand_factor": 1.0,
+        "internal_factor": 1.0,
+        "changed_inputs": []
+      }
+    ],
+    "meaning": "原始文件重算、时序与代码摘要核对；不是数字签名、独立机器重跑或统计显著性证明",
+    "native_recovery": {
+      "failed_attempts": 0,
+      "failed_native_module_calls": 0,
+      "affected_scenes": 0,
+      "all_inputs_exact": true
+    }
+  },
+  "outcomes": [
+    {
+      "region": "high",
+      "roads": [
+        "柳浦线",
+        "浦东路"
+      ],
+      "strategy": "fixed_full_singletons",
+      "qualified": true,
+      "eligible_count": 2,
+      "recommendation": "high_fixed_full_singletons_p2_1",
+      "changes": [
+        {
+          "from_node": 1250,
+          "to_node": 1240,
+          "old_parking": 3,
+          "parking": 2
+        }
+      ],
+      "core_change": -21.16317571475902,
+      "neighbor_change": 0.08605543907944657,
+      "network_change": -0.008280188555054302,
+      "logical_scenes": 14,
+      "budget": 16,
+      "backtracks": [],
+      "risks": {
+        "worst_new_network_oversaturated_km": 0.0,
+        "worst_inner_neighbor_time_change_pct": 0.08431112401745544,
+        "worst_gross_time_added_pcu_h": 1.652061037690825
+      }
+    },
+    {
+      "region": "high",
+      "roads": [
+        "柳浦线",
+        "浦东路"
+      ],
+      "strategy": "feedback_backtracking_v2",
+      "qualified": true,
+      "eligible_count": 2,
+      "recommendation": "high_feedback_backtracking_v2_p3_1",
+      "changes": [
+        {
+          "from_node": 1250,
+          "to_node": 1240,
+          "old_parking": 3,
+          "parking": 1
+        }
+      ],
+      "core_change": -28.570454101766718,
+      "neighbor_change": 0.11353463962602284,
+      "network_change": -0.01080711552136071,
+      "logical_scenes": 12,
+      "budget": 16,
+      "backtracks": [],
+      "risks": {
+        "worst_new_network_oversaturated_km": 0.0,
+        "worst_inner_neighbor_time_change_pct": 0.10826861063257809,
+        "worst_gross_time_added_pcu_h": 1.974616281170113
+      }
+    },
+    {
+      "region": "medium",
+      "roads": [
+        "七珍线"
+      ],
+      "strategy": "fixed_full_singletons",
+      "qualified": true,
+      "eligible_count": 1,
+      "recommendation": "medium_fixed_full_singletons_p3_1",
+      "changes": [
+        {
+          "from_node": 1137,
+          "to_node": 351,
+          "old_parking": 3,
+          "parking": 2
+        }
+      ],
+      "core_change": -11.682762859229335,
+      "neighbor_change": -0.15384065591351748,
+      "network_change": -0.006744808390291013,
+      "logical_scenes": 12,
+      "budget": 16,
+      "backtracks": [],
+      "risks": {
+        "worst_new_network_oversaturated_km": 0.086,
+        "worst_inner_neighbor_time_change_pct": -0.02070921724587338,
+        "worst_gross_time_added_pcu_h": 104.0054258686326
+      }
+    },
+    {
+      "region": "medium",
+      "roads": [
+        "七珍线"
+      ],
+      "strategy": "feedback_backtracking_v2",
+      "qualified": true,
+      "eligible_count": 1,
+      "recommendation": "medium_feedback_backtracking_v2_p2_1",
+      "changes": [
+        {
+          "from_node": 1137,
+          "to_node": 351,
+          "old_parking": 3,
+          "parking": 2
+        }
+      ],
+      "core_change": -11.682762859229335,
+      "neighbor_change": -0.15384065591351748,
+      "network_change": -0.006744808390291013,
+      "logical_scenes": 12,
+      "budget": 16,
+      "backtracks": [
+        {
+          "after_failed_run": "medium_feedback_backtracking_v2_p3_0.9",
+          "next_link": [
+            351,
+            1137
+          ]
+        }
+      ],
+      "risks": {
+        "worst_new_network_oversaturated_km": 0.086,
+        "worst_inner_neighbor_time_change_pct": -0.02070921724587338,
+        "worst_gross_time_added_pcu_h": 104.0054258686326
+      }
+    },
+    {
+      "region": "low",
+      "roads": [
+        "同心路"
+      ],
+      "strategy": "fixed_full_singletons",
+      "qualified": true,
+      "eligible_count": 1,
+      "recommendation": "low_fixed_full_singletons_p3_1",
+      "changes": [
+        {
+          "from_node": 3790,
+          "to_node": 257,
+          "old_parking": 3,
+          "parking": 2
+        }
+      ],
+      "core_change": -3.5339428781049342,
+      "neighbor_change": 0.07428493877794651,
+      "network_change": -0.0008878110636767467,
+      "logical_scenes": 11,
+      "budget": 16,
+      "backtracks": [],
+      "risks": {
+        "worst_new_network_oversaturated_km": 0.0,
+        "worst_inner_neighbor_time_change_pct": 0.21082328995223332,
+        "worst_gross_time_added_pcu_h": 1.3777724343419542
+      }
+    },
+    {
+      "region": "low",
+      "roads": [
+        "同心路"
+      ],
+      "strategy": "feedback_backtracking_v2",
+      "qualified": true,
+      "eligible_count": 2,
+      "recommendation": "low_feedback_backtracking_v2_p3_1",
+      "changes": [
+        {
+          "from_node": 3790,
+          "to_node": 257,
+          "old_parking": 3,
+          "parking": 2
+        }
+      ],
+      "core_change": -3.5339428781049342,
+      "neighbor_change": 0.07428493877794651,
+      "network_change": -0.0008878110636767467,
+      "logical_scenes": 13,
+      "budget": 16,
+      "backtracks": [
+        {
+          "after_failed_run": "low_feedback_backtracking_v2_p2_1",
+          "next_link": [
+            3790,
+            257
+          ]
+        }
+      ],
+      "risks": {
+        "worst_new_network_oversaturated_km": 0.0,
+        "worst_inner_neighbor_time_change_pct": 0.21082328995223332,
+        "worst_gross_time_added_pcu_h": 1.3777724343419542
+      }
+    }
+  ],
+  "paired_conclusions": {
+    "high": "反馈推荐全网耗时指标更优；仍需同时检查邻区、风险和措施复杂度。",
+    "medium": "两策略推荐同一措施；本区没有推荐效果增益。",
+    "low": "两策略推荐同一措施；本区没有推荐效果增益。"
+  },
+  "code": "cff04a7bd6a59a3465c627bf96bda9802e390ee4"
+}

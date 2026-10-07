@@ -1,0 +1,94 @@
+{
+  "runs": {
+    "baseline": {
+      "manifest": "F:\\ITS比赛\\方案1流程验证\\runs\\baseline_20260907_042537\\run.json",
+      "all_modules_successful": true,
+      "fresh_outputs": {
+        "SpdLinkVeh.tsd": true,
+        "VolLinkVeh.tsd": true,
+        "VCLinkVeh.tsd": true,
+        "TimeLink.tsd": true
+      },
+      "assignment_seconds": 120.11
+    },
+    "parking_level2": {
+      "manifest": "F:\\ITS比赛\\方案1流程验证\\runs\\parking_level2_20260907_042951\\run.json",
+      "all_modules_successful": true,
+      "fresh_outputs": {
+        "SpdLinkVeh.tsd": true,
+        "VolLinkVeh.tsd": true,
+        "VCLinkVeh.tsd": true,
+        "TimeLink.tsd": true
+      },
+      "assignment_seconds": 120.625
+    },
+    "parking_level1": {
+      "manifest": "F:\\ITS比赛\\方案1流程验证\\runs\\parking_level1_20260907_043238\\run.json",
+      "all_modules_successful": true,
+      "fresh_outputs": {
+        "SpdLinkVeh.tsd": true,
+        "VolLinkVeh.tsd": true,
+        "VCLinkVeh.tsd": true,
+        "TimeLink.tsd": true
+      },
+      "assignment_seconds": 120.343
+    },
+    "baseline_repeat": {
+      "manifest": "F:\\ITS比赛\\方案1流程验证\\runs\\baseline_repeat_20260907_043514\\run.json",
+      "all_modules_successful": true,
+      "fresh_outputs": {
+        "SpdLinkVeh.tsd": true,
+        "VolLinkVeh.tsd": true,
+        "VCLinkVeh.tsd": true,
+        "TimeLink.tsd": true
+      },
+      "assignment_seconds": 120.687
+    }
+  },
+  "repeatability": {
+    "SpdLinkVeh.tsd": {
+      "row_count": 32981,
+      "different_numeric_rows": 0,
+      "max_absolute_difference": 0.0,
+      "numeric_exact_match": true
+    },
+    "VolLinkVeh.tsd": {
+      "row_count": 32981,
+      "different_numeric_rows": 0,
+      "max_absolute_difference": 0.0,
+      "numeric_exact_match": true
+    },
+    "VCLinkVeh.tsd": {
+      "row_count": 32981,
+      "different_numeric_rows": 0,
+      "max_absolute_difference": 0.0,
+      "numeric_exact_match": true
+    },
+    "TimeLink.tsd": {
+      "row_count": 32981,
+      "different_numeric_rows": 0,
+      "max_absolute_difference": 0.0,
+      "numeric_exact_match": true
+    }
+  },
+  "interventions": {
+    "parking_level2": {
+      "input_files_differing": [
+        "data\\manageL.txt"
+      ],
+      "od_files_identical": true
+    },
+    "parking_level1": {
+      "input_files_differing": [
+        "data\\manageL.txt"
+      ],
+      "od_files_identical": true
+    },
+    "baseline_repeat": {
+      "input_files_differing": [],
+      "od_files_identical": true
+    }
+  },
+  "passed": true,
+  "exact_repeatability": true
+}

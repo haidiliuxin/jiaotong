@@ -1,0 +1,45 @@
+{
+  "check": "current source protocol and no-key local preflight",
+  "passed": true,
+  "capabilities": {
+    "planning_version": "natural-strategy-plan-v5",
+    "composition_protocol": "traffic-plan-decision-v3",
+    "transport_version": "llm-transport-v2",
+    "initial_review_protocol": "initial-plan-review-v1",
+    "max_initial_corrections": 1,
+    "scope_protocol": "planning-scope-v2",
+    "prerequisite_protocol": "planning-prerequisites-v2",
+    "dynamic_initial_tools": true,
+    "preflight_protocol": "planning-preflight-v1",
+    "routing_budget_protocol": "study-routing-budget-v1",
+    "conclusion_protocol": "measured-conclusion-v1",
+    "observables": {
+      "available": [
+        "方向级流量、速度、V/C",
+        "固定核心/邻区/全网行驶时间消耗",
+        "同条件配对变化、邻区毛新增过饱和",
+        "各候选区实际响应及约束判断"
+      ],
+      "unavailable": [
+        "排队长度或排队车辆数",
+        "逐秒轨迹、动态排队回堵",
+        "真实城市因果或零风险证明"
+      ],
+      "conditional": [
+        "全网毛新增过饱和仅在任务开启该检查时提供",
+        "路权及转向响应仅相应适配器提供"
+      ]
+    },
+    "instructions_sha256": "72e4fd5eac17b21cdc80ad72f0089c57132481a6cc7d8d7a14a5e2d17afdb3cb",
+    "initial_schema_sha256": "178825c1cbb08666a2563a00457e5bc3b48c2e0acfad324e5aebd3e3c8d60fc4",
+    "engine": "TranStar batch",
+    "automatic_transport_retry": false,
+    "max_model_requests": 6
+  },
+  "matched_roads": [
+    "七东线",
+    "长江村路"
+  ],
+  "model_requested": false,
+  "native_runs": 0
+}

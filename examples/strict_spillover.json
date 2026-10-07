@@ -1,0 +1,12 @@
+{
+  "request": "七东线单方向停车治理，禁止邻区新增过饱和路段；检验强治理是否被退回",
+  "scenario": "parking",
+  "road_name": "七东线",
+  "links": [[3244, 3245]],
+  "max_links": 1,
+  "max_runs": 3,
+  "max_feedback": 2,
+  "demand_factors": [1.0],
+  "repeat_baseline": false,
+  "max_new_oversaturated_km": 0.0
+}

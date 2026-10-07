@@ -1,0 +1,102 @@
+{
+  "kind": "zero_paid_final_review_service_ui_checks",
+  "source_port": 8772,
+  "source_pid": 45576,
+  "capabilities": {
+    "planning_version": "natural-strategy-plan-v5",
+    "composition_protocol": "traffic-plan-decision-v3",
+    "transport_version": "llm-transport-v2",
+    "initial_review_protocol": "initial-plan-review-v2",
+    "max_initial_corrections": 1,
+    "initial_budget_protocol": "initial-plan-budget-v1",
+    "scope_protocol": "planning-scope-v2",
+    "prerequisite_protocol": "planning-prerequisites-v2",
+    "dynamic_initial_tools": true,
+    "preflight_protocol": "planning-preflight-v1",
+    "routing_budget_protocol": "study-routing-budget-v2",
+    "study_handoff_protocol": "study-handoff-v1",
+    "feedback_review_protocol": "feedback-review-permissions-v1",
+    "parking_completion_protocol": "parking-completion-v2",
+    "finding_reference_schema": "measured-findings-v1",
+    "response_check_protocol": "planning-response-check-v1",
+    "final_review_correction_protocol": "final-review-correction-v1",
+    "max_final_review_corrections": 1,
+    "feedback_instructions_sha256": "a044a6db0f6a10b4c0ff368efc2b206e0695e4bd2d75b543b7584521d1ac4a25",
+    "conclusion_protocol": "measured-conclusion-v1",
+    "observables": {
+      "available": [
+        "方向级流量、速度、V/C",
+        "固定核心/邻区/全网行驶时间消耗",
+        "同条件配对变化、邻区毛新增过饱和",
+        "各候选区实际响应及约束判断"
+      ],
+      "unavailable": [
+        "排队长度或排队车辆数",
+        "逐秒轨迹、动态排队回堵",
+        "真实城市因果或零风险证明"
+      ],
+      "conditional": [
+        "全网毛新增过饱和仅在任务开启该检查时提供",
+        "路权及转向响应仅相应适配器提供"
+      ]
+    },
+    "instructions_sha256": "9f5fc34500dc782cf39862fb77fcddb317d2e116324de88abdcb78f794d20908",
+    "initial_schema_sha256": "178825c1cbb08666a2563a00457e5bc3b48c2e0acfad324e5aebd3e3c8d60fc4",
+    "engine": "TranStar batch",
+    "automatic_transport_retry": false,
+    "max_model_requests": 6
+  },
+  "no_new_model_or_native_records": true,
+  "matched_roads": [
+    "七东线",
+    "长江村路"
+  ],
+  "commands": [
+    {
+      "command": [
+        "node",
+        "--check",
+        "traffic_agent/static/planner_view.js"
+      ],
+      "returncode": 0,
+      "output": ""
+    },
+    {
+      "command": [
+        "node",
+        "tests/test_planner_view.cjs"
+      ],
+      "returncode": 0,
+      "output": "Planner rendering, negative evidence and escaping passed\nCompletion requirements and measured strength comparison passed\nRegional observations, rejection evidence and map targets passed\nCross-area comparison and actual selected map run passed\nEvidence-derived findings and separately attributed model hypothesis review passed\nInitial attempt history preserves failures, unknown cost and escaped text\nWhole programme review, factorial feedback and incomplete status passed\nPersistent whole-programme status never confuses a finished group with final completion\nRejected draft remains inspectable without an execution action or success label\nOne-way target choices display real baseline attributes without claiming untested benefit\nExplicit blockers and bounded interface diagnostics remain separate from successful execution\nExecution scope and quoted clarification grounds are visible and escaped\nBounded initial correction keeps original failure visible and never implies native success\nMeasured costs remain visible despite constraint eligibility and conflicting model conclusions\nGroup completion and final-turn labels agree with derived conclusion conflicts without hiding the original reply\nStudy routing explains budget-feasible choices while retaining deferred required groups\nAccepted pending actions, failed execution, returned observations and safe rejection excerpts remain distinct\nMissing rejected content is not displayed as a proven factual contradiction\nInitial budget repair exposes costs, different engines, original rejection and bounded correction\nBounded final correction keeps both attempts, usage and incomplete states visible\nNative execution and pending model decisions have distinct group status labels\n"
+    }
+  ],
+  "source_sha256": {
+    "traffic_agent/static/planner_view.js": "6225442538202a6d0c3580e01717fff1849d8fde3ff1feb5df0424dda787d2a4",
+    "tests/test_planner_view.cjs": "a479f3d09ed51e214289d8b64e178368e2d4641d479a84e06638fa69da62cce2",
+    "tests/fixtures/review_correction_view.cjs": "88c772cfd002d6e386575191a008a670e79373d3468f31563428c4da2f26b621",
+    "traffic_agent/static/style.css": "a02c794edb644488df1471885ce728f0b34056c9030208bc1e2c4ef063f662a3"
+  },
+  "historical_rc5": {
+    "status": "incomplete",
+    "completed_scenes": 6,
+    "model_requests": 5,
+    "view_port": 8799
+  },
+  "offline_browser": {
+    "port": 8801,
+    "fixture": "tests/fixtures/review_correction_view.cjs",
+    "states_checked": [
+      "awaiting_model",
+      "accepted",
+      "rejected"
+    ],
+    "unknown_usage_visible": true,
+    "first_failure_visible": true,
+    "native_and_model_waiting_labels_distinct": true,
+    "screenshot": "20260927_final_review_correction_ui.png",
+    "console_warnings_or_errors": []
+  },
+  "paid_calls": 0,
+  "new_native_scenes": 0,
+  "overall_complete": false
+}

@@ -1,0 +1,38 @@
+{
+  "kind": "judging_addendum",
+  "files": {
+    "README.md": {
+      "bytes": 958,
+      "sha256": "c80102a9a3ee4ad00d172fe64c818213a8eaedc8c6d26da843e9b78badf0b31f"
+    },
+    "挑战结果.png": {
+      "bytes": 166535,
+      "sha256": "fe8ae084691a0d2bfce60f13aec4d06772fa4127eedce7f67576c57b23ed9a28"
+    },
+    "挑战证据摘要.json": {
+      "bytes": 19654,
+      "sha256": "3ab5aa1e972da052a9918892dae2540f98943126a639caccabe46d697561a123"
+    },
+    "排版核验.json": {
+      "bytes": 945,
+      "sha256": "c6b3d5bcdab48cd2cdcc66efad3db85178ba9475002b40bd7387af1a442f76ee"
+    },
+    "最新实验与便携操作增补.pdf": {
+      "bytes": 465838,
+      "sha256": "ab62414be292738d297254759c4aea415129b4ad84d8bffc39f2f1360d2d4578"
+    },
+    "来源绑定.json": {
+      "bytes": 484,
+      "sha256": "5494692f335e72ed077dc13fce75405fd1eb5af7925282f3265bb8dd57a6006a"
+    },
+    "网页观察.json": {
+      "bytes": 959,
+      "sha256": "52e13c1fc2908ceef3d33078b7be1dfff61cdc70861b7258c2b524bd097270fa"
+    },
+    "网页验收.json": {
+      "bytes": 5073,
+      "sha256": "b5d4b0e250b64707d76de03a06957bb222ca9721089ee7b4c2693cd73572ef7a"
+    }
+  },
+  "meaning": "阅读材料一致性摘要；非数字签名或新模型证明"
+}

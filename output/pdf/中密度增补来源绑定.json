@@ -1,0 +1,38 @@
+{
+  "kind": "medium_robust_guard_score_addendum_v1",
+  "pdf": "20260923中密度区域安全回退增补.pdf",
+  "pdf_sha256": "a0a5e0427720247207851b1426772432a9903d6a594723e2d749eed4f6304e21",
+  "job": "20260923_070135_0f0c08",
+  "historical_study": "20260922_015104_1bd73b",
+  "task_sha256": "14c7f72fed4f93e876763a621924b95bda90f2352ec23951d0f5132932362ce1",
+  "scenarios": 10,
+  "transtar_top_level_calls": 70,
+  "new_model_calls_during_export": 0,
+  "sources": [
+    {
+      "path": "examples/parking_robust_guard_medium_region.json",
+      "sha256": "14c7f72fed4f93e876763a621924b95bda90f2352ec23951d0f5132932362ce1"
+    },
+    {
+      "path": "智能体实验/studies/20260922_015104_1bd73b/selection.json",
+      "sha256": "a8d634a59db90c33190161b970ec20458c1835e5e212da935c203a50606ab829"
+    },
+    {
+      "path": "成果/复评/20260923_medium_robust_guard/comparison.json",
+      "sha256": "194581b9c60481d9b3b16cc1900e6ccbce7bd3d42c25ee57e813ceb6953d3f61"
+    },
+    {
+      "path": "成果/实测档案/20260923_medium_robust_guard/package.json",
+      "sha256": "5d79a0280c665bee307639715b820ea396857e15f3ed6db51d42073fbc36085c"
+    },
+    {
+      "path": "成果/实测档案/20260923_medium_robust_guard/extraction_check.json",
+      "sha256": "753b16a472c4ebf44ca67f3b2e77396b219243126ff085acad296835f4ca226f"
+    },
+    {
+      "path": "成果/实测档案/20260923_medium_robust_guard/中密度三需求安全门槛真实任务档案.zip",
+      "sha256": "bbe7a6049b4bd012bb42597bb2d249c75860bcd644ffa21685474ef2cc46c18a"
+    }
+  ],
+  "scope": "同机同案例三种离散小汽车需求；非盲选、官方评分或异机验证"
+}

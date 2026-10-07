@@ -1,0 +1,1 @@
+areaid	bike	motor	car	truck

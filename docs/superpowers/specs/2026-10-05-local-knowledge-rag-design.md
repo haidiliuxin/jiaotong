@@ -1,0 +1,11 @@
+# Local knowledge RAG design
+
+The model currently receives measured observations and a fixed planning instruction set, while `knowledge.json` is used only by the rule-agent planning view and events. The first RAG increment will retrieve a small, curated set of knowledge snippets for the initial plan and each model feedback decision. It will not search historical job results for predicted benefits.
+
+The retriever reads only `traffic_agent/knowledge.json`, validates IDs, topics, source labels and bounded text, and ranks entries deterministically from the user's request, planning phase and scenario. It returns at most three excerpts, their IDs and sources, the source catalog SHA-256 and a version. No embedding service, upload or additional model call is required. A no-match result is explicit. Knowledge entries are reference material; the already supplied native observations and fixed eligibility checks remain the only effect evidence.
+
+The initial model payload and saved plan contain the retrieved bundle. Feedback decisions carry a freshly retrieved bundle inside their frozen context and wire input. A local verifier checks bundle structure, catalog checksum and deterministic ranking when the same catalog is available. The wire checksum already proves which bytes reached the model. If the catalog has changed, the saved payload remains readable but the current catalog cannot prove the historical ranking; that limitation is reported instead of silently claiming revalidation.
+
+Instructions distinguish documentation citations from measured observation refs. If a model emits a knowledge citation token, it must name an ID in the retrieved bundle; invented IDs are rejected. Knowledge text cannot alter action menus, task constraints, thresholds, observations or recommendation eligibility. New bundles are opt-in through the new plan protocol; historical decisions retain their previous wire contract.
+
+Acceptance: retrieval is deterministic, bounded and query-sensitive; invalid catalog content fails closed before a paid call; both planning stages receive source-bearing snippets; fabricated knowledge citations fail; legacy decisions still audit; offline regression and a recorded-task read-only verification pass.

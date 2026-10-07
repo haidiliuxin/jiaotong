@@ -1,0 +1,2557 @@
+{
+  "id": "20260923_094829_0855d5",
+  "status": "failed",
+  "started": "2026-09-23T01:48:29.042484+00:00",
+  "task": {
+    "request": "未见区域：全网新增过饱和安全门槛下，完整单路段固定网格与新版反馈回退同预算对照",
+    "scenario": "parking",
+    "search_mode": "robust",
+    "recommendation_version": "tolerance-v2",
+    "road_name": null,
+    "links": [],
+    "turn": null,
+    "max_links": 3,
+    "max_runs": 16,
+    "max_feedback": 3,
+    "demand_factors": [
+      0.9,
+      1.0,
+      1.1
+    ],
+    "repeat_baseline": true,
+    "neighbor_hops": 2,
+    "target_speed_kmh": 25.0,
+    "max_neighbor_time_increase_pct": 0.5,
+    "max_network_time_increase_pct": 0.1,
+    "max_new_oversaturated_km": 0.1,
+    "max_new_network_oversaturated_km": 0.1,
+    "module_timeout_seconds": 900
+  },
+  "runs": [
+    {
+      "name": "baseline",
+      "changes": [],
+      "demand_factor": 1.0,
+      "edits": [],
+      "scenario": "scenarios\\baseline\\基础路网",
+      "execution": {
+        "scenario": "F:\\ITS比赛\\智能体实验\\challenges\\20260923_094829_0855d5\\scenarios\\baseline\\基础路网",
+        "status": "completed",
+        "started": "2026-09-23T01:48:30.951450+00:00",
+        "modules": [
+          {
+            "module": "M3DataRoadNetwork.exe",
+            "started": "2026-09-23T01:48:31.055259+00:00",
+            "status": "completed",
+            "pid": 51592,
+            "returncode": 0,
+            "elapsed_seconds": 5.25,
+            "finished": "2026-09-23T01:48:36.306613+00:00"
+          },
+          {
+            "module": "M3DataBusNetwork.exe",
+            "started": "2026-09-23T01:48:36.320822+00:00",
+            "status": "completed",
+            "pid": 27476,
+            "returncode": 0,
+            "elapsed_seconds": 0.875,
+            "finished": "2026-09-23T01:48:37.193754+00:00"
+          },
+          {
+            "module": "M3DataTrafficManage.exe",
+            "started": "2026-09-23T01:48:37.196750+00:00",
+            "status": "completed",
+            "pid": 55252,
+            "returncode": 0,
+            "elapsed_seconds": 4.547,
+            "finished": "2026-09-23T01:48:41.736579+00:00"
+          },
+          {
+            "module": "M6AssignVehicle.exe",
+            "started": "2026-09-23T01:48:41.739626+00:00",
+            "status": "completed",
+            "pid": 46000,
+            "returncode": 0,
+            "elapsed_seconds": 126.344,
+            "finished": "2026-09-23T01:50:48.086108+00:00"
+          },
+          {
+            "module": "M6TrafficLoadLinkVeh.exe",
+            "started": "2026-09-23T01:50:48.096734+00:00",
+            "status": "completed",
+            "pid": 50148,
+            "returncode": 0,
+            "elapsed_seconds": 0.36,
+            "finished": "2026-09-23T01:50:48.452628+00:00"
+          },
+          {
+            "module": "M6TrafficLoadNodeVeh.exe",
+            "started": "2026-09-23T01:50:48.454773+00:00",
+            "status": "completed",
+            "pid": 54780,
+            "returncode": 0,
+            "elapsed_seconds": 1.094,
+            "finished": "2026-09-23T01:50:49.551423+00:00"
+          },
+          {
+            "module": "M6NodeQueueDelay.exe",
+            "started": "2026-09-23T01:50:49.561618+00:00",
+            "status": "completed",
+            "pid": 52544,
+            "returncode": 0,
+            "elapsed_seconds": 1.485,
+            "finished": "2026-09-23T01:50:51.046653+00:00"
+          }
+        ],
+        "fresh_outputs": {
+          "result/SpdLinkVeh.tsd": {
+            "bytes": 229783,
+            "mtime_ns": 1790128221984317200
+          },
+          "result/VolLinkVeh.tsd": {
+            "bytes": 238243,
+            "mtime_ns": 1790128243563616800
+          },
+          "result/VCLinkVeh.tsd": {
+            "bytes": 283149,
+            "mtime_ns": 1790128248447377900
+          },
+          "result/TimeLink.tsd": {
+            "bytes": 232042,
+            "mtime_ns": 1790128221984317200
+          },
+          "cache/CapLinkVehMan.dat": {
+            "bytes": 248743,
+            "mtime_ns": 1790128120764681400
+          },
+          "cache/Assign_car.od": {
+            "bytes": 1102240,
+            "mtime_ns": 1790128221009805600
+          }
+        },
+        "input_changes_during_run": [],
+        "assigned_car_od_sum": 12370.26418,
+        "source_car_od_sum": 185553.9479,
+        "assigned_to_source_ratio": 0.06666667198407801,
+        "result_rows": 32981,
+        "finished": "2026-09-23T01:50:51.550115+00:00"
+      },
+      "metrics": null
+    },
+    {
+      "name": "baseline_1.1",
+      "changes": [],
+      "demand_factor": 1.1,
+      "edits": [
+        {
+          "file": "result/ODCar.tsd",
+          "factor": 1.1,
+          "sum_before_pcu_h": 185553.9479,
+          "sum_after_pcu_h": 204109.34269,
+          "evidence": "demand.sensitivity",
+          "other_modes": "unchanged"
+        }
+      ],
+      "scenario": "scenarios\\baseline_1.1\\基础路网",
+      "execution": {
+        "scenario": "F:\\ITS比赛\\智能体实验\\challenges\\20260923_094829_0855d5\\scenarios\\baseline_1.1\\基础路网",
+        "status": "completed",
+        "started": "2026-09-23T01:51:04.476630+00:00",
+        "modules": [
+          {
+            "module": "M3DataRoadNetwork.exe",
+            "started": "2026-09-23T01:51:04.565663+00:00",
+            "status": "completed",
+            "pid": 41640,
+            "returncode": 0,
+            "elapsed_seconds": 4.797,
+            "finished": "2026-09-23T01:51:09.370621+00:00"
+          },
+          {
+            "module": "M3DataBusNetwork.exe",
+            "started": "2026-09-23T01:51:09.380993+00:00",
+            "status": "completed",
+            "pid": 38268,
+            "returncode": 0,
+            "elapsed_seconds": 0.797,
+            "finished": "2026-09-23T01:51:10.175629+00:00"
+          },
+          {
+            "module": "M3DataTrafficManage.exe",
+            "started": "2026-09-23T01:51:10.186006+00:00",
+            "status": "completed",
+            "pid": 55364,
+            "returncode": 0,
+            "elapsed_seconds": 4.094,
+            "finished": "2026-09-23T01:51:14.289654+00:00"
+          },
+          {
+            "module": "M6AssignVehicle.exe",
+            "started": "2026-09-23T01:51:14.299533+00:00",
+            "status": "completed",
+            "pid": 55912,
+            "returncode": 0,
+            "elapsed_seconds": 122.39,
+            "finished": "2026-09-23T01:53:16.688183+00:00"
+          },
+          {
+            "module": "M6TrafficLoadLinkVeh.exe",
+            "started": "2026-09-23T01:53:16.692214+00:00",
+            "status": "completed",
+            "pid": 6664,
+            "returncode": 0,
+            "elapsed_seconds": 0.344,
+            "finished": "2026-09-23T01:53:17.042389+00:00"
+          },
+          {
+            "module": "M6TrafficLoadNodeVeh.exe",
+            "started": "2026-09-23T01:53:17.044912+00:00",
+            "status": "completed",
+            "pid": 48016,
+            "returncode": 0,
+            "elapsed_seconds": 1.078,
+            "finished": "2026-09-23T01:53:18.115933+00:00"
+          },
+          {
+            "module": "M6NodeQueueDelay.exe",
+            "started": "2026-09-23T01:53:18.117448+00:00",
+            "status": "completed",
+            "pid": 20568,
+            "returncode": 0,
+            "elapsed_seconds": 1.484,
+            "finished": "2026-09-23T01:53:19.594325+00:00"
+          }
+        ],
+        "fresh_outputs": {
+          "result/SpdLinkVeh.tsd": {
+            "bytes": 229654,
+            "mtime_ns": 1790128370258746500
+          },
+          "result/VolLinkVeh.tsd": {
+            "bytes": 239324,
+            "mtime_ns": 1790128391969437000
+          },
+          "result/VCLinkVeh.tsd": {
+            "bytes": 282348,
+            "mtime_ns": 1790128397038094400
+          },
+          "result/TimeLink.tsd": {
+            "bytes": 232365,
+            "mtime_ns": 1790128370258746500
+          },
+          "cache/CapLinkVehMan.dat": {
+            "bytes": 248743,
+            "mtime_ns": 1790128273417545200
+          },
+          "cache/Assign_car.od": {
+            "bytes": 1102240,
+            "mtime_ns": 1790128369310945500
+          }
+        },
+        "input_changes_during_run": [],
+        "assigned_car_od_sum": 13607.288526,
+        "source_car_od_sum": 204109.34269,
+        "assigned_to_source_ratio": 0.06666666183265636,
+        "result_rows": 32981,
+        "finished": "2026-09-23T01:53:20.232159+00:00"
+      },
+      "metrics": null
+    },
+    {
+      "name": "baseline_0.9",
+      "changes": [],
+      "demand_factor": 0.9,
+      "edits": [
+        {
+          "file": "result/ODCar.tsd",
+          "factor": 0.9,
+          "sum_before_pcu_h": 185553.9479,
+          "sum_after_pcu_h": 166998.55311,
+          "evidence": "demand.sensitivity",
+          "other_modes": "unchanged"
+        }
+      ],
+      "scenario": "scenarios\\baseline_0.9\\基础路网",
+      "execution": {
+        "scenario": "F:\\ITS比赛\\智能体实验\\challenges\\20260923_094829_0855d5\\scenarios\\baseline_0.9\\基础路网",
+        "status": "completed",
+        "started": "2026-09-23T01:53:21.050982+00:00",
+        "modules": [
+          {
+            "module": "M3DataRoadNetwork.exe",
+            "started": "2026-09-23T01:53:21.146291+00:00",
+            "status": "completed",
+            "pid": 50044,
+            "returncode": 0,
+            "elapsed_seconds": 4.828,
+            "finished": "2026-09-23T01:53:25.974530+00:00"
+          },
+          {
+            "module": "M3DataBusNetwork.exe",
+            "started": "2026-09-23T01:53:25.977898+00:00",
+            "status": "completed",
+            "pid": 55088,
+            "returncode": 0,
+            "elapsed_seconds": 0.813,
+            "finished": "2026-09-23T01:53:26.781254+00:00"
+          },
+          {
+            "module": "M3DataTrafficManage.exe",
+            "started": "2026-09-23T01:53:26.784757+00:00",
+            "status": "completed",
+            "pid": 53568,
+            "returncode": 0,
+            "elapsed_seconds": 4.172,
+            "finished": "2026-09-23T01:53:30.952573+00:00"
+          },
+          {
+            "module": "M6AssignVehicle.exe",
+            "started": "2026-09-23T01:53:30.955570+00:00",
+            "status": "completed",
+            "pid": 50892,
+            "returncode": 0,
+            "elapsed_seconds": 123.469,
+            "finished": "2026-09-23T01:55:34.425035+00:00"
+          },
+          {
+            "module": "M6TrafficLoadLinkVeh.exe",
+            "started": "2026-09-23T01:55:34.435289+00:00",
+            "status": "completed",
+            "pid": 54940,
+            "returncode": 0,
+            "elapsed_seconds": 0.359,
+            "finished": "2026-09-23T01:55:34.783084+00:00"
+          },
+          {
+            "module": "M6TrafficLoadNodeVeh.exe",
+            "started": "2026-09-23T01:55:34.786681+00:00",
+            "status": "completed",
+            "pid": 40220,
+            "returncode": 0,
+            "elapsed_seconds": 1.062,
+            "finished": "2026-09-23T01:55:35.857867+00:00"
+          },
+          {
+            "module": "M6NodeQueueDelay.exe",
+            "started": "2026-09-23T01:55:35.869417+00:00",
+            "status": "completed",
+            "pid": 22412,
+            "returncode": 0,
+            "elapsed_seconds": 1.453,
+            "finished": "2026-09-23T01:55:37.318592+00:00"
+          }
+        ],
+        "fresh_outputs": {
+          "result/SpdLinkVeh.tsd": {
+            "bytes": 229897,
+            "mtime_ns": 1790128507687591400
+          },
+          "result/VolLinkVeh.tsd": {
+            "bytes": 236782,
+            "mtime_ns": 1790128529539536800
+          },
+          "result/VCLinkVeh.tsd": {
+            "bytes": 283601,
+            "mtime_ns": 1790128534779009200
+          },
+          "result/TimeLink.tsd": {
+            "bytes": 231751,
+            "mtime_ns": 1790128507687591400
+          },
+          "cache/CapLinkVehMan.dat": {
+            "bytes": 248743,
+            "mtime_ns": 1790128410053638200
+          },
+          "cache/Assign_car.od": {
+            "bytes": 1102240,
+            "mtime_ns": 1790128506745110100
+          }
+        },
+        "input_changes_during_run": [],
+        "assigned_car_od_sum": 11133.236874,
+        "source_car_od_sum": 166998.55311,
+        "assigned_to_source_ratio": 0.06666666666666667,
+        "result_rows": 32981,
+        "finished": "2026-09-23T01:55:37.875375+00:00"
+      },
+      "metrics": null
+    },
+    {
+      "name": "case_001",
+      "changes": [
+        {
+          "from_node": 709,
+          "to_node": 710,
+          "old_parking": 3,
+          "parking": 2
+        },
+        {
+          "from_node": 713,
+          "to_node": 711,
+          "old_parking": 3,
+          "parking": 2
+        },
+        {
+          "from_node": 1250,
+          "to_node": 1240,
+          "old_parking": 3,
+          "parking": 2
+        }
+      ],
+      "demand_factor": 1.1,
+      "edits": [
+        {
+          "from_node": 709,
+          "to_node": 710,
+          "old_parking": 3,
+          "parking": 2,
+          "file": "data/manageL.txt",
+          "evidence": "parking.categories"
+        },
+        {
+          "from_node": 713,
+          "to_node": 711,
+          "old_parking": 3,
+          "parking": 2,
+          "file": "data/manageL.txt",
+          "evidence": "parking.categories"
+        },
+        {
+          "from_node": 1250,
+          "to_node": 1240,
+          "old_parking": 3,
+          "parking": 2,
+          "file": "data/manageL.txt",
+          "evidence": "parking.categories"
+        },
+        {
+          "file": "result/ODCar.tsd",
+          "factor": 1.1,
+          "sum_before_pcu_h": 185553.9479,
+          "sum_after_pcu_h": 204109.34269,
+          "evidence": "demand.sensitivity",
+          "other_modes": "unchanged"
+        }
+      ],
+      "scenario": "scenarios\\case_001\\基础路网",
+      "execution": {
+        "scenario": "F:\\ITS比赛\\智能体实验\\challenges\\20260923_094829_0855d5\\scenarios\\case_001\\基础路网",
+        "status": "completed",
+        "started": "2026-09-23T01:55:38.916464+00:00",
+        "modules": [
+          {
+            "module": "M3DataRoadNetwork.exe",
+            "started": "2026-09-23T01:55:39.010694+00:00",
+            "status": "completed",
+            "pid": 36392,
+            "returncode": 0,
+            "elapsed_seconds": 4.735,
+            "finished": "2026-09-23T01:55:43.761922+00:00"
+          },
+          {
+            "module": "M3DataBusNetwork.exe",
+            "started": "2026-09-23T01:55:43.773010+00:00",
+            "status": "completed",
+            "pid": 39100,
+            "returncode": 0,
+            "elapsed_seconds": 0.813,
+            "finished": "2026-09-23T01:55:44.579559+00:00"
+          },
+          {
+            "module": "M3DataTrafficManage.exe",
+            "started": "2026-09-23T01:55:44.588553+00:00",
+            "status": "completed",
+            "pid": 54980,
+            "returncode": 0,
+            "elapsed_seconds": 4.109,
+            "finished": "2026-09-23T01:55:48.699864+00:00"
+          },
+          {
+            "module": "M6AssignVehicle.exe",
+            "started": "2026-09-23T01:55:48.710144+00:00",
+            "status": "completed",
+            "pid": 52048,
+            "returncode": 0,
+            "elapsed_seconds": 122.219,
+            "finished": "2026-09-23T01:57:50.928703+00:00"
+          },
+          {
+            "module": "M6TrafficLoadLinkVeh.exe",
+            "started": "2026-09-23T01:57:50.940267+00:00",
+            "status": "completed",
+            "pid": 52956,
+            "returncode": 0,
+            "elapsed_seconds": 0.344,
+            "finished": "2026-09-23T01:57:51.294587+00:00"
+          },
+          {
+            "module": "M6TrafficLoadNodeVeh.exe",
+            "started": "2026-09-23T01:57:51.304514+00:00",
+            "status": "completed",
+            "pid": 37968,
+            "returncode": 0,
+            "elapsed_seconds": 1.062,
+            "finished": "2026-09-23T01:57:52.370713+00:00"
+          },
+          {
+            "module": "M6NodeQueueDelay.exe",
+            "started": "2026-09-23T01:57:52.381409+00:00",
+            "status": "completed",
+            "pid": 53956,
+            "returncode": 0,
+            "elapsed_seconds": 1.468,
+            "finished": "2026-09-23T01:57:53.849547+00:00"
+          }
+        ],
+        "fresh_outputs": {
+          "result/SpdLinkVeh.tsd": {
+            "bytes": 229656,
+            "mtime_ns": 1790128644825764400
+          },
+          "result/VolLinkVeh.tsd": {
+            "bytes": 239324,
+            "mtime_ns": 1790128666375019000
+          },
+          "result/VCLinkVeh.tsd": {
+            "bytes": 282325,
+            "mtime_ns": 1790128671289594100
+          },
+          "result/TimeLink.tsd": {
+            "bytes": 232364,
+            "mtime_ns": 1790128644825764400
+          },
+          "cache/CapLinkVehMan.dat": {
+            "bytes": 248741,
+            "mtime_ns": 1790128547827624700
+          },
+          "cache/Assign_car.od": {
+            "bytes": 1102240,
+            "mtime_ns": 1790128643881411000
+          }
+        },
+        "input_changes_during_run": [],
+        "assigned_car_od_sum": 13607.288526,
+        "source_car_od_sum": 204109.34269,
+        "assigned_to_source_ratio": 0.06666666183265636,
+        "result_rows": 32981,
+        "finished": "2026-09-23T01:57:54.388961+00:00"
+      },
+      "metrics": null
+    }
+  ],
+  "decisions": [],
+  "sensitivity": [],
+  "run_count": 5,
+  "kind": "prospective_network_guard_challenge",
+  "physical_budget": 67,
+  "regions": {
+    "high": {
+      "status": "running",
+      "strategies": {
+        "fixed_full_singletons": {
+          "runs": [
+            {
+              "name": "baseline",
+              "physical_run": "baseline",
+              "changes": [],
+              "demand_factor": 1.0,
+              "execution": {
+                "scenario": "F:\\ITS比赛\\智能体实验\\challenges\\20260923_094829_0855d5\\scenarios\\baseline\\基础路网",
+                "status": "completed",
+                "started": "2026-09-23T01:48:30.951450+00:00",
+                "modules": [
+                  {
+                    "module": "M3DataRoadNetwork.exe",
+                    "started": "2026-09-23T01:48:31.055259+00:00",
+                    "status": "completed",
+                    "pid": 51592,
+                    "returncode": 0,
+                    "elapsed_seconds": 5.25,
+                    "finished": "2026-09-23T01:48:36.306613+00:00"
+                  },
+                  {
+                    "module": "M3DataBusNetwork.exe",
+                    "started": "2026-09-23T01:48:36.320822+00:00",
+                    "status": "completed",
+                    "pid": 27476,
+                    "returncode": 0,
+                    "elapsed_seconds": 0.875,
+                    "finished": "2026-09-23T01:48:37.193754+00:00"
+                  },
+                  {
+                    "module": "M3DataTrafficManage.exe",
+                    "started": "2026-09-23T01:48:37.196750+00:00",
+                    "status": "completed",
+                    "pid": 55252,
+                    "returncode": 0,
+                    "elapsed_seconds": 4.547,
+                    "finished": "2026-09-23T01:48:41.736579+00:00"
+                  },
+                  {
+                    "module": "M6AssignVehicle.exe",
+                    "started": "2026-09-23T01:48:41.739626+00:00",
+                    "status": "completed",
+                    "pid": 46000,
+                    "returncode": 0,
+                    "elapsed_seconds": 126.344,
+                    "finished": "2026-09-23T01:50:48.086108+00:00"
+                  },
+                  {
+                    "module": "M6TrafficLoadLinkVeh.exe",
+                    "started": "2026-09-23T01:50:48.096734+00:00",
+                    "status": "completed",
+                    "pid": 50148,
+                    "returncode": 0,
+                    "elapsed_seconds": 0.36,
+                    "finished": "2026-09-23T01:50:48.452628+00:00"
+                  },
+                  {
+                    "module": "M6TrafficLoadNodeVeh.exe",
+                    "started": "2026-09-23T01:50:48.454773+00:00",
+                    "status": "completed",
+                    "pid": 54780,
+                    "returncode": 0,
+                    "elapsed_seconds": 1.094,
+                    "finished": "2026-09-23T01:50:49.551423+00:00"
+                  },
+                  {
+                    "module": "M6NodeQueueDelay.exe",
+                    "started": "2026-09-23T01:50:49.561618+00:00",
+                    "status": "completed",
+                    "pid": 52544,
+                    "returncode": 0,
+                    "elapsed_seconds": 1.485,
+                    "finished": "2026-09-23T01:50:51.046653+00:00"
+                  }
+                ],
+                "fresh_outputs": {
+                  "result/SpdLinkVeh.tsd": {
+                    "bytes": 229783,
+                    "mtime_ns": 1790128221984317200
+                  },
+                  "result/VolLinkVeh.tsd": {
+                    "bytes": 238243,
+                    "mtime_ns": 1790128243563616800
+                  },
+                  "result/VCLinkVeh.tsd": {
+                    "bytes": 283149,
+                    "mtime_ns": 1790128248447377900
+                  },
+                  "result/TimeLink.tsd": {
+                    "bytes": 232042,
+                    "mtime_ns": 1790128221984317200
+                  },
+                  "cache/CapLinkVehMan.dat": {
+                    "bytes": 248743,
+                    "mtime_ns": 1790128120764681400
+                  },
+                  "cache/Assign_car.od": {
+                    "bytes": 1102240,
+                    "mtime_ns": 1790128221009805600
+                  }
+                },
+                "input_changes_during_run": [],
+                "assigned_car_od_sum": 12370.26418,
+                "source_car_od_sum": 185553.9479,
+                "assigned_to_source_ratio": 0.06666667198407801,
+                "result_rows": 32981,
+                "finished": "2026-09-23T01:50:51.550115+00:00"
+              },
+              "metrics": {
+                "core": {
+                  "directed_links": 3,
+                  "directed_length_km": 0.651,
+                  "weighted_speed_kmh": 12.22002786085603,
+                  "running_time_pcu_h": 99.69474487881065,
+                  "transport_pcu_km": 1218.27256,
+                  "oversaturated_km": 0.651,
+                  "timelink_flagged_links": 0,
+                  "timelink_sum_pcu_h": 99.69063186111111
+                },
+                "neighbor": {
+                  "directed_links": 47,
+                  "directed_length_km": 10.691,
+                  "weighted_speed_kmh": 24.9498228242217,
+                  "running_time_pcu_h": 265.87107919500534,
+                  "transport_pcu_km": 6633.43632,
+                  "oversaturated_km": 3.676,
+                  "timelink_flagged_links": 0,
+                  "timelink_sum_pcu_h": 1153.297504111111
+                },
+                "network": {
+                  "directed_links": 32060,
+                  "directed_length_km": 12446.9460498,
+                  "weighted_speed_kmh": 33.43319835501451,
+                  "running_time_pcu_h": 227328.24893586405,
+                  "transport_pcu_km": 7600310.438370859,
+                  "oversaturated_km": 1608.6958436,
+                  "timelink_flagged_links": 44,
+                  "timelink_sum_pcu_h": null
+                }
+              },
+              "core_rows": [
+                {
+                  "index": 2162,
+                  "from_node": 709,
+                  "to_node": 710,
+                  "length_km": 0.134,
+                  "road_class": 3,
+                  "lanes": 2.0,
+                  "name": "浦东路",
+                  "parking": 3,
+                  "included": true,
+                  "speed_kmh": 39.38,
+                  "flow_pcu_h": 2108.31,
+                  "vc": 1.17489,
+                  "time_s": 12.25,
+                  "adjusted_capacity_pcu_h": 1480.44,
+                  "adjusted_load_ratio": 1.4241103996109263
+                },
+                {
+                  "index": 2174,
+                  "from_node": 713,
+                  "to_node": 711,
+                  "length_km": 0.185,
+                  "road_class": 3,
+                  "lanes": 2.0,
+                  "name": "浦东路",
+                  "parking": 3,
+                  "included": true,
+                  "speed_kmh": 9.97,
+                  "flow_pcu_h": 1993.42,
+                  "vc": 2.02378,
+                  "time_s": 66.82,
+                  "adjusted_capacity_pcu_h": 812.625,
+                  "adjusted_load_ratio": 2.453062605752961
+                },
+                {
+                  "index": 3780,
+                  "from_node": 1250,
+                  "to_node": 1240,
+                  "length_km": 0.332,
+                  "road_class": 3,
+                  "lanes": 1.0,
+                  "name": "柳浦线",
+                  "parking": 3,
+                  "included": true,
+                  "speed_kmh": 10.21,
+                  "flow_pcu_h": 1707.76,
+                  "vc": 2.59876,
+                  "time_s": 117.03,
+                  "adjusted_capacity_pcu_h": 650.0,
+                  "adjusted_load_ratio": 2.627323076923077
+                }
+              ]
+            },
+            {
+              "name": "baseline_1.1",
+              "physical_run": "baseline_1.1",
+              "changes": [],
+              "demand_factor": 1.1,
+              "execution": {
+                "scenario": "F:\\ITS比赛\\智能体实验\\challenges\\20260923_094829_0855d5\\scenarios\\baseline_1.1\\基础路网",
+                "status": "completed",
+                "started": "2026-09-23T01:51:04.476630+00:00",
+                "modules": [
+                  {
+                    "module": "M3DataRoadNetwork.exe",
+                    "started": "2026-09-23T01:51:04.565663+00:00",
+                    "status": "completed",
+                    "pid": 41640,
+                    "returncode": 0,
+                    "elapsed_seconds": 4.797,
+                    "finished": "2026-09-23T01:51:09.370621+00:00"
+                  },
+                  {
+                    "module": "M3DataBusNetwork.exe",
+                    "started": "2026-09-23T01:51:09.380993+00:00",
+                    "status": "completed",
+                    "pid": 38268,
+                    "returncode": 0,
+                    "elapsed_seconds": 0.797,
+                    "finished": "2026-09-23T01:51:10.175629+00:00"
+                  },
+                  {
+                    "module": "M3DataTrafficManage.exe",
+                    "started": "2026-09-23T01:51:10.186006+00:00",
+                    "status": "completed",
+                    "pid": 55364,
+                    "returncode": 0,
+                    "elapsed_seconds": 4.094,
+                    "finished": "2026-09-23T01:51:14.289654+00:00"
+                  },
+                  {
+                    "module": "M6AssignVehicle.exe",
+                    "started": "2026-09-23T01:51:14.299533+00:00",
+                    "status": "completed",
+                    "pid": 55912,
+                    "returncode": 0,
+                    "elapsed_seconds": 122.39,
+                    "finished": "2026-09-23T01:53:16.688183+00:00"
+                  },
+                  {
+                    "module": "M6TrafficLoadLinkVeh.exe",
+                    "started": "2026-09-23T01:53:16.692214+00:00",
+                    "status": "completed",
+                    "pid": 6664,
+                    "returncode": 0,
+                    "elapsed_seconds": 0.344,
+                    "finished": "2026-09-23T01:53:17.042389+00:00"
+                  },
+                  {
+                    "module": "M6TrafficLoadNodeVeh.exe",
+                    "started": "2026-09-23T01:53:17.044912+00:00",
+                    "status": "completed",
+                    "pid": 48016,
+                    "returncode": 0,
+                    "elapsed_seconds": 1.078,
+                    "finished": "2026-09-23T01:53:18.115933+00:00"
+                  },
+                  {
+                    "module": "M6NodeQueueDelay.exe",
+                    "started": "2026-09-23T01:53:18.117448+00:00",
+                    "status": "completed",
+                    "pid": 20568,
+                    "returncode": 0,
+                    "elapsed_seconds": 1.484,
+                    "finished": "2026-09-23T01:53:19.594325+00:00"
+                  }
+                ],
+                "fresh_outputs": {
+                  "result/SpdLinkVeh.tsd": {
+                    "bytes": 229654,
+                    "mtime_ns": 1790128370258746500
+                  },
+                  "result/VolLinkVeh.tsd": {
+                    "bytes": 239324,
+                    "mtime_ns": 1790128391969437000
+                  },
+                  "result/VCLinkVeh.tsd": {
+                    "bytes": 282348,
+                    "mtime_ns": 1790128397038094400
+                  },
+                  "result/TimeLink.tsd": {
+                    "bytes": 232365,
+                    "mtime_ns": 1790128370258746500
+                  },
+                  "cache/CapLinkVehMan.dat": {
+                    "bytes": 248743,
+                    "mtime_ns": 1790128273417545200
+                  },
+                  "cache/Assign_car.od": {
+                    "bytes": 1102240,
+                    "mtime_ns": 1790128369310945500
+                  }
+                },
+                "input_changes_during_run": [],
+                "assigned_car_od_sum": 13607.288526,
+                "source_car_od_sum": 204109.34269,
+                "assigned_to_source_ratio": 0.06666666183265636,
+                "result_rows": 32981,
+                "finished": "2026-09-23T01:53:20.232159+00:00"
+              },
+              "metrics": {
+                "core": {
+                  "directed_links": 3,
+                  "directed_length_km": 0.651,
+                  "weighted_speed_kmh": 10.783940755961376,
+                  "running_time_pcu_h": 128.99481659624414,
+                  "transport_pcu_km": 1391.07246,
+                  "oversaturated_km": 0.651,
+                  "timelink_flagged_links": 0,
+                  "timelink_sum_pcu_h": 146.54347777777775
+                },
+                "neighbor": {
+                  "directed_links": 47,
+                  "directed_length_km": 10.691,
+                  "weighted_speed_kmh": 24.29501729137761,
+                  "running_time_pcu_h": 328.16244476720516,
+                  "transport_pcu_km": 7972.71227,
+                  "oversaturated_km": 4.592,
+                  "timelink_flagged_links": 0,
+                  "timelink_sum_pcu_h": 1537.2648871388888
+                },
+                "network": {
+                  "directed_links": 32060,
+                  "directed_length_km": 12446.9460498,
+                  "weighted_speed_kmh": 31.81463509331832,
+                  "running_time_pcu_h": 260701.22788354222,
+                  "transport_pcu_km": 8294114.433494919,
+                  "oversaturated_km": 1766.9057917,
+                  "timelink_flagged_links": 45,
+                  "timelink_sum_pcu_h": null
+                }
+              },
+              "core_rows": [
+                {
+                  "index": 2162,
+                  "from_node": 709,
+                  "to_node": 710,
+                  "length_km": 0.134,
+                  "road_class": 3,
+                  "lanes": 2.0,
+                  "name": "浦东路",
+                  "parking": 3,
+                  "included": true,
+                  "speed_kmh": 22.72,
+                  "flow_pcu_h": 2843.82,
+                  "vc": 1.58477,
+                  "time_s": 21.23,
+                  "adjusted_capacity_pcu_h": 1480.44,
+                  "adjusted_load_ratio": 1.920928913025857
+                },
+                {
+                  "index": 2174,
+                  "from_node": 713,
+                  "to_node": 711,
+                  "length_km": 0.185,
+                  "road_class": 3,
+                  "lanes": 2.0,
+                  "name": "浦东路",
+                  "parking": 3,
+                  "included": true,
+                  "speed_kmh": 9.0,
+                  "flow_pcu_h": 2142.98,
+                  "vc": 2.17561,
+                  "time_s": 85.27,
+                  "adjusted_capacity_pcu_h": 812.625,
+                  "adjusted_load_ratio": 2.63710813720966
+                },
+                {
+                  "index": 3780,
+                  "from_node": 1250,
+                  "to_node": 1240,
+                  "length_km": 0.332,
+                  "road_class": 3,
+                  "lanes": 1.0,
+                  "name": "柳浦线",
+                  "parking": 3,
+                  "included": true,
+                  "speed_kmh": 9.0,
+                  "flow_pcu_h": 1848.04,
+                  "vc": 2.81223,
+                  "time_s": 153.92,
+                  "adjusted_capacity_pcu_h": 650.0,
+                  "adjusted_load_ratio": 2.8431384615384614
+                }
+              ]
+            },
+            {
+              "name": "baseline_0.9",
+              "physical_run": "baseline_0.9",
+              "changes": [],
+              "demand_factor": 0.9,
+              "execution": {
+                "scenario": "F:\\ITS比赛\\智能体实验\\challenges\\20260923_094829_0855d5\\scenarios\\baseline_0.9\\基础路网",
+                "status": "completed",
+                "started": "2026-09-23T01:53:21.050982+00:00",
+                "modules": [
+                  {
+                    "module": "M3DataRoadNetwork.exe",
+                    "started": "2026-09-23T01:53:21.146291+00:00",
+                    "status": "completed",
+                    "pid": 50044,
+                    "returncode": 0,
+                    "elapsed_seconds": 4.828,
+                    "finished": "2026-09-23T01:53:25.974530+00:00"
+                  },
+                  {
+                    "module": "M3DataBusNetwork.exe",
+                    "started": "2026-09-23T01:53:25.977898+00:00",
+                    "status": "completed",
+                    "pid": 55088,
+                    "returncode": 0,
+                    "elapsed_seconds": 0.813,
+                    "finished": "2026-09-23T01:53:26.781254+00:00"
+                  },
+                  {
+                    "module": "M3DataTrafficManage.exe",
+                    "started": "2026-09-23T01:53:26.784757+00:00",
+                    "status": "completed",
+                    "pid": 53568,
+                    "returncode": 0,
+                    "elapsed_seconds": 4.172,
+                    "finished": "2026-09-23T01:53:30.952573+00:00"
+                  },
+                  {
+                    "module": "M6AssignVehicle.exe",
+                    "started": "2026-09-23T01:53:30.955570+00:00",
+                    "status": "completed",
+                    "pid": 50892,
+                    "returncode": 0,
+                    "elapsed_seconds": 123.469,
+                    "finished": "2026-09-23T01:55:34.425035+00:00"
+                  },
+                  {
+                    "module": "M6TrafficLoadLinkVeh.exe",
+                    "started": "2026-09-23T01:55:34.435289+00:00",
+                    "status": "completed",
+                    "pid": 54940,
+                    "returncode": 0,
+                    "elapsed_seconds": 0.359,
+                    "finished": "2026-09-23T01:55:34.783084+00:00"
+                  },
+                  {
+                    "module": "M6TrafficLoadNodeVeh.exe",
+                    "started": "2026-09-23T01:55:34.786681+00:00",
+                    "status": "completed",
+                    "pid": 40220,
+                    "returncode": 0,
+                    "elapsed_seconds": 1.062,
+                    "finished": "2026-09-23T01:55:35.857867+00:00"
+                  },
+                  {
+                    "module": "M6NodeQueueDelay.exe",
+                    "started": "2026-09-23T01:55:35.869417+00:00",
+                    "status": "completed",
+                    "pid": 22412,
+                    "returncode": 0,
+                    "elapsed_seconds": 1.453,
+                    "finished": "2026-09-23T01:55:37.318592+00:00"
+                  }
+                ],
+                "fresh_outputs": {
+                  "result/SpdLinkVeh.tsd": {
+                    "bytes": 229897,
+                    "mtime_ns": 1790128507687591400
+                  },
+                  "result/VolLinkVeh.tsd": {
+                    "bytes": 236782,
+                    "mtime_ns": 1790128529539536800
+                  },
+                  "result/VCLinkVeh.tsd": {
+                    "bytes": 283601,
+                    "mtime_ns": 1790128534779009200
+                  },
+                  "result/TimeLink.tsd": {
+                    "bytes": 231751,
+                    "mtime_ns": 1790128507687591400
+                  },
+                  "cache/CapLinkVehMan.dat": {
+                    "bytes": 248743,
+                    "mtime_ns": 1790128410053638200
+                  },
+                  "cache/Assign_car.od": {
+                    "bytes": 1102240,
+                    "mtime_ns": 1790128506745110100
+                  }
+                },
+                "input_changes_during_run": [],
+                "assigned_car_od_sum": 11133.236874,
+                "source_car_od_sum": 166998.55311,
+                "assigned_to_source_ratio": 0.06666666666666667,
+                "result_rows": 32981,
+                "finished": "2026-09-23T01:55:37.875375+00:00"
+              },
+              "metrics": {
+                "core": {
+                  "directed_links": 3,
+                  "directed_length_km": 0.651,
+                  "weighted_speed_kmh": 14.858082331615554,
+                  "running_time_pcu_h": 75.27520476987348,
+                  "transport_pcu_km": 1118.4451900000001,
+                  "oversaturated_km": 0.651,
+                  "timelink_flagged_links": 0,
+                  "timelink_sum_pcu_h": 75.25980455555555
+                },
+                "neighbor": {
+                  "directed_links": 47,
+                  "directed_length_km": 10.691,
+                  "weighted_speed_kmh": 26.91505015310771,
+                  "running_time_pcu_h": 218.97656168102978,
+                  "transport_pcu_km": 5893.76514,
+                  "oversaturated_km": 2.7560000000000002,
+                  "timelink_flagged_links": 0,
+                  "timelink_sum_pcu_h": 773.8118507222222
+                },
+                "network": {
+                  "directed_links": 32060,
+                  "directed_length_km": 12446.9460498,
+                  "weighted_speed_kmh": 35.17828051472454,
+                  "running_time_pcu_h": 197224.99385735166,
+                  "transport_pcu_km": 6938036.158428742,
+                  "oversaturated_km": 1422.0844065000001,
+                  "timelink_flagged_links": 44,
+                  "timelink_sum_pcu_h": null
+                }
+              },
+              "core_rows": [
+                {
+                  "index": 2162,
+                  "from_node": 709,
+                  "to_node": 710,
+                  "length_km": 0.134,
+                  "road_class": 3,
+                  "lanes": 2.0,
+                  "name": "浦东路",
+                  "parking": 3,
+                  "included": true,
+                  "speed_kmh": 46.81,
+                  "flow_pcu_h": 1817.07,
+                  "vc": 1.01259,
+                  "time_s": 10.31,
+                  "adjusted_capacity_pcu_h": 1480.44,
+                  "adjusted_load_ratio": 1.2273851017265136
+                },
+                {
+                  "index": 2174,
+                  "from_node": 713,
+                  "to_node": 711,
+                  "length_km": 0.185,
+                  "road_class": 3,
+                  "lanes": 2.0,
+                  "name": "浦东路",
+                  "parking": 3,
+                  "included": true,
+                  "speed_kmh": 11.16,
+                  "flow_pcu_h": 1920.01,
+                  "vc": 1.94925,
+                  "time_s": 59.65,
+                  "adjusted_capacity_pcu_h": 812.625,
+                  "adjusted_load_ratio": 2.3627257345023844
+                },
+                {
+                  "index": 3780,
+                  "from_node": 1250,
+                  "to_node": 1240,
+                  "length_km": 0.332,
+                  "road_class": 3,
+                  "lanes": 1.0,
+                  "name": "柳浦线",
+                  "parking": 3,
+                  "included": true,
+                  "speed_kmh": 13.59,
+                  "flow_pcu_h": 1565.53,
+                  "vc": 2.38233,
+                  "time_s": 87.94,
+                  "adjusted_capacity_pcu_h": 650.0,
+                  "adjusted_load_ratio": 2.4085076923076922
+                }
+              ]
+            },
+            {
+              "name": "high_fixed_full_singletons_p1_1.1",
+              "physical_run": "case_001",
+              "changes": [
+                {
+                  "from_node": 709,
+                  "to_node": 710,
+                  "old_parking": 3,
+                  "parking": 2
+                },
+                {
+                  "from_node": 713,
+                  "to_node": 711,
+                  "old_parking": 3,
+                  "parking": 2
+                },
+                {
+                  "from_node": 1250,
+                  "to_node": 1240,
+                  "old_parking": 3,
+                  "parking": 2
+                }
+              ],
+              "demand_factor": 1.1,
+              "execution": {
+                "scenario": "F:\\ITS比赛\\智能体实验\\challenges\\20260923_094829_0855d5\\scenarios\\case_001\\基础路网",
+                "status": "completed",
+                "started": "2026-09-23T01:55:38.916464+00:00",
+                "modules": [
+                  {
+                    "module": "M3DataRoadNetwork.exe",
+                    "started": "2026-09-23T01:55:39.010694+00:00",
+                    "status": "completed",
+                    "pid": 36392,
+                    "returncode": 0,
+                    "elapsed_seconds": 4.735,
+                    "finished": "2026-09-23T01:55:43.761922+00:00"
+                  },
+                  {
+                    "module": "M3DataBusNetwork.exe",
+                    "started": "2026-09-23T01:55:43.773010+00:00",
+                    "status": "completed",
+                    "pid": 39100,
+                    "returncode": 0,
+                    "elapsed_seconds": 0.813,
+                    "finished": "2026-09-23T01:55:44.579559+00:00"
+                  },
+                  {
+                    "module": "M3DataTrafficManage.exe",
+                    "started": "2026-09-23T01:55:44.588553+00:00",
+                    "status": "completed",
+                    "pid": 54980,
+                    "returncode": 0,
+                    "elapsed_seconds": 4.109,
+                    "finished": "2026-09-23T01:55:48.699864+00:00"
+                  },
+                  {
+                    "module": "M6AssignVehicle.exe",
+                    "started": "2026-09-23T01:55:48.710144+00:00",
+                    "status": "completed",
+                    "pid": 52048,
+                    "returncode": 0,
+                    "elapsed_seconds": 122.219,
+                    "finished": "2026-09-23T01:57:50.928703+00:00"
+                  },
+                  {
+                    "module": "M6TrafficLoadLinkVeh.exe",
+                    "started": "2026-09-23T01:57:50.940267+00:00",
+                    "status": "completed",
+                    "pid": 52956,
+                    "returncode": 0,
+                    "elapsed_seconds": 0.344,
+                    "finished": "2026-09-23T01:57:51.294587+00:00"
+                  },
+                  {
+                    "module": "M6TrafficLoadNodeVeh.exe",
+                    "started": "2026-09-23T01:57:51.304514+00:00",
+                    "status": "completed",
+                    "pid": 37968,
+                    "returncode": 0,
+                    "elapsed_seconds": 1.062,
+                    "finished": "2026-09-23T01:57:52.370713+00:00"
+                  },
+                  {
+                    "module": "M6NodeQueueDelay.exe",
+                    "started": "2026-09-23T01:57:52.381409+00:00",
+                    "status": "completed",
+                    "pid": 53956,
+                    "returncode": 0,
+                    "elapsed_seconds": 1.468,
+                    "finished": "2026-09-23T01:57:53.849547+00:00"
+                  }
+                ],
+                "fresh_outputs": {
+                  "result/SpdLinkVeh.tsd": {
+                    "bytes": 229656,
+                    "mtime_ns": 1790128644825764400
+                  },
+                  "result/VolLinkVeh.tsd": {
+                    "bytes": 239324,
+                    "mtime_ns": 1790128666375019000
+                  },
+                  "result/VCLinkVeh.tsd": {
+                    "bytes": 282325,
+                    "mtime_ns": 1790128671289594100
+                  },
+                  "result/TimeLink.tsd": {
+                    "bytes": 232364,
+                    "mtime_ns": 1790128644825764400
+                  },
+                  "cache/CapLinkVehMan.dat": {
+                    "bytes": 248741,
+                    "mtime_ns": 1790128547827624700
+                  },
+                  "cache/Assign_car.od": {
+                    "bytes": 1102240,
+                    "mtime_ns": 1790128643881411000
+                  }
+                },
+                "input_changes_during_run": [],
+                "assigned_car_od_sum": 13607.288526,
+                "source_car_od_sum": 204109.34269,
+                "assigned_to_source_ratio": 0.06666666183265636,
+                "result_rows": 32981,
+                "finished": "2026-09-23T01:57:54.388961+00:00"
+              },
+              "metrics": {
+                "core": {
+                  "directed_links": 3,
+                  "directed_length_km": 0.651,
+                  "weighted_speed_kmh": 15.104189207838003,
+                  "running_time_pcu_h": 92.35899662036078,
+                  "transport_pcu_km": 1395.00776,
+                  "oversaturated_km": 0.651,
+                  "timelink_flagged_links": 0,
+                  "timelink_sum_pcu_h": 92.3655226111111
+                },
+                "neighbor": {
+                  "directed_links": 47,
+                  "directed_length_km": 10.691,
+                  "weighted_speed_kmh": 24.270408191389198,
+                  "running_time_pcu_h": 328.5348691757458,
+                  "transport_pcu_km": 7973.67538,
+                  "oversaturated_km": 4.592,
+                  "timelink_flagged_links": 0,
+                  "timelink_sum_pcu_h": 1536.5814924444444
+                },
+                "network": {
+                  "directed_links": 32060,
+                  "directed_length_km": 12446.9460498,
+                  "weighted_speed_kmh": 31.81908806261131,
+                  "running_time_pcu_h": 260664.44858381382,
+                  "transport_pcu_km": 8294105.04428039,
+                  "oversaturated_km": 1766.9057917,
+                  "timelink_flagged_links": 45,
+                  "timelink_sum_pcu_h": null
+                }
+              },
+              "core_rows": [
+                {
+                  "index": 2162,
+                  "from_node": 709,
+                  "to_node": 710,
+                  "length_km": 0.134,
+                  "road_class": 3,
+                  "lanes": 2.0,
+                  "name": "浦东路",
+                  "parking": 2,
+                  "included": true,
+                  "speed_kmh": 27.74,
+                  "flow_pcu_h": 2847.41,
+                  "vc": 1.58677,
+                  "time_s": 17.39,
+                  "adjusted_capacity_pcu_h": 1615.02,
+                  "adjusted_load_ratio": 1.7630803333704845
+                },
+                {
+                  "index": 2174,
+                  "from_node": 713,
+                  "to_node": 711,
+                  "length_km": 0.185,
+                  "road_class": 3,
+                  "lanes": 2.0,
+                  "name": "浦东路",
+                  "parking": 2,
+                  "included": true,
+                  "speed_kmh": 10.46,
+                  "flow_pcu_h": 2143.58,
+                  "vc": 2.17622,
+                  "time_s": 63.69,
+                  "adjusted_capacity_pcu_h": 886.5,
+                  "adjusted_load_ratio": 2.4180259447264523
+                },
+                {
+                  "index": 3780,
+                  "from_node": 1250,
+                  "to_node": 1240,
+                  "length_km": 0.332,
+                  "road_class": 3,
+                  "lanes": 1.0,
+                  "name": "柳浦线",
+                  "parking": 2,
+                  "included": true,
+                  "speed_kmh": 15.16,
+                  "flow_pcu_h": 1858.11,
+                  "vc": 2.82756,
+                  "time_s": 78.83,
+                  "adjusted_capacity_pcu_h": 800.0,
+                  "adjusted_load_ratio": 2.3226375
+                }
+              ],
+              "comparison": {
+                "before": {
+                  "core": {
+                    "directed_links": 3,
+                    "directed_length_km": 0.651,
+                    "weighted_speed_kmh": 10.783940755961376,
+                    "running_time_pcu_h": 128.99481659624414,
+                    "transport_pcu_km": 1391.07246,
+                    "oversaturated_km": 0.651,
+                    "timelink_flagged_links": 0,
+                    "timelink_sum_pcu_h": 146.54347777777775
+                  },
+                  "neighbor": {
+                    "directed_links": 47,
+                    "directed_length_km": 10.691,
+                    "weighted_speed_kmh": 24.29501729137761,
+                    "running_time_pcu_h": 328.16244476720516,
+                    "transport_pcu_km": 7972.71227,
+                    "oversaturated_km": 4.592,
+                    "timelink_flagged_links": 0,
+                    "timelink_sum_pcu_h": 1537.2648871388888
+                  },
+                  "network": {
+                    "directed_links": 32060,
+                    "directed_length_km": 12446.9460498,
+                    "weighted_speed_kmh": 31.81463509331832,
+                    "running_time_pcu_h": 260701.22788354222,
+                    "transport_pcu_km": 8294114.433494919,
+                    "oversaturated_km": 1766.9057917,
+                    "timelink_flagged_links": 45,
+                    "timelink_sum_pcu_h": null
+                  }
+                },
+                "after": {
+                  "core": {
+                    "directed_links": 3,
+                    "directed_length_km": 0.651,
+                    "weighted_speed_kmh": 15.104189207838003,
+                    "running_time_pcu_h": 92.35899662036078,
+                    "transport_pcu_km": 1395.00776,
+                    "oversaturated_km": 0.651,
+                    "timelink_flagged_links": 0,
+                    "timelink_sum_pcu_h": 92.3655226111111
+                  },
+                  "neighbor": {
+                    "directed_links": 47,
+                    "directed_length_km": 10.691,
+                    "weighted_speed_kmh": 24.270408191389198,
+                    "running_time_pcu_h": 328.5348691757458,
+                    "transport_pcu_km": 7973.67538,
+                    "oversaturated_km": 4.592,
+                    "timelink_flagged_links": 0,
+                    "timelink_sum_pcu_h": 1536.5814924444444
+                  },
+                  "network": {
+                    "directed_links": 32060,
+                    "directed_length_km": 12446.9460498,
+                    "weighted_speed_kmh": 31.81908806261131,
+                    "running_time_pcu_h": 260664.44858381382,
+                    "transport_pcu_km": 8294105.04428039,
+                    "oversaturated_km": 1766.9057917,
+                    "timelink_flagged_links": 45,
+                    "timelink_sum_pcu_h": null
+                  }
+                },
+                "delta": {
+                  "core": {
+                    "speed_change_pct": 40.06187116234283,
+                    "running_time_change_pct": -28.40100163912327,
+                    "oversaturated_km_change": 0.0
+                  },
+                  "neighbor": {
+                    "speed_change_pct": -0.10129278647250661,
+                    "running_time_change_pct": 0.11348782119320333,
+                    "oversaturated_km_change": 0.0
+                  },
+                  "network": {
+                    "speed_change_pct": 0.013996606530075617,
+                    "running_time_change_pct": -0.014107835251475631,
+                    "oversaturated_km_change": 0.0
+                  }
+                },
+                "eligible": true,
+                "violations": [],
+                "new_neighbor_oversaturated_km": 0,
+                "new_neighbor_oversaturated_links": [],
+                "new_network_oversaturated_km": 0
+              },
+              "risk_review": {
+                "inner_neighbor_links": 19,
+                "inner_neighbor_time_change_pct": 0.13241198090967465,
+                "new_network_oversaturated_km": 0.0,
+                "gross_time_added_pcu_h": 2.020354363758348,
+                "gross_time_saved_pcu_h": 38.79965409214295,
+                "worst_links": [
+                  {
+                    "from_node": 1240,
+                    "to_node": 1241,
+                    "name": "华美路",
+                    "time_increase_pcu_h": 0.13515413712651797,
+                    "new_overloaded": false
+                  },
+                  {
+                    "from_node": 116,
+                    "to_node": 242,
+                    "name": "浦珠北路",
+                    "time_increase_pcu_h": 0.12082704301772708,
+                    "new_overloaded": false
+                  },
+                  {
+                    "from_node": 1240,
+                    "to_node": 1210,
+                    "name": "华美路",
+                    "time_increase_pcu_h": 0.11873665537706675,
+                    "new_overloaded": false
+                  },
+                  {
+                    "from_node": 115,
+                    "to_node": 239,
+                    "name": "12067路",
+                    "time_increase_pcu_h": 0.0975672994018276,
+                    "new_overloaded": false
+                  },
+                  {
+                    "from_node": 118,
+                    "to_node": 246,
+                    "name": "浦珠北路",
+                    "time_increase_pcu_h": 0.0915815900376483,
+                    "new_overloaded": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "feedback_backtracking_v2": {
+          "runs": [
+            {
+              "name": "baseline",
+              "physical_run": "baseline",
+              "changes": [],
+              "demand_factor": 1.0,
+              "execution": {
+                "scenario": "F:\\ITS比赛\\智能体实验\\challenges\\20260923_094829_0855d5\\scenarios\\baseline\\基础路网",
+                "status": "completed",
+                "started": "2026-09-23T01:48:30.951450+00:00",
+                "modules": [
+                  {
+                    "module": "M3DataRoadNetwork.exe",
+                    "started": "2026-09-23T01:48:31.055259+00:00",
+                    "status": "completed",
+                    "pid": 51592,
+                    "returncode": 0,
+                    "elapsed_seconds": 5.25,
+                    "finished": "2026-09-23T01:48:36.306613+00:00"
+                  },
+                  {
+                    "module": "M3DataBusNetwork.exe",
+                    "started": "2026-09-23T01:48:36.320822+00:00",
+                    "status": "completed",
+                    "pid": 27476,
+                    "returncode": 0,
+                    "elapsed_seconds": 0.875,
+                    "finished": "2026-09-23T01:48:37.193754+00:00"
+                  },
+                  {
+                    "module": "M3DataTrafficManage.exe",
+                    "started": "2026-09-23T01:48:37.196750+00:00",
+                    "status": "completed",
+                    "pid": 55252,
+                    "returncode": 0,
+                    "elapsed_seconds": 4.547,
+                    "finished": "2026-09-23T01:48:41.736579+00:00"
+                  },
+                  {
+                    "module": "M6AssignVehicle.exe",
+                    "started": "2026-09-23T01:48:41.739626+00:00",
+                    "status": "completed",
+                    "pid": 46000,
+                    "returncode": 0,
+                    "elapsed_seconds": 126.344,
+                    "finished": "2026-09-23T01:50:48.086108+00:00"
+                  },
+                  {
+                    "module": "M6TrafficLoadLinkVeh.exe",
+                    "started": "2026-09-23T01:50:48.096734+00:00",
+                    "status": "completed",
+                    "pid": 50148,
+                    "returncode": 0,
+                    "elapsed_seconds": 0.36,
+                    "finished": "2026-09-23T01:50:48.452628+00:00"
+                  },
+                  {
+                    "module": "M6TrafficLoadNodeVeh.exe",
+                    "started": "2026-09-23T01:50:48.454773+00:00",
+                    "status": "completed",
+                    "pid": 54780,
+                    "returncode": 0,
+                    "elapsed_seconds": 1.094,
+                    "finished": "2026-09-23T01:50:49.551423+00:00"
+                  },
+                  {
+                    "module": "M6NodeQueueDelay.exe",
+                    "started": "2026-09-23T01:50:49.561618+00:00",
+                    "status": "completed",
+                    "pid": 52544,
+                    "returncode": 0,
+                    "elapsed_seconds": 1.485,
+                    "finished": "2026-09-23T01:50:51.046653+00:00"
+                  }
+                ],
+                "fresh_outputs": {
+                  "result/SpdLinkVeh.tsd": {
+                    "bytes": 229783,
+                    "mtime_ns": 1790128221984317200
+                  },
+                  "result/VolLinkVeh.tsd": {
+                    "bytes": 238243,
+                    "mtime_ns": 1790128243563616800
+                  },
+                  "result/VCLinkVeh.tsd": {
+                    "bytes": 283149,
+                    "mtime_ns": 1790128248447377900
+                  },
+                  "result/TimeLink.tsd": {
+                    "bytes": 232042,
+                    "mtime_ns": 1790128221984317200
+                  },
+                  "cache/CapLinkVehMan.dat": {
+                    "bytes": 248743,
+                    "mtime_ns": 1790128120764681400
+                  },
+                  "cache/Assign_car.od": {
+                    "bytes": 1102240,
+                    "mtime_ns": 1790128221009805600
+                  }
+                },
+                "input_changes_during_run": [],
+                "assigned_car_od_sum": 12370.26418,
+                "source_car_od_sum": 185553.9479,
+                "assigned_to_source_ratio": 0.06666667198407801,
+                "result_rows": 32981,
+                "finished": "2026-09-23T01:50:51.550115+00:00"
+              },
+              "metrics": {
+                "core": {
+                  "directed_links": 3,
+                  "directed_length_km": 0.651,
+                  "weighted_speed_kmh": 12.22002786085603,
+                  "running_time_pcu_h": 99.69474487881065,
+                  "transport_pcu_km": 1218.27256,
+                  "oversaturated_km": 0.651,
+                  "timelink_flagged_links": 0,
+                  "timelink_sum_pcu_h": 99.69063186111111
+                },
+                "neighbor": {
+                  "directed_links": 47,
+                  "directed_length_km": 10.691,
+                  "weighted_speed_kmh": 24.9498228242217,
+                  "running_time_pcu_h": 265.87107919500534,
+                  "transport_pcu_km": 6633.43632,
+                  "oversaturated_km": 3.676,
+                  "timelink_flagged_links": 0,
+                  "timelink_sum_pcu_h": 1153.297504111111
+                },
+                "network": {
+                  "directed_links": 32060,
+                  "directed_length_km": 12446.9460498,
+                  "weighted_speed_kmh": 33.43319835501451,
+                  "running_time_pcu_h": 227328.24893586405,
+                  "transport_pcu_km": 7600310.438370859,
+                  "oversaturated_km": 1608.6958436,
+                  "timelink_flagged_links": 44,
+                  "timelink_sum_pcu_h": null
+                }
+              },
+              "core_rows": [
+                {
+                  "index": 2162,
+                  "from_node": 709,
+                  "to_node": 710,
+                  "length_km": 0.134,
+                  "road_class": 3,
+                  "lanes": 2.0,
+                  "name": "浦东路",
+                  "parking": 3,
+                  "included": true,
+                  "speed_kmh": 39.38,
+                  "flow_pcu_h": 2108.31,
+                  "vc": 1.17489,
+                  "time_s": 12.25,
+                  "adjusted_capacity_pcu_h": 1480.44,
+                  "adjusted_load_ratio": 1.4241103996109263
+                },
+                {
+                  "index": 2174,
+                  "from_node": 713,
+                  "to_node": 711,
+                  "length_km": 0.185,
+                  "road_class": 3,
+                  "lanes": 2.0,
+                  "name": "浦东路",
+                  "parking": 3,
+                  "included": true,
+                  "speed_kmh": 9.97,
+                  "flow_pcu_h": 1993.42,
+                  "vc": 2.02378,
+                  "time_s": 66.82,
+                  "adjusted_capacity_pcu_h": 812.625,
+                  "adjusted_load_ratio": 2.453062605752961
+                },
+                {
+                  "index": 3780,
+                  "from_node": 1250,
+                  "to_node": 1240,
+                  "length_km": 0.332,
+                  "road_class": 3,
+                  "lanes": 1.0,
+                  "name": "柳浦线",
+                  "parking": 3,
+                  "included": true,
+                  "speed_kmh": 10.21,
+                  "flow_pcu_h": 1707.76,
+                  "vc": 2.59876,
+                  "time_s": 117.03,
+                  "adjusted_capacity_pcu_h": 650.0,
+                  "adjusted_load_ratio": 2.627323076923077
+                }
+              ]
+            },
+            {
+              "name": "baseline_1.1",
+              "physical_run": "baseline_1.1",
+              "changes": [],
+              "demand_factor": 1.1,
+              "execution": {
+                "scenario": "F:\\ITS比赛\\智能体实验\\challenges\\20260923_094829_0855d5\\scenarios\\baseline_1.1\\基础路网",
+                "status": "completed",
+                "started": "2026-09-23T01:51:04.476630+00:00",
+                "modules": [
+                  {
+                    "module": "M3DataRoadNetwork.exe",
+                    "started": "2026-09-23T01:51:04.565663+00:00",
+                    "status": "completed",
+                    "pid": 41640,
+                    "returncode": 0,
+                    "elapsed_seconds": 4.797,
+                    "finished": "2026-09-23T01:51:09.370621+00:00"
+                  },
+                  {
+                    "module": "M3DataBusNetwork.exe",
+                    "started": "2026-09-23T01:51:09.380993+00:00",
+                    "status": "completed",
+                    "pid": 38268,
+                    "returncode": 0,
+                    "elapsed_seconds": 0.797,
+                    "finished": "2026-09-23T01:51:10.175629+00:00"
+                  },
+                  {
+                    "module": "M3DataTrafficManage.exe",
+                    "started": "2026-09-23T01:51:10.186006+00:00",
+                    "status": "completed",
+                    "pid": 55364,
+                    "returncode": 0,
+                    "elapsed_seconds": 4.094,
+                    "finished": "2026-09-23T01:51:14.289654+00:00"
+                  },
+                  {
+                    "module": "M6AssignVehicle.exe",
+                    "started": "2026-09-23T01:51:14.299533+00:00",
+                    "status": "completed",
+                    "pid": 55912,
+                    "returncode": 0,
+                    "elapsed_seconds": 122.39,
+                    "finished": "2026-09-23T01:53:16.688183+00:00"
+                  },
+                  {
+                    "module": "M6TrafficLoadLinkVeh.exe",
+                    "started": "2026-09-23T01:53:16.692214+00:00",
+                    "status": "completed",
+                    "pid": 6664,
+                    "returncode": 0,
+                    "elapsed_seconds": 0.344,
+                    "finished": "2026-09-23T01:53:17.042389+00:00"
+                  },
+                  {
+                    "module": "M6TrafficLoadNodeVeh.exe",
+                    "started": "2026-09-23T01:53:17.044912+00:00",
+                    "status": "completed",
+                    "pid": 48016,
+                    "returncode": 0,
+                    "elapsed_seconds": 1.078,
+                    "finished": "2026-09-23T01:53:18.115933+00:00"
+                  },
+                  {
+                    "module": "M6NodeQueueDelay.exe",
+                    "started": "2026-09-23T01:53:18.117448+00:00",
+                    "status": "completed",
+                    "pid": 20568,
+                    "returncode": 0,
+                    "elapsed_seconds": 1.484,
+                    "finished": "2026-09-23T01:53:19.594325+00:00"
+                  }
+                ],
+                "fresh_outputs": {
+                  "result/SpdLinkVeh.tsd": {
+                    "bytes": 229654,
+                    "mtime_ns": 1790128370258746500
+                  },
+                  "result/VolLinkVeh.tsd": {
+                    "bytes": 239324,
+                    "mtime_ns": 1790128391969437000
+                  },
+                  "result/VCLinkVeh.tsd": {
+                    "bytes": 282348,
+                    "mtime_ns": 1790128397038094400
+                  },
+                  "result/TimeLink.tsd": {
+                    "bytes": 232365,
+                    "mtime_ns": 1790128370258746500
+                  },
+                  "cache/CapLinkVehMan.dat": {
+                    "bytes": 248743,
+                    "mtime_ns": 1790128273417545200
+                  },
+                  "cache/Assign_car.od": {
+                    "bytes": 1102240,
+                    "mtime_ns": 1790128369310945500
+                  }
+                },
+                "input_changes_during_run": [],
+                "assigned_car_od_sum": 13607.288526,
+                "source_car_od_sum": 204109.34269,
+                "assigned_to_source_ratio": 0.06666666183265636,
+                "result_rows": 32981,
+                "finished": "2026-09-23T01:53:20.232159+00:00"
+              },
+              "metrics": {
+                "core": {
+                  "directed_links": 3,
+                  "directed_length_km": 0.651,
+                  "weighted_speed_kmh": 10.783940755961376,
+                  "running_time_pcu_h": 128.99481659624414,
+                  "transport_pcu_km": 1391.07246,
+                  "oversaturated_km": 0.651,
+                  "timelink_flagged_links": 0,
+                  "timelink_sum_pcu_h": 146.54347777777775
+                },
+                "neighbor": {
+                  "directed_links": 47,
+                  "directed_length_km": 10.691,
+                  "weighted_speed_kmh": 24.29501729137761,
+                  "running_time_pcu_h": 328.16244476720516,
+                  "transport_pcu_km": 7972.71227,
+                  "oversaturated_km": 4.592,
+                  "timelink_flagged_links": 0,
+                  "timelink_sum_pcu_h": 1537.2648871388888
+                },
+                "network": {
+                  "directed_links": 32060,
+                  "directed_length_km": 12446.9460498,
+                  "weighted_speed_kmh": 31.81463509331832,
+                  "running_time_pcu_h": 260701.22788354222,
+                  "transport_pcu_km": 8294114.433494919,
+                  "oversaturated_km": 1766.9057917,
+                  "timelink_flagged_links": 45,
+                  "timelink_sum_pcu_h": null
+                }
+              },
+              "core_rows": [
+                {
+                  "index": 2162,
+                  "from_node": 709,
+                  "to_node": 710,
+                  "length_km": 0.134,
+                  "road_class": 3,
+                  "lanes": 2.0,
+                  "name": "浦东路",
+                  "parking": 3,
+                  "included": true,
+                  "speed_kmh": 22.72,
+                  "flow_pcu_h": 2843.82,
+                  "vc": 1.58477,
+                  "time_s": 21.23,
+                  "adjusted_capacity_pcu_h": 1480.44,
+                  "adjusted_load_ratio": 1.920928913025857
+                },
+                {
+                  "index": 2174,
+                  "from_node": 713,
+                  "to_node": 711,
+                  "length_km": 0.185,
+                  "road_class": 3,
+                  "lanes": 2.0,
+                  "name": "浦东路",
+                  "parking": 3,
+                  "included": true,
+                  "speed_kmh": 9.0,
+                  "flow_pcu_h": 2142.98,
+                  "vc": 2.17561,
+                  "time_s": 85.27,
+                  "adjusted_capacity_pcu_h": 812.625,
+                  "adjusted_load_ratio": 2.63710813720966
+                },
+                {
+                  "index": 3780,
+                  "from_node": 1250,
+                  "to_node": 1240,
+                  "length_km": 0.332,
+                  "road_class": 3,
+                  "lanes": 1.0,
+                  "name": "柳浦线",
+                  "parking": 3,
+                  "included": true,
+                  "speed_kmh": 9.0,
+                  "flow_pcu_h": 1848.04,
+                  "vc": 2.81223,
+                  "time_s": 153.92,
+                  "adjusted_capacity_pcu_h": 650.0,
+                  "adjusted_load_ratio": 2.8431384615384614
+                }
+              ]
+            },
+            {
+              "name": "baseline_0.9",
+              "physical_run": "baseline_0.9",
+              "changes": [],
+              "demand_factor": 0.9,
+              "execution": {
+                "scenario": "F:\\ITS比赛\\智能体实验\\challenges\\20260923_094829_0855d5\\scenarios\\baseline_0.9\\基础路网",
+                "status": "completed",
+                "started": "2026-09-23T01:53:21.050982+00:00",
+                "modules": [
+                  {
+                    "module": "M3DataRoadNetwork.exe",
+                    "started": "2026-09-23T01:53:21.146291+00:00",
+                    "status": "completed",
+                    "pid": 50044,
+                    "returncode": 0,
+                    "elapsed_seconds": 4.828,
+                    "finished": "2026-09-23T01:53:25.974530+00:00"
+                  },
+                  {
+                    "module": "M3DataBusNetwork.exe",
+                    "started": "2026-09-23T01:53:25.977898+00:00",
+                    "status": "completed",
+                    "pid": 55088,
+                    "returncode": 0,
+                    "elapsed_seconds": 0.813,
+                    "finished": "2026-09-23T01:53:26.781254+00:00"
+                  },
+                  {
+                    "module": "M3DataTrafficManage.exe",
+                    "started": "2026-09-23T01:53:26.784757+00:00",
+                    "status": "completed",
+                    "pid": 53568,
+                    "returncode": 0,
+                    "elapsed_seconds": 4.172,
+                    "finished": "2026-09-23T01:53:30.952573+00:00"
+                  },
+                  {
+                    "module": "M6AssignVehicle.exe",
+                    "started": "2026-09-23T01:53:30.955570+00:00",
+                    "status": "completed",
+                    "pid": 50892,
+                    "returncode": 0,
+                    "elapsed_seconds": 123.469,
+                    "finished": "2026-09-23T01:55:34.425035+00:00"
+                  },
+                  {
+                    "module": "M6TrafficLoadLinkVeh.exe",
+                    "started": "2026-09-23T01:55:34.435289+00:00",
+                    "status": "completed",
+                    "pid": 54940,
+                    "returncode": 0,
+                    "elapsed_seconds": 0.359,
+                    "finished": "2026-09-23T01:55:34.783084+00:00"
+                  },
+                  {
+                    "module": "M6TrafficLoadNodeVeh.exe",
+                    "started": "2026-09-23T01:55:34.786681+00:00",
+                    "status": "completed",
+                    "pid": 40220,
+                    "returncode": 0,
+                    "elapsed_seconds": 1.062,
+                    "finished": "2026-09-23T01:55:35.857867+00:00"
+                  },
+                  {
+                    "module": "M6NodeQueueDelay.exe",
+                    "started": "2026-09-23T01:55:35.869417+00:00",
+                    "status": "completed",
+                    "pid": 22412,
+                    "returncode": 0,
+                    "elapsed_seconds": 1.453,
+                    "finished": "2026-09-23T01:55:37.318592+00:00"
+                  }
+                ],
+                "fresh_outputs": {
+                  "result/SpdLinkVeh.tsd": {
+                    "bytes": 229897,
+                    "mtime_ns": 1790128507687591400
+                  },
+                  "result/VolLinkVeh.tsd": {
+                    "bytes": 236782,
+                    "mtime_ns": 1790128529539536800
+                  },
+                  "result/VCLinkVeh.tsd": {
+                    "bytes": 283601,
+                    "mtime_ns": 1790128534779009200
+                  },
+                  "result/TimeLink.tsd": {
+                    "bytes": 231751,
+                    "mtime_ns": 1790128507687591400
+                  },
+                  "cache/CapLinkVehMan.dat": {
+                    "bytes": 248743,
+                    "mtime_ns": 1790128410053638200
+                  },
+                  "cache/Assign_car.od": {
+                    "bytes": 1102240,
+                    "mtime_ns": 1790128506745110100
+                  }
+                },
+                "input_changes_during_run": [],
+                "assigned_car_od_sum": 11133.236874,
+                "source_car_od_sum": 166998.55311,
+                "assigned_to_source_ratio": 0.06666666666666667,
+                "result_rows": 32981,
+                "finished": "2026-09-23T01:55:37.875375+00:00"
+              },
+              "metrics": {
+                "core": {
+                  "directed_links": 3,
+                  "directed_length_km": 0.651,
+                  "weighted_speed_kmh": 14.858082331615554,
+                  "running_time_pcu_h": 75.27520476987348,
+                  "transport_pcu_km": 1118.4451900000001,
+                  "oversaturated_km": 0.651,
+                  "timelink_flagged_links": 0,
+                  "timelink_sum_pcu_h": 75.25980455555555
+                },
+                "neighbor": {
+                  "directed_links": 47,
+                  "directed_length_km": 10.691,
+                  "weighted_speed_kmh": 26.91505015310771,
+                  "running_time_pcu_h": 218.97656168102978,
+                  "transport_pcu_km": 5893.76514,
+                  "oversaturated_km": 2.7560000000000002,
+                  "timelink_flagged_links": 0,
+                  "timelink_sum_pcu_h": 773.8118507222222
+                },
+                "network": {
+                  "directed_links": 32060,
+                  "directed_length_km": 12446.9460498,
+                  "weighted_speed_kmh": 35.17828051472454,
+                  "running_time_pcu_h": 197224.99385735166,
+                  "transport_pcu_km": 6938036.158428742,
+                  "oversaturated_km": 1422.0844065000001,
+                  "timelink_flagged_links": 44,
+                  "timelink_sum_pcu_h": null
+                }
+              },
+              "core_rows": [
+                {
+                  "index": 2162,
+                  "from_node": 709,
+                  "to_node": 710,
+                  "length_km": 0.134,
+                  "road_class": 3,
+                  "lanes": 2.0,
+                  "name": "浦东路",
+                  "parking": 3,
+                  "included": true,
+                  "speed_kmh": 46.81,
+                  "flow_pcu_h": 1817.07,
+                  "vc": 1.01259,
+                  "time_s": 10.31,
+                  "adjusted_capacity_pcu_h": 1480.44,
+                  "adjusted_load_ratio": 1.2273851017265136
+                },
+                {
+                  "index": 2174,
+                  "from_node": 713,
+                  "to_node": 711,
+                  "length_km": 0.185,
+                  "road_class": 3,
+                  "lanes": 2.0,
+                  "name": "浦东路",
+                  "parking": 3,
+                  "included": true,
+                  "speed_kmh": 11.16,
+                  "flow_pcu_h": 1920.01,
+                  "vc": 1.94925,
+                  "time_s": 59.65,
+                  "adjusted_capacity_pcu_h": 812.625,
+                  "adjusted_load_ratio": 2.3627257345023844
+                },
+                {
+                  "index": 3780,
+                  "from_node": 1250,
+                  "to_node": 1240,
+                  "length_km": 0.332,
+                  "road_class": 3,
+                  "lanes": 1.0,
+                  "name": "柳浦线",
+                  "parking": 3,
+                  "included": true,
+                  "speed_kmh": 13.59,
+                  "flow_pcu_h": 1565.53,
+                  "vc": 2.38233,
+                  "time_s": 87.94,
+                  "adjusted_capacity_pcu_h": 650.0,
+                  "adjusted_load_ratio": 2.4085076923076922
+                }
+              ]
+            },
+            {
+              "name": "high_feedback_backtracking_v2_p1_1.1",
+              "physical_run": "case_001",
+              "changes": [
+                {
+                  "from_node": 709,
+                  "to_node": 710,
+                  "old_parking": 3,
+                  "parking": 2
+                },
+                {
+                  "from_node": 713,
+                  "to_node": 711,
+                  "old_parking": 3,
+                  "parking": 2
+                },
+                {
+                  "from_node": 1250,
+                  "to_node": 1240,
+                  "old_parking": 3,
+                  "parking": 2
+                }
+              ],
+              "demand_factor": 1.1,
+              "execution": {
+                "scenario": "F:\\ITS比赛\\智能体实验\\challenges\\20260923_094829_0855d5\\scenarios\\case_001\\基础路网",
+                "status": "completed",
+                "started": "2026-09-23T01:55:38.916464+00:00",
+                "modules": [
+                  {
+                    "module": "M3DataRoadNetwork.exe",
+                    "started": "2026-09-23T01:55:39.010694+00:00",
+                    "status": "completed",
+                    "pid": 36392,
+                    "returncode": 0,
+                    "elapsed_seconds": 4.735,
+                    "finished": "2026-09-23T01:55:43.761922+00:00"
+                  },
+                  {
+                    "module": "M3DataBusNetwork.exe",
+                    "started": "2026-09-23T01:55:43.773010+00:00",
+                    "status": "completed",
+                    "pid": 39100,
+                    "returncode": 0,
+                    "elapsed_seconds": 0.813,
+                    "finished": "2026-09-23T01:55:44.579559+00:00"
+                  },
+                  {
+                    "module": "M3DataTrafficManage.exe",
+                    "started": "2026-09-23T01:55:44.588553+00:00",
+                    "status": "completed",
+                    "pid": 54980,
+                    "returncode": 0,
+                    "elapsed_seconds": 4.109,
+                    "finished": "2026-09-23T01:55:48.699864+00:00"
+                  },
+                  {
+                    "module": "M6AssignVehicle.exe",
+                    "started": "2026-09-23T01:55:48.710144+00:00",
+                    "status": "completed",
+                    "pid": 52048,
+                    "returncode": 0,
+                    "elapsed_seconds": 122.219,
+                    "finished": "2026-09-23T01:57:50.928703+00:00"
+                  },
+                  {
+                    "module": "M6TrafficLoadLinkVeh.exe",
+                    "started": "2026-09-23T01:57:50.940267+00:00",
+                    "status": "completed",
+                    "pid": 52956,
+                    "returncode": 0,
+                    "elapsed_seconds": 0.344,
+                    "finished": "2026-09-23T01:57:51.294587+00:00"
+                  },
+                  {
+                    "module": "M6TrafficLoadNodeVeh.exe",
+                    "started": "2026-09-23T01:57:51.304514+00:00",
+                    "status": "completed",
+                    "pid": 37968,
+                    "returncode": 0,
+                    "elapsed_seconds": 1.062,
+                    "finished": "2026-09-23T01:57:52.370713+00:00"
+                  },
+                  {
+                    "module": "M6NodeQueueDelay.exe",
+                    "started": "2026-09-23T01:57:52.381409+00:00",
+                    "status": "completed",
+                    "pid": 53956,
+                    "returncode": 0,
+                    "elapsed_seconds": 1.468,
+                    "finished": "2026-09-23T01:57:53.849547+00:00"
+                  }
+                ],
+                "fresh_outputs": {
+                  "result/SpdLinkVeh.tsd": {
+                    "bytes": 229656,
+                    "mtime_ns": 1790128644825764400
+                  },
+                  "result/VolLinkVeh.tsd": {
+                    "bytes": 239324,
+                    "mtime_ns": 1790128666375019000
+                  },
+                  "result/VCLinkVeh.tsd": {
+                    "bytes": 282325,
+                    "mtime_ns": 1790128671289594100
+                  },
+                  "result/TimeLink.tsd": {
+                    "bytes": 232364,
+                    "mtime_ns": 1790128644825764400
+                  },
+                  "cache/CapLinkVehMan.dat": {
+                    "bytes": 248741,
+                    "mtime_ns": 1790128547827624700
+                  },
+                  "cache/Assign_car.od": {
+                    "bytes": 1102240,
+                    "mtime_ns": 1790128643881411000
+                  }
+                },
+                "input_changes_during_run": [],
+                "assigned_car_od_sum": 13607.288526,
+                "source_car_od_sum": 204109.34269,
+                "assigned_to_source_ratio": 0.06666666183265636,
+                "result_rows": 32981,
+                "finished": "2026-09-23T01:57:54.388961+00:00"
+              },
+              "metrics": {
+                "core": {
+                  "directed_links": 3,
+                  "directed_length_km": 0.651,
+                  "weighted_speed_kmh": 15.104189207838003,
+                  "running_time_pcu_h": 92.35899662036078,
+                  "transport_pcu_km": 1395.00776,
+                  "oversaturated_km": 0.651,
+                  "timelink_flagged_links": 0,
+                  "timelink_sum_pcu_h": 92.3655226111111
+                },
+                "neighbor": {
+                  "directed_links": 47,
+                  "directed_length_km": 10.691,
+                  "weighted_speed_kmh": 24.270408191389198,
+                  "running_time_pcu_h": 328.5348691757458,
+                  "transport_pcu_km": 7973.67538,
+                  "oversaturated_km": 4.592,
+                  "timelink_flagged_links": 0,
+                  "timelink_sum_pcu_h": 1536.5814924444444
+                },
+                "network": {
+                  "directed_links": 32060,
+                  "directed_length_km": 12446.9460498,
+                  "weighted_speed_kmh": 31.81908806261131,
+                  "running_time_pcu_h": 260664.44858381382,
+                  "transport_pcu_km": 8294105.04428039,
+                  "oversaturated_km": 1766.9057917,
+                  "timelink_flagged_links": 45,
+                  "timelink_sum_pcu_h": null
+                }
+              },
+              "core_rows": [
+                {
+                  "index": 2162,
+                  "from_node": 709,
+                  "to_node": 710,
+                  "length_km": 0.134,
+                  "road_class": 3,
+                  "lanes": 2.0,
+                  "name": "浦东路",
+                  "parking": 2,
+                  "included": true,
+                  "speed_kmh": 27.74,
+                  "flow_pcu_h": 2847.41,
+                  "vc": 1.58677,
+                  "time_s": 17.39,
+                  "adjusted_capacity_pcu_h": 1615.02,
+                  "adjusted_load_ratio": 1.7630803333704845
+                },
+                {
+                  "index": 2174,
+                  "from_node": 713,
+                  "to_node": 711,
+                  "length_km": 0.185,
+                  "road_class": 3,
+                  "lanes": 2.0,
+                  "name": "浦东路",
+                  "parking": 2,
+                  "included": true,
+                  "speed_kmh": 10.46,
+                  "flow_pcu_h": 2143.58,
+                  "vc": 2.17622,
+                  "time_s": 63.69,
+                  "adjusted_capacity_pcu_h": 886.5,
+                  "adjusted_load_ratio": 2.4180259447264523
+                },
+                {
+                  "index": 3780,
+                  "from_node": 1250,
+                  "to_node": 1240,
+                  "length_km": 0.332,
+                  "road_class": 3,
+                  "lanes": 1.0,
+                  "name": "柳浦线",
+                  "parking": 2,
+                  "included": true,
+                  "speed_kmh": 15.16,
+                  "flow_pcu_h": 1858.11,
+                  "vc": 2.82756,
+                  "time_s": 78.83,
+                  "adjusted_capacity_pcu_h": 800.0,
+                  "adjusted_load_ratio": 2.3226375
+                }
+              ],
+              "comparison": {
+                "before": {
+                  "core": {
+                    "directed_links": 3,
+                    "directed_length_km": 0.651,
+                    "weighted_speed_kmh": 10.783940755961376,
+                    "running_time_pcu_h": 128.99481659624414,
+                    "transport_pcu_km": 1391.07246,
+                    "oversaturated_km": 0.651,
+                    "timelink_flagged_links": 0,
+                    "timelink_sum_pcu_h": 146.54347777777775
+                  },
+                  "neighbor": {
+                    "directed_links": 47,
+                    "directed_length_km": 10.691,
+                    "weighted_speed_kmh": 24.29501729137761,
+                    "running_time_pcu_h": 328.16244476720516,
+                    "transport_pcu_km": 7972.71227,
+                    "oversaturated_km": 4.592,
+                    "timelink_flagged_links": 0,
+                    "timelink_sum_pcu_h": 1537.2648871388888
+                  },
+                  "network": {
+                    "directed_links": 32060,
+                    "directed_length_km": 12446.9460498,
+                    "weighted_speed_kmh": 31.81463509331832,
+                    "running_time_pcu_h": 260701.22788354222,
+                    "transport_pcu_km": 8294114.433494919,
+                    "oversaturated_km": 1766.9057917,
+                    "timelink_flagged_links": 45,
+                    "timelink_sum_pcu_h": null
+                  }
+                },
+                "after": {
+                  "core": {
+                    "directed_links": 3,
+                    "directed_length_km": 0.651,
+                    "weighted_speed_kmh": 15.104189207838003,
+                    "running_time_pcu_h": 92.35899662036078,
+                    "transport_pcu_km": 1395.00776,
+                    "oversaturated_km": 0.651,
+                    "timelink_flagged_links": 0,
+                    "timelink_sum_pcu_h": 92.3655226111111
+                  },
+                  "neighbor": {
+                    "directed_links": 47,
+                    "directed_length_km": 10.691,
+                    "weighted_speed_kmh": 24.270408191389198,
+                    "running_time_pcu_h": 328.5348691757458,
+                    "transport_pcu_km": 7973.67538,
+                    "oversaturated_km": 4.592,
+                    "timelink_flagged_links": 0,
+                    "timelink_sum_pcu_h": 1536.5814924444444
+                  },
+                  "network": {
+                    "directed_links": 32060,
+                    "directed_length_km": 12446.9460498,
+                    "weighted_speed_kmh": 31.81908806261131,
+                    "running_time_pcu_h": 260664.44858381382,
+                    "transport_pcu_km": 8294105.04428039,
+                    "oversaturated_km": 1766.9057917,
+                    "timelink_flagged_links": 45,
+                    "timelink_sum_pcu_h": null
+                  }
+                },
+                "delta": {
+                  "core": {
+                    "speed_change_pct": 40.06187116234283,
+                    "running_time_change_pct": -28.40100163912327,
+                    "oversaturated_km_change": 0.0
+                  },
+                  "neighbor": {
+                    "speed_change_pct": -0.10129278647250661,
+                    "running_time_change_pct": 0.11348782119320333,
+                    "oversaturated_km_change": 0.0
+                  },
+                  "network": {
+                    "speed_change_pct": 0.013996606530075617,
+                    "running_time_change_pct": -0.014107835251475631,
+                    "oversaturated_km_change": 0.0
+                  }
+                },
+                "eligible": true,
+                "violations": [],
+                "new_neighbor_oversaturated_km": 0,
+                "new_neighbor_oversaturated_links": [],
+                "new_network_oversaturated_km": 0
+              },
+              "risk_review": {
+                "inner_neighbor_links": 19,
+                "inner_neighbor_time_change_pct": 0.13241198090967465,
+                "new_network_oversaturated_km": 0.0,
+                "gross_time_added_pcu_h": 2.020354363758348,
+                "gross_time_saved_pcu_h": 38.79965409214295,
+                "worst_links": [
+                  {
+                    "from_node": 1240,
+                    "to_node": 1241,
+                    "name": "华美路",
+                    "time_increase_pcu_h": 0.13515413712651797,
+                    "new_overloaded": false
+                  },
+                  {
+                    "from_node": 116,
+                    "to_node": 242,
+                    "name": "浦珠北路",
+                    "time_increase_pcu_h": 0.12082704301772708,
+                    "new_overloaded": false
+                  },
+                  {
+                    "from_node": 1240,
+                    "to_node": 1210,
+                    "name": "华美路",
+                    "time_increase_pcu_h": 0.11873665537706675,
+                    "new_overloaded": false
+                  },
+                  {
+                    "from_node": 115,
+                    "to_node": 239,
+                    "name": "12067路",
+                    "time_increase_pcu_h": 0.0975672994018276,
+                    "new_overloaded": false
+                  },
+                  {
+                    "from_node": 118,
+                    "to_node": 246,
+                    "name": "浦珠北路",
+                    "time_increase_pcu_h": 0.0915815900376483,
+                    "new_overloaded": false
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "trace": [
+    {
+      "name": "high_fixed_full_singletons_p1_1.1",
+      "strategy": "fixed_full_singletons",
+      "region": "high",
+      "policy": 1,
+      "changes": [
+        {
+          "from_node": 709,
+          "to_node": 710,
+          "old_parking": 3,
+          "parking": 2
+        },
+        {
+          "from_node": 713,
+          "to_node": 711,
+          "old_parking": 3,
+          "parking": 2
+        },
+        {
+          "from_node": 1250,
+          "to_node": 1240,
+          "old_parking": 3,
+          "parking": 2
+        }
+      ],
+      "factor": 1.1,
+      "reason": "共同首轮：原核心全部停车2级；从高需求开始",
+      "observed_runs": [],
+      "ranking": [],
+      "decided_at": "2026-09-23T01:55:37.945299+00:00",
+      "sequence": 1,
+      "physical_run": "case_001",
+      "shared": false,
+      "observed_at": "2026-09-23T01:57:54.558770+00:00"
+    },
+    {
+      "name": "high_feedback_backtracking_v2_p1_1.1",
+      "strategy": "feedback_backtracking_v2",
+      "region": "high",
+      "policy": 1,
+      "changes": [
+        {
+          "from_node": 709,
+          "to_node": 710,
+          "old_parking": 3,
+          "parking": 2
+        },
+        {
+          "from_node": 713,
+          "to_node": 711,
+          "old_parking": 3,
+          "parking": 2
+        },
+        {
+          "from_node": 1250,
+          "to_node": 1240,
+          "old_parking": 3,
+          "parking": 2
+        }
+      ],
+      "factor": 1.1,
+      "reason": "共同首轮：原核心全部停车2级；从高需求开始",
+      "observed_runs": [],
+      "ranking": [],
+      "decided_at": "2026-09-23T01:55:37.953559+00:00",
+      "sequence": 2,
+      "physical_run": "case_001",
+      "shared": true,
+      "observed_at": "2026-09-23T01:57:54.740251+00:00"
+    },
+    {
+      "name": "high_fixed_full_singletons_p1_1",
+      "strategy": "fixed_full_singletons",
+      "region": "high",
+      "policy": 1,
+      "changes": [
+        {
+          "from_node": 709,
+          "to_node": 710,
+          "old_parking": 3,
+          "parking": 2
+        },
+        {
+          "from_node": 713,
+          "to_node": 711,
+          "old_parking": 3,
+          "parking": 2
+        },
+        {
+          "from_node": 1250,
+          "to_node": 1240,
+          "old_parking": 3,
+          "parking": 2
+        }
+      ],
+      "factor": 1.0,
+      "reason": "共同首轮：原核心全部停车2级；从高需求开始",
+      "observed_runs": [],
+      "ranking": [],
+      "decided_at": "2026-09-23T01:57:54.753567+00:00",
+      "sequence": 3
+    },
+    {
+      "name": "high_feedback_backtracking_v2_p1_1",
+      "strategy": "feedback_backtracking_v2",
+      "region": "high",
+      "policy": 1,
+      "changes": [
+        {
+          "from_node": 709,
+          "to_node": 710,
+          "old_parking": 3,
+          "parking": 2
+        },
+        {
+          "from_node": 713,
+          "to_node": 711,
+          "old_parking": 3,
+          "parking": 2
+        },
+        {
+          "from_node": 1250,
+          "to_node": 1240,
+          "old_parking": 3,
+          "parking": 2
+        }
+      ],
+      "factor": 1.0,
+      "reason": "共同首轮：原核心全部停车2级；从高需求开始",
+      "observed_runs": [],
+      "ranking": [],
+      "decided_at": "2026-09-23T01:57:54.753567+00:00",
+      "sequence": 4
+    }
+  ],
+  "baseline_names": {
+    "1.0": "baseline",
+    "1.1": "baseline_1.1",
+    "0.9": "baseline_0.9"
+  },
+  "source_validation": {
+    "directed_links": 32981,
+    "zones": 332,
+    "assignment": "multipath_incremental_5_iterations",
+    "equilibrium_claim": false
+  },
+  "error": "RuntimeError: M6AssignVehicle.exe失败，退出码1，错误流['stdout']，参见F:\\ITS比赛\\智能体实验\\challenges\\20260923_094829_0855d5\\logs\\case_002",
+  "finished": "2026-09-23T01:59:22.645687+00:00"
+}

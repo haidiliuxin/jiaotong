@@ -1,0 +1,263 @@
+{
+  "status": "verified",
+  "job_id": "20261007_010958_039964",
+  "model_budget": {
+    "limit": 7,
+    "used": 4,
+    "remaining": 3,
+    "known_tokens": 81751,
+    "unknown_usage": 0,
+    "halted": false
+  },
+  "native_scenes": 9,
+  "native_modules": 63,
+  "programme_audit": {
+    "passed": true,
+    "programme": "20261007_010958_039964",
+    "protocol": "programme-evidence-v1",
+    "native": [
+      {
+        "job_id": "20261007_010958_039964",
+        "raw_verified": true,
+        "archived": false,
+        "verification_kind": null
+      }
+    ],
+    "planning": {
+      "passed": true,
+      "groups": 1,
+      "decisions": 3,
+      "no_cross_engine_pooling": true,
+      "observations_checked_at_decision_time": true,
+      "request_reservations_checked": true
+    },
+    "model_requests": 4
+  },
+  "planning_audits": {
+    "20261007_010958_039964": {
+      "passed": true,
+      "decisions": 3,
+      "model_selected_policies": 2,
+      "observations_from_current_job_only": true,
+      "actions_precede_execution": true,
+      "knowledge_retrieval": {
+        "verified": 3,
+        "catalog_changed": 0
+      }
+    }
+  },
+  "recommendations": {
+    "20261007_010958_039964": "model_2_demand_1p000"
+  },
+  "comparison": [
+    {
+      "demand_factor": 0.9,
+      "run": "model_1_demand_0p900",
+      "status": "rejected",
+      "constraint_passed": false,
+      "violations": [
+        "候选区域area_2耗时增幅超过0.5%：其他区域改善不能抵消"
+      ],
+      "core_time_change_pct": -16.992786177334875,
+      "neighbor_time_change_pct": -0.17978203063494513,
+      "network_time_change_pct": 0.02601362255669759,
+      "executed_changes": [
+        {
+          "from_node": 3118,
+          "to_node": 3117,
+          "old_parking": 3,
+          "parking": 2
+        },
+        {
+          "from_node": 3116,
+          "to_node": 3115,
+          "old_parking": 3,
+          "parking": 2
+        },
+        {
+          "from_node": 3115,
+          "to_node": 3116,
+          "old_parking": 3,
+          "parking": 2
+        }
+      ],
+      "neighbor_limits": {
+        "neighbor_time_change_pct": -0.17978203063494513,
+        "neighbor_new_oversaturated_km": 0,
+        "time_limit_pct": 0.5,
+        "new_oversaturated_limit_km": 0.1
+      }
+    },
+    {
+      "demand_factor": 0.9,
+      "run": "model_2_demand_0p900",
+      "status": "admissible",
+      "constraint_passed": true,
+      "violations": [],
+      "core_time_change_pct": -4.849082815129857,
+      "neighbor_time_change_pct": 0.004310352682002083,
+      "network_time_change_pct": -0.029106609561924124,
+      "executed_changes": [
+        {
+          "from_node": 3107,
+          "to_node": 3108,
+          "old_parking": 3,
+          "parking": 2
+        },
+        {
+          "from_node": 3108,
+          "to_node": 3107,
+          "old_parking": 3,
+          "parking": 2
+        }
+      ],
+      "neighbor_limits": {
+        "neighbor_time_change_pct": 0.004310352682002083,
+        "neighbor_new_oversaturated_km": 0,
+        "time_limit_pct": 0.5,
+        "new_oversaturated_limit_km": 0.1
+      }
+    },
+    {
+      "demand_factor": 1.0,
+      "run": "model_1_demand_1p000",
+      "status": "rejected",
+      "constraint_passed": false,
+      "violations": [
+        "邻区新增过饱和有向里程超过0.1km",
+        "候选区域area_2耗时增幅超过0.5%：其他区域改善不能抵消"
+      ],
+      "core_time_change_pct": -12.494272107773996,
+      "neighbor_time_change_pct": 0.4941688091620211,
+      "network_time_change_pct": -0.03473291034685744,
+      "executed_changes": [
+        {
+          "from_node": 3118,
+          "to_node": 3117,
+          "old_parking": 3,
+          "parking": 2
+        },
+        {
+          "from_node": 3116,
+          "to_node": 3115,
+          "old_parking": 3,
+          "parking": 2
+        },
+        {
+          "from_node": 3115,
+          "to_node": 3116,
+          "old_parking": 3,
+          "parking": 2
+        }
+      ],
+      "neighbor_limits": {
+        "neighbor_time_change_pct": 0.4941688091620211,
+        "neighbor_new_oversaturated_km": 2.594,
+        "time_limit_pct": 0.5,
+        "new_oversaturated_limit_km": 0.1
+      }
+    },
+    {
+      "demand_factor": 1.0,
+      "run": "model_2_demand_1p000",
+      "status": "admissible",
+      "constraint_passed": true,
+      "violations": [],
+      "core_time_change_pct": -1.3490290703898955,
+      "neighbor_time_change_pct": 0.0053747301365536515,
+      "network_time_change_pct": -0.00438942322654734,
+      "executed_changes": [
+        {
+          "from_node": 3107,
+          "to_node": 3108,
+          "old_parking": 3,
+          "parking": 2
+        },
+        {
+          "from_node": 3108,
+          "to_node": 3107,
+          "old_parking": 3,
+          "parking": 2
+        }
+      ],
+      "neighbor_limits": {
+        "neighbor_time_change_pct": 0.0053747301365536515,
+        "neighbor_new_oversaturated_km": 0,
+        "time_limit_pct": 0.5,
+        "new_oversaturated_limit_km": 0.1
+      }
+    },
+    {
+      "demand_factor": 1.1,
+      "run": "model_1_demand_1p100",
+      "status": "rejected",
+      "constraint_passed": false,
+      "violations": [
+        "邻区新增过饱和有向里程超过0.1km",
+        "固定核心区路段行驶时间未改善",
+        "候选区域area_1耗时增幅超过0.5%：其他区域改善不能抵消",
+        "候选区域area_2耗时增幅超过0.5%：其他区域改善不能抵消"
+      ],
+      "core_time_change_pct": 4.412888729004738,
+      "neighbor_time_change_pct": 0.0926387202115464,
+      "network_time_change_pct": 0.016429201822809603,
+      "executed_changes": [
+        {
+          "from_node": 3118,
+          "to_node": 3117,
+          "old_parking": 3,
+          "parking": 2
+        },
+        {
+          "from_node": 3116,
+          "to_node": 3115,
+          "old_parking": 3,
+          "parking": 2
+        },
+        {
+          "from_node": 3115,
+          "to_node": 3116,
+          "old_parking": 3,
+          "parking": 2
+        }
+      ],
+      "neighbor_limits": {
+        "neighbor_time_change_pct": 0.0926387202115464,
+        "neighbor_new_oversaturated_km": 0.785,
+        "time_limit_pct": 0.5,
+        "new_oversaturated_limit_km": 0.1
+      }
+    },
+    {
+      "demand_factor": 1.1,
+      "run": "model_2_demand_1p100",
+      "status": "admissible",
+      "constraint_passed": true,
+      "violations": [],
+      "core_time_change_pct": -0.7593295945947154,
+      "neighbor_time_change_pct": 0.0029038982748197384,
+      "network_time_change_pct": -0.0022215301824668465,
+      "executed_changes": [
+        {
+          "from_node": 3107,
+          "to_node": 3108,
+          "old_parking": 3,
+          "parking": 2
+        },
+        {
+          "from_node": 3108,
+          "to_node": 3107,
+          "old_parking": 3,
+          "parking": 2
+        }
+      ],
+      "neighbor_limits": {
+        "neighbor_time_change_pct": 0.0029038982748197384,
+        "neighbor_new_oversaturated_km": 0,
+        "time_limit_pct": 0.5,
+        "new_oversaturated_limit_km": 0.1
+      }
+    }
+  ],
+  "boundary": "仅为本次同组同需求新基准的静态仿真结果，不证明现场准确性、未测需求或全网最优。此前失败记录保留。"
+}

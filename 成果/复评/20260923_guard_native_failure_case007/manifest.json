@@ -1,0 +1,81 @@
+{
+  "kind": "aborted_native_run_and_exact_input_probe_v1",
+  "failed_job": "20260923_104406_b479f7",
+  "physical": "case_007",
+  "probe": "20260923_guard_case007_replay",
+  "source_paths": {
+    "failed": "F:\\ITS比赛\\智能体实验\\challenges\\20260923_104406_b479f7",
+    "probe": "F:\\ITS比赛\\智能体实验\\probes\\20260923_guard_case007_replay"
+  },
+  "input_exact": true,
+  "probe_native_modules": 7,
+  "probe_rows": 32981,
+  "meaning": "故障诊断副本及字节摘要；原失败任务保持原状；不等于正式挑战通过",
+  "files": {
+    "failed/state.json": {
+      "source_sha256": "92d26db0ca034995d7c4271c49bf22c75822e73bc369210dd511ee9079135781",
+      "copied_sha256": "92d26db0ca034995d7c4271c49bf22c75822e73bc369210dd511ee9079135781",
+      "bytes": 259282
+    },
+    "failed/protocol.json": {
+      "source_sha256": "508a3c1f6f8a82f6b5c18ee7b549eb69b921e9b7ef5844e78bac760571d7326e",
+      "copied_sha256": "508a3c1f6f8a82f6b5c18ee7b549eb69b921e9b7ef5844e78bac760571d7326e",
+      "bytes": 11758
+    },
+    "failed/execution_context.json": {
+      "source_sha256": "a7fdaf09e80f44e5339b226a8222ca9a12e9256bb77a9ca1c6e262a9ba0e1965",
+      "copied_sha256": "a7fdaf09e80f44e5339b226a8222ca9a12e9256bb77a9ca1c6e262a9ba0e1965",
+      "bytes": 6443
+    },
+    "failed/source_inputs.json": {
+      "source_sha256": "54d7003098197568f7f78476ea88fabefaf49b21ae67df917a8028ab260b02e4",
+      "copied_sha256": "54d7003098197568f7f78476ea88fabefaf49b21ae67df917a8028ab260b02e4",
+      "bytes": 20399
+    },
+    "probe/plan.json": {
+      "source_sha256": "765bfa34489a953b7eded80aabd650b510a3f67a4e32504c6abfac9d4d7d5515",
+      "copied_sha256": "765bfa34489a953b7eded80aabd650b510a3f67a4e32504c6abfac9d4d7d5515",
+      "bytes": 21868
+    },
+    "probe/input_check.json": {
+      "source_sha256": "80e05976de4123b7fe6898a550101687a257297cb96f1f80e5daff1e5bcdf974",
+      "copied_sha256": "80e05976de4123b7fe6898a550101687a257297cb96f1f80e5daff1e5bcdf974",
+      "bytes": 21368
+    },
+    "probe/result.json": {
+      "source_sha256": "0251e06f883b74c472021d107235f035890266b3fbe51fde5f95e2cb4522e14f",
+      "copied_sha256": "0251e06f883b74c472021d107235f035890266b3fbe51fde5f95e2cb4522e14f",
+      "bytes": 3392
+    },
+    "probe/logs/replay/run.json": {
+      "source_sha256": "c5af18e987e484047fa42bde6c1faf4127f7a1ca88e4a3df54e5a86a94b0885a",
+      "copied_sha256": "c5af18e987e484047fa42bde6c1faf4127f7a1ca88e4a3df54e5a86a94b0885a",
+      "bytes": 3022
+    },
+    "probe/logs/replay/M6AssignVehicle.exe.stdout.bin": {
+      "source_sha256": "ad745f52a04246c85c61b69c4039a235cb6e8620f81c700b7ad0609d255a2095",
+      "copied_sha256": "ad745f52a04246c85c61b69c4039a235cb6e8620f81c700b7ad0609d255a2095",
+      "bytes": 609
+    },
+    "failed/logs/case_007/run.json": {
+      "source_sha256": "aae66af5c6d58d12ea022f31c4056b8af7727f238bc08516eea6a9ecf4d7309e",
+      "copied_sha256": "aae66af5c6d58d12ea022f31c4056b8af7727f238bc08516eea6a9ecf4d7309e",
+      "bytes": 1537
+    },
+    "failed/logs/case_007/inputs_before.json": {
+      "source_sha256": "b0186846c86906bc27413a1505e35533b8a9c6a5ac31d2a92aa02e9fc8d2c3e9",
+      "copied_sha256": "b0186846c86906bc27413a1505e35533b8a9c6a5ac31d2a92aa02e9fc8d2c3e9",
+      "bytes": 20399
+    },
+    "failed/logs/case_007/M6AssignVehicle.exe.stdout.bin": {
+      "source_sha256": "3988898f546927aec775df8266286dd9e5ed9225b8105a4126640d2d7e10a174",
+      "copied_sha256": "3988898f546927aec775df8266286dd9e5ed9225b8105a4126640d2d7e10a174",
+      "bytes": 963
+    },
+    "failed/logs/case_007/M6AssignVehicle.exe.stdout.txt": {
+      "source_sha256": "84b02743ea2d1033e61f162c4b4dfdebf34d1a7f1eba2e17a9d6a96c19ccc677",
+      "copied_sha256": "84b02743ea2d1033e61f162c4b4dfdebf34d1a7f1eba2e17a9d6a96c19ccc677",
+      "bytes": 1234
+    }
+  }
+}

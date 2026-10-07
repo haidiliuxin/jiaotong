@@ -1,0 +1,4 @@
+Mparam461.TXT-OD矩阵合并分析	
+交通大区中包含的交通小区	ODCOMBIN.txt
+交通小区OD矩阵	ODSMALL.tsd
+合并后的交通大区OD矩阵	ODLARGE.tsd

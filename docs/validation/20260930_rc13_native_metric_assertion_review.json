@@ -1,0 +1,469 @@
+{
+  "created": "2026-09-30T01:21:57.041381+00:00",
+  "kind": "readonly_rc13_native_and_metric_semantic_review",
+  "source_commit": "1bc243bfa34e7a8ccd8be366ac44406a88b3c9ca",
+  "request": "长江村路停车拥堵，请在同一需求下比较停车、单向及组合，分别核对控制响应、核心改善和邻区代价。最多4次仿真，不复跑基准，保护邻区。",
+  "root": "工作材料\\便携异目录检查\\20260930_v2_RC13\\智能体实验\\oneway_scope_live_20260930_01",
+  "job_id": "20260930_085809_7c79a1",
+  "original_status": "completed",
+  "original_protocol": "measured-conclusion-v12",
+  "original_protocol_readonly_verification": {
+    "passed": true,
+    "programme": "20260930_085809_7c79a1",
+    "protocol": "programme-evidence-v1",
+    "native": [
+      {
+        "job_id": "20260930_085809_7c79a1",
+        "raw_verified": true,
+        "archived": false,
+        "verification_kind": null
+      }
+    ],
+    "planning": {
+      "passed": true,
+      "groups": 1,
+      "decisions": 2,
+      "no_cross_engine_pooling": true,
+      "observations_checked_at_decision_time": true,
+      "request_reservations_checked": true
+    },
+    "model_requests": 3
+  },
+  "independent_semantic_review": {
+    "status": "needs_review",
+    "issues": [
+      {
+        "code": "measured_metric_assertion",
+        "field": "hypothesis_updates:H3",
+        "refs": [
+          "20260930_085809_7c79a1:S1_parking"
+        ],
+        "quote": "邻区耗时增幅与毛新增过饱和均为0",
+        "metric": "neighbor_time_change_pct",
+        "claimed_value": 0.0,
+        "claimed_unit": "%",
+        "observed_value": 1.4973412265639752e-05,
+        "unit": "%",
+        "message": "S1_parking 的邻区耗时变化实测为 +1.4973412e-05%，与说明不符；并列指标须分别核对，极小非零值不能直接写成零。"
+      }
+    ],
+    "original_h3": "停车方案邻区耗时增幅与毛新增过饱和均为0、通过门槛；单向与组合因邻区增幅超0.5%及毛新增>0.1km被拒，H3以any量词成立。",
+    "frozen_quantifiers": [
+      {
+        "id": "H1",
+        "criterion": {
+          "test": "control_response",
+          "studies": [
+            1
+          ],
+          "policies": "control_and_combined",
+          "quantifier": "any"
+        }
+      },
+      {
+        "id": "H2",
+        "criterion": {
+          "test": "core_time_decrease",
+          "studies": [
+            1
+          ],
+          "policies": "all",
+          "quantifier": "any"
+        }
+      },
+      {
+        "id": "H3",
+        "criterion": {
+          "test": "neighbor_limits",
+          "studies": [
+            1
+          ],
+          "policies": "all",
+          "quantifier": "any"
+        }
+      }
+    ],
+    "time_limit_pct": 0.5,
+    "new_oversaturated_limit_km": 0.1,
+    "direction_consistent": true,
+    "response_separate_from_eligibility": true,
+    "only_one_demand": true
+  },
+  "scenes": [
+    {
+      "name": "baseline",
+      "changes": [],
+      "demand_factor": 1.0,
+      "completed_top_level_modules": 7,
+      "bridge_passed": true,
+      "bridge_native_calls": 20,
+      "policy_closures": [],
+      "response": null,
+      "comparison": {
+        "eligible": null,
+        "delta": null,
+        "new_neighbor_oversaturated_km": null,
+        "violations": null
+      }
+    },
+    {
+      "name": "S1_parking",
+      "changes": [
+        {
+          "from_node": 3237,
+          "to_node": 3236,
+          "old_parking": 3,
+          "parking": 2
+        },
+        {
+          "from_node": 3236,
+          "to_node": 3237,
+          "old_parking": 3,
+          "parking": 2
+        }
+      ],
+      "demand_factor": 1.0,
+      "completed_top_level_modules": 7,
+      "bridge_passed": true,
+      "bridge_native_calls": 20,
+      "policy_closures": [],
+      "response": null,
+      "comparison": {
+        "eligible": true,
+        "delta": {
+          "core": {
+            "speed_change_pct": 45.98266027609792,
+            "running_time_change_pct": -31.498713743899877,
+            "oversaturated_km_change": 0.0
+          },
+          "neighbor": {
+            "speed_change_pct": -6.888016831352317e-05,
+            "running_time_change_pct": 1.4973412265639752e-05,
+            "oversaturated_km_change": 0.0
+          },
+          "network": {
+            "speed_change_pct": 0.005958611009893033,
+            "running_time_change_pct": -0.005958321446231096,
+            "oversaturated_km_change": 0.0
+          }
+        },
+        "new_neighbor_oversaturated_km": 0,
+        "violations": []
+      }
+    },
+    {
+      "name": "S2_oneway",
+      "changes": [
+        {
+          "kind": "oneway",
+          "closed_direction": [
+            3237,
+            3236
+          ]
+        }
+      ],
+      "demand_factor": 1.0,
+      "completed_top_level_modules": 7,
+      "bridge_passed": true,
+      "bridge_native_calls": 20,
+      "policy_closures": [
+        [
+          3237,
+          3236
+        ]
+      ],
+      "response": {
+        "passed": true,
+        "cache_matches_all_access_rows": true,
+        "cache_encoding": "exact_input_codes_v48",
+        "motor_access_codes_correct": true,
+        "baseline_has_motor_flow": true,
+        "closed_all_motor_flows_zero": true,
+        "open_direction_has_motor_flow": true,
+        "closed_direction": [
+          3237,
+          3236
+        ],
+        "flows": {
+          "car": {
+            "before": 946.55,
+            "after": 0.0,
+            "reverse_after": 474.22
+          },
+          "taxi": {
+            "before": 281.69,
+            "after": 0.0,
+            "reverse_after": 141.13
+          },
+          "motor": {
+            "before": 0.0,
+            "after": 0.0,
+            "reverse_after": 0.0
+          },
+          "truck": {
+            "before": 0.0,
+            "after": 0.0,
+            "reverse_after": 0.0
+          },
+          "bus": {
+            "before": 0.0,
+            "after": 0.0,
+            "reverse_after": 0.0
+          }
+        },
+        "limits": "路权和禁行响应成立不代表交通收益；各车型量纲分别呈现，不将合计用于收益指标"
+      },
+      "comparison": {
+        "eligible": false,
+        "delta": {
+          "core": {
+            "speed_change_pct": 106.35641613162159,
+            "running_time_change_pct": -84.76873746133626,
+            "oversaturated_km_change": -0.984
+          },
+          "neighbor": {
+            "speed_change_pct": -48.485276646275025,
+            "running_time_change_pct": 171.89852158658633,
+            "oversaturated_km_change": 0.70854
+          },
+          "network": {
+            "speed_change_pct": 0.07444576712432038,
+            "running_time_change_pct": -0.039409309154680994,
+            "oversaturated_km_change": 6.897540000000163
+          }
+        },
+        "new_neighbor_oversaturated_km": 1.03054,
+        "violations": [
+          "neighbor路段行驶时间增幅超过0.5%",
+          "邻区新增过饱和有向里程超过0.1km"
+        ]
+      }
+    },
+    {
+      "name": "S3_combined",
+      "changes": [
+        {
+          "from_node": 3237,
+          "to_node": 3236,
+          "old_parking": 3,
+          "parking": 2
+        },
+        {
+          "from_node": 3236,
+          "to_node": 3237,
+          "old_parking": 3,
+          "parking": 2
+        },
+        {
+          "kind": "oneway",
+          "closed_direction": [
+            3237,
+            3236
+          ]
+        }
+      ],
+      "demand_factor": 1.0,
+      "completed_top_level_modules": 7,
+      "bridge_passed": true,
+      "bridge_native_calls": 20,
+      "policy_closures": [
+        [
+          3237,
+          3236
+        ]
+      ],
+      "response": {
+        "passed": true,
+        "cache_matches_all_access_rows": true,
+        "cache_encoding": "exact_input_codes_v48",
+        "motor_access_codes_correct": true,
+        "baseline_has_motor_flow": true,
+        "closed_all_motor_flows_zero": true,
+        "open_direction_has_motor_flow": true,
+        "closed_direction": [
+          3237,
+          3236
+        ],
+        "flows": {
+          "car": {
+            "before": 946.55,
+            "after": 0.0,
+            "reverse_after": 474.22
+          },
+          "taxi": {
+            "before": 281.69,
+            "after": 0.0,
+            "reverse_after": 141.13
+          },
+          "motor": {
+            "before": 0.0,
+            "after": 0.0,
+            "reverse_after": 0.0
+          },
+          "truck": {
+            "before": 0.0,
+            "after": 0.0,
+            "reverse_after": 0.0
+          },
+          "bus": {
+            "before": 0.0,
+            "after": 0.0,
+            "reverse_after": 0.0
+          }
+        },
+        "limits": "路权和禁行响应成立不代表交通收益；各车型量纲分别呈现，不将合计用于收益指标"
+      },
+      "comparison": {
+        "eligible": false,
+        "delta": {
+          "core": {
+            "speed_change_pct": 117.14382885573849,
+            "running_time_change_pct": -85.52540605366869,
+            "oversaturated_km_change": -0.984
+          },
+          "neighbor": {
+            "speed_change_pct": -48.485276646275025,
+            "running_time_change_pct": 171.89852158658633,
+            "oversaturated_km_change": 0.70854
+          },
+          "network": {
+            "speed_change_pct": 0.07458905804063054,
+            "running_time_change_pct": -0.03955243684344856,
+            "oversaturated_km_change": 6.897540000000163
+          }
+        },
+        "new_neighbor_oversaturated_km": 1.03054,
+        "violations": [
+          "neighbor路段行驶时间增幅超过0.5%",
+          "邻区新增过饱和有向里程超过0.1km"
+        ]
+      }
+    }
+  ],
+  "total_native_scenes": 4,
+  "top_level_modules": 28,
+  "bridge_native_calls": 80,
+  "recommendation": "S1_parking",
+  "portable": {
+    "zip": "工作材料/便携构建/20260930_智能规划_v2_RC13.zip",
+    "zip_bytes": 878659537,
+    "zip_sha256": "bcba24384e413e7da1729572c10ef87e99d8e1c07adb15ad3837493148758cfa",
+    "manifest": "工作材料\\便携异目录检查\\20260930_v2_RC13\\runtime_manifest.json",
+    "manifest_sha256": "f858a9a99ff6e5bcfe0a2d3f9e2520984f517beff03197e34a95acd97912c1ed",
+    "immutable_files": 16163,
+    "environment_status": "passed",
+    "environment_record": "工作材料\\便携异目录检查\\20260930_v2_RC13_evidence\\environment_verification.json",
+    "environment_record_sha256": "c4f2ad40e041e6653d6652fbed2339cfd5f8599900105904f0f0d8cb0137b856",
+    "environment_checks": [
+      "initial_integrity",
+      "child_without_B",
+      "planning_protocols",
+      "planning_without_key",
+      "check_parking",
+      "check_turn",
+      "check_oneway",
+      "compiler_path",
+      "wrapper",
+      "final_integrity"
+    ],
+    "environment_new_model_calls": 0,
+    "physical_other_machine": false,
+    "includes_metric_v13": false
+  },
+  "new_review": {
+    "protocol": "measured-conclusion-v13",
+    "metric_protocol": "measured-metric-assertions-v1",
+    "original_reply_full_tool_shadow": "rejected",
+    "issues": [
+      {
+        "code": "measured_metric_assertion",
+        "field": "hypothesis_updates:H3",
+        "refs": [
+          "20260930_085809_7c79a1:S1_parking"
+        ],
+        "quote": "邻区耗时增幅与毛新增过饱和均为0",
+        "metric": "neighbor_time_change_pct",
+        "claimed_value": 0.0,
+        "claimed_unit": "%",
+        "observed_value": 1.4973412265639752e-05,
+        "unit": "%",
+        "message": "S1_parking 的邻区耗时变化实测为 +1.4973412e-05%，与说明不符；并列指标须分别核对，极小非零值不能直接写成零。"
+      }
+    ],
+    "read_view_status": "incomplete",
+    "recorded_status": "completed",
+    "new_model_calls_after_failure": 0,
+    "new_native_runs_after_failure": 0
+  },
+  "source_files": {
+    "manifest": "工作材料\\便携异目录检查\\20260930_v2_RC13_evidence\\oneway_scope_live_20260930_01_file_manifest.json",
+    "manifest_sha256": "ef795195e31e7cbe723bc3372538348eccaf8b22f7b81d45ce678fd58eaa66a5",
+    "file_count": 4919,
+    "core": {
+      "dispatches/20260930_085809_7c79a1.json": {
+        "bytes": 271997,
+        "sha256": "6138aeab14085ce1349c9bedf029e62ae2dbf48a6846f5093422fd66a78a32d7"
+      },
+      "jobs/20260930_085809_7c79a1/state.json": {
+        "bytes": 343971,
+        "sha256": "ceb157c51d4c2a63f436cb87b55d48c2b04deda0760ccfd1f8b3397ea0b3a8d2"
+      },
+      "programmes/20260930_085809_7c79a1/plan.json": {
+        "bytes": 29803,
+        "sha256": "feaecfbabda6f3b5016d0bbc0bfc8a8fd249a7e7d56e38eb756d2a7f5b59c137"
+      },
+      "programmes/20260930_085809_7c79a1/result.json": {
+        "bytes": 271997,
+        "sha256": "6138aeab14085ce1349c9bedf029e62ae2dbf48a6846f5093422fd66a78a32d7"
+      }
+    },
+    "hashes_unchanged_after_readonly_checks": true
+  },
+  "usage": {
+    "responses": [
+      {
+        "response_id": "chatcmpl-6abc5e9cee3e5ea6a6a41813",
+        "input_tokens": 6648,
+        "output_tokens": 738,
+        "tokens": 7386
+      },
+      {
+        "response_id": "chatcmpl-6abc5f29b7474603b0842c61",
+        "input_tokens": 4877,
+        "output_tokens": 558,
+        "tokens": 5435
+      },
+      {
+        "response_id": "chatcmpl-6abc60bf5df07a434f04381a",
+        "input_tokens": 10620,
+        "output_tokens": 708,
+        "tokens": 11328
+      }
+    ],
+    "new_unique_requests": 3,
+    "new_known_tokens": 24149,
+    "prior_requests": 147,
+    "prior_known_tokens": 1411943,
+    "project_retained_cumulative_requests": 150,
+    "project_retained_cumulative_known_tokens": 1436092,
+    "authorized_max_requests": 684,
+    "authorized_max_known_tokens": 4132560,
+    "not_full_account_bill": true,
+    "new_response_ids_absent_from_prior_validation_indexes": true
+  },
+  "offline_checks": {
+    "python_suite_before_final_boundary_additions": 657,
+    "targeted_tests_after_additions": 56,
+    "node_groups": 4,
+    "old_rc5_original_protocol_readonly": "passed",
+    "python_tests": 659,
+    "python_test_log": "tmp/20260930_metric_assertions_final_tests.log",
+    "python_test_log_sha256": "d36d8bb10da654911a3d0b8613139df4c550c42a58033346153df8ce002cbe5c"
+  },
+  "pending": [
+    "new_metric_protocol_complete_model_native_task",
+    "mixed_multi_candidate_and_oneway_full_acceptance",
+    "portable_candidate_including_v13",
+    "physical_other_machine_acceptance"
+  ]
+}

@@ -1,0 +1,35 @@
+[libvpx @ 000001d109ad1400] v1.14.1
+Input #0, matroska,webm, from '成果/演示/20260922_v4_completed_review/已完成真实任务回看.webm':
+  Metadata:
+    ENCODER         : Lavf61.1.100
+  Duration: 00:02:04.00, start: 0.000000, bitrate: 685 kb/s
+  Stream #0:0(eng): Video: vp8 (libvpx), yuv420p(tv, progressive), 1440x1000, SAR 1:1 DAR 36:25, 25 fps, 25 tbr, 1k tbn (default)
+      Metadata:
+        ENCODER         : Lavc61.3.100 libvpx
+        DURATION        : 00:02:04.000000000
+[libvpx @ 000001d109ac2680] v1.14.1
+Stream mapping:
+  Stream #0:0 -> #0:0 (vp8 (libvpx) -> png (native))
+Press [q] to stop, [?] for help
+Output #0, image2, to 'F:\ITS比赛\工作材料\提交排版核验\20260922录像解码\frame%02d.png':
+  Metadata:
+    encoder         : Lavf61.1.100
+  Stream #0:0(eng): Video: png, rgb24(pc, gbr/unknown/unknown, progressive), 1440x1000 [SAR 1:1 DAR 36:25], q=2-31, 200 kb/s, 0.03 fps, 0.03 tbn (default)
+      Metadata:
+        DURATION        : 00:02:04.000000000
+        encoder         : Lavc61.3.100 png
+frame=    0 fps=0.0 q=0.0 size=       0KiB time=N/A bitrate=N/A dup=0 drop=254 speed=N/A    
+frame=    0 fps=0.0 q=0.0 size=       0KiB time=N/A bitrate=N/A dup=0 drop=523 speed=N/A    
+frame=    1 fps=0.6 q=-0.0 size=N/A time=00:00:30.00 bitrate=N/A dup=0 drop=774 speed=19.4x    
+frame=    1 fps=0.5 q=-0.0 size=N/A time=00:00:30.00 bitrate=N/A dup=0 drop=982 speed=14.6x    
+frame=    1 fps=0.4 q=-0.0 size=N/A time=00:00:30.00 bitrate=N/A dup=0 drop=1213 speed=11.7x    
+frame=    2 fps=0.7 q=-0.0 size=N/A time=00:01:00.00 bitrate=N/A dup=0 drop=1445 speed=19.5x    
+frame=    2 fps=0.6 q=-0.0 size=N/A time=00:01:00.00 bitrate=N/A dup=0 drop=1664 speed=16.7x    
+frame=    2 fps=0.5 q=-0.0 size=N/A time=00:01:00.00 bitrate=N/A dup=0 drop=1908 speed=14.7x    
+frame=    3 fps=0.7 q=-0.0 size=N/A time=00:01:30.00 bitrate=N/A dup=0 drop=2192 speed=19.6x    
+frame=    3 fps=0.6 q=-0.0 size=N/A time=00:01:30.00 bitrate=N/A dup=0 drop=2416 speed=17.6x    
+frame=    3 fps=0.5 q=-0.0 size=N/A time=00:01:30.00 bitrate=N/A dup=0 drop=2637 speed=  16x    
+frame=    3 fps=0.5 q=-0.0 size=N/A time=00:01:30.00 bitrate=N/A dup=0 drop=2852 speed=14.7x    
+frame=    4 fps=0.6 q=-0.0 size=N/A time=00:02:00.00 bitrate=N/A dup=0 drop=3067 speed=18.1x    
+[out#0/image2 @ 000001d107ce7480] video:3558KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame=    6 fps=0.9 q=-0.0 Lsize=N/A time=00:03:00.00 bitrate=N/A dup=0 drop=3095 speed=26.9x    

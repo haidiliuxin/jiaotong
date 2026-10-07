@@ -1,0 +1,29 @@
+{
+  "recorded_at": "2026-09-21T21:36:01.485332+00:00",
+  "completed": true,
+  "job": "20260922_052448_fa12d2",
+  "url": "http://127.0.0.1:8792/",
+  "source": "CUA网页观察，程序原始核验另见acceptance.json",
+  "checks": {
+    "completed_scenarios": 4,
+    "budget": 4,
+    "recommendation": "parking_2",
+    "single_demand_warning_visible": true,
+    "network_oversaturation_increase_warning_km": 0.584,
+    "real_baseline_transition": true,
+    "paired_map": [
+      "baseline",
+      "parking_2"
+    ],
+    "map_kpi": {
+      "core_speed": "+122.37%",
+      "network_time": "-0.09%",
+      "neighbor_time": "-0.5%"
+    },
+    "shp_links": 32060,
+    "report_opened": "/api/jobs/20260922_052448_fa12d2/report.html",
+    "report_id_and_repeat_arrays_visible": true,
+    "console_errors": []
+  },
+  "visual_review": "双图、指标、左右侧栏、完成状态及局部恶化道路均已检查；侧栏可滚动。"
+}

@@ -1,0 +1,30 @@
+...............................................................................................{"time": "2026-09-27T15:53:01.618801+00:00", "event": "failure", "data": {"error": "ValueError: 源场景与已匹配任务卡不一致，未开始原生仿真"}}
+......................................................................................................{"time": "2026-09-27T15:53:12.865595+00:00", "event": "native_retry", "data": {"logical_name": "baseline", "failed_native_modules": 4, "attempt": 1, "locations": {"logs": "native_attempts/baseline/attempt_1/logs", "scenario": "native_attempts/baseline/attempt_1/scenario"}}}
+............................F.......................................F.......................................................{"record": "C:\\Users\\asus\\AppData\\Local\\Temp\\tmpqomyvbnr\\evidence\\acceptance.json", "status": "failed", "job": null, "new_model_calls": 0, "error": "ValueError: 解压目录清单与环境检查记录不一致"}
+.{"record": "C:\\Users\\asus\\AppData\\Local\\Temp\\tmpwwkw9yev\\evidence\\acceptance.json", "status": "attention_required", "job": null, "new_model_calls": 0, "error": "TimeoutError: 前序仍未完成封存；未启动新模型，不重启前序任务"}
+..{"record": "C:\\Users\\asus\\AppData\\Local\\Temp\\tmp9flq4a2d\\evidence\\acceptance.json", "status": "failed", "job": null, "new_model_calls": 0, "error": "ValueError: 需要该解压目录已通过环境及真实编译检查的记录"}
+.{"record": "C:\\Users\\asus\\AppData\\Local\\Temp\\tmpldb35x6o\\evidence\\acceptance.json", "status": "failed", "job": null, "new_model_calls": 0, "error": "RuntimeError: 前序实验失败；保留现场，不自动推进新模型"}
+.{"record": "C:\\Users\\asus\\AppData\\Local\\Temp\\tmp3veehd9b\\evidence\\acceptance.json", "status": "attention_required", "job": null, "new_model_calls": 0, "error": "TimeoutError: 前序仍未完成封存；未启动新模型，不重启前序任务"}
+...............................................................................................................{"time": "2026-09-27T15:53:18.801995+00:00", "event": "capability_gate", "data": ["提供显式turn三节点以使用已验证的状态图组合流程；未指定转向的旧自动流程仍未通过响应验收"]}
+{"time": "2026-09-27T15:53:18.810840+00:00", "event": "failure", "data": {"error": "ValueError: entry reached"}}
+.............
+======================================================================
+FAIL: test_missing_final_programme_review_never_becomes_completed (test_natural_plan.ProgrammeExecutionTests.test_missing_final_programme_review_never_becomes_completed)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\ITS比赛\tests\test_natural_plan.py", line 399, in test_missing_final_programme_review_never_becomes_completed
+    self.assertEqual(record['model_budget']['used'],3)
+AssertionError: 4 != 3
+
+======================================================================
+FAIL: test_last_parking_group_without_global_review_is_incomplete (test_planning_completion.CompletionTests.test_last_parking_group_without_global_review_is_incomplete)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "F:\ITS比赛\tests\test_planning_completion.py", line 201, in test_last_parking_group_without_global_review_is_incomplete
+    self.assertEqual(len(p),3)
+AssertionError: 4 != 3
+
+----------------------------------------------------------------------
+Ran 450 tests in 18.264s
+
+FAILED (failures=2)

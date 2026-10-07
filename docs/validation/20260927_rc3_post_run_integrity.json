@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "kind": "portable_transtar_runtime_v1",
+  "files": 16145,
+  "bytes": 1722250826,
+  "code_commit": "adab37fd08f9e5c04379ce1b16f3b59a6431ab57",
+  "python_version": "3.12.6 (tags/v3.12.6:a4a2d2b, Sep  6 2024, 20:11:23) [MSC v.1940 64 bit (AMD64)]",
+  "manifest_sha256": "74fc9cf1749ffae4827befd5a06f8834a6952c62319b1fd2b0ef79df9c9c2eff",
+  "new_model_calls": 0,
+  "meaning": "不可变文件完整性检查；不是数字签名、模型授权检查或真实求解证明",
+  "native_lock_available": true,
+  "no_active_native_test": true
+}

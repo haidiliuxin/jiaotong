@@ -1,0 +1,6 @@
+Mparam416.txt—流动人口出行发生吸引量预测
+【输入文件】交通小区流动人口信息	TripPopulaFloat.TXT
+【输出文件】交通区流动人口出行发生总量	TripGFloPopu.tsd
+【输出文件】交通区流动人口出行吸引总量	TripAFloPopu.tsd
+
+规划年流动人口日均出行次数：	3

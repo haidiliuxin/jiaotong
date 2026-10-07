@@ -1,0 +1,52 @@
+{
+  "passed": true,
+  "protocol": "initial-hypothesis-correction-v1",
+  "model_boundary": "synthetic",
+  "execution_boundary": "not_started",
+  "synthetic_requests": 2,
+  "original_questions_unchanged": true,
+  "tests_and_quantifiers_unchanged": true,
+  "studies_and_conditions_unchanged": true,
+  "invalid_policies_retained": true,
+  "issues": [
+    {
+      "hypothesis_id": "H1",
+      "message": "假设与事前判据冲突：原问题只问交通组织及组合，判据对象不能加入仅停车或漏掉其中一类。",
+      "allowed_policies": [
+        "control_and_combined"
+      ]
+    },
+    {
+      "hypothesis_id": "H2",
+      "message": "额外收益不能把仅停车与其自身比较",
+      "allowed_policies": [
+        "all",
+        "control_and_combined"
+      ]
+    },
+    {
+      "hypothesis_id": "H3",
+      "message": "组合增益判据只能指向组合措施",
+      "allowed_policies": [
+        "combined"
+      ]
+    }
+  ],
+  "corrected_policies": [
+    "control_and_combined",
+    "control_and_combined",
+    "combined",
+    "parking"
+  ],
+  "minimum_required_requests": 6,
+  "native_scene_budget": 6,
+  "fixture_sha256": "15b0c6d099b201330cdc150242dd9f8865239ff381bab02059e8269cec603be3",
+  "rc16_original_failure_unchanged": true,
+  "rc16_raw_archive_sha256": "e60d72848fd8e9f4cfb80a3e0ba2190ec25bb1e6d8a728487f3d6df190b197ac",
+  "rc15_findings_unchanged": true,
+  "old_records_unchanged": 74,
+  "old_locks_unchanged_and_free": 7,
+  "paid_requests_during_this_offline_check": 0,
+  "new_native_scenes": 0,
+  "boundary": "仅在原判据类型与量词不变时，由模型修正被检验的措施类型；有界词句检查不等于通用语义认证。RC16真实失败不追记为通过。"
+}

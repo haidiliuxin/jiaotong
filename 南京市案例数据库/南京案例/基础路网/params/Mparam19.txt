@@ -1,0 +1,4 @@
+O-D矩阵拆分参数表
+控制文件 Oddivde.txt
+现状OD表 OLD_OD.TXT
+结果OD表 OLD_OD1.TXT

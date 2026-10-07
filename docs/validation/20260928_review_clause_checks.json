@@ -1,0 +1,79 @@
+{
+  "kind": "offline_clause_scope_fix",
+  "base_commit": "681d5bf91474e686cfe7d030399b73db1bc88244",
+  "source_pid": 7000,
+  "readonly_pid": 42924,
+  "source_sha256": {
+    "traffic_agent/executed_facts.py": "18523cc65f35e8c7eac79f2cc254cd5390b17db71ed7ea6fd25b52252dd9ff11",
+    "tests/test_executed_facts.py": "41892135f04b32395c5a31b6379f07aa3ae2b4c2aac70bc5a563c41efe6d7b8f"
+  },
+  "tests": {
+    "python": 478,
+    "log": "20260928_review_clause_python_tests.log",
+    "sha256": "a3c724edf4aec5a326682932e202c91344543589d7083025bcd8ab5cff32243a"
+  },
+  "accepted_correct_statement": "停车单项通过，单向与组合均未通过约束。",
+  "rejected_false_statement": "停车单项通过，停车与组合同为失败。",
+  "prior_browser_assets_unchanged": [
+    "traffic_agent/static/planner_view.js",
+    "traffic_agent/static/dispatch.css"
+  ],
+  "prior_browser_screenshot": "20260928_rc10_comparison_cards.png",
+  "loaded_capabilities": {
+    "planning_version": "natural-strategy-plan-v5",
+    "composition_protocol": "traffic-plan-decision-v3",
+    "transport_version": "llm-transport-v2",
+    "initial_review_protocol": "initial-plan-review-v2",
+    "max_initial_corrections": 1,
+    "initial_budget_protocol": "initial-plan-budget-v2",
+    "study_unit_protocol": "complete-study-unit-v1",
+    "compiler_protocol": "plan-compilation-v2",
+    "diagnosis_intent_protocol": "diagnosis-intent-v1",
+    "scope_protocol": "planning-scope-v2",
+    "prerequisite_protocol": "planning-prerequisites-v2",
+    "dynamic_initial_tools": true,
+    "preflight_protocol": "planning-preflight-v1",
+    "routing_budget_protocol": "study-routing-budget-v2",
+    "study_handoff_protocol": "study-handoff-v1",
+    "feedback_review_protocol": "feedback-review-permissions-v1",
+    "parking_completion_protocol": "parking-completion-v2",
+    "hypothesis_review_scope_protocol": "hypothesis-review-scope-v1",
+    "study_comparison_protocol": "study-comparison-v1",
+    "finding_reference_schema": "measured-findings-v1",
+    "response_check_protocol": "planning-response-check-v1",
+    "final_review_correction_protocol": "final-review-correction-v1",
+    "max_final_review_corrections": 1,
+    "feedback_instructions_sha256": "83dad547da323f74f8283dd9bbe6da2e74117d5552cce3c6f666d3bd87340904",
+    "conclusion_protocol": "measured-conclusion-v2",
+    "observables": {
+      "available": [
+        "方向级流量、速度、V/C",
+        "固定核心/邻区/全网行驶时间消耗",
+        "同条件配对变化、邻区毛新增过饱和",
+        "各候选区实际响应及约束判断"
+      ],
+      "unavailable": [
+        "排队长度或排队车辆数",
+        "逐秒轨迹、动态排队回堵",
+        "真实城市因果或零风险证明"
+      ],
+      "conditional": [
+        "全网毛新增过饱和仅在任务开启该检查时提供",
+        "路权及转向响应仅相应适配器提供"
+      ]
+    },
+    "instructions_sha256": "51ab007dd0df7374c0e179baaf47a72fb4ec1b75a8d68ae3bb318e325086df5e",
+    "initial_schema_sha256": "272896aa1eaada5b8814df28e855968612357751737d23d2f7e623fc1f31c932",
+    "engine": "TranStar batch",
+    "automatic_transport_retry": false,
+    "max_model_requests": 6
+  },
+  "zero_paid_preflight": true,
+  "raw_files_unchanged": 50,
+  "preserved_original_status": "completed",
+  "current_rc10_status": "incomplete",
+  "current_rc10_issues": 9,
+  "new_model_calls": 0,
+  "new_native_scenes": 0,
+  "meaning": "只修正同句不同分句的共同状态作用范围，保留真实错误拦截；不构成新模型或物理异机验收。"
+}

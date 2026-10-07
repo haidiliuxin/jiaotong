@@ -1,0 +1,82 @@
+{
+  "checked_at": "2026-09-21T19:25:08.601749+00:00",
+  "method": "Poppler 110 dpi PNGs; every final page inspected at native image resolution",
+  "artifacts": {
+    "研究报告.pdf": {
+      "sha256": "6e22d3e8efd4554f66c5dcb9950b6a33603bea93b90b3e305c2948530442d4c7",
+      "pages": 11,
+      "inspected_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "passed": true,
+      "checks": [
+        "No clipping, overlap, missing CJK glyphs, orphan headings or broken tables",
+        "Embedded regular and bold Chinese fonts",
+        "Version, study identity, page order and final map legend checked"
+      ],
+      "embedded_fonts": [
+        "/AAAAAA+MicrosoftYaHei-0",
+        "/AAAAAA+MicrosoftYaHei-Bold-0",
+        "/AAAAAB+MicrosoftYaHei-0",
+        "/AAAAAB+MicrosoftYaHei-Bold-0",
+        "/AAAAAC+MicrosoftYaHei-0"
+      ],
+      "rendered_pages_sha256": {
+        "page-01.png": "787ad35a9d55fc81164da457049128c84243d0cb479afec77f23c32baf1254fe",
+        "page-02.png": "cf2749ab5ebadcdd0bd3cab9c358d7efa9c7483bb2806804e03c4ec0b1f1bdda",
+        "page-03.png": "1440519590bbafbea445fe4b87eaa35b5a2318f1900f2fced1b041aaaee5671d",
+        "page-04.png": "421757a5b0a5cc76c9babd82bf2f645abe6cd936c3739872135367ac90af6afc",
+        "page-05.png": "98dbab717c021c3b62ac7ec536539f6a9aec235199917dba0f27c41e2de525f2",
+        "page-06.png": "c9fc710ce7c0af019c4810d18733d1fd0a24fbb96b27c305ab8b7614e1c286e7",
+        "page-07.png": "a024a75ec9bcf88cf4f3d2b5477dcf4c890b42360e785b9f67dd86e24c9b89a3",
+        "page-08.png": "98e3a2d5390ae0d93a846134f33c6dd60e4ac8b387035692cbb37adbb036809a",
+        "page-09.png": "12a14d96afa348e045bbb25480fcbf313de8138374b88626d89551c2b681180c",
+        "page-10.png": "5cf55f5fc23b712b3a88e20b3591549404b06b9d5450ce736a8800a733a73ab2",
+        "page-11.png": "02ea6697f80fc4ab42bbcd0a9d2c58723d9d833735b840ec14c1cc9bfee655ac"
+      }
+    },
+    "操作手册.pdf": {
+      "sha256": "6aa2c6941deff948029b6d730779232e61291df7436213c963347c54309ca819",
+      "pages": 6,
+      "inspected_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "passed": true,
+      "checks": [
+        "No clipping, overlap, missing CJK glyphs, orphan headings or broken tables",
+        "Embedded regular and bold Chinese fonts",
+        "Version, study identity, page order and final map legend checked"
+      ],
+      "embedded_fonts": [
+        "/AAAAAA+MicrosoftYaHei-0",
+        "/AAAAAA+MicrosoftYaHei-Bold-0",
+        "/AAAAAB+MicrosoftYaHei-0",
+        "/AAAAAC+MicrosoftYaHei-0"
+      ],
+      "rendered_pages_sha256": {
+        "page-1.png": "ad500d4423e5ffd153276675eea93c233cf2413b3335e4011e25e8cf4ee34dfe",
+        "page-2.png": "56c6d692943571a0a64d8d6ee0fbf84b66eeae11c8ff0255499df2991a6f1e1e",
+        "page-3.png": "4d497b27c258bc5d4611b167aa982ee1bf95ac12d0a0ff49f0d7ccde8592c511",
+        "page-4.png": "0aa491a4d35da2717ff0b24a09e44302db4a2ac61d6c128aa67e677cd82976d8",
+        "page-5.png": "027ad6ce3d2ca3a2f28c18aa35e19cbad7f1b320e4b57672be590a9fd0981b1f",
+        "page-6.png": "a9637b930a4e7e10ebef656146cdd33dda90b61d3cd135590ce00dcee2070c07"
+      }
+    }
+  },
+  "new_model_calls": 0
+}

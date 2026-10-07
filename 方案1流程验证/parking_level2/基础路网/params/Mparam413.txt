@@ -1,0 +1,6 @@
+Mparam413.txt—常住人口出行发生吸引量—基于土地利用预测
+【输入文件】交通小区土地利用信息	Landuse.TXT
+【输入文件】土地类型利用强度信息	LanduseStrength.TXT
+【输入文件】交通小区区位权重信息	LandZoneWeight.TXT
+【输出文件】交通区常住人口出行发生总量	TripGResiLanduse.tsd
+【输出文件】交通区常住人口出行吸引总量	TripAResiLanduse.tsd

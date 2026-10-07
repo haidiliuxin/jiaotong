@@ -1,0 +1,7 @@
+Mparam347.TXT—GRAVITY_FRATAR模型参数表	
+距离矩阵(输入文件)	DISTANCE.TXT
+交通区发生量(输入文件)	DEMAND_G.TXT
+交通区吸引量(输入文件)	DEMAND_A.TXT
+初始重力模型下的O-D分布矩阵(输出文件)	ODgravity-1.OD
+重力模型参数	1
+O-D分布矩阵(输出文件)	ODGravity-Fratar.OD

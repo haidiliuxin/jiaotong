@@ -1,0 +1,39 @@
+{
+  "passed": true,
+  "paid_requests": 0,
+  "new_native_scenes": 0,
+  "overall_system_complete": false,
+  "services": {
+    "PreviewPid": 37076,
+    "SourcePort": 8820,
+    "PreviewPort": 8821,
+    "SourcePid": 37368
+  },
+  "source": {
+    "empty": true,
+    "capabilities_match": true,
+    "script_matches": true
+  },
+  "synthetic_preview": {
+    "write_status": 405,
+    "fixture_sha256": "15b0c6d099b201330cdc150242dd9f8865239ff381bab02059e8269cec603be3"
+  },
+  "browser": {
+    "tool": "cua_repl",
+    "source_tab": 43,
+    "synthetic_tab": 42,
+    "source_request_blank": true,
+    "geometry_only": 32060,
+    "checked": [
+      "首次具体判据冲突可见",
+      "两次请求分别计费并保留",
+      "原问题与当时参数可展开",
+      "只修正措施类型的限制可见",
+      "自然语言入口空白"
+    ],
+    "boundary": "合成工具回复，仅检验初始规划与显示；不代表修复后的真实闭环。",
+    "console_errors": [],
+    "screenshot": "docs\\validation\\20260928_criterion_repair_ui.png",
+    "screenshot_sha256": "b3050005d34600bb0313efc45f41259eb2991679e71b1ed731dfa67485c4cc9c"
+  }
+}

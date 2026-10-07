@@ -1,0 +1,17 @@
+{
+  "tool": "cua_repl",
+  "tab_id": 48,
+  "port": 8825,
+  "blank_request": true,
+  "geometry_only": 32060,
+  "empty_history": true,
+  "console_errors": [],
+  "scope": "只浏览包内空白大厅；未点击自动编排运行或连接测试。",
+  "source_commit": "df946787d0e2fd867b8d9d0b7eda4aea06a64d6c",
+  "screenshot": "docs\\validation\\20260928_planning_rc18_lobby.png",
+  "screenshot_sha256": "67994b0a35ce0b7fa81b2ea0c27c8c3735c1bd570b701f936df9fecebf47067c",
+  "paid_requests": 0,
+  "new_native_scenes": 0,
+  "physical_other_machine": false,
+  "overall_system_complete": false
+}

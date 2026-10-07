@@ -1,0 +1,23 @@
+{
+  "current_source_protocol": "planning-response-check-v1",
+  "feedback_instructions_sha256": "a6bee8d432c2c6715e0fbfca886b022ac739330cd48a0eb61aa0d04deefc2985",
+  "read_only_status": "incomplete",
+  "conclusion_status": "not_reviewed",
+  "specific_rejection_unknown": true,
+  "immutable_original_records_checked": [
+    "智能体实验/dispatches/20260927_200218_bdef1b.json",
+    "智能体实验/jobs/20260927_200218_bdef1b/state.json",
+    "智能体实验/programmes/20260927_200218_bdef1b/result.json"
+  ],
+  "display_does_not_rewrite_records": true,
+  "browser_checks": [
+    "same-demand split speed maps",
+    "model rejection remains incomplete",
+    "adverse region actual 29.08 to 23.69 km/h",
+    "selected action shown as interrupted before result",
+    "no browser warnings or errors"
+  ],
+  "paid_calls_in_entire_stage": 3,
+  "known_tokens": 19484,
+  "paid_calls_for_browser_checks": 0
+}

@@ -1,0 +1,837 @@
+{
+  "checked_at": "2026-09-10T17:57:57.284320+00:00",
+  "method": "read-only reanalysis of saved TranStar outputs; no new simulation",
+  "tests": 69,
+  "experiments": [
+    {
+      "job": "20260908_031854_677ea5",
+      "original_recommendation": "parking_2",
+      "analysis": {
+        "version": "paired-minimax-v1",
+        "factors": [
+          0.9,
+          1.0,
+          1.1
+        ],
+        "policies": [
+          {
+            "name": "parking_1",
+            "changes": [
+              {
+                "from_node": 3244,
+                "to_node": 3245,
+                "old_parking": 3,
+                "parking": 2
+              },
+              {
+                "from_node": 3245,
+                "to_node": 3244,
+                "old_parking": 3,
+                "parking": 2
+              },
+              {
+                "from_node": 3240,
+                "to_node": 3239,
+                "old_parking": 3,
+                "parking": 2
+              }
+            ],
+            "checks": [
+              {
+                "factor": 1.0,
+                "run": "parking_1",
+                "baseline": "baseline",
+                "accepted": true,
+                "network_time_pct": -0.07025714831417895,
+                "neighbor_time_pct": -0.4871099922312827,
+                "new_neighbor_km": 0,
+                "violations": []
+              }
+            ],
+            "missing": [
+              0.9,
+              1.1
+            ],
+            "reasons": [],
+            "feasible": false,
+            "worst": null,
+            "dominated_by": [],
+            "frontier": false
+          },
+          {
+            "name": "parking_2",
+            "changes": [
+              {
+                "from_node": 3244,
+                "to_node": 3245,
+                "old_parking": 3,
+                "parking": 1
+              },
+              {
+                "from_node": 3245,
+                "to_node": 3244,
+                "old_parking": 3,
+                "parking": 1
+              },
+              {
+                "from_node": 3240,
+                "to_node": 3239,
+                "old_parking": 3,
+                "parking": 1
+              }
+            ],
+            "checks": [
+              {
+                "factor": 0.9,
+                "run": "demand_0p900_policy",
+                "baseline": "demand_0p900_baseline",
+                "accepted": false,
+                "network_time_pct": -0.10161752955596404,
+                "neighbor_time_pct": -6.129292490105187,
+                "new_neighbor_km": 0.287,
+                "violations": [
+                  "邻区新增过饱和有向里程超过0.1km"
+                ]
+              },
+              {
+                "factor": 1.0,
+                "run": "parking_2",
+                "baseline": "baseline",
+                "accepted": true,
+                "network_time_pct": -0.09111118155488152,
+                "neighbor_time_pct": -0.5039603371156054,
+                "new_neighbor_km": 0,
+                "violations": []
+              },
+              {
+                "factor": 1.1,
+                "run": "demand_1p100_policy",
+                "baseline": "demand_1p100_baseline",
+                "accepted": false,
+                "network_time_pct": -0.08518949814115828,
+                "neighbor_time_pct": 1.0819247321378844,
+                "new_neighbor_km": 0.383,
+                "violations": [
+                  "neighbor路段行驶时间增幅超过0.5%",
+                  "邻区新增过饱和有向里程超过0.1km"
+                ]
+              }
+            ],
+            "missing": [],
+            "reasons": [
+              "需求 × 0.9：邻区新增过饱和有向里程超过0.1km",
+              "需求 × 1.1：neighbor路段行驶时间增幅超过0.5%",
+              "需求 × 1.1：邻区新增过饱和有向里程超过0.1km"
+            ],
+            "feasible": false,
+            "worst": null,
+            "dominated_by": [],
+            "frontier": false
+          },
+          {
+            "name": "adapt_0p900",
+            "changes": [
+              {
+                "from_node": 3244,
+                "to_node": 3245,
+                "old_parking": 3,
+                "parking": 1
+              }
+            ],
+            "checks": [
+              {
+                "factor": 0.9,
+                "run": "adapt_0p900",
+                "baseline": "demand_0p900_baseline",
+                "accepted": true,
+                "network_time_pct": -0.05704380124248454,
+                "neighbor_time_pct": 0.0025054667365020933,
+                "new_neighbor_km": 0,
+                "violations": []
+              },
+              {
+                "factor": 1.1,
+                "run": "adapt_1p100",
+                "baseline": "demand_1p100_baseline",
+                "accepted": true,
+                "network_time_pct": -0.051705260669843156,
+                "neighbor_time_pct": 0.004102749122814053,
+                "new_neighbor_km": 0,
+                "violations": []
+              }
+            ],
+            "missing": [
+              1.0
+            ],
+            "reasons": [],
+            "feasible": false,
+            "worst": null,
+            "dominated_by": [],
+            "frontier": false
+          }
+        ],
+        "recommendation": null,
+        "finalized": true,
+        "eligible_count": 0,
+        "frontier_count": 0,
+        "reason": "没有证据完整且在全部设定需求下通过约束的同一措施，保留各需求基准或原条件建议",
+        "rule": "先满足全部已设需求的原实验约束；最小化最差全网耗时增幅，其次邻区增幅、邻区新增过饱和里程。仅解释已测措施，不推断未测需求。"
+      }
+    },
+    {
+      "job": "20260908_075938_e7444a",
+      "original_recommendation": "S1_parking",
+      "analysis": {
+        "version": "paired-minimax-v1",
+        "factors": [
+          0.9,
+          1.0,
+          1.1
+        ],
+        "policies": [
+          {
+            "name": "S1_parking",
+            "changes": [
+              {
+                "from_node": 3237,
+                "to_node": 3236,
+                "old_parking": 3,
+                "parking": 2
+              },
+              {
+                "from_node": 3236,
+                "to_node": 3237,
+                "old_parking": 3,
+                "parking": 2
+              }
+            ],
+            "checks": [
+              {
+                "factor": 0.9,
+                "run": "demand_0p900_S1_parking",
+                "baseline": "demand_0p900_baseline",
+                "accepted": false,
+                "network_time_pct": -0.0024154598141090666,
+                "neighbor_time_pct": 7.286306352518812,
+                "new_neighbor_km": 0,
+                "violations": [
+                  "neighbor路段行驶时间增幅超过0.5%"
+                ]
+              },
+              {
+                "factor": 1.0,
+                "run": "S1_parking",
+                "baseline": "baseline",
+                "accepted": true,
+                "network_time_pct": -0.005958321446231096,
+                "neighbor_time_pct": 1.4973412265639752e-05,
+                "new_neighbor_km": 0,
+                "violations": []
+              },
+              {
+                "factor": 1.1,
+                "run": "demand_1p100_S1_parking",
+                "baseline": "demand_1p100_baseline",
+                "accepted": true,
+                "network_time_pct": -0.007172930944665534,
+                "neighbor_time_pct": -6.410280940505331e-05,
+                "new_neighbor_km": 0,
+                "violations": []
+              }
+            ],
+            "missing": [],
+            "reasons": [
+              "需求 × 0.9：neighbor路段行驶时间增幅超过0.5%"
+            ],
+            "feasible": false,
+            "worst": null,
+            "dominated_by": [],
+            "frontier": false
+          },
+          {
+            "name": "S2_oneway",
+            "changes": [
+              {
+                "kind": "oneway",
+                "closed_direction": [
+                  3237,
+                  3236
+                ]
+              }
+            ],
+            "checks": [
+              {
+                "factor": 0.9,
+                "run": "demand_0p900_S2_oneway",
+                "baseline": "demand_0p900_baseline",
+                "accepted": false,
+                "network_time_pct": 0.012546955473236032,
+                "neighbor_time_pct": 167.22981335987694,
+                "new_neighbor_km": 1.03054,
+                "violations": [
+                  "neighbor路段行驶时间增幅超过0.5%",
+                  "邻区新增过饱和有向里程超过0.1km",
+                  "全网路段行驶时间未改善，不能仅靠关闭方向的核心流量减少推荐"
+                ]
+              },
+              {
+                "factor": 1.0,
+                "run": "S2_oneway",
+                "baseline": "baseline",
+                "accepted": false,
+                "network_time_pct": -0.039409309154680994,
+                "neighbor_time_pct": 171.89852158658633,
+                "new_neighbor_km": 1.03054,
+                "violations": [
+                  "neighbor路段行驶时间增幅超过0.5%",
+                  "邻区新增过饱和有向里程超过0.1km"
+                ]
+              },
+              {
+                "factor": 1.1,
+                "run": "demand_1p100_S2_oneway",
+                "baseline": "demand_1p100_baseline",
+                "accepted": false,
+                "network_time_pct": -0.3036087183587388,
+                "neighbor_time_pct": 175.22027818744897,
+                "new_neighbor_km": 1.13554,
+                "violations": [
+                  "neighbor路段行驶时间增幅超过0.5%",
+                  "邻区新增过饱和有向里程超过0.1km"
+                ]
+              }
+            ],
+            "missing": [],
+            "reasons": [
+              "需求 × 0.9：neighbor路段行驶时间增幅超过0.5%",
+              "需求 × 0.9：邻区新增过饱和有向里程超过0.1km",
+              "需求 × 0.9：全网路段行驶时间未改善，不能仅靠关闭方向的核心流量减少推荐",
+              "需求 × 1.0：neighbor路段行驶时间增幅超过0.5%",
+              "需求 × 1.0：邻区新增过饱和有向里程超过0.1km",
+              "需求 × 1.1：neighbor路段行驶时间增幅超过0.5%",
+              "需求 × 1.1：邻区新增过饱和有向里程超过0.1km"
+            ],
+            "feasible": false,
+            "worst": null,
+            "dominated_by": [],
+            "frontier": false
+          },
+          {
+            "name": "S3_combined",
+            "changes": [
+              {
+                "from_node": 3237,
+                "to_node": 3236,
+                "old_parking": 3,
+                "parking": 2
+              },
+              {
+                "from_node": 3236,
+                "to_node": 3237,
+                "old_parking": 3,
+                "parking": 2
+              },
+              {
+                "kind": "oneway",
+                "closed_direction": [
+                  3237,
+                  3236
+                ]
+              }
+            ],
+            "checks": [
+              {
+                "factor": 0.9,
+                "run": "demand_0p900_S3_combined",
+                "baseline": "demand_0p900_baseline",
+                "accepted": false,
+                "network_time_pct": 0.008325601962066997,
+                "neighbor_time_pct": 167.71498728888176,
+                "new_neighbor_km": 1.03054,
+                "violations": [
+                  "neighbor路段行驶时间增幅超过0.5%",
+                  "邻区新增过饱和有向里程超过0.1km",
+                  "全网路段行驶时间未改善，不能仅靠关闭方向的核心流量减少推荐"
+                ]
+              },
+              {
+                "factor": 1.0,
+                "run": "S3_combined",
+                "baseline": "baseline",
+                "accepted": false,
+                "network_time_pct": -0.03955243684344856,
+                "neighbor_time_pct": 171.89852158658633,
+                "new_neighbor_km": 1.03054,
+                "violations": [
+                  "neighbor路段行驶时间增幅超过0.5%",
+                  "邻区新增过饱和有向里程超过0.1km"
+                ]
+              },
+              {
+                "factor": 1.1,
+                "run": "demand_1p100_S3_combined",
+                "baseline": "demand_1p100_baseline",
+                "accepted": false,
+                "network_time_pct": -0.3038853170884481,
+                "neighbor_time_pct": 175.22027818744897,
+                "new_neighbor_km": 1.13554,
+                "violations": [
+                  "neighbor路段行驶时间增幅超过0.5%",
+                  "邻区新增过饱和有向里程超过0.1km"
+                ]
+              }
+            ],
+            "missing": [],
+            "reasons": [
+              "需求 × 0.9：neighbor路段行驶时间增幅超过0.5%",
+              "需求 × 0.9：邻区新增过饱和有向里程超过0.1km",
+              "需求 × 0.9：全网路段行驶时间未改善，不能仅靠关闭方向的核心流量减少推荐",
+              "需求 × 1.0：neighbor路段行驶时间增幅超过0.5%",
+              "需求 × 1.0：邻区新增过饱和有向里程超过0.1km",
+              "需求 × 1.1：neighbor路段行驶时间增幅超过0.5%",
+              "需求 × 1.1：邻区新增过饱和有向里程超过0.1km"
+            ],
+            "feasible": false,
+            "worst": null,
+            "dominated_by": [],
+            "frontier": false
+          }
+        ],
+        "recommendation": null,
+        "finalized": true,
+        "eligible_count": 0,
+        "frontier_count": 0,
+        "reason": "没有证据完整且在全部设定需求下通过约束的同一措施，保留各需求基准或原条件建议",
+        "rule": "先满足全部已设需求的原实验约束；最小化最差全网耗时增幅，其次邻区增幅、邻区新增过饱和里程。仅解释已测措施，不推断未测需求。"
+      }
+    },
+    {
+      "job": "20260908_100153_bb7198",
+      "original_recommendation": "S3_combined",
+      "analysis": {
+        "version": "paired-minimax-v1",
+        "factors": [
+          0.9,
+          1.0,
+          1.1
+        ],
+        "policies": [
+          {
+            "name": "S1_parking",
+            "changes": [
+              {
+                "from_node": 5990,
+                "to_node": 5991,
+                "old_parking": 3,
+                "parking": 2
+              }
+            ],
+            "checks": [
+              {
+                "factor": 0.9,
+                "run": "demand_0p900_S1_parking",
+                "baseline": "demand_0p900_baseline",
+                "accepted": true,
+                "network_time_pct": -0.0007105237839089007,
+                "neighbor_time_pct": -0.0010081356349278536,
+                "new_neighbor_km": 0,
+                "violations": []
+              },
+              {
+                "factor": 1.0,
+                "run": "S1_parking",
+                "baseline": "baseline",
+                "accepted": false,
+                "network_time_pct": 0.0007962881232614905,
+                "neighbor_time_pct": 0.09715331727804255,
+                "new_neighbor_km": 0,
+                "violations": [
+                  "全网路段行驶时间未改善，不能只用目标出口流量减少推荐"
+                ]
+              },
+              {
+                "factor": 1.1,
+                "run": "demand_1p100_S1_parking",
+                "baseline": "demand_1p100_baseline",
+                "accepted": false,
+                "network_time_pct": 0.0016352484216497487,
+                "neighbor_time_pct": 0.16949614577190797,
+                "new_neighbor_km": 0,
+                "violations": [
+                  "全网路段行驶时间未改善，不能只用目标出口流量减少推荐"
+                ]
+              }
+            ],
+            "missing": [],
+            "reasons": [
+              "需求 × 1.0：全网路段行驶时间未改善，不能只用目标出口流量减少推荐",
+              "需求 × 1.1：全网路段行驶时间未改善，不能只用目标出口流量减少推荐"
+            ],
+            "feasible": false,
+            "worst": null,
+            "dominated_by": [],
+            "frontier": false
+          },
+          {
+            "name": "S2_turn",
+            "changes": [
+              {
+                "kind": "turn",
+                "turn": [
+                  4797,
+                  5990,
+                  5991
+                ]
+              }
+            ],
+            "checks": [
+              {
+                "factor": 0.9,
+                "run": "demand_0p900_S2_turn",
+                "baseline": "demand_0p900_baseline",
+                "accepted": true,
+                "network_time_pct": -0.08591578505451336,
+                "neighbor_time_pct": -9.090403923146006,
+                "new_neighbor_km": 0,
+                "violations": []
+              },
+              {
+                "factor": 1.0,
+                "run": "S2_turn",
+                "baseline": "baseline",
+                "accepted": true,
+                "network_time_pct": -0.14578369158164683,
+                "neighbor_time_pct": -10.977463251041254,
+                "new_neighbor_km": 0,
+                "violations": []
+              },
+              {
+                "factor": 1.1,
+                "run": "demand_1p100_S2_turn",
+                "baseline": "demand_1p100_baseline",
+                "accepted": true,
+                "network_time_pct": -0.2467685296442368,
+                "neighbor_time_pct": -5.949884896703117,
+                "new_neighbor_km": 0,
+                "violations": []
+              }
+            ],
+            "missing": [],
+            "reasons": [],
+            "feasible": true,
+            "worst": [
+              -0.08591578505451336,
+              -5.949884896703117,
+              0
+            ],
+            "dominated_by": [],
+            "frontier": true
+          },
+          {
+            "name": "S3_combined",
+            "changes": [
+              {
+                "from_node": 5990,
+                "to_node": 5991,
+                "old_parking": 3,
+                "parking": 2
+              },
+              {
+                "kind": "turn",
+                "turn": [
+                  4797,
+                  5990,
+                  5991
+                ]
+              }
+            ],
+            "checks": [
+              {
+                "factor": 0.9,
+                "run": "demand_0p900_S3_combined",
+                "baseline": "demand_0p900_baseline",
+                "accepted": true,
+                "network_time_pct": -0.0859507058496134,
+                "neighbor_time_pct": -9.09000363422524,
+                "new_neighbor_km": 0,
+                "violations": []
+              },
+              {
+                "factor": 1.0,
+                "run": "S3_combined",
+                "baseline": "baseline",
+                "accepted": true,
+                "network_time_pct": -0.1458268610335267,
+                "neighbor_time_pct": -10.977150111275114,
+                "new_neighbor_km": 0,
+                "violations": []
+              },
+              {
+                "factor": 1.1,
+                "run": "demand_1p100_S3_combined",
+                "baseline": "demand_1p100_baseline",
+                "accepted": true,
+                "network_time_pct": -0.24681451293544487,
+                "neighbor_time_pct": -5.948085279447213,
+                "new_neighbor_km": 0,
+                "violations": []
+              }
+            ],
+            "missing": [],
+            "reasons": [],
+            "feasible": true,
+            "worst": [
+              -0.0859507058496134,
+              -5.948085279447213,
+              0
+            ],
+            "dominated_by": [],
+            "frontier": true
+          }
+        ],
+        "recommendation": "S3_combined",
+        "finalized": true,
+        "eligible_count": 2,
+        "frontier_count": 2,
+        "reason": "所有已测需求均通过原约束，按最差全网耗时增幅优先，再比较邻区代价与新增过饱和",
+        "rule": "先满足全部已设需求的原实验约束；最小化最差全网耗时增幅，其次邻区增幅、邻区新增过饱和里程。仅解释已测措施，不推断未测需求。"
+      }
+    }
+  ],
+  "spatial_checks": [
+    {
+      "run": "S3_combined",
+      "baseline": "baseline",
+      "matched_shapes": 32060,
+      "spatial": {
+        "added_time_pcu_h": 789.2605470165462,
+        "saved_time_pcu_h": 1069.5954354830244,
+        "net_time_pcu_h": -280.3348884664782,
+        "new_network_overloaded_km": 8.858574299999999,
+        "hotspots": [
+          {
+            "id": 30218,
+            "name": "江边路",
+            "start": 10532,
+            "end": 5221,
+            "group": "network",
+            "time_change_pcu_h": 30.095039708064512,
+            "speed_change": -2.6799999999999997,
+            "new_overloaded": false
+          },
+          {
+            "id": 32840,
+            "name": "柳塘立交桥",
+            "start": 83870,
+            "end": 83871,
+            "group": "network",
+            "time_change_pcu_h": 19.490850147991594,
+            "speed_change": -0.4399999999999995,
+            "new_overloaded": false
+          },
+          {
+            "id": 19969,
+            "name": "25451路",
+            "start": 6971,
+            "end": 5959,
+            "group": "network",
+            "time_change_pcu_h": 17.787027653626676,
+            "speed_change": -18.169999999999998,
+            "new_overloaded": false
+          },
+          {
+            "id": 16917,
+            "name": "燕尧路",
+            "start": 5956,
+            "end": 6654,
+            "group": "network",
+            "time_change_pcu_h": 9.770476115156185,
+            "speed_change": -1.5800000000000018,
+            "new_overloaded": false
+          },
+          {
+            "id": 763,
+            "name": "12293路",
+            "start": 236,
+            "end": 188,
+            "group": "network",
+            "time_change_pcu_h": 9.287932267016028,
+            "speed_change": -0.06999999999999851,
+            "new_overloaded": false
+          }
+        ],
+        "improvements": [
+          {
+            "id": 14618,
+            "name": "方家营",
+            "start": 5243,
+            "end": 10508,
+            "group": "network",
+            "time_change_pcu_h": -50.721110229110515,
+            "speed_change": 1.42,
+            "new_overloaded": false
+          },
+          {
+            "id": 18933,
+            "name": "北苑西路",
+            "start": 6643,
+            "end": 5971,
+            "group": "network",
+            "time_change_pcu_h": -35.79852382499563,
+            "speed_change": 22.28,
+            "new_overloaded": false
+          },
+          {
+            "id": 16958,
+            "name": "恒嘉路",
+            "start": 5971,
+            "end": 5972,
+            "group": "network",
+            "time_change_pcu_h": -35.7307208371385,
+            "speed_change": 8.52,
+            "new_overloaded": false
+          },
+          {
+            "id": 16965,
+            "name": "恒嘉路",
+            "start": 5973,
+            "end": 5974,
+            "group": "network",
+            "time_change_pcu_h": -32.50521472868663,
+            "speed_change": 17.109999999999996,
+            "new_overloaded": false
+          },
+          {
+            "id": 32050,
+            "name": "匝道",
+            "start": 11516,
+            "end": 10552,
+            "group": "network",
+            "time_change_pcu_h": -32.289374440318156,
+            "speed_change": 1.0599999999999996,
+            "new_overloaded": false
+          }
+        ]
+      },
+      "scope_net_time_pcu_h": -280.33488846648834,
+      "cost_balance_passed": true
+    },
+    {
+      "run": "demand_0p900_S3_combined",
+      "baseline": "demand_0p900_baseline",
+      "matched_shapes": 32060,
+      "spatial": {
+        "added_time_pcu_h": 463.2325899337013,
+        "saved_time_pcu_h": 606.2080533697289,
+        "net_time_pcu_h": -142.97546343602755,
+        "new_network_overloaded_km": 6.081112000000001,
+        "hotspots": [
+          {
+            "id": 30253,
+            "name": "无名道路",
+            "start": 10548,
+            "end": 10549,
+            "group": "network",
+            "time_change_pcu_h": 8.065794615677323,
+            "speed_change": -0.5700000000000003,
+            "new_overloaded": false
+          },
+          {
+            "id": 29802,
+            "name": "11044路",
+            "start": 10305,
+            "end": 32,
+            "group": "network",
+            "time_change_pcu_h": 6.7131706284475925,
+            "speed_change": -0.21999999999999886,
+            "new_overloaded": false
+          },
+          {
+            "id": 18971,
+            "name": "匝道",
+            "start": 6654,
+            "end": 4188,
+            "group": "network",
+            "time_change_pcu_h": 6.6718567816032675,
+            "speed_change": -1.6099999999999994,
+            "new_overloaded": false
+          },
+          {
+            "id": 14584,
+            "name": "23013路",
+            "start": 5233,
+            "end": 4264,
+            "group": "network",
+            "time_change_pcu_h": 6.091332298974636,
+            "speed_change": -20.92,
+            "new_overloaded": false
+          },
+          {
+            "id": 13059,
+            "name": "红山南路",
+            "start": 4778,
+            "end": 5974,
+            "group": "network",
+            "time_change_pcu_h": 5.960709910000001,
+            "speed_change": 0.0,
+            "new_overloaded": false
+          }
+        ],
+        "improvements": [
+          {
+            "id": 16958,
+            "name": "恒嘉路",
+            "start": 5971,
+            "end": 5972,
+            "group": "network",
+            "time_change_pcu_h": -36.775488860759495,
+            "speed_change": 14.7,
+            "new_overloaded": false
+          },
+          {
+            "id": 32840,
+            "name": "柳塘立交桥",
+            "start": 83870,
+            "end": 83871,
+            "group": "network",
+            "time_change_pcu_h": -23.916061743746564,
+            "speed_change": 0.7999999999999989,
+            "new_overloaded": false
+          },
+          {
+            "id": 18933,
+            "name": "北苑西路",
+            "start": 6643,
+            "end": 5971,
+            "group": "network",
+            "time_change_pcu_h": -22.901498683618453,
+            "speed_change": 21.279999999999998,
+            "new_overloaded": false
+          },
+          {
+            "id": 16965,
+            "name": "恒嘉路",
+            "start": 5973,
+            "end": 5974,
+            "group": "network",
+            "time_change_pcu_h": -21.831656652588173,
+            "speed_change": 14.079999999999998,
+            "new_overloaded": false
+          },
+          {
+            "id": 16962,
+            "name": "恒嘉路",
+            "start": 5972,
+            "end": 5973,
+            "group": "network",
+            "time_change_pcu_h": -21.404659420289857,
+            "speed_change": 10.32,
+            "new_overloaded": false
+          }
+        ]
+      },
+      "scope_net_time_pcu_h": -142.97546343604336,
+      "cost_balance_passed": true
+    }
+  ]
+}

@@ -1,0 +1,261 @@
+{
+  "started": "2026-09-27T01:22:27.207565+00:00",
+  "purpose": "情景匹配与批次调度有限验收",
+  "api_request_limit": 2,
+  "cases": [
+    {
+      "status": "ready",
+      "matcher": "model",
+      "engine": "TranStar batch",
+      "dataset": "南京赛事案例",
+      "request": "路边车辆乱停造成通行干扰，请评估停车治理并检查邻区影响",
+      "missing": [],
+      "model_usage": {
+        "request_model": "deepseek-v4-flash",
+        "response_model": "deepseek-v4-flash-0731",
+        "response_id": "chatcmpl-6ab86fd43f5a81f5d83f0c36",
+        "tokens": 667,
+        "latency_s": 1.5
+      },
+      "scenario": "parking",
+      "reason": "描述路边车辆乱停造成通行干扰，属于停车类问题。",
+      "task": {
+        "request": "路边车辆乱停造成通行干扰，请评估停车治理并检查邻区影响",
+        "scenario": "parking",
+        "search_mode": "standard",
+        "recommendation_version": "tolerance-v2",
+        "road_name": null,
+        "links": [],
+        "turn": null,
+        "max_links": 1,
+        "max_runs": 3,
+        "max_feedback": 1,
+        "demand_factors": [
+          1
+        ],
+        "repeat_baseline": false,
+        "neighbor_hops": 2,
+        "target_speed_kmh": 25.0,
+        "max_neighbor_time_increase_pct": 0.5,
+        "max_network_time_increase_pct": 0.1,
+        "max_new_oversaturated_km": 0.1,
+        "module_timeout_seconds": 900
+      },
+      "plan": {
+        "task": {
+          "request": "路边车辆乱停造成通行干扰，请评估停车治理并检查邻区影响",
+          "scenario": "parking",
+          "search_mode": "standard",
+          "recommendation_version": "tolerance-v2",
+          "road_name": null,
+          "links": [],
+          "turn": null,
+          "max_links": 1,
+          "max_runs": 3,
+          "max_feedback": 1,
+          "demand_factors": [
+            1
+          ],
+          "repeat_baseline": false,
+          "neighbor_hops": 2,
+          "target_speed_kmh": 25.0,
+          "max_neighbor_time_increase_pct": 0.5,
+          "max_network_time_increase_pct": 0.1,
+          "max_new_oversaturated_km": 0.1,
+          "module_timeout_seconds": 900
+        },
+        "capability": {
+          "state": "executable",
+          "name": "停车干扰治理",
+          "requires": []
+        },
+        "knowledge": [
+          {
+            "id": "contest.agent",
+            "topics": [
+              "parking",
+              "circulation",
+              "construction",
+              "transit",
+              "signal",
+              "staggered"
+            ],
+            "source": "工作材料/文本摘录/赛题.txt · 智能体设计、评分标准",
+            "text": "允许规则推理、工具调用、脚本自动化。智能体应根据仿真结果比较或调整方案，至少报告两项指标，保留完整复现证据。"
+          },
+          {
+            "id": "parking.categories",
+            "topics": [
+              "parking",
+              "circulation"
+            ],
+            "source": "城市交通版说明书.pdf · PDF第31页表2-12及交通管理附录；方案1流程验证/验证报告.md",
+            "text": "manageL五列依次为起点、终点、公交专用道、停车影响类别、绿波。停车为离散类别，3/4为严重影响，2为中度，1为更强治理情景。不能按类别比例直接推算容量改善。"
+          },
+          {
+            "id": "assignment.fixed",
+            "topics": [
+              "parking",
+              "construction",
+              "circulation"
+            ],
+            "source": "方案1流程验证/运行说明.md；城市交通版说明书.pdf · PDF第145-146页",
+            "text": "固定已有机动车小时OD与公交线路配车，运行道路、公交、管理预处理及机动车分配和评价模块。当前参数为5次多路径增量加载，不声称达到均衡收敛。"
+          },
+          {
+            "id": "metrics.boundary",
+            "topics": [
+              "parking",
+              "circulation",
+              "construction"
+            ],
+            "source": "方案1流程验证/验证报告.md · 指标口径问题",
+            "text": "速度按Σ(qL)/Σ(qL/v)汇总；过饱和里程按软件V/C>1计算。软件V/C分母不同于管理修正容量。TimeLink极大值会阻止其全网时间汇总。路段行驶时间消耗不称全系统总旅行时间。"
+          },
+          {
+            "id": "demand.sensitivity",
+            "topics": [
+              "parking",
+              "staggered"
+            ],
+            "source": "城市交通版说明书.pdf · PDF第145页；参赛方案草案.md · 需求敏感性",
+            "text": "小时OD单位pcu/h，需求系数0.9/1.0/1.1为实验假设。本实现只缩放小汽车OD，其余车型和公交线路不变，不能称全交通需求同比变化或错峰守恒实验。每个系数必须分别运行无治理与相同治理的匹配基准。"
+          }
+        ],
+        "agent_type": "确定性规则推理＋白名单工具调用；不调用大语言模型",
+        "steps": [
+          "数据与预算校验",
+          "新建基准并实际仿真",
+          "识别区域瓶颈、冻结评价范围",
+          "生成2级停车治理",
+          "读取结果、约束检查、反馈增强或缩小范围",
+          "按预定规则选择候选或保留基准",
+          "成对需求敏感性与同输入复跑",
+          "报告及过程证据"
+        ],
+        "assumptions": [
+          "案例基准需求时段，1小时窗口，非南京实测早高峰",
+          "小汽车OD敏感性，其余车型与公交线路不变",
+          "邻区时间、全网时间和过饱和里程容忍阈值是预先设置的实验假设",
+          "情景经匹配和本地校验生成任务卡；执行参数以本任务卡为准"
+        ],
+        "limits": [
+          "不验证现实停车承接和执法成本",
+          "不声称动态排队溢出或均衡收敛",
+          "其他草案方向必须先满足capability.requires，不会用停车流程代替"
+        ],
+        "selection_protocol": {
+          "version": "tolerance-v2",
+          "tolerances": [
+            0.001,
+            0.01,
+            0.001
+          ],
+          "rule": "先通过原约束；依次保留距当前最优全网增幅不超过0.001个百分点、邻区增幅不超过0.01个百分点、新增邻区过饱和不超过0.001km的候选；近似相同时优先少措施、少停车1级措施，再按名称稳定排序。容差为决策假设，不是统计显著性。"
+        },
+        "selection_rule": "先通过原约束；依次保留距当前最优全网增幅不超过0.001个百分点、邻区增幅不超过0.01个百分点、新增邻区过饱和不超过0.001km的候选；近似相同时优先少措施、少停车1级措施，再按名称稳定排序。容差为决策假设，不是统计显著性。"
+      },
+      "ticket": "f825ceda02f94ef6bc64822ffefaefc9",
+      "matched_at": "2026-09-27T01:22:29.090565+00:00"
+    },
+    {
+      "status": "needs_validation",
+      "matcher": "model",
+      "engine": "TranStar batch",
+      "dataset": "南京赛事案例",
+      "request": "道路施工占用一条车道，评估施工期间交通组织",
+      "missing": [
+        "验证车道/容量字段与模型联动",
+        "施工无治理专属基准",
+        "替代路径与可达性检查"
+      ],
+      "model_usage": {
+        "request_model": "deepseek-v4-flash",
+        "response_model": "deepseek-v4-flash-0731",
+        "response_id": "chatcmpl-6ab86fd540b4967bc476c83d",
+        "tokens": 660,
+        "latency_s": 1.594
+      },
+      "scenario": "construction",
+      "reason": "施工占用车道，属于施工占道导致的交通组织评估需求。",
+      "capability": {
+        "state": "needs_validation",
+        "name": "施工占道",
+        "requires": [
+          "验证车道/容量字段与模型联动",
+          "施工无治理专属基准",
+          "替代路径与可达性检查"
+        ]
+      },
+      "ticket": "0fcb1194afce49afb1682d9ac0e7856b",
+      "matched_at": "2026-09-27T01:22:30.846936+00:00"
+    }
+  ],
+  "native_job": "20260927_092230_2a933f",
+  "status": "completed",
+  "native_status": "completed",
+  "run_count": 3,
+  "recommendation": "parking_2",
+  "decisions": [
+    {
+      "observed_run": "parking_1",
+      "comparison": {
+        "core": {
+          "speed_change_pct": 90.00000000000001,
+          "running_time_change_pct": -47.364553183791614,
+          "oversaturated_km_change": 0.0
+        },
+        "neighbor": {
+          "speed_change_pct": -0.00048673065802251614,
+          "running_time_change_pct": 0.0009638241274423365,
+          "oversaturated_km_change": 0.0
+        },
+        "network": {
+          "speed_change_pct": 0.04683697567573475,
+          "running_time_change_pct": -0.04681708562629394,
+          "oversaturated_km_change": 0.0
+        }
+      },
+      "violations": [],
+      "reason": "核心速度未达任务阈值或流量/管理修正容量仍大于1，试验1级治理并核对边际收益和外溢",
+      "next_changes": [
+        {
+          "from_node": 3244,
+          "to_node": 3245,
+          "old_parking": 3,
+          "parking": 1
+        }
+      ],
+      "will_execute": true,
+      "execution_gate": "execute",
+      "execution_reason": "下一候选通过执行条件，将继续仿真"
+    },
+    {
+      "observed_run": "parking_2",
+      "comparison": {
+        "core": {
+          "speed_change_pct": 159.7777777777778,
+          "running_time_change_pct": -61.447240674739,
+          "oversaturated_km_change": 0.0
+        },
+        "neighbor": {
+          "speed_change_pct": 0.01950268608990058,
+          "running_time_change_pct": 0.018347875294111304,
+          "oversaturated_km_change": 0.05600000000000005
+        },
+        "network": {
+          "speed_change_pct": 0.06074751550195767,
+          "running_time_change_pct": -0.060434066797299124,
+          "oversaturated_km_change": 0.05600000000004002
+        }
+      },
+      "violations": [],
+      "reason": "当前治理已达到搜索停止条件或已验证较强等级，不继续无依据加大强度",
+      "next_changes": null,
+      "will_execute": false,
+      "execution_gate": "no_candidate",
+      "execution_reason": "反馈规则未提出下一候选"
+    }
+  ],
+  "finished": "2026-09-27T01:29:27.691967+00:00"
+}

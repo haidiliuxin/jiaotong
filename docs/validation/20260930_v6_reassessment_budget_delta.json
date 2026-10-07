@@ -1,0 +1,34 @@
+{
+  "kind": "project_recorded_usage_delta_v1",
+  "baseline_file": "docs/validation/20260930_api_budget_delta.json",
+  "scope": "Project-retained response records, not a complete provider account bill. The first additional request lost its response ID in the temporary recorder and is counted conservatively as distinct because it was sent in a separate invocation and directory. No credentials, prompt body, or model response body are copied here.",
+  "capture_incomplete_attempt": {
+    "record": "智能体实验/v6_review_workspace_20260930_01/review.json",
+    "requests_counted": 1,
+    "known_tokens": 14935,
+    "provider_response_id_recorded": false,
+    "native_scenarios_started": 0,
+    "claim": "The outgoing request and usage were logged, but the review turn was not persisted. This attempt is not independently auditable as an accepted conclusion."
+  },
+  "captured_reassessment": {
+    "record": "智能体实验/v6_review_workspace_20260930_02/review.json",
+    "requests_counted": 1,
+    "known_tokens": 14877,
+    "provider_response_id": "chatcmpl-6abbec85b815eb2dd0414408",
+    "native_scenarios_started": 0,
+    "review_status": "accepted",
+    "conclusion_protocol": "measured-conclusion-v6"
+  },
+  "additional_usage": {
+    "requests": 2,
+    "known_tokens": 29812
+  },
+  "locally_recorded_cumulative_conservative": {
+    "requests": 87,
+    "known_tokens": 715668,
+    "request_limit": 684,
+    "known_token_limit": 4132560,
+    "remaining_requests": 597,
+    "remaining_known_tokens": 3416892
+  }
+}

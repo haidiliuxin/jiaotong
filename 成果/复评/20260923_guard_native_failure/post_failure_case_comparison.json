@@ -1,0 +1,60 @@
+{
+  "kind": "guard_native_failure_exact_input_output_comparison_v1",
+  "checked_at": "2026-09-23T02:19:06.522677+00:00",
+  "failed_job": "20260923_094829_0855d5",
+  "probe": "20260923_guard_case002_replay",
+  "trial_job": "20260923_100537_263448",
+  "physical_run": "case_002",
+  "factor": 1.0,
+  "changes": [
+    {
+      "from_node": 709,
+      "to_node": 710,
+      "old_parking": 3,
+      "parking": 2
+    },
+    {
+      "from_node": 713,
+      "to_node": 711,
+      "old_parking": 3,
+      "parking": 2
+    },
+    {
+      "from_node": 1250,
+      "to_node": 1240,
+      "old_parking": 3,
+      "parking": 2
+    }
+  ],
+  "input_fingerprints_exact": true,
+  "probe_and_trial_completed_native_modules": 7,
+  "arrays": {
+    "SpdLinkVeh.tsd": {
+      "probe_sha256": "2c54fb8ffd4aa09f9e5b6f2b95516a8a1b9c1031041ddd92a2b6950f32aa9c77",
+      "trial_sha256": "2c54fb8ffd4aa09f9e5b6f2b95516a8a1b9c1031041ddd92a2b6950f32aa9c77",
+      "bytes": 229784,
+      "exact": true
+    },
+    "VolLinkVeh.tsd": {
+      "probe_sha256": "5b101d4f3a0c3647681dedefe517cb705f5f4d1697009cfe69a19a09f49f25e8",
+      "trial_sha256": "5b101d4f3a0c3647681dedefe517cb705f5f4d1697009cfe69a19a09f49f25e8",
+      "bytes": 238245,
+      "exact": true
+    },
+    "VCLinkVeh.tsd": {
+      "probe_sha256": "41f743e93072defa4b7eaccb032bb118de930ff191dfd72e0659ddcb3bc5d5a7",
+      "trial_sha256": "41f743e93072defa4b7eaccb032bb118de930ff191dfd72e0659ddcb3bc5d5a7",
+      "bytes": 283148,
+      "exact": true
+    },
+    "TimeLink.tsd": {
+      "probe_sha256": "1a97ac073eb9a785c7093b59a7d947ffa730d8d3e9e65d4273bf93ee78eb398c",
+      "trial_sha256": "1a97ac073eb9a785c7093b59a7d947ffa730d8d3e9e65d4273bf93ee78eb398c",
+      "bytes": 232040,
+      "exact": true
+    }
+  },
+  "all_raw_arrays_exact": true,
+  "new_model_calls": 0,
+  "limitation": "只比对同输入已完成结果；首次原生失败原因未知，新挑战尚须最终严格核验"
+}

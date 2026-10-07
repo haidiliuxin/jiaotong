@@ -1,0 +1,16 @@
+{
+  "tool": "cua_repl",
+  "tab": "51",
+  "url": "http://127.0.0.1:8828/",
+  "blank_natural_input": true,
+  "geometry_only_roads": 32060,
+  "empty_experiments": true,
+  "console_errors": [],
+  "source_commit": "f441fcd7c34ca6f013e8d76c5a907aab327e77bd",
+  "screenshot": "docs\\validation\\20260928_planning_rc19_lobby.png",
+  "screenshot_sha256": "e5e9a0b162e1f505e967b34fe1fcf10340654b88e9cdf41262287585721c3b75",
+  "paid_requests": 0,
+  "new_native_scenes": 0,
+  "physical_other_machine": false,
+  "overall_system_complete": false
+}

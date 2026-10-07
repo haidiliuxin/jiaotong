@@ -1,0 +1,39 @@
+{
+  "checked_date": "2026-10-07",
+  "startup_passed": true,
+  "runtime_source": "F:\\jiaotong\\jiaotong-github-delivery-20261007\\方案1流程验证\\runtime",
+  "source_data": null,
+  "python_tests": 862,
+  "node_groups": 5,
+  "offline_passed": true,
+  "native_archive_audit": {
+    "passed": true,
+    "programme": "20261007_010958_039964",
+    "protocol": "programme-evidence-v1",
+    "native": [
+      {
+        "job_id": "20261007_010958_039964",
+        "raw_verified": true,
+        "archived": true,
+        "verification_kind": null
+      }
+    ],
+    "planning": {
+      "passed": true,
+      "groups": 1,
+      "decisions": 3,
+      "no_cross_engine_pooling": true,
+      "observations_checked_at_decision_time": true,
+      "request_reservations_checked": true
+    },
+    "model_requests": 4
+  },
+  "source_version": "bc1f456ca1bcfdf4cb8bf584480cb876eb5a327d",
+  "physical_machine_note": "Same computer, independent delivery directory and isolated interpreter; not a different-machine new native execution.",
+  "additional_model_requests": 0,
+  "additional_native_scenes": 0,
+  "lfs_entities": 361,
+  "lfs_unique_objects": 360,
+  "lfs_unique_bytes": 1390471831,
+  "all_lfs_entities_checked_out": true
+}

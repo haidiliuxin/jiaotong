@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme Name="城市开发">
+    <Node Id="mBasenRoot" Name="基础数据库构建"/>
+    <Node Id="mFAnRoot" Name="交通方案设计">
+        <Node Id="mFAnSJ" Name="交通方案设计">
+            <Node Id="mFAnTDKF" Name="小区土地开发调整"/>
+        </Node>
+        <Node Id="mFAnWLTZ" Name="方案网络特征分析">
+            <Node Id="mFAnJCFX" Name="交通网络基础信息分析"/>
+            <Node Id="mFAnZDLFX" Name="用于最短路分析的路段长度与时耗分析"/>
+            <Node Id="mFAnDMSFX" Name="多模式交通网络最短距离矩阵分析"/>
+            <Node Id="mFAnDMSSJFX" Name="多模式交通网络最短时间矩阵分析"/>
+        </Node>
+    </Node>
+    <Node Id="mSJDnRoot" Name="交通需求分析">
+        <Node Id="mSJDnSC" Name="交通生成分析">
+            <Node Id="mSJDnCZRKOD" Name="常住人口出行发生吸引量分析"/>
+        </Node>
+        <Node Id="mSJDnFB" Name="交通分布分析">
+            <Node Id="mSJDnFBSYS" Name="双约束重力模型法"/>
+        </Node>
+        <Node Id="mSJDnJTFSHF" Name="交通方式分析">
+            <Node Id="mSJDnCXJM" Name="居民出行距离分布函数标定"/>
+            <Node Id="mSJDnCXQT" Name="各方式优势出行距离函数标定"/>
+            <Node Id="mSJDnFSDIST" Name="基于出行距离和方式优势的OD分析"/>
+        </Node>
+        <Node Id="mSJDnOD" Name="OD矩阵分析">
+            <Node Id="mSJDnODJDCKY" Name="机动车客运交通OD矩阵分析"/>
+            <Node Id="mSJDnODFJDCKY" Name="非机动车交通OD矩阵分析"/>
+            <Node Id="mSJDnODGGJTKY" Name="公共交通乘客OD矩阵分析"/>
+            <Node Id="mSJDnODJTGLXZ" Name="交通管控措施下的OD矩阵修正"/>
+        </Node>
+    </Node>
+    <Node Id="mSJDnRoot_1" Name="交通运行分析">
+        <Node Id="mSJDnBX" Name="步行交通分配">
+            <Node Id="mSJDnBXFPZDL" Name="最短路交通分配"/>
+        </Node>
+        <Node Id="mSJDnZXC" Name="自行车交通分配">
+            <Node Id="mSJDnZXCFPDLJ" Name="多路径交通分配"/>
+        </Node>
+        <Node Id="mSJDnZHFP" Name="机动车交通分配">
+            <Node Id="mSJDnZHFPDLJRL" Name="多路径-增量加载交通分配"/>
+        </Node>
+        <Node Id="mSJDnWLYN" Name="道路网络交通负荷分析">
+            <Node Id="mSJDnWLYNLD" Name="自行车路段交通负荷"/>
+            <Node Id="mSJDnWLYNJCK" Name="自行车交叉口交通负荷"/>
+            <Node Id="mSJDnWLYNSECFH" Name="机动车路段交通负荷"/>
+            <Node Id="mSJDnWLYNNODEFH" Name="机动车交叉口交通负荷"/>
+            <Node Id="mSJDnWLYNNODEYW" Name="机动车交叉口延误与排队"/>
+            <Node Id="mSJDnWLTZFH" Name="交通负荷下分方式网络最短时耗分析"/>
+        </Node>
+    </Node>
+    <Node Id="mGJFPnRoot" Name="公共交通分析"/>
+    <Node Id="mPJnRoot" Name="交通系统评估">
+        <Node Id="mFAZHPJ" Name="方案综合评价">
+            <Node Id="mPJnJMCX" Name="居民出行效率评价"/>
+            <Node Id="mPJnDLJT" Name="道路交通系统评价"/>
+            <Node Id="mPJnGGJT" Name="公共交通系统评价"/>
+            <Node Id="mPJnHJNH" Name="环境与能耗评价"/>
+            <Node Id="mPJnCSJJ" Name="城市经济性能评价"/>
+        </Node>
+    </Node>
+    <Node Id="mZSnRoot" Name="分析结果展示">
+        <Node Id="mZSnTX" Name="图形展示"/>
+        <Node Id="mZSnBG" Name="研究报告">
+            <Node Id="mZSnBGZT" Name="交通系统整体功能评估"/>
+            <Node Id="mZSnBGZB" Name="交通运行指标统计汇总"/>
+        </Node>
+        <Node Id="mZSnJZ" Name="数据表格">
+            <Node Id="mZSnJZJCKLL" Name="交叉口机动车流量流向表"/>
+            <Node Id="mZSnJZJCKXXB" Name="交叉口信息表"/>
+            <Node Id="mZSnJZLDXXB" Name="路段信息表"/>
+            <Node Id="mZSnJZXQCJZ" Name="小汽车OD矩阵"/>
+            <Node Id="mZSnJZXZXQCJZ" Name="交通管理修正后的小汽车OD矩阵"/>
+        </Node>
+    </Node>
+</Scheme>

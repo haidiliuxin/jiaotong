@@ -1,0 +1,146 @@
+{
+  "kind": "prospective_singleton_scan_audit",
+  "new_model_calls": 0,
+  "old_job": "20260923_043018_f34e33",
+  "new_job": "20260923_052614_69e402",
+  "old_recommendation": "parking_2",
+  "new_recommendation": "parking_2",
+  "old_scenarios": 4,
+  "new_scenarios": 6,
+  "old_top_level_calls": 28,
+  "new_top_level_calls": 42,
+  "extra_top_level_calls": 14,
+  "source_inputs_exact": true,
+  "scope_exact": true,
+  "selected_area_exact": true,
+  "common_raw_arrays_exact": {
+    "baseline": {
+      "speed_kmh": true,
+      "flow_pcu_h": true,
+      "vc": true,
+      "time_s": true
+    },
+    "parking_1": {
+      "speed_kmh": true,
+      "flow_pcu_h": true,
+      "vc": true,
+      "time_s": true
+    },
+    "parking_2": {
+      "speed_kmh": true,
+      "flow_pcu_h": true,
+      "vc": true,
+      "time_s": true
+    },
+    "baseline_repeat": {
+      "speed_kmh": true,
+      "flow_pcu_h": true,
+      "vc": true,
+      "time_s": true
+    }
+  },
+  "ordered_singleton_decisions": true,
+  "candidates": [
+    {
+      "name": "parking_1",
+      "changes": [
+        {
+          "from_node": 3244,
+          "to_node": 3245,
+          "old_parking": 3,
+          "parking": 2
+        },
+        {
+          "from_node": 3245,
+          "to_node": 3244,
+          "old_parking": 3,
+          "parking": 2
+        },
+        {
+          "from_node": 3240,
+          "to_node": 3239,
+          "old_parking": 3,
+          "parking": 2
+        }
+      ],
+      "eligible": false,
+      "violations": [
+        "全网毛新增过饱和有向里程超过0.1km"
+      ],
+      "gross_new_network_oversaturated_km": 0.785,
+      "core_time_change_pct": -39.86654246259427,
+      "network_time_change_pct": -0.07025714831417895,
+      "neighbor_time_change_pct": -0.4871099922312827
+    },
+    {
+      "name": "parking_2",
+      "changes": [
+        {
+          "from_node": 3244,
+          "to_node": 3245,
+          "old_parking": 3,
+          "parking": 2
+        }
+      ],
+      "eligible": true,
+      "violations": [],
+      "gross_new_network_oversaturated_km": 0,
+      "core_time_change_pct": -29.42437360727592,
+      "network_time_change_pct": -0.04681708562629394,
+      "neighbor_time_change_pct": -0.0001316339888313145
+    },
+    {
+      "name": "parking_3",
+      "changes": [
+        {
+          "from_node": 3245,
+          "to_node": 3244,
+          "old_parking": 3,
+          "parking": 2
+        }
+      ],
+      "eligible": false,
+      "violations": [
+        "全网毛新增过饱和有向里程超过0.1km"
+      ],
+      "gross_new_network_oversaturated_km": 0.785,
+      "core_time_change_pct": -8.523098400256357,
+      "network_time_change_pct": -0.018908786535842825,
+      "neighbor_time_change_pct": -0.4154448201056593
+    },
+    {
+      "name": "parking_4",
+      "changes": [
+        {
+          "from_node": 3240,
+          "to_node": 3239,
+          "old_parking": 3,
+          "parking": 2
+        }
+      ],
+      "eligible": true,
+      "violations": [],
+      "gross_new_network_oversaturated_km": 0,
+      "core_time_change_pct": -1.0640238281024783,
+      "network_time_change_pct": -0.0030220752641696436,
+      "neighbor_time_change_pct": -0.08429153309356119
+    }
+  ],
+  "audits": {
+    "20260923_043018_f34e33": {
+      "passed": true,
+      "completed_scenarios": 4,
+      "module_executions": 28
+    },
+    "20260923_052614_69e402": {
+      "passed": true,
+      "completed_scenarios": 6,
+      "module_executions": 42
+    }
+  },
+  "archive_sha256": {
+    "20260923_043018_f34e33": "4c4a2824478773a3281592e1800652572e4e38429e068b0ab54263019b6a3d8b",
+    "20260923_052614_69e402": "adad1d15bf07ebd63c2e41b3f339c5714eaf887b89dfbd082d0aab8cf4379fb6"
+  },
+  "limitation": "新增14次模型调用后的候选覆盖比较，不是等预算算法消融；只测同一案例、需求1.0，不能推断官方评分或跨需求稳健"
+}

@@ -1,0 +1,12 @@
+{
+  "included_directed_links": 32060,
+  "directed_length_km": 12446.9460498,
+  "weighted_speed_kmh": 33.43319835501451,
+  "oversaturated_directed_length_km": 1608.6958436,
+  "oversaturated_length_pct": 12.924422080433528,
+  "link_running_time_pcu_h_for_one_hour": 227328.24893586405,
+  "timelink_weighted_pcu_h_for_one_hour": null,
+  "timelink_flagged_directed_links": 44,
+  "time_quality_note": "TimeLink has >=1e6 second values; do not report its sum as total travel time",
+  "transport_pcu_km_for_one_hour": 7600310.438370859
+}

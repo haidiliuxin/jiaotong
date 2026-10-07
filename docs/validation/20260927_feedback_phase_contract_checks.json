@@ -1,0 +1,54 @@
+{
+  "kind": "offline_feedback_phase_contract_check_v1",
+  "review_protocol": "feedback-review-permissions-v1",
+  "original_source_commit": "07c7880cca43f72b6384cb17e7cba08813271ebc",
+  "original_job": "20260927_220409_164a26",
+  "original_status": "incomplete",
+  "original_rejection": "premature_programme_review",
+  "original_snapshot_sha256": "ba5e3b7d2ea6da018a95076c001d149ee5dba200e48ae4ac0dae2034ce2856a7",
+  "original_snapshot_unchanged": true,
+  "paid_calls": 0,
+  "new_native_scenes": 0,
+  "local_fixture_calls": 2,
+  "variants": [
+    {
+      "kind": "original_rejected_proposal",
+      "status": "rejected",
+      "validation": {
+        "version": "planning-response-check-v1",
+        "status": "failed",
+        "code": "argument_fields",
+        "message": "工具参数有缺少或额外字段；仅接受本轮工具声明的完整字段集合"
+      },
+      "permissions": {
+        "version": "feedback-review-permissions-v1",
+        "study_review_actions": [],
+        "programme_review_actions": []
+      },
+      "observations_unchanged": true,
+      "allowed_actions_unchanged": true,
+      "observations_sha256": "67c2b78d052a042bf986800926fa496d214f1c8aa460f5712f274132ad4c76f6",
+      "programme_evidence_unchanged": true,
+      "future_results_supplied": false
+    },
+    {
+      "kind": "explicit_selection_only_fixture",
+      "status": "accepted",
+      "validation": {
+        "version": "planning-response-check-v1",
+        "status": "passed"
+      },
+      "permissions": {
+        "version": "feedback-review-permissions-v1",
+        "study_review_actions": [],
+        "programme_review_actions": []
+      },
+      "observations_unchanged": true,
+      "allowed_actions_unchanged": true,
+      "observations_sha256": "67c2b78d052a042bf986800926fa496d214f1c8aa460f5712f274132ad4c76f6",
+      "programme_evidence_unchanged": true,
+      "future_results_supplied": false
+    }
+  ],
+  "meaning": "本地结构检查，不是新的模型回复或交通结果。原提议仍被拒绝；选路样例仅验证当前工具字段，原研究仍未完成。"
+}

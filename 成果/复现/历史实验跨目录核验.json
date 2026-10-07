@@ -1,0 +1,85 @@
+{
+  "source": "F:\\ITS比赛\\智能体实验\\jobs\\20260908_051630_12acc1",
+  "copied_to": "C:\\Users\\asus\\AppData\\Local\\Temp\\its_archive_qv22qy05\\copied experiment",
+  "copy_method": "shutil.copyfile: bytes only, new timestamps",
+  "strict_returncode": 1,
+  "portable_returncode": 0,
+  "verification": {
+    "passed": true,
+    "completed_scenarios": 4,
+    "module_executions": 28,
+    "scope_sizes": {
+      "core": 3,
+      "neighbor": 39,
+      "network": 32060
+    },
+    "repeat_arrays_exact": {
+      "speed_kmh": true,
+      "flow_pcu_h": true,
+      "vc": true,
+      "time_s": true
+    },
+    "verified_runs": [
+      {
+        "scenario": "baseline",
+        "modules": 7,
+        "result_rows": {
+          "speed_kmh": 32981,
+          "flow_pcu_h": 32981,
+          "vc": 32981,
+          "time_s": 32981
+        },
+        "input_difference_files": [],
+        "car_od_factor": 1.0,
+        "internal_od_factor": 1.0
+      },
+      {
+        "scenario": "parking_1",
+        "modules": 7,
+        "result_rows": {
+          "speed_kmh": 32981,
+          "flow_pcu_h": 32981,
+          "vc": 32981,
+          "time_s": 32981
+        },
+        "input_difference_files": [
+          "data/manageL.txt"
+        ],
+        "car_od_factor": 1.0,
+        "internal_od_factor": 1.0
+      },
+      {
+        "scenario": "parking_2",
+        "modules": 7,
+        "result_rows": {
+          "speed_kmh": 32981,
+          "flow_pcu_h": 32981,
+          "vc": 32981,
+          "time_s": 32981
+        },
+        "input_difference_files": [
+          "data/manageL.txt"
+        ],
+        "car_od_factor": 1.0,
+        "internal_od_factor": 1.0
+      },
+      {
+        "scenario": "baseline_repeat",
+        "modules": 7,
+        "result_rows": {
+          "speed_kmh": 32981,
+          "flow_pcu_h": 32981,
+          "vc": 32981,
+          "time_s": 32981
+        },
+        "input_difference_files": [],
+        "car_od_factor": 1.0,
+        "internal_od_factor": 1.0
+      }
+    ],
+    "limitations": "只核验保存的实验与输入输出证据，不证明现实标定有效或全部草案已实现",
+    "portable_archive_verified": true
+  },
+  "temporary_copy_removed_after_check": true,
+  "limits": "重新核验已有4场景档案，不是再次运行模型，也不代表已验证所有历史诊断脚本可移植"
+}

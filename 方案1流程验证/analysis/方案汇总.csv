@@ -1,0 +1,4 @@
+﻿scenario,parking,speed_kmh,time_s,flow_pcu_h,native_vc,management_capacity_pcu_h,network_speed_kmh,network_native_oversaturated_km
+baseline,3,9.0,463.43,1768.96,2.6919,650.0,33.43319835501451,1608.6958436
+parking_level2,2,17.1,240.69,1769.09,2.69209,800.0,33.44885745399567,1608.6958436
+parking_level1,1,23.38,176.03,1771.64,2.69597,900.0,33.45350819236803,1608.7518436

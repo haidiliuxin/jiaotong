@@ -1,0 +1,75 @@
+{
+  "version": "shipped-teaching-source-survey-v1",
+  "captured_at": "2026-09-23T03:38:14.534411+00:00",
+  "script_sha256": "3532bce736e58fb83d186a8868bcc42a11d362d78fa4796ef190c592bec86cd1",
+  "new_model_calls": 0,
+  "meaning": "只读取软件自带初始输出用于预选另一套数据；正式选区必须依据随后新运行的原生基准",
+  "chosen_case": 4,
+  "entries": [
+    {
+      "case": 2,
+      "source": "TranStar城市交通版V4.8 - 试用版/examples/教学案例2/基础路网",
+      "validation": {
+        "directed_links": 5043,
+        "zones": 200,
+        "assignment": "multipath_incremental_5_iterations",
+        "equilibrium_claim": false
+      },
+      "source_files": 202,
+      "source_input_sha256": "19c5dce490d53c35ba926e4cbaf367f8348c663fdfadb6efeb3673ebe18887cb",
+      "supplied_output_sha256": {
+        "speed_kmh": "96e932e9f7d6295d6ca8f21b2003f2b8832562b14f72f9d70732a213cf4447ef",
+        "flow_pcu_h": "0b8d0610da0fd8349c7ff73c28555169a3eef2eaf5993e07967d6a3a89335f46",
+        "vc": "03c173230a1475f3fc6c2b11260d058ee9319a8a11c46777290af0c047b8541f",
+        "time_s": "812593a55fc399f5e9e10ab5181cae0ec2d0f1e0099fe79e95cb40fbf1f0ffa1"
+      },
+      "supplied_output_candidates": 0,
+      "candidate_directions": []
+    },
+    {
+      "case": 3,
+      "source": "TranStar城市交通版V4.8 - 试用版/examples/教学案例3/基础路网",
+      "validation": {
+        "directed_links": 12553,
+        "zones": 500,
+        "assignment": "multipath_incremental_5_iterations",
+        "equilibrium_claim": false
+      },
+      "source_files": 199,
+      "source_input_sha256": "418a45c9f013d0692db4f05e338d22ed05e97240c761ef83bca4e49cf3a6ee65",
+      "supplied_output_sha256": {
+        "speed_kmh": "ebf0652ba7ebcc7f8778b6fa400578b47c5e9339159a99c0cde3e46243b6b1d2",
+        "flow_pcu_h": "256e2905aa6d26c1d64560ec80665994fe78b57e85bf4976177d7ca793fd901a",
+        "vc": "9cc8b72f545949201896c359018bcde3931ed246caaa624134507b4ef535e608",
+        "time_s": "b22ad7941edeb23ba0ddf822be6ee228c6a5639e8c69dd7105b819dae1f8586b"
+      },
+      "supplied_output_candidates": 0,
+      "candidate_directions": []
+    },
+    {
+      "case": 4,
+      "source": "TranStar城市交通版V4.8 - 试用版/examples/教学案例4/基础路网",
+      "validation": {
+        "directed_links": 22363,
+        "zones": 1000,
+        "assignment": "multipath_incremental_5_iterations",
+        "equilibrium_claim": false
+      },
+      "source_files": 200,
+      "source_input_sha256": "a563e0f3e51b8dee5bc6d5575ccbc38c61d2fbc618d2a0b395e8f21a0c4a50e0",
+      "supplied_output_sha256": {
+        "speed_kmh": "c1575460d20623e188a79fcf6f21023cfeff4ed80a8820e01b6dc2981d24b9e6",
+        "flow_pcu_h": "3e0f6ebdf00be1ad184208bbd64537e3331470d9e52a3ca31500e52a557ee321",
+        "vc": "f741f0cd70e0033030938c3ace4d12d26c647845e665c93fd3ecc04d21390d96",
+        "time_s": "9df75d03a57c6af3eea26e199376edcd39dc0bb6ead3544bac00a9f6d21280ee"
+      },
+      "supplied_output_candidates": 1,
+      "candidate_directions": [
+        [
+          11608,
+          11606
+        ]
+      ]
+    }
+  ]
+}

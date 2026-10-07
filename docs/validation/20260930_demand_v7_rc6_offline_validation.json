@@ -1,0 +1,19 @@
+{
+  "kind": "v7_rc6_same_machine_portable_offline_validation_v1",
+  "archive": "工作材料/便携构建/20260930_智能规划_v2_RC6.zip",
+  "archive_sha256": "31ad0f5eb0d43f4990579e1a254e734d2547e7994b11175412f04b69b0b947ec",
+  "code_commit_in_manifest": "16a6dae38b465dbf736a5e92eaf712376c0d9339",
+  "manifest_sha256": "e1795a3d767dd306bce2df107fa98e565e56bfebecf725ae5fbc92f4017f50a7",
+  "immutable_files": 16162,
+  "extracted_root": "工作材料/便携异目录检查/20260930_v2_RC6",
+  "environment_record": "工作材料/便携异目录检查/20260930_v2_RC6_evidence/environment_verification.json",
+  "environment_status": "passed",
+  "package_internal_protocol": "measured-conclusion-v7",
+  "package_internal_first_model_probe_issues": ["model_budget_not_exhausted", "cross_demand_cost_quantifier"],
+  "package_internal_corrected_probe_status": "no_detected_conflict",
+  "package_internal_original_rc5_v6_programme_verification": "passed_no_write",
+  "new_model_requests": 0,
+  "new_native_scenarios": 0,
+  "physical_other_computer_acceptance": "not_performed",
+  "meaning": "The package contains the v7 fix and passes same-machine isolated checks. It does not establish a new native planning run or acceptance on another computer."
+}

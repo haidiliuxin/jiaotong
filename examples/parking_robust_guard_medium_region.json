@@ -1,0 +1,13 @@
+{
+  "request": "虎桥路、象贤路既定中密度区域：三需求主动稳健停车搜索与全网毛新增过饱和0.1km门槛复验",
+  "scenario": "parking",
+  "search_mode": "robust",
+  "recommendation_version": "tolerance-v2",
+  "links": [[74, 645], [645, 74], [645, 782]],
+  "max_links": 3,
+  "max_runs": 11,
+  "max_feedback": 2,
+  "demand_factors": [0.9, 1.0, 1.1],
+  "repeat_baseline": true,
+  "max_new_network_oversaturated_km": 0.1
+}

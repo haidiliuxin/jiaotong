@@ -1,0 +1,89 @@
+{
+  "checked_at": "2026-09-27T06:26:43.817382+00:00",
+  "development_base": "735664e2",
+  "overall_complete": false,
+  "protocols": [
+    "natural-strategy-plan-v5",
+    "observed-planning-v3",
+    "question-evidence-v1",
+    "programme-evidence-v1"
+  ],
+  "python": {
+    "command": "python -X utf8 -m unittest discover -s tests",
+    "tests": 304,
+    "passed": true,
+    "log": "tmp/programme_all_checks.log"
+  },
+  "node": {
+    "passed": true,
+    "scripts": [
+      "tests/test_planner_view.cjs",
+      "tests/test_map_view.cjs",
+      "tests/test_dispatch_ui.cjs"
+    ]
+  },
+  "syntax": {
+    "passed": true,
+    "files": [
+      "app.js",
+      "dispatch.js",
+      "map.js",
+      "map_view.js",
+      "planner_view.js"
+    ]
+  },
+  "meaningful_cases": [
+    "programme final review omissions keep incomplete status",
+    "last parking review shares existing model request",
+    "no future cross-study evidence",
+    "raw job failure cannot certify programme",
+    "invalid or duplicate job IDs rejected",
+    "mutable progress cannot change past model input",
+    "missing control response cannot prove effect"
+  ],
+  "browser": {
+    "service": "http://127.0.0.1:8771/",
+    "fixture_is_synthetic": true,
+    "fixture_screenshot": "20260927_programme_panel_fixture.png",
+    "fixture_panel_width_px": 380,
+    "expanded_table_client_width_px": 313,
+    "expanded_table_scroll_width_px": 313,
+    "page_horizontal_overflow": false,
+    "native_legacy_replay_screenshot": "20260927_programme_preview_legacy.png",
+    "legacy_replay_console_errors": [],
+    "earlier_services_preserved": [
+      8769,
+      8770
+    ],
+    "temporary_fixture_auto_shutdown_seconds": 240
+  },
+  "readonly_legacy_audit": {
+    "job_id": "20260927_115748_257465",
+    "archived": true,
+    "write": false,
+    "passed": true,
+    "scenarios": 3,
+    "modules": 21,
+    "note": "Not new protocol native evidence"
+  },
+  "calls": {
+    "new_model_requests": 0,
+    "new_native_scenarios": 0,
+    "paid_retries": 0
+  },
+  "security": {
+    "credential_scan_owned_additions_passed": true,
+    "no_plaintext_credentials_accessed": true
+  },
+  "limitations": [
+    "Real latest multi-area and programme protocol acceptance pending",
+    "Within one-way and turn groups the four-policy grid remains fixed",
+    "Free-form model interpretation is not semantically certified by reference checks",
+    "New portable release and physical other-machine run pending"
+  ],
+  "corrected_checks": [
+    "Initial Node fixture lacked experiment definitions; corrected synthetic fixture then passed",
+    "Narrow table initially clipped check column; responsive columns verified",
+    "Git diff check initially flagged Windows line endings; unchanged source bytes preserved and new lines normalized"
+  ]
+}

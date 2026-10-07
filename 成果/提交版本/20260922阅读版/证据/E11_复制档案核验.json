@@ -1,0 +1,258 @@
+{
+  "source": "F:\\ITS比赛\\智能体实验\\studies\\20260922_015104_1bd73b",
+  "copy": "F:\\ITS比赛\\智能体实验\\study_archive_checks\\20260922_015104_1bd73b",
+  "copy_mode": "shutil.copyfile; new file timestamps",
+  "strict_rejection": "协议文件在基准后被改写",
+  "new_model_calls": 0,
+  "verification": {
+    "passed": true,
+    "version": "prospective-study-audit-v1",
+    "physical_scenes": 22,
+    "native_module_calls": 154,
+    "regions": 3,
+    "state_sha256": "3ea8d725e874647796e7ce3ac62eb7cac8680498900bc4691fbe583f90a335f0",
+    "protocol_sha256": "30c5506696cda81110ddb4b5900f815da27ed97d563fb418d842fcbaad70d4dc",
+    "selection_sha256": "a8d634a59db90c33190161b970ec20458c1835e5e212da935c203a50606ab829",
+    "raw_inputs_outputs_verified": true,
+    "prospective_selection_rebuilt": true,
+    "decisions_replayed": {
+      "decisions": 28,
+      "unique_policy_scenes": 18,
+      "shared_observations": 10,
+      "logical_scenes": 52
+    },
+    "repeatability": true,
+    "runs": [
+      {
+        "name": "baseline",
+        "modules": 7,
+        "rows": 32981,
+        "demand_factor": 1.0,
+        "internal_factor": 1.0,
+        "changed_inputs": []
+      },
+      {
+        "name": "baseline_1.1",
+        "modules": 7,
+        "rows": 32981,
+        "demand_factor": 1.1,
+        "internal_factor": 1.099999832501556,
+        "changed_inputs": [
+          "result/ODCar.tsd"
+        ]
+      },
+      {
+        "name": "baseline_0.9",
+        "modules": 7,
+        "rows": 32981,
+        "demand_factor": 0.9,
+        "internal_factor": 0.8999999282149527,
+        "changed_inputs": [
+          "result/ODCar.tsd"
+        ]
+      },
+      {
+        "name": "case_001",
+        "modules": 7,
+        "rows": 32981,
+        "demand_factor": 1.1,
+        "internal_factor": 1.099999832501556,
+        "changed_inputs": [
+          "data/manageL.txt",
+          "result/ODCar.tsd"
+        ]
+      },
+      {
+        "name": "case_002",
+        "modules": 7,
+        "rows": 32981,
+        "demand_factor": 1.1,
+        "internal_factor": 1.099999832501556,
+        "changed_inputs": [
+          "data/manageL.txt",
+          "result/ODCar.tsd"
+        ]
+      },
+      {
+        "name": "case_003",
+        "modules": 7,
+        "rows": 32981,
+        "demand_factor": 1.1,
+        "internal_factor": 1.099999832501556,
+        "changed_inputs": [
+          "data/manageL.txt",
+          "result/ODCar.tsd"
+        ]
+      },
+      {
+        "name": "case_004",
+        "modules": 7,
+        "rows": 32981,
+        "demand_factor": 1.1,
+        "internal_factor": 1.099999832501556,
+        "changed_inputs": [
+          "data/manageL.txt",
+          "result/ODCar.tsd"
+        ]
+      },
+      {
+        "name": "case_005",
+        "modules": 7,
+        "rows": 32981,
+        "demand_factor": 1.0,
+        "internal_factor": 1.0,
+        "changed_inputs": [
+          "data/manageL.txt"
+        ]
+      },
+      {
+        "name": "case_006",
+        "modules": 7,
+        "rows": 32981,
+        "demand_factor": 0.9,
+        "internal_factor": 0.8999999282149527,
+        "changed_inputs": [
+          "data/manageL.txt",
+          "result/ODCar.tsd"
+        ]
+      },
+      {
+        "name": "case_007",
+        "modules": 7,
+        "rows": 32981,
+        "demand_factor": 1.1,
+        "internal_factor": 1.099999832501556,
+        "changed_inputs": [
+          "data/manageL.txt",
+          "result/ODCar.tsd"
+        ]
+      },
+      {
+        "name": "case_008",
+        "modules": 7,
+        "rows": 32981,
+        "demand_factor": 1.1,
+        "internal_factor": 1.099999832501556,
+        "changed_inputs": [
+          "data/manageL.txt",
+          "result/ODCar.tsd"
+        ]
+      },
+      {
+        "name": "case_009",
+        "modules": 7,
+        "rows": 32981,
+        "demand_factor": 1.0,
+        "internal_factor": 1.0,
+        "changed_inputs": [
+          "data/manageL.txt"
+        ]
+      },
+      {
+        "name": "case_010",
+        "modules": 7,
+        "rows": 32981,
+        "demand_factor": 1.0,
+        "internal_factor": 1.0,
+        "changed_inputs": [
+          "data/manageL.txt"
+        ]
+      },
+      {
+        "name": "case_011",
+        "modules": 7,
+        "rows": 32981,
+        "demand_factor": 0.9,
+        "internal_factor": 0.8999999282149527,
+        "changed_inputs": [
+          "data/manageL.txt",
+          "result/ODCar.tsd"
+        ]
+      },
+      {
+        "name": "case_012",
+        "modules": 7,
+        "rows": 32981,
+        "demand_factor": 0.9,
+        "internal_factor": 0.8999999282149527,
+        "changed_inputs": [
+          "data/manageL.txt",
+          "result/ODCar.tsd"
+        ]
+      },
+      {
+        "name": "case_013",
+        "modules": 7,
+        "rows": 32981,
+        "demand_factor": 1.1,
+        "internal_factor": 1.099999832501556,
+        "changed_inputs": [
+          "data/manageL.txt",
+          "result/ODCar.tsd"
+        ]
+      },
+      {
+        "name": "case_014",
+        "modules": 7,
+        "rows": 32981,
+        "demand_factor": 1.0,
+        "internal_factor": 1.0,
+        "changed_inputs": [
+          "data/manageL.txt"
+        ]
+      },
+      {
+        "name": "case_015",
+        "modules": 7,
+        "rows": 32981,
+        "demand_factor": 0.9,
+        "internal_factor": 0.8999999282149527,
+        "changed_inputs": [
+          "data/manageL.txt",
+          "result/ODCar.tsd"
+        ]
+      },
+      {
+        "name": "case_016",
+        "modules": 7,
+        "rows": 32981,
+        "demand_factor": 1.1,
+        "internal_factor": 1.099999832501556,
+        "changed_inputs": [
+          "data/manageL.txt",
+          "result/ODCar.tsd"
+        ]
+      },
+      {
+        "name": "case_017",
+        "modules": 7,
+        "rows": 32981,
+        "demand_factor": 1.0,
+        "internal_factor": 1.0,
+        "changed_inputs": [
+          "data/manageL.txt"
+        ]
+      },
+      {
+        "name": "case_018",
+        "modules": 7,
+        "rows": 32981,
+        "demand_factor": 0.9,
+        "internal_factor": 0.8999999282149527,
+        "changed_inputs": [
+          "data/manageL.txt",
+          "result/ODCar.tsd"
+        ]
+      },
+      {
+        "name": "baseline_repeat",
+        "modules": 7,
+        "rows": 32981,
+        "demand_factor": 1.0,
+        "internal_factor": 1.0,
+        "changed_inputs": []
+      }
+    ],
+    "meaning": "原始文件重算、时序与代码摘要核对；不是数字签名、独立机器重跑或统计显著性证明"
+  }
+}

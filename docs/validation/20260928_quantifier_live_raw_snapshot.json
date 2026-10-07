@@ -1,0 +1,27 @@
+{
+  "kind": "bounded_programme_raw_snapshot_v1",
+  "source_commit": "a30094076d06d3488e3f9e2c1f0fcf3acea5b908",
+  "job_ids": [
+    "20260928_083527_0399ce",
+    "20260928_083527_e1de2c"
+  ],
+  "programme_status": "completed",
+  "validator_status": "verified",
+  "model_calls": 6,
+  "known_tokens": 67906,
+  "unknown_usage": 0,
+  "native_scenes": 6,
+  "top_level_modules": 42,
+  "nested_vehicle1_calls": 80,
+  "automatic_verification_passed": true,
+  "independent_review_status": "needs_review",
+  "overall_acceptance_passed": false,
+  "cumulative_known_usage": {
+    "requests": 64,
+    "tokens": 418923
+  },
+  "original_files": 5702,
+  "original_bytes_unchanged": true,
+  "zip_bytes": 376164471,
+  "zip_sha256": "51b114500b585ec2225779afa49bf3320aedc2c8cfe85f10e4fb668deea5ebf7"
+}

@@ -1,0 +1,11 @@
+{
+  "request": "全网毛新增过饱和安全门槛真实流程验收：停车干扰治理与同输入复跑；本次仅验证新约束进入原生求解后的决策链",
+  "scenario": "parking",
+  "recommendation_version": "tolerance-v2",
+  "max_links": 3,
+  "max_runs": 4,
+  "max_feedback": 2,
+  "demand_factors": [1.0],
+  "repeat_baseline": true,
+  "max_new_network_oversaturated_km": 0.1
+}

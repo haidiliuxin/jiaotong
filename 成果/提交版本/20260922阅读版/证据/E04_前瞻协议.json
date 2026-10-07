@@ -1,0 +1,91 @@
+{
+  "version": "prospective-three-region-v1",
+  "task": {
+    "request": "前瞻三层新区域、相同预算固定策略与实测反馈对照",
+    "scenario": "parking",
+    "search_mode": "robust",
+    "recommendation_version": "tolerance-v2",
+    "road_name": null,
+    "links": [],
+    "turn": null,
+    "max_links": 3,
+    "max_runs": 10,
+    "max_feedback": 1,
+    "demand_factors": [
+      0.9,
+      1.0,
+      1.1
+    ],
+    "repeat_baseline": true,
+    "neighbor_hops": 2,
+    "target_speed_kmh": 25.0,
+    "max_neighbor_time_increase_pct": 0.5,
+    "max_network_time_increase_pct": 0.1,
+    "max_new_oversaturated_km": 0.1,
+    "module_timeout_seconds": 900
+  },
+  "exclusions": [
+    {
+      "job": "20260911_021806_858461",
+      "file": "exclusions/20260911_021806_858461.json",
+      "sha256": "15d78652f4f9f51365016ad1908595a14a9a30bf8ce1fd1ce7464953fcde997a"
+    },
+    {
+      "job": "20260911_024329_7304a4",
+      "file": "exclusions/20260911_024329_7304a4.json",
+      "sha256": "128374ad1576129de9c185fdbf9d33d297b3b018b6143f89b9fa576044750ee6"
+    },
+    {
+      "job": "20260908_100153_bb7198",
+      "file": "exclusions/20260908_100153_bb7198.json",
+      "sha256": "360648870820a6525708d78cc284266b634fd99a6b8b9cb860dfe2d17a10ecc3"
+    },
+    {
+      "job": "20260908_075938_e7444a",
+      "file": "exclusions/20260908_075938_e7444a.json",
+      "sha256": "f625100d229f1f16610d08a880ae70f629eabf2172a3a75fe10d7c596c627867"
+    }
+  ],
+  "selection": {
+    "candidate_rule": "完整停车候选：沿用parking_candidates；不使用界面前30条截断",
+    "core": "每个候选依次作种子；种子2跳内按基准qL/v降序补至最多3条；种子必选",
+    "exclusion": "最终核心加2跳邻区与登记的历史范围不相交；相同核心集合只保留节点编号最小种子",
+    "density": "最终核心加2跳邻区内全部合法候选有向长度/该范围有效道路有向长度；四舍五入12位",
+    "strata": "密度不同取值升序；第i项归floor(3*i/n)层，0低1中2高；同密度不拆分",
+    "order": [
+      "high",
+      "medium",
+      "low"
+    ],
+    "within_stratum": "按种子from_node、to_node升序，取首个与已选范围不相交者",
+    "empty": "无可用候选的层保留空缺，不跨层补点，不依据治理输出换点"
+  },
+  "logical_budget_per_region_strategy": 10,
+  "candidates_per_strategy": 2,
+  "max_physical_scenes": 31,
+  "demand_order": [
+    1.1,
+    1.0,
+    0.9
+  ],
+  "fixed": "首轮同核心停车2级；第二轮同核心停车1级，无论首轮通过或失败",
+  "feedback": "首轮相同；失败则按该轮联合治理qL/v减少量保留前半；全需求通过且仍有瓶颈才增强至1级；否则停止",
+  "early_rejection": "两策略均在任一需求违反原约束时终止该候选，其他需求保持缺测",
+  "pairing": "每个需求独立无治理基准；范围在1.0新基准后、任何政策运行前冻结",
+  "sharing": "同措施同需求同原输入同程序只物理运行一次；每个引用策略仍计一次逻辑场景；末尾复跑强制新执行",
+  "scheduling": "每轮先保存两策略下一步决定，再计算或读取缓存；生成器只能收到本策略已有观察",
+  "selection_rule": "先通过原约束；依次保留距当前最优全网增幅不超过0.001个百分点、邻区增幅不超过0.01个百分点、新增邻区过饱和不超过0.001km的候选；近似相同时优先少措施、少停车1级措施，再按名称稳定排序。容差为决策假设，不是统计显著性。",
+  "selection_tolerances": [
+    0.001,
+    0.01,
+    0.001
+  ],
+  "risk_review": "额外报告1跳邻区、毛新增全网过饱和和恶化热点；只作警示，不改变本轮冻结硬约束",
+  "limitations": [
+    "同一调整案例内的区域迁移，非跨城市验证",
+    "联合路段收益非单路段因果贡献",
+    "确定性基准复跑非独立统计样本",
+    "共享物理调用不伪装为独立重复"
+  ],
+  "registered_at": "2026-09-21T17:51:05.351882+00:00"
+}

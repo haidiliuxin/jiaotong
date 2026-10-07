@@ -1,0 +1,23 @@
+{
+  "kind": "independent_v7_model_only_probe_review_v1",
+  "source_dispatch": "工作材料/便携异目录检查/20260930_v2_RC5/智能体实验/demand_robustness_live_20260930_01/dispatches/20260930_024917_b4254a.json",
+  "source_dispatch_sha256": "0c37df3f5a0c5a8d19fd68b025ac522faaba23f684a170f8dc4d3a483d3bdcb5",
+  "first_probe": "智能体实验/demand_v7_probe_20260930_01/probe.json",
+  "first_probe_sha256": "8b4ab7e16601ee55706f7699215dd3263732b913d509faf7082c19d9255a028b",
+  "first_response_id": "chatcmpl-6abc0ccf79dd033438047ed9",
+  "first_status": "rejected",
+  "first_issue_codes_after_current_v7_shadow_review": ["model_budget_not_exhausted", "cross_demand_cost_quantifier"],
+  "correction_probe": "智能体实验/demand_v7_correction_probe_20260930_01/probe.json",
+  "correction_probe_sha256": "16ea6862b76f8c97600a36a213208cba6dc2abaae172e07ef605aea935b3e3ed",
+  "correction_response_id": "chatcmpl-6abc0de4177eeb3d65cfe2d4",
+  "correction_status": "accepted",
+  "correction_protocol": "final-review-correction-v1",
+  "read_only_v7_conclusion_status": "no_detected_conflict",
+  "independent_limited_semantic_status": "passed_for_model_only_reply",
+  "requests": 2,
+  "known_tokens": 35367,
+  "new_native_scenarios": 0,
+  "source_dispatch_unchanged": true,
+  "original_rc5_overall_status": "needs_review",
+  "boundary": "A corrected model-only final answer over sealed RC5 observations passed; no v7 runtime full native planning task and no physical other-computer acceptance was performed."
+}

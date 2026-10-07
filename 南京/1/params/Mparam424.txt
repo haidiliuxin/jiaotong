@@ -1,0 +1,18 @@
+Mparam424.txt—基于道路交通网络的居民出行交通方式预测参数
+
+【输入文件】
+各交通方式优势出行距离拟合函数系数	DisTribuPara.txt
+综合交通需求OD矩阵			Distribution.tsd
+步行交通网络交通区间最短距离矩阵	MatrixDistWalk.tsd
+非机动车交通网络交通区间最短距离矩阵	MatrixDistBic.tsd
+社会车辆交通网络交通区间最短路权矩阵	MatrixDistCar.tsd
+常规公交网络交通区间最短距离矩阵	MatrixDistBus.tsd
+轨道交通网络交通区间最短距离矩阵	MatrixDistSub.tsd
+【输出文件】
+步行交通需求OD矩阵		DistribWalk.tsd
+自行车交通需求OD矩阵	DistribBic.tsd
+小汽车交通需求OD矩阵	DistribCar.tsd
+出租车交通需求OD矩阵	DistribTax.tsd
+摩托车交通需求OD矩阵	DistribMot.tsd
+常规公交交通需求OD矩阵	DistribBus.tsd
+轨道交通需求OD矩阵		DistribSub.tsd

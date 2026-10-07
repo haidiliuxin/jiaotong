@@ -1,0 +1,28 @@
+{
+  "status": "passed",
+  "recorded_at": "2026-09-21T21:39:54.031966+00:00",
+  "pdf_sha256": "ab62414be292738d297254759c4aea415129b4ad84d8bffc39f2f1360d2d4578",
+  "pages": 3,
+  "visually_reviewed_pages": [
+    1,
+    2,
+    3
+  ],
+  "render_sha256": {
+    "1": "9ea6669e4b67d42efaeac63d10fb613c47a6f7f91f65c0c62932c630961929cd",
+    "2": "8fe310d7a064ee637f899a8e7dc0a91c39c9b97cecf60cb963b5e94dcdcca112",
+    "3": "f70cc6ee2d78472a289e6545aef1b33b363a3f29d3382e632deb6a36edb54d21"
+  },
+  "fonts_embedded": [
+    "/AAAAAA+MicrosoftYaHei-0",
+    "/AAAAAA+MicrosoftYaHei-Bold-0",
+    "/AAAAAB+MicrosoftYaHei-0"
+  ],
+  "checks": [
+    "逐页图像检查，无裁切、重叠、缺字或断表",
+    "第2页明确邻区毛新增过饱和约束",
+    "最终1、3页与已观察的初次渲染逐字节相同",
+    "页数、任务编号、代码、清单和关键结果数字核对通过"
+  ],
+  "new_model_calls": 0
+}

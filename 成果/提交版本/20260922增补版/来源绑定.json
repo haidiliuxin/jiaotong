@@ -1,0 +1,9 @@
+{
+  "acceptance": "成果\\便携主程序\\20260922_v4\\网页真实验收\\acceptance.json",
+  "acceptance_sha256": "b5d4b0e250b64707d76de03a06957bb222ca9721089ee7b4c2693cd73572ef7a",
+  "challenge": "20260922_034228_3141eb",
+  "challenge_code": "2c4f40332aa0eb93d47341ac72c27dd986a750ce",
+  "runtime_code": "5c9332494c08da354dc05a1868a9495ceb54d2a7",
+  "runtime_manifest_sha256": "f9c896b81047e6d731ec5c921e4373324cedfee6fb0d670da5b2e0b9e8d466e2",
+  "new_model_calls": 0
+}

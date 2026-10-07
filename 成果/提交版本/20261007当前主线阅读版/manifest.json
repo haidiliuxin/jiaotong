@@ -1,0 +1,68 @@
+{
+  "version": "competition-reading-pack-v1",
+  "functional_commit": "6f0b4a8a",
+  "job_id": "20261007_010958_039964",
+  "boundary": "Reading documents and allowlisted summaries only. No credentials, executable, complete native database or new video.",
+  "files": [
+    {
+      "path": "README.html",
+      "bytes": 2436,
+      "sha256": "088086c8df8ebb8fe1e2254899db3bdb922b7f760001515a1ee30139bdd62686"
+    },
+    {
+      "path": "README.md",
+      "bytes": 694,
+      "sha256": "9357b1145b82660d7a4cf6608c9a90691a3b9b11bb9fb0c917daa56ed0167ed7"
+    },
+    {
+      "path": "操作说明.html",
+      "bytes": 9437,
+      "sha256": "26ae1ab31cb3898d4437bfad018172eff2941c4638dfe9bace4d788767b6ceed"
+    },
+    {
+      "path": "操作说明.md",
+      "bytes": 7195,
+      "sha256": "7641b9175c742634d3ce07ad030c2de443756332fba0b816b7d21ffa8d974117"
+    },
+    {
+      "path": "研究报告.html",
+      "bytes": 17971,
+      "sha256": "c385ba1508a96ebfb91eae60b28b398ca80dc5063236ae1554f54bc21717dbf7"
+    },
+    {
+      "path": "研究报告.md",
+      "bytes": 14709,
+      "sha256": "d36b0693a94431595dc55377aa81c43113a7d2cf76fbc3666ac8a238a938be3f"
+    },
+    {
+      "path": "证据/RAG验收结果.json",
+      "bytes": 11730,
+      "sha256": "6f2d47b80b7fe71ca88c5e9e1d81c10e7c12e5456e8ee9fb302040dcf96d432f"
+    },
+    {
+      "path": "证据/最新场景指标.csv",
+      "bytes": 3213,
+      "sha256": "b6dd868ac64496991bfa39d7c7929e4ddd2e1278792a983ef49e82eb32bec44b"
+    },
+    {
+      "path": "证据/最新场景指标.json",
+      "bytes": 9739,
+      "sha256": "495f1e99a7a3f9d7610f7a7ceec17b949727171cf6f9599e0a780551395941ac"
+    },
+    {
+      "path": "证据/最新闭环摘要.json",
+      "bytes": 7286,
+      "sha256": "65b76f959075300c112f7663ff004b9f93224f599d635f708f8afd0061f65921"
+    },
+    {
+      "path": "评审证据与提交说明.html",
+      "bytes": 8716,
+      "sha256": "59099c9d4f421e8386a98dbdecbb64b21446c2d1f225e9072e85c5e58bc80583"
+    },
+    {
+      "path": "评审证据与提交说明.md",
+      "bytes": 6155,
+      "sha256": "99316cb333a26baafe690fc6b261cf41fcfdf5e0fa2f4f5dcc00292330eef07b"
+    }
+  ]
+}

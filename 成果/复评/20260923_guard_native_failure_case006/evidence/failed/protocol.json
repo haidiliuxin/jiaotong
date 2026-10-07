@@ -1,0 +1,241 @@
+{
+  "version": "network-guard-equal-budget-v1",
+  "task": {
+    "request": "未见区域：全网新增过饱和安全门槛下，完整单路段固定网格与新版反馈回退同预算对照",
+    "scenario": "parking",
+    "search_mode": "robust",
+    "recommendation_version": "tolerance-v2",
+    "road_name": null,
+    "links": [],
+    "turn": null,
+    "max_links": 3,
+    "max_runs": 16,
+    "max_feedback": 3,
+    "demand_factors": [
+      0.9,
+      1.0,
+      1.1
+    ],
+    "repeat_baseline": true,
+    "neighbor_hops": 2,
+    "target_speed_kmh": 25.0,
+    "max_neighbor_time_increase_pct": 0.5,
+    "max_network_time_increase_pct": 0.1,
+    "max_new_oversaturated_km": 0.1,
+    "max_new_network_oversaturated_km": 0.1,
+    "module_timeout_seconds": 900
+  },
+  "exclusions": [
+    {
+      "job": "benchmarks/20260908_045109_24146f/scopes.json",
+      "file": "exclusions/history_00.json",
+      "sha256": "86fc7ec0e247f6478967ecb0946e80a7fc267fb0a8f7490800a11613927cc277"
+    },
+    {
+      "job": "clean_environment/jobs/20260908_110226_1d7e69/scopes.json",
+      "file": "exclusions/history_01.json",
+      "sha256": "86fc7ec0e247f6478967ecb0946e80a7fc267fb0a8f7490800a11613927cc277"
+    },
+    {
+      "job": "jobs/20260908_031854_677ea5/scopes.json",
+      "file": "exclusions/history_02.json",
+      "sha256": "86fc7ec0e247f6478967ecb0946e80a7fc267fb0a8f7490800a11613927cc277"
+    },
+    {
+      "job": "jobs/20260908_040515_6a3455/scopes.json",
+      "file": "exclusions/history_03.json",
+      "sha256": "c1a6862da85aa9b2e242802c8c2088e58c6c90ab1b0c2a34bbe33d4e0d8a715b"
+    },
+    {
+      "job": "jobs/20260908_051630_12acc1/scopes.json",
+      "file": "exclusions/history_04.json",
+      "sha256": "86fc7ec0e247f6478967ecb0946e80a7fc267fb0a8f7490800a11613927cc277"
+    },
+    {
+      "job": "jobs/20260908_053733_fe5765/scopes.json",
+      "file": "exclusions/history_05.json",
+      "sha256": "3bbcb5289ab49eccd32e54c9717e1974a95da9228456c5affdfa1bd5013778c9"
+    },
+    {
+      "job": "jobs/20260908_063947_a72333/scopes.json",
+      "file": "exclusions/history_06.json",
+      "sha256": "ca69f70f2cbae896570b58d8da566a18248572b1f10ea533f48792c7fc93c129"
+    },
+    {
+      "job": "jobs/20260908_075938_e7444a/scopes.json",
+      "file": "exclusions/history_07.json",
+      "sha256": "ca69f70f2cbae896570b58d8da566a18248572b1f10ea533f48792c7fc93c129"
+    },
+    {
+      "job": "jobs/20260908_100153_bb7198/scopes.json",
+      "file": "exclusions/history_08.json",
+      "sha256": "c1a6862da85aa9b2e242802c8c2088e58c6c90ab1b0c2a34bbe33d4e0d8a715b"
+    },
+    {
+      "job": "jobs/20260908_164303_45ebd2/scopes.json",
+      "file": "exclusions/history_09.json",
+      "sha256": "ca69f70f2cbae896570b58d8da566a18248572b1f10ea533f48792c7fc93c129"
+    },
+    {
+      "job": "jobs/20260908_172910_d5cdd1/scopes.json",
+      "file": "exclusions/history_10.json",
+      "sha256": "ed97f4d507d3bbfd5771eefaabb80708e31c63d2a49dcdf0b3c90d283235b798"
+    },
+    {
+      "job": "jobs/20260911_021806_858461/scopes.json",
+      "file": "exclusions/history_11.json",
+      "sha256": "86fc7ec0e247f6478967ecb0946e80a7fc267fb0a8f7490800a11613927cc277"
+    },
+    {
+      "job": "jobs/20260911_024329_7304a4/scopes.json",
+      "file": "exclusions/history_12.json",
+      "sha256": "3bbcb5289ab49eccd32e54c9717e1974a95da9228456c5affdfa1bd5013778c9"
+    },
+    {
+      "job": "jobs/20260919_205401_c8de76/scopes.json",
+      "file": "exclusions/history_13.json",
+      "sha256": "86fc7ec0e247f6478967ecb0946e80a7fc267fb0a8f7490800a11613927cc277"
+    },
+    {
+      "job": "probes/20260908_060332_oneway/scopes.json",
+      "file": "exclusions/history_14.json",
+      "sha256": "92048349c42b45a77d8ce803155806185447d6f6aec69718be3fb37c3d92a734"
+    },
+    {
+      "job": "probes/20260908_062011_vehicle1_oneway/scopes.json",
+      "file": "exclusions/history_15.json",
+      "sha256": "92048349c42b45a77d8ce803155806185447d6f6aec69718be3fb37c3d92a734"
+    },
+    {
+      "job": "studies/20260922_015104_1bd73b/high",
+      "file": "exclusions/history_16.json",
+      "sha256": "906f1ed4da16742c6627a1f0436ede22c01cd9f4f7a920f94158b0093ddafc3d"
+    },
+    {
+      "job": "studies/20260922_015104_1bd73b/medium",
+      "file": "exclusions/history_17.json",
+      "sha256": "68b8c4b19843194844aab63518d6da6e2c9ac5ffc168457af746f56097d76757"
+    },
+    {
+      "job": "studies/20260922_015104_1bd73b/low",
+      "file": "exclusions/history_18.json",
+      "sha256": "24d70ba45d939bf03a640d34a9d27e16d8d3804b85cd16d1ab988cf17d168f02"
+    },
+    {
+      "job": "challenges/20260922_034228_3141eb/selection.json#high",
+      "file": "exclusions/history_19.json",
+      "sha256": "df4803a864f963734f1ab8b334597fc9b652aed209f558b523e15dc824aaf48a"
+    },
+    {
+      "job": "challenges/20260922_034228_3141eb/selection.json#medium",
+      "file": "exclusions/history_20.json",
+      "sha256": "19e6a5d33f69947e37b658779503e13c3d634570d0479c40d097058f16efe7b0"
+    },
+    {
+      "job": "challenges/20260922_034228_3141eb/selection.json#low",
+      "file": "exclusions/history_21.json",
+      "sha256": "eb40b34eacb33897bc2bb093650bfa4feede2ed4f68bc0121d6774d698710b69"
+    },
+    {
+      "job": "jobs/20260923_043018_f34e33/scopes.json",
+      "file": "exclusions/history_22.json",
+      "sha256": "86fc7ec0e247f6478967ecb0946e80a7fc267fb0a8f7490800a11613927cc277"
+    },
+    {
+      "job": "jobs/20260923_052614_69e402/scopes.json",
+      "file": "exclusions/history_23.json",
+      "sha256": "86fc7ec0e247f6478967ecb0946e80a7fc267fb0a8f7490800a11613927cc277"
+    },
+    {
+      "job": "jobs/20260923_070135_0f0c08/scopes.json",
+      "file": "exclusions/history_24.json",
+      "sha256": "68b8c4b19843194844aab63518d6da6e2c9ac5ffc168457af746f56097d76757"
+    },
+    {
+      "job": "jobs/20260923_075629_706ef0/scopes.json",
+      "file": "exclusions/history_25.json",
+      "sha256": "11b94e5364b4920dd9d5166ae37e78c1ef0dab7af2afc7ac52c793c68a3cd9ea"
+    },
+    {
+      "job": "jobs/20260923_082625_c01eb1/scopes.json",
+      "file": "exclusions/history_26.json",
+      "sha256": "11b94e5364b4920dd9d5166ae37e78c1ef0dab7af2afc7ac52c793c68a3cd9ea"
+    },
+    {
+      "job": "jobs/20260923_083136_743057/scopes.json",
+      "file": "exclusions/history_27.json",
+      "sha256": "11b94e5364b4920dd9d5166ae37e78c1ef0dab7af2afc7ac52c793c68a3cd9ea"
+    },
+    {
+      "job": "portable_runs/20260922_050947_9c2251/scopes.json",
+      "file": "exclusions/history_28.json",
+      "sha256": "86fc7ec0e247f6478967ecb0946e80a7fc267fb0a8f7490800a11613927cc277"
+    },
+    {
+      "job": "portable_runs/20260922_052448_fa12d2/scopes.json",
+      "file": "exclusions/history_29.json",
+      "sha256": "86fc7ec0e247f6478967ecb0946e80a7fc267fb0a8f7490800a11613927cc277"
+    },
+    {
+      "job": "portable_runs/20260922_054924_651bba/scopes.json",
+      "file": "exclusions/history_30.json",
+      "sha256": "ca69f70f2cbae896570b58d8da566a18248572b1f10ea533f48792c7fc93c129"
+    },
+    {
+      "job": "portable_runs/20260923_025908_fbc62a/scopes.json",
+      "file": "exclusions/history_31.json",
+      "sha256": "c1a6862da85aa9b2e242802c8c2088e58c6c90ab1b0c2a34bbe33d4e0d8a715b"
+    }
+  ],
+  "selection": {
+    "candidate_rule": "完整停车候选：沿用parking_candidates；不使用界面前30条截断",
+    "core": "每个候选依次作种子；种子2跳内按基准qL/v降序补至最多3条；种子必选",
+    "exclusion": "最终核心加2跳邻区与登记的历史范围不相交；相同核心集合只保留节点编号最小种子",
+    "density": "最终核心加2跳邻区内全部合法候选有向长度/该范围有效道路有向长度；四舍五入12位",
+    "strata": "密度不同取值升序；第i项归floor(3*i/n)层，0低1中2高；同密度不拆分",
+    "order": [
+      "high",
+      "medium",
+      "low"
+    ],
+    "within_stratum": "按种子from_node、to_node升序，取首个与已选范围不相交者",
+    "empty": "无可用候选的层保留空缺，不跨层补点，不依据治理输出换点"
+  },
+  "logical_budget_per_region_strategy": 16,
+  "candidates_per_strategy": 4,
+  "max_physical_scenes": 67,
+  "demand_order": [
+    1.1,
+    1.0,
+    0.9
+  ],
+  "early_rejection": "两策略在任一需求违反约束时结束该候选；未测需求为缺测，不视为通过",
+  "pairing": "每个需求独立无治理基准；范围在1.0新基准后、任何政策运行前冻结",
+  "sharing": "同措施同需求同原输入同程序只物理运行一次；每个引用策略仍计一次逻辑场景；末尾复跑强制新执行",
+  "scheduling": "同一轮先持久化两策略下一动作，然后运行或共享相同物理场景；控制器仅看本策略观察",
+  "selection_rule": "先通过原约束；依次保留距当前最优全网增幅不超过0.001个百分点、邻区增幅不超过0.01个百分点、新增邻区过饱和不超过0.001km的候选；近似相同时优先少措施、少停车1级措施，再按名称稳定排序。容差为决策假设，不是统计显著性。",
+  "selection_tolerances": [
+    0.001,
+    0.01,
+    0.001
+  ],
+  "risk_review": "额外报告1跳邻区、毛新增全网过饱和和恶化热点；只作警示，不改变本轮冻结硬约束",
+  "limitations": [
+    "同一调整案例内的区域迁移，非跨城市验证",
+    "联合路段收益非单路段因果贡献",
+    "确定性基准复跑非独立统计样本",
+    "共享物理调用不伪装为独立重复",
+    "本协议与旧挑战的安全门槛及预算不同；不得把跨版本胜率当作算法增益"
+  ],
+  "strategies": [
+    "fixed_full_singletons",
+    "feedback_backtracking_v2"
+  ],
+  "fixed_full_singletons": "治理前固定：全部原核心停车2级，然后原核心每条单独停车2级，按无治理1.0基准qL/v降序；最多四候选",
+  "feedback_backtracking_v2": "首轮相同；违反任一约束则按本策略联合实测核心qL/v收益缩减；单路段失败或缩减措施已测时回到原核心，按基准qL/v尝试未测单路段；全需求通过但有瓶颈才增强停车1级；最多四候选",
+  "priority": "仅用需求1.0无治理基准各原核心qL/v；相同值按from_node、to_node升序",
+  "safety_gate": "每个需求均要求全网毛新增过饱和里程≤0.1km，并保留原邻区/全网耗时及邻区过饱和约束",
+  "comparison": "每区每策略均计3个需求基准、最多12个治理场景、1次基准复跑；物理共享不减免逻辑计费",
+  "hypothesis": "反馈回退可能用同预算找到固定网格没有的可行或更优措施；也允许打平或输给固定策略",
+  "registered_at": "2026-09-23T02:05:38.272491+00:00"
+}

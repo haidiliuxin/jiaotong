@@ -1,0 +1,25 @@
+{
+  "python": {
+    "executable": "C:\\Users\\asus\\AppData\\Local\\Temp\\its_clean_model_2evrwiqu\\python\\Scripts\\python.exe",
+    "version": "3.12.6 (tags/v3.12.6:a4a2d2b, Sep  6 2024, 20:11:23) [MSC v.1940 64 bit (AMD64)]",
+    "enable_user_site": false
+  },
+  "pip_installed": false,
+  "system_site_packages": false,
+  "fresh_runtime": true,
+  "job": "F:\\ITS比赛\\智能体实验\\clean_environment\\jobs\\20260908_110226_1d7e69",
+  "command": [
+    "C:\\Users\\asus\\AppData\\Local\\Temp\\its_clean_model_2evrwiqu\\python\\Scripts\\python.exe",
+    "-m",
+    "traffic_agent",
+    "run",
+    "--task",
+    "examples/parking_quickstart.json",
+    "--root",
+    "F:\\ITS比赛\\智能体实验\\clean_environment"
+  ],
+  "model_returncode": 0,
+  "verification_returncode": 0,
+  "elapsed_seconds": 553.666,
+  "limits": "本机新隔离Python与新模型runtime，使用仓库源码及原软件，不声称另一台电脑实测"
+}

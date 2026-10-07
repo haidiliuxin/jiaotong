@@ -1,0 +1,341 @@
+{
+  "created": "2026-09-30T02:06:31.801078+00:00",
+  "kind": "readonly_rc14_partial_native_and_parking_source_review",
+  "bundle_source_commit": "8b908a81019cf421fae2f67a42f390ebca06ee7c",
+  "request": "长江村路停车拥堵。请至少比较两个不同停车备选方案，并检验单向组织及其组合的独立效果。最多7次仿真，不复跑基准；保护邻区。",
+  "root": "工作材料\\便携异目录检查\\20260930_v2_RC14\\智能体实验\\mixed_complete_live_20260930_01",
+  "job_id": "20260930_093644_f3962e",
+  "job_ids": [
+    "20260930_093644_f3962e",
+    "20260930_093644_501ad1"
+  ],
+  "original_status": "incomplete",
+  "original_protocol": "measured-conclusion-v13",
+  "original_rejection": [
+    {
+      "code": "executed_parking_level",
+      "field": "risk",
+      "refs": [
+        "20260930_093644_f3962e:parking_1"
+      ],
+      "quote": "停车3级",
+      "message": "该实测场景实际执行停车1级，文字写成3级；S1/S2/S3是场景编号，不是停车等级。"
+    }
+  ],
+  "partial_native": {
+    "completed_scenes": 2,
+    "top_level_modules": 14,
+    "runs": [
+      {
+        "run": "baseline",
+        "modules": 7,
+        "result_rows": 32981,
+        "fresh_outputs_unchanged": true,
+        "source_inputs_unchanged": true,
+        "metrics_recomputed_equal": true,
+        "comparison_recomputed_equal": null
+      },
+      {
+        "run": "parking_1",
+        "modules": 7,
+        "result_rows": 32981,
+        "fresh_outputs_unchanged": true,
+        "source_inputs_unchanged": true,
+        "metrics_recomputed_equal": true,
+        "comparison_recomputed_equal": true
+      }
+    ],
+    "complete_verifier_refusal": "总任务尚未完整，不能出具完整验收结论",
+    "complete_acceptance": false
+  },
+  "measured_result": {
+    "changes": [
+      {
+        "from_node": 3240,
+        "to_node": 3239,
+        "old_parking": 3,
+        "parking": 1
+      },
+      {
+        "from_node": 3239,
+        "to_node": 3240,
+        "old_parking": 3,
+        "parking": 1
+      },
+      {
+        "from_node": 3239,
+        "to_node": 3238,
+        "old_parking": 3,
+        "parking": 1
+      }
+    ],
+    "comparison": {
+      "before": {
+        "core": {
+          "directed_links": 5,
+          "directed_length_km": 2.088,
+          "weighted_speed_kmh": 32.70104676892661,
+          "running_time_pcu_h": 82.98941037504531,
+          "transport_pcu_km": 2713.84059,
+          "oversaturated_km": 2.088,
+          "timelink_flagged_links": 0,
+          "timelink_sum_pcu_h": 82.98277647222223
+        },
+        "neighbor": {
+          "directed_links": 45,
+          "directed_length_km": 11.05848,
+          "weighted_speed_kmh": 14.045576953059824,
+          "running_time_pcu_h": 433.7017707537425,
+          "transport_pcu_km": 6091.5915958000005,
+          "oversaturated_km": 3.838,
+          "timelink_flagged_links": 0,
+          "timelink_sum_pcu_h": 8357.379558416666
+        },
+        "network": {
+          "directed_links": 32060,
+          "directed_length_km": 12446.9460498,
+          "weighted_speed_kmh": 33.43319835501451,
+          "running_time_pcu_h": 227328.24893586405,
+          "transport_pcu_km": 7600310.438370859,
+          "oversaturated_km": 1608.6958436,
+          "timelink_flagged_links": 44,
+          "timelink_sum_pcu_h": null
+        }
+      },
+      "after": {
+        "core": {
+          "directed_links": 5,
+          "directed_length_km": 2.088,
+          "weighted_speed_kmh": 42.91060095550325,
+          "running_time_pcu_h": 63.645662358167044,
+          "transport_pcu_km": 2731.07362,
+          "oversaturated_km": 2.088,
+          "timelink_flagged_links": 0,
+          "timelink_sum_pcu_h": 63.64733938888889
+        },
+        "neighbor": {
+          "directed_links": 45,
+          "directed_length_km": 11.05848,
+          "weighted_speed_kmh": 14.083733920997652,
+          "running_time_pcu_h": 432.91220549898776,
+          "transport_pcu_km": 6097.0203134,
+          "oversaturated_km": 3.838,
+          "timelink_flagged_links": 0,
+          "timelink_sum_pcu_h": 8355.581412333333
+        },
+        "network": {
+          "directed_links": 32060,
+          "directed_length_km": 12446.9460498,
+          "weighted_speed_kmh": 33.43601776578891,
+          "running_time_pcu_h": 227307.11553074908,
+          "transport_pcu_km": 7600244.7531763585,
+          "oversaturated_km": 1608.6958436,
+          "timelink_flagged_links": 44,
+          "timelink_sum_pcu_h": null
+        }
+      },
+      "delta": {
+        "core": {
+          "speed_change_pct": 31.22087882605038,
+          "running_time_change_pct": -23.308694361678317,
+          "oversaturated_km_change": 0.0
+        },
+        "neighbor": {
+          "speed_change_pct": 0.2716653652986123,
+          "running_time_change_pct": -0.18205257806130914,
+          "oversaturated_km_change": 0.0
+        },
+        "network": {
+          "speed_change_pct": 0.008432967568516858,
+          "running_time_change_pct": -0.009296427176952449,
+          "oversaturated_km_change": 0.0
+        }
+      },
+      "eligible": true,
+      "violations": [],
+      "new_neighbor_oversaturated_km": 0,
+      "new_neighbor_oversaturated_links": [],
+      "regional_checks": [
+        {
+          "region": "area_1",
+          "before": {
+            "directed_links": 3,
+            "weighted_speed_kmh": 32.322398964327775,
+            "running_time_pcu_h": 59.1005052597812,
+            "oversaturated_km": 1.489
+          },
+          "after": {
+            "directed_links": 3,
+            "weighted_speed_kmh": 48.524945534578976,
+            "running_time_pcu_h": 39.64314640248654,
+            "oversaturated_km": 1.489
+          },
+          "time_change_pct": -32.92249156207415,
+          "passed": true
+        },
+        {
+          "region": "area_2",
+          "before": {
+            "directed_links": 2,
+            "weighted_speed_kmh": 33.63781119824318,
+            "running_time_pcu_h": 23.888905115264116,
+            "oversaturated_km": 0.599
+          },
+          "after": {
+            "directed_links": 2,
+            "weighted_speed_kmh": 33.63781119824318,
+            "running_time_pcu_h": 24.0025159556805,
+            "oversaturated_km": 0.599
+          },
+          "time_change_pct": 0.4755799391734872,
+          "passed": true
+        }
+      ]
+    }
+  },
+  "independent_review": {
+    "status": "incomplete",
+    "failure_attribution": "validator_bound_untreated_region_state_to_other_region_executed_level",
+    "actual_area_2_levels": [
+      {
+        "ref": "20260930_093644_f3962e:baseline",
+        "levels": [
+          3,
+          3
+        ]
+      },
+      {
+        "ref": "20260930_093644_f3962e:parking_1",
+        "levels": [
+          3,
+          3
+        ]
+      }
+    ],
+    "original_risk": "面积2两条方向为停车3级且VC达2.04-2.33，停车1级可能无法突破既有瓶颈或使邻区耗时增幅超0.5%；单需求不能证明跨需求稳健性。超出核心评价范围的宁洛高速等outside_hotspots不纳入本组治理。",
+    "original_selected_action": "stop",
+    "second_candidate_executed": false,
+    "oneway_group_started": false,
+    "shadow_protocol": "measured-conclusion-v14",
+    "shadow_full_tool_result": "accepted",
+    "shadow_prose_unchanged": true,
+    "shadow_is_not_execution": true,
+    "new_model_calls_after_failure": 0,
+    "new_native_scenes_after_failure": 0
+  },
+  "source_files": {
+    "manifest": "工作材料\\便携异目录检查\\20260930_v2_RC14_evidence\\mixed_complete_live_20260930_01_file_manifest.json",
+    "manifest_sha256": "b6191051f39eff6695b291658af1e40886351bd10103412c09026ab4e6a08acf",
+    "file_count": 1588,
+    "core": {
+      "dispatches/20260930_093644_f3962e.json": {
+        "bytes": 266679,
+        "sha256": "5eec554ad79a3759c1cf5f66b6e3bd545bf3fc52677fecc1c060567ea52ea4ed"
+      },
+      "jobs/20260930_093644_f3962e/state.json": {
+        "bytes": 231567,
+        "sha256": "546bc6268e0eeae99c45dc00127a191f34653a7d7cc23a0caecb831bd078bd9b"
+      },
+      "programmes/20260930_093644_f3962e/plan.json": {
+        "bytes": 33550,
+        "sha256": "31fde9be9428aa60298def8c592d92db291878b04216924c348bac262e95ad4c"
+      },
+      "programmes/20260930_093644_f3962e/result.json": {
+        "bytes": 266679,
+        "sha256": "5eec554ad79a3759c1cf5f66b6e3bd545bf3fc52677fecc1c060567ea52ea4ed"
+      }
+    },
+    "hashes_unchanged_after_readonly_checks": true,
+    "prior_request_sha256": "63a321bc5b439e5db6d45aa8a92058b8e23194b801e78689abb3712b4da5f041"
+  },
+  "usage": {
+    "responses": [
+      {
+        "response_id": "chatcmpl-6abc67a88f5a25501bc6cdcb",
+        "input_tokens": 6816,
+        "output_tokens": 747,
+        "tokens": 7563
+      },
+      {
+        "response_id": "chatcmpl-6abc6834aa92f23e74e7d729",
+        "input_tokens": 9928,
+        "output_tokens": 508,
+        "tokens": 10436
+      },
+      {
+        "response_id": "chatcmpl-6abc68bf47d86f20821696d7",
+        "input_tokens": 13012,
+        "output_tokens": 643,
+        "tokens": 13655
+      }
+    ],
+    "new_unique_requests": 3,
+    "new_known_tokens": 31654,
+    "prior_requests": 150,
+    "prior_known_tokens": 1436092,
+    "project_retained_cumulative_requests": 153,
+    "project_retained_cumulative_known_tokens": 1467746,
+    "authorized_max_requests": 684,
+    "authorized_max_known_tokens": 4132560,
+    "new_response_ids_absent_from_prior_validation_indexes": true,
+    "not_full_account_bill": true
+  },
+  "portable": {
+    "zip": "工作材料/便携构建/20260930_智能规划_v2_RC14.zip",
+    "zip_sha256": "f9d092086861e51c98cc3abc6787ae0711661163c970e7b82e930b50e09f0c00",
+    "immutable_files": 16164,
+    "environment_record": "工作材料\\便携异目录检查\\20260930_v2_RC14_evidence\\environment_verification.json",
+    "environment_record_sha256": "a8e329cfb98c10844e99fb0c6805979eff939a4a15467c6ee787e1deb01c3053",
+    "environment_status": "passed",
+    "includes_v13": true,
+    "includes_v14": false,
+    "physical_other_machine": false
+  },
+  "offline_checks": {
+    "python_tests": 669,
+    "node_groups": 4,
+    "full_tool_shadow_replay": "passed",
+    "ui_dom": "工作材料\\便携异目录检查\\20260930_v2_RC14_evidence\\rc13_posthoc_ui_dom.json",
+    "ui_screenshot": "工作材料\\便携异目录检查\\20260930_v2_RC14_evidence\\rc13_posthoc_stop_reason_ui.png",
+    "python_test_log": "tmp/20260930_rc14_v14_python_tests_final.log",
+    "python_test_log_sha256": "cc6452c43d8666692d2f497dc3e82296f989d257979d6e2f2a0194dd159d71ab",
+    "old_rc13_original_v12_protocol_readonly": {
+      "passed": true,
+      "programme": "20260930_085809_7c79a1",
+      "protocol": "programme-evidence-v1",
+      "native": [
+        {
+          "job_id": "20260930_085809_7c79a1",
+          "raw_verified": true,
+          "archived": false,
+          "verification_kind": null
+        }
+      ],
+      "planning": {
+        "passed": true,
+        "groups": 1,
+        "decisions": 2,
+        "no_cross_engine_pooling": true,
+        "observations_checked_at_decision_time": true,
+        "request_reservations_checked": true
+      },
+      "model_requests": 3
+    },
+    "old_rc13_source_files_unchanged": 4919,
+    "ui_dom_sha256": "fd41bb1f05bb764d7a617aa61581b35a42942afa206b59f68e864a7d2674b70c",
+    "ui_screenshot_sha256": "7ac0ac20f3a862f8e7eb9475eb3d7916d2609f2973d2a1b0c900aa46ec3be7ab"
+  },
+  "pending": [
+    "mixed_two_parking_candidates_plus_oneway_complete_acceptance",
+    "v14_new_complete_model_native_task",
+    "final_portable_including_v14",
+    "physical_other_machine_acceptance"
+  ],
+  "end_state": {
+    "native_processes_present": false,
+    "checked_runtime_locks": 4,
+    "held_runtime_locks": 0,
+    "lock_bytes_unchanged": true,
+    "temporary_readonly_server_stopped": true
+  }
+}

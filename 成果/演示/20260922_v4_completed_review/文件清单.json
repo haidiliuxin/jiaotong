@@ -1,0 +1,89 @@
+{
+  "created_at": "2026-09-21T22:31:01.597591+00:00",
+  "files": {
+    "01.png": {
+      "bytes": 759043,
+      "sha256": "28eeeceac8627049735a6098ce94c408318f44c0e6c25424393cec208f26d19c"
+    },
+    "02.png": {
+      "bytes": 700369,
+      "sha256": "32ecc92523bf65f3052b027a39cf0e55a0f64669991acc03b32c8e668d180163"
+    },
+    "03.png": {
+      "bytes": 765481,
+      "sha256": "003a3a7ad33e1e7c2aa1fd32b57d2d4e3449e3e4024d23af4c6c71496ece1cfc"
+    },
+    "04.png": {
+      "bytes": 742609,
+      "sha256": "c52c540a01059b8f1f9e6c3728046e60fe34bb070b1fb69aa224880a9981b957"
+    },
+    "05.png": {
+      "bytes": 207278,
+      "sha256": "97418b7830f05b87f953dd46fa85d6cf8293b43ca4968a39ec59a8961810d578"
+    },
+    "06.png": {
+      "bytes": 736849,
+      "sha256": "a992fe15098a467d9788dae7249be235d5eb84e1ed5e8bae89ee73326a377e69"
+    },
+    "07.png": {
+      "bytes": 708507,
+      "sha256": "f16cdfc99e4e92ca60b072c85b8226f03c0cea24fe1a5ab3112048db4617d869"
+    },
+    "after.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "after.stdout.txt": {
+      "bytes": 445,
+      "sha256": "bed6b66543beeb2b7ab414463cd7a11372efa61be2e3ed7b1b54a958f218be92"
+    },
+    "before.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "before.stdout.txt": {
+      "bytes": 445,
+      "sha256": "bed6b66543beeb2b7ab414463cd7a11372efa61be2e3ed7b1b54a958f218be92"
+    },
+    "container_read_check.log": {
+      "bytes": 1112,
+      "sha256": "96ca945ed243f0652a16444f409528ace77ee4f40010fce5b3941bba8543a151"
+    },
+    "decoded_end.png": {
+      "bytes": 904080,
+      "sha256": "c52af90d94794a0052066971d19864bce2dcfe31790a57ee48111bd86bbbe45d"
+    },
+    "decoded_table.png": {
+      "bytes": 298595,
+      "sha256": "0cc1d5865ebbab4f8b82d8bddab9736a05875b76994b19f778e962854b0b0ae0"
+    },
+    "full_decode_check.log": {
+      "bytes": 2558,
+      "sha256": "dc350c373c5b8c80916af73ed442869a1776cf04d046b59854d6cddee73075de"
+    },
+    "README.md": {
+      "bytes": 1275,
+      "sha256": "8ff01322dc0403e051be55ddf8e2c99a2dc9b41caac2a6dd81101f8c4e030d4e"
+    },
+    "recording.json": {
+      "bytes": 3010,
+      "sha256": "15b2fc12aaa7dd847845071f281ca8a1b029cffa4a658f8d17fbc2b1ce26ed7e"
+    },
+    "visual_review.json": {
+      "bytes": 1316,
+      "sha256": "76b66ef395a517713f696692e6e1d5e4d61cb382c9626036a5ac925e2a34f4ee"
+    },
+    "已完成真实任务回看.webm": {
+      "bytes": 10623148,
+      "sha256": "de0ce850c1a96f0d8766ef71a78b94873f2833c744063a9223130fc626ec1450"
+    },
+    "播放说明.html": {
+      "bytes": 2473,
+      "sha256": "3dae24420f9dce8a54bf9160a5e56435d22126d4c19513ff0dbd21af3b8f453e"
+    },
+    "说明字幕.vtt": {
+      "bytes": 826,
+      "sha256": "11174e2eb66cbbf1770ea86e20318a81e4ea8c9b336b8d4f7a1af8060d3b8da5"
+    }
+  }
+}

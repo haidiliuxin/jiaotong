@@ -1,0 +1,14 @@
+{
+  "url": "http://127.0.0.1:8792",
+  "review_mode": "turn-grid",
+  "job_id": "20260923_025908_fbc62a",
+  "job": "F:/ITS比赛/工作材料/便携解压验收/20260922 运行包 v4/智能体实验/jobs/20260923_025908_fbc62a",
+  "archive_sha256": "7365c701074587e1cb764eda5bb5c63d38d9e1ee83d19dc8384d1c00bf0b3ad2",
+  "runtime_code": "5c9332494c08da354dc05a1868a9495ceb54d2a7",
+  "runtime_root": "F:/ITS比赛/工作材料/便携解压验收/20260922 运行包 v4",
+  "python": "F:/ITS比赛/工作材料/便携解压验收/20260922 运行包 v4/python/python.exe",
+  "verifier": "F:/ITS比赛/工作材料/便携解压验收/20260922 运行包 v4/scripts/verify_experiment.py",
+  "playwright_core": "C:/Users/asus/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright-core",
+  "browser_executable": "C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe",
+  "output": "F:/ITS比赛/成果/演示/20260923_v4_turn_completed_review"
+}

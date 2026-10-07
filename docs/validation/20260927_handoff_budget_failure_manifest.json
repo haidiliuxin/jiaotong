@@ -1,0 +1,27 @@
+{
+  "kind": "initial_planning_failure_snapshot_v1",
+  "source_commit": "23b07ff3961350942aeeaaf2187d2856993b3fc9",
+  "original_status": "failed",
+  "paid_calls": 1,
+  "reported_tokens": 4916,
+  "native_scenes": 0,
+  "corrected_live_test": false,
+  "files": {
+    "智能体实验/validation_handoff_live_20260927/acceptance.json": {
+      "bytes": 34086,
+      "sha256": "95d16f94383796cc238adae0823b0be297fec19638d9c235bbddffc596ff2768"
+    },
+    "智能体实验/validation_handoff_live_20260927/plan.json": {
+      "bytes": 14868,
+      "sha256": "b48cb03d2ef9cb50a623af2ed7133dd236339f91cdd58b636c6f5fedc1123e93"
+    },
+    "智能体实验/planning_attempts/preview_273862c7f1224204b9e0b5835e8e5aec.json": {
+      "bytes": 4253,
+      "sha256": "9436626033b06f894dcb7ac58229d664b32d6eecc26898302416fe94224959c8"
+    }
+  },
+  "archive": "20260927_handoff_budget_failure.zip",
+  "archive_bytes": 21005,
+  "archive_sha256": "2021a0bf8cb2a46f9eee386e5ae5d96829418e4e71cf2a12d52f48b29e281c5c",
+  "originals_unchanged": true
+}

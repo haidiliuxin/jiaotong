@@ -1,0 +1,169 @@
+{
+  "created": "2026-09-30T04:12:55.998830+00:00",
+  "kind": "action_execution_new_initial_plan_failure",
+  "source_commit": "c351e610b58c40fc954d0391295eeb9e65536841",
+  "root": "智能体实验\\mixed_action_execution_full_20260930_01",
+  "request": "长江村路停车拥堵。请至少比较两个不同停车备选方案，并检验单向组织及其组合的独立效果。最多7次仿真，不复跑基准；保护邻区。",
+  "original_request_unchanged": true,
+  "original_status": "validation_failed",
+  "original_error": "组合增益判据只能指向组合措施",
+  "action_execution_protocol": "action-execution-v1",
+  "action_execution_stage_reached": false,
+  "native": {
+    "new_scenes": 0,
+    "job_created": false,
+    "dispatch_created": false
+  },
+  "independent_review": {
+    "status": "needs_review",
+    "initial_generation_quality": "not_passed",
+    "findings": [
+      {
+        "hypothesis": "H3",
+        "kind": "invalid_metric_policy_pair",
+        "definition": {
+          "policies": "control_and_combined",
+          "quantifier": "any",
+          "study_keys": [
+            "oneway_combine"
+          ],
+          "test": "combination_core_advantage"
+        },
+        "detail": "组合分别优于两个单项只能检验combined。模型选择control_and_combined，本地原检查正确拒绝。"
+      },
+      {
+        "hypothesis": "H4",
+        "kind": "narrative_scope_requires_review",
+        "quote": "邻区保护通过neighbor_limits在所有已测措施中检验。",
+        "definition": {
+          "policies": "all",
+          "quantifier": "any",
+          "study_keys": [
+            "parking_candidates",
+            "oneway_combine"
+          ],
+          "test": "neighbor_limits"
+        },
+        "detail": "理由可理解为逐项检查，但H4只回答每组至少一个措施满足门槛；不能据此宣称所有措施满足。此次在H3即停止，未证明自由研究理由与冻结命题完全一致，也不自动改量词。"
+      }
+    ],
+    "no_native_acceptance": true,
+    "bounded_schema_is_not_general_semantic_certification": true
+  },
+  "schema_repair": {
+    "single_source": "hypothesis_contract.POLICY_OPTIONS",
+    "projections": [
+      "numbered_criterion_schema",
+      "named_definition_schema",
+      "local_validation"
+    ],
+    "semantic_protocol_unchanged": "named-question-authoring-v1",
+    "old_wire_schema_sha256": "73f345ab59a88cc627139f456b0c08f4c979aedbe34ef2df41fdc074361af65c",
+    "new_wire_schema_sha256": "25d90f5644c8b7e5b235f4362786697a25e53c19b54b14f917d4b22036d023ed",
+    "removing_only_new_named_constraints_reproduces_recorded_old_wire_hash": true,
+    "raw_H3_readonly_replay": {
+      "rejected": true,
+      "error": "组合增益判据只能指向组合措施",
+      "definition_unchanged": true
+    },
+    "other_three_generated_rows_verified": true,
+    "provider_compliance_after_fix": "not_live_verified"
+  },
+  "offline_checks": {
+    "python_tests": 704,
+    "new_schema_regression_tests": 2,
+    "python_log": "tmp\\20260930_action_execution_schema_python_final.log",
+    "python_log_sha256": "b471e982c181929512b49732de67af456ecf4516b83dae06ade7800e941d6686",
+    "target_tests": 12,
+    "synthetic_transports": [
+      "chat_completions",
+      "responses"
+    ],
+    "earlier_stage_node_groups": 4,
+    "earlier_stage_evidence": "docs\\validation\\20260930_action_execution_offline_review.json",
+    "browser_visual_check": "not_verified: file scheme refused by browser security policy; no workaround"
+  },
+  "source_files": {
+    "manifest": "工作材料\\源码联调证据\\20260930_action_execution_initial_failure_01\\original_files_manifest.json",
+    "file_count": 3,
+    "hashes_unchanged": true,
+    "attempt": "智能体实验\\mixed_action_execution_full_20260930_01\\planning_attempts\\preview_ec2e374ea91549bb8f9569b1428b053c.json",
+    "attempt_sha256": "3888bbcc2ba28d15b7c58aa0dde8e5cebec70b9870a7eb3a3c2678ba7286b55f",
+    "source_request_sha256": "63a321bc5b439e5db6d45aa8a92058b8e23194b801e78689abb3712b4da5f041",
+    "manifest_sha256": "e227208491746b3040d7606fcf3764f8afdb21b999b7ca9fe8ae77ae4ea90dc7"
+  },
+  "usage": {
+    "responses": [
+      {
+        "response_id": "chatcmpl-6abc89e5a9cd7afd8effebc1",
+        "tokens": 8050,
+        "input_tokens": 7325,
+        "output_tokens": 725,
+        "cached_input_tokens": 7168
+      }
+    ],
+    "previous_ledger": {
+      "path": "docs\\validation\\20260930_action_execution_offline_review.json",
+      "sha256": "c10f5b2579774b8a526fc03a2a4f60c062596bb9fc1eb3517750b16ab766d151"
+    },
+    "authorization": {
+      "path": "docs\\validation\\20260928_api_budget_12x.json",
+      "sha256": "a84b35cc04a8f54b29819bbc35678f9ff8c92301da583759c02dd55bc660ed4d"
+    },
+    "prior_requests": 161,
+    "prior_known_tokens": 1551215,
+    "new_unique_requests": 1,
+    "new_known_tokens": 8050,
+    "project_retained_cumulative_requests": 162,
+    "project_retained_cumulative_known_tokens": 1559265,
+    "authorized_max_requests": 684,
+    "authorized_max_known_tokens": 4132560,
+    "new_response_ids_absent_from_prior_validation_indexes": true,
+    "prior_indexes_checked": 198,
+    "not_full_account_bill": true
+  },
+  "old_task_resumed": false,
+  "paid_retry_after_this_failure": false,
+  "end_state": {
+    "checked_runtime_locks": [
+      {
+        "path": "智能体实验\\runtime.lock",
+        "free": true,
+        "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+        "bytes_unchanged": true
+      },
+      {
+        "path": "智能体实验\\mixed_limit7_full_20260930_01\\runtime.lock",
+        "free": true,
+        "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+        "bytes_unchanged": true
+      },
+      {
+        "path": "工作材料\\便携异目录检查\\20260930_v2_RC13\\智能体实验\\oneway_scope_live_20260930_01\\runtime.lock",
+        "free": true,
+        "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+        "bytes_unchanged": true
+      },
+      {
+        "path": "工作材料\\便携异目录检查\\20260930_v2_RC14\\智能体实验\\mixed_complete_live_20260930_01\\runtime.lock",
+        "free": true,
+        "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+        "bytes_unchanged": true
+      },
+      {
+        "path": "智能体实验\\mixed_named_questions_full_20260930_01\\runtime.lock",
+        "free": true,
+        "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+        "bytes_unchanged": true
+      }
+    ]
+  },
+  "pending": [
+    "corrected_initial_schema_real_use",
+    "complete_new_mixed_native_acceptance",
+    "independent_semantic_review",
+    "browser_visual_verification",
+    "final_portable_including_current_source",
+    "physical_other_machine_acceptance"
+  ]
+}

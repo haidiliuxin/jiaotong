@@ -1,0 +1,101 @@
+{
+  "kind": "zero_paid_service_and_browser_check",
+  "source_commit": "992723c7c66575d29d393448fe506310e887524c",
+  "source_port": 8772,
+  "read_only_port": 8799,
+  "loaded_capabilities": {
+    "planning_version": "natural-strategy-plan-v5",
+    "composition_protocol": "traffic-plan-decision-v3",
+    "transport_version": "llm-transport-v2",
+    "initial_review_protocol": "initial-plan-review-v2",
+    "max_initial_corrections": 1,
+    "initial_budget_protocol": "initial-plan-budget-v1",
+    "scope_protocol": "planning-scope-v2",
+    "prerequisite_protocol": "planning-prerequisites-v2",
+    "dynamic_initial_tools": true,
+    "preflight_protocol": "planning-preflight-v1",
+    "routing_budget_protocol": "study-routing-budget-v2",
+    "study_handoff_protocol": "study-handoff-v1",
+    "feedback_review_protocol": "feedback-review-permissions-v1",
+    "parking_completion_protocol": "parking-completion-v2",
+    "finding_reference_schema": "measured-findings-v1",
+    "response_check_protocol": "planning-response-check-v1",
+    "feedback_instructions_sha256": "60ce160099c6a0e6dbd40c8be49747f595538abf38390a87acfa63d454ded8f2",
+    "conclusion_protocol": "measured-conclusion-v1",
+    "observables": {
+      "available": [
+        "方向级流量、速度、V/C",
+        "固定核心/邻区/全网行驶时间消耗",
+        "同条件配对变化、邻区毛新增过饱和",
+        "各候选区实际响应及约束判断"
+      ],
+      "unavailable": [
+        "排队长度或排队车辆数",
+        "逐秒轨迹、动态排队回堵",
+        "真实城市因果或零风险证明"
+      ],
+      "conditional": [
+        "全网毛新增过饱和仅在任务开启该检查时提供",
+        "路权及转向响应仅相应适配器提供"
+      ]
+    },
+    "instructions_sha256": "9f5fc34500dc782cf39862fb77fcddb317d2e116324de88abdcb78f794d20908",
+    "initial_schema_sha256": "178825c1cbb08666a2563a00457e5bc3b48c2e0acfad324e5aebd3e3c8d60fc4",
+    "engine": "TranStar batch",
+    "automatic_transport_retry": false,
+    "max_model_requests": 6
+  },
+  "source_lists_unchanged": true,
+  "matched_roads": [
+    "七东线",
+    "长江村路"
+  ],
+  "map_sha256": "cf6b9001f3018dc774883273913c2033f7a066fe68a01c365d454873bce5ec78",
+  "checks": [
+    {
+      "command": [
+        "node",
+        "--check",
+        "traffic_agent/static/map.js"
+      ],
+      "returncode": 0,
+      "output": ""
+    },
+    {
+      "command": [
+        "node",
+        "tests/test_map_view.cjs"
+      ],
+      "returncode": 0,
+      "output": "Map default selection, paired status colors and signed changes passed\nNear-saturation labels preserve the measured side of the V/C=1 boundary\nMap caption matches selected metric and preserves diagnosis/repeat limitations\n"
+    }
+  ],
+  "browser": {
+    "original_job": "20260927_224930_45a743",
+    "original_programme_status": "incomplete",
+    "completed_scenes": 6,
+    "total_scenes": 6,
+    "groups_completed": 1,
+    "total_groups": 2,
+    "selected_scenario": "S3_combined",
+    "selected_road": {
+      "name": "18206路",
+      "nodes": [
+        4082,
+        3235
+      ],
+      "before_speed_kmh": 40,
+      "after_speed_kmh": 6,
+      "before_vc": 0.12883,
+      "after_vc": 3.44567
+    },
+    "changed_directed_links": 614,
+    "total_directed_links": 32060,
+    "paired_selection_labels_and_table_match": true,
+    "console_warnings_or_errors": [],
+    "screenshot": "20260927_rc5_map_selection_verified.png"
+  },
+  "paid_calls": 0,
+  "new_native_scenes": 0,
+  "meaning": "源码服务预检与新版页面只读显示RC5原件；没有重启或完成原失败任务，不代表新引用协议真实通过。"
+}

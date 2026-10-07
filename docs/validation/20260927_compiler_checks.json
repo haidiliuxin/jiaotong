@@ -1,0 +1,108 @@
+{
+  "checked_at": "2026-09-27T06:52:28.231726+00:00",
+  "development_base": "b66dd06e",
+  "overall_complete": false,
+  "compilation_protocol": "plan-compilation-v1",
+  "live": {
+    "status": "failed",
+    "started": "2026-09-27T06:30:57.525568+00:00",
+    "finished": "2026-09-27T06:31:01.964312+00:00",
+    "case": "regions",
+    "new_model_calls": 1,
+    "known_tokens": 3273,
+    "native_launched": false,
+    "new_native_scenarios": 0,
+    "retried": false,
+    "error": "ValueError: Local HTTP 400: 模型重复安排相同实验",
+    "attempt_id": "preview_58d8d941bf734149bb0d81276134c3b5",
+    "cause_scope": "Duplicate-study validation failed locally after a parsed service reply; original duplicate fields were not retained",
+    "not_a_verified_repair": true,
+    "archive": {
+      "archive": "docs/validation/20260927_compiler_live_failure.zip",
+      "files": [
+        {
+          "source": "智能体实验/validation_programme_regions_20260927/acceptance.json",
+          "name": "acceptance.json",
+          "sha256": "636a8c03fafcd728280c18421b7f05a85925c91333f546bae93f90a2b32af2be",
+          "bytes": 1761
+        },
+        {
+          "source": "智能体实验/planning_attempts/preview_58d8d941bf734149bb0d81276134c3b5.json",
+          "name": "preview_58d8d941bf734149bb0d81276134c3b5.json",
+          "sha256": "200a3e08be72f30967ba249238485ff4fddd834207e9ce3a90c774d2290922e3",
+          "bytes": 894
+        }
+      ]
+    }
+  },
+  "python": {
+    "passed": true,
+    "tests": 311,
+    "command": "python -X utf8 -m unittest discover -s tests",
+    "log": "tmp/compiler_checks.log",
+    "followup": "31 natural-plan checks passed after task-title adjustment"
+  },
+  "node": {
+    "passed": true,
+    "scripts": [
+      "tests/test_planner_view.cjs",
+      "tests/test_map_view.cjs",
+      "tests/test_dispatch_ui.cjs"
+    ]
+  },
+  "syntax": {
+    "passed": true,
+    "files": [
+      "app.js",
+      "dispatch.js",
+      "planner_view.js",
+      "map.js",
+      "map_view.js"
+    ]
+  },
+  "browser": {
+    "service": "http://127.0.0.1:8772/",
+    "managed_terminal": true,
+    "fixture_screenshot": "20260927_compiler_panel_fixture.png",
+    "fixture_is_synthetic": true,
+    "fixture_does_not_replay_actual_failure": true,
+    "document_client_width_px": 1081,
+    "document_scroll_width_px": 1081,
+    "live_failure_screenshot": "20260927_compiler_live_failure.png",
+    "live_failure_tokens_visible": 3273,
+    "map_background": "Historical 20260927_115748_257465; not this live attempt",
+    "temporary_fixture_shutdown_seconds": 240
+  },
+  "offline_controller": {
+    "synthetic": true,
+    "compiled_studies": 1,
+    "required_regions": 2,
+    "executed_synthetic_scenes": 3,
+    "model_request_slots_including_mock_initial": 4,
+    "final_review_complete": true,
+    "programme_consistency_audit_passed": true,
+    "raw_native_verification": false
+  },
+  "protected_state": {
+    "existing_services_preserved": [
+      8769,
+      8770,
+      8771
+    ],
+    "native_lock_available_before_attempt": true,
+    "historical_snapshots_unmodified": true,
+    "credential_handling": "Existing DPAPI credential used by the service for one authorized request; no plaintext key exposed to tools, logs, artifacts or Git"
+  },
+  "pending": [
+    "New compiler live acceptance",
+    "Latest multi-area and cross-study programme raw acceptance",
+    "Current portable release",
+    "Physical other-machine execution"
+  ],
+  "code_sha256": {
+    "traffic_agent/plan_compiler.py": "06bd135f35e7f74d7b016f8cc1c5d5745ea79e6e439c8d8308ba946bb94b921f",
+    "traffic_agent/natural_plan.py": "02f575f9f7adf2d85c550194fddfad810c89f003246b1778f0bd2b8105c803f2",
+    "traffic_agent/planning_attempt.py": "2c1dac7f71b98bb56428069553c4ca4315c58d8435826fe1a4f247f710923209",
+    "traffic_agent/static/planner_view.js": "7e2e32c4d073ba51f656b4521f91e7a2f4e2cdf2cdcf3f46e7573f99c3252d3b"
+  }
+}

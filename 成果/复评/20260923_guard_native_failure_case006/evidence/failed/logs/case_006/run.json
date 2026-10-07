@@ -1,0 +1,45 @@
+{
+  "scenario": "F:\\ITS比赛\\智能体实验\\challenges\\20260923_100537_263448\\scenarios\\case_006\\基础路网",
+  "status": "failed",
+  "started": "2026-09-23T02:24:17.061738+00:00",
+  "modules": [
+    {
+      "module": "M3DataRoadNetwork.exe",
+      "started": "2026-09-23T02:24:17.161776+00:00",
+      "status": "completed",
+      "pid": 38768,
+      "returncode": 0,
+      "elapsed_seconds": 5.031,
+      "finished": "2026-09-23T02:24:22.194733+00:00"
+    },
+    {
+      "module": "M3DataBusNetwork.exe",
+      "started": "2026-09-23T02:24:22.198237+00:00",
+      "status": "completed",
+      "pid": 45640,
+      "returncode": 0,
+      "elapsed_seconds": 0.797,
+      "finished": "2026-09-23T02:24:22.993842+00:00"
+    },
+    {
+      "module": "M3DataTrafficManage.exe",
+      "started": "2026-09-23T02:24:22.996466+00:00",
+      "status": "completed",
+      "pid": 11732,
+      "returncode": 0,
+      "elapsed_seconds": 4.25,
+      "finished": "2026-09-23T02:24:27.237508+00:00"
+    },
+    {
+      "module": "M6AssignVehicle.exe",
+      "started": "2026-09-23T02:24:27.241961+00:00",
+      "status": "failed",
+      "pid": 55260,
+      "returncode": 1,
+      "elapsed_seconds": 39.063,
+      "finished": "2026-09-23T02:25:06.311487+00:00"
+    }
+  ],
+  "error": "RuntimeError: M6AssignVehicle.exe失败，退出码1，错误流['stdout']，参见F:\\ITS比赛\\智能体实验\\challenges\\20260923_100537_263448\\logs\\case_006",
+  "finished": "2026-09-23T02:25:06.313319+00:00"
+}

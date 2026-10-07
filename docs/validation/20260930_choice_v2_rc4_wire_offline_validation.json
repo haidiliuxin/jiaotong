@@ -1,0 +1,19 @@
+{
+  "kind": "portable_wire_dedup_offline_validation_v1",
+  "archive": "工作材料/便携构建/20260930_智能规划_v2_RC4.zip",
+  "archive_sha256": "bf71f73e039dae6d3f2fd6a401339c3d6e9c30d6712a27251e61f7f4f2175ef6",
+  "code_commit_in_manifest": "bb1d849a6a057dce644b54f83e9084d4cf62e46b",
+  "manifest_sha256": "52365daa06b0cb54979815ecfa84c96bf25a7d349b3d79942a00af7f030c272e",
+  "immutable_files": 16162,
+  "extracted_root": "工作材料/便携异目录检查/20260930_v2_RC4",
+  "environment_record": "工作材料/便携异目录检查/20260930_v2_RC4_evidence/environment_verification.json",
+  "environment_status": "passed",
+  "replayed_record": "工作材料/便携异目录检查/20260930_v2_RC3/智能体实验/choice_v2_full_live_20260930_01/dispatches/20260930_021603_2b5b2f.json",
+  "read_only_programme_verifier_with_rc4_code": "passed",
+  "frozen_round_wire_bytes": [18079, 24551, 26510],
+  "bytes_saved_by_exact_duplicate_removal": [54, 866, 1494],
+  "negative_cost_retained_in_rounds": [2, 3],
+  "new_model_requests": 0,
+  "new_native_scenarios": 0,
+  "boundary": "Same-computer offline package and frozen-input checks. No observed provider token reduction, no RC4 model response, and no physical other-computer acceptance."
+}

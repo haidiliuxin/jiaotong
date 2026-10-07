@@ -1,0 +1,19 @@
+{
+  "kind": "rc9_v8_same_machine_portable_offline_validation_v1",
+  "archive": "工作材料/便携构建/20260930_智能规划_v2_RC9.zip",
+  "archive_sha256": "5470c4435579774cc5c33e6765b6b62092bec4e68214dc464cc06454625a3eab",
+  "code_commit_in_manifest": "180294c9436c9ce451817ae062f2faa64506a49b",
+  "manifest_sha256": "15625d8769442b84e279c20008f8ee65d32be0cd8f04491fc8130ffee1887ec2",
+  "immutable_files": 16162,
+  "environment_record": "工作材料/便携异目录检查/20260930_v2_RC9_evidence/environment_verification.json",
+  "environment_status": "passed",
+  "package_internal_protocol": "measured-conclusion-v8",
+  "package_internal_rc8_original_v7_read_only": "needs_review_zero_risk",
+  "package_internal_rc8_corrected_reply_v8_shadow": "accepted_no_detected_conflict",
+  "package_internal_rc5_original_v6_programme_verification": "passed_no_write",
+  "source_dispatches_unchanged": true,
+  "new_model_requests": 0,
+  "new_native_scenarios": 0,
+  "physical_other_computer_acceptance": "not_performed",
+  "meaning": "RC9 contains the v8 correction and passed same-machine isolated checks. The RC8 original remains incomplete; v8 has no new full provider-and-native acceptance run."
+}

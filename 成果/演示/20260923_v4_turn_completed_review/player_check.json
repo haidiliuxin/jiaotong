@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "url": "http://127.0.0.1:8794/播放说明.html",
+  "metadata": {
+    "duration": 138.2,
+    "width": 1440,
+    "height": 1000,
+    "cues": 8,
+    "trackMode": "showing",
+    "mediaError": null
+  },
+  "seekedTo": 55,
+  "errors": []
+}

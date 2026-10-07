@@ -1,0 +1,30 @@
+{
+  "created_at": "2026-09-27T08:39:44.008410+00:00",
+  "kind": "failed_live_planning_originals",
+  "source_commit": "96c2ed29491ec41674133868e315042ec045f1a7",
+  "composition_protocol": "traffic-plan-decision-v1",
+  "new_model_requests": 1,
+  "reported_tokens": 3296,
+  "new_native_scenes": 0,
+  "result": "failed_semantic_prerequisite",
+  "members": [
+    {
+      "path": "智能体实验/validation_regions_decision_contract_20260927/acceptance.json",
+      "bytes": 4523,
+      "sha256": "179d1e4d83215f9a27418f0e7eb2b32eccf7f98e5e687dba422d98f1d7b3a483"
+    },
+    {
+      "path": "智能体实验/validation_regions_decision_contract_20260927/plan.json",
+      "bytes": 2746,
+      "sha256": "264f5f38826756bd6c867382855f82a5da5354243de16c58e5e72e1ff56c6dfa"
+    },
+    {
+      "path": "智能体实验/planning_attempts/preview_3051c6d650d742d5a002022635d710de.json",
+      "bytes": 2414,
+      "sha256": "393e8ee232e190558d44fd3a993c10d6594a7b79b8e9eccc5ecec2cff48051da"
+    }
+  ],
+  "archive": "docs/validation/20260927_decision_contract_live_failure.zip",
+  "archive_sha256": "066053a5bcd3f8f7a91520870bf0d4c71c7e4d7e80f0dbf20a7e6a0a1e1e50f7",
+  "note": "Original files are copied byte for byte. No raw provider response, hidden reasoning, authorization header or credential is included."
+}

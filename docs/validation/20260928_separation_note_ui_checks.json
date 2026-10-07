@@ -1,0 +1,45 @@
+{
+  "passed": true,
+  "actual_paid_requests": 0,
+  "new_native_scenes": 0,
+  "overall_system_complete": false,
+  "source": {
+    "port": 8826,
+    "empty": true,
+    "capabilities_match": true,
+    "script_matches": true
+  },
+  "offline_preview": {
+    "port": 8827,
+    "write_status": 405,
+    "fixture_sha256": "5b946c45ba7935fef1dab73c701347b7882759901b61a162fece1d5244ccad7f"
+  },
+  "services": {
+    "source_pid": 34636,
+    "source_port": 8826,
+    "preview_pid": 45276,
+    "preview_port": 8827
+  },
+  "browser": {
+    "tool": "cua_repl",
+    "source_tab": 50,
+    "offline_tab": 49,
+    "blank_request": true,
+    "geometry_only": 32060,
+    "checked": [
+      "原H1与全部四项判据保留",
+      "可展开独立判定说明",
+      "实际检验仍只包含核心耗时",
+      "H2单独判定推荐资格",
+      "离线边界固定可见",
+      "空白大厅无执行记录"
+    ],
+    "console_errors": [],
+    "screenshot": "docs\\validation\\20260928_separation_note_ui.png",
+    "screenshot_sha256": "e08e94e516291dc6749a34ca8911c5bb646b8d7c89090665ef2b8fb44b6fb3c9"
+  },
+  "original_records_unchanged": 78,
+  "original_locks_bytes_unchanged": 7,
+  "rc18_still_failed": true,
+  "boundary": "Offline UI and APIs only, not a new live model/TranStar or physical other-machine acceptance."
+}

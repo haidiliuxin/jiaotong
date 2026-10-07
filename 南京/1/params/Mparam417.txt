@@ -1,0 +1,11 @@
+货运发生吸引量预测参数表确认Mparam417.TXT
+
+【输入文件】
+居住用地货运量信息:	LanduseResidential.TXT
+工业用地货运量信息	LanduseIndustrial.TXT
+商业用地货运量信息	LanduseCommercial.TXT
+交通设施用地货运量信息	LanduseTraffic.TXT
+物流仓储用地货运量信息	LanduseLogistics.TXT
+【输出文件】
+预测年货运发生总量：	TripGFreight.tsd
+预测年货运吸引总量：	TripAFreight.tsd

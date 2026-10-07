@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "completed_scenarios": 11,
+  "module_executions": 77,
+  "scope_sizes": {
+    "core": 3,
+    "neighbor": 39,
+    "network": 32060
+  },
+  "repeat_arrays_exact": {
+    "speed_kmh": true,
+    "flow_pcu_h": true,
+    "vc": true,
+    "time_s": true
+  },
+  "limitations": "只核验保存的实验与输入输出证据，不证明现实标定有效或全部草案已实现",
+  "active_search_audit": {
+    "protocol_frozen_before_first_run": true,
+    "raw_observations_verified": true,
+    "decisions_replayed": 10,
+    "chronological_decisions": true,
+    "budget_and_stopping_verified": true,
+    "complete_demand_recommendation_verified": true,
+    "report_exports_present": true
+  },
+  "portable_archive_verified": true
+}

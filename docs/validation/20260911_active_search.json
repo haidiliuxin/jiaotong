@@ -1,0 +1,141 @@
+{
+  "checked_at": "2026-09-10T19:02:46.840078+00:00",
+  "base_commit": "955f3693519917418cb8e34d77db7fa2a59ce30b",
+  "tests": {
+    "command": ".venv/Scripts/python.exe -m unittest discover -s tests -q",
+    "passed": 86,
+    "failed": 0,
+    "observed_at": "2026-09-11T02:45:32+08:00"
+  },
+  "javascript_syntax": [
+    "traffic_agent/static/app.js",
+    "traffic_agent/static/map.js"
+  ],
+  "browser": {
+    "url": "http://127.0.0.1:8769",
+    "configuration_preview": true,
+    "template_mode_switching": true,
+    "paired_map_selection": true,
+    "decision_trace_survives_scope_switch": true,
+    "running_not_finalized": true,
+    "completed_uniform_recommendation": true,
+    "migration_fallback_and_missing_cases": true,
+    "report_http_status": 200,
+    "console_errors_observed": [],
+    "worst_new_neighbor_overload_visible": true
+  },
+  "experiments": [
+    {
+      "id": "20260911_021806_858461",
+      "scenarios": 11,
+      "module_executions": 77,
+      "recommendation": "robust_p3_1",
+      "uniform_eligible_policies": 2,
+      "frontier_policies": 2,
+      "scope_sizes": {
+        "core": 3,
+        "neighbor": 39,
+        "network": 32060
+      },
+      "repeat_arrays_exact": {
+        "speed_kmh": true,
+        "flow_pcu_h": true,
+        "vc": true,
+        "time_s": true
+      },
+      "active_search_audit": {
+        "protocol_frozen_before_first_run": true,
+        "raw_observations_verified": true,
+        "decisions_replayed": 10,
+        "chronological_decisions": true,
+        "budget_and_stopping_verified": true,
+        "complete_demand_recommendation_verified": true,
+        "report_exports_present": true
+      },
+      "portable_archive_verified": true,
+      "stop": {
+        "version": "adaptive-paired-search-v1",
+        "stop_reason": "已测措施满足停止条件或已达到停车1级，停止增强",
+        "early_rejections": [
+          {
+            "policy": "robust_p1_1.1",
+            "failed_factor": 1.1,
+            "unmeasured_factors": [
+              1.0,
+              0.9
+            ]
+          }
+        ],
+        "candidates_started": 3,
+        "actual_runs": 11,
+        "unused_budget": 0
+      }
+    },
+    {
+      "id": "20260911_024329_7304a4",
+      "scenarios": 5,
+      "module_executions": 35,
+      "recommendation": "baseline",
+      "uniform_eligible_policies": 0,
+      "frontier_policies": 0,
+      "scope_sizes": {
+        "core": 3,
+        "neighbor": 41,
+        "network": 32060
+      },
+      "repeat_arrays_exact": {
+        "speed_kmh": true,
+        "flow_pcu_h": true,
+        "vc": true,
+        "time_s": true
+      },
+      "active_search_audit": {
+        "protocol_frozen_before_first_run": true,
+        "raw_observations_verified": true,
+        "decisions_replayed": 4,
+        "chronological_decisions": true,
+        "budget_and_stopping_verified": true,
+        "complete_demand_recommendation_verified": true,
+        "report_exports_present": true
+      },
+      "portable_archive_verified": true,
+      "stop": {
+        "version": "adaptive-paired-search-v1",
+        "stop_reason": "单路段措施仍违反约束，停止该方向搜索",
+        "early_rejections": [
+          {
+            "policy": "robust_p1_1.1",
+            "failed_factor": 1.1,
+            "unmeasured_factors": [
+              1.0
+            ]
+          },
+          {
+            "policy": "robust_p2_1.1",
+            "failed_factor": 1.1,
+            "unmeasured_factors": [
+              1.0
+            ]
+          }
+        ],
+        "candidates_started": 2,
+        "actual_runs": 5,
+        "unused_budget": 2
+      }
+    }
+  ],
+  "total_scenarios": 16,
+  "total_model_calls": 112,
+  "source_sha256": {
+    "traffic_agent/robust_search.py": "e356f6e981c3691bd1dc0990a2940c216b11a2bdd65b7bd41374530fc432dace",
+    "traffic_agent/search_audit.py": "f710a6ec260673ded90f3f12ef722a920cb2f0ecf4c8540adc0ac1de88b590af",
+    "traffic_agent/task.py": "a7135ad9f7dca886bb0a047b638a2a25bc0006dadde43b76830fc1e8e17b3a60",
+    "traffic_agent/agent.py": "7c406457867445425f469315026aadb14948a094437ebc6788775f84c900d6c7",
+    "traffic_agent/report.py": "b9b314bb100023fb6d386977cd9c7464a8a899cc47680e9a7fcb73c5d24522a4",
+    "traffic_agent/static/app.js": "e000df01807c7883a6129c88e7a8cc5df1f517f25651d29f0ea0d342378c3659",
+    "traffic_agent/static/map.js": "dbf9cc0f9b3dcab9fef54eb6f72d72fc58281c5c0cbe0726656ff05f0d5ff80d",
+    "traffic_agent/static/index.html": "636fc39e6a65ad9ea7316566e0341308697d5a97423e5930fabcf11799cf0182",
+    "scripts/verify_experiment.py": "c167ec5b9ff4439aaed3ebfa81fd2aa443fd508a2513c5055ab44522e30023d8",
+    "tests/test_robust_search.py": "b24ddcb9ec215beeac4477490b8fc2fbb1a52e6237c18022c0cd943495ea9500"
+  }
+}

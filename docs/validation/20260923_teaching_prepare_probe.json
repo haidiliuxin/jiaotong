@@ -1,0 +1,48 @@
+{
+  "version": "teaching-case4-input-preparation-probe-v1",
+  "checked_at": "2026-09-23T04:03:34.113380+00:00",
+  "source": "TranStar城市交通版V4.8 - 试用版/examples/教学案例4/基础路网",
+  "source_validation": {
+    "directed_links": 22363,
+    "zones": 1000,
+    "assignment": "multipath_incremental_5_iterations",
+    "equilibrium_claim": false
+  },
+  "source_input_sha256": "a563e0f3e51b8dee5bc6d5575ccbc38c61d2fbc618d2a0b395e8f21a0c4a50e0",
+  "probe_edit": {
+    "from_node": 11608,
+    "to_node": 11606,
+    "old_parking": 3,
+    "parking": 2
+  },
+  "demand_factor": 0.9,
+  "prepared_input_differences": [
+    "data/manageL.txt",
+    "result/ODCar.tsd"
+  ],
+  "original_car_od_sum": 293568.404,
+  "prepared_car_od_sum": 264211.5636,
+  "edits": [
+    {
+      "from_node": 11608,
+      "to_node": 11606,
+      "old_parking": 3,
+      "parking": 2,
+      "file": "data/manageL.txt",
+      "evidence": "parking.categories"
+    },
+    {
+      "file": "result/ODCar.tsd",
+      "factor": 0.9,
+      "sum_before_pcu_h": 293568.404,
+      "sum_after_pcu_h": 264211.5636,
+      "evidence": "demand.sensitivity",
+      "other_modes": "unchanged"
+    }
+  ],
+  "old_outputs_removed": true,
+  "source_inputs_unchanged": true,
+  "new_model_calls": 0,
+  "meaning": "仅用软件自带旧输出选择一条格式探针；不作为新任务选点或治理效果证据",
+  "script_sha256": "c646de9650fd8cd6cbf8d6680d3c0dbab0aa2587565c92b443391134130bd79d"
+}

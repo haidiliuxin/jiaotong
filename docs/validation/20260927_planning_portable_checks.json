@@ -1,0 +1,141 @@
+{
+  "stage": "planning_portable_candidate",
+  "created": "2026-09-27T07:57:36.674540+00:00",
+  "base_commit": "727696deac9d53c0f9ba22c4ae4b1da1ecd36b5a",
+  "runtime_commit": "b528c986cad89604ab6166886f8f32d6bea87c9c",
+  "overall_complete": false,
+  "live_api": {
+    "status": "failed",
+    "source_commit": "727696deac9d53c0f9ba22c4ae4b1da1ecd36b5a",
+    "requests": 1,
+    "known_tokens": 2989,
+    "native_scenarios": 0,
+    "retries": 0,
+    "rule_fallback": false,
+    "response_model": "deepseek-v4-flash-0731",
+    "proposal": {
+      "status": "unvalidated",
+      "goal": "停车干扰拥堵区域比较",
+      "reason": "推理",
+      "studies": [],
+      "missing": []
+    },
+    "root_cause": "unresolved",
+    "failure_archive": {
+      "path": "docs/validation/20260927_portable_stage_live_failure.zip",
+      "sha256": "7e9ff2b9b171847b3166f608039d797b3fcb6689c19d6696f9f53e1498e5117e",
+      "originals": [
+        {
+          "path": "智能体实验/validation_regions_compiled_20260927/acceptance.json",
+          "sha256": "31a769b00c56850a99d386977c52732c90feee12aa7e8b5651709152716bbf0e",
+          "bytes": 2145
+        },
+        {
+          "path": "智能体实验/planning_attempts/preview_b7e949ab19d04b668a08989e657a8f4a.json",
+          "sha256": "7ff91dfedfced57b5704f54387ed1fd0fe6f6c20509b21c1604ae2c74ccf60ec",
+          "bytes": 1154
+        }
+      ]
+    }
+  },
+  "local_checks": {
+    "python_tests": 321,
+    "python_passed": true,
+    "node_checks": [
+      "tests/test_dispatch_ui.cjs"
+    ],
+    "javascript_syntax_files": [
+      "traffic_agent/static/app.js",
+      "traffic_agent/static/dispatch.js"
+    ],
+    "all_passed": true,
+    "new_live_calls_after_initial_failure": 0
+  },
+  "packages": [
+    {
+      "version": "RC1",
+      "path": "工作材料/便携构建/20260927_智能规划_RC1.zip",
+      "bytes": 878524473,
+      "sha256": "19551d069799b939f1d32cd000f5638bee422dd9bfb86af576a8215d77ec15e4",
+      "code_commit": "5693eb42f125a5c1c795145ea5ce48726c590a0f",
+      "manifest_sha256": "6102e3eff04cf417c3febbbb1954b8871f6f40f915884fcd452771e68e329fa1",
+      "files": 16140,
+      "release_status": "candidate_pending_live_acceptance",
+      "credential_scan": {
+        "passed": true,
+        "application_files": 111,
+        "scope": "应用源码、配置、示例、脚本及使用说明；本机用户配置目录不进入构建源"
+      },
+      "environment": {
+        "path": "智能体实验/portable_acceptance/20260927_planning_rc1_environment/environment_verification.json",
+        "sha256": "5586423ff8967d955dcf5f80c03b73cce59f55897fef30ac52e00e0621fa8eae",
+        "status": "passed",
+        "commands": 8,
+        "real_wrapper_compile": true,
+        "model_calls": 0,
+        "native_scenarios": 0
+      },
+      "is_latest": false
+    },
+    {
+      "version": "RC2",
+      "path": "工作材料/便携构建/20260927_智能规划_RC2.zip",
+      "bytes": 878524615,
+      "sha256": "2fec144a5bb98bffee05cf86a4f609f2503750e06b915c6317c37c66a5b3de98",
+      "code_commit": "b528c986cad89604ab6166886f8f32d6bea87c9c",
+      "manifest_sha256": "0784c0d831d2af056312dfae296e948f38ffbe0cd4fab06973dc9dadefb7d52e",
+      "files": 16140,
+      "release_status": "candidate_pending_live_acceptance",
+      "credential_scan": {
+        "passed": true,
+        "application_files": 111,
+        "scope": "应用源码、配置、示例、脚本及使用说明；本机用户配置目录不进入构建源"
+      },
+      "environment": {
+        "path": "智能体实验/portable_acceptance/20260927_planning_rc2_environment/environment_verification.json",
+        "sha256": "4f7884aa02d270a350e00c10645212d513ea063143422e411893a74cc5196768",
+        "status": "passed",
+        "commands": 8,
+        "real_wrapper_compile": true,
+        "model_calls": 0,
+        "native_scenarios": 0
+      },
+      "is_latest": true
+    }
+  ],
+  "browser_checks": "docs/validation/20260927_planning_portable_rc2_browser_checks.json",
+  "post_browser_integrity": {
+    "path": "docs/validation/20260927_planning_portable_rc2_after_browser.json",
+    "sha256": "4e9bc2e58fdb1e5890f606217c85dcf8193fc096d0a10c67dec434ded2a11de3",
+    "passed": true
+  },
+  "runtime": {
+    "active_dispatches": [],
+    "native_lock_available": true,
+    "preserved_ports": [
+      8769,
+      8770,
+      8771,
+      8772
+    ],
+    "preview_port": 8772,
+    "temporary_8791_stopped": true,
+    "credentials_updated": false
+  },
+  "source_sha256": {
+    "scripts/build_portable.py": "ca7a2a0f635c025faa4195386034367f3df1ae0336fc99abe78a9c26e4f22660",
+    "scripts/validate_portable_environment.py": "4dac9708c34e73225f445948817682af762aa29daac38e9ac015c3b8f73ab0e3",
+    "traffic_agent/portable.py": "3ec4190b9012fdb64d34c2d72f1b85f6d4dbd60d42cca0ed43d9b38e518fd0ac",
+    "tests/test_portable.py": "da8f5caecca580085fb157ae60516eb27afc8f2c1ccece5e7dca40f87453d13e",
+    "traffic_agent/static/app.js": "78218145a7a90300a268dbe5623dba086669e36b5daf0a2ec236db80f598cecd",
+    "traffic_agent/static/dispatch.js": "b28620e512e001dc18d05bc4542e64f7ca346c8bca26ce07406e3f5cf098456e"
+  },
+  "pending": [
+    "empty_initial_model_proposal_root_cause",
+    "latest_multi_region_model_native_acceptance",
+    "oneway_target_selection_model_native_acceptance",
+    "programme_review_model_native_acceptance",
+    "portable_real_traffic_acceptance",
+    "separate_physical_machine_acceptance"
+  ]
+}

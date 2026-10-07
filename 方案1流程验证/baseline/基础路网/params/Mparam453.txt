@@ -1,0 +1,5 @@
+Mparam453.txt—用于交通分配的步行自行车OD矩阵分析
+
+OD矩阵内容	输入矩阵名称	时段系数	输出矩阵名称
+步行交通OD矩阵	DistribWalk.tsd 	0.1	ODWalk.tsd
+自行车交通OD矩阵	DistribBic.tsd	0.1	ODBic.tsd

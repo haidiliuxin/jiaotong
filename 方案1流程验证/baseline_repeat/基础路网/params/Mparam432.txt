@@ -1,0 +1,8 @@
+Mparam432.TXT-GRAVITY模型参数表
+【输入文件】
+距离矩阵	MatrixDist.tsd
+交通区发生量	TripGResiPopu.tsd
+交通区吸引量	TripAResiPopu.tsd
+【输出文件】
+O-D分布矩阵	Distribution.tsd
+重力模型参数值	0

@@ -1,0 +1,24 @@
+{
+  "kind": "incomplete_portable_programme_snapshot_v1",
+  "programme_status": "incomplete",
+  "validator_status": "failed",
+  "source_commit": "adab37fd08f9e5c04379ce1b16f3b59a6431ab57",
+  "job_ids": [
+    "20260927_200218_bdef1b",
+    "20260927_200218_88621a"
+  ],
+  "model_calls": 3,
+  "known_tokens": 19484,
+  "native_scenes": 2,
+  "native_modules": 14,
+  "governance_executed": true,
+  "governance_eligible": false,
+  "recommendation": "baseline",
+  "exact_final_rejection_unknown": true,
+  "meaning": "原件字节快照：治理实际发生但候选不合格，模型最终复核被拒，第二组未执行。不是完整任务或新版修复通过证明。runtime副本保留在原目录，未入包。",
+  "original_files": 1188,
+  "all_original_bytes_equal": true,
+  "zip_bytes": 99520032,
+  "zip_sha256": "01283bd906a58bff87c2cfbd8ca8212411b2a67d6da55284b3825a9138b07028",
+  "zip_path": "20260927_rc3_mixed_incomplete.zip"
+}

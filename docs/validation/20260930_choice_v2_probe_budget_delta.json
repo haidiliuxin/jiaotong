@@ -1,0 +1,23 @@
+{
+  "kind": "project_recorded_usage_delta_v1",
+  "baseline_file": "docs/validation/20260930_v6_portable_full_budget_delta.json",
+  "scope": "Project-retained provider responses, not a complete account bill. No credential, prompt body, or model reply body is copied into this ledger.",
+  "model_only_choice_probe": {
+    "record": "智能体实验/choice_v2_probe_20260930_01/probe.json",
+    "requests": 1,
+    "known_tokens": 14503,
+    "provider_response_id": "chatcmpl-6abbfe27e2b25fb55024d783",
+    "native_scenarios": 0,
+    "status": "accepted",
+    "choice_protocol": "observed-choice-basis-v2",
+    "source_dispatch_unchanged": true
+  },
+  "locally_recorded_cumulative_conservative": {
+    "requests": 93,
+    "known_tokens": 792666,
+    "request_limit": 684,
+    "known_token_limit": 4132560,
+    "remaining_requests": 591,
+    "remaining_known_tokens": 3339894
+  }
+}

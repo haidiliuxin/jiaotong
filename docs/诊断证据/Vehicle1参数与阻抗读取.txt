@@ -1,0 +1,161 @@
+Read-only excerpts; binary SHA256 5ea5b879b462a40bbe33ceb89b8fc23da1e286626946c22fe34ba651911e26a9
+
+PE x64 image base 0x140000000; rdata raw 0xf000, VA 0x140010000
+
+635 filename VA 0x140010778; reader seven int extractions + one double; slots match 631 ordering.
+
+Selected fourth algorithm flag uses constant VA 0x1400113f0 = 3.3. Ljt_ and Rwm_ names constructed in code.
+
+
+M6AssignVehicle1.exe:     file format pei-x86-64
+
+
+Disassembly of section .text:
+
+0000000140003063 <.text+0x2063>:
+   140003063:	48 8b 1d 6e 2b 01 00 	mov    rbx,QWORD PTR [rip+0x12b6e]        # 0x140015bd8
+   14000306a:	4c 8b c3             	mov    r8,rbx
+   14000306d:	48 8d 8d b0 04 00 00 	lea    rcx,[rbp+0x4b0]
+   140003074:	e8 f7 a8 00 00       	call   0x14000d970
+   140003079:	4c 8b c3             	mov    r8,rbx
+   14000307c:	48 8b c8             	mov    rcx,rax
+   14000307f:	e8 ec a8 00 00       	call   0x14000d970
+   140003084:	48 8b c8             	mov    rcx,rax
+   140003087:	48 8d 15 2e 2b 01 00 	lea    rdx,[rip+0x12b2e]        # 0x140015bbc
+   14000308e:	ff 15 dc d0 00 00    	call   QWORD PTR [rip+0xd0dc]        # 0x140010170
+   140003094:	4c 8b 05 3d 2b 01 00 	mov    r8,QWORD PTR [rip+0x12b3d]        # 0x140015bd8
+   14000309b:	48 8d 8d b0 04 00 00 	lea    rcx,[rbp+0x4b0]
+   1400030a2:	e8 c9 a8 00 00       	call   0x14000d970
+   1400030a7:	48 8b c8             	mov    rcx,rax
+   1400030aa:	48 8d 15 6b 2a 01 00 	lea    rdx,[rip+0x12a6b]        # 0x140015b1c
+   1400030b1:	ff 15 b9 d0 00 00    	call   QWORD PTR [rip+0xd0b9]        # 0x140010170
+   1400030b7:	4c 8b 05 1a 2b 01 00 	mov    r8,QWORD PTR [rip+0x12b1a]        # 0x140015bd8
+   1400030be:	48 8d 8d b0 04 00 00 	lea    rcx,[rbp+0x4b0]
+   1400030c5:	e8 a6 a8 00 00       	call   0x14000d970
+   1400030ca:	48 8b c8             	mov    rcx,rax
+   1400030cd:	48 8d 15 30 2a 01 00 	lea    rdx,[rip+0x12a30]        # 0x140015b04
+   1400030d4:	ff 15 96 d0 00 00    	call   QWORD PTR [rip+0xd096]        # 0x140010170
+   1400030da:	4c 8b 05 f7 2a 01 00 	mov    r8,QWORD PTR [rip+0x12af7]        # 0x140015bd8
+   1400030e1:	48 8d 8d b0 04 00 00 	lea    rcx,[rbp+0x4b0]
+   1400030e8:	e8 83 a8 00 00       	call   0x14000d970
+   1400030ed:	48 8b c8             	mov    rcx,rax
+   1400030f0:	48 8d 15 cd 29 01 00 	lea    rdx,[rip+0x129cd]        # 0x140015ac4
+   1400030f7:	ff 15 73 d0 00 00    	call   QWORD PTR [rip+0xd073]        # 0x140010170
+   1400030fd:	4c 8b 05 d4 2a 01 00 	mov    r8,QWORD PTR [rip+0x12ad4]        # 0x140015bd8
+   140003104:	48 8d 8d b0 04 00 00 	lea    rcx,[rbp+0x4b0]
+   14000310b:	e8 60 a8 00 00       	call   0x14000d970
+   140003110:	48 8b c8             	mov    rcx,rax
+   140003113:	48 8d 15 76 2a 01 00 	lea    rdx,[rip+0x12a76]        # 0x140015b90
+   14000311a:	ff 15 50 d0 00 00    	call   QWORD PTR [rip+0xd050]        # 0x140010170
+   140003120:	4c 8b 05 b1 2a 01 00 	mov    r8,QWORD PTR [rip+0x12ab1]        # 0x140015bd8
+   140003127:	48 8d 8d b0 04 00 00 	lea    rcx,[rbp+0x4b0]
+   14000312e:	e8 3d a8 00 00       	call   0x14000d970
+   140003133:	48 8b c8             	mov    rcx,rax
+   140003136:	48 8d 15 bf 29 01 00 	lea    rdx,[rip+0x129bf]        # 0x140015afc
+   14000313d:	ff 15 2d d0 00 00    	call   QWORD PTR [rip+0xd02d]        # 0x140010170
+   140003143:	4c 8b 05 8e 2a 01 00 	mov    r8,QWORD PTR [rip+0x12a8e]        # 0x140015bd8
+   14000314a:	48 8d 8d b0 04 00 00 	lea    rcx,[rbp+0x4b0]
+   140003151:	e8 1a a8 00 00       	call   0x14000d970
+   140003156:	48 8b c8             	mov    rcx,rax
+   140003159:	48 8d 15 98 29 01 00 	lea    rdx,[rip+0x12998]        # 0x140015af8
+   140003160:	ff 15 0a d0 00 00    	call   QWORD PTR [rip+0xd00a]        # 0x140010170
+   140003166:	4c 8b 05 6b 2a 01 00 	mov    r8,QWORD PTR [rip+0x12a6b]        # 0x140015bd8
+   14000316d:	48 8d 8d b0 04 00 00 	lea    rcx,[rbp+0x4b0]
+   140003174:	e8 f7 a7 00 00       	call   0x14000d970
+   140003179:	48 8b c8             	mov    rcx,rax
+   14000317c:	48 8d 15 15 2a 01 00 	lea    rdx,[rip+0x12a15]        # 0x140015b98
+   140003183:	ff 15 ef cf 00 00    	call   QWORD PTR [rip+0xcfef]        # 0x140010178
+
+
+
+M6AssignVehicle1.exe:     file format pei-x86-64
+
+
+Disassembly of section .text:
+
+0000000140003217 <.text+0x2217>:
+   140003217:	44 8b 1d de 28 01 00 	mov    r11d,DWORD PTR [rip+0x128de]        # 0x140015afc
+   14000321e:	44 8b 15 6b 29 01 00 	mov    r10d,DWORD PTR [rip+0x1296b]        # 0x140015b90
+   140003225:	43 8d 04 13          	lea    eax,[r11+r10*1]
+   140003229:	44 8b 0d 94 28 01 00 	mov    r9d,DWORD PTR [rip+0x12894]        # 0x140015ac4
+   140003230:	41 03 c1             	add    eax,r9d
+   140003233:	44 8b 05 ca 28 01 00 	mov    r8d,DWORD PTR [rip+0x128ca]        # 0x140015b04
+   14000323a:	41 03 c0             	add    eax,r8d
+   14000323d:	8b 15 d9 28 01 00    	mov    edx,DWORD PTR [rip+0x128d9]        # 0x140015b1c
+   140003243:	03 c2                	add    eax,edx
+   140003245:	8b 0d 71 29 01 00    	mov    ecx,DWORD PTR [rip+0x12971]        # 0x140015bbc
+   14000324b:	03 c1                	add    eax,ecx
+   14000324d:	89 05 85 28 01 00    	mov    DWORD PTR [rip+0x12885],eax        # 0x140015ad8
+   140003253:	83 f8 01             	cmp    eax,0x1
+   140003256:	0f 85 8d 29 00 00    	jne    0x140005be9
+   14000325c:	3b c8                	cmp    ecx,eax
+   14000325e:	75 13                	jne    0x140003273
+   140003260:	f2 0f 10 05 98 e1 00 	movsd  xmm0,QWORD PTR [rip+0xe198]        # 0x140011400
+   140003267:	00 
+   140003268:	89 05 92 28 01 00    	mov    DWORD PTR [rip+0x12892],eax        # 0x140015b00
+   14000326e:	e9 81 00 00 00       	jmp    0x1400032f4
+   140003273:	83 fa 01             	cmp    edx,0x1
+   140003276:	75 16                	jne    0x14000328e
+   140003278:	f2 0f 10 05 80 e1 00 	movsd  xmm0,QWORD PTR [rip+0xe180]        # 0x140011400
+   14000327f:	00 
+   140003280:	8b 05 72 28 01 00    	mov    eax,DWORD PTR [rip+0x12872]        # 0x140015af8
+   140003286:	89 05 74 28 01 00    	mov    DWORD PTR [rip+0x12874],eax        # 0x140015b00
+   14000328c:	eb 70                	jmp    0x1400032fe
+   14000328e:	41 83 f8 01          	cmp    r8d,0x1
+   140003292:	75 0c                	jne    0x1400032a0
+   140003294:	44 89 05 65 28 01 00 	mov    DWORD PTR [rip+0x12865],r8d        # 0x140015b00
+   14000329b:	41 8b c0             	mov    eax,r8d
+   14000329e:	eb 4c                	jmp    0x1400032ec
+   1400032a0:	41 83 f9 01          	cmp    r9d,0x1
+   1400032a4:	75 16                	jne    0x1400032bc
+   1400032a6:	f2 0f 10 05 42 e1 00 	movsd  xmm0,QWORD PTR [rip+0xe142]        # 0x1400113f0
+   1400032ad:	00 
+   1400032ae:	8b 05 44 28 01 00    	mov    eax,DWORD PTR [rip+0x12844]        # 0x140015af8
+   1400032b4:	89 05 46 28 01 00    	mov    DWORD PTR [rip+0x12846],eax        # 0x140015b00
+   1400032ba:	eb 42                	jmp    0x1400032fe
+   1400032bc:	41 83 fa 01          	cmp    r10d,0x1
+   1400032c0:	75 15                	jne    0x1400032d7
+   1400032c2:	f2 0f 10 05 36 e1 00 	movsd  xmm0,QWORD PTR [rip+0xe136]        # 0x140011400
+   1400032c9:	00 
+   1400032ca:	b8 64 00 00 00       	mov    eax,0x64
+   1400032cf:	89 05 2b 28 01 00    	mov    DWORD PTR [rip+0x1282b],eax        # 0x140015b00
+   1400032d5:	eb 1d                	jmp    0x1400032f4
+   1400032d7:	41 83 fb 01          	cmp    r11d,0x1
+   1400032db:	0f 85 08 29 00 00    	jne    0x140005be9
+   1400032e1:	b8 64 00 00 00       	mov    eax,0x64
+   1400032e6:	89 05 14 28 01 00    	mov    DWORD PTR [rip+0x12814],eax        # 0x140015b00
+   1400032ec:	f2 0f 10 05 fc e0 00 	movsd  xmm0,QWORD PTR [rip+0xe0fc]        # 0x1400113f0
+   1400032f3:	00 
+   1400032f4:	c7 05 fa 27 01 00 01 	mov    DWORD PTR [rip+0x127fa],0x1        # 0x140015af8
+   1400032fb:	00 00 00 
+   1400032fe:	f2 0f 11 05 ea 27 01 	movsd  QWORD PTR [rip+0x127ea],xmm0        # 0x140015af0
+   140003305:	00 
+
+
+
+M6AssignVehicle1.exe:     file format pei-x86-64
+
+
+Disassembly of section .text:
+
+0000000140007279 <.text+0x6279>:
+   140007279:	45 33 ed             	xor    r13d,r13d
+   14000727c:	0f 57 c0             	xorps  xmm0,xmm0
+   14000727f:	0f 11 45 a8          	movups XMMWORD PTR [rbp-0x58],xmm0
+   140007283:	48 c7 45 b8 04 00 00 	mov    QWORD PTR [rbp-0x48],0x4
+   14000728a:	00 
+   14000728b:	48 c7 45 c0 0f 00 00 	mov    QWORD PTR [rbp-0x40],0xf
+   140007292:	00 
+   140007293:	c7 45 a8 4c 6a 74 5f 	mov    DWORD PTR [rbp-0x58],0x5f746a4c
+   14000729a:	0f 11 45 c8          	movups XMMWORD PTR [rbp-0x38],xmm0
+   14000729e:	48 c7 45 d8 04 00 00 	mov    QWORD PTR [rbp-0x28],0x4
+   1400072a5:	00 
+   1400072a6:	48 c7 45 e0 0f 00 00 	mov    QWORD PTR [rbp-0x20],0xf
+   1400072ad:	00 
+   1400072ae:	c7 45 c8 52 77 6d 5f 	mov    DWORD PTR [rbp-0x38],0x5f6d7752
+   1400072b5:	4c 8d 3d 14 de 00 00 	lea    r15,[rip+0xde14]        # 0x1400150d0
+   1400072bc:	4d 8b c7             	mov    r8,r15
+   1400072bf:	48 8d 55 a8          	lea    rdx,[rbp-0x58]
+   1400072c3:	48 8d 4c 24 50       	lea    rcx,[rsp+0x50]
+   1400072c8:	e8 43 5b 00 00       	call   0x14000ce10
+   1400072cd:	48 8b c8             	mov    rcx,rax

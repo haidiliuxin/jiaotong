@@ -1,0 +1,3 @@
+非机动车出行最短时间矩阵分析参数表Mparam345.TXT	
+【输入文件】交通网络交通阻抗文件名	TmDsgnLinkBic.tsd 
+【输出文件】最短路矩阵文件名	MatrixTmDsgnBic.tsd 

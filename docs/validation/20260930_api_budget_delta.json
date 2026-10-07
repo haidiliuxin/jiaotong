@@ -1,0 +1,29 @@
+{
+  "kind": "project_recorded_usage_delta_v1",
+  "baseline_file": "docs/validation/20260929_study_depth_api_budget_delta.json",
+  "scope": "Locally retained project responses only, deduplicated by provider response_id against the prior ledger and current runs. This is not a complete provider account bill. No credentials or prompts are included.",
+  "console_encoding_failure": {
+    "dispatch": "智能体实验/study_depth_workspace_20260930_01/dispatches/20260930_001018_8e8e8d.json",
+    "requests": 4,
+    "known_tokens": 47214,
+    "native_scenarios": 2,
+    "status": "failed"
+  },
+  "completed_comparison": {
+    "dispatch": "智能体实验/study_depth_workspace_20260930_02/dispatches/20260930_002027_c6389a.json",
+    "requests": 5,
+    "known_tokens": 62464,
+    "native_scenarios": 3,
+    "automatic_status": "completed",
+    "independent_semantic_review": "needs_review"
+  },
+  "new_provider_id_overlap_with_prior_or_between_runs": 0,
+  "locally_verifiable_cumulative": {
+    "requests": 85,
+    "known_tokens": 685856,
+    "request_limit": 684,
+    "known_token_limit": 4132560,
+    "remaining_requests": 599,
+    "remaining_known_tokens": 3446704
+  }
+}

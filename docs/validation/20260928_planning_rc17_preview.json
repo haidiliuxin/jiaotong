@@ -1,0 +1,45 @@
+{
+  "passed": true,
+  "kind": "portable_candidate_zero_paid_preview",
+  "port": 8822,
+  "source_commit": "6c58b300ab2a66913d36b1020d919b453e6cf60e",
+  "archive_sha256": "e9f4683587b5f30ca5ed887511e285304c72ff0f35bd6a35918dc709bdfcd61d",
+  "manifest_sha256": "004668e75c3adf58dea6fa6e7a81412a825905a64961b33b959f93ddab4c3c86",
+  "loaded_capabilities_match": true,
+  "assets_sha256": {
+    "app.js": "b64af4e098964e2a8d40ed0f848730ec9b788d74a0c53d66d50aae3f56c656f1",
+    "planner_view.js": "eb527fe65b8837f67ad81f4fa9156a6ff554d1da3309edb8dc64b15834ec0423",
+    "choice_view.js": "c22bffc4cda21576f470b2de76079fe422a4c1eb21fac68bb3e71e4c78b5ed46",
+    "map_view.js": "80b0e556d9cc4d06d2d78225b899d74430aa00bca687791b25f53b60bff75ea5"
+  },
+  "empty_jobs": true,
+  "empty_dispatches": true,
+  "empty_attempts": true,
+  "local_public_settings": {
+    "base_url": "https://tokenrhythm.studio/v1",
+    "wire_api": "chat_completions",
+    "model": "deepseek-v4-flash",
+    "key_configured": true
+  },
+  "credentials_read_or_exported": false,
+  "paid_requests": 0,
+  "new_native_scenes": 0,
+  "native_process_check": {
+    "processes": [],
+    "checked_at": "2026-09-28T06:52:57.5995338+08:00",
+    "native_count": 0
+  },
+  "old_records_unchanged": 74,
+  "old_locks_bytes_unchanged": 7,
+  "rc16_failure_originals_unchanged": true,
+  "latest_actual_attempt": {
+    "candidate": "RC16",
+    "status": "failed",
+    "model_calls": 1,
+    "tokens": 6592,
+    "native_scenes": 0
+  },
+  "current_candidate_live_acceptance": "pending",
+  "physical_other_machine": false,
+  "overall_system_complete": false
+}

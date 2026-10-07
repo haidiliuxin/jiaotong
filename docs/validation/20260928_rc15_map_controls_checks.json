@@ -1,0 +1,100 @@
+{
+  "kind": "readonly_real_map_regression_not_new_simulation",
+  "passed": true,
+  "source_data_commit": "dee47137d76eb07721ad5a0aef186901ead06af5",
+  "runs": [
+    {
+      "job_id": "20260928_041115_874b70",
+      "run": "baseline",
+      "measured_links": 32060,
+      "old_treated_links": 0,
+      "repaired_treated_links": 0,
+      "motor_closed_links": 0,
+      "marked_directions": [],
+      "unchanged_metrics_geometry_and_scope": true,
+      "closure_responses": []
+    },
+    {
+      "job_id": "20260928_041115_874b70",
+      "run": "parking_1",
+      "measured_links": 32060,
+      "old_treated_links": 2,
+      "repaired_treated_links": 2,
+      "motor_closed_links": 0,
+      "marked_directions": [],
+      "unchanged_metrics_geometry_and_scope": true,
+      "closure_responses": []
+    },
+    {
+      "job_id": "20260928_041115_fa9f86",
+      "run": "baseline",
+      "measured_links": 32060,
+      "old_treated_links": 0,
+      "repaired_treated_links": 0,
+      "motor_closed_links": 0,
+      "marked_directions": [],
+      "unchanged_metrics_geometry_and_scope": true,
+      "closure_responses": []
+    },
+    {
+      "job_id": "20260928_041115_fa9f86",
+      "run": "S1_parking",
+      "measured_links": 32060,
+      "old_treated_links": 2,
+      "repaired_treated_links": 2,
+      "motor_closed_links": 0,
+      "marked_directions": [],
+      "unchanged_metrics_geometry_and_scope": true,
+      "closure_responses": []
+    },
+    {
+      "job_id": "20260928_041115_fa9f86",
+      "run": "S2_oneway",
+      "measured_links": 32060,
+      "old_treated_links": 0,
+      "repaired_treated_links": 1,
+      "motor_closed_links": 1,
+      "marked_directions": [
+        [
+          3237,
+          3236
+        ]
+      ],
+      "unchanged_metrics_geometry_and_scope": true,
+      "closure_responses": [
+        "passed"
+      ]
+    },
+    {
+      "job_id": "20260928_041115_fa9f86",
+      "run": "S3_combined",
+      "measured_links": 32060,
+      "old_treated_links": 2,
+      "repaired_treated_links": 2,
+      "motor_closed_links": 1,
+      "marked_directions": [
+        [
+          3237,
+          3236
+        ]
+      ],
+      "unchanged_metrics_geometry_and_scope": true,
+      "closure_responses": [
+        "passed"
+      ]
+    }
+  ],
+  "original_state_hashes": {
+    "工作材料\\便携异目录检查\\20260928 智能规划 RC15\\智能体实验\\dispatches\\20260928_041115_874b70.json": "166b56aff7a16d2c8484ad8d93e2e7e038d1af153875bd236305ad2ca9b5ae3b",
+    "工作材料\\便携异目录检查\\20260928 智能规划 RC15\\智能体实验\\jobs\\20260928_041115_874b70\\state.json": "c44b350e9d3d1a80fa327b7e6c78dc0d8782bd887e1e8889826d6e154f11a8ec",
+    "工作材料\\便携异目录检查\\20260928 智能规划 RC15\\智能体实验\\jobs\\20260928_041115_fa9f86\\state.json": "5dcbac273f43a84b22a3f329c2515a5fe21597e9b496bfd7d86d711d378e104b"
+  },
+  "raw_records_unchanged": true,
+  "new_model_calls": 0,
+  "new_native_scenes": 0,
+  "current_source_hashes": {
+    "traffic_agent\\map_data.py": "24fe621171fbf08d67e20656d6ad7680d0ac298dca1ec8e70de9a886332a6451",
+    "traffic_agent\\static\\map.js": "449e19a2e51c086267726cd04e047b7312b2f43a7fbc84a5d1549b8aae97d841",
+    "traffic_agent\\static\\map_view.js": "80b0e556d9cc4d06d2d78225b899d74430aa00bca687791b25f53b60bff75ea5"
+  }
+}

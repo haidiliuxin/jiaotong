@@ -1,0 +1,30 @@
+{
+  "kind": "initial_wording_false_rejection",
+  "source_commit": "df946787d0e2fd867b8d9d0b7eda4aea06a64d6c",
+  "status": "failed",
+  "model_calls": 1,
+  "known_tokens": 6696,
+  "native_scenes": 0,
+  "top_level_modules": 0,
+  "original_question": "七东线停车治理至少一个候选方向的核心耗时低于其无治理新基准，且判定与是否通过推荐约束分开",
+  "criterion": {
+    "policies": "parking",
+    "quantifier": "any",
+    "studies": [
+      1
+    ],
+    "test": "core_time_decrease"
+  },
+  "error": "初始假设判据未通过：H1：假设与事前判据冲突：核心耗时判据不包含推荐资格或周边约束；复合问题须拆开，不能用一个指标回答两个条件。",
+  "diagnosis": "原文明确说两项分开判定；v1文本检查把说明中的“通过推荐约束”当成了额外肯定条件，误拒绝初始提议。",
+  "followup": "以有界句式区分独立判定说明与实际主张，新版本另行标记；旧v1协议和原失败保持，不能事后改成线上通过。",
+  "original_records_unchanged": 77,
+  "original_locks_free_and_unchanged": 7,
+  "further_paid_calls_after_failure": 0,
+  "physical_other_machine": false,
+  "overall_system_complete": false,
+  "original_files": 8,
+  "original_bytes_unchanged": true,
+  "zip_sha256": "70f7dec256f0c72e04a74c49bdc2beaeeed10677dbc9ad0a2d48e713dae924fd",
+  "zip_bytes": 812842
+}

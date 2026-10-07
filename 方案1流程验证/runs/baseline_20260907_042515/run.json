@@ -1,0 +1,155 @@
+{
+  "scenario": "F:\\ITS比赛\\方案1流程验证\\baseline\\基础路网",
+  "started": "2026-09-07T04:25:15.072637",
+  "modules": [
+    {
+      "module": "M3DataRoadNetwork.exe",
+      "started": "2026-09-07T04:25:15.129151",
+      "status": "exited",
+      "pid": 44808,
+      "returncode": 0,
+      "elapsed_seconds": 4.875,
+      "finished": "2026-09-07T04:25:20.004633"
+    }
+  ],
+  "finished": "2026-09-07T04:25:20.064651",
+  "changed_files": {
+    "cache\\aci.dat": [
+      1788726319363376000,
+      224536
+    ],
+    "cache\\cclw.dat": [
+      1788726319363376000,
+      117360
+    ],
+    "cache\\class.dat": [
+      1788726318279474900,
+      98943
+    ],
+    "cache\\cond.dat": [
+      1788726318279474900,
+      98943
+    ],
+    "cache\\ds.dat": [
+      1788726318279474900,
+      98943
+    ],
+    "cache\\ft.dat": [
+      1788726318279474900,
+      430019
+    ],
+    "cache\\f_t.dat": [
+      1788726315652136900,
+      3
+    ],
+    "cache\\inclass.dat": [
+      1788726319986993700,
+      98943
+    ],
+    "cache\\inconn_num.dat": [
+      1788726316837000300,
+      36045
+    ],
+    "cache\\ingeom.dat": [
+      1788726316763132900,
+      430019
+    ],
+    "cache\\length.dat": [
+      1788726318279474900,
+      179130
+    ],
+    "cache\\link-r.dat": [
+      1788726316515727700,
+      98943
+    ],
+    "cache\\linkname.dat": [
+      1788726318279474900,
+      294985
+    ],
+    "cache\\link_end.dat": [
+      1788726317232940300,
+      198495
+    ],
+    "cache\\link_sta.dat": [
+      1788726317232940300,
+      198509
+    ],
+    "cache\\Lmanage2.dat": [
+      1788726318279474900,
+      98943
+    ],
+    "cache\\lparm_bic.dat": [
+      1788726315652136900,
+      0
+    ],
+    "cache\\lparm_veh.dat": [
+      1788726315651621700,
+      0
+    ],
+    "cache\\netstar.txt": [
+      1788726318280519600,
+      8
+    ],
+    "cache\\node-r.dat": [
+      1788726316019507200,
+      36045
+    ],
+    "cache\\nodetype.dat": [
+      1788726316030913200,
+      36045
+    ],
+    "cache\\n_r.dat": [
+      1788726315348782300,
+      36052
+    ],
+    "cache\\rnode.dat": [
+      1788726315348782300,
+      73004
+    ],
+    "cache\\szn.dat": [
+      1788726315662103200,
+      2001
+    ],
+    "cache\\tv.dat": [
+      1788726315644879600,
+      198495
+    ],
+    "cache\\vlc.dat": [
+      1788726319363376000,
+      134526
+    ],
+    "cache\\vln.dat": [
+      1788726318279474900,
+      98943
+    ],
+    "cache\\width-b.dat": [
+      1788726318279474900,
+      109438
+    ],
+    "cache\\width-v.dat": [
+      1788726318279474900,
+      150480
+    ],
+    "cache\\x_coord.dat": [
+      1788726316250414700,
+      96120
+    ],
+    "cache\\y_coord.dat": [
+      1788726316250414700,
+      154863
+    ],
+    "data\\number.txt": [
+      1788726317232940300,
+      17
+    ],
+    "result\\CapLinkVeh.tsd": [
+      1788726319363376000,
+      237140
+    ],
+    "result\\CapNodeVeh.tsd": [
+      1788726319986993700,
+      103968
+    ]
+  },
+  "note": "Exit status alone does not establish valid model results; inspect output and freshness."
+}

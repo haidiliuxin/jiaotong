@@ -1,0 +1,81 @@
+{
+  "kind": "aborted_native_run_and_exact_input_probe_v1",
+  "failed_job": "20260923_100537_263448",
+  "physical": "case_006",
+  "probe": "20260923_guard_case006_replay",
+  "source_paths": {
+    "failed": "F:\\ITS比赛\\智能体实验\\challenges\\20260923_100537_263448",
+    "probe": "F:\\ITS比赛\\智能体实验\\probes\\20260923_guard_case006_replay"
+  },
+  "input_exact": true,
+  "probe_native_modules": 7,
+  "probe_rows": 32981,
+  "meaning": "故障诊断副本及字节摘要；原失败任务保持原状；不等于正式挑战通过",
+  "files": {
+    "failed/state.json": {
+      "source_sha256": "c9e5c56887389e240ed2bbaf4c0296716069941eaff5044797b677ec8c46cfb8",
+      "copied_sha256": "c9e5c56887389e240ed2bbaf4c0296716069941eaff5044797b677ec8c46cfb8",
+      "bytes": 240583
+    },
+    "failed/protocol.json": {
+      "source_sha256": "6a7642e6d66fdacac6a066451cd7632d1e4be65de04a2c7803f371f42b396fe7",
+      "copied_sha256": "6a7642e6d66fdacac6a066451cd7632d1e4be65de04a2c7803f371f42b396fe7",
+      "bytes": 10916
+    },
+    "failed/execution_context.json": {
+      "source_sha256": "5a40895ba45a25b5f12841b6b716296201a4797dc3ef313ca8d0d9a165b9729c",
+      "copied_sha256": "5a40895ba45a25b5f12841b6b716296201a4797dc3ef313ca8d0d9a165b9729c",
+      "bytes": 6089
+    },
+    "failed/source_inputs.json": {
+      "source_sha256": "54d7003098197568f7f78476ea88fabefaf49b21ae67df917a8028ab260b02e4",
+      "copied_sha256": "54d7003098197568f7f78476ea88fabefaf49b21ae67df917a8028ab260b02e4",
+      "bytes": 20399
+    },
+    "probe/plan.json": {
+      "source_sha256": "8e6259947e3f199e184df61420bf94f91a70ee34bee4ad5b2c7727771aef483d",
+      "copied_sha256": "8e6259947e3f199e184df61420bf94f91a70ee34bee4ad5b2c7727771aef483d",
+      "bytes": 21829
+    },
+    "probe/input_check.json": {
+      "source_sha256": "c70062762df50298e670c993c34ba16fd12fd9ab32bd93dcdf46c7880a2fce59",
+      "copied_sha256": "c70062762df50298e670c993c34ba16fd12fd9ab32bd93dcdf46c7880a2fce59",
+      "bytes": 21366
+    },
+    "probe/result.json": {
+      "source_sha256": "79af790d7911a78be8f09f60e2123f7b2f58ab7a0bf6271aa1115d6be0b47f65",
+      "copied_sha256": "79af790d7911a78be8f09f60e2123f7b2f58ab7a0bf6271aa1115d6be0b47f65",
+      "bytes": 3390
+    },
+    "probe/logs/replay/run.json": {
+      "source_sha256": "8c1ebc772e380a5c919d3c570a55994dbcfaab1128298d83e4650d59f7fd8064",
+      "copied_sha256": "8c1ebc772e380a5c919d3c570a55994dbcfaab1128298d83e4650d59f7fd8064",
+      "bytes": 3020
+    },
+    "probe/logs/replay/M6AssignVehicle.exe.stdout.bin": {
+      "source_sha256": "8ab52ee8a716381343b81361cf39b8b99742e0fd37be6bf10c78816ff4414288",
+      "copied_sha256": "8ab52ee8a716381343b81361cf39b8b99742e0fd37be6bf10c78816ff4414288",
+      "bytes": 609
+    },
+    "failed/logs/case_006/run.json": {
+      "source_sha256": "21d027b11a51be172eb90876c6b0c36a638cdc1d23cc9603d44d96159c030f79",
+      "copied_sha256": "21d027b11a51be172eb90876c6b0c36a638cdc1d23cc9603d44d96159c030f79",
+      "bytes": 1537
+    },
+    "failed/logs/case_006/inputs_before.json": {
+      "source_sha256": "7cd4744d3438fa702f909aa42f18715c98e5257dd2e05775eebf3de58d738391",
+      "copied_sha256": "7cd4744d3438fa702f909aa42f18715c98e5257dd2e05775eebf3de58d738391",
+      "bytes": 20399
+    },
+    "failed/logs/case_006/M6AssignVehicle.exe.stdout.bin": {
+      "source_sha256": "b17a6cba02eaf3496c7410b7843f01e3cc9d9045a8ec506e0d6c81f839d3f66a",
+      "copied_sha256": "b17a6cba02eaf3496c7410b7843f01e3cc9d9045a8ec506e0d6c81f839d3f66a",
+      "bytes": 1143
+    },
+    "failed/logs/case_006/M6AssignVehicle.exe.stdout.txt": {
+      "source_sha256": "954f10c2602eae2fb03af9b7a6dedc486097ccdaea1d38611ec072ac20952b94",
+      "copied_sha256": "954f10c2602eae2fb03af9b7a6dedc486097ccdaea1d38611ec072ac20952b94",
+      "bytes": 1448
+    }
+  }
+}

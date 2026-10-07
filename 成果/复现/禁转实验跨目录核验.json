@@ -1,0 +1,36 @@
+{
+  "original_job": "F:\\ITS比赛\\智能体实验\\jobs\\20260908_100153_bb7198",
+  "copied_job": "C:\\Users\\asus\\AppData\\Local\\Temp\\its_turn_archive_rjtw99g4\\copied experiment",
+  "copy_method": "shutil.copyfile; no preserved mtime; only manifest files plus manifest; private top runtime excluded",
+  "files": 20070,
+  "returncode": 0,
+  "elapsed_seconds": 189.751,
+  "meaning": "已有13场景520原生调用证据跨目录复核，不是重新执行模型",
+  "verification": {
+    "passed": true,
+    "completed_scenarios": 13,
+    "module_executions": 91,
+    "scope_sizes": {
+      "core": 1,
+      "neighbor": 25,
+      "network": 32060
+    },
+    "repeat_arrays_exact": {
+      "SpdLinkVeh.tsd": true,
+      "VolLinkVeh.tsd": true,
+      "VCLinkVeh.tsd": true,
+      "TimeLink.tsd": true,
+      "VolLinkCar.tsd": true,
+      "VolLinkTax.tsd": true,
+      "VolLinkMot.tsd": true,
+      "VolLinkTrk.tsd": true,
+      "VolLinkBus.tsd": true
+    },
+    "limitations": "只核验保存的实验与输入输出证据，不证明现实标定有效或全部草案已实现",
+    "native_assignment_calls": 520,
+    "adapted_calls": 260,
+    "reference_calls": 260,
+    "full_demand_grid_verified": true,
+    "portable_archive_verified": true
+  }
+}

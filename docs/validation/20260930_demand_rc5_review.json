@@ -1,0 +1,50 @@
+{
+  "kind": "independent_two_demand_rc5_review_v1",
+  "archive": "工作材料/便携构建/20260930_智能规划_v2_RC5.zip",
+  "archive_sha256": "0c085e1bd67cb2b86464c6a27ea4d8bdabd5199ee847a7a30ad1566cbaa8a413",
+  "code_commit_in_manifest": "283bddebdfda63b05f8c261ea053a2f507d79e14",
+  "environment_record": "工作材料/便携异目录检查/20260930_v2_RC5_evidence/environment_verification.json",
+  "environment_status": "passed",
+  "immutable_files_verified_after_run": 16162,
+  "dispatch": "工作材料/便携异目录检查/20260930_v2_RC5/智能体实验/demand_robustness_live_20260930_01/dispatches/20260930_024917_b4254a.json",
+  "dispatch_sha256": "0c37df3f5a0c5a8d19fd68b025ac522faaba23f684a170f8dc4d3a483d3bdcb5",
+  "job_state": "工作材料/便携异目录检查/20260930_v2_RC5/智能体实验/demand_robustness_live_20260930_01/jobs/20260930_024917_b4254a/state.json",
+  "job_state_sha256": "b3c13c9ac8948b82c61c5717f390475934ac409095e44ba0791f6b99dc618430",
+  "read_only_programme_verifier": "passed_under_original_v6_protocol",
+  "model_requests": 3,
+  "known_tokens": 38407,
+  "native_scenarios": ["baseline", "demand_0p900_baseline", "model_1_demand_1p000", "model_1_demand_0p900"],
+  "top_level_native_modules_per_scenario": 7,
+  "same_park_2_directions_at_both_demands": [[3118, 3117], [3116, 3115], [3115, 3116]],
+  "baseline_assigned_car_od": {"1.0": 12370.26418, "0.9": 11133.236874},
+  "paired_results": [
+    {
+      "demand_factor": 1.0,
+      "core_time_change_pct": -12.494272107773996,
+      "neighbor_time_change_pct": 0.4941688091620211,
+      "neighbor_gross_new_oversaturated_km": 2.594,
+      "other_candidate_area_2_time_limit_violated": true,
+      "eligible": false
+    },
+    {
+      "demand_factor": 0.9,
+      "core_time_change_pct": -16.992786177334875,
+      "neighbor_time_change_pct": -0.17978203063494513,
+      "neighbor_gross_new_oversaturated_km": 0,
+      "other_candidate_area_2_time_limit_violated": true,
+      "eligible": false
+    }
+  ],
+  "structured_recommendation": "baseline",
+  "recorded_completion_status": "completed",
+  "original_final_review_protocol": "measured-conclusion-v6",
+  "independent_overall_status": "needs_review",
+  "reason": "Final model summary asserts that gross new neighbor oversaturation exceeded the threshold under both demand factors, while the 0.9 paired observation is 0 km. H2 explanation also says both failed neighbor thresholds although 0.9 fails only the separate area_2 cost condition.",
+  "new_read_only_claim_audit": {
+    "status": "needs_review",
+    "issue_code": "cross_demand_cost_quantifier",
+    "fields": ["summary", "hypothesis_updates:H2"],
+    "source_dispatch_unchanged": true
+  },
+  "boundary": "Four native scenarios and the structured baseline recommendation are real; the public model conclusion of this RC5 record is not accepted. One discrete two-demand pair does not establish interval robustness, global optimality, or physical other-computer acceptance."
+}

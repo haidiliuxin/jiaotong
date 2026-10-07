@@ -1,0 +1,108 @@
+{
+  "kind": "zero_paid_study_unit_service_ui_checks",
+  "source_port": 8772,
+  "source_pid": 44676,
+  "capabilities": {
+    "planning_version": "natural-strategy-plan-v5",
+    "composition_protocol": "traffic-plan-decision-v3",
+    "transport_version": "llm-transport-v2",
+    "initial_review_protocol": "initial-plan-review-v2",
+    "max_initial_corrections": 1,
+    "initial_budget_protocol": "initial-plan-budget-v2",
+    "study_unit_protocol": "complete-study-unit-v1",
+    "scope_protocol": "planning-scope-v2",
+    "prerequisite_protocol": "planning-prerequisites-v2",
+    "dynamic_initial_tools": true,
+    "preflight_protocol": "planning-preflight-v1",
+    "routing_budget_protocol": "study-routing-budget-v2",
+    "study_handoff_protocol": "study-handoff-v1",
+    "feedback_review_protocol": "feedback-review-permissions-v1",
+    "parking_completion_protocol": "parking-completion-v2",
+    "finding_reference_schema": "measured-findings-v1",
+    "response_check_protocol": "planning-response-check-v1",
+    "final_review_correction_protocol": "final-review-correction-v1",
+    "max_final_review_corrections": 1,
+    "feedback_instructions_sha256": "a044a6db0f6a10b4c0ff368efc2b206e0695e4bd2d75b543b7584521d1ac4a25",
+    "conclusion_protocol": "measured-conclusion-v1",
+    "observables": {
+      "available": [
+        "方向级流量、速度、V/C",
+        "固定核心/邻区/全网行驶时间消耗",
+        "同条件配对变化、邻区毛新增过饱和",
+        "各候选区实际响应及约束判断"
+      ],
+      "unavailable": [
+        "排队长度或排队车辆数",
+        "逐秒轨迹、动态排队回堵",
+        "真实城市因果或零风险证明"
+      ],
+      "conditional": [
+        "全网毛新增过饱和仅在任务开启该检查时提供",
+        "路权及转向响应仅相应适配器提供"
+      ]
+    },
+    "instructions_sha256": "3b91330cc1b678ea2133625a23075909481f13f883ceb104e96ce5299f9637a9",
+    "initial_schema_sha256": "272896aa1eaada5b8814df28e855968612357751737d23d2f7e623fc1f31c932",
+    "engine": "TranStar batch",
+    "automatic_transport_retry": false,
+    "max_model_requests": 6
+  },
+  "preflight_matched_roads": [
+    "七东线",
+    "长江村路"
+  ],
+  "no_new_records": true,
+  "locks": [
+    {
+      "path": "智能体实验\\runtime.lock",
+      "state": "free",
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "path": "工作材料\\便携异目录检查\\20260928 智能规划 RC9\\智能体实验\\runtime.lock",
+      "state": "absent"
+    }
+  ],
+  "historical_running_states_preserved": [
+    {
+      "id": "20260923_082625_c01eb1",
+      "status": "running",
+      "mtime": 1790123324.968992,
+      "sha256": "e01b9ab7afad2efe5c7736738c9ccb0dad1251db48baf7af04a63bd0e6b09f43"
+    }
+  ],
+  "rc9": {
+    "source_commit": "e27cfa83315149e15bc97a7b1e2f66c9cf1adb8d",
+    "status": "failed",
+    "model_requests": 1,
+    "tokens": 4931,
+    "new_native_scenes": 0,
+    "unchanged": true
+  },
+  "browser": {
+    "port": 8803,
+    "mode": "original_failure_and_offline_permissions_only",
+    "console_warnings_or_errors": [],
+    "shows_original_failure": true,
+    "shows_optional_source_quote": true,
+    "shows_eight_scenes_still_unexecuted": true,
+    "screenshots": [
+      "20260928_study_units_budget_ui_viewport.png",
+      "20260928_study_units_budget_ui.png"
+    ]
+  },
+  "source_sha256": {
+    "tests/test_initial_planner.py": "ba4069073e3bcf543a90616772e24ffb9327edb05a10b5bad4ab404b9d11d41a",
+    "tests/test_mixed_controller.py": "1b9dc5b74ac6a6305938db562b7f8479afcf4b989bae3adb2de6eb8bf52dfabe",
+    "tests/test_planner_view.cjs": "9620ffc42b46dd272de2d4f34fff53e56646233beaeeaf8d23e0a513f3de309d",
+    "traffic_agent/natural_plan.py": "831c47c9232251f1018fcf829d6c15baa81511be3d39a1502bd41b567b37078f",
+    "traffic_agent/planning_attempt.py": "7b298ede4b130614523bb933ca50a1dbb09a184f19afdd4c3282ac348954bb32",
+    "traffic_agent/planning_budget.py": "a5bb32096e07dd2b4538008b3220fa2d217642582e0f45462c9141f29203f09a",
+    "traffic_agent/planning_studies.py": "50c7b35a05d4c532e74a2d36dc7ab6c1da209ec5b5cc76eabab96c2f66736ea3",
+    "traffic_agent/static/planner_view.js": "65319fd46b40c1ba4c69027103f6bd6c62b67332efe523510328eb0295416ead",
+    "scripts/inspect_study_unit_contract.py": "f4d42ba223ff2cd2fa1be5a0c0a1e2eca7b2bdc38318070c68a63b73f1ebfa33"
+  },
+  "paid_calls": 0,
+  "new_native_scenes": 0,
+  "overall_complete": false
+}

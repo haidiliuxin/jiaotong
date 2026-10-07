@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graphicInfo>
+    <Title TitleFont="黑体,12,-1,5,50,0,0,0,0,0" TitleColor="0,0,0" TitleSize="13" TitleWeight="1" TitleTilt="0">综合公交网络客流交通分配</Title>
+    <LegendTitle LegendTitleFont="黑体,12,-1,5,50,0,0,0,0,0" LegendTitleColor="0,0,0" LegendTitleSize="13" LegendTitleWeight="1" LegendTitleTilt="0"/>
+    <Legend LegendFont="黑体,12,-1,5,50,0,0,0,0,0" LegendColor="0,0,0" LegendSize="13" LegendWeight="1" LegendTilt="0"/>
+    <NodeEntities/>
+    <SecEntities>
+        <entity category="&lt;100" size="0.5" color="170,169,150" zValue="0" type="0"/>
+        <entity category="100~1000" size="1" color="15,200,37" zValue="1" type="0"/>
+        <entity category="1000~3000" size="1.5" color="170,170,0" zValue="2" type="0"/>
+        <entity category="3000~5000" size="2" color="255,170,0" zValue="3" type="0"/>
+        <entity category="5000~10000" size="2.5" color="255,88,155" zValue="4" type="0"/>
+        <entity category="&gt;=10000" size="3" color="255,0,0" zValue="5" type="0"/>
+    </SecEntities>
+    <StationEntities/>
+    <ZoneEntities/>
+    <ZoneLineEntities/>
+    <Visibles>
+        <visible visible="1"/>
+        <visible visible="1"/>
+        <visible visible="1"/>
+        <visible visible="1"/>
+        <visible visible="1"/>
+        <visible visible="1"/>
+        <visible visible="1"/>
+        <visible visible="1"/>
+        <visible visible="1"/>
+        <visible visible="1"/>
+    </Visibles>
+</graphicInfo>

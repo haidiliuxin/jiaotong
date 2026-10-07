@@ -1,0 +1,34 @@
+{
+  "kind": "bounded_initial_correction_failure",
+  "source_commit": "6c58b300ab2a66913d36b1020d919b453e6cf60e",
+  "status": "failed",
+  "model_calls": 2,
+  "known_tokens": 15297,
+  "native_scenes": 0,
+  "top_level_modules": 0,
+  "errors": [
+    "初始假设判据未通过：H2：组合增益判据只能指向组合措施",
+    "判据对象修正改变了原问题、判据类型、量词、研究组、顺序或执行条件；未启动仿真"
+  ],
+  "changes": [
+    {
+      "hypothesis_id": "H2",
+      "field": "hypothesis",
+      "before": "长江村路存在至少一组已试措施组合，其核心总耗时分别严格低于该组停车单项与单向单项",
+      "after": "长江村路存在至少一组已试组合措施，其核心总耗时分别严格低于该组停车单项与单向单项"
+    },
+    {
+      "hypothesis_id": "H2",
+      "field": "criterion.policies",
+      "before": "all",
+      "after": "combined"
+    }
+  ],
+  "study_conditions_unchanged": true,
+  "original_records_unchanged": 75,
+  "original_locks_free_and_unchanged": 7,
+  "diagnosis": "模型已把组合增益的对象改成combined，但重述完整提议时将已试措施组合换成已试组合措施，触发逐字原文保护。没有可执行票据或仿真。",
+  "followup": "以仅含出错对象的专用工具取代完整方案重述；原问题由程序保留，不能把本次失败事后改成通过。",
+  "physical_other_machine": false,
+  "overall_system_complete": false
+}

@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "protocol": "bounded-question-wording-v2",
+  "model_boundary": "synthetic_transport",
+  "public_source": "RC18 retained public questions and study fields only",
+  "synthetic_fields": [
+    "alternatives",
+    "catalog",
+    "transport_usage"
+  ],
+  "synthetic_requests": 1,
+  "actual_paid_requests_during_check": 0,
+  "new_native_scenes": 0,
+  "all_four_original_questions_criteria_and_studies_unchanged": true,
+  "separation_note": {
+    "source": "hypothesis",
+    "kind": "separate_criteria",
+    "text": "且判定与是否通过推荐约束分开"
+  },
+  "legacy_v1_false_rejection_reproduced_exactly": true,
+  "minimum_required_requests": 5,
+  "native_scene_budget": 6,
+  "rc18_real_attempt_still_failed": true,
+  "rc18_archive_sha256": "70f7dec256f0c72e04a74c49bdc2beaeeed10677dbc9ad0a2d48e713dae924fd",
+  "old_records_unchanged": 78,
+  "old_locks_unchanged_and_free": 7,
+  "fixture_sha256": "5b946c45ba7935fef1dab73c701347b7882759901b61a162fece1d5244ccad7f",
+  "overall_system_complete": false,
+  "boundary": "Public-field reconstruction with synthetic transport is not full original reply replay or live acceptance; bounded wording checks are not general semantic certification."
+}

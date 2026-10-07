@@ -1,0 +1,32 @@
+{
+  "kind": "project_recorded_usage_delta_v1",
+  "baseline_file": "docs/validation/20260928_api_budget_12x.json",
+  "scope": "Locally retained project responses, deduplicated by provider response_id. This is not a complete provider account bill. No credentials or full prompts are included.",
+  "previous_independently_recorded_total": {
+    "requests": 64,
+    "known_tokens": 418923,
+    "reference": "docs/20260928源码真实闭环与语义复核.md"
+  },
+  "later_user_task": {
+    "dispatch": "智能体实验/quantifier_patch_workspace_20260928/dispatches/20260928_090259_618e9b.json",
+    "requests": 4,
+    "known_tokens": 57642,
+    "provider_id_overlap_with_baseline_ledger": 0,
+    "independent_overall_review": "pending"
+  },
+  "representative_semantic_run": {
+    "dispatch": "智能体实验/semantic_contract_workspace_20260929_01/dispatches/20260929_224953_be383d.json",
+    "requests": 4,
+    "known_tokens": 53463,
+    "provider_id_overlap_with_baseline_or_later_task": 0,
+    "status": "incomplete"
+  },
+  "locally_verifiable_cumulative": {
+    "requests": 72,
+    "known_tokens": 530028,
+    "request_limit": 684,
+    "known_token_limit": 4132560,
+    "remaining_requests": 612,
+    "remaining_known_tokens": 3602532
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "kind": "v9_cost_reference_and_v4_wording_validation_v1",
+  "source_package": "工作材料/便携构建/20260930_智能规划_v2_RC10.zip",
+  "mixed_initial_failure": {
+    "record": "工作材料/便携异目录检查/20260930_v2_RC10/智能体实验/parking_domain_full_20260930_01/planning_attempts/preview_94b6209820d242bdb6636d9747f75294.json",
+    "sha256": "d661d0202239c35f957f7f900e5f6e3f21e959011a2d074fbd9a8ddad4269ea7",
+    "status": "validation_failed",
+    "provider_response_id": "chatcmpl-6abc23b7c9bc1e95c3736a18",
+    "known_tokens": 7097,
+    "native_scenarios": 0,
+    "frozen_v3_wording_issues": 1,
+    "v4_read_only_shadow_issues": 0,
+    "boundary": "v4 accepts the original H2 phrasing with the same typed admissible criterion; the failed RC10 attempt is unchanged."
+  },
+  "two_demand_v8_incomplete": {
+    "dispatch": "工作材料/便携异目录检查/20260930_v2_RC10/智能体实验/demand_v8_full_20260930_01/dispatches/20260930_044803_9b9f00.json",
+    "dispatch_sha256": "3a7e201006804cd10212c4e2ee0d9933237ea9c976ea43de002a1d1ec2faea6a",
+    "state_sha256": "a3dc62b553c1f40990291f00b74f99ebe0a49a49b2ee81fe45c701d20405eea2",
+    "status": "incomplete",
+    "provider_response_ids_and_tokens": {
+      "chatcmpl-6abc2400c0425c95c24fc447": 6889,
+      "chatcmpl-6abc251324b4736695d6f043": 13535,
+      "chatcmpl-6abc2627aa04c61a538b3677": 16575,
+      "chatcmpl-6abc262cfc4b27ca297e39f2": 17634
+    },
+    "known_tokens": 54633,
+    "native_scenarios": 4,
+    "native_top_level_modules": 28,
+    "partial_native_read_only_audit": "passed_for_all_four_completed_runs; programme_not_certified",
+    "measured": {
+      "demand_1p000": {"core_time_change_pct": -23.308694361678317, "neighbor_time_change_pct": -0.18205257806130914, "neighbor_new_oversaturated_km": 0, "constraint_passed": true},
+      "demand_0p900": {"core_time_change_pct": -18.115586288998365, "neighbor_time_change_pct": 0.028033843533203928, "neighbor_new_oversaturated_km": 0, "constraint_passed": true}
+    },
+    "failure": "Both final model replies marked has_measured_cost=true at demand 1.0, contrary to the executor's computed cost fact. v8 correctly rejected them; no final programme certificate exists.",
+    "v9_read_only_transformed_reply": "accepted_no_detected_conflict_after_replacing_only_duplicate_cost_acknowledgments_with_all_measured_refs"
+  },
+  "v9_model_only_probe": {
+    "record": "智能体实验/v9_final_model_probe_20260930_01/probe.json",
+    "sha256": "9f9c1355fbf26b242c5947e441a760604366c6d9d08aeb6c7d1f352c1d94bcb9",
+    "source_dispatch_sha256": "3a7e201006804cd10212c4e2ee0d9933237ea9c976ea43de002a1d1ec2faea6a",
+    "provider_response_id": "chatcmpl-6abc29b98ab0ee157dcd8088",
+    "known_tokens": 16480,
+    "model_response_status": "accepted",
+    "independent_read_only_check": "no_detected_conflict",
+    "new_native_scenarios": 0,
+    "boundary": "A new model reply reviewed sealed RC10 observations under v9, but it was not an end-to-end dispatch and cannot change the old incomplete status."
+  },
+  "checks": {"python_unittest_count": 632, "git_diff_check": "passed"},
+  "cumulative_project_recorded_budget": {
+    "deduplicated_requests": 115,
+    "known_tokens": 1067794,
+    "remaining_requests": 569,
+    "remaining_known_tokens": 3064766,
+    "authorized_request_cap": 684,
+    "authorized_known_token_cap": 4132560,
+    "scope": "Conservative project-retained records, not a complete provider account bill."
+  },
+  "physical_other_computer_acceptance": "pending"
+}

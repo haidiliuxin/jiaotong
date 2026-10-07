@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="icon" href="data:,">
+<title>路策 · 三需求禁转任务回看</title>
+<style>
+body{margin:0;background:#071823;color:#ddedf5;font:16px/1.7 "Microsoft YaHei",sans-serif}
+main{max-width:1120px;margin:28px auto;padding:0 22px}h1{font-size:28px;color:#68ded4}
+p{color:#b2c8d7}video{width:100%;background:#000;border:1px solid #365664;border-radius:8px}
+li{margin:10px 0}button{background:#103142;color:#d9f7f3;border:1px solid #315f69;border-radius:5px;padding:7px 10px;cursor:pointer;text-align:left}
+button:hover,button:focus{border-color:#68ded4}a{color:#65dcd5}code{overflow-wrap:anywhere}
+::cue{font-size:22px;font-family:"Microsoft YaHei";background:#06121fe6;color:white}
+</style>
+<main>
+<h1>路策交通决策大厅 · 三需求禁转任务回看</h1>
+<p>已完成真实任务的只读回看 · 本次新增模型调用 0 · 原任务 13 场景、91 次顶层、520 次原生车型调用。</p>
+<video id="review" controls preload="metadata" poster="04.png">
+  <source src="已完成真实任务回看.webm" type="video/webm">
+  <track kind="subtitles" srclang="zh" label="中文说明" src="说明字幕.vtt" default>
+</video>
+<p>录像无声，长 2 分 18 秒。左侧是新实验配置；本片任务的实际参数请看“实验档案”。视频展示原版 v4 的已完成结果，未把事后提出的全网毛新增风险约束套入原推荐。</p>
+<p>任务 <code>20260923_025908_fbc62a</code>；案例经过赛事调整，不代表现实南京交通。高需求下的外溢风险详见<a href="../../复评/20260923_network_gross_guard/README.md">只读风险试算</a>，该试算不是本片中运行的规则。</p>
+<h2>点击跳转镜头</h2>
+<ol id="chapters">
+  <li><button data-time="4">00:04 已完成任务与调用规模</button></li>
+  <li><button data-time="19">00:19 基准需求双图</button></li>
+  <li><button data-time="36">00:36 低需求配对</button></li>
+  <li><button data-time="55">00:55 高需求与外溢边界</button></li>
+  <li><button data-time="72">01:12 容差 v2 决策</button></li>
+  <li><button data-time="91">01:31 不利影响</button></li>
+  <li><button data-time="108">01:48 实际任务与全网指标</button></li>
+  <li><button data-time="126">02:06 保存的运行消息</button></li>
+</ol>
+<p><a href="recording.json">录制记录</a> · <a href="before.stdout.txt">录制前核验</a> · <a href="after.stdout.txt">录制后核验</a> · <a href="已完成真实任务回看.webm" download>下载原始 WebM</a></p>
+</main>
+<script>
+document.getElementById('chapters').addEventListener('click',event=>{
+  const button=event.target.closest('button[data-time]');if(!button)return;
+  const video=document.getElementById('review');video.currentTime=Number(button.dataset.time);video.play();
+});
+</script>
+</html>

@@ -1,0 +1,4 @@
+设计速度下的多模式公交网络最短时间矩阵分析Mparam342.TXT
+【输入文件】交通网络交通阻抗文件名	TmDsgnLinkBus.tsd
+【输入文件】交通网络交通阻抗文件名	TmDsgnLinkSub.tsd
+【输出文件】最短路矩阵文件名	MatrixTmDsgnAllBus.tsd

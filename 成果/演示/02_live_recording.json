@@ -1,0 +1,95 @@
+{
+  "status": "completed",
+  "started": "2026-09-07T21:08:22.834Z",
+  "url": "http://127.0.0.1:8766",
+  "mode": "actual_new_task_start_and_completion",
+  "segments": [
+    {
+      "file": "02_实际创建与启动.webm",
+      "saved": "2026-09-07T21:16:54.552Z",
+      "bytes": 2721605
+    },
+    {
+      "file": "03_同任务完成与复核.webm",
+      "saved": "2026-09-07T21:26:16.476Z",
+      "bytes": 2745221
+    }
+  ],
+  "observations": [
+    {
+      "time": "2026-09-07T21:16:21.924Z",
+      "caption": "现在实际创建新任务：3路段、4次预算、同输入复跑；本次不做额外需求系数。"
+    },
+    {
+      "time": "2026-09-07T21:16:31.577Z",
+      "caption": "已提交并接受新任务。任务编号与下方实际工具日志对应，随后等待真实模型计算。"
+    },
+    {
+      "time": "2026-09-07T21:16:41.667Z",
+      "caption": "道路、公交和管理预处理后进入机动车分配；完整计算间隔将省略，原始日志连续保留。"
+    },
+    {
+      "time": "2026-09-07T21:16:54.638Z",
+      "active_scenario": "baseline",
+      "status": "running",
+      "run_count": 1
+    },
+    {
+      "time": "2026-09-07T21:18:49.202Z",
+      "active_scenario": "parking_1",
+      "status": "running",
+      "run_count": 2
+    },
+    {
+      "time": "2026-09-07T21:21:04.805Z",
+      "active_scenario": "parking_2",
+      "status": "running",
+      "run_count": 3
+    },
+    {
+      "time": "2026-09-07T21:23:20.453Z",
+      "active_scenario": "baseline_repeat",
+      "status": "running",
+      "run_count": 4
+    },
+    {
+      "time": "2026-09-07T21:25:36.112Z",
+      "status": "completed",
+      "run_count": 4
+    },
+    {
+      "time": "2026-09-07T21:25:39.553Z",
+      "caption": "计算已完成：同一个任务 20260908_051630_12acc1，中间等待时间省略，输入与输出通过独立核验。"
+    },
+    {
+      "time": "2026-09-07T21:25:49.674Z",
+      "caption": "全网指标与核心指标分别评价。基准复跑的4类路段数组逐项相等，详细口径见报告。"
+    },
+    {
+      "time": "2026-09-07T21:25:58.796Z",
+      "caption": "这个新任务根据首轮结果作出反馈，推荐由完成的候选比较产生。"
+    },
+    {
+      "time": "2026-09-07T21:26:07.914Z",
+      "caption": "已展示真实创建、模型调用和同任务结果读取；录像、源输入、运行日志及核验文件共同提供证据。"
+    }
+  ],
+  "errors": [],
+  "job_id": "20260908_051630_12acc1",
+  "run_request": {
+    "request": "分析停车干扰拥堵，比较治理强度并检查周边影响",
+    "overrides": {
+      "max_links": 3,
+      "max_runs": 4,
+      "demand_factors": [
+        1
+      ],
+      "repeat_baseline": true,
+      "max_neighbor_time_increase_pct": 0.5,
+      "max_new_oversaturated_km": 0.1
+    }
+  },
+  "run_accepted": "2026-09-07T21:16:30.067Z",
+  "verified_at": "2026-09-07T21:25:39.112Z",
+  "finished": "2026-09-07T21:26:16.476Z"
+}

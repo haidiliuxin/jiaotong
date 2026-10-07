@@ -1,0 +1,109 @@
+{
+  "status": "completed",
+  "row_count": 32981,
+  "native_modules": 7,
+  "input_exact": true,
+  "finished": "2026-09-23T02:29:36.568141+00:00",
+  "manifest": {
+    "scenario": "F:\\ITS比赛\\智能体实验\\probes\\20260923_guard_case006_replay\\scenarios\\replay\\基础路网",
+    "status": "completed",
+    "started": "2026-09-23T02:27:18.286776+00:00",
+    "modules": [
+      {
+        "module": "M3DataRoadNetwork.exe",
+        "started": "2026-09-23T02:27:18.368220+00:00",
+        "status": "completed",
+        "pid": 49744,
+        "returncode": 0,
+        "elapsed_seconds": 4.781,
+        "finished": "2026-09-23T02:27:23.152997+00:00"
+      },
+      {
+        "module": "M3DataBusNetwork.exe",
+        "started": "2026-09-23T02:27:23.162788+00:00",
+        "status": "completed",
+        "pid": 3256,
+        "returncode": 0,
+        "elapsed_seconds": 0.812,
+        "finished": "2026-09-23T02:27:23.969187+00:00"
+      },
+      {
+        "module": "M3DataTrafficManage.exe",
+        "started": "2026-09-23T02:27:23.971709+00:00",
+        "status": "completed",
+        "pid": 28592,
+        "returncode": 0,
+        "elapsed_seconds": 4.25,
+        "finished": "2026-09-23T02:27:28.227539+00:00"
+      },
+      {
+        "module": "M6AssignVehicle.exe",
+        "started": "2026-09-23T02:27:28.230300+00:00",
+        "status": "completed",
+        "pid": 50924,
+        "returncode": 0,
+        "elapsed_seconds": 124.875,
+        "finished": "2026-09-23T02:29:33.105659+00:00"
+      },
+      {
+        "module": "M6TrafficLoadLinkVeh.exe",
+        "started": "2026-09-23T02:29:33.109703+00:00",
+        "status": "completed",
+        "pid": 21376,
+        "returncode": 0,
+        "elapsed_seconds": 0.344,
+        "finished": "2026-09-23T02:29:33.467654+00:00"
+      },
+      {
+        "module": "M6TrafficLoadNodeVeh.exe",
+        "started": "2026-09-23T02:29:33.471667+00:00",
+        "status": "completed",
+        "pid": 51460,
+        "returncode": 0,
+        "elapsed_seconds": 1.063,
+        "finished": "2026-09-23T02:29:34.545696+00:00"
+      },
+      {
+        "module": "M6NodeQueueDelay.exe",
+        "started": "2026-09-23T02:29:34.550222+00:00",
+        "status": "completed",
+        "pid": 33964,
+        "returncode": 0,
+        "elapsed_seconds": 1.468,
+        "finished": "2026-09-23T02:29:36.018299+00:00"
+      }
+    ],
+    "fresh_outputs": {
+      "result/SpdLinkVeh.tsd": {
+        "bytes": 229655,
+        "mtime_ns": 1790130546093960300
+      },
+      "result/VolLinkVeh.tsd": {
+        "bytes": 239324,
+        "mtime_ns": 1790130568263994400
+      },
+      "result/VCLinkVeh.tsd": {
+        "bytes": 282343,
+        "mtime_ns": 1790130573463435100
+      },
+      "result/TimeLink.tsd": {
+        "bytes": 232364,
+        "mtime_ns": 1790130546093960300
+      },
+      "cache/CapLinkVehMan.dat": {
+        "bytes": 248741,
+        "mtime_ns": 1790130447258327700
+      },
+      "cache/Assign_car.od": {
+        "bytes": 1102240,
+        "mtime_ns": 1790130545131490700
+      }
+    },
+    "input_changes_during_run": [],
+    "assigned_car_od_sum": 13607.288526,
+    "source_car_od_sum": 204109.34269,
+    "assigned_to_source_ratio": 0.06666666183265636,
+    "result_rows": 32981,
+    "finished": "2026-09-23T02:29:36.562563+00:00"
+  }
+}

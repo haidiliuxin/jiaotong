@@ -1,0 +1,11 @@
+{
+  "request": "指定七东线3244→3245，比较停车治理强度并检查邻区外溢",
+  "scenario": "parking",
+  "road_name": "七东线",
+  "links": [[3244, 3245]],
+  "max_links": 1,
+  "max_runs": 8,
+  "max_feedback": 2,
+  "demand_factors": [0.9, 1.0, 1.1],
+  "repeat_baseline": true
+}

@@ -1,0 +1,6244 @@
+{
+  "version": "retrospective-review-v1",
+  "started": "2026-09-19T12:58:21.452791+00:00",
+  "jobs": [
+    {
+      "job": "20260908_100153_bb7198",
+      "source_state_sha256": "17a515837eeae08b7e37d03d1df1f4ab3b0087d5043164b2e8c44ae4582922cf",
+      "archive_manifest_sha256": "081e957c9c6b19b124fac9a9d7550fbc43c4d4f3a232e3d8e807b1ecbf1ef1d3",
+      "audit": {
+        "passed": true,
+        "completed_scenarios": 13,
+        "module_executions": 91,
+        "scope_sizes": {
+          "core": 1,
+          "neighbor": 25,
+          "network": 32060
+        },
+        "repeat_arrays_exact": {
+          "SpdLinkVeh.tsd": true,
+          "VolLinkVeh.tsd": true,
+          "VCLinkVeh.tsd": true,
+          "TimeLink.tsd": true,
+          "VolLinkCar.tsd": true,
+          "VolLinkTax.tsd": true,
+          "VolLinkMot.tsd": true,
+          "VolLinkTrk.tsd": true,
+          "VolLinkBus.tsd": true
+        },
+        "verified_runs": [
+          {
+            "scenario": "baseline",
+            "modules": 7,
+            "result_rows": {
+              "speed_kmh": 32981,
+              "flow_pcu_h": 32981,
+              "vc": 32981,
+              "time_s": 32981
+            },
+            "input_difference_files": [
+              "params/AsignParameter_car.dat",
+              "params/AsignParameter_motor.dat",
+              "params/AsignParameter_taxi.dat",
+              "params/AsignParameter_truck.dat",
+              "params/Mparam635.txt"
+            ],
+            "car_od_factor": 1.0,
+            "internal_od_factor": 1.0
+          },
+          {
+            "scenario": "S1_parking",
+            "modules": 7,
+            "result_rows": {
+              "speed_kmh": 32981,
+              "flow_pcu_h": 32981,
+              "vc": 32981,
+              "time_s": 32981
+            },
+            "input_difference_files": [
+              "data/manageL.txt",
+              "params/AsignParameter_car.dat",
+              "params/AsignParameter_motor.dat",
+              "params/AsignParameter_taxi.dat",
+              "params/AsignParameter_truck.dat",
+              "params/Mparam635.txt"
+            ],
+            "car_od_factor": 1.0,
+            "internal_od_factor": 1.0
+          },
+          {
+            "scenario": "S2_turn",
+            "modules": 7,
+            "result_rows": {
+              "speed_kmh": 32981,
+              "flow_pcu_h": 32981,
+              "vc": 32981,
+              "time_s": 32981
+            },
+            "input_difference_files": [
+              "data/manageN.txt",
+              "params/AsignParameter_car.dat",
+              "params/AsignParameter_motor.dat",
+              "params/AsignParameter_taxi.dat",
+              "params/AsignParameter_truck.dat",
+              "params/Mparam635.txt"
+            ],
+            "car_od_factor": 1.0,
+            "internal_od_factor": 1.0
+          },
+          {
+            "scenario": "S3_combined",
+            "modules": 7,
+            "result_rows": {
+              "speed_kmh": 32981,
+              "flow_pcu_h": 32981,
+              "vc": 32981,
+              "time_s": 32981
+            },
+            "input_difference_files": [
+              "data/manageL.txt",
+              "data/manageN.txt",
+              "params/AsignParameter_car.dat",
+              "params/AsignParameter_motor.dat",
+              "params/AsignParameter_taxi.dat",
+              "params/AsignParameter_truck.dat",
+              "params/Mparam635.txt"
+            ],
+            "car_od_factor": 1.0,
+            "internal_od_factor": 1.0
+          },
+          {
+            "scenario": "demand_0p900_baseline",
+            "modules": 7,
+            "result_rows": {
+              "speed_kmh": 32981,
+              "flow_pcu_h": 32981,
+              "vc": 32981,
+              "time_s": 32981
+            },
+            "input_difference_files": [
+              "params/AsignParameter_car.dat",
+              "params/AsignParameter_motor.dat",
+              "params/AsignParameter_taxi.dat",
+              "params/AsignParameter_truck.dat",
+              "params/Mparam635.txt",
+              "result/ODCar.tsd"
+            ],
+            "car_od_factor": 0.9,
+            "internal_od_factor": 0.8999999282149527
+          },
+          {
+            "scenario": "demand_0p900_S1_parking",
+            "modules": 7,
+            "result_rows": {
+              "speed_kmh": 32981,
+              "flow_pcu_h": 32981,
+              "vc": 32981,
+              "time_s": 32981
+            },
+            "input_difference_files": [
+              "data/manageL.txt",
+              "params/AsignParameter_car.dat",
+              "params/AsignParameter_motor.dat",
+              "params/AsignParameter_taxi.dat",
+              "params/AsignParameter_truck.dat",
+              "params/Mparam635.txt",
+              "result/ODCar.tsd"
+            ],
+            "car_od_factor": 0.9,
+            "internal_od_factor": 0.8999999282149527
+          },
+          {
+            "scenario": "demand_0p900_S2_turn",
+            "modules": 7,
+            "result_rows": {
+              "speed_kmh": 32981,
+              "flow_pcu_h": 32981,
+              "vc": 32981,
+              "time_s": 32981
+            },
+            "input_difference_files": [
+              "data/manageN.txt",
+              "params/AsignParameter_car.dat",
+              "params/AsignParameter_motor.dat",
+              "params/AsignParameter_taxi.dat",
+              "params/AsignParameter_truck.dat",
+              "params/Mparam635.txt",
+              "result/ODCar.tsd"
+            ],
+            "car_od_factor": 0.9,
+            "internal_od_factor": 0.8999999282149527
+          },
+          {
+            "scenario": "demand_0p900_S3_combined",
+            "modules": 7,
+            "result_rows": {
+              "speed_kmh": 32981,
+              "flow_pcu_h": 32981,
+              "vc": 32981,
+              "time_s": 32981
+            },
+            "input_difference_files": [
+              "data/manageL.txt",
+              "data/manageN.txt",
+              "params/AsignParameter_car.dat",
+              "params/AsignParameter_motor.dat",
+              "params/AsignParameter_taxi.dat",
+              "params/AsignParameter_truck.dat",
+              "params/Mparam635.txt",
+              "result/ODCar.tsd"
+            ],
+            "car_od_factor": 0.9,
+            "internal_od_factor": 0.8999999282149527
+          },
+          {
+            "scenario": "demand_1p100_baseline",
+            "modules": 7,
+            "result_rows": {
+              "speed_kmh": 32981,
+              "flow_pcu_h": 32981,
+              "vc": 32981,
+              "time_s": 32981
+            },
+            "input_difference_files": [
+              "params/AsignParameter_car.dat",
+              "params/AsignParameter_motor.dat",
+              "params/AsignParameter_taxi.dat",
+              "params/AsignParameter_truck.dat",
+              "params/Mparam635.txt",
+              "result/ODCar.tsd"
+            ],
+            "car_od_factor": 1.0999999999999999,
+            "internal_od_factor": 1.099999832501556
+          },
+          {
+            "scenario": "demand_1p100_S1_parking",
+            "modules": 7,
+            "result_rows": {
+              "speed_kmh": 32981,
+              "flow_pcu_h": 32981,
+              "vc": 32981,
+              "time_s": 32981
+            },
+            "input_difference_files": [
+              "data/manageL.txt",
+              "params/AsignParameter_car.dat",
+              "params/AsignParameter_motor.dat",
+              "params/AsignParameter_taxi.dat",
+              "params/AsignParameter_truck.dat",
+              "params/Mparam635.txt",
+              "result/ODCar.tsd"
+            ],
+            "car_od_factor": 1.0999999999999999,
+            "internal_od_factor": 1.099999832501556
+          },
+          {
+            "scenario": "demand_1p100_S2_turn",
+            "modules": 7,
+            "result_rows": {
+              "speed_kmh": 32981,
+              "flow_pcu_h": 32981,
+              "vc": 32981,
+              "time_s": 32981
+            },
+            "input_difference_files": [
+              "data/manageN.txt",
+              "params/AsignParameter_car.dat",
+              "params/AsignParameter_motor.dat",
+              "params/AsignParameter_taxi.dat",
+              "params/AsignParameter_truck.dat",
+              "params/Mparam635.txt",
+              "result/ODCar.tsd"
+            ],
+            "car_od_factor": 1.0999999999999999,
+            "internal_od_factor": 1.099999832501556
+          },
+          {
+            "scenario": "demand_1p100_S3_combined",
+            "modules": 7,
+            "result_rows": {
+              "speed_kmh": 32981,
+              "flow_pcu_h": 32981,
+              "vc": 32981,
+              "time_s": 32981
+            },
+            "input_difference_files": [
+              "data/manageL.txt",
+              "data/manageN.txt",
+              "params/AsignParameter_car.dat",
+              "params/AsignParameter_motor.dat",
+              "params/AsignParameter_taxi.dat",
+              "params/AsignParameter_truck.dat",
+              "params/Mparam635.txt",
+              "result/ODCar.tsd"
+            ],
+            "car_od_factor": 1.0999999999999999,
+            "internal_od_factor": 1.099999832501556
+          },
+          {
+            "scenario": "baseline_repeat",
+            "modules": 7,
+            "result_rows": {
+              "speed_kmh": 32981,
+              "flow_pcu_h": 32981,
+              "vc": 32981,
+              "time_s": 32981
+            },
+            "input_difference_files": [
+              "params/AsignParameter_car.dat",
+              "params/AsignParameter_motor.dat",
+              "params/AsignParameter_taxi.dat",
+              "params/AsignParameter_truck.dat",
+              "params/Mparam635.txt"
+            ],
+            "car_od_factor": 1.0,
+            "internal_od_factor": 1.0
+          }
+        ],
+        "limitations": "只核验保存的实验与输入输出证据，不证明现实标定有效或全部草案已实现",
+        "native_assignment_calls": 520,
+        "adapted_calls": 260,
+        "reference_calls": 260,
+        "full_demand_grid_verified": true,
+        "portable_archive_verified": true
+      },
+      "original_recorded_recommendation": "S3_combined",
+      "old_analysis": {
+        "version": "paired-minimax-v1",
+        "factors": [
+          0.9,
+          1.0,
+          1.1
+        ],
+        "policies": [
+          {
+            "name": "S1_parking",
+            "changes": [
+              {
+                "from_node": 5990,
+                "to_node": 5991,
+                "old_parking": 3,
+                "parking": 2
+              }
+            ],
+            "checks": [
+              {
+                "factor": 0.9,
+                "run": "demand_0p900_S1_parking",
+                "baseline": "demand_0p900_baseline",
+                "accepted": true,
+                "network_time_pct": -0.0007105237839089007,
+                "neighbor_time_pct": -0.0010081356349278536,
+                "new_neighbor_km": 0,
+                "violations": []
+              },
+              {
+                "factor": 1.0,
+                "run": "S1_parking",
+                "baseline": "baseline",
+                "accepted": false,
+                "network_time_pct": 0.0007962881232614905,
+                "neighbor_time_pct": 0.09715331727804255,
+                "new_neighbor_km": 0,
+                "violations": [
+                  "全网路段行驶时间未改善，不能只用目标出口流量减少推荐"
+                ]
+              },
+              {
+                "factor": 1.1,
+                "run": "demand_1p100_S1_parking",
+                "baseline": "demand_1p100_baseline",
+                "accepted": false,
+                "network_time_pct": 0.0016352484216497487,
+                "neighbor_time_pct": 0.16949614577190797,
+                "new_neighbor_km": 0,
+                "violations": [
+                  "全网路段行驶时间未改善，不能只用目标出口流量减少推荐"
+                ]
+              }
+            ],
+            "missing": [],
+            "reasons": [
+              "需求 × 1.0：全网路段行驶时间未改善，不能只用目标出口流量减少推荐",
+              "需求 × 1.1：全网路段行驶时间未改善，不能只用目标出口流量减少推荐"
+            ],
+            "feasible": false,
+            "worst": null,
+            "dominated_by": [],
+            "frontier": false
+          },
+          {
+            "name": "S2_turn",
+            "changes": [
+              {
+                "kind": "turn",
+                "turn": [
+                  4797,
+                  5990,
+                  5991
+                ]
+              }
+            ],
+            "checks": [
+              {
+                "factor": 0.9,
+                "run": "demand_0p900_S2_turn",
+                "baseline": "demand_0p900_baseline",
+                "accepted": true,
+                "network_time_pct": -0.08591578505451336,
+                "neighbor_time_pct": -9.090403923146006,
+                "new_neighbor_km": 0,
+                "violations": []
+              },
+              {
+                "factor": 1.0,
+                "run": "S2_turn",
+                "baseline": "baseline",
+                "accepted": true,
+                "network_time_pct": -0.14578369158164683,
+                "neighbor_time_pct": -10.977463251041254,
+                "new_neighbor_km": 0,
+                "violations": []
+              },
+              {
+                "factor": 1.1,
+                "run": "demand_1p100_S2_turn",
+                "baseline": "demand_1p100_baseline",
+                "accepted": true,
+                "network_time_pct": -0.2467685296442368,
+                "neighbor_time_pct": -5.949884896703117,
+                "new_neighbor_km": 0,
+                "violations": []
+              }
+            ],
+            "missing": [],
+            "reasons": [],
+            "feasible": true,
+            "worst": [
+              -0.08591578505451336,
+              -5.949884896703117,
+              0
+            ],
+            "dominated_by": [],
+            "frontier": true
+          },
+          {
+            "name": "S3_combined",
+            "changes": [
+              {
+                "from_node": 5990,
+                "to_node": 5991,
+                "old_parking": 3,
+                "parking": 2
+              },
+              {
+                "kind": "turn",
+                "turn": [
+                  4797,
+                  5990,
+                  5991
+                ]
+              }
+            ],
+            "checks": [
+              {
+                "factor": 0.9,
+                "run": "demand_0p900_S3_combined",
+                "baseline": "demand_0p900_baseline",
+                "accepted": true,
+                "network_time_pct": -0.0859507058496134,
+                "neighbor_time_pct": -9.09000363422524,
+                "new_neighbor_km": 0,
+                "violations": []
+              },
+              {
+                "factor": 1.0,
+                "run": "S3_combined",
+                "baseline": "baseline",
+                "accepted": true,
+                "network_time_pct": -0.1458268610335267,
+                "neighbor_time_pct": -10.977150111275114,
+                "new_neighbor_km": 0,
+                "violations": []
+              },
+              {
+                "factor": 1.1,
+                "run": "demand_1p100_S3_combined",
+                "baseline": "demand_1p100_baseline",
+                "accepted": true,
+                "network_time_pct": -0.24681451293544487,
+                "neighbor_time_pct": -5.948085279447213,
+                "new_neighbor_km": 0,
+                "violations": []
+              }
+            ],
+            "missing": [],
+            "reasons": [],
+            "feasible": true,
+            "worst": [
+              -0.0859507058496134,
+              -5.948085279447213,
+              0
+            ],
+            "dominated_by": [],
+            "frontier": true
+          }
+        ],
+        "recommendation": "S3_combined",
+        "finalized": true,
+        "eligible_count": 2,
+        "frontier_count": 2,
+        "reason": "所有已测需求均通过原约束，按最差全网耗时增幅优先，再比较邻区代价与新增过饱和",
+        "rule": "先满足全部已设需求的原实验约束；最小化最差全网耗时增幅，其次邻区增幅、邻区新增过饱和里程。仅解释已测措施，不推断未测需求。"
+      },
+      "new_analysis": {
+        "version": "paired-tolerance-v2",
+        "factors": [
+          0.9,
+          1.0,
+          1.1
+        ],
+        "policies": [
+          {
+            "name": "S1_parking",
+            "changes": [
+              {
+                "from_node": 5990,
+                "to_node": 5991,
+                "old_parking": 3,
+                "parking": 2
+              }
+            ],
+            "checks": [
+              {
+                "factor": 0.9,
+                "run": "demand_0p900_S1_parking",
+                "baseline": "demand_0p900_baseline",
+                "accepted": true,
+                "network_time_pct": -0.0007105237839089007,
+                "neighbor_time_pct": -0.0010081356349278536,
+                "new_neighbor_km": 0,
+                "violations": []
+              },
+              {
+                "factor": 1.0,
+                "run": "S1_parking",
+                "baseline": "baseline",
+                "accepted": false,
+                "network_time_pct": 0.0007962881232614905,
+                "neighbor_time_pct": 0.09715331727804255,
+                "new_neighbor_km": 0,
+                "violations": [
+                  "全网路段行驶时间未改善，不能只用目标出口流量减少推荐"
+                ]
+              },
+              {
+                "factor": 1.1,
+                "run": "demand_1p100_S1_parking",
+                "baseline": "demand_1p100_baseline",
+                "accepted": false,
+                "network_time_pct": 0.0016352484216497487,
+                "neighbor_time_pct": 0.16949614577190797,
+                "new_neighbor_km": 0,
+                "violations": [
+                  "全网路段行驶时间未改善，不能只用目标出口流量减少推荐"
+                ]
+              }
+            ],
+            "missing": [],
+            "reasons": [
+              "需求 × 1.0：全网路段行驶时间未改善，不能只用目标出口流量减少推荐",
+              "需求 × 1.1：全网路段行驶时间未改善，不能只用目标出口流量减少推荐"
+            ],
+            "feasible": false,
+            "worst": null,
+            "dominated_by": [],
+            "frontier": false
+          },
+          {
+            "name": "S2_turn",
+            "changes": [
+              {
+                "kind": "turn",
+                "turn": [
+                  4797,
+                  5990,
+                  5991
+                ]
+              }
+            ],
+            "checks": [
+              {
+                "factor": 0.9,
+                "run": "demand_0p900_S2_turn",
+                "baseline": "demand_0p900_baseline",
+                "accepted": true,
+                "network_time_pct": -0.08591578505451336,
+                "neighbor_time_pct": -9.090403923146006,
+                "new_neighbor_km": 0,
+                "violations": []
+              },
+              {
+                "factor": 1.0,
+                "run": "S2_turn",
+                "baseline": "baseline",
+                "accepted": true,
+                "network_time_pct": -0.14578369158164683,
+                "neighbor_time_pct": -10.977463251041254,
+                "new_neighbor_km": 0,
+                "violations": []
+              },
+              {
+                "factor": 1.1,
+                "run": "demand_1p100_S2_turn",
+                "baseline": "demand_1p100_baseline",
+                "accepted": true,
+                "network_time_pct": -0.2467685296442368,
+                "neighbor_time_pct": -5.949884896703117,
+                "new_neighbor_km": 0,
+                "violations": []
+              }
+            ],
+            "missing": [],
+            "reasons": [],
+            "feasible": true,
+            "worst": [
+              -0.08591578505451336,
+              -5.949884896703117,
+              0
+            ],
+            "dominated_by": [],
+            "frontier": true
+          },
+          {
+            "name": "S3_combined",
+            "changes": [
+              {
+                "from_node": 5990,
+                "to_node": 5991,
+                "old_parking": 3,
+                "parking": 2
+              },
+              {
+                "kind": "turn",
+                "turn": [
+                  4797,
+                  5990,
+                  5991
+                ]
+              }
+            ],
+            "checks": [
+              {
+                "factor": 0.9,
+                "run": "demand_0p900_S3_combined",
+                "baseline": "demand_0p900_baseline",
+                "accepted": true,
+                "network_time_pct": -0.0859507058496134,
+                "neighbor_time_pct": -9.09000363422524,
+                "new_neighbor_km": 0,
+                "violations": []
+              },
+              {
+                "factor": 1.0,
+                "run": "S3_combined",
+                "baseline": "baseline",
+                "accepted": true,
+                "network_time_pct": -0.1458268610335267,
+                "neighbor_time_pct": -10.977150111275114,
+                "new_neighbor_km": 0,
+                "violations": []
+              },
+              {
+                "factor": 1.1,
+                "run": "demand_1p100_S3_combined",
+                "baseline": "demand_1p100_baseline",
+                "accepted": true,
+                "network_time_pct": -0.24681451293544487,
+                "neighbor_time_pct": -5.948085279447213,
+                "new_neighbor_km": 0,
+                "violations": []
+              }
+            ],
+            "missing": [],
+            "reasons": [],
+            "feasible": true,
+            "worst": [
+              -0.0859507058496134,
+              -5.948085279447213,
+              0
+            ],
+            "dominated_by": [],
+            "frontier": true
+          }
+        ],
+        "recommendation": "S2_turn",
+        "finalized": true,
+        "eligible_count": 2,
+        "frontier_count": 2,
+        "reason": "全部已设需求通过原约束；应用预设容差后优先简单措施。精确权衡前沿仍保留供比较。",
+        "rule": "先通过原约束；依次保留距当前最优全网增幅不超过0.001个百分点、邻区增幅不超过0.01个百分点、新增邻区过饱和不超过0.001km的候选；近似相同时优先少措施、少停车1级措施，再按名称稳定排序。容差为决策假设，不是统计显著性。",
+        "selection": {
+          "version": "tolerance-v2",
+          "tolerances": [
+            0.001,
+            0.01,
+            0.001
+          ],
+          "stages": [
+            {
+              "dimension": 0,
+              "anchor": -0.0859507058496134,
+              "tolerance": 0.001,
+              "retained": [
+                "S2_turn",
+                "S3_combined"
+              ]
+            },
+            {
+              "dimension": 1,
+              "anchor": -5.949884896703117,
+              "tolerance": 0.01,
+              "retained": [
+                "S2_turn",
+                "S3_combined"
+              ]
+            },
+            {
+              "dimension": 2,
+              "anchor": 0,
+              "tolerance": 0.001,
+              "retained": [
+                "S2_turn",
+                "S3_combined"
+              ]
+            }
+          ],
+          "equivalent_candidates": [
+            "S2_turn",
+            "S3_combined"
+          ],
+          "recommendation": "S2_turn",
+          "candidates": [
+            {
+              "name": "S2_turn",
+              "objectives": [
+                -0.08591578505451336,
+                -5.949884896703117,
+                0
+              ],
+              "complexity": [
+                1,
+                0
+              ],
+              "difference_from_selected": [
+                0.0,
+                0.0,
+                0
+              ]
+            },
+            {
+              "name": "S3_combined",
+              "objectives": [
+                -0.0859507058496134,
+                -5.948085279447213,
+                0
+              ],
+              "complexity": [
+                2,
+                0
+              ],
+              "difference_from_selected": [
+                -3.492079510003521e-05,
+                0.0017996172559042733,
+                0
+              ]
+            }
+          ],
+          "rule": "先通过原约束；依次保留距当前最优全网增幅不超过0.001个百分点、邻区增幅不超过0.01个百分点、新增邻区过饱和不超过0.001km的候选；近似相同时优先少措施、少停车1级措施，再按名称稳定排序。容差为决策假设，不是统计显著性。"
+        }
+      },
+      "conditional_v2": {
+        "0.9": {
+          "version": "tolerance-v2",
+          "tolerances": [
+            0.001,
+            0.01,
+            0.001
+          ],
+          "stages": [
+            {
+              "dimension": 0,
+              "anchor": -0.0859507058496134,
+              "tolerance": 0.001,
+              "retained": [
+                "demand_0p900_S2_turn",
+                "demand_0p900_S3_combined"
+              ]
+            },
+            {
+              "dimension": 1,
+              "anchor": -9.090403923146006,
+              "tolerance": 0.01,
+              "retained": [
+                "demand_0p900_S2_turn",
+                "demand_0p900_S3_combined"
+              ]
+            },
+            {
+              "dimension": 2,
+              "anchor": 0,
+              "tolerance": 0.001,
+              "retained": [
+                "demand_0p900_S2_turn",
+                "demand_0p900_S3_combined"
+              ]
+            }
+          ],
+          "equivalent_candidates": [
+            "demand_0p900_S2_turn",
+            "demand_0p900_S3_combined"
+          ],
+          "recommendation": "demand_0p900_S2_turn",
+          "candidates": [
+            {
+              "name": "demand_0p900_S1_parking",
+              "objectives": [
+                -0.0007105237839089007,
+                -0.0010081356349278536,
+                0
+              ],
+              "complexity": [
+                1,
+                0
+              ],
+              "difference_from_selected": [
+                0.08520526127060446,
+                9.089395787511078,
+                0
+              ]
+            },
+            {
+              "name": "demand_0p900_S2_turn",
+              "objectives": [
+                -0.08591578505451336,
+                -9.090403923146006,
+                0
+              ],
+              "complexity": [
+                1,
+                0
+              ],
+              "difference_from_selected": [
+                0.0,
+                0.0,
+                0
+              ]
+            },
+            {
+              "name": "demand_0p900_S3_combined",
+              "objectives": [
+                -0.0859507058496134,
+                -9.09000363422524,
+                0
+              ],
+              "complexity": [
+                2,
+                0
+              ],
+              "difference_from_selected": [
+                -3.492079510003521e-05,
+                0.0004002889207654903,
+                0
+              ]
+            }
+          ],
+          "rule": "先通过原约束；依次保留距当前最优全网增幅不超过0.001个百分点、邻区增幅不超过0.01个百分点、新增邻区过饱和不超过0.001km的候选；近似相同时优先少措施、少停车1级措施，再按名称稳定排序。容差为决策假设，不是统计显著性。"
+        },
+        "1.0": {
+          "version": "tolerance-v2",
+          "tolerances": [
+            0.001,
+            0.01,
+            0.001
+          ],
+          "stages": [
+            {
+              "dimension": 0,
+              "anchor": -0.1458268610335267,
+              "tolerance": 0.001,
+              "retained": [
+                "S2_turn",
+                "S3_combined"
+              ]
+            },
+            {
+              "dimension": 1,
+              "anchor": -10.977463251041254,
+              "tolerance": 0.01,
+              "retained": [
+                "S2_turn",
+                "S3_combined"
+              ]
+            },
+            {
+              "dimension": 2,
+              "anchor": 0,
+              "tolerance": 0.001,
+              "retained": [
+                "S2_turn",
+                "S3_combined"
+              ]
+            }
+          ],
+          "equivalent_candidates": [
+            "S2_turn",
+            "S3_combined"
+          ],
+          "recommendation": "S2_turn",
+          "candidates": [
+            {
+              "name": "S2_turn",
+              "objectives": [
+                -0.14578369158164683,
+                -10.977463251041254,
+                0
+              ],
+              "complexity": [
+                1,
+                0
+              ],
+              "difference_from_selected": [
+                0.0,
+                0.0,
+                0
+              ]
+            },
+            {
+              "name": "S3_combined",
+              "objectives": [
+                -0.1458268610335267,
+                -10.977150111275114,
+                0
+              ],
+              "complexity": [
+                2,
+                0
+              ],
+              "difference_from_selected": [
+                -4.316945187987642e-05,
+                0.00031313976614022465,
+                0
+              ]
+            }
+          ],
+          "rule": "先通过原约束；依次保留距当前最优全网增幅不超过0.001个百分点、邻区增幅不超过0.01个百分点、新增邻区过饱和不超过0.001km的候选；近似相同时优先少措施、少停车1级措施，再按名称稳定排序。容差为决策假设，不是统计显著性。"
+        },
+        "1.1": {
+          "version": "tolerance-v2",
+          "tolerances": [
+            0.001,
+            0.01,
+            0.001
+          ],
+          "stages": [
+            {
+              "dimension": 0,
+              "anchor": -0.24681451293544487,
+              "tolerance": 0.001,
+              "retained": [
+                "demand_1p100_S2_turn",
+                "demand_1p100_S3_combined"
+              ]
+            },
+            {
+              "dimension": 1,
+              "anchor": -5.949884896703117,
+              "tolerance": 0.01,
+              "retained": [
+                "demand_1p100_S2_turn",
+                "demand_1p100_S3_combined"
+              ]
+            },
+            {
+              "dimension": 2,
+              "anchor": 0,
+              "tolerance": 0.001,
+              "retained": [
+                "demand_1p100_S2_turn",
+                "demand_1p100_S3_combined"
+              ]
+            }
+          ],
+          "equivalent_candidates": [
+            "demand_1p100_S2_turn",
+            "demand_1p100_S3_combined"
+          ],
+          "recommendation": "demand_1p100_S2_turn",
+          "candidates": [
+            {
+              "name": "demand_1p100_S2_turn",
+              "objectives": [
+                -0.2467685296442368,
+                -5.949884896703117,
+                0
+              ],
+              "complexity": [
+                1,
+                0
+              ],
+              "difference_from_selected": [
+                0.0,
+                0.0,
+                0
+              ]
+            },
+            {
+              "name": "demand_1p100_S3_combined",
+              "objectives": [
+                -0.24681451293544487,
+                -5.948085279447213,
+                0
+              ],
+              "complexity": [
+                2,
+                0
+              ],
+              "difference_from_selected": [
+                -4.5983291208084864e-05,
+                0.0017996172559042733,
+                0
+              ]
+            }
+          ],
+          "rule": "先通过原约束；依次保留距当前最优全网增幅不超过0.001个百分点、邻区增幅不超过0.01个百分点、新增邻区过饱和不超过0.001km的候选；近似相同时优先少措施、少停车1级措施，再按名称稳定排序。容差为决策假设，不是统计显著性。"
+        }
+      },
+      "warnings": [
+        {
+          "run": "S1_parking",
+          "factor": 1.0,
+          "original_eligible": false,
+          "original_delta": {
+            "core": {
+              "speed_change_pct": 15.20879120879124,
+              "running_time_change_pct": -12.174835192385869,
+              "oversaturated_km_change": 0.0
+            },
+            "neighbor": {
+              "speed_change_pct": -0.1214870969321713,
+              "running_time_change_pct": 0.09715331727804255,
+              "oversaturated_km_change": 0.0
+            },
+            "network": {
+              "speed_change_pct": -0.0006957891649395087,
+              "running_time_change_pct": 0.0007962881232614905,
+              "oversaturated_km_change": 0.0
+            }
+          },
+          "new_network_overloaded_km": 0.0,
+          "added_time_pcu_h": 6.592595686562255,
+          "saved_time_pcu_h": 5.061825973521211,
+          "net_time_pcu_h": 1.5307697130410443,
+          "worst_roads": [
+            {
+              "from_node": 11516,
+              "to_node": 10552,
+              "name": "匝道",
+              "time_increase_pcu_h": 0.4096679089380215
+            },
+            {
+              "from_node": 32,
+              "to_node": 10305,
+              "name": "11044路",
+              "time_increase_pcu_h": 0.2712348408550431
+            },
+            {
+              "from_node": 5243,
+              "to_node": 10508,
+              "name": "方家营",
+              "time_increase_pcu_h": 0.23376299999998673
+            },
+            {
+              "from_node": 10531,
+              "to_node": 10533,
+              "name": "老江口",
+              "time_increase_pcu_h": 0.23274276074398603
+            },
+            {
+              "from_node": 4799,
+              "to_node": 4798,
+              "name": "和燕路",
+              "time_increase_pcu_h": 0.23201326673125733
+            }
+          ]
+        },
+        {
+          "run": "S2_turn",
+          "factor": 1.0,
+          "original_eligible": true,
+          "original_delta": {
+            "core": {
+              "speed_change_pct": 27.098901098901095,
+              "running_time_change_pct": -53.67213493699305,
+              "oversaturated_km_change": -0.66
+            },
+            "neighbor": {
+              "speed_change_pct": 17.49136648070746,
+              "running_time_change_pct": -10.977463251041254,
+              "oversaturated_km_change": -0.2650000000000001
+            },
+            "network": {
+              "speed_change_pct": 0.16699336086520855,
+              "running_time_change_pct": -0.14578369158164683,
+              "oversaturated_km_change": -1.9485087000000476
+            }
+          },
+          "new_network_overloaded_km": 8.858574299999999,
+          "added_time_pcu_h": 789.2598871761635,
+          "saved_time_pcu_h": 1069.5117874784978,
+          "net_time_pcu_h": -280.2519003023343,
+          "worst_roads": [
+            {
+              "from_node": 10532,
+              "to_node": 5221,
+              "name": "江边路",
+              "time_increase_pcu_h": 30.095039708064512
+            },
+            {
+              "from_node": 83870,
+              "to_node": 83871,
+              "name": "柳塘立交桥",
+              "time_increase_pcu_h": 19.490850147991594
+            },
+            {
+              "from_node": 6971,
+              "to_node": 5959,
+              "name": "25451路",
+              "time_increase_pcu_h": 17.787027653626676
+            },
+            {
+              "from_node": 5956,
+              "to_node": 6654,
+              "name": "燕尧路",
+              "time_increase_pcu_h": 9.770476115156185
+            },
+            {
+              "from_node": 236,
+              "to_node": 188,
+              "name": "12293路",
+              "time_increase_pcu_h": 9.287932267016028
+            }
+          ]
+        },
+        {
+          "run": "S3_combined",
+          "factor": 1.0,
+          "original_eligible": true,
+          "original_delta": {
+            "core": {
+              "speed_change_pct": 29.736263736263744,
+              "running_time_change_pct": -54.55839367720456,
+              "oversaturated_km_change": -0.66
+            },
+            "neighbor": {
+              "speed_change_pct": 17.48848581074003,
+              "running_time_change_pct": -10.977150111275114,
+              "oversaturated_km_change": -0.2650000000000001
+            },
+            "network": {
+              "speed_change_pct": 0.16703657494658852,
+              "running_time_change_pct": -0.1458268610335267,
+              "oversaturated_km_change": -1.9485087000000476
+            }
+          },
+          "new_network_overloaded_km": 8.858574299999999,
+          "added_time_pcu_h": 789.2605470165462,
+          "saved_time_pcu_h": 1069.5954354830244,
+          "net_time_pcu_h": -280.3348884664782,
+          "worst_roads": [
+            {
+              "from_node": 10532,
+              "to_node": 5221,
+              "name": "江边路",
+              "time_increase_pcu_h": 30.095039708064512
+            },
+            {
+              "from_node": 83870,
+              "to_node": 83871,
+              "name": "柳塘立交桥",
+              "time_increase_pcu_h": 19.490850147991594
+            },
+            {
+              "from_node": 6971,
+              "to_node": 5959,
+              "name": "25451路",
+              "time_increase_pcu_h": 17.787027653626676
+            },
+            {
+              "from_node": 5956,
+              "to_node": 6654,
+              "name": "燕尧路",
+              "time_increase_pcu_h": 9.770476115156185
+            },
+            {
+              "from_node": 236,
+              "to_node": 188,
+              "name": "12293路",
+              "time_increase_pcu_h": 9.287932267016028
+            }
+          ]
+        },
+        {
+          "run": "demand_0p900_S1_parking",
+          "factor": 0.9,
+          "original_eligible": true,
+          "original_delta": {
+            "core": {
+              "speed_change_pct": 12.362122788761742,
+              "running_time_change_pct": -10.36916827120674,
+              "oversaturated_km_change": 0.0
+            },
+            "neighbor": {
+              "speed_change_pct": -0.009188992283049036,
+              "running_time_change_pct": -0.0010081356349278536,
+              "oversaturated_km_change": 0.0
+            },
+            "network": {
+              "speed_change_pct": 0.0008938964185523091,
+              "running_time_change_pct": -0.0007105237839089007,
+              "oversaturated_km_change": 0.2848599999999806
+            }
+          },
+          "new_network_overloaded_km": 0.42686,
+          "added_time_pcu_h": 5.143073377296541,
+          "saved_time_pcu_h": 6.325000463089363,
+          "net_time_pcu_h": -1.1819270857928217,
+          "worst_roads": [
+            {
+              "from_node": 188,
+              "to_node": 236,
+              "name": "12201路",
+              "time_increase_pcu_h": 0.14155816554802322
+            },
+            {
+              "from_node": 4772,
+              "to_node": 4771,
+              "name": "黄家圩路",
+              "time_increase_pcu_h": 0.11301755538844435
+            },
+            {
+              "from_node": 10552,
+              "to_node": 11517,
+              "name": "匝道",
+              "time_increase_pcu_h": 0.10875114067284676
+            },
+            {
+              "from_node": 4816,
+              "to_node": 4815,
+              "name": "墨香路",
+              "time_increase_pcu_h": 0.0996521745667943
+            },
+            {
+              "from_node": 5030,
+              "to_node": 5028,
+              "name": "22803路",
+              "time_increase_pcu_h": 0.07840616916395772
+            }
+          ]
+        },
+        {
+          "run": "demand_0p900_S2_turn",
+          "factor": 0.9,
+          "original_eligible": true,
+          "original_delta": {
+            "core": {
+              "speed_change_pct": 21.311134235171725,
+              "running_time_change_pct": -51.51801218992864,
+              "oversaturated_km_change": -0.66
+            },
+            "neighbor": {
+              "speed_change_pct": 10.911653329403892,
+              "running_time_change_pct": -9.090403923146006,
+              "oversaturated_km_change": -0.42700000000000005
+            },
+            "network": {
+              "speed_change_pct": 0.08943581167013548,
+              "running_time_change_pct": -0.08591578505451336,
+              "oversaturated_km_change": -4.514263300000039
+            }
+          },
+          "new_network_overloaded_km": 6.081112000000001,
+          "added_time_pcu_h": 463.2303446858231,
+          "saved_time_pcu_h": 606.1477188157356,
+          "net_time_pcu_h": -142.9173741299125,
+          "worst_roads": [
+            {
+              "from_node": 10548,
+              "to_node": 10549,
+              "name": "无名道路",
+              "time_increase_pcu_h": 8.065794615677323
+            },
+            {
+              "from_node": 10305,
+              "to_node": 32,
+              "name": "11044路",
+              "time_increase_pcu_h": 6.7131706284475925
+            },
+            {
+              "from_node": 6654,
+              "to_node": 4188,
+              "name": "匝道",
+              "time_increase_pcu_h": 6.6718567816032675
+            },
+            {
+              "from_node": 5233,
+              "to_node": 4264,
+              "name": "23013路",
+              "time_increase_pcu_h": 6.091332298974636
+            },
+            {
+              "from_node": 4778,
+              "to_node": 5974,
+              "name": "红山南路",
+              "time_increase_pcu_h": 5.960709910000001
+            }
+          ]
+        },
+        {
+          "run": "demand_0p900_S3_combined",
+          "factor": 0.9,
+          "original_eligible": true,
+          "original_delta": {
+            "core": {
+              "speed_change_pct": 23.288241415192545,
+              "running_time_change_pct": -52.249672554243396,
+              "oversaturated_km_change": -0.66
+            },
+            "neighbor": {
+              "speed_change_pct": 10.909401310262258,
+              "running_time_change_pct": -9.09000363422524,
+              "oversaturated_km_change": -0.42700000000000005
+            },
+            "network": {
+              "speed_change_pct": 0.0894711797221337,
+              "running_time_change_pct": -0.0859507058496134,
+              "oversaturated_km_change": -4.514263300000039
+            }
+          },
+          "new_network_overloaded_km": 6.081112000000001,
+          "added_time_pcu_h": 463.2325899337013,
+          "saved_time_pcu_h": 606.2080533697289,
+          "net_time_pcu_h": -142.97546343602755,
+          "worst_roads": [
+            {
+              "from_node": 10548,
+              "to_node": 10549,
+              "name": "无名道路",
+              "time_increase_pcu_h": 8.065794615677323
+            },
+            {
+              "from_node": 10305,
+              "to_node": 32,
+              "name": "11044路",
+              "time_increase_pcu_h": 6.7131706284475925
+            },
+            {
+              "from_node": 6654,
+              "to_node": 4188,
+              "name": "匝道",
+              "time_increase_pcu_h": 6.6718567816032675
+            },
+            {
+              "from_node": 5233,
+              "to_node": 4264,
+              "name": "23013路",
+              "time_increase_pcu_h": 6.091332298974636
+            },
+            {
+              "from_node": 4778,
+              "to_node": 5974,
+              "name": "红山南路",
+              "time_increase_pcu_h": 5.960709910000001
+            }
+          ]
+        },
+        {
+          "run": "demand_1p100_S1_parking",
+          "factor": 1.1,
+          "original_eligible": false,
+          "original_delta": {
+            "core": {
+              "speed_change_pct": 13.22609472743519,
+              "running_time_change_pct": -6.827974632182599,
+              "oversaturated_km_change": 0.0
+            },
+            "neighbor": {
+              "speed_change_pct": -0.20584137116617107,
+              "running_time_change_pct": 0.16949614577190797,
+              "oversaturated_km_change": 0.0
+            },
+            "network": {
+              "speed_change_pct": -0.0019279761670376594,
+              "running_time_change_pct": 0.0016352484216497487,
+              "oversaturated_km_change": 0.0
+            }
+          },
+          "new_network_overloaded_km": 0.0,
+          "added_time_pcu_h": 6.883420336139858,
+          "saved_time_pcu_h": 3.27362943500878,
+          "net_time_pcu_h": 3.6097909011310785,
+          "worst_roads": [
+            {
+              "from_node": 4800,
+              "to_node": 4799,
+              "name": "和燕路",
+              "time_increase_pcu_h": 2.6588108693137555
+            },
+            {
+              "from_node": 4798,
+              "to_node": 4797,
+              "name": "和燕路",
+              "time_increase_pcu_h": 0.645129166666655
+            },
+            {
+              "from_node": 4799,
+              "to_node": 4798,
+              "name": "和燕路",
+              "time_increase_pcu_h": 0.5883733333333221
+            },
+            {
+              "from_node": 4797,
+              "to_node": 5990,
+              "name": "十字街",
+              "time_increase_pcu_h": 0.4197647934899758
+            },
+            {
+              "from_node": 4771,
+              "to_node": 4770,
+              "name": "22534路",
+              "time_increase_pcu_h": 0.32900013287446145
+            }
+          ]
+        },
+        {
+          "run": "demand_1p100_S2_turn",
+          "factor": 1.1,
+          "original_eligible": true,
+          "original_delta": {
+            "core": {
+              "speed_change_pct": 27.993744414655943,
+              "running_time_change_pct": -52.14452349682248,
+              "oversaturated_km_change": -0.66
+            },
+            "neighbor": {
+              "speed_change_pct": 11.7644396117623,
+              "running_time_change_pct": -5.949884896703117,
+              "oversaturated_km_change": -0.6220000000000003
+            },
+            "network": {
+              "speed_change_pct": 0.21006368368785555,
+              "running_time_change_pct": -0.2467685296442368,
+              "oversaturated_km_change": 0.8604454999999689
+            }
+          },
+          "new_network_overloaded_km": 12.588472899999996,
+          "added_time_pcu_h": 1456.978753641098,
+          "saved_time_pcu_h": 2001.7172662707264,
+          "net_time_pcu_h": -544.7385126296285,
+          "worst_roads": [
+            {
+              "from_node": 10552,
+              "to_node": 11517,
+              "name": "匝道",
+              "time_increase_pcu_h": 80.57180785233703
+            },
+            {
+              "from_node": 10305,
+              "to_node": 32,
+              "name": "11044路",
+              "time_increase_pcu_h": 71.98439574579274
+            },
+            {
+              "from_node": 6947,
+              "to_node": 6949,
+              "name": "晓街",
+              "time_increase_pcu_h": 32.421756874059206
+            },
+            {
+              "from_node": 11935,
+              "to_node": 10739,
+              "name": "匝道",
+              "time_increase_pcu_h": 30.264695376354673
+            },
+            {
+              "from_node": 106,
+              "to_node": 235,
+              "name": "12052路",
+              "time_increase_pcu_h": 23.677866666666816
+            }
+          ]
+        },
+        {
+          "run": "demand_1p100_S3_combined",
+          "factor": 1.1,
+          "original_eligible": true,
+          "original_delta": {
+            "core": {
+              "speed_change_pct": 31.322609472743522,
+              "running_time_change_pct": -53.28975179861841,
+              "oversaturated_km_change": -0.66
+            },
+            "neighbor": {
+              "speed_change_pct": 11.759582324800611,
+              "running_time_change_pct": -5.948085279447213,
+              "oversaturated_km_change": -0.6220000000000003
+            },
+            "network": {
+              "speed_change_pct": 0.21011042870906493,
+              "running_time_change_pct": -0.24681451293544487,
+              "oversaturated_km_change": 0.8604454999999689
+            }
+          },
+          "new_network_overloaded_km": 12.588472899999996,
+          "added_time_pcu_h": 1456.9865474836724,
+          "saved_time_pcu_h": 2001.8265676665048,
+          "net_time_pcu_h": -544.8400201828324,
+          "worst_roads": [
+            {
+              "from_node": 10552,
+              "to_node": 11517,
+              "name": "匝道",
+              "time_increase_pcu_h": 80.57180785233703
+            },
+            {
+              "from_node": 10305,
+              "to_node": 32,
+              "name": "11044路",
+              "time_increase_pcu_h": 71.98439574579274
+            },
+            {
+              "from_node": 6947,
+              "to_node": 6949,
+              "name": "晓街",
+              "time_increase_pcu_h": 32.421756874059206
+            },
+            {
+              "from_node": 11935,
+              "to_node": 10739,
+              "name": "匝道",
+              "time_increase_pcu_h": 30.264695376354673
+            },
+            {
+              "from_node": 106,
+              "to_node": 235,
+              "name": "12052路",
+              "time_increase_pcu_h": 23.677866666666816
+            }
+          ]
+        }
+      ],
+      "threshold_scope_scan": [
+        {
+          "neighbor_hops": 1,
+          "variant": "original",
+          "recommendation": null,
+          "eligible": []
+        },
+        {
+          "neighbor_hops": 1,
+          "variant": "max_neighbor_time_increase_pct=0",
+          "recommendation": null,
+          "eligible": []
+        },
+        {
+          "neighbor_hops": 1,
+          "variant": "max_neighbor_time_increase_pct=0.25",
+          "recommendation": null,
+          "eligible": []
+        },
+        {
+          "neighbor_hops": 1,
+          "variant": "max_neighbor_time_increase_pct=1",
+          "recommendation": null,
+          "eligible": []
+        },
+        {
+          "neighbor_hops": 1,
+          "variant": "max_network_time_increase_pct=0",
+          "recommendation": null,
+          "eligible": []
+        },
+        {
+          "neighbor_hops": 1,
+          "variant": "max_network_time_increase_pct=0.05",
+          "recommendation": null,
+          "eligible": []
+        },
+        {
+          "neighbor_hops": 1,
+          "variant": "max_network_time_increase_pct=0.2",
+          "recommendation": null,
+          "eligible": []
+        },
+        {
+          "neighbor_hops": 1,
+          "variant": "max_new_oversaturated_km=0",
+          "recommendation": null,
+          "eligible": []
+        },
+        {
+          "neighbor_hops": 1,
+          "variant": "max_new_oversaturated_km=0.05",
+          "recommendation": null,
+          "eligible": []
+        },
+        {
+          "neighbor_hops": 1,
+          "variant": "max_new_oversaturated_km=0.2",
+          "recommendation": null,
+          "eligible": []
+        },
+        {
+          "neighbor_hops": 2,
+          "variant": "original",
+          "recommendation": "S2_turn",
+          "eligible": [
+            "S2_turn",
+            "S3_combined"
+          ]
+        },
+        {
+          "neighbor_hops": 2,
+          "variant": "max_neighbor_time_increase_pct=0",
+          "recommendation": "S2_turn",
+          "eligible": [
+            "S2_turn",
+            "S3_combined"
+          ]
+        },
+        {
+          "neighbor_hops": 2,
+          "variant": "max_neighbor_time_increase_pct=0.25",
+          "recommendation": "S2_turn",
+          "eligible": [
+            "S2_turn",
+            "S3_combined"
+          ]
+        },
+        {
+          "neighbor_hops": 2,
+          "variant": "max_neighbor_time_increase_pct=1",
+          "recommendation": "S2_turn",
+          "eligible": [
+            "S2_turn",
+            "S3_combined"
+          ]
+        },
+        {
+          "neighbor_hops": 2,
+          "variant": "max_network_time_increase_pct=0",
+          "recommendation": "S2_turn",
+          "eligible": [
+            "S2_turn",
+            "S3_combined"
+          ]
+        },
+        {
+          "neighbor_hops": 2,
+          "variant": "max_network_time_increase_pct=0.05",
+          "recommendation": "S2_turn",
+          "eligible": [
+            "S2_turn",
+            "S3_combined"
+          ]
+        },
+        {
+          "neighbor_hops": 2,
+          "variant": "max_network_time_increase_pct=0.2",
+          "recommendation": "S2_turn",
+          "eligible": [
+            "S2_turn",
+            "S3_combined"
+          ]
+        },
+        {
+          "neighbor_hops": 2,
+          "variant": "max_new_oversaturated_km=0",
+          "recommendation": "S2_turn",
+          "eligible": [
+            "S2_turn",
+            "S3_combined"
+          ]
+        },
+        {
+          "neighbor_hops": 2,
+          "variant": "max_new_oversaturated_km=0.05",
+          "recommendation": "S2_turn",
+          "eligible": [
+            "S2_turn",
+            "S3_combined"
+          ]
+        },
+        {
+          "neighbor_hops": 2,
+          "variant": "max_new_oversaturated_km=0.2",
+          "recommendation": "S2_turn",
+          "eligible": [
+            "S2_turn",
+            "S3_combined"
+          ]
+        },
+        {
+          "neighbor_hops": 3,
+          "variant": "original",
+          "recommendation": "S2_turn",
+          "eligible": [
+            "S2_turn",
+            "S3_combined"
+          ]
+        },
+        {
+          "neighbor_hops": 3,
+          "variant": "max_neighbor_time_increase_pct=0",
+          "recommendation": "S2_turn",
+          "eligible": [
+            "S2_turn",
+            "S3_combined"
+          ]
+        },
+        {
+          "neighbor_hops": 3,
+          "variant": "max_neighbor_time_increase_pct=0.25",
+          "recommendation": "S2_turn",
+          "eligible": [
+            "S2_turn",
+            "S3_combined"
+          ]
+        },
+        {
+          "neighbor_hops": 3,
+          "variant": "max_neighbor_time_increase_pct=1",
+          "recommendation": "S2_turn",
+          "eligible": [
+            "S2_turn",
+            "S3_combined"
+          ]
+        },
+        {
+          "neighbor_hops": 3,
+          "variant": "max_network_time_increase_pct=0",
+          "recommendation": "S2_turn",
+          "eligible": [
+            "S2_turn",
+            "S3_combined"
+          ]
+        },
+        {
+          "neighbor_hops": 3,
+          "variant": "max_network_time_increase_pct=0.05",
+          "recommendation": "S2_turn",
+          "eligible": [
+            "S2_turn",
+            "S3_combined"
+          ]
+        },
+        {
+          "neighbor_hops": 3,
+          "variant": "max_network_time_increase_pct=0.2",
+          "recommendation": "S2_turn",
+          "eligible": [
+            "S2_turn",
+            "S3_combined"
+          ]
+        },
+        {
+          "neighbor_hops": 3,
+          "variant": "max_new_oversaturated_km=0",
+          "recommendation": null,
+          "eligible": []
+        },
+        {
+          "neighbor_hops": 3,
+          "variant": "max_new_oversaturated_km=0.05",
+          "recommendation": null,
+          "eligible": []
+        },
+        {
+          "neighbor_hops": 3,
+          "variant": "max_new_oversaturated_km=0.2",
+          "recommendation": "S2_turn",
+          "eligible": [
+            "S2_turn",
+            "S3_combined"
+          ]
+        }
+      ],
+      "tolerance_scan": [
+        {
+          "multiplier": 0,
+          "version": "tolerance-v2",
+          "tolerances": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "stages": [
+            {
+              "dimension": 0,
+              "anchor": -0.0859507058496134,
+              "tolerance": 0.0,
+              "retained": [
+                "S3_combined"
+              ]
+            },
+            {
+              "dimension": 1,
+              "anchor": -5.948085279447213,
+              "tolerance": 0.0,
+              "retained": [
+                "S3_combined"
+              ]
+            },
+            {
+              "dimension": 2,
+              "anchor": 0,
+              "tolerance": 0.0,
+              "retained": [
+                "S3_combined"
+              ]
+            }
+          ],
+          "equivalent_candidates": [
+            "S3_combined"
+          ],
+          "recommendation": "S3_combined",
+          "candidates": [
+            {
+              "name": "S2_turn",
+              "objectives": [
+                -0.08591578505451336,
+                -5.949884896703117,
+                0
+              ],
+              "complexity": [
+                1,
+                0
+              ],
+              "difference_from_selected": [
+                3.492079510003521e-05,
+                -0.0017996172559042733,
+                0
+              ]
+            },
+            {
+              "name": "S3_combined",
+              "objectives": [
+                -0.0859507058496134,
+                -5.948085279447213,
+                0
+              ],
+              "complexity": [
+                2,
+                0
+              ],
+              "difference_from_selected": [
+                0.0,
+                0.0,
+                0
+              ]
+            }
+          ],
+          "rule": "先通过原约束；依次保留距当前最优全网增幅不超过0.001个百分点、邻区增幅不超过0.01个百分点、新增邻区过饱和不超过0.001km的候选；近似相同时优先少措施、少停车1级措施，再按名称稳定排序。容差为决策假设，不是统计显著性。"
+        },
+        {
+          "multiplier": 0.1,
+          "version": "tolerance-v2",
+          "tolerances": [
+            0.0001,
+            0.001,
+            0.0001
+          ],
+          "stages": [
+            {
+              "dimension": 0,
+              "anchor": -0.0859507058496134,
+              "tolerance": 0.0001,
+              "retained": [
+                "S2_turn",
+                "S3_combined"
+              ]
+            },
+            {
+              "dimension": 1,
+              "anchor": -5.949884896703117,
+              "tolerance": 0.001,
+              "retained": [
+                "S2_turn"
+              ]
+            },
+            {
+              "dimension": 2,
+              "anchor": 0,
+              "tolerance": 0.0001,
+              "retained": [
+                "S2_turn"
+              ]
+            }
+          ],
+          "equivalent_candidates": [
+            "S2_turn"
+          ],
+          "recommendation": "S2_turn",
+          "candidates": [
+            {
+              "name": "S2_turn",
+              "objectives": [
+                -0.08591578505451336,
+                -5.949884896703117,
+                0
+              ],
+              "complexity": [
+                1,
+                0
+              ],
+              "difference_from_selected": [
+                0.0,
+                0.0,
+                0
+              ]
+            },
+            {
+              "name": "S3_combined",
+              "objectives": [
+                -0.0859507058496134,
+                -5.948085279447213,
+                0
+              ],
+              "complexity": [
+                2,
+                0
+              ],
+              "difference_from_selected": [
+                -3.492079510003521e-05,
+                0.0017996172559042733,
+                0
+              ]
+            }
+          ],
+          "rule": "先通过原约束；依次保留距当前最优全网增幅不超过0.001个百分点、邻区增幅不超过0.01个百分点、新增邻区过饱和不超过0.001km的候选；近似相同时优先少措施、少停车1级措施，再按名称稳定排序。容差为决策假设，不是统计显著性。"
+        },
+        {
+          "multiplier": 1,
+          "version": "tolerance-v2",
+          "tolerances": [
+            0.001,
+            0.01,
+            0.001
+          ],
+          "stages": [
+            {
+              "dimension": 0,
+              "anchor": -0.0859507058496134,
+              "tolerance": 0.001,
+              "retained": [
+                "S2_turn",
+                "S3_combined"
+              ]
+            },
+            {
+              "dimension": 1,
+              "anchor": -5.949884896703117,
+              "tolerance": 0.01,
+              "retained": [
+                "S2_turn",
+                "S3_combined"
+              ]
+            },
+            {
+              "dimension": 2,
+              "anchor": 0,
+              "tolerance": 0.001,
+              "retained": [
+                "S2_turn",
+                "S3_combined"
+              ]
+            }
+          ],
+          "equivalent_candidates": [
+            "S2_turn",
+            "S3_combined"
+          ],
+          "recommendation": "S2_turn",
+          "candidates": [
+            {
+              "name": "S2_turn",
+              "objectives": [
+                -0.08591578505451336,
+                -5.949884896703117,
+                0
+              ],
+              "complexity": [
+                1,
+                0
+              ],
+              "difference_from_selected": [
+                0.0,
+                0.0,
+                0
+              ]
+            },
+            {
+              "name": "S3_combined",
+              "objectives": [
+                -0.0859507058496134,
+                -5.948085279447213,
+                0
+              ],
+              "complexity": [
+                2,
+                0
+              ],
+              "difference_from_selected": [
+                -3.492079510003521e-05,
+                0.0017996172559042733,
+                0
+              ]
+            }
+          ],
+          "rule": "先通过原约束；依次保留距当前最优全网增幅不超过0.001个百分点、邻区增幅不超过0.01个百分点、新增邻区过饱和不超过0.001km的候选；近似相同时优先少措施、少停车1级措施，再按名称稳定排序。容差为决策假设，不是统计显著性。"
+        },
+        {
+          "multiplier": 10,
+          "version": "tolerance-v2",
+          "tolerances": [
+            0.01,
+            0.1,
+            0.01
+          ],
+          "stages": [
+            {
+              "dimension": 0,
+              "anchor": -0.0859507058496134,
+              "tolerance": 0.01,
+              "retained": [
+                "S2_turn",
+                "S3_combined"
+              ]
+            },
+            {
+              "dimension": 1,
+              "anchor": -5.949884896703117,
+              "tolerance": 0.1,
+              "retained": [
+                "S2_turn",
+                "S3_combined"
+              ]
+            },
+            {
+              "dimension": 2,
+              "anchor": 0,
+              "tolerance": 0.01,
+              "retained": [
+                "S2_turn",
+                "S3_combined"
+              ]
+            }
+          ],
+          "equivalent_candidates": [
+            "S2_turn",
+            "S3_combined"
+          ],
+          "recommendation": "S2_turn",
+          "candidates": [
+            {
+              "name": "S2_turn",
+              "objectives": [
+                -0.08591578505451336,
+                -5.949884896703117,
+                0
+              ],
+              "complexity": [
+                1,
+                0
+              ],
+              "difference_from_selected": [
+                0.0,
+                0.0,
+                0
+              ]
+            },
+            {
+              "name": "S3_combined",
+              "objectives": [
+                -0.0859507058496134,
+                -5.948085279447213,
+                0
+              ],
+              "complexity": [
+                2,
+                0
+              ],
+              "difference_from_selected": [
+                -3.492079510003521e-05,
+                0.0017996172559042733,
+                0
+              ]
+            }
+          ],
+          "rule": "先通过原约束；依次保留距当前最优全网增幅不超过0.001个百分点、邻区增幅不超过0.01个百分点、新增邻区过饱和不超过0.001km的候选；近似相同时优先少措施、少停车1级措施，再按名称稳定排序。容差为决策假设，不是统计显著性。"
+        }
+      ],
+      "audit_mode": "portable_archive"
+    },
+    {
+      "job": "20260908_075938_e7444a",
+      "source_state_sha256": "17b9bc742b4933e4beb064b1d16b33898997f4e91fd74b24c1c05bb5e4e7e605",
+      "archive_manifest_sha256": null,
+      "audit_mode": "strict_original_directory",
+      "audit": {
+        "passed": true,
+        "completed_scenarios": 13,
+        "module_executions": 91,
+        "scope_sizes": {
+          "core": 2,
+          "neighbor": 22,
+          "network": 32060
+        },
+        "repeat_arrays_exact": {
+          "speed_kmh": true,
+          "flow_pcu_h": true,
+          "vc": true,
+          "time_s": true
+        },
+        "verified_runs": [
+          {
+            "scenario": "baseline",
+            "modules": 7,
+            "result_rows": {
+              "speed_kmh": 32981,
+              "flow_pcu_h": 32981,
+              "vc": 32981,
+              "time_s": 32981
+            },
+            "input_difference_files": [
+              "params/AsignParameter_car.dat",
+              "params/AsignParameter_motor.dat",
+              "params/AsignParameter_taxi.dat",
+              "params/AsignParameter_truck.dat",
+              "params/Mparam635.txt"
+            ],
+            "car_od_factor": 1.0,
+            "internal_od_factor": 1.0
+          },
+          {
+            "scenario": "S1_parking",
+            "modules": 7,
+            "result_rows": {
+              "speed_kmh": 32981,
+              "flow_pcu_h": 32981,
+              "vc": 32981,
+              "time_s": 32981
+            },
+            "input_difference_files": [
+              "data/manageL.txt",
+              "params/AsignParameter_car.dat",
+              "params/AsignParameter_motor.dat",
+              "params/AsignParameter_taxi.dat",
+              "params/AsignParameter_truck.dat",
+              "params/Mparam635.txt"
+            ],
+            "car_od_factor": 1.0,
+            "internal_od_factor": 1.0
+          },
+          {
+            "scenario": "S2_oneway",
+            "modules": 7,
+            "result_rows": {
+              "speed_kmh": 32981,
+              "flow_pcu_h": 32981,
+              "vc": 32981,
+              "time_s": 32981
+            },
+            "input_difference_files": [
+              "data/ManageR1.txt",
+              "params/AsignParameter_car.dat",
+              "params/AsignParameter_motor.dat",
+              "params/AsignParameter_taxi.dat",
+              "params/AsignParameter_truck.dat",
+              "params/Mparam635.txt"
+            ],
+            "car_od_factor": 1.0,
+            "internal_od_factor": 1.0
+          },
+          {
+            "scenario": "S3_combined",
+            "modules": 7,
+            "result_rows": {
+              "speed_kmh": 32981,
+              "flow_pcu_h": 32981,
+              "vc": 32981,
+              "time_s": 32981
+            },
+            "input_difference_files": [
+              "data/ManageR1.txt",
+              "data/manageL.txt",
+              "params/AsignParameter_car.dat",
+              "params/AsignParameter_motor.dat",
+              "params/AsignParameter_taxi.dat",
+              "params/AsignParameter_truck.dat",
+              "params/Mparam635.txt"
+            ],
+            "car_od_factor": 1.0,
+            "internal_od_factor": 1.0
+          },
+          {
+            "scenario": "demand_0p900_baseline",
+            "modules": 7,
+            "result_rows": {
+              "speed_kmh": 32981,
+              "flow_pcu_h": 32981,
+              "vc": 32981,
+              "time_s": 32981
+            },
+            "input_difference_files": [
+              "params/AsignParameter_car.dat",
+              "params/AsignParameter_motor.dat",
+              "params/AsignParameter_taxi.dat",
+              "params/AsignParameter_truck.dat",
+              "params/Mparam635.txt",
+              "result/ODCar.tsd"
+            ],
+            "car_od_factor": 0.9,
+            "internal_od_factor": 0.8999999282149527
+          },
+          {
+            "scenario": "demand_0p900_S1_parking",
+            "modules": 7,
+            "result_rows": {
+              "speed_kmh": 32981,
+              "flow_pcu_h": 32981,
+              "vc": 32981,
+              "time_s": 32981
+            },
+            "input_difference_files": [
+              "data/manageL.txt",
+              "params/AsignParameter_car.dat",
+              "params/AsignParameter_motor.dat",
+              "params/AsignParameter_taxi.dat",
+              "params/AsignParameter_truck.dat",
+              "params/Mparam635.txt",
+              "result/ODCar.tsd"
+            ],
+            "car_od_factor": 0.9,
+            "internal_od_factor": 0.8999999282149527
+          },
+          {
+            "scenario": "demand_0p900_S2_oneway",
+            "modules": 7,
+            "result_rows": {
+              "speed_kmh": 32981,
+              "flow_pcu_h": 32981,
+              "vc": 32981,
+              "time_s": 32981
+            },
+            "input_difference_files": [
+              "data/ManageR1.txt",
+              "params/AsignParameter_car.dat",
+              "params/AsignParameter_motor.dat",
+              "params/AsignParameter_taxi.dat",
+              "params/AsignParameter_truck.dat",
+              "params/Mparam635.txt",
+              "result/ODCar.tsd"
+            ],
+            "car_od_factor": 0.9,
+            "internal_od_factor": 0.8999999282149527
+          },
+          {
+            "scenario": "demand_0p900_S3_combined",
+            "modules": 7,
+            "result_rows": {
+              "speed_kmh": 32981,
+              "flow_pcu_h": 32981,
+              "vc": 32981,
+              "time_s": 32981
+            },
+            "input_difference_files": [
+              "data/ManageR1.txt",
+              "data/manageL.txt",
+              "params/AsignParameter_car.dat",
+              "params/AsignParameter_motor.dat",
+              "params/AsignParameter_taxi.dat",
+              "params/AsignParameter_truck.dat",
+              "params/Mparam635.txt",
+              "result/ODCar.tsd"
+            ],
+            "car_od_factor": 0.9,
+            "internal_od_factor": 0.8999999282149527
+          },
+          {
+            "scenario": "demand_1p100_baseline",
+            "modules": 7,
+            "result_rows": {
+              "speed_kmh": 32981,
+              "flow_pcu_h": 32981,
+              "vc": 32981,
+              "time_s": 32981
+            },
+            "input_difference_files": [
+              "params/AsignParameter_car.dat",
+              "params/AsignParameter_motor.dat",
+              "params/AsignParameter_taxi.dat",
+              "params/AsignParameter_truck.dat",
+              "params/Mparam635.txt",
+              "result/ODCar.tsd"
+            ],
+            "car_od_factor": 1.0999999999999999,
+            "internal_od_factor": 1.099999832501556
+          },
+          {
+            "scenario": "demand_1p100_S1_parking",
+            "modules": 7,
+            "result_rows": {
+              "speed_kmh": 32981,
+              "flow_pcu_h": 32981,
+              "vc": 32981,
+              "time_s": 32981
+            },
+            "input_difference_files": [
+              "data/manageL.txt",
+              "params/AsignParameter_car.dat",
+              "params/AsignParameter_motor.dat",
+              "params/AsignParameter_taxi.dat",
+              "params/AsignParameter_truck.dat",
+              "params/Mparam635.txt",
+              "result/ODCar.tsd"
+            ],
+            "car_od_factor": 1.0999999999999999,
+            "internal_od_factor": 1.099999832501556
+          },
+          {
+            "scenario": "demand_1p100_S2_oneway",
+            "modules": 7,
+            "result_rows": {
+              "speed_kmh": 32981,
+              "flow_pcu_h": 32981,
+              "vc": 32981,
+              "time_s": 32981
+            },
+            "input_difference_files": [
+              "data/ManageR1.txt",
+              "params/AsignParameter_car.dat",
+              "params/AsignParameter_motor.dat",
+              "params/AsignParameter_taxi.dat",
+              "params/AsignParameter_truck.dat",
+              "params/Mparam635.txt",
+              "result/ODCar.tsd"
+            ],
+            "car_od_factor": 1.0999999999999999,
+            "internal_od_factor": 1.099999832501556
+          },
+          {
+            "scenario": "demand_1p100_S3_combined",
+            "modules": 7,
+            "result_rows": {
+              "speed_kmh": 32981,
+              "flow_pcu_h": 32981,
+              "vc": 32981,
+              "time_s": 32981
+            },
+            "input_difference_files": [
+              "data/ManageR1.txt",
+              "data/manageL.txt",
+              "params/AsignParameter_car.dat",
+              "params/AsignParameter_motor.dat",
+              "params/AsignParameter_taxi.dat",
+              "params/AsignParameter_truck.dat",
+              "params/Mparam635.txt",
+              "result/ODCar.tsd"
+            ],
+            "car_od_factor": 1.0999999999999999,
+            "internal_od_factor": 1.099999832501556
+          },
+          {
+            "scenario": "baseline_repeat",
+            "modules": 7,
+            "result_rows": {
+              "speed_kmh": 32981,
+              "flow_pcu_h": 32981,
+              "vc": 32981,
+              "time_s": 32981
+            },
+            "input_difference_files": [
+              "params/AsignParameter_car.dat",
+              "params/AsignParameter_motor.dat",
+              "params/AsignParameter_taxi.dat",
+              "params/AsignParameter_truck.dat",
+              "params/Mparam635.txt"
+            ],
+            "car_od_factor": 1.0,
+            "internal_od_factor": 1.0
+          }
+        ],
+        "limitations": "只核验保存的实验与输入输出证据，不证明现实标定有效或全部草案已实现"
+      },
+      "original_recorded_recommendation": "S1_parking",
+      "old_analysis": {
+        "version": "paired-minimax-v1",
+        "factors": [
+          0.9,
+          1.0,
+          1.1
+        ],
+        "policies": [
+          {
+            "name": "S1_parking",
+            "changes": [
+              {
+                "from_node": 3237,
+                "to_node": 3236,
+                "old_parking": 3,
+                "parking": 2
+              },
+              {
+                "from_node": 3236,
+                "to_node": 3237,
+                "old_parking": 3,
+                "parking": 2
+              }
+            ],
+            "checks": [
+              {
+                "factor": 0.9,
+                "run": "demand_0p900_S1_parking",
+                "baseline": "demand_0p900_baseline",
+                "accepted": false,
+                "network_time_pct": -0.0024154598141090666,
+                "neighbor_time_pct": 7.286306352518812,
+                "new_neighbor_km": 0,
+                "violations": [
+                  "neighbor路段行驶时间增幅超过0.5%"
+                ]
+              },
+              {
+                "factor": 1.0,
+                "run": "S1_parking",
+                "baseline": "baseline",
+                "accepted": true,
+                "network_time_pct": -0.005958321446231096,
+                "neighbor_time_pct": 1.4973412265639752e-05,
+                "new_neighbor_km": 0,
+                "violations": []
+              },
+              {
+                "factor": 1.1,
+                "run": "demand_1p100_S1_parking",
+                "baseline": "demand_1p100_baseline",
+                "accepted": true,
+                "network_time_pct": -0.007172930944665534,
+                "neighbor_time_pct": -6.410280940505331e-05,
+                "new_neighbor_km": 0,
+                "violations": []
+              }
+            ],
+            "missing": [],
+            "reasons": [
+              "需求 × 0.9：neighbor路段行驶时间增幅超过0.5%"
+            ],
+            "feasible": false,
+            "worst": null,
+            "dominated_by": [],
+            "frontier": false
+          },
+          {
+            "name": "S2_oneway",
+            "changes": [
+              {
+                "kind": "oneway",
+                "closed_direction": [
+                  3237,
+                  3236
+                ]
+              }
+            ],
+            "checks": [
+              {
+                "factor": 0.9,
+                "run": "demand_0p900_S2_oneway",
+                "baseline": "demand_0p900_baseline",
+                "accepted": false,
+                "network_time_pct": 0.012546955473236032,
+                "neighbor_time_pct": 167.22981335987694,
+                "new_neighbor_km": 1.03054,
+                "violations": [
+                  "neighbor路段行驶时间增幅超过0.5%",
+                  "邻区新增过饱和有向里程超过0.1km",
+                  "全网路段行驶时间未改善，不能仅靠关闭方向的核心流量减少推荐"
+                ]
+              },
+              {
+                "factor": 1.0,
+                "run": "S2_oneway",
+                "baseline": "baseline",
+                "accepted": false,
+                "network_time_pct": -0.039409309154680994,
+                "neighbor_time_pct": 171.89852158658633,
+                "new_neighbor_km": 1.03054,
+                "violations": [
+                  "neighbor路段行驶时间增幅超过0.5%",
+                  "邻区新增过饱和有向里程超过0.1km"
+                ]
+              },
+              {
+                "factor": 1.1,
+                "run": "demand_1p100_S2_oneway",
+                "baseline": "demand_1p100_baseline",
+                "accepted": false,
+                "network_time_pct": -0.3036087183587388,
+                "neighbor_time_pct": 175.22027818744897,
+                "new_neighbor_km": 1.13554,
+                "violations": [
+                  "neighbor路段行驶时间增幅超过0.5%",
+                  "邻区新增过饱和有向里程超过0.1km"
+                ]
+              }
+            ],
+            "missing": [],
+            "reasons": [
+              "需求 × 0.9：neighbor路段行驶时间增幅超过0.5%",
+              "需求 × 0.9：邻区新增过饱和有向里程超过0.1km",
+              "需求 × 0.9：全网路段行驶时间未改善，不能仅靠关闭方向的核心流量减少推荐",
+              "需求 × 1.0：neighbor路段行驶时间增幅超过0.5%",
+              "需求 × 1.0：邻区新增过饱和有向里程超过0.1km",
+              "需求 × 1.1：neighbor路段行驶时间增幅超过0.5%",
+              "需求 × 1.1：邻区新增过饱和有向里程超过0.1km"
+            ],
+            "feasible": false,
+            "worst": null,
+            "dominated_by": [],
+            "frontier": false
+          },
+          {
+            "name": "S3_combined",
+            "changes": [
+              {
+                "from_node": 3237,
+                "to_node": 3236,
+                "old_parking": 3,
+                "parking": 2
+              },
+              {
+                "from_node": 3236,
+                "to_node": 3237,
+                "old_parking": 3,
+                "parking": 2
+              },
+              {
+                "kind": "oneway",
+                "closed_direction": [
+                  3237,
+                  3236
+                ]
+              }
+            ],
+            "checks": [
+              {
+                "factor": 0.9,
+                "run": "demand_0p900_S3_combined",
+                "baseline": "demand_0p900_baseline",
+                "accepted": false,
+                "network_time_pct": 0.008325601962066997,
+                "neighbor_time_pct": 167.71498728888176,
+                "new_neighbor_km": 1.03054,
+                "violations": [
+                  "neighbor路段行驶时间增幅超过0.5%",
+                  "邻区新增过饱和有向里程超过0.1km",
+                  "全网路段行驶时间未改善，不能仅靠关闭方向的核心流量减少推荐"
+                ]
+              },
+              {
+                "factor": 1.0,
+                "run": "S3_combined",
+                "baseline": "baseline",
+                "accepted": false,
+                "network_time_pct": -0.03955243684344856,
+                "neighbor_time_pct": 171.89852158658633,
+                "new_neighbor_km": 1.03054,
+                "violations": [
+                  "neighbor路段行驶时间增幅超过0.5%",
+                  "邻区新增过饱和有向里程超过0.1km"
+                ]
+              },
+              {
+                "factor": 1.1,
+                "run": "demand_1p100_S3_combined",
+                "baseline": "demand_1p100_baseline",
+                "accepted": false,
+                "network_time_pct": -0.3038853170884481,
+                "neighbor_time_pct": 175.22027818744897,
+                "new_neighbor_km": 1.13554,
+                "violations": [
+                  "neighbor路段行驶时间增幅超过0.5%",
+                  "邻区新增过饱和有向里程超过0.1km"
+                ]
+              }
+            ],
+            "missing": [],
+            "reasons": [
+              "需求 × 0.9：neighbor路段行驶时间增幅超过0.5%",
+              "需求 × 0.9：邻区新增过饱和有向里程超过0.1km",
+              "需求 × 0.9：全网路段行驶时间未改善，不能仅靠关闭方向的核心流量减少推荐",
+              "需求 × 1.0：neighbor路段行驶时间增幅超过0.5%",
+              "需求 × 1.0：邻区新增过饱和有向里程超过0.1km",
+              "需求 × 1.1：neighbor路段行驶时间增幅超过0.5%",
+              "需求 × 1.1：邻区新增过饱和有向里程超过0.1km"
+            ],
+            "feasible": false,
+            "worst": null,
+            "dominated_by": [],
+            "frontier": false
+          }
+        ],
+        "recommendation": null,
+        "finalized": true,
+        "eligible_count": 0,
+        "frontier_count": 0,
+        "reason": "没有证据完整且在全部设定需求下通过约束的同一措施，保留各需求基准或原条件建议",
+        "rule": "先满足全部已设需求的原实验约束；最小化最差全网耗时增幅，其次邻区增幅、邻区新增过饱和里程。仅解释已测措施，不推断未测需求。"
+      },
+      "new_analysis": {
+        "version": "paired-tolerance-v2",
+        "factors": [
+          0.9,
+          1.0,
+          1.1
+        ],
+        "policies": [
+          {
+            "name": "S1_parking",
+            "changes": [
+              {
+                "from_node": 3237,
+                "to_node": 3236,
+                "old_parking": 3,
+                "parking": 2
+              },
+              {
+                "from_node": 3236,
+                "to_node": 3237,
+                "old_parking": 3,
+                "parking": 2
+              }
+            ],
+            "checks": [
+              {
+                "factor": 0.9,
+                "run": "demand_0p900_S1_parking",
+                "baseline": "demand_0p900_baseline",
+                "accepted": false,
+                "network_time_pct": -0.0024154598141090666,
+                "neighbor_time_pct": 7.286306352518812,
+                "new_neighbor_km": 0,
+                "violations": [
+                  "neighbor路段行驶时间增幅超过0.5%"
+                ]
+              },
+              {
+                "factor": 1.0,
+                "run": "S1_parking",
+                "baseline": "baseline",
+                "accepted": true,
+                "network_time_pct": -0.005958321446231096,
+                "neighbor_time_pct": 1.4973412265639752e-05,
+                "new_neighbor_km": 0,
+                "violations": []
+              },
+              {
+                "factor": 1.1,
+                "run": "demand_1p100_S1_parking",
+                "baseline": "demand_1p100_baseline",
+                "accepted": true,
+                "network_time_pct": -0.007172930944665534,
+                "neighbor_time_pct": -6.410280940505331e-05,
+                "new_neighbor_km": 0,
+                "violations": []
+              }
+            ],
+            "missing": [],
+            "reasons": [
+              "需求 × 0.9：neighbor路段行驶时间增幅超过0.5%"
+            ],
+            "feasible": false,
+            "worst": null,
+            "dominated_by": [],
+            "frontier": false
+          },
+          {
+            "name": "S2_oneway",
+            "changes": [
+              {
+                "kind": "oneway",
+                "closed_direction": [
+                  3237,
+                  3236
+                ]
+              }
+            ],
+            "checks": [
+              {
+                "factor": 0.9,
+                "run": "demand_0p900_S2_oneway",
+                "baseline": "demand_0p900_baseline",
+                "accepted": false,
+                "network_time_pct": 0.012546955473236032,
+                "neighbor_time_pct": 167.22981335987694,
+                "new_neighbor_km": 1.03054,
+                "violations": [
+                  "neighbor路段行驶时间增幅超过0.5%",
+                  "邻区新增过饱和有向里程超过0.1km",
+                  "全网路段行驶时间未改善，不能仅靠关闭方向的核心流量减少推荐"
+                ]
+              },
+              {
+                "factor": 1.0,
+                "run": "S2_oneway",
+                "baseline": "baseline",
+                "accepted": false,
+                "network_time_pct": -0.039409309154680994,
+                "neighbor_time_pct": 171.89852158658633,
+                "new_neighbor_km": 1.03054,
+                "violations": [
+                  "neighbor路段行驶时间增幅超过0.5%",
+                  "邻区新增过饱和有向里程超过0.1km"
+                ]
+              },
+              {
+                "factor": 1.1,
+                "run": "demand_1p100_S2_oneway",
+                "baseline": "demand_1p100_baseline",
+                "accepted": false,
+                "network_time_pct": -0.3036087183587388,
+                "neighbor_time_pct": 175.22027818744897,
+                "new_neighbor_km": 1.13554,
+                "violations": [
+                  "neighbor路段行驶时间增幅超过0.5%",
+                  "邻区新增过饱和有向里程超过0.1km"
+                ]
+              }
+            ],
+            "missing": [],
+            "reasons": [
+              "需求 × 0.9：neighbor路段行驶时间增幅超过0.5%",
+              "需求 × 0.9：邻区新增过饱和有向里程超过0.1km",
+              "需求 × 0.9：全网路段行驶时间未改善，不能仅靠关闭方向的核心流量减少推荐",
+              "需求 × 1.0：neighbor路段行驶时间增幅超过0.5%",
+              "需求 × 1.0：邻区新增过饱和有向里程超过0.1km",
+              "需求 × 1.1：neighbor路段行驶时间增幅超过0.5%",
+              "需求 × 1.1：邻区新增过饱和有向里程超过0.1km"
+            ],
+            "feasible": false,
+            "worst": null,
+            "dominated_by": [],
+            "frontier": false
+          },
+          {
+            "name": "S3_combined",
+            "changes": [
+              {
+                "from_node": 3237,
+                "to_node": 3236,
+                "old_parking": 3,
+                "parking": 2
+              },
+              {
+                "from_node": 3236,
+                "to_node": 3237,
+                "old_parking": 3,
+                "parking": 2
+              },
+              {
+                "kind": "oneway",
+                "closed_direction": [
+                  3237,
+                  3236
+                ]
+              }
+            ],
+            "checks": [
+              {
+                "factor": 0.9,
+                "run": "demand_0p900_S3_combined",
+                "baseline": "demand_0p900_baseline",
+                "accepted": false,
+                "network_time_pct": 0.008325601962066997,
+                "neighbor_time_pct": 167.71498728888176,
+                "new_neighbor_km": 1.03054,
+                "violations": [
+                  "neighbor路段行驶时间增幅超过0.5%",
+                  "邻区新增过饱和有向里程超过0.1km",
+                  "全网路段行驶时间未改善，不能仅靠关闭方向的核心流量减少推荐"
+                ]
+              },
+              {
+                "factor": 1.0,
+                "run": "S3_combined",
+                "baseline": "baseline",
+                "accepted": false,
+                "network_time_pct": -0.03955243684344856,
+                "neighbor_time_pct": 171.89852158658633,
+                "new_neighbor_km": 1.03054,
+                "violations": [
+                  "neighbor路段行驶时间增幅超过0.5%",
+                  "邻区新增过饱和有向里程超过0.1km"
+                ]
+              },
+              {
+                "factor": 1.1,
+                "run": "demand_1p100_S3_combined",
+                "baseline": "demand_1p100_baseline",
+                "accepted": false,
+                "network_time_pct": -0.3038853170884481,
+                "neighbor_time_pct": 175.22027818744897,
+                "new_neighbor_km": 1.13554,
+                "violations": [
+                  "neighbor路段行驶时间增幅超过0.5%",
+                  "邻区新增过饱和有向里程超过0.1km"
+                ]
+              }
+            ],
+            "missing": [],
+            "reasons": [
+              "需求 × 0.9：neighbor路段行驶时间增幅超过0.5%",
+              "需求 × 0.9：邻区新增过饱和有向里程超过0.1km",
+              "需求 × 0.9：全网路段行驶时间未改善，不能仅靠关闭方向的核心流量减少推荐",
+              "需求 × 1.0：neighbor路段行驶时间增幅超过0.5%",
+              "需求 × 1.0：邻区新增过饱和有向里程超过0.1km",
+              "需求 × 1.1：neighbor路段行驶时间增幅超过0.5%",
+              "需求 × 1.1：邻区新增过饱和有向里程超过0.1km"
+            ],
+            "feasible": false,
+            "worst": null,
+            "dominated_by": [],
+            "frontier": false
+          }
+        ],
+        "recommendation": null,
+        "finalized": true,
+        "eligible_count": 0,
+        "frontier_count": 0,
+        "reason": "没有证据完整且在全部设定需求下通过约束的同一措施，保留各需求基准或原条件建议",
+        "rule": "先通过原约束；依次保留距当前最优全网增幅不超过0.001个百分点、邻区增幅不超过0.01个百分点、新增邻区过饱和不超过0.001km的候选；近似相同时优先少措施、少停车1级措施，再按名称稳定排序。容差为决策假设，不是统计显著性。",
+        "selection": {
+          "version": "tolerance-v2",
+          "tolerances": [
+            0.001,
+            0.01,
+            0.001
+          ],
+          "stages": [],
+          "equivalent_candidates": [],
+          "recommendation": null,
+          "candidates": [],
+          "rule": "先通过原约束；依次保留距当前最优全网增幅不超过0.001个百分点、邻区增幅不超过0.01个百分点、新增邻区过饱和不超过0.001km的候选；近似相同时优先少措施、少停车1级措施，再按名称稳定排序。容差为决策假设，不是统计显著性。"
+        }
+      },
+      "conditional_v2": {
+        "0.9": {
+          "version": "tolerance-v2",
+          "tolerances": [
+            0.001,
+            0.01,
+            0.001
+          ],
+          "stages": [],
+          "equivalent_candidates": [],
+          "recommendation": null,
+          "candidates": [],
+          "rule": "先通过原约束；依次保留距当前最优全网增幅不超过0.001个百分点、邻区增幅不超过0.01个百分点、新增邻区过饱和不超过0.001km的候选；近似相同时优先少措施、少停车1级措施，再按名称稳定排序。容差为决策假设，不是统计显著性。"
+        },
+        "1.0": {
+          "version": "tolerance-v2",
+          "tolerances": [
+            0.001,
+            0.01,
+            0.001
+          ],
+          "stages": [
+            {
+              "dimension": 0,
+              "anchor": -0.005958321446231096,
+              "tolerance": 0.001,
+              "retained": [
+                "S1_parking"
+              ]
+            },
+            {
+              "dimension": 1,
+              "anchor": 1.4973412265639752e-05,
+              "tolerance": 0.01,
+              "retained": [
+                "S1_parking"
+              ]
+            },
+            {
+              "dimension": 2,
+              "anchor": 0,
+              "tolerance": 0.001,
+              "retained": [
+                "S1_parking"
+              ]
+            }
+          ],
+          "equivalent_candidates": [
+            "S1_parking"
+          ],
+          "recommendation": "S1_parking",
+          "candidates": [
+            {
+              "name": "S1_parking",
+              "objectives": [
+                -0.005958321446231096,
+                1.4973412265639752e-05,
+                0
+              ],
+              "complexity": [
+                2,
+                0
+              ],
+              "difference_from_selected": [
+                0.0,
+                0.0,
+                0
+              ]
+            }
+          ],
+          "rule": "先通过原约束；依次保留距当前最优全网增幅不超过0.001个百分点、邻区增幅不超过0.01个百分点、新增邻区过饱和不超过0.001km的候选；近似相同时优先少措施、少停车1级措施，再按名称稳定排序。容差为决策假设，不是统计显著性。"
+        },
+        "1.1": {
+          "version": "tolerance-v2",
+          "tolerances": [
+            0.001,
+            0.01,
+            0.001
+          ],
+          "stages": [
+            {
+              "dimension": 0,
+              "anchor": -0.007172930944665534,
+              "tolerance": 0.001,
+              "retained": [
+                "demand_1p100_S1_parking"
+              ]
+            },
+            {
+              "dimension": 1,
+              "anchor": -6.410280940505331e-05,
+              "tolerance": 0.01,
+              "retained": [
+                "demand_1p100_S1_parking"
+              ]
+            },
+            {
+              "dimension": 2,
+              "anchor": 0,
+              "tolerance": 0.001,
+              "retained": [
+                "demand_1p100_S1_parking"
+              ]
+            }
+          ],
+          "equivalent_candidates": [
+            "demand_1p100_S1_parking"
+          ],
+          "recommendation": "demand_1p100_S1_parking",
+          "candidates": [
+            {
+              "name": "demand_1p100_S1_parking",
+              "objectives": [
+                -0.007172930944665534,
+                -6.410280940505331e-05,
+                0
+              ],
+              "complexity": [
+                2,
+                0
+              ],
+              "difference_from_selected": [
+                0.0,
+                0.0,
+                0
+              ]
+            }
+          ],
+          "rule": "先通过原约束；依次保留距当前最优全网增幅不超过0.001个百分点、邻区增幅不超过0.01个百分点、新增邻区过饱和不超过0.001km的候选；近似相同时优先少措施、少停车1级措施，再按名称稳定排序。容差为决策假设，不是统计显著性。"
+        }
+      },
+      "warnings": [
+        {
+          "run": "S1_parking",
+          "factor": 1.0,
+          "original_eligible": true,
+          "original_delta": {
+            "core": {
+              "speed_change_pct": 45.98266027609792,
+              "running_time_change_pct": -31.498713743899877,
+              "oversaturated_km_change": 0.0
+            },
+            "neighbor": {
+              "speed_change_pct": -6.888016831352317e-05,
+              "running_time_change_pct": 1.4973412265639752e-05,
+              "oversaturated_km_change": 0.0
+            },
+            "network": {
+              "speed_change_pct": 0.005958611009893033,
+              "running_time_change_pct": -0.005958321446231096,
+              "oversaturated_km_change": 0.0
+            }
+          },
+          "new_network_overloaded_km": 0.0,
+          "added_time_pcu_h": 8.608205953326831e-05,
+          "saved_time_pcu_h": 11.444423863143369,
+          "net_time_pcu_h": -11.444337781083835,
+          "worst_roads": [
+            {
+              "from_node": 3236,
+              "to_node": 3235,
+              "name": "长江村路",
+              "time_increase_pcu_h": 8.608205953326831e-05
+            }
+          ]
+        },
+        {
+          "run": "S2_oneway",
+          "factor": 1.0,
+          "original_eligible": false,
+          "original_delta": {
+            "core": {
+              "speed_change_pct": 106.35641613162159,
+              "running_time_change_pct": -84.76873746133626,
+              "oversaturated_km_change": -0.984
+            },
+            "neighbor": {
+              "speed_change_pct": -48.485276646275025,
+              "running_time_change_pct": 171.89852158658633,
+              "oversaturated_km_change": 0.70854
+            },
+            "network": {
+              "speed_change_pct": 0.07444576712432038,
+              "running_time_change_pct": -0.039409309154680994,
+              "oversaturated_km_change": 6.897540000000163
+            }
+          },
+          "new_network_overloaded_km": 15.687400000000002,
+          "added_time_pcu_h": 1241.2271116870932,
+          "saved_time_pcu_h": 1316.921827011726,
+          "net_time_pcu_h": -75.69471532463285,
+          "worst_roads": [
+            {
+              "from_node": 3115,
+              "to_node": 3241,
+              "name": "西七线",
+              "time_increase_pcu_h": 164.04506666666663
+            },
+            {
+              "from_node": 4082,
+              "to_node": 3235,
+              "name": "18206路",
+              "time_increase_pcu_h": 151.12421441166666
+            },
+            {
+              "from_node": 4031,
+              "to_node": 3116,
+              "name": "18152路",
+              "time_increase_pcu_h": 96.56225879084148
+            },
+            {
+              "from_node": 3243,
+              "to_node": 3242,
+              "name": "西七线",
+              "time_increase_pcu_h": 68.11981169761275
+            },
+            {
+              "from_node": 3244,
+              "to_node": 3243,
+              "name": "西七线",
+              "time_increase_pcu_h": 65.04874189247624
+            }
+          ]
+        },
+        {
+          "run": "S3_combined",
+          "factor": 1.0,
+          "original_eligible": false,
+          "original_delta": {
+            "core": {
+              "speed_change_pct": 117.14382885573849,
+              "running_time_change_pct": -85.52540605366869,
+              "oversaturated_km_change": -0.984
+            },
+            "neighbor": {
+              "speed_change_pct": -48.485276646275025,
+              "running_time_change_pct": 171.89852158658633,
+              "oversaturated_km_change": 0.70854
+            },
+            "network": {
+              "speed_change_pct": 0.07458905804063054,
+              "running_time_change_pct": -0.03955243684344856,
+              "oversaturated_km_change": 6.897540000000163
+            }
+          },
+          "new_network_overloaded_km": 15.687400000000002,
+          "added_time_pcu_h": 1241.2271116870932,
+          "saved_time_pcu_h": 1317.1967369223266,
+          "net_time_pcu_h": -75.96962523523348,
+          "worst_roads": [
+            {
+              "from_node": 3115,
+              "to_node": 3241,
+              "name": "西七线",
+              "time_increase_pcu_h": 164.04506666666663
+            },
+            {
+              "from_node": 4082,
+              "to_node": 3235,
+              "name": "18206路",
+              "time_increase_pcu_h": 151.12421441166666
+            },
+            {
+              "from_node": 4031,
+              "to_node": 3116,
+              "name": "18152路",
+              "time_increase_pcu_h": 96.56225879084148
+            },
+            {
+              "from_node": 3243,
+              "to_node": 3242,
+              "name": "西七线",
+              "time_increase_pcu_h": 68.11981169761275
+            },
+            {
+              "from_node": 3244,
+              "to_node": 3243,
+              "name": "西七线",
+              "time_increase_pcu_h": 65.04874189247624
+            }
+          ]
+        },
+        {
+          "run": "demand_0p900_S1_parking",
+          "factor": 0.9,
+          "original_eligible": false,
+          "original_delta": {
+            "core": {
+              "speed_change_pct": 39.156584240379445,
+              "running_time_change_pct": -26.12370871035138,
+              "oversaturated_km_change": 0.0
+            },
+            "neighbor": {
+              "speed_change_pct": -7.235179943650271,
+              "running_time_change_pct": 7.286306352518812,
+              "oversaturated_km_change": -0.10499999999999998
+            },
+            "network": {
+              "speed_change_pct": 0.002340400964806477,
+              "running_time_change_pct": -0.0024154598141090666,
+              "oversaturated_km_change": -0.10500000000001819
+            }
+          },
+          "new_network_overloaded_km": 0.0,
+          "added_time_pcu_h": 8.47845533384209,
+          "saved_time_pcu_h": 12.493831751996856,
+          "net_time_pcu_h": -4.015376418154766,
+          "worst_roads": [
+            {
+              "from_node": 3238,
+              "to_node": 3237,
+              "name": "长江村路",
+              "time_increase_pcu_h": 3.5601719710128004
+            },
+            {
+              "from_node": 3239,
+              "to_node": 3238,
+              "name": "长江村路",
+              "time_increase_pcu_h": 2.442921216697344
+            },
+            {
+              "from_node": 3236,
+              "to_node": 3235,
+              "name": "长江村路",
+              "time_increase_pcu_h": 2.206678453973046
+            },
+            {
+              "from_node": 4084,
+              "to_node": 3239,
+              "name": "18208路",
+              "time_increase_pcu_h": 0.14978046438687181
+            },
+            {
+              "from_node": 4083,
+              "to_node": 3238,
+              "name": "18207路",
+              "time_increase_pcu_h": 0.11877608064300213
+            }
+          ]
+        },
+        {
+          "run": "demand_0p900_S2_oneway",
+          "factor": 0.9,
+          "original_eligible": false,
+          "original_delta": {
+            "core": {
+              "speed_change_pct": 127.20403683264996,
+              "running_time_change_pct": -87.63178307486164,
+              "oversaturated_km_change": -0.492
+            },
+            "neighbor": {
+              "speed_change_pct": -51.01808060440194,
+              "running_time_change_pct": 167.22981335987694,
+              "oversaturated_km_change": 0.5905400000000001
+            },
+            "network": {
+              "speed_change_pct": 0.010259862092643068,
+              "running_time_change_pct": 0.012546955473236032,
+              "oversaturated_km_change": 12.899540000000115
+            }
+          },
+          "new_network_overloaded_km": 17.8764,
+          "added_time_pcu_h": 1441.7177692378618,
+          "saved_time_pcu_h": 1420.8601466714729,
+          "net_time_pcu_h": 20.857622566388955,
+          "worst_roads": [
+            {
+              "from_node": 3115,
+              "to_node": 3241,
+              "name": "西七线",
+              "time_increase_pcu_h": 367.38728098880125
+            },
+            {
+              "from_node": 4082,
+              "to_node": 3235,
+              "name": "18206路",
+              "time_increase_pcu_h": 132.97637319473685
+            },
+            {
+              "from_node": 4031,
+              "to_node": 3116,
+              "name": "18152路",
+              "time_increase_pcu_h": 78.62149456114028
+            },
+            {
+              "from_node": 3230,
+              "to_node": 3229,
+              "name": "骊岛路",
+              "time_increase_pcu_h": 74.42828221150322
+            },
+            {
+              "from_node": 3243,
+              "to_node": 3242,
+              "name": "西七线",
+              "time_increase_pcu_h": 69.36902329896908
+            }
+          ]
+        },
+        {
+          "run": "demand_0p900_S3_combined",
+          "factor": 0.9,
+          "original_eligible": false,
+          "original_delta": {
+            "core": {
+              "speed_change_pct": 134.88066358570782,
+              "running_time_change_pct": -87.5437592767466,
+              "oversaturated_km_change": -0.492
+            },
+            "neighbor": {
+              "speed_change_pct": -50.8763943447605,
+              "running_time_change_pct": 167.71498728888176,
+              "oversaturated_km_change": 0.5905400000000001
+            },
+            "network": {
+              "speed_change_pct": 0.011248193358226466,
+              "running_time_change_pct": 0.008325601962066997,
+              "oversaturated_km_change": 12.899540000000115
+            }
+          },
+          "new_network_overloaded_km": 17.8764,
+          "added_time_pcu_h": 1437.9898107558606,
+          "saved_time_pcu_h": 1424.1496195052382,
+          "net_time_pcu_h": 13.84019125062241,
+          "worst_roads": [
+            {
+              "from_node": 3115,
+              "to_node": 3241,
+              "name": "西七线",
+              "time_increase_pcu_h": 367.38728098880125
+            },
+            {
+              "from_node": 4082,
+              "to_node": 3235,
+              "name": "18206路",
+              "time_increase_pcu_h": 132.97637319473685
+            },
+            {
+              "from_node": 4031,
+              "to_node": 3116,
+              "name": "18152路",
+              "time_increase_pcu_h": 78.08361122780694
+            },
+            {
+              "from_node": 3230,
+              "to_node": 3229,
+              "name": "骊岛路",
+              "time_increase_pcu_h": 74.42828221150322
+            },
+            {
+              "from_node": 3243,
+              "to_node": 3242,
+              "name": "西七线",
+              "time_increase_pcu_h": 69.36902329896908
+            }
+          ]
+        },
+        {
+          "run": "demand_1p100_S1_parking",
+          "factor": 1.1,
+          "original_eligible": true,
+          "original_delta": {
+            "core": {
+              "speed_change_pct": 54.10166370135436,
+              "running_time_change_pct": -35.10714872832017,
+              "oversaturated_km_change": 0.0
+            },
+            "neighbor": {
+              "speed_change_pct": -6.061260059420093e-05,
+              "running_time_change_pct": -6.410280940505331e-05,
+              "oversaturated_km_change": 0.0
+            },
+            "network": {
+              "speed_change_pct": 0.007173840213359206,
+              "running_time_change_pct": -0.007172930944665534,
+              "oversaturated_km_change": 0.0
+            }
+          },
+          "new_network_overloaded_km": 0.0,
+          "added_time_pcu_h": 0.005228223191798633,
+          "saved_time_pcu_h": 15.82478405439678,
+          "net_time_pcu_h": -15.819555831204982,
+          "worst_roads": [
+            {
+              "from_node": 4102,
+              "to_node": 3104,
+              "name": "东江村路",
+              "time_increase_pcu_h": 0.001039999999999054
+            },
+            {
+              "from_node": 637,
+              "to_node": 3108,
+              "name": "跃进东路",
+              "time_increase_pcu_h": 0.0006599999999993998
+            },
+            {
+              "from_node": 3224,
+              "to_node": 638,
+              "name": "骊岛路",
+              "time_increase_pcu_h": 0.0006019210245465273
+            },
+            {
+              "from_node": 3278,
+              "to_node": 3190,
+              "name": "东江村路",
+              "time_increase_pcu_h": 0.00028222222221955916
+            },
+            {
+              "from_node": 3240,
+              "to_node": 4085,
+              "name": "15906路",
+              "time_increase_pcu_h": 0.0002816666666664105
+            }
+          ]
+        },
+        {
+          "run": "demand_1p100_S2_oneway",
+          "factor": 1.1,
+          "original_eligible": false,
+          "original_delta": {
+            "core": {
+              "speed_change_pct": 123.94502672921837,
+              "running_time_change_pct": -84.45394750135719,
+              "oversaturated_km_change": -0.492
+            },
+            "neighbor": {
+              "speed_change_pct": -46.41624259628658,
+              "running_time_change_pct": 175.22027818744897,
+              "oversaturated_km_change": 0.8135399999999999
+            },
+            "network": {
+              "speed_change_pct": 0.22883512715947685,
+              "running_time_change_pct": -0.3036087183587388,
+              "oversaturated_km_change": 1.7675400000000536
+            }
+          },
+          "new_network_overloaded_km": 11.742399999999998,
+          "added_time_pcu_h": 1620.567880785341,
+          "saved_time_pcu_h": 2290.162375415878,
+          "net_time_pcu_h": -669.5944946305372,
+          "worst_roads": [
+            {
+              "from_node": 4082,
+              "to_node": 3235,
+              "name": "18206路",
+              "time_increase_pcu_h": 175.2402652007252
+            },
+            {
+              "from_node": 3113,
+              "to_node": 3241,
+              "name": "双柳河路",
+              "time_increase_pcu_h": 125.9162169892473
+            },
+            {
+              "from_node": 3114,
+              "to_node": 3113,
+              "name": "环洲路",
+              "time_increase_pcu_h": 94.3286101626698
+            },
+            {
+              "from_node": 4031,
+              "to_node": 3116,
+              "name": "18152路",
+              "time_increase_pcu_h": 91.48644789089754
+            },
+            {
+              "from_node": 3244,
+              "to_node": 3243,
+              "name": "西七线",
+              "time_increase_pcu_h": 71.88264619782923
+            }
+          ]
+        },
+        {
+          "run": "demand_1p100_S3_combined",
+          "factor": 1.1,
+          "original_eligible": false,
+          "original_delta": {
+            "core": {
+              "speed_change_pct": 145.30254257886207,
+              "running_time_change_pct": -85.80748040463892,
+              "oversaturated_km_change": -0.492
+            },
+            "neighbor": {
+              "speed_change_pct": -46.41624259628658,
+              "running_time_change_pct": 175.22027818744897,
+              "oversaturated_km_change": 0.8135399999999999
+            },
+            "network": {
+              "speed_change_pct": 0.2291132038785726,
+              "running_time_change_pct": -0.3038853170884481,
+              "oversaturated_km_change": 1.7675400000000536
+            }
+          },
+          "new_network_overloaded_km": 11.742399999999998,
+          "added_time_pcu_h": 1620.567880785341,
+          "saved_time_pcu_h": 2290.772400673495,
+          "net_time_pcu_h": -670.2045198881542,
+          "worst_roads": [
+            {
+              "from_node": 4082,
+              "to_node": 3235,
+              "name": "18206路",
+              "time_increase_pcu_h": 175.2402652007252
+            },
+            {
+              "from_node": 3113,
+              "to_node": 3241,
+              "name": "双柳河路",
+              "time_increase_pcu_h": 125.9162169892473
+            },
+            {
+              "from_node": 3114,
+              "to_node": 3113,
+              "name": "环洲路",
+              "time_increase_pcu_h": 94.3286101626698
+            },
+            {
+              "from_node": 4031,
+              "to_node": 3116,
+              "name": "18152路",
+              "time_increase_pcu_h": 91.48644789089754
+            },
+            {
+              "from_node": 3244,
+              "to_node": 3243,
+              "name": "西七线",
+              "time_increase_pcu_h": 71.88264619782923
+            }
+          ]
+        }
+      ],
+      "threshold_scope_scan": [
+        {
+          "neighbor_hops": 1,
+          "variant": "original",
+          "recommendation": null,
+          "eligible": []
+        },
+        {
+          "neighbor_hops": 1,
+          "variant": "max_neighbor_time_increase_pct=0",
+          "recommendation": null,
+          "eligible": []
+        },
+        {
+          "neighbor_hops": 1,
+          "variant": "max_neighbor_time_increase_pct=0.25",
+          "recommendation": null,
+          "eligible": []
+        },
+        {
+          "neighbor_hops": 1,
+          "variant": "max_neighbor_time_increase_pct=1",
+          "recommendation": null,
+          "eligible": []
+        },
+        {
+          "neighbor_hops": 1,
+          "variant": "max_network_time_increase_pct=0",
+          "recommendation": null,
+          "eligible": []
+        },
+        {
+          "neighbor_hops": 1,
+          "variant": "max_network_time_increase_pct=0.05",
+          "recommendation": null,
+          "eligible": []
+        },
+        {
+          "neighbor_hops": 1,
+          "variant": "max_network_time_increase_pct=0.2",
+          "recommendation": null,
+          "eligible": []
+        },
+        {
+          "neighbor_hops": 1,
+          "variant": "max_new_oversaturated_km=0",
+          "recommendation": null,
+          "eligible": []
+        },
+        {
+          "neighbor_hops": 1,
+          "variant": "max_new_oversaturated_km=0.05",
+          "recommendation": null,
+          "eligible": []
+        },
+        {
+          "neighbor_hops": 1,
+          "variant": "max_new_oversaturated_km=0.2",
+          "recommendation": null,
+          "eligible": []
+        },
+        {
+          "neighbor_hops": 2,
+          "variant": "original",
+          "recommendation": null,
+          "eligible": []
+        },
+        {
+          "neighbor_hops": 2,
+          "variant": "max_neighbor_time_increase_pct=0",
+          "recommendation": null,
+          "eligible": []
+        },
+        {
+          "neighbor_hops": 2,
+          "variant": "max_neighbor_time_increase_pct=0.25",
+          "recommendation": null,
+          "eligible": []
+        },
+        {
+          "neighbor_hops": 2,
+          "variant": "max_neighbor_time_increase_pct=1",
+          "recommendation": null,
+          "eligible": []
+        },
+        {
+          "neighbor_hops": 2,
+          "variant": "max_network_time_increase_pct=0",
+          "recommendation": null,
+          "eligible": []
+        },
+        {
+          "neighbor_hops": 2,
+          "variant": "max_network_time_increase_pct=0.05",
+          "recommendation": null,
+          "eligible": []
+        },
+        {
+          "neighbor_hops": 2,
+          "variant": "max_network_time_increase_pct=0.2",
+          "recommendation": null,
+          "eligible": []
+        },
+        {
+          "neighbor_hops": 2,
+          "variant": "max_new_oversaturated_km=0",
+          "recommendation": null,
+          "eligible": []
+        },
+        {
+          "neighbor_hops": 2,
+          "variant": "max_new_oversaturated_km=0.05",
+          "recommendation": null,
+          "eligible": []
+        },
+        {
+          "neighbor_hops": 2,
+          "variant": "max_new_oversaturated_km=0.2",
+          "recommendation": null,
+          "eligible": []
+        },
+        {
+          "neighbor_hops": 3,
+          "variant": "original",
+          "recommendation": null,
+          "eligible": []
+        },
+        {
+          "neighbor_hops": 3,
+          "variant": "max_neighbor_time_increase_pct=0",
+          "recommendation": null,
+          "eligible": []
+        },
+        {
+          "neighbor_hops": 3,
+          "variant": "max_neighbor_time_increase_pct=0.25",
+          "recommendation": null,
+          "eligible": []
+        },
+        {
+          "neighbor_hops": 3,
+          "variant": "max_neighbor_time_increase_pct=1",
+          "recommendation": null,
+          "eligible": []
+        },
+        {
+          "neighbor_hops": 3,
+          "variant": "max_network_time_increase_pct=0",
+          "recommendation": null,
+          "eligible": []
+        },
+        {
+          "neighbor_hops": 3,
+          "variant": "max_network_time_increase_pct=0.05",
+          "recommendation": null,
+          "eligible": []
+        },
+        {
+          "neighbor_hops": 3,
+          "variant": "max_network_time_increase_pct=0.2",
+          "recommendation": null,
+          "eligible": []
+        },
+        {
+          "neighbor_hops": 3,
+          "variant": "max_new_oversaturated_km=0",
+          "recommendation": null,
+          "eligible": []
+        },
+        {
+          "neighbor_hops": 3,
+          "variant": "max_new_oversaturated_km=0.05",
+          "recommendation": null,
+          "eligible": []
+        },
+        {
+          "neighbor_hops": 3,
+          "variant": "max_new_oversaturated_km=0.2",
+          "recommendation": null,
+          "eligible": []
+        }
+      ],
+      "tolerance_scan": [
+        {
+          "multiplier": 0,
+          "version": "tolerance-v2",
+          "tolerances": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "stages": [],
+          "equivalent_candidates": [],
+          "recommendation": null,
+          "candidates": [],
+          "rule": "先通过原约束；依次保留距当前最优全网增幅不超过0.001个百分点、邻区增幅不超过0.01个百分点、新增邻区过饱和不超过0.001km的候选；近似相同时优先少措施、少停车1级措施，再按名称稳定排序。容差为决策假设，不是统计显著性。"
+        },
+        {
+          "multiplier": 0.1,
+          "version": "tolerance-v2",
+          "tolerances": [
+            0.0001,
+            0.001,
+            0.0001
+          ],
+          "stages": [],
+          "equivalent_candidates": [],
+          "recommendation": null,
+          "candidates": [],
+          "rule": "先通过原约束；依次保留距当前最优全网增幅不超过0.001个百分点、邻区增幅不超过0.01个百分点、新增邻区过饱和不超过0.001km的候选；近似相同时优先少措施、少停车1级措施，再按名称稳定排序。容差为决策假设，不是统计显著性。"
+        },
+        {
+          "multiplier": 1,
+          "version": "tolerance-v2",
+          "tolerances": [
+            0.001,
+            0.01,
+            0.001
+          ],
+          "stages": [],
+          "equivalent_candidates": [],
+          "recommendation": null,
+          "candidates": [],
+          "rule": "先通过原约束；依次保留距当前最优全网增幅不超过0.001个百分点、邻区增幅不超过0.01个百分点、新增邻区过饱和不超过0.001km的候选；近似相同时优先少措施、少停车1级措施，再按名称稳定排序。容差为决策假设，不是统计显著性。"
+        },
+        {
+          "multiplier": 10,
+          "version": "tolerance-v2",
+          "tolerances": [
+            0.01,
+            0.1,
+            0.01
+          ],
+          "stages": [],
+          "equivalent_candidates": [],
+          "recommendation": null,
+          "candidates": [],
+          "rule": "先通过原约束；依次保留距当前最优全网增幅不超过0.001个百分点、邻区增幅不超过0.01个百分点、新增邻区过饱和不超过0.001km的候选；近似相同时优先少措施、少停车1级措施，再按名称稳定排序。容差为决策假设，不是统计显著性。"
+        }
+      ]
+    },
+    {
+      "job": "20260911_021806_858461",
+      "source_state_sha256": "f15c3f026aaa917b18c9f28604acc17cec4c4f241cdb3d240c8681903e49418a",
+      "archive_manifest_sha256": "319ff3977f710f5dbe394eed510cebd5d4b5562858a0377cdf73d7d66d7435d7",
+      "audit_mode": "portable_archive",
+      "audit": {
+        "passed": true,
+        "completed_scenarios": 11,
+        "module_executions": 77,
+        "scope_sizes": {
+          "core": 3,
+          "neighbor": 39,
+          "network": 32060
+        },
+        "repeat_arrays_exact": {
+          "speed_kmh": true,
+          "flow_pcu_h": true,
+          "vc": true,
+          "time_s": true
+        },
+        "verified_runs": [
+          {
+            "scenario": "baseline",
+            "modules": 7,
+            "result_rows": {
+              "speed_kmh": 32981,
+              "flow_pcu_h": 32981,
+              "vc": 32981,
+              "time_s": 32981
+            },
+            "input_difference_files": [],
+            "car_od_factor": 1.0,
+            "internal_od_factor": 1.0
+          },
+          {
+            "scenario": "robust_base_1.1",
+            "modules": 7,
+            "result_rows": {
+              "speed_kmh": 32981,
+              "flow_pcu_h": 32981,
+              "vc": 32981,
+              "time_s": 32981
+            },
+            "input_difference_files": [
+              "result/ODCar.tsd"
+            ],
+            "car_od_factor": 1.0999999999999999,
+            "internal_od_factor": 1.099999832501556
+          },
+          {
+            "scenario": "robust_base_0.9",
+            "modules": 7,
+            "result_rows": {
+              "speed_kmh": 32981,
+              "flow_pcu_h": 32981,
+              "vc": 32981,
+              "time_s": 32981
+            },
+            "input_difference_files": [
+              "result/ODCar.tsd"
+            ],
+            "car_od_factor": 0.9,
+            "internal_od_factor": 0.8999999282149527
+          },
+          {
+            "scenario": "robust_p1_1.1",
+            "modules": 7,
+            "result_rows": {
+              "speed_kmh": 32981,
+              "flow_pcu_h": 32981,
+              "vc": 32981,
+              "time_s": 32981
+            },
+            "input_difference_files": [
+              "data/manageL.txt",
+              "result/ODCar.tsd"
+            ],
+            "car_od_factor": 1.0999999999999999,
+            "internal_od_factor": 1.099999832501556
+          },
+          {
+            "scenario": "robust_p2_1.1",
+            "modules": 7,
+            "result_rows": {
+              "speed_kmh": 32981,
+              "flow_pcu_h": 32981,
+              "vc": 32981,
+              "time_s": 32981
+            },
+            "input_difference_files": [
+              "data/manageL.txt",
+              "result/ODCar.tsd"
+            ],
+            "car_od_factor": 1.0999999999999999,
+            "internal_od_factor": 1.099999832501556
+          },
+          {
+            "scenario": "robust_p2_1",
+            "modules": 7,
+            "result_rows": {
+              "speed_kmh": 32981,
+              "flow_pcu_h": 32981,
+              "vc": 32981,
+              "time_s": 32981
+            },
+            "input_difference_files": [
+              "data/manageL.txt"
+            ],
+            "car_od_factor": 1.0,
+            "internal_od_factor": 1.0
+          },
+          {
+            "scenario": "robust_p2_0.9",
+            "modules": 7,
+            "result_rows": {
+              "speed_kmh": 32981,
+              "flow_pcu_h": 32981,
+              "vc": 32981,
+              "time_s": 32981
+            },
+            "input_difference_files": [
+              "data/manageL.txt",
+              "result/ODCar.tsd"
+            ],
+            "car_od_factor": 0.9,
+            "internal_od_factor": 0.8999999282149527
+          },
+          {
+            "scenario": "robust_p3_1.1",
+            "modules": 7,
+            "result_rows": {
+              "speed_kmh": 32981,
+              "flow_pcu_h": 32981,
+              "vc": 32981,
+              "time_s": 32981
+            },
+            "input_difference_files": [
+              "data/manageL.txt",
+              "result/ODCar.tsd"
+            ],
+            "car_od_factor": 1.0999999999999999,
+            "internal_od_factor": 1.099999832501556
+          },
+          {
+            "scenario": "robust_p3_1",
+            "modules": 7,
+            "result_rows": {
+              "speed_kmh": 32981,
+              "flow_pcu_h": 32981,
+              "vc": 32981,
+              "time_s": 32981
+            },
+            "input_difference_files": [
+              "data/manageL.txt"
+            ],
+            "car_od_factor": 1.0,
+            "internal_od_factor": 1.0
+          },
+          {
+            "scenario": "robust_p3_0.9",
+            "modules": 7,
+            "result_rows": {
+              "speed_kmh": 32981,
+              "flow_pcu_h": 32981,
+              "vc": 32981,
+              "time_s": 32981
+            },
+            "input_difference_files": [
+              "data/manageL.txt",
+              "result/ODCar.tsd"
+            ],
+            "car_od_factor": 0.9,
+            "internal_od_factor": 0.8999999282149527
+          },
+          {
+            "scenario": "baseline_repeat",
+            "modules": 7,
+            "result_rows": {
+              "speed_kmh": 32981,
+              "flow_pcu_h": 32981,
+              "vc": 32981,
+              "time_s": 32981
+            },
+            "input_difference_files": [],
+            "car_od_factor": 1.0,
+            "internal_od_factor": 1.0
+          }
+        ],
+        "limitations": "只核验保存的实验与输入输出证据，不证明现实标定有效或全部草案已实现",
+        "active_search_audit": {
+          "protocol_frozen_before_first_run": true,
+          "raw_observations_verified": true,
+          "decisions_replayed": 10,
+          "chronological_decisions": true,
+          "budget_and_stopping_verified": true,
+          "complete_demand_recommendation_verified": true,
+          "report_exports_present": true
+        },
+        "portable_archive_verified": true
+      },
+      "original_recorded_recommendation": "robust_p3_1",
+      "old_analysis": {
+        "version": "paired-minimax-v1",
+        "factors": [
+          0.9,
+          1.0,
+          1.1
+        ],
+        "policies": [
+          {
+            "name": "robust_p1_1.1",
+            "changes": [
+              {
+                "from_node": 3244,
+                "to_node": 3245,
+                "old_parking": 3,
+                "parking": 2
+              },
+              {
+                "from_node": 3245,
+                "to_node": 3244,
+                "old_parking": 3,
+                "parking": 2
+              },
+              {
+                "from_node": 3240,
+                "to_node": 3239,
+                "old_parking": 3,
+                "parking": 2
+              }
+            ],
+            "checks": [
+              {
+                "factor": 1.1,
+                "run": "robust_p1_1.1",
+                "baseline": "robust_base_1.1",
+                "accepted": false,
+                "network_time_pct": -0.05991642990700319,
+                "neighbor_time_pct": 1.1728260378476296,
+                "new_neighbor_km": 0,
+                "violations": [
+                  "neighbor路段行驶时间增幅超过0.5%"
+                ]
+              }
+            ],
+            "missing": [
+              0.9,
+              1.0
+            ],
+            "reasons": [
+              "需求 × 1.1：neighbor路段行驶时间增幅超过0.5%"
+            ],
+            "feasible": false,
+            "worst": null,
+            "dominated_by": [],
+            "frontier": false
+          },
+          {
+            "name": "robust_p2_1",
+            "changes": [
+              {
+                "from_node": 3244,
+                "to_node": 3245,
+                "old_parking": 3,
+                "parking": 2
+              }
+            ],
+            "checks": [
+              {
+                "factor": 0.9,
+                "run": "robust_p2_0.9",
+                "baseline": "robust_base_0.9",
+                "accepted": true,
+                "network_time_pct": -0.04421261298879209,
+                "neighbor_time_pct": 0.002106514624866662,
+                "new_neighbor_km": 0,
+                "violations": []
+              },
+              {
+                "factor": 1.0,
+                "run": "robust_p2_1",
+                "baseline": "baseline",
+                "accepted": true,
+                "network_time_pct": -0.04681708562629394,
+                "neighbor_time_pct": -0.0001316339888313145,
+                "new_neighbor_km": 0,
+                "violations": []
+              },
+              {
+                "factor": 1.1,
+                "run": "robust_p2_1.1",
+                "baseline": "robust_base_1.1",
+                "accepted": true,
+                "network_time_pct": -0.036857707774973214,
+                "neighbor_time_pct": 0.0031174176598147696,
+                "new_neighbor_km": 0,
+                "violations": []
+              }
+            ],
+            "missing": [],
+            "reasons": [],
+            "feasible": true,
+            "worst": [
+              -0.036857707774973214,
+              0.0031174176598147696,
+              0
+            ],
+            "dominated_by": [],
+            "frontier": true
+          },
+          {
+            "name": "robust_p3_1",
+            "changes": [
+              {
+                "from_node": 3244,
+                "to_node": 3245,
+                "old_parking": 3,
+                "parking": 1
+              }
+            ],
+            "checks": [
+              {
+                "factor": 0.9,
+                "run": "robust_p3_0.9",
+                "baseline": "robust_base_0.9",
+                "accepted": true,
+                "network_time_pct": -0.05704380124248454,
+                "neighbor_time_pct": 0.0025054667365020933,
+                "new_neighbor_km": 0,
+                "violations": []
+              },
+              {
+                "factor": 1.0,
+                "run": "robust_p3_1",
+                "baseline": "baseline",
+                "accepted": true,
+                "network_time_pct": -0.060434066797299124,
+                "neighbor_time_pct": 0.019115307766104372,
+                "new_neighbor_km": 0.056,
+                "violations": []
+              },
+              {
+                "factor": 1.1,
+                "run": "robust_p3_1.1",
+                "baseline": "robust_base_1.1",
+                "accepted": true,
+                "network_time_pct": -0.051705260669843156,
+                "neighbor_time_pct": 0.004102749122814053,
+                "new_neighbor_km": 0,
+                "violations": []
+              }
+            ],
+            "missing": [],
+            "reasons": [],
+            "feasible": true,
+            "worst": [
+              -0.051705260669843156,
+              0.019115307766104372,
+              0.056
+            ],
+            "dominated_by": [],
+            "frontier": true
+          }
+        ],
+        "recommendation": "robust_p3_1",
+        "finalized": true,
+        "eligible_count": 2,
+        "frontier_count": 2,
+        "reason": "所有已测需求均通过原约束，按最差全网耗时增幅优先，再比较邻区代价与新增过饱和",
+        "rule": "先满足全部已设需求的原实验约束；最小化最差全网耗时增幅，其次邻区增幅、邻区新增过饱和里程。仅解释已测措施，不推断未测需求。"
+      },
+      "new_analysis": {
+        "version": "paired-tolerance-v2",
+        "factors": [
+          0.9,
+          1.0,
+          1.1
+        ],
+        "policies": [
+          {
+            "name": "robust_p1_1.1",
+            "changes": [
+              {
+                "from_node": 3244,
+                "to_node": 3245,
+                "old_parking": 3,
+                "parking": 2
+              },
+              {
+                "from_node": 3245,
+                "to_node": 3244,
+                "old_parking": 3,
+                "parking": 2
+              },
+              {
+                "from_node": 3240,
+                "to_node": 3239,
+                "old_parking": 3,
+                "parking": 2
+              }
+            ],
+            "checks": [
+              {
+                "factor": 1.1,
+                "run": "robust_p1_1.1",
+                "baseline": "robust_base_1.1",
+                "accepted": false,
+                "network_time_pct": -0.05991642990700319,
+                "neighbor_time_pct": 1.1728260378476296,
+                "new_neighbor_km": 0,
+                "violations": [
+                  "neighbor路段行驶时间增幅超过0.5%"
+                ]
+              }
+            ],
+            "missing": [
+              0.9,
+              1.0
+            ],
+            "reasons": [
+              "需求 × 1.1：neighbor路段行驶时间增幅超过0.5%"
+            ],
+            "feasible": false,
+            "worst": null,
+            "dominated_by": [],
+            "frontier": false
+          },
+          {
+            "name": "robust_p2_1",
+            "changes": [
+              {
+                "from_node": 3244,
+                "to_node": 3245,
+                "old_parking": 3,
+                "parking": 2
+              }
+            ],
+            "checks": [
+              {
+                "factor": 0.9,
+                "run": "robust_p2_0.9",
+                "baseline": "robust_base_0.9",
+                "accepted": true,
+                "network_time_pct": -0.04421261298879209,
+                "neighbor_time_pct": 0.002106514624866662,
+                "new_neighbor_km": 0,
+                "violations": []
+              },
+              {
+                "factor": 1.0,
+                "run": "robust_p2_1",
+                "baseline": "baseline",
+                "accepted": true,
+                "network_time_pct": -0.04681708562629394,
+                "neighbor_time_pct": -0.0001316339888313145,
+                "new_neighbor_km": 0,
+                "violations": []
+              },
+              {
+                "factor": 1.1,
+                "run": "robust_p2_1.1",
+                "baseline": "robust_base_1.1",
+                "accepted": true,
+                "network_time_pct": -0.036857707774973214,
+                "neighbor_time_pct": 0.0031174176598147696,
+                "new_neighbor_km": 0,
+                "violations": []
+              }
+            ],
+            "missing": [],
+            "reasons": [],
+            "feasible": true,
+            "worst": [
+              -0.036857707774973214,
+              0.0031174176598147696,
+              0
+            ],
+            "dominated_by": [],
+            "frontier": true
+          },
+          {
+            "name": "robust_p3_1",
+            "changes": [
+              {
+                "from_node": 3244,
+                "to_node": 3245,
+                "old_parking": 3,
+                "parking": 1
+              }
+            ],
+            "checks": [
+              {
+                "factor": 0.9,
+                "run": "robust_p3_0.9",
+                "baseline": "robust_base_0.9",
+                "accepted": true,
+                "network_time_pct": -0.05704380124248454,
+                "neighbor_time_pct": 0.0025054667365020933,
+                "new_neighbor_km": 0,
+                "violations": []
+              },
+              {
+                "factor": 1.0,
+                "run": "robust_p3_1",
+                "baseline": "baseline",
+                "accepted": true,
+                "network_time_pct": -0.060434066797299124,
+                "neighbor_time_pct": 0.019115307766104372,
+                "new_neighbor_km": 0.056,
+                "violations": []
+              },
+              {
+                "factor": 1.1,
+                "run": "robust_p3_1.1",
+                "baseline": "robust_base_1.1",
+                "accepted": true,
+                "network_time_pct": -0.051705260669843156,
+                "neighbor_time_pct": 0.004102749122814053,
+                "new_neighbor_km": 0,
+                "violations": []
+              }
+            ],
+            "missing": [],
+            "reasons": [],
+            "feasible": true,
+            "worst": [
+              -0.051705260669843156,
+              0.019115307766104372,
+              0.056
+            ],
+            "dominated_by": [],
+            "frontier": true
+          }
+        ],
+        "recommendation": "robust_p3_1",
+        "finalized": true,
+        "eligible_count": 2,
+        "frontier_count": 2,
+        "reason": "全部已设需求通过原约束；应用预设容差后优先简单措施。精确权衡前沿仍保留供比较。",
+        "rule": "先通过原约束；依次保留距当前最优全网增幅不超过0.001个百分点、邻区增幅不超过0.01个百分点、新增邻区过饱和不超过0.001km的候选；近似相同时优先少措施、少停车1级措施，再按名称稳定排序。容差为决策假设，不是统计显著性。",
+        "selection": {
+          "version": "tolerance-v2",
+          "tolerances": [
+            0.001,
+            0.01,
+            0.001
+          ],
+          "stages": [
+            {
+              "dimension": 0,
+              "anchor": -0.051705260669843156,
+              "tolerance": 0.001,
+              "retained": [
+                "robust_p3_1"
+              ]
+            },
+            {
+              "dimension": 1,
+              "anchor": 0.019115307766104372,
+              "tolerance": 0.01,
+              "retained": [
+                "robust_p3_1"
+              ]
+            },
+            {
+              "dimension": 2,
+              "anchor": 0.056,
+              "tolerance": 0.001,
+              "retained": [
+                "robust_p3_1"
+              ]
+            }
+          ],
+          "equivalent_candidates": [
+            "robust_p3_1"
+          ],
+          "recommendation": "robust_p3_1",
+          "candidates": [
+            {
+              "name": "robust_p2_1",
+              "objectives": [
+                -0.036857707774973214,
+                0.0031174176598147696,
+                0
+              ],
+              "complexity": [
+                1,
+                0
+              ],
+              "difference_from_selected": [
+                0.014847552894869942,
+                -0.015997890106289603,
+                -0.056
+              ]
+            },
+            {
+              "name": "robust_p3_1",
+              "objectives": [
+                -0.051705260669843156,
+                0.019115307766104372,
+                0.056
+              ],
+              "complexity": [
+                1,
+                1
+              ],
+              "difference_from_selected": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          ],
+          "rule": "先通过原约束；依次保留距当前最优全网增幅不超过0.001个百分点、邻区增幅不超过0.01个百分点、新增邻区过饱和不超过0.001km的候选；近似相同时优先少措施、少停车1级措施，再按名称稳定排序。容差为决策假设，不是统计显著性。"
+        }
+      },
+      "conditional_v2": {
+        "0.9": {
+          "version": "tolerance-v2",
+          "tolerances": [
+            0.001,
+            0.01,
+            0.001
+          ],
+          "stages": [
+            {
+              "dimension": 0,
+              "anchor": -0.05704380124248454,
+              "tolerance": 0.001,
+              "retained": [
+                "robust_p3_0.9"
+              ]
+            },
+            {
+              "dimension": 1,
+              "anchor": 0.0025054667365020933,
+              "tolerance": 0.01,
+              "retained": [
+                "robust_p3_0.9"
+              ]
+            },
+            {
+              "dimension": 2,
+              "anchor": 0,
+              "tolerance": 0.001,
+              "retained": [
+                "robust_p3_0.9"
+              ]
+            }
+          ],
+          "equivalent_candidates": [
+            "robust_p3_0.9"
+          ],
+          "recommendation": "robust_p3_0.9",
+          "candidates": [
+            {
+              "name": "robust_p2_0.9",
+              "objectives": [
+                -0.04421261298879209,
+                0.002106514624866662,
+                0
+              ],
+              "complexity": [
+                1,
+                0
+              ],
+              "difference_from_selected": [
+                0.01283118825369245,
+                -0.0003989521116354311,
+                0
+              ]
+            },
+            {
+              "name": "robust_p3_0.9",
+              "objectives": [
+                -0.05704380124248454,
+                0.0025054667365020933,
+                0
+              ],
+              "complexity": [
+                1,
+                1
+              ],
+              "difference_from_selected": [
+                0.0,
+                0.0,
+                0
+              ]
+            }
+          ],
+          "rule": "先通过原约束；依次保留距当前最优全网增幅不超过0.001个百分点、邻区增幅不超过0.01个百分点、新增邻区过饱和不超过0.001km的候选；近似相同时优先少措施、少停车1级措施，再按名称稳定排序。容差为决策假设，不是统计显著性。"
+        },
+        "1.0": {
+          "version": "tolerance-v2",
+          "tolerances": [
+            0.001,
+            0.01,
+            0.001
+          ],
+          "stages": [
+            {
+              "dimension": 0,
+              "anchor": -0.060434066797299124,
+              "tolerance": 0.001,
+              "retained": [
+                "robust_p3_1"
+              ]
+            },
+            {
+              "dimension": 1,
+              "anchor": 0.019115307766104372,
+              "tolerance": 0.01,
+              "retained": [
+                "robust_p3_1"
+              ]
+            },
+            {
+              "dimension": 2,
+              "anchor": 0.056,
+              "tolerance": 0.001,
+              "retained": [
+                "robust_p3_1"
+              ]
+            }
+          ],
+          "equivalent_candidates": [
+            "robust_p3_1"
+          ],
+          "recommendation": "robust_p3_1",
+          "candidates": [
+            {
+              "name": "robust_p2_1",
+              "objectives": [
+                -0.04681708562629394,
+                -0.0001316339888313145,
+                0
+              ],
+              "complexity": [
+                1,
+                0
+              ],
+              "difference_from_selected": [
+                0.013616981171005182,
+                -0.019246941754935687,
+                -0.056
+              ]
+            },
+            {
+              "name": "robust_p3_1",
+              "objectives": [
+                -0.060434066797299124,
+                0.019115307766104372,
+                0.056
+              ],
+              "complexity": [
+                1,
+                1
+              ],
+              "difference_from_selected": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          ],
+          "rule": "先通过原约束；依次保留距当前最优全网增幅不超过0.001个百分点、邻区增幅不超过0.01个百分点、新增邻区过饱和不超过0.001km的候选；近似相同时优先少措施、少停车1级措施，再按名称稳定排序。容差为决策假设，不是统计显著性。"
+        },
+        "1.1": {
+          "version": "tolerance-v2",
+          "tolerances": [
+            0.001,
+            0.01,
+            0.001
+          ],
+          "stages": [
+            {
+              "dimension": 0,
+              "anchor": -0.051705260669843156,
+              "tolerance": 0.001,
+              "retained": [
+                "robust_p3_1.1"
+              ]
+            },
+            {
+              "dimension": 1,
+              "anchor": 0.004102749122814053,
+              "tolerance": 0.01,
+              "retained": [
+                "robust_p3_1.1"
+              ]
+            },
+            {
+              "dimension": 2,
+              "anchor": 0,
+              "tolerance": 0.001,
+              "retained": [
+                "robust_p3_1.1"
+              ]
+            }
+          ],
+          "equivalent_candidates": [
+            "robust_p3_1.1"
+          ],
+          "recommendation": "robust_p3_1.1",
+          "candidates": [
+            {
+              "name": "robust_p2_1.1",
+              "objectives": [
+                -0.036857707774973214,
+                0.0031174176598147696,
+                0
+              ],
+              "complexity": [
+                1,
+                0
+              ],
+              "difference_from_selected": [
+                0.014847552894869942,
+                -0.0009853314629992838,
+                0
+              ]
+            },
+            {
+              "name": "robust_p3_1.1",
+              "objectives": [
+                -0.051705260669843156,
+                0.004102749122814053,
+                0
+              ],
+              "complexity": [
+                1,
+                1
+              ],
+              "difference_from_selected": [
+                0.0,
+                0.0,
+                0
+              ]
+            }
+          ],
+          "rule": "先通过原约束；依次保留距当前最优全网增幅不超过0.001个百分点、邻区增幅不超过0.01个百分点、新增邻区过饱和不超过0.001km的候选；近似相同时优先少措施、少停车1级措施，再按名称稳定排序。容差为决策假设，不是统计显著性。"
+        }
+      },
+      "warnings": [
+        {
+          "run": "robust_p1_1.1",
+          "factor": 1.1,
+          "original_eligible": false,
+          "original_delta": {
+            "core": {
+              "speed_change_pct": 60.44643260589051,
+              "running_time_change_pct": -35.70314643341534,
+              "oversaturated_km_change": 0.0
+            },
+            "neighbor": {
+              "speed_change_pct": -0.18264278721272786,
+              "running_time_change_pct": 1.1728260378476296,
+              "oversaturated_km_change": 0.0
+            },
+            "network": {
+              "speed_change_pct": 0.05932834450734781,
+              "running_time_change_pct": -0.05991642990700319,
+              "oversaturated_km_change": 0.0
+            }
+          },
+          "new_network_overloaded_km": 0.0,
+          "added_time_pcu_h": 28.707011793717115,
+          "saved_time_pcu_h": 184.90988026524016,
+          "net_time_pcu_h": -156.20286847152306,
+          "worst_roads": [
+            {
+              "from_node": 4085,
+              "to_node": 3240,
+              "name": "18209路",
+              "time_increase_pcu_h": 12.00038602310231
+            },
+            {
+              "from_node": 4084,
+              "to_node": 3245,
+              "name": "18208路",
+              "time_increase_pcu_h": 2.689575499951536
+            },
+            {
+              "from_node": 3244,
+              "to_node": 3247,
+              "name": "七东线",
+              "time_increase_pcu_h": 1.406636243386244
+            },
+            {
+              "from_node": 3118,
+              "to_node": 3117,
+              "name": "环洲路",
+              "time_increase_pcu_h": 1.3485288888888771
+            },
+            {
+              "from_node": 3239,
+              "to_node": 3240,
+              "name": "长江村路",
+              "time_increase_pcu_h": 1.2020800000000023
+            }
+          ]
+        },
+        {
+          "run": "robust_p2_1.1",
+          "factor": 1.1,
+          "original_eligible": true,
+          "original_delta": {
+            "core": {
+              "speed_change_pct": 31.990100005949618,
+              "running_time_change_pct": -24.22702153387284,
+              "oversaturated_km_change": 0.0
+            },
+            "neighbor": {
+              "speed_change_pct": 0.004357923131892427,
+              "running_time_change_pct": 0.0031174176598147696,
+              "oversaturated_km_change": 0.0
+            },
+            "network": {
+              "speed_change_pct": 0.036904626268885465,
+              "running_time_change_pct": -0.036857707774973214,
+              "oversaturated_km_change": 0.0
+            }
+          },
+          "new_network_overloaded_km": 0.0,
+          "added_time_pcu_h": 0.22495988303503245,
+          "saved_time_pcu_h": 96.3134566220909,
+          "net_time_pcu_h": -96.08849673905587,
+          "worst_roads": [
+            {
+              "from_node": 3109,
+              "to_node": 3111,
+              "name": "环洲路",
+              "time_increase_pcu_h": 0.163886333333344
+            },
+            {
+              "from_node": 3247,
+              "to_node": 3244,
+              "name": "七东线",
+              "time_increase_pcu_h": 0.01411475409836099
+            },
+            {
+              "from_node": 3245,
+              "to_node": 4084,
+              "name": "15911路",
+              "time_increase_pcu_h": 0.013108712026111474
+            },
+            {
+              "from_node": 3246,
+              "to_node": 3247,
+              "name": "七东线",
+              "time_increase_pcu_h": 0.009837556404028327
+            },
+            {
+              "from_node": 3111,
+              "to_node": 3246,
+              "name": "七东线",
+              "time_increase_pcu_h": 0.004561895852821713
+            }
+          ]
+        },
+        {
+          "run": "robust_p2_1",
+          "factor": 1.0,
+          "original_eligible": true,
+          "original_delta": {
+            "core": {
+              "speed_change_pct": 41.69500007089375,
+              "running_time_change_pct": -29.42437360727592,
+              "oversaturated_km_change": 0.0
+            },
+            "neighbor": {
+              "speed_change_pct": 0.0016936370872189244,
+              "running_time_change_pct": -0.0001316339888313145,
+              "oversaturated_km_change": 0.0
+            },
+            "network": {
+              "speed_change_pct": 0.04683697567573475,
+              "running_time_change_pct": -0.04681708562629394,
+              "oversaturated_km_change": 0.0
+            }
+          },
+          "new_network_overloaded_km": 0.0,
+          "added_time_pcu_h": 0.04656021954410943,
+          "saved_time_pcu_h": 106.4750211766136,
+          "net_time_pcu_h": -106.42846095706949,
+          "worst_roads": [
+            {
+              "from_node": 3109,
+              "to_node": 3111,
+              "name": "环洲路",
+              "time_increase_pcu_h": 0.0046824666666823705
+            },
+            {
+              "from_node": 4085,
+              "to_node": 3288,
+              "name": "18209路",
+              "time_increase_pcu_h": 0.0041804423748532426
+            },
+            {
+              "from_node": 3274,
+              "to_node": 4102,
+              "name": "15940路",
+              "time_increase_pcu_h": 0.003883333333329802
+            },
+            {
+              "from_node": 3242,
+              "to_node": 3246,
+              "name": "15908路",
+              "time_increase_pcu_h": 0.0029349999999973304
+            },
+            {
+              "from_node": 3241,
+              "to_node": 3242,
+              "name": "西七线",
+              "time_increase_pcu_h": 0.0027099999999975356
+            }
+          ]
+        },
+        {
+          "run": "robust_p2_0.9",
+          "factor": 0.9,
+          "original_eligible": true,
+          "original_delta": {
+            "core": {
+              "speed_change_pct": 54.45907322601391,
+              "running_time_change_pct": -35.25497891856399,
+              "oversaturated_km_change": 0.0
+            },
+            "neighbor": {
+              "speed_change_pct": -0.0011675825561496822,
+              "running_time_change_pct": 0.002106514624866662,
+              "oversaturated_km_change": 0.0
+            },
+            "network": {
+              "speed_change_pct": 0.04423928494043938,
+              "running_time_change_pct": -0.04421261298879209,
+              "oversaturated_km_change": 0.0
+            }
+          },
+          "new_network_overloaded_km": 0.0,
+          "added_time_pcu_h": 0.07618414766788803,
+          "saved_time_pcu_h": 87.27450739900056,
+          "net_time_pcu_h": -87.19832325133267,
+          "worst_roads": [
+            {
+              "from_node": 3268,
+              "to_node": 3267,
+              "name": "中心路",
+              "time_increase_pcu_h": 0.010333144777074602
+            },
+            {
+              "from_node": 3274,
+              "to_node": 4102,
+              "name": "15940路",
+              "time_increase_pcu_h": 0.007766666666659604
+            },
+            {
+              "from_node": 3239,
+              "to_node": 3240,
+              "name": "长江村路",
+              "time_increase_pcu_h": 0.007467144210794914
+            },
+            {
+              "from_node": 3104,
+              "to_node": 4107,
+              "name": "东江村路",
+              "time_increase_pcu_h": 0.006483333333327437
+            },
+            {
+              "from_node": 4102,
+              "to_node": 3104,
+              "name": "东江村路",
+              "time_increase_pcu_h": 0.005199999999995271
+            }
+          ]
+        },
+        {
+          "run": "robust_p3_1.1",
+          "factor": 1.1,
+          "original_eligible": true,
+          "original_delta": {
+            "core": {
+              "speed_change_pct": 51.50467892410664,
+              "running_time_change_pct": -33.98397387302621,
+              "oversaturated_km_change": 0.0
+            },
+            "neighbor": {
+              "speed_change_pct": 0.005866680577626404,
+              "running_time_change_pct": 0.004102749122814053,
+              "oversaturated_km_change": 0.0
+            },
+            "network": {
+              "speed_change_pct": 0.05177741071473729,
+              "running_time_change_pct": -0.051705260669843156,
+              "oversaturated_km_change": 0.0
+            }
+          },
+          "new_network_overloaded_km": 0.0,
+          "added_time_pcu_h": 0.307271510658537,
+          "saved_time_pcu_h": 135.10352095731835,
+          "net_time_pcu_h": -134.79624944665983,
+          "worst_roads": [
+            {
+              "from_node": 3109,
+              "to_node": 3111,
+              "name": "环洲路",
+              "time_increase_pcu_h": 0.22475839999997524
+            },
+            {
+              "from_node": 3247,
+              "to_node": 3244,
+              "name": "七东线",
+              "time_increase_pcu_h": 0.019196065573768007
+            },
+            {
+              "from_node": 3245,
+              "to_node": 4084,
+              "name": "15911路",
+              "time_increase_pcu_h": 0.01793823750941497
+            },
+            {
+              "from_node": 3246,
+              "to_node": 3247,
+              "name": "七东线",
+              "time_increase_pcu_h": 0.013293995140576172
+            },
+            {
+              "from_node": 3111,
+              "to_node": 3246,
+              "name": "七东线",
+              "time_increase_pcu_h": 0.00625631431244126
+            }
+          ]
+        },
+        {
+          "run": "robust_p3_1",
+          "factor": 1.0,
+          "original_eligible": true,
+          "original_delta": {
+            "core": {
+              "speed_change_pct": 61.85243500790409,
+              "running_time_change_pct": -38.17300425898128,
+              "oversaturated_km_change": 0.0
+            },
+            "neighbor": {
+              "speed_change_pct": 0.027146276966671934,
+              "running_time_change_pct": 0.019115307766104372,
+              "oversaturated_km_change": 0.05599999999999916
+            },
+            "network": {
+              "speed_change_pct": 0.06074751550195767,
+              "running_time_change_pct": -0.060434066797299124,
+              "oversaturated_km_change": 0.05600000000004002
+            }
+          },
+          "new_network_overloaded_km": 0.056,
+          "added_time_pcu_h": 0.8956717881126184,
+          "saved_time_pcu_h": 138.279377599134,
+          "net_time_pcu_h": -137.38370581102137,
+          "worst_roads": [
+            {
+              "from_node": 3113,
+              "to_node": 3241,
+              "name": "双柳河路",
+              "time_increase_pcu_h": 0.23928666666667664
+            },
+            {
+              "from_node": 3116,
+              "to_node": 3115,
+              "name": "环洲路",
+              "time_increase_pcu_h": 0.1648233333333402
+            },
+            {
+              "from_node": 3245,
+              "to_node": 4084,
+              "name": "15911路",
+              "time_increase_pcu_h": 0.059914465408804206
+            },
+            {
+              "from_node": 3233,
+              "to_node": 3232,
+              "name": "大同路",
+              "time_increase_pcu_h": 0.044350666666665595
+            },
+            {
+              "from_node": 3234,
+              "to_node": 3233,
+              "name": "双柳河路",
+              "time_increase_pcu_h": 0.04326222222222452
+            }
+          ]
+        },
+        {
+          "run": "robust_p3_0.9",
+          "factor": 0.9,
+          "original_eligible": true,
+          "original_delta": {
+            "core": {
+              "speed_change_pct": 83.44563923246848,
+              "running_time_change_pct": -45.48465302747723,
+              "oversaturated_km_change": 0.0
+            },
+            "neighbor": {
+              "speed_change_pct": -0.0010861132039963195,
+              "running_time_change_pct": 0.0025054667365020933,
+              "oversaturated_km_change": 0.0
+            },
+            "network": {
+              "speed_change_pct": 0.05708589471322689,
+              "running_time_change_pct": -0.05704380124248454,
+              "oversaturated_km_change": 0.0
+            }
+          },
+          "new_network_overloaded_km": 0.0,
+          "added_time_pcu_h": 0.09513342321874602,
+          "saved_time_pcu_h": 112.59976691972211,
+          "net_time_pcu_h": -112.50463349650337,
+          "worst_roads": [
+            {
+              "from_node": 3274,
+              "to_node": 4102,
+              "name": "15940路",
+              "time_increase_pcu_h": 0.011649999999989405
+            },
+            {
+              "from_node": 3268,
+              "to_node": 3267,
+              "name": "中心路",
+              "time_increase_pcu_h": 0.010333144777074602
+            },
+            {
+              "from_node": 3104,
+              "to_node": 4107,
+              "name": "东江村路",
+              "time_increase_pcu_h": 0.009076666666658411
+            },
+            {
+              "from_node": 3239,
+              "to_node": 3240,
+              "name": "长江村路",
+              "time_increase_pcu_h": 0.007467144210794914
+            },
+            {
+              "from_node": 4102,
+              "to_node": 3104,
+              "name": "东江村路",
+              "time_increase_pcu_h": 0.007279999999993379
+            }
+          ]
+        }
+      ],
+      "threshold_scope_scan": [
+        {
+          "neighbor_hops": 1,
+          "variant": "original",
+          "recommendation": "robust_p3_1",
+          "eligible": [
+            "robust_p2_1",
+            "robust_p3_1"
+          ]
+        },
+        {
+          "neighbor_hops": 1,
+          "variant": "max_neighbor_time_increase_pct=0",
+          "recommendation": null,
+          "eligible": []
+        },
+        {
+          "neighbor_hops": 1,
+          "variant": "max_neighbor_time_increase_pct=0.25",
+          "recommendation": "robust_p3_1",
+          "eligible": [
+            "robust_p2_1",
+            "robust_p3_1"
+          ]
+        },
+        {
+          "neighbor_hops": 1,
+          "variant": "max_neighbor_time_increase_pct=1",
+          "recommendation": "robust_p3_1",
+          "eligible": [
+            "robust_p2_1",
+            "robust_p3_1"
+          ]
+        },
+        {
+          "neighbor_hops": 1,
+          "variant": "max_network_time_increase_pct=0",
+          "recommendation": "robust_p3_1",
+          "eligible": [
+            "robust_p2_1",
+            "robust_p3_1"
+          ]
+        },
+        {
+          "neighbor_hops": 1,
+          "variant": "max_network_time_increase_pct=0.05",
+          "recommendation": "robust_p3_1",
+          "eligible": [
+            "robust_p2_1",
+            "robust_p3_1"
+          ]
+        },
+        {
+          "neighbor_hops": 1,
+          "variant": "max_network_time_increase_pct=0.2",
+          "recommendation": "robust_p3_1",
+          "eligible": [
+            "robust_p2_1",
+            "robust_p3_1"
+          ]
+        },
+        {
+          "neighbor_hops": 1,
+          "variant": "max_new_oversaturated_km=0",
+          "recommendation": "robust_p2_1",
+          "eligible": [
+            "robust_p2_1"
+          ]
+        },
+        {
+          "neighbor_hops": 1,
+          "variant": "max_new_oversaturated_km=0.05",
+          "recommendation": "robust_p2_1",
+          "eligible": [
+            "robust_p2_1"
+          ]
+        },
+        {
+          "neighbor_hops": 1,
+          "variant": "max_new_oversaturated_km=0.2",
+          "recommendation": "robust_p3_1",
+          "eligible": [
+            "robust_p2_1",
+            "robust_p3_1"
+          ]
+        },
+        {
+          "neighbor_hops": 2,
+          "variant": "original",
+          "recommendation": "robust_p3_1",
+          "eligible": [
+            "robust_p2_1",
+            "robust_p3_1"
+          ]
+        },
+        {
+          "neighbor_hops": 2,
+          "variant": "max_neighbor_time_increase_pct=0",
+          "recommendation": null,
+          "eligible": []
+        },
+        {
+          "neighbor_hops": 2,
+          "variant": "max_neighbor_time_increase_pct=0.25",
+          "recommendation": "robust_p3_1",
+          "eligible": [
+            "robust_p2_1",
+            "robust_p3_1"
+          ]
+        },
+        {
+          "neighbor_hops": 2,
+          "variant": "max_neighbor_time_increase_pct=1",
+          "recommendation": "robust_p3_1",
+          "eligible": [
+            "robust_p2_1",
+            "robust_p3_1"
+          ]
+        },
+        {
+          "neighbor_hops": 2,
+          "variant": "max_network_time_increase_pct=0",
+          "recommendation": "robust_p3_1",
+          "eligible": [
+            "robust_p2_1",
+            "robust_p3_1"
+          ]
+        },
+        {
+          "neighbor_hops": 2,
+          "variant": "max_network_time_increase_pct=0.05",
+          "recommendation": "robust_p3_1",
+          "eligible": [
+            "robust_p2_1",
+            "robust_p3_1"
+          ]
+        },
+        {
+          "neighbor_hops": 2,
+          "variant": "max_network_time_increase_pct=0.2",
+          "recommendation": "robust_p3_1",
+          "eligible": [
+            "robust_p2_1",
+            "robust_p3_1"
+          ]
+        },
+        {
+          "neighbor_hops": 2,
+          "variant": "max_new_oversaturated_km=0",
+          "recommendation": "robust_p2_1",
+          "eligible": [
+            "robust_p2_1"
+          ]
+        },
+        {
+          "neighbor_hops": 2,
+          "variant": "max_new_oversaturated_km=0.05",
+          "recommendation": "robust_p2_1",
+          "eligible": [
+            "robust_p2_1"
+          ]
+        },
+        {
+          "neighbor_hops": 2,
+          "variant": "max_new_oversaturated_km=0.2",
+          "recommendation": "robust_p3_1",
+          "eligible": [
+            "robust_p2_1",
+            "robust_p3_1"
+          ]
+        },
+        {
+          "neighbor_hops": 3,
+          "variant": "original",
+          "recommendation": "robust_p3_1",
+          "eligible": [
+            "robust_p2_1",
+            "robust_p3_1"
+          ]
+        },
+        {
+          "neighbor_hops": 3,
+          "variant": "max_neighbor_time_increase_pct=0",
+          "recommendation": null,
+          "eligible": []
+        },
+        {
+          "neighbor_hops": 3,
+          "variant": "max_neighbor_time_increase_pct=0.25",
+          "recommendation": "robust_p3_1",
+          "eligible": [
+            "robust_p2_1",
+            "robust_p3_1"
+          ]
+        },
+        {
+          "neighbor_hops": 3,
+          "variant": "max_neighbor_time_increase_pct=1",
+          "recommendation": "robust_p3_1",
+          "eligible": [
+            "robust_p2_1",
+            "robust_p3_1"
+          ]
+        },
+        {
+          "neighbor_hops": 3,
+          "variant": "max_network_time_increase_pct=0",
+          "recommendation": "robust_p3_1",
+          "eligible": [
+            "robust_p2_1",
+            "robust_p3_1"
+          ]
+        },
+        {
+          "neighbor_hops": 3,
+          "variant": "max_network_time_increase_pct=0.05",
+          "recommendation": "robust_p3_1",
+          "eligible": [
+            "robust_p2_1",
+            "robust_p3_1"
+          ]
+        },
+        {
+          "neighbor_hops": 3,
+          "variant": "max_network_time_increase_pct=0.2",
+          "recommendation": "robust_p3_1",
+          "eligible": [
+            "robust_p2_1",
+            "robust_p3_1"
+          ]
+        },
+        {
+          "neighbor_hops": 3,
+          "variant": "max_new_oversaturated_km=0",
+          "recommendation": "robust_p2_1",
+          "eligible": [
+            "robust_p2_1"
+          ]
+        },
+        {
+          "neighbor_hops": 3,
+          "variant": "max_new_oversaturated_km=0.05",
+          "recommendation": "robust_p2_1",
+          "eligible": [
+            "robust_p2_1"
+          ]
+        },
+        {
+          "neighbor_hops": 3,
+          "variant": "max_new_oversaturated_km=0.2",
+          "recommendation": "robust_p3_1",
+          "eligible": [
+            "robust_p2_1",
+            "robust_p3_1"
+          ]
+        }
+      ],
+      "tolerance_scan": [
+        {
+          "multiplier": 0,
+          "version": "tolerance-v2",
+          "tolerances": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "stages": [
+            {
+              "dimension": 0,
+              "anchor": -0.051705260669843156,
+              "tolerance": 0.0,
+              "retained": [
+                "robust_p3_1"
+              ]
+            },
+            {
+              "dimension": 1,
+              "anchor": 0.019115307766104372,
+              "tolerance": 0.0,
+              "retained": [
+                "robust_p3_1"
+              ]
+            },
+            {
+              "dimension": 2,
+              "anchor": 0.056,
+              "tolerance": 0.0,
+              "retained": [
+                "robust_p3_1"
+              ]
+            }
+          ],
+          "equivalent_candidates": [
+            "robust_p3_1"
+          ],
+          "recommendation": "robust_p3_1",
+          "candidates": [
+            {
+              "name": "robust_p2_1",
+              "objectives": [
+                -0.036857707774973214,
+                0.0031174176598147696,
+                0
+              ],
+              "complexity": [
+                1,
+                0
+              ],
+              "difference_from_selected": [
+                0.014847552894869942,
+                -0.015997890106289603,
+                -0.056
+              ]
+            },
+            {
+              "name": "robust_p3_1",
+              "objectives": [
+                -0.051705260669843156,
+                0.019115307766104372,
+                0.056
+              ],
+              "complexity": [
+                1,
+                1
+              ],
+              "difference_from_selected": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          ],
+          "rule": "先通过原约束；依次保留距当前最优全网增幅不超过0.001个百分点、邻区增幅不超过0.01个百分点、新增邻区过饱和不超过0.001km的候选；近似相同时优先少措施、少停车1级措施，再按名称稳定排序。容差为决策假设，不是统计显著性。"
+        },
+        {
+          "multiplier": 0.1,
+          "version": "tolerance-v2",
+          "tolerances": [
+            0.0001,
+            0.001,
+            0.0001
+          ],
+          "stages": [
+            {
+              "dimension": 0,
+              "anchor": -0.051705260669843156,
+              "tolerance": 0.0001,
+              "retained": [
+                "robust_p3_1"
+              ]
+            },
+            {
+              "dimension": 1,
+              "anchor": 0.019115307766104372,
+              "tolerance": 0.001,
+              "retained": [
+                "robust_p3_1"
+              ]
+            },
+            {
+              "dimension": 2,
+              "anchor": 0.056,
+              "tolerance": 0.0001,
+              "retained": [
+                "robust_p3_1"
+              ]
+            }
+          ],
+          "equivalent_candidates": [
+            "robust_p3_1"
+          ],
+          "recommendation": "robust_p3_1",
+          "candidates": [
+            {
+              "name": "robust_p2_1",
+              "objectives": [
+                -0.036857707774973214,
+                0.0031174176598147696,
+                0
+              ],
+              "complexity": [
+                1,
+                0
+              ],
+              "difference_from_selected": [
+                0.014847552894869942,
+                -0.015997890106289603,
+                -0.056
+              ]
+            },
+            {
+              "name": "robust_p3_1",
+              "objectives": [
+                -0.051705260669843156,
+                0.019115307766104372,
+                0.056
+              ],
+              "complexity": [
+                1,
+                1
+              ],
+              "difference_from_selected": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          ],
+          "rule": "先通过原约束；依次保留距当前最优全网增幅不超过0.001个百分点、邻区增幅不超过0.01个百分点、新增邻区过饱和不超过0.001km的候选；近似相同时优先少措施、少停车1级措施，再按名称稳定排序。容差为决策假设，不是统计显著性。"
+        },
+        {
+          "multiplier": 1,
+          "version": "tolerance-v2",
+          "tolerances": [
+            0.001,
+            0.01,
+            0.001
+          ],
+          "stages": [
+            {
+              "dimension": 0,
+              "anchor": -0.051705260669843156,
+              "tolerance": 0.001,
+              "retained": [
+                "robust_p3_1"
+              ]
+            },
+            {
+              "dimension": 1,
+              "anchor": 0.019115307766104372,
+              "tolerance": 0.01,
+              "retained": [
+                "robust_p3_1"
+              ]
+            },
+            {
+              "dimension": 2,
+              "anchor": 0.056,
+              "tolerance": 0.001,
+              "retained": [
+                "robust_p3_1"
+              ]
+            }
+          ],
+          "equivalent_candidates": [
+            "robust_p3_1"
+          ],
+          "recommendation": "robust_p3_1",
+          "candidates": [
+            {
+              "name": "robust_p2_1",
+              "objectives": [
+                -0.036857707774973214,
+                0.0031174176598147696,
+                0
+              ],
+              "complexity": [
+                1,
+                0
+              ],
+              "difference_from_selected": [
+                0.014847552894869942,
+                -0.015997890106289603,
+                -0.056
+              ]
+            },
+            {
+              "name": "robust_p3_1",
+              "objectives": [
+                -0.051705260669843156,
+                0.019115307766104372,
+                0.056
+              ],
+              "complexity": [
+                1,
+                1
+              ],
+              "difference_from_selected": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          ],
+          "rule": "先通过原约束；依次保留距当前最优全网增幅不超过0.001个百分点、邻区增幅不超过0.01个百分点、新增邻区过饱和不超过0.001km的候选；近似相同时优先少措施、少停车1级措施，再按名称稳定排序。容差为决策假设，不是统计显著性。"
+        },
+        {
+          "multiplier": 10,
+          "version": "tolerance-v2",
+          "tolerances": [
+            0.01,
+            0.1,
+            0.01
+          ],
+          "stages": [
+            {
+              "dimension": 0,
+              "anchor": -0.051705260669843156,
+              "tolerance": 0.01,
+              "retained": [
+                "robust_p3_1"
+              ]
+            },
+            {
+              "dimension": 1,
+              "anchor": 0.019115307766104372,
+              "tolerance": 0.1,
+              "retained": [
+                "robust_p3_1"
+              ]
+            },
+            {
+              "dimension": 2,
+              "anchor": 0.056,
+              "tolerance": 0.01,
+              "retained": [
+                "robust_p3_1"
+              ]
+            }
+          ],
+          "equivalent_candidates": [
+            "robust_p3_1"
+          ],
+          "recommendation": "robust_p3_1",
+          "candidates": [
+            {
+              "name": "robust_p2_1",
+              "objectives": [
+                -0.036857707774973214,
+                0.0031174176598147696,
+                0
+              ],
+              "complexity": [
+                1,
+                0
+              ],
+              "difference_from_selected": [
+                0.014847552894869942,
+                -0.015997890106289603,
+                -0.056
+              ]
+            },
+            {
+              "name": "robust_p3_1",
+              "objectives": [
+                -0.051705260669843156,
+                0.019115307766104372,
+                0.056
+              ],
+              "complexity": [
+                1,
+                1
+              ],
+              "difference_from_selected": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          ],
+          "rule": "先通过原约束；依次保留距当前最优全网增幅不超过0.001个百分点、邻区增幅不超过0.01个百分点、新增邻区过饱和不超过0.001km的候选；近似相同时优先少措施、少停车1级措施，再按名称稳定排序。容差为决策假设，不是统计显著性。"
+        }
+      ]
+    },
+    {
+      "job": "20260911_024329_7304a4",
+      "source_state_sha256": "e7cdf1fb650a45e39f47a3498079568d3f2deeea0d864a8f188dd5b35399942c",
+      "archive_manifest_sha256": "234570ff54d3ae1be9f3591817850e378a2c5ec0499d7cfb862b78c07191b4d7",
+      "audit_mode": "portable_archive",
+      "audit": {
+        "passed": true,
+        "completed_scenarios": 5,
+        "module_executions": 35,
+        "scope_sizes": {
+          "core": 3,
+          "neighbor": 41,
+          "network": 32060
+        },
+        "repeat_arrays_exact": {
+          "speed_kmh": true,
+          "flow_pcu_h": true,
+          "vc": true,
+          "time_s": true
+        },
+        "verified_runs": [
+          {
+            "scenario": "baseline",
+            "modules": 7,
+            "result_rows": {
+              "speed_kmh": 32981,
+              "flow_pcu_h": 32981,
+              "vc": 32981,
+              "time_s": 32981
+            },
+            "input_difference_files": [],
+            "car_od_factor": 1.0,
+            "internal_od_factor": 1.0
+          },
+          {
+            "scenario": "robust_base_1.1",
+            "modules": 7,
+            "result_rows": {
+              "speed_kmh": 32981,
+              "flow_pcu_h": 32981,
+              "vc": 32981,
+              "time_s": 32981
+            },
+            "input_difference_files": [
+              "result/ODCar.tsd"
+            ],
+            "car_od_factor": 1.0999999999999999,
+            "internal_od_factor": 1.099999832501556
+          },
+          {
+            "scenario": "robust_p1_1.1",
+            "modules": 7,
+            "result_rows": {
+              "speed_kmh": 32981,
+              "flow_pcu_h": 32981,
+              "vc": 32981,
+              "time_s": 32981
+            },
+            "input_difference_files": [
+              "data/manageL.txt",
+              "result/ODCar.tsd"
+            ],
+            "car_od_factor": 1.0999999999999999,
+            "internal_od_factor": 1.099999832501556
+          },
+          {
+            "scenario": "robust_p2_1.1",
+            "modules": 7,
+            "result_rows": {
+              "speed_kmh": 32981,
+              "flow_pcu_h": 32981,
+              "vc": 32981,
+              "time_s": 32981
+            },
+            "input_difference_files": [
+              "data/manageL.txt",
+              "result/ODCar.tsd"
+            ],
+            "car_od_factor": 1.0999999999999999,
+            "internal_od_factor": 1.099999832501556
+          },
+          {
+            "scenario": "baseline_repeat",
+            "modules": 7,
+            "result_rows": {
+              "speed_kmh": 32981,
+              "flow_pcu_h": 32981,
+              "vc": 32981,
+              "time_s": 32981
+            },
+            "input_difference_files": [],
+            "car_od_factor": 1.0,
+            "internal_od_factor": 1.0
+          }
+        ],
+        "limitations": "只核验保存的实验与输入输出证据，不证明现实标定有效或全部草案已实现",
+        "active_search_audit": {
+          "protocol_frozen_before_first_run": true,
+          "raw_observations_verified": true,
+          "decisions_replayed": 4,
+          "chronological_decisions": true,
+          "budget_and_stopping_verified": true,
+          "complete_demand_recommendation_verified": true,
+          "report_exports_present": true
+        },
+        "portable_archive_verified": true
+      },
+      "original_recorded_recommendation": "baseline",
+      "old_analysis": {
+        "version": "paired-minimax-v1",
+        "factors": [
+          1.0,
+          1.1
+        ],
+        "policies": [
+          {
+            "name": "robust_p1_1.1",
+            "changes": [
+              {
+                "from_node": 3118,
+                "to_node": 3117,
+                "old_parking": 3,
+                "parking": 2
+              },
+              {
+                "from_node": 3116,
+                "to_node": 3115,
+                "old_parking": 3,
+                "parking": 2
+              },
+              {
+                "from_node": 3115,
+                "to_node": 3116,
+                "old_parking": 3,
+                "parking": 2
+              }
+            ],
+            "checks": [
+              {
+                "factor": 1.1,
+                "run": "robust_p1_1.1",
+                "baseline": "robust_base_1.1",
+                "accepted": false,
+                "network_time_pct": 0.016429201822809603,
+                "neighbor_time_pct": 0.9635860937832197,
+                "new_neighbor_km": 0,
+                "violations": [
+                  "neighbor路段行驶时间增幅超过0.5%",
+                  "固定核心区路段行驶时间未改善"
+                ]
+              }
+            ],
+            "missing": [
+              1.0
+            ],
+            "reasons": [
+              "需求 × 1.1：neighbor路段行驶时间增幅超过0.5%",
+              "需求 × 1.1：固定核心区路段行驶时间未改善"
+            ],
+            "feasible": false,
+            "worst": null,
+            "dominated_by": [],
+            "frontier": false
+          },
+          {
+            "name": "robust_p2_1.1",
+            "changes": [
+              {
+                "from_node": 3115,
+                "to_node": 3116,
+                "old_parking": 3,
+                "parking": 2
+              }
+            ],
+            "checks": [
+              {
+                "factor": 1.1,
+                "run": "robust_p2_1.1",
+                "baseline": "robust_base_1.1",
+                "accepted": false,
+                "network_time_pct": 2.314167923955779e-05,
+                "neighbor_time_pct": 0.004298058496221557,
+                "new_neighbor_km": 0,
+                "violations": [
+                  "固定核心区路段行驶时间未改善"
+                ]
+              }
+            ],
+            "missing": [
+              1.0
+            ],
+            "reasons": [
+              "需求 × 1.1：固定核心区路段行驶时间未改善"
+            ],
+            "feasible": false,
+            "worst": null,
+            "dominated_by": [],
+            "frontier": false
+          }
+        ],
+        "recommendation": null,
+        "finalized": true,
+        "eligible_count": 0,
+        "frontier_count": 0,
+        "reason": "没有证据完整且在全部设定需求下通过约束的同一措施，保留各需求基准或原条件建议",
+        "rule": "先满足全部已设需求的原实验约束；最小化最差全网耗时增幅，其次邻区增幅、邻区新增过饱和里程。仅解释已测措施，不推断未测需求。"
+      },
+      "new_analysis": {
+        "version": "paired-tolerance-v2",
+        "factors": [
+          1.0,
+          1.1
+        ],
+        "policies": [
+          {
+            "name": "robust_p1_1.1",
+            "changes": [
+              {
+                "from_node": 3118,
+                "to_node": 3117,
+                "old_parking": 3,
+                "parking": 2
+              },
+              {
+                "from_node": 3116,
+                "to_node": 3115,
+                "old_parking": 3,
+                "parking": 2
+              },
+              {
+                "from_node": 3115,
+                "to_node": 3116,
+                "old_parking": 3,
+                "parking": 2
+              }
+            ],
+            "checks": [
+              {
+                "factor": 1.1,
+                "run": "robust_p1_1.1",
+                "baseline": "robust_base_1.1",
+                "accepted": false,
+                "network_time_pct": 0.016429201822809603,
+                "neighbor_time_pct": 0.9635860937832197,
+                "new_neighbor_km": 0,
+                "violations": [
+                  "neighbor路段行驶时间增幅超过0.5%",
+                  "固定核心区路段行驶时间未改善"
+                ]
+              }
+            ],
+            "missing": [
+              1.0
+            ],
+            "reasons": [
+              "需求 × 1.1：neighbor路段行驶时间增幅超过0.5%",
+              "需求 × 1.1：固定核心区路段行驶时间未改善"
+            ],
+            "feasible": false,
+            "worst": null,
+            "dominated_by": [],
+            "frontier": false
+          },
+          {
+            "name": "robust_p2_1.1",
+            "changes": [
+              {
+                "from_node": 3115,
+                "to_node": 3116,
+                "old_parking": 3,
+                "parking": 2
+              }
+            ],
+            "checks": [
+              {
+                "factor": 1.1,
+                "run": "robust_p2_1.1",
+                "baseline": "robust_base_1.1",
+                "accepted": false,
+                "network_time_pct": 2.314167923955779e-05,
+                "neighbor_time_pct": 0.004298058496221557,
+                "new_neighbor_km": 0,
+                "violations": [
+                  "固定核心区路段行驶时间未改善"
+                ]
+              }
+            ],
+            "missing": [
+              1.0
+            ],
+            "reasons": [
+              "需求 × 1.1：固定核心区路段行驶时间未改善"
+            ],
+            "feasible": false,
+            "worst": null,
+            "dominated_by": [],
+            "frontier": false
+          }
+        ],
+        "recommendation": null,
+        "finalized": true,
+        "eligible_count": 0,
+        "frontier_count": 0,
+        "reason": "没有证据完整且在全部设定需求下通过约束的同一措施，保留各需求基准或原条件建议",
+        "rule": "先通过原约束；依次保留距当前最优全网增幅不超过0.001个百分点、邻区增幅不超过0.01个百分点、新增邻区过饱和不超过0.001km的候选；近似相同时优先少措施、少停车1级措施，再按名称稳定排序。容差为决策假设，不是统计显著性。",
+        "selection": {
+          "version": "tolerance-v2",
+          "tolerances": [
+            0.001,
+            0.01,
+            0.001
+          ],
+          "stages": [],
+          "equivalent_candidates": [],
+          "recommendation": null,
+          "candidates": [],
+          "rule": "先通过原约束；依次保留距当前最优全网增幅不超过0.001个百分点、邻区增幅不超过0.01个百分点、新增邻区过饱和不超过0.001km的候选；近似相同时优先少措施、少停车1级措施，再按名称稳定排序。容差为决策假设，不是统计显著性。"
+        }
+      },
+      "conditional_v2": {
+        "1.0": {
+          "version": "tolerance-v2",
+          "tolerances": [
+            0.001,
+            0.01,
+            0.001
+          ],
+          "stages": [],
+          "equivalent_candidates": [],
+          "recommendation": null,
+          "candidates": [],
+          "rule": "先通过原约束；依次保留距当前最优全网增幅不超过0.001个百分点、邻区增幅不超过0.01个百分点、新增邻区过饱和不超过0.001km的候选；近似相同时优先少措施、少停车1级措施，再按名称稳定排序。容差为决策假设，不是统计显著性。"
+        },
+        "1.1": {
+          "version": "tolerance-v2",
+          "tolerances": [
+            0.001,
+            0.01,
+            0.001
+          ],
+          "stages": [],
+          "equivalent_candidates": [],
+          "recommendation": null,
+          "candidates": [],
+          "rule": "先通过原约束；依次保留距当前最优全网增幅不超过0.001个百分点、邻区增幅不超过0.01个百分点、新增邻区过饱和不超过0.001km的候选；近似相同时优先少措施、少停车1级措施，再按名称稳定排序。容差为决策假设，不是统计显著性。"
+        }
+      },
+      "warnings": [
+        {
+          "run": "robust_p1_1.1",
+          "factor": 1.1,
+          "original_eligible": false,
+          "original_delta": {
+            "core": {
+              "speed_change_pct": 2.367515257938102,
+              "running_time_change_pct": 5.0591775437493824,
+              "oversaturated_km_change": 0.0
+            },
+            "neighbor": {
+              "speed_change_pct": 2.034657643364657,
+              "running_time_change_pct": 0.9635860937832197,
+              "oversaturated_km_change": 0.0
+            },
+            "network": {
+              "speed_change_pct": 0.007897473336093697,
+              "running_time_change_pct": 0.016429201822809603,
+              "oversaturated_km_change": 1.538000000000011
+            }
+          },
+          "new_network_overloaded_km": 2.1390000000000002,
+          "added_time_pcu_h": 170.88563378094867,
+          "saved_time_pcu_h": 128.05450289743726,
+          "net_time_pcu_h": 42.831130883511406,
+          "worst_roads": [
+            {
+              "from_node": 3116,
+              "to_node": 3115,
+              "name": "环洲路",
+              "time_increase_pcu_h": 18.914626666666642
+            },
+            {
+              "from_node": 3237,
+              "to_node": 3236,
+              "name": "长江村路",
+              "time_increase_pcu_h": 13.8900108047341
+            },
+            {
+              "from_node": 3239,
+              "to_node": 3238,
+              "name": "长江村路",
+              "time_increase_pcu_h": 12.527155858460583
+            },
+            {
+              "from_node": 3118,
+              "to_node": 3117,
+              "name": "环洲路",
+              "time_increase_pcu_h": 11.032977196044184
+            },
+            {
+              "from_node": 3114,
+              "to_node": 3113,
+              "name": "环洲路",
+              "time_increase_pcu_h": 8.955789555443964
+            }
+          ]
+        },
+        {
+          "run": "robust_p2_1.1",
+          "factor": 1.1,
+          "original_eligible": false,
+          "original_delta": {
+            "core": {
+              "speed_change_pct": 0.0,
+              "running_time_change_pct": 0.00476543939309515,
+              "oversaturated_km_change": 0.0
+            },
+            "neighbor": {
+              "speed_change_pct": -0.0011190150757789397,
+              "running_time_change_pct": 0.004298058496221557,
+              "oversaturated_km_change": 0.0
+            },
+            "network": {
+              "speed_change_pct": -6.932044760432632e-06,
+              "running_time_change_pct": 2.314167923955779e-05,
+              "oversaturated_km_change": 0.0
+            }
+          },
+          "new_network_overloaded_km": 0.0,
+          "added_time_pcu_h": 0.33232636941164717,
+          "saved_time_pcu_h": 0.2719957274794817,
+          "net_time_pcu_h": 0.060330641932165474,
+          "worst_roads": [
+            {
+              "from_node": 3117,
+              "to_node": 3118,
+              "name": "环洲路",
+              "time_increase_pcu_h": 0.07293612122847673
+            },
+            {
+              "from_node": 3241,
+              "to_node": 3115,
+              "name": "西七线",
+              "time_increase_pcu_h": 0.04280500000003059
+            },
+            {
+              "from_node": 3115,
+              "to_node": 3116,
+              "name": "环洲路",
+              "time_increase_pcu_h": 0.028236666666685777
+            },
+            {
+              "from_node": 3204,
+              "to_node": 3193,
+              "name": "共和村路",
+              "time_increase_pcu_h": 0.02776509504548102
+            },
+            {
+              "from_node": 4066,
+              "to_node": 3283,
+              "name": "18187路",
+              "time_increase_pcu_h": 0.024789377033152957
+            }
+          ]
+        }
+      ],
+      "threshold_scope_scan": [
+        {
+          "neighbor_hops": 1,
+          "variant": "original",
+          "recommendation": null,
+          "eligible": []
+        },
+        {
+          "neighbor_hops": 1,
+          "variant": "max_neighbor_time_increase_pct=0",
+          "recommendation": null,
+          "eligible": []
+        },
+        {
+          "neighbor_hops": 1,
+          "variant": "max_neighbor_time_increase_pct=0.25",
+          "recommendation": null,
+          "eligible": []
+        },
+        {
+          "neighbor_hops": 1,
+          "variant": "max_neighbor_time_increase_pct=1",
+          "recommendation": null,
+          "eligible": []
+        },
+        {
+          "neighbor_hops": 1,
+          "variant": "max_network_time_increase_pct=0",
+          "recommendation": null,
+          "eligible": []
+        },
+        {
+          "neighbor_hops": 1,
+          "variant": "max_network_time_increase_pct=0.05",
+          "recommendation": null,
+          "eligible": []
+        },
+        {
+          "neighbor_hops": 1,
+          "variant": "max_network_time_increase_pct=0.2",
+          "recommendation": null,
+          "eligible": []
+        },
+        {
+          "neighbor_hops": 1,
+          "variant": "max_new_oversaturated_km=0",
+          "recommendation": null,
+          "eligible": []
+        },
+        {
+          "neighbor_hops": 1,
+          "variant": "max_new_oversaturated_km=0.05",
+          "recommendation": null,
+          "eligible": []
+        },
+        {
+          "neighbor_hops": 1,
+          "variant": "max_new_oversaturated_km=0.2",
+          "recommendation": null,
+          "eligible": []
+        },
+        {
+          "neighbor_hops": 2,
+          "variant": "original",
+          "recommendation": null,
+          "eligible": []
+        },
+        {
+          "neighbor_hops": 2,
+          "variant": "max_neighbor_time_increase_pct=0",
+          "recommendation": null,
+          "eligible": []
+        },
+        {
+          "neighbor_hops": 2,
+          "variant": "max_neighbor_time_increase_pct=0.25",
+          "recommendation": null,
+          "eligible": []
+        },
+        {
+          "neighbor_hops": 2,
+          "variant": "max_neighbor_time_increase_pct=1",
+          "recommendation": null,
+          "eligible": []
+        },
+        {
+          "neighbor_hops": 2,
+          "variant": "max_network_time_increase_pct=0",
+          "recommendation": null,
+          "eligible": []
+        },
+        {
+          "neighbor_hops": 2,
+          "variant": "max_network_time_increase_pct=0.05",
+          "recommendation": null,
+          "eligible": []
+        },
+        {
+          "neighbor_hops": 2,
+          "variant": "max_network_time_increase_pct=0.2",
+          "recommendation": null,
+          "eligible": []
+        },
+        {
+          "neighbor_hops": 2,
+          "variant": "max_new_oversaturated_km=0",
+          "recommendation": null,
+          "eligible": []
+        },
+        {
+          "neighbor_hops": 2,
+          "variant": "max_new_oversaturated_km=0.05",
+          "recommendation": null,
+          "eligible": []
+        },
+        {
+          "neighbor_hops": 2,
+          "variant": "max_new_oversaturated_km=0.2",
+          "recommendation": null,
+          "eligible": []
+        },
+        {
+          "neighbor_hops": 3,
+          "variant": "original",
+          "recommendation": null,
+          "eligible": []
+        },
+        {
+          "neighbor_hops": 3,
+          "variant": "max_neighbor_time_increase_pct=0",
+          "recommendation": null,
+          "eligible": []
+        },
+        {
+          "neighbor_hops": 3,
+          "variant": "max_neighbor_time_increase_pct=0.25",
+          "recommendation": null,
+          "eligible": []
+        },
+        {
+          "neighbor_hops": 3,
+          "variant": "max_neighbor_time_increase_pct=1",
+          "recommendation": null,
+          "eligible": []
+        },
+        {
+          "neighbor_hops": 3,
+          "variant": "max_network_time_increase_pct=0",
+          "recommendation": null,
+          "eligible": []
+        },
+        {
+          "neighbor_hops": 3,
+          "variant": "max_network_time_increase_pct=0.05",
+          "recommendation": null,
+          "eligible": []
+        },
+        {
+          "neighbor_hops": 3,
+          "variant": "max_network_time_increase_pct=0.2",
+          "recommendation": null,
+          "eligible": []
+        },
+        {
+          "neighbor_hops": 3,
+          "variant": "max_new_oversaturated_km=0",
+          "recommendation": null,
+          "eligible": []
+        },
+        {
+          "neighbor_hops": 3,
+          "variant": "max_new_oversaturated_km=0.05",
+          "recommendation": null,
+          "eligible": []
+        },
+        {
+          "neighbor_hops": 3,
+          "variant": "max_new_oversaturated_km=0.2",
+          "recommendation": null,
+          "eligible": []
+        }
+      ],
+      "tolerance_scan": [
+        {
+          "multiplier": 0,
+          "version": "tolerance-v2",
+          "tolerances": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "stages": [],
+          "equivalent_candidates": [],
+          "recommendation": null,
+          "candidates": [],
+          "rule": "先通过原约束；依次保留距当前最优全网增幅不超过0.001个百分点、邻区增幅不超过0.01个百分点、新增邻区过饱和不超过0.001km的候选；近似相同时优先少措施、少停车1级措施，再按名称稳定排序。容差为决策假设，不是统计显著性。"
+        },
+        {
+          "multiplier": 0.1,
+          "version": "tolerance-v2",
+          "tolerances": [
+            0.0001,
+            0.001,
+            0.0001
+          ],
+          "stages": [],
+          "equivalent_candidates": [],
+          "recommendation": null,
+          "candidates": [],
+          "rule": "先通过原约束；依次保留距当前最优全网增幅不超过0.001个百分点、邻区增幅不超过0.01个百分点、新增邻区过饱和不超过0.001km的候选；近似相同时优先少措施、少停车1级措施，再按名称稳定排序。容差为决策假设，不是统计显著性。"
+        },
+        {
+          "multiplier": 1,
+          "version": "tolerance-v2",
+          "tolerances": [
+            0.001,
+            0.01,
+            0.001
+          ],
+          "stages": [],
+          "equivalent_candidates": [],
+          "recommendation": null,
+          "candidates": [],
+          "rule": "先通过原约束；依次保留距当前最优全网增幅不超过0.001个百分点、邻区增幅不超过0.01个百分点、新增邻区过饱和不超过0.001km的候选；近似相同时优先少措施、少停车1级措施，再按名称稳定排序。容差为决策假设，不是统计显著性。"
+        },
+        {
+          "multiplier": 10,
+          "version": "tolerance-v2",
+          "tolerances": [
+            0.01,
+            0.1,
+            0.01
+          ],
+          "stages": [],
+          "equivalent_candidates": [],
+          "recommendation": null,
+          "candidates": [],
+          "rule": "先通过原约束；依次保留距当前最优全网增幅不超过0.001个百分点、邻区增幅不超过0.01个百分点、新增邻区过饱和不超过0.001km的候选；近似相同时优先少措施、少停车1级措施，再按名称稳定排序。容差为决策假设，不是统计显著性。"
+        }
+      ]
+    }
+  ],
+  "finished": "2026-09-19T13:05:25.067392+00:00",
+  "recovery_notes": [
+    "首次处理单向任务时发现其无archive_manifest，保留失败控制台输出并继续原目录严格核验。",
+    "首次调用既有验证器刷新了核验记录，历史受版本控制的文件字节无变化；再分析工具已切换为write=False，不再写回原目录。"
+  ]
+}

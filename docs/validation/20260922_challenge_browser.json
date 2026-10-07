@@ -1,0 +1,27 @@
+{
+  "url": "http://127.0.0.1:8783/",
+  "job": "20260922_034228_3141eb",
+  "region": "medium",
+  "strategy": "feedback_backtracking",
+  "physical_scene": "case_022",
+  "demand_factor": 1,
+  "selected_policy": "medium_feedback_backtracking_p2_1",
+  "checks": {
+    "all_nine_summary_rows": true,
+    "physical_scenes": 37,
+    "native_calls": 259,
+    "core_time_change_display": "-29.3398%",
+    "neighbor_time_change_display": "+0.3293%",
+    "network_time_change_display": "-0.0069%",
+    "one_hop_time_display": "+0.6245%",
+    "gross_new_oversaturated_display": "0.0000 km",
+    "gross_positive_time_display": "21.081 pcu·h",
+    "shp_links": 32060,
+    "fallback_trace_visible": true,
+    "mechanism_capacity_visible": true,
+    "console_errors": []
+  },
+  "visual_review": "已检查中密度区域三策略表、真实路网及右侧风险画面；无裁切或缺字，侧栏可滚动。",
+  "scope": "网页展示核对；新模型调用0；当前需求指标不等于三需求最差指标",
+  "recorded_at": "2026-09-21T21:30:13.194616+00:00"
+}

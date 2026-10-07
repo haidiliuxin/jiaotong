@@ -1,0 +1,57 @@
+{
+  "kind": "score_addendum_evidence_v1",
+  "pdf": "评分证据与新解压完整验收增补.pdf",
+  "pdf_sha256": "f8cf85724926f6c2967d229027b83384e9f6db01d312761da47f6721c8892692",
+  "runtime_code": "5c9332494c08da354dc05a1868a9495ceb54d2a7",
+  "runtime_manifest_sha256": "f9c896b81047e6d731ec5c921e4373324cedfee6fb0d670da5b2e0b9e8d466e2",
+  "new_model_calls": 0,
+  "sources": [
+    {
+      "path": "智能体实验\\portable_acceptance\\20260922_extensions_v4\\oneway_completed\\audit\\acceptance.json",
+      "sha256": "15e89ae07df4359ea01e60e01d41b9bba28d28bbf32b84da274151ec89ccb3d4"
+    },
+    {
+      "path": "智能体实验\\portable_acceptance\\20260922_extensions_v4\\oneway_completed\\historical_comparison\\comparison.json",
+      "sha256": "1cfb8b036b3ca08a148f768187949e98a4c71813f85503ea5926a39e178f2cc3"
+    },
+    {
+      "path": "智能体实验\\portable_acceptance\\20260923_turn_recovery\\turn_completed\\audit\\acceptance.json",
+      "sha256": "b2e31cffb29463686ca2c51049d910215e8b6360e71685320228c45d72eeb18f"
+    },
+    {
+      "path": "智能体实验\\portable_acceptance\\20260923_turn_recovery\\turn_completed\\historical_comparison\\comparison.json",
+      "sha256": "5b07ba8fc7ec1cddb8a57eac4c026903943b6be11ecd3aa7996d44f010fb8429"
+    },
+    {
+      "path": "成果\\回退挑战\\20260922_034228_3141eb\\证据摘要.json",
+      "sha256": "3ab5aa1e972da052a9918892dae2540f98943126a639caccabe46d697561a123"
+    },
+    {
+      "path": "成果\\前瞻验证\\20260922_015104_1bd73b\\证据摘要.json",
+      "sha256": "0d90746e1d7ee78806767bcd10834004031f604842c3df92103f8749c4a5628f"
+    },
+    {
+      "path": "成果\\演示\\20260922_v4_completed_review\\recording.json",
+      "sha256": "15b2fc12aaa7dd847845071f281ca8a1b029cffa4a658f8d17fbc2b1ce26ed7e"
+    },
+    {
+      "path": "成果\\演示\\20260922_v4_completed_review\\visual_review.json",
+      "sha256": "76b66ef395a517713f696692e6e1d5e4d61cb382c9626036a5ac925e2a34f4ee"
+    },
+    {
+      "path": "成果\\复评\\20260919_v2\\review.json",
+      "sha256": "d5798c2fd67777a4253797e1d538e0edb4ae45457aa1a01dc46b33e263d1750f"
+    },
+    {
+      "path": "成果\\回退挑战\\20260922_034228_3141eb\\结果对照.png",
+      "sha256": "fe8ae084691a0d2bfce60f13aec4d06772fa4127eedce7f67576c57b23ed9a28"
+    },
+    {
+      "path": "成果\\演示\\20260922_v4_completed_review\\04.png",
+      "sha256": "c52c540a01059b8f1f9e6c3728046e60fe34bb070b1fb69aa224880a9981b957"
+    }
+  ],
+  "oneway_job": "20260922_054924_651bba",
+  "turn_job": "20260923_025908_fbc62a",
+  "scope": "同机新解压原生仿真；PDF为已核验结果的只读导出，不是新计算或异机证明"
+}

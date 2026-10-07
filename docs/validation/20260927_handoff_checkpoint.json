@@ -1,0 +1,152 @@
+{
+  "reviewed_at": "2026-09-26T23:36:28.352954+00:00",
+  "review_kind": "primary_document_and_existing_record_crosscheck",
+  "scope": "本次读取赛题原文、当前代码与已有任务记录并生成交接文档；不等同重新运行原始数组严格审计",
+  "new_native_model_calls": 0,
+  "tests_rerun": false,
+  "last_recorded_unit_tests": {
+    "count": 199,
+    "date": "2026-09-23",
+    "source": "成果/20260923高分优化阶段汇总.md"
+  },
+  "git": {
+    "functional_baseline": "cf464c4f3cbbfac32e48b37f73c64c2c574163e1",
+    "remote_main_at_review": "cf464c4f3cbbfac32e48b37f73c64c2c574163e1",
+    "equal": true
+  },
+  "contest": {
+    "primary": "赛题.docx",
+    "normalized_excerpt_matches_original": true,
+    "category_points": [
+      30,
+      20,
+      20,
+      20,
+      10
+    ],
+    "total_points": 100,
+    "official_score_obtained": null
+  },
+  "challenge": {
+    "id": "20260923_112453_e47232",
+    "status": "completed",
+    "physical_scenes": 39,
+    "top_level_native_calls": 273,
+    "native_retries": 0,
+    "stored_verification_passed": true,
+    "logical_scenes": 74
+  },
+  "teaching_pilot": {
+    "id": "20260923_130932_39bcf6",
+    "status": "no_candidate",
+    "physical_scenes": 1,
+    "top_level_native_calls": 7,
+    "diagnosed_candidates": 0,
+    "full_closed_loop_completed": false,
+    "raw_delivery": {
+      "raw_job_tracked_files": 0,
+      "registration_tracked_files": 0,
+      "raw_task_local_only_at_review": true,
+      "published_evidence": "协议说明与负结果审计摘要；完整原始任务移交包未发布"
+    }
+  },
+  "native_runtime_lock": {
+    "path": "智能体实验/runtime.lock",
+    "acquire_release_check": "free_at_check",
+    "file_presence_alone_does_not_indicate_active_run": true
+  },
+  "limitations": [
+    "未新增仿真",
+    "未在本轮重新执行全部数组核验",
+    "未获得异机新求解证据",
+    "本轮未查询主办方新的提交通知",
+    "历史源码、运行包、报告与录像保留各自版本"
+  ],
+  "read_evidence_fingerprints": [
+    {
+      "path": "赛题.docx",
+      "bytes": 17369,
+      "sha256": "3c9f7a2bc209064965f79893731d0910422a6fa5d33e1a41327684262289bbf7"
+    },
+    {
+      "path": "工作材料/文本摘录/赛题.txt",
+      "bytes": 7746,
+      "sha256": "ccc6bf666e63d61b0b8aa7d9a13e30393303e73ba75a92d7220f970568f8bdc0"
+    },
+    {
+      "path": "traffic_agent/task.py",
+      "bytes": 13047,
+      "sha256": "49c2f3d4771e39d19446fff99a1fdaf7ecf02ca255ae2f05ace8360e8dcf8673"
+    },
+    {
+      "path": "traffic_agent/data.py",
+      "bytes": 12756,
+      "sha256": "36e642dace58184ef8166bd1af4d9e069aff443c42e73aed2d33fb44a80630ea"
+    },
+    {
+      "path": "traffic_agent/runner.py",
+      "bytes": 9270,
+      "sha256": "25b0e29a8655ba3d610ce66fc474d48f1faa6af3d725a8ba42e1fff6ddabdffa"
+    },
+    {
+      "path": "traffic_agent/knowledge.json",
+      "bytes": 6183,
+      "sha256": "8f2cea2711c96ac8a89f2d6ff5ab7042868c2100e1b718a3bb9cab9e66570e2e"
+    },
+    {
+      "path": "智能体实验/challenges/20260923_112453_e47232/state.json",
+      "bytes": 1186886,
+      "sha256": "4d24df185df8a733a783eee4ae7e668e51d5bb7f30941ec1fa4e93418618401c"
+    },
+    {
+      "path": "智能体实验/challenges/20260923_112453_e47232/verification.json",
+      "bytes": 10105,
+      "sha256": "8ee19d5e8c355815b8f37925ff16768214ab983ae3d1f21139a9759d75355924"
+    },
+    {
+      "path": "智能体实验/challenges/20260923_112453_e47232/archive_manifest.json",
+      "bytes": 4992938,
+      "sha256": "63ebbb0c4e9931b768d8d83ff7ba2f7b0f45cfe777bcb5c704dde1497515ef94"
+    },
+    {
+      "path": "成果/实测档案/20260923_guard_resilient_v3_challenge/package.json",
+      "bytes": 896,
+      "sha256": "32edf8b693885304f1b2a3e800ade342da7795ddb932827b78e4d63c47f724b2"
+    },
+    {
+      "path": "成果/实测档案/20260923_guard_resilient_v3_challenge/extraction_check.json",
+      "bytes": 729,
+      "sha256": "67b36b29c187833fe43946b860e1d6502b74eeccd0d7f666b011cacd248dbc4f"
+    },
+    {
+      "path": "智能体实验/jobs/20260923_130932_39bcf6/state.json",
+      "bytes": 5275,
+      "sha256": "73241a1b9d03a7515bf0bae2479555d89e31ccc216399f9432a36f75514f06c0"
+    },
+    {
+      "path": "智能体实验/transfer_protocols/20260923_130932_39bcf6/protocol.json",
+      "bytes": 27034,
+      "sha256": "3b607c9d82d06a4840615c4d987f5aa85bb22353f745f248105f53ad7161c903"
+    },
+    {
+      "path": "智能体实验/transfer_protocols/20260923_130932_39bcf6/outcome.json",
+      "bytes": 311,
+      "sha256": "c6bc8a395bfbf8a82252da5e98e2e364e7693842a3318debe71cd7303d4405e2"
+    },
+    {
+      "path": "docs/validation/20260923_teaching_pilot_no_candidate.json",
+      "bytes": 1980,
+      "sha256": "6e2f8eec00c1497f7e5ab09307ce5a06d048152f02d5c9d063d31763d7762e41"
+    },
+    {
+      "path": "成果/便携主程序/20260923_v5/README.md",
+      "bytes": 4191,
+      "sha256": "0c88a0c6dceab9bcdcd55525918dca1aaccfca486395cf38b313077744e8288c"
+    },
+    {
+      "path": "成果/20260923高分优化阶段汇总.md",
+      "bytes": 3922,
+      "sha256": "56ccaac4ed28a5142f461080b139bf763c2b170b95d4b6764f48e05b2cca57ec"
+    }
+  ]
+}

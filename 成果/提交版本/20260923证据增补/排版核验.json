@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "pdf_sha256": "f8cf85724926f6c2967d229027b83384e9f6db01d312761da47f6721c8892692",
+  "pages": 4,
+  "page_size": "A4",
+  "rendering": "Poppler pdftoppm 110 dpi PNG",
+  "rendered_pages": [
+    {
+      "page": 1,
+      "png_sha256": "5f76671f0735b36b6b10072a6f12ad28838986a387081100f0be21b0d9ff4ba1"
+    },
+    {
+      "page": 2,
+      "png_sha256": "5402727d9ace0be4d27dabb6a296d6644658eecd5d226c73dd45c3f2a74efcdb"
+    },
+    {
+      "page": 3,
+      "png_sha256": "9e2fa72e2e913154ad8bcb3e1f54cc3417d00eed2beeb5139b203da3442e8e66"
+    },
+    {
+      "page": 4,
+      "png_sha256": "628faa3849aed8c2e0ff0ec123b801518f611e8a284784d09b16a9c47640c3eb"
+    }
+  ],
+  "checks": [
+    "最终页面与逐页目视检查过的预览渲染逐页相同",
+    "四页中文、表格和图像清晰，无可见裁切或叠字",
+    "页眉标题、页脚页码及段落完整",
+    "PDF提取文本含任务编号、调用计数、117组数组、S2选择和风险数值"
+  ]
+}

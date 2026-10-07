@@ -1,0 +1,5 @@
+非机动车出行路段行程时间分析参数表Mparam325.TXT	
+1	TmDsgnLinkBic.tsd
+
+1-道路网络在设计速度下路段行驶时间分析	TmDsgnLinkBic.tsd 
+2-道路网络在交通负荷下路段行驶时间分析	TmLoadLinkBic.tsd

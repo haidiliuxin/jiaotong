@@ -1,0 +1,12 @@
+{
+  "request": "三需求停车治理稳健搜索：固定全网毛新增过饱和0.1km门槛，检验单路段较强治理能否统一推荐",
+  "scenario": "parking",
+  "search_mode": "robust",
+  "links": [[3244, 3245], [3245, 3244], [3240, 3239]],
+  "max_links": 3,
+  "max_runs": 11,
+  "max_feedback": 2,
+  "demand_factors": [0.9, 1.0, 1.1],
+  "repeat_baseline": true,
+  "max_new_network_oversaturated_km": 0.1
+}

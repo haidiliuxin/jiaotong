@@ -1,0 +1,6 @@
+Mparam451.txt—用于交通分配的机动车客运OD矩阵分析
+OD矩阵内容          输入矩阵名称         时段系数  载客人数  PCU系数  输出矩阵名称
+地面公交车OD矩阵  DistribBus.tsd	   0.2	     48	       2	    ODBus.tsd
+非公交客车OD矩阵  DistribCar.tsd	   0.15	    1.3	       1	    ODCar.tsd
+出租车OD矩阵      DistribTax.tsd           0.15	    1.3	       1	    ODTaxi.tsd
+摩托车OD矩阵      DistribMot.tsd           0.15	     1	      0.5	    ODMotor.tsd

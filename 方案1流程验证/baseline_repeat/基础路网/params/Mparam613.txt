@@ -1,0 +1,7 @@
+Mparam613.txt----Bic_road_capacity/hour/lane
+expressways:	1200
+major-artery:	1000
+minor-artery:	800
+monor-road:	700
+highways:	700
+freeways:	0

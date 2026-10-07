@@ -1,0 +1,5 @@
+BUILD F:\ITS比赛\工作材料\便携构建\20260928_智能规划_RC10 | 7d622906e5455ec9dd5c37d9f6a4cb5e82f9a414
+Copied native programs and original case bytes
+Copied isolated Python and MinGW including licenses
+{"passed": true, "kind": "portable_transtar_runtime_v1", "files": 16147, "bytes": 1722311719, "code_commit": "7d622906e5455ec9dd5c37d9f6a4cb5e82f9a414", "python_version": "3.12.6 (tags/v3.12.6:a4a2d2b, Sep  6 2024, 20:11:23) [MSC v.1940 64 bit (AMD64)]", "manifest_sha256": "7f6b36ae527a838cf37bac098837cef55de1f8c87996fabc90b88c0fb4ed851f", "new_model_calls": 0, "meaning": "不可变文件完整性检查；不是数字签名、模型授权检查或真实求解证明"}
+{"archive": "F:\\ITS比赛\\工作材料\\便携构建\\20260928_智能规划_RC10.zip", "bytes": 878573837, "sha256": "06063ec43ad807f70798762135b22bb53c60a0d090262124271d5df8c8ff4c68"}

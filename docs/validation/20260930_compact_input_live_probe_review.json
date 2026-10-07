@@ -1,0 +1,258 @@
+{
+  "created": "2026-09-30T08:33:55.413739+00:00",
+  "kind": "compact_actual_model_input_real_probe_review",
+  "root": "智能体实验\\compact_input_validation_20260930_01",
+  "source_commit": "be66d50c1be66e4a5fbfba1bdce8446a1447d906",
+  "record": {
+    "path": "智能体实验\\compact_input_validation_20260930_01\\negative_probe\\result.json",
+    "sha256": "e7cb80768e355663504f508c0ada23bac30bb9d16fe1bc0a6f2163fbcfc27e53"
+  },
+  "previous_record": {
+    "path": "智能体实验\\candidate_comparison_validation_20260930_01\\negative_probe\\result.json",
+    "sha256": "5c7c0c3a3b0c121b679934a5f23cde64561d6bc1a16b503038b29b4efeb6390d"
+  },
+  "implemented": {
+    "input_protocol": "referenced-planning-input-v2",
+    "compact_json_separators": true,
+    "original_strings_and_all_values_preserved": true,
+    "original_evidence_and_actions_preserved": true,
+    "legacy_v1_request_bytes_preserved": true,
+    "actual_transmitted_content_stamp": true,
+    "first_and_correction_stamp_checked_after_semantic_audit": true
+  },
+  "offline": {
+    "readonly_audit": {
+      "path": "tmp\\20260930_compact_input_readonly_audit.json",
+      "sha256": "2e771e0007b5e547b3b3e105bfdc41f77ccca1c82ecb6ca9ac0e19f161e46202"
+    },
+    "historical_inputs": 10,
+    "unchanged_historical_files": 10981,
+    "python_tests": 752,
+    "python_log": {
+      "path": "tmp\\20260930_compact_input_python_verified.log",
+      "sha256": "144cb709e7d6ede091f1b9c25d8417b1860a834125cac7c7d4b7ab43001e6627"
+    },
+    "node_groups": 4,
+    "node_results": {
+      "path": "tmp\\20260930_compact_input_node.json",
+      "sha256": "fab02f98c6363e6b53317540d4d6c5774daf9b5ef88b6c5e037a56c7797bc970"
+    },
+    "initial_regression_log": {
+      "path": "tmp\\20260930_compact_input_python.log",
+      "sha256": "80b4ef580714e0da8c586b8c152e15585d9834e823aa06948b018d13b8424d21"
+    },
+    "initial_failure": "输入哈希核查顺序遮住11项原具体语义诊断；移到语义核验之后，未修改原断言，最终全通过。"
+  },
+  "investigation_correction": "完整留档中的重复评价多数已由旧wire_payload省略；未将留档层假设去重计作新增节省。",
+  "real": {
+    "structural_status": "accepted",
+    "instructions_and_tool_unchanged": true,
+    "protocol_only_value_change": true,
+    "input_content_bytes_before": 31939,
+    "input_content_bytes_after": 30029,
+    "input_tokens_before": 15157,
+    "input_tokens_after": 13424,
+    "input_tokens_saved": 1733,
+    "input_tokens_saved_pct": 11.433661014712674,
+    "total_tokens_before": 15871,
+    "total_tokens_after": 14241,
+    "selected_action": "parking_b39e464b9dda",
+    "selected_comparison": {
+      "reference_ref": "20260930_150731_272f6c:parking_1",
+      "reference_demand_factor": 1.0,
+      "reference_direction_count": 3,
+      "scope": "仅比较本轮动作参数与最近已完成试验；不排序、不预测效果。保持同组冻结评价范围；尚未执行的候选仍待验证。",
+      "chosen": {
+        "direction_relation": "same",
+        "level_relation": "weaker",
+        "matching_demand": true,
+        "actions": [
+          "parking_b39e464b9dda"
+        ],
+        "interpretation": "治理方向相同；治理等级减弱。可比较同方向的等级调整；实际收益和代价仍需实跑，不证明现实机制。",
+        "action": "parking_b39e464b9dda",
+        "direction_count": 3
+      },
+      "alternative": {
+        "direction_relation": "narrower",
+        "level_relation": "same",
+        "matching_demand": true,
+        "actions": [
+          "parking_76cb6d34c991",
+          "parking_331eaed54147",
+          "parking_b9050151b3d0",
+          "parking_fb6e57d315a6"
+        ],
+        "interpretation": "缩小治理范围；等级不变。可比较同等级的治理范围或方向组合；不能分离其中单一路段的贡献。",
+        "action": "parking_fb6e57d315a6",
+        "direction_count": 2
+      }
+    },
+    "actual_detail_coverage": [
+      {
+        "ref": "20260930_150731_272f6c:parking_1",
+        "provided": 4,
+        "total": 4,
+        "complete": true,
+        "text": "已提供4条／总计4条（完整）"
+      }
+    ],
+    "positive_findings": [
+      "保留核心改善与推荐资格的区分。",
+      "明确0.5%与0.1km的原阈值，H2仍未获满足。",
+      "所选为相同三方向减弱至2级，备选为同1级缩至两方向；未当成已实测。"
+    ],
+    "semantic_findings": [
+      {
+        "field": "selection_basis.working_hypothesis",
+        "quote": "换方向候选（area_2）因与已试不同需求未配对，暂缓。",
+        "issue": "换区候选计划需求与参照都为1.0，原文却据不同需求未配对而暂缓，混淆未执行与需求不同。",
+        "actual_area2_candidate_demands": {
+          "parking_d71847bdf74e": [
+            1.0
+          ],
+          "parking_200b51c2fdaa": [
+            1.0
+          ],
+          "parking_27f81ffb311a": [
+            1.0
+          ],
+          "parking_2b3d14b62b50": [
+            1.0
+          ],
+          "parking_691a3bfe6040": [
+            1.0
+          ],
+          "parking_3ec16cf7c77c": [
+            1.0
+          ]
+        },
+        "reference_demand_factor": 1.0
+      }
+    ],
+    "semantic_status": "needs_review",
+    "stochastic_one_reply_not_general_quality_proof": true,
+    "no_claim_that_serialization_caused_or_fixed_semantic_errors": true
+  },
+  "source_files": {
+    "manifest": "工作材料\\源码联调证据\\20260930_compact_input_01\\original_files_manifest.json",
+    "manifest_sha256": "a051f4717feeaa768fed894164b42f3b1e3840e48ad5291b1b5bfb83de46f3d2",
+    "files": 7
+  },
+  "prior_probe_files_unchanged": 6,
+  "new_native_scenes": 0,
+  "original_task_resumed": false,
+  "usage": {
+    "previous_ledger": {
+      "path": "docs\\validation\\20260930_candidate_comparison_live_probe_review.json",
+      "sha256": "b5a5fa25678bbc8e4285c794271e4249230fde75e96414638398aa102951c09a"
+    },
+    "responses": [
+      {
+        "request_model": "deepseek-v4-flash",
+        "response_model": "deepseek-v4-flash-0731",
+        "response_id": "chatcmpl-6abcc7fbcd258450a88e824e",
+        "tokens": 14241,
+        "tokens_source": "reported_total",
+        "input_tokens": 13424,
+        "output_tokens": 817,
+        "reasoning_tokens": null,
+        "cached_input_tokens": null,
+        "latency_s": 6.157,
+        "finish_reason": "tool_calls",
+        "tool_call_count": 1,
+        "wire_api": "chat_completions",
+        "request_tool_choice": "required",
+        "request_tool_count": 1,
+        "request_max_output_tokens": 1600,
+        "request_size_bytes": 47238,
+        "request_schema_sha256": "a2e950f320f2594b5fe0e574462bb64be53678b59e584bd092101e1a40381b6a",
+        "transport_version": "llm-transport-v2",
+        "tool_choice_profile": "tokenrhythm-deepseek-chat-v1",
+        "requested_tool_choice": "function:choose_next_experiment"
+      }
+    ],
+    "new_unique_requests": 1,
+    "new_known_tokens": 14241,
+    "project_retained_cumulative_requests": 181,
+    "project_retained_cumulative_known_tokens": 1799938,
+    "authorized_max_requests": 684,
+    "authorized_max_known_tokens": 4132560,
+    "new_ids_not_in_prior_indexes": true,
+    "not_full_account_bill": true
+  },
+  "end_state": {
+    "checked_runtime_locks": [
+      {
+        "path": "智能体实验\\runtime.lock",
+        "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+        "free": true,
+        "bytes_unchanged": true
+      },
+      {
+        "path": "智能体实验\\mixed_limit7_full_20260930_01\\runtime.lock",
+        "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+        "free": true,
+        "bytes_unchanged": true
+      },
+      {
+        "path": "工作材料\\便携异目录检查\\20260930_v2_RC13\\智能体实验\\oneway_scope_live_20260930_01\\runtime.lock",
+        "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+        "free": true,
+        "bytes_unchanged": true
+      },
+      {
+        "path": "工作材料\\便携异目录检查\\20260930_v2_RC14\\智能体实验\\mixed_complete_live_20260930_01\\runtime.lock",
+        "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+        "free": true,
+        "bytes_unchanged": true
+      },
+      {
+        "path": "智能体实验\\mixed_named_questions_full_20260930_01\\runtime.lock",
+        "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+        "free": true,
+        "bytes_unchanged": true
+      },
+      {
+        "path": "智能体实验\\mixed_action_execution_full_20260930_02\\runtime.lock",
+        "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+        "free": true,
+        "bytes_unchanged": true
+      },
+      {
+        "path": "智能体实验\\mixed_action_summary_full_20260930_01\\runtime.lock",
+        "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+        "free": true,
+        "bytes_unchanged": true
+      },
+      {
+        "path": "F:\\ITS比赛\\智能体实验\\risk_boundary_validation_20260930_01\\live\\runtime.lock",
+        "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+        "free": true,
+        "bytes_unchanged": true
+      }
+    ]
+  },
+  "overall_complete": false,
+  "pending": [
+    "自由说明把未执行混作不同需求的错误",
+    "当前协议完整模型与原生闭环",
+    "浏览器视觉",
+    "最新最终便携包",
+    "物理异机验收"
+  ],
+  "helpers": [
+    {
+      "path": "tmp\\verify_compact_input_20260930.py",
+      "sha256": "e83215e4eeca17106598cb3f96ea34db9bd097642cccfd158dd87c730eb38e9a"
+    },
+    {
+      "path": "tmp\\compact_input_probe_20260930.py",
+      "sha256": "091ddb0bd54459137c6dc7b01e3ca2f5f613d7f1b1c0dd7de220f86eebddb7a7"
+    },
+    {
+      "path": "tmp\\audit_compact_input_probe_20260930.py",
+      "sha256": "b5187c9d31a3aa04042802727405940c55e42b6ad52d431a1c4f4db69458b235"
+    }
+  ]
+}

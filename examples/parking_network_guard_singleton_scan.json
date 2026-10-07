@@ -1,0 +1,11 @@
+{
+  "request": "全网毛新增过饱和门槛下逐一试验首轮入选方向：比较安全单路段备选并复跑基准",
+  "scenario": "parking",
+  "recommendation_version": "tolerance-v2",
+  "max_links": 3,
+  "max_runs": 6,
+  "max_feedback": 3,
+  "demand_factors": [1.0],
+  "repeat_baseline": true,
+  "max_new_network_oversaturated_km": 0.1
+}

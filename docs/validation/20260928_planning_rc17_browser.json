@@ -1,0 +1,23 @@
+{
+  "tool": "cua_repl",
+  "rc17_tab": 45,
+  "rc17_port": 8822,
+  "source_commit": "6c58b300ab2a66913d36b1020d919b453e6cf60e",
+  "rc17_blank_request": true,
+  "rc17_geometry_only": 32060,
+  "rc17_jobs_not_started": true,
+  "rc16_tab": 44,
+  "rc16_port": 8819,
+  "rc16_actual_failure_visible": true,
+  "rc16_actual_requests": 1,
+  "rc16_actual_tokens": 6592,
+  "console_errors": [],
+  "screenshots": {
+    "20260928_planning_rc17_lobby.png": "b552dd487b5e45c5fd8148f16dc9c8f33dbcd6a1be3c9c1046e5437daca5bb19",
+    "20260928_rc16_failure_ui.png": "681b58648b3475e47b3bf19000e1178f4789a060c02166627cc83e04cc8cabc8"
+  },
+  "scope": "仅浏览空白RC17与RC16原始失败，未点击运行或连接测试。RC17无新模型或原生执行。",
+  "paid_requests": 0,
+  "new_native_scenes": 0,
+  "physical_other_machine": false
+}

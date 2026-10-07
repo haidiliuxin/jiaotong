@@ -1,0 +1,8 @@
+Mparam614.txt----Veh_speed_V/C_model(veh)
+expressways:	5	4
+major-artery:	5	4
+minor-artery:	5	4
+monor-road:	5	4
+highways:	5	4
+freeways:	5	4
+bike-lanes:	5	4

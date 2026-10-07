@@ -1,0 +1,15 @@
+{
+  "kind": "initial_budget_failure_snapshot_v1",
+  "source_commit": "e27cfa83315149e15bc97a7b1e2f66c9cf1adb8d",
+  "status": "failed",
+  "model_calls": 1,
+  "known_tokens": 4931,
+  "native_scenes": 0,
+  "proposed_scenes": 8,
+  "allowed_scenes": 6,
+  "meaning": "真实初始规划多安排一组独立停车研究而超预算，未启动仿真、未重试。不是最终复核修正协议的通过证据。",
+  "original_files": 6,
+  "original_bytes_unchanged": true,
+  "zip_bytes": 807253,
+  "zip_sha256": "80dbaedccd569b1d61dd75b90ed50aadd88f4d456fd09e1052beebe4f03e4133"
+}

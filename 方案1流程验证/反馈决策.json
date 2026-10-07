@@ -1,0 +1,6 @@
+{
+  "based_on": "analysis/parking_level2/comparison.json",
+  "observation": "Speed improved to 17.1 km/h; software VC remains >1 and uses an unchanged CapLinkVeh denominator; adjusted-capacity flow ratio also remains >1.",
+  "action": "Run category 1 on the same directed link; compare tradeoffs. Then repeat baseline to quantify repeatability.",
+  "stop": "Finish after this bounded feedback and repeatability check; no expansion to network-wide policy search."
+}
